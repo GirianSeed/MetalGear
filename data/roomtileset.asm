@@ -5,7 +5,7 @@
 ;
 ;----------------------------------------------------------------------------
 
- 
+
 
 RoomGfxSetIds:	    db	  0,   0,   0,	 0,   0,   0,	0,   0,	  0,   0,   0,	 0,   0,   0,	0,   0
 		    db	  0,   0,   0,	 0, 22h, 22h, 20h,   2,	22h, 52h, 22h, 11h, 11h, 11h, 11h, 11h
@@ -31,7 +31,7 @@ idxTileSets:	    dw TileSetBuilding
 		    dw TileSetHindD
 		    dw TileSetMetalGear
 		    dw TileSetEnding
- 
+
 ;----------------------------------------------------------------------------
 ;
 ; +0: bit7=Load	collision tiles, bit6=Flip tiles

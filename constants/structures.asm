@@ -1,6 +1,6 @@
 ; ---------------------------------------------------------------------------
 
-	STRUCT	PITFALL		    
+	STRUCT	PITFALL
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -133,7 +133,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	BOOMERANG	    
+	STRUCT	BOOMERANG
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -266,7 +266,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	PRISONER	    
+	STRUCT	PRISONER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -399,7 +399,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ACTOR2		    
+	STRUCT	ACTOR2
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -532,7 +532,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	GAS		    
+	STRUCT	GAS
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -665,7 +665,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ROLLING_BARREL	    
+	STRUCT	ROLLING_BARREL
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -798,7 +798,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	COWARD_D	    
+	STRUCT	COWARD_D
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -931,7 +931,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ALERT_GUARD	    
+	STRUCT	ALERT_GUARD
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1064,7 +1064,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	BRIDGE		    
+	STRUCT	BRIDGE
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1197,7 +1197,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	FIRE_TROPPER	    
+	STRUCT	FIRE_TROPPER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1330,7 +1330,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	POWER_SWITCH	    
+	STRUCT	POWER_SWITCH
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1463,7 +1463,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	M_GUN_KID_SHOT	    
+	STRUCT	M_GUN_KID_SHOT
 ID:		    BYTE				    ; Bit 7 = Killed
 Configured:	    BYTE
 Ydec:		    BYTE
@@ -1596,7 +1596,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	SHOT_GUNNER	    
+	STRUCT	SHOT_GUNNER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1729,7 +1729,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	DOG		    
+	STRUCT	DOG
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1862,7 +1862,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	BULLDOZER	    
+	STRUCT	BULLDOZER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -1995,7 +1995,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	JETPACK		    
+	STRUCT	JETPACK
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2128,7 +2128,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	GUARD_SILENCER	    
+	STRUCT	GUARD_SILENCER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2261,7 +2261,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	SHOOTER		    
+	STRUCT	SHOOTER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2394,7 +2394,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ELEVATOR_GUARD	    
+	STRUCT	ELEVATOR_GUARD
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2527,7 +2527,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ELEV_GUARD_SPAWNER  
+	STRUCT	ELEV_GUARD_SPAWNER
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2660,7 +2660,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	BIG_BOSS	    
+	STRUCT	BIG_BOSS
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2793,7 +2793,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ARNOLD		    
+	STRUCT	ARNOLD
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -2926,7 +2926,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	TANK_SHOT	    
+	STRUCT	TANK_SHOT
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -3059,7 +3059,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	TANK		    
+	STRUCT	TANK
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -3192,7 +3192,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	SHELL_DESERT	    
+	STRUCT	SHELL_DESERT
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -3325,7 +3325,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	HIND_D		    
+	STRUCT	HIND_D
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE
@@ -3458,7 +3458,7 @@ ZzzSignSprIdx:	    BYTE
 
 ; ---------------------------------------------------------------------------
 
-	STRUCT	ACTOR		    
+	STRUCT	ACTOR
 ID:		    BYTE				    ; Bit 7 = Killed
 Status:		    BYTE
 Ydec:		    BYTE

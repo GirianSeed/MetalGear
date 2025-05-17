@@ -36,8 +36,8 @@ idxItemName:    dw txtArmor
 ;
 ;----------------------------------------------------------------------------
 txtArmor:       db  60h, 40h, 7Eh, 40h,0FFh
-txtSuit:        db  6Ch, 40h, 71h,0FFh 
-txtLight:       db  86h, 61h, 73h,0FFh 
+txtSuit:        db  6Ch, 40h, 71h,0FFh
+txtLight:       db  86h, 61h, 73h,0FFh
 txtGoggles:     db  69h, 98h, 40h, 67h, 98h, 88h,0FFh
 txtMask:        db  65h, 98h, 6Ch, 7Eh, 6Ch, 67h,0FFh
 txtCigar:       db  6Fh, 79h, 98h, 69h,0FFh

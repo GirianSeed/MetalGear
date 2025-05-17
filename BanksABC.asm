@@ -14,7 +14,7 @@
 	include	"data/spritesets.asm"
 
 	include	"data/weaponspratt.asm"
-		    
+
 	include	"gfx/sprites.asm"
 
 	include	"data/laserconfig.asm"

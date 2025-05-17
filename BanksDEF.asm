@@ -23,9 +23,9 @@
 	ELSE
 	include	"data/radiocalls.asm"
 	ENDIF
-	
+
 	include	"logic/updatesprites.asm"
-	
+
 	include "logic/saveload.asm"
 
 	include	"logic/ending.asm"

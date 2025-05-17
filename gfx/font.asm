@@ -29,7 +29,7 @@ gfxSymbChars:	    db	  0, 18h, 18h,0FFh, 7Eh, 3Ch, 3Ch, 66h,	  0,   8, 0Ch, 7Eh,
 	IF (JAPANESE)
 		    db	  0, 3Ch, 66h,	 6, 0Ch, 10h,	0, 18h,	  0,   0,   0, 18h, 18h,   0,   0,   0
 	ELSE
-		    db	  0, 3Ch, 66h,	 6, 0Ch, 10h,	0, 18h,	  0,   0,   0,	 0,   0,   0, 18h, 18h	
+		    db	  0, 3Ch, 66h,	 6, 0Ch, 10h,	0, 18h,	  0,   0,   0,	 0,   0,   0, 18h, 18h
 	ENDIF
 		    db	  0,   0,   0,	 0,   0, 20h, 50h, 20h,	  0,   0,   0,	 0,   0,   0, 40h, 20h
 		    db	  0,   0,   0,	 0,   0, 30h, 10h, 20h,	  0, 7Fh,   9,	 9, 0Eh,   8,	8, 30h
@@ -65,7 +65,7 @@ gfxSymbChars:	    db	  0, 18h, 18h,0FFh, 7Eh, 3Ch, 3Ch, 66h,	  0,   8, 0Ch, 7Eh,
 	ELSE
 		    db 0C0h, 40h, 80h,	 0,   0,   0,	0,   0,	40h, 20h, 80h, 40h,   0,   0,	0,   0
 	ENDIF
-		    
+
 		    db	  0,   8, 18h, 3Fh, 7Fh, 3Fh, 18h,   8,	  0,   8, 1Ch, 3Eh, 7Fh, 1Ch, 1Ch, 1Ch
 		    db	  0, 1Ch, 1Ch, 1Ch, 7Fh, 3Eh, 1Ch,   8
 

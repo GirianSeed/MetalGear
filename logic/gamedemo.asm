@@ -217,7 +217,7 @@ idxDemoPlayCtrl:    dw DemoTutorial
 DemoGameplay1:      db  23h,   8,   4,   0,   2,   2,0A8h,   0, 0Bh,   2, 0Ch,   8,   5,   1, 10h,   0, 0Eh,   4
 		    db    6,   1, 14h,   4, 70h,   0, 2Ch,   8, 0Ah,   0, 49h,   4,   9,   2, 4Eh,   0,   2, 20h
 		    db  0Ah,   0,   3, 20h, 0Ah,   0, 10h, 20h,   6,   2, 49h,   4, 42h,   1,0FFh
-		    
+
 DemoTutorial:       db    0,   0,   0,   0,   0,   0,   0,   0,0FFh
 
 DemoGameplay2:      db  1Fh,   0, 3Ah,   2, 0Dh,   8, 10h,   4, 5Eh,   2, 1Ah,   4, 10h,   1, 16h,   4, 22h,   1 ; ...
@@ -228,7 +228,7 @@ DemoGameplay1:	    db	23h,   8,   4,	 0,   2,   2,0A8h,   0,	0Bh,   2, 0Ch,	 8, 
 		    db	0Eh,   4,   6,	 1, 14h,   4, 42h,   0,	28h,   8, 0Ah,	 0, 49h,   4,	9,   2
 		    db	4Eh,   0,   2, 20h, 0Ah,   0,	3, 20h,	0Ah,   0, 10h, 20h,   6,   2, 49h,   4
 		    db	42h,   1,0FFh
-		    
+
 DemoTutorial:	    db	  0,   0,   0,	 0,   0,   0,	0,   0,	80h,   0,0FFh
 
 DemoGameplay2:	    db	1Fh,   0, 3Ah,	 2, 0Dh,   8, 10h,   4,	5Eh,   2, 1Ah,	 4, 10h,   1, 16h,   4

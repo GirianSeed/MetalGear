@@ -5351,14 +5351,14 @@ DecodeTextEnd3:
 
 AddDictEntry:
 	if	(JAPANESE)
-		    cp     #d9        
-		    ld     c,a        
-		    jr     nz,AddDictEntry1   
-		    
-		    ld     a,#01      
+		    cp     #d9
+		    ld     c,a
+		    jr     nz,AddDictEntry1
+
+		    ld     a,#01
 		    ld     (flagTxtItem),a
 AddDictEntry1:
-		    ld     a,c 
+		    ld     a,c
 	ENDIF
 		    sub	    0A1h			    ; A	= Dictionary index
 
@@ -5391,7 +5391,7 @@ AddDictEntry3:
 		    jr	    DecodeText2
 
 
-	
+
 	include	"logic/regionlock.asm"
 
 
@@ -8054,7 +8054,7 @@ TW_PrintChar7:
 		    and     a
 		    jp      nz, TW_PrintChar
 	ENDIF
-	
+
 ; Check	if Snake is talking
 		    ld	    a, (TextId)
 		    cp	    10				    ; TEXT: This is Solid Snake... Your	reply, please
@@ -8159,13 +8159,13 @@ TW_Wait:
 		    ld      a, (flagTxtItem)
 		    and     a
 		    jr      z, TW_Wait1
-		    
+
 		    ld      a, (ControlsHold)
 		    and     0Fh
 		    jr      nz, EraseWinText
 TW_Wait1:
 	ENDIF
-	
+
 		    ld	    a, (SkipTextMode)		    ; 0	= Text can be skipped. Need to press a key to read next	text box
 							    ; 1	= Text can not be skipped. Need	to press a key to read next text box
 							    ; 2	= Text can not be skipped. Need	to wait	to read	next text box
@@ -8230,13 +8230,13 @@ TW_GetTextPage:
 		    sub     62              ; TEXT: Gear taken!!
 		    ld      a, 0
 		    jr      nz, TW_GetTextPage1
-		    
+
 		    inc     a
 
 TW_GetTextPage1:
 		    ld      (flagTxtItem), a
 	ENDIF
-	
+
 		    ld	    a, (PendingTextFlag)
 		    and	    a				    ; Is there more text?
 		    jp	    z, NextTextStatus
@@ -13732,9 +13732,9 @@ RestLaserBack_:
 	include	"logic/menuequipment.asm"
 
 	include	"logic/checkweaponalert.asm"
-		    
-	include	"logic/weaponuse.asm"		    
-		    
+
+	include	"logic/weaponuse.asm"
+
 	include	"logic/textboxappear.asm"
 
 	include	"logic/collisions.asm"

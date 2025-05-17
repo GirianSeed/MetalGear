@@ -2,7 +2,7 @@ Sfx_LorryMoving:    db 0FEh,   0
 SfxLorryMoving2:    db	23h,   1, 11h,0B2h, 50h, 82h, 50h,0C2h,	50h, 92h, 50h ;	...
 		    db 0FEh, 0Bh
 		    dw SfxLorryMoving2
-		    
+
 		    db 0C2h, 4Dh, 92h, 4Ch,0B2h, 4Bh, 82h, 4Ah,0C2h, 49h, 92h, 43h, 82h, 42h,0C2h, 41h
 		    db	92h, 40h,0B2h, 3Fh, 82h, 3Eh,0C2h, 3Dh,	92h, 3Ch,0B2h, 3Bh, 82h, 3Ah,0C2h, 39h
 		    db	92h, 38h,0B2h, 37h, 82h, 36h,0C2h, 35h,	92h, 34h,0B2h, 33h, 82h, 32h,0C2h, 31h

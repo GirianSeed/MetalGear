@@ -1,6 +1,6 @@
 Sfx_PunchGuard:	    db 0FEh,   0, 21h,	 1, 1Fh,0D0h, 1Ch,0D0h,	19h,0D0h, 17h,0D0h, 15h,0D0h, 13h,0D0h
 		    db	11h,0D0h,0FFh
-		    
+
 Sfx_PunchWall:	    db 0FEh,   0, 22h,	 1,0E1h, 50h,0C6h,   0,0D1h, 80h,0D2h,	 0,0B2h, 40h,0A2h,   0
 		    db 0D4h,   0,0C4h, 68h,0B4h,0A5h,0A4h, 80h,	  0,   0, 92h,	 0, 82h, 40h, 72h,   0
 		    db 0A4h,   0, 94h, 68h, 84h,0A5h,0FFh

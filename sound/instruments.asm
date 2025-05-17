@@ -75,7 +75,7 @@ DummyInstrument1:   dw DummyInstrumentDat
 		    dw DummyInstrumentDat
 		    dw DummyInstrumentDat
 		    dw DummyInstrumentDat
-		    
+
 DummyInstrumentDat: db 0FFh
 
 ;----------------------------------------------------------------------------
@@ -95,7 +95,7 @@ DummyInstrument2:   dw DummyInstrumentDat2
 		    dw DummyInstrumentDat2
 		    dw DummyInstrumentDat2
 		    dw DummyInstrumentDat2
-		    
+
 DummyInstrumentDat2:db 0FFh
 
 

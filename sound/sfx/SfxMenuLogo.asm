@@ -19,4 +19,4 @@ Sfx_MenuLogoEndB:   db 0FEh,   0, 22h,	 1,0B0h,0A4h,0B0h, 31h,0B0h, 25h,0B0h, 42
 
 Sfx_MenuLogoUpC:    db 0FEh,   0, 23h,	 2, 10h,0A1h, 50h,0B1h,	60h,0B1h, 70h,0B1h, 80h,0C1h, 90h,0C1h
 		    db 0A0h,0C1h,0B0h,0C1h,0B0h,0C1h,0D0h,0D1h,0E0h,0D1h,0F0h,0D2h,   0,0D2h, 10h,0D2h
-		    db	20h,0D2h, 30h,0D2h, 40h,0D2h, 50h,0D2h,	60h,0D2h, 70h,0FFh		  
+		    db	20h,0D2h, 30h,0D2h, 40h,0D2h, 50h,0D2h,	60h,0D2h, 70h,0FFh

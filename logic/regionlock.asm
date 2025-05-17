@@ -3,7 +3,7 @@
 ;
 ; Region lock
 ; Check if the MSX is Japanese
-; 
+;
 ; BASVER1:
 ;
 ; 7 6 5 4 3 2 1 0
@@ -26,13 +26,13 @@
 ;----------------------------------------------------------------------------
 RegionLock:
 	if	(JAPANESE)
-		ld     hl,(BASVER1) 
-		ld     a,l        
+		ld     hl,(BASVER1)
+		ld     a,l
 		and    #f7		; Japanese character set? Y-M-D date format? 60Hz?
 		jp     nz,#0000   	; No, reset the computer
-	
-		ld     a,h        
+
+		ld     a,h
 		and    #cf		; Japanese keyboard type?
 		jp     nz,#0000   	; No, reset the computer
 	ENDIF
-		ret              
+		ret

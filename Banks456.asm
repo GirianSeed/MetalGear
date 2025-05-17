@@ -10,7 +10,7 @@
 
 
 	include	"sound/sound.asm"
-	
+
 
 	include	"data/weapondamage.asm"
 
@@ -18,7 +18,7 @@
 
 
 	include	"data/itemtaketextid.asm"
-	
+
 	include	"data/itemtakeamount.asm"
 
 
@@ -27,8 +27,8 @@
 	include	"data/elevatorrooms.asm"
 
 	include	"data/roomsconnections.asm"
-	
-	
+
+
 	include	"data/actorsinrooms.asm"
 
 	include	"data/actorspriteattr.asm"
@@ -37,9 +37,9 @@
 	include	"data/paths.asm"
 
 	include	"data/respawninfo.asm"
-	
+
 	include	"data/maths.asm"
-	
+
 
 	include	"gfx/targetspr.asm"
 
@@ -49,11 +49,11 @@
 	include	"gfx/alerticon.asm"
 
 	include	"gfx/radio.asm"
-	
+
 	include	"gfx/camera.asm"
-	
-	
-	
+
+
+
 	include	"data/menuweapontexts.asm"
 
 	include	"data/menuequipmenttexts.asm"
@@ -82,7 +82,7 @@
 	ELSE
 	include	"data/itemnames.asm"
 	ENDIF
-	
+
 	include	"data/itemcursorxy.asm"
 
 

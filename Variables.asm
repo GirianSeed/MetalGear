@@ -6,7 +6,7 @@
 ;----------------------------------------------------------------------------
 
 		    map	#c000
-		    
+
 GameStatus:	    # 1
 GameSubstatus:	    # 1
 ControlConfig:	    # 1
@@ -393,7 +393,7 @@ WaitTextCnt:	    # 1
 TextCharXY:	    # 2
 pTexBuffer:	    # 2
 PromptXY:	    # 2
-flagTxtItem:	    # 0Eh	
+flagTxtItem:	    # 0Eh
 TextBuffer:	    # 0F0h
 EnemyList:	    # 80h				    ; Array of enemies in the room
 EnemyListEntry1:    # 80h

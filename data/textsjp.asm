@@ -192,7 +192,7 @@ txt005:         db    3,0A1h,0A4h,0A8h,0FEh,0E1h, 75h,   0, 78h, 88h, 73h,   0,0
                 db 0A6h,0FFh
 txt006:         db    0, 62h, 69h, 98h, 67h, 74h, 3Eh,0FFh
 txt007:         db    0, 89h, 8Dh, 69h, 62h, 6Ch, 88h, 3Dh,0FFh
-txt008:         db    4,0CAh,0D9h,0FFh 
+txt008:         db    4,0CAh,0D9h,0FFh
 txt009:         db    3,0A1h,0A4h,0A8h,0FEh,0CAh, 5Bh,0FEh, 7Ah, 6Bh, 98h, 96h, 62h,   0, 85h, 62h
                 db    0, 6Bh, 96h, 67h, 87h, 96h, 62h,   0, 6Fh, 98h, 5Dh,0FEh, 6Ch, 67h, 98h,   0
                 db  75h,   0, 6Fh, 7Ch, 98h, 6Ch, 98h,   0, 75h,   0, 78h, 69h, 6Bh, 72h,   0, 64h
@@ -219,12 +219,12 @@ txt017:         db  13h,0A1h,0A4h,0A8h,0FEh,0CDh, 5Bh,0FEh, 42h, 45h, 4Ch, 4Ch, 
                 db  4Dh, 39h, 32h, 46h,0A8h,0FDh,0DFh, 5Dh,0FEh,0E0h, 8Ch,   0,0EDh, 5Dh,0FEh, 6Fh
                 db  7Eh,   0, 79h,   0, 80h, 6Fh, 98h, 71h, 98h, 65h, 61h,   0, 6Ch, 88h, 74h, 5Dh
                 db 0FEh,0A8h,0A6h,0FFh
-txt018:         db    4,0C2h,0D9h,0FFh 
+txt018:         db    4,0C2h,0D9h,0FFh
 txt019:         db    3,0A1h,0A4h,0A8h,0FEh,0C2h, 5Bh,0FEh,0DFh, 5Dh,0FEh,0A8h,0A6h,0FFh
 txt020:         db    3,0A1h,0A4h,0A8h,0FEh,0ABh, 65h, 98h,   0, 61h, 88h, 79h, 6Ch, 98h,   0, 6Fh
                 db  98h, 5Dh,0FEh, 80h, 6Dh, 8Dh,   0, 72h, 98h,   0,0E8h, 6Bh, 72h, 7Fh, 8Ah, 5Dh
                 db 0FEh,0A8h,0A6h,0FFh
-txt021:         db    4,0E0h,0D9h,0FFh 
+txt021:         db    4,0E0h,0D9h,0FFh
 txt022:         db    3,0A1h,0A4h,0A8h,0FEh,0E0h, 79h,   0, 82h, 72h, 88h,   0, 65h, 6Ch, 98h,   0
                 db  75h,   0, 6Dh, 61h, 68h, 98h, 8Dh,   0,0FEh, 65h, 98h,   0, 60h, 88h, 5Dh,0FEh
                 db 0E3h, 5Dh,0FEh,0A8h,0A6h,0FFh
@@ -244,7 +244,7 @@ txt027:         db  11h,0D7h,0FDh,0DCh, 31h, 32h, 30h, 33h, 33h,   0, 72h, 98h,0
                 db 0AAh, 65h, 98h,0FEh,0E9h, 6Bh, 72h, 67h, 89h, 88h, 5Dh,0FDh,0AAh, 79h,   0, 72h
                 db  66h,   0, 78h,   0, 6Bh, 98h, 96h, 62h, 7Dh, 62h, 75h,   0, 67h, 8Bh, 6Bh, 61h
                 db  79h, 6Ch, 98h,   0, 6Fh, 98h, 5Dh,0FFh
-txt028:         db    0,0D7h,0FFh      
+txt028:         db    0,0D7h,0FFh
 txt029:         db    4,0D3h,0FEh,0D9h,0FFh
 txt030:         db  13h,0A1h,0A4h,0A8h,0FEh,0D3h, 5Bh,0FDh, 87h, 82h, 69h, 8Dh,   0, 6Eh, 62h, 6Ah
                 db    0, 72h, 98h, 66h, 88h,   0, 7Fh, 6Ah, 61h, 88h,   0, 6Fh, 98h, 5Dh,0FEh, 6Bh
@@ -261,8 +261,8 @@ txt032:         db  11h,0D7h,0FDh, 6Ch, 62h, 6Bh, 98h, 71h,   0, 7Eh, 63h,   0, 
                 db  6Bh, 72h, 66h, 6Fh,   0,0B0h,0FEh, 74h, 86h, 5Eh, 7Bh, 98h, 6Bh, 98h, 6Fh, 98h
                 db  5Dh,0FDh, 83h, 71h, 86h,   0, 75h,   0, 73h, 86h, 63h, 86h, 89h,   0, 72h,   0
                 db  61h, 88h, 5Dh,0FFh
-txt033:         db    0,0D2h,0FFh      
-txt034:         db    0,0D5h,0FFh      
+txt033:         db    0,0D2h,0FFh
+txt034:         db    0,0D5h,0FFh
 txt035:         db    1,0B0h, 65h, 98h,0FEh,0ECh, 6Bh, 72h, 61h, 88h,   0, 86h, 6Bh, 61h, 5Dh,0FEh
                 db  6Dh, 98h, 93h, 6Fh, 61h,   0, 75h,   0, 73h, 64h, 6Ch, 74h, 3Dh,0FFh
 txt036:         db    3,0A1h,0A4h,0A8h,0FEh, 46h, 55h, 4Eh, 43h, 54h, 49h, 4Fh, 4Eh,   0, 4Bh, 45h
@@ -290,7 +290,7 @@ txt043:         db    4,0D4h,0FEh,0D9h,0FFh
 txt044:         db    3,0A1h,0A4h,0A8h,0FEh,0D4h, 5Bh,0FEh, 69h, 89h,   0, 8Ch,   0, 71h, 68h, 88h
                 db  73h, 5Eh, 6Bh, 98h, 95h, 62h, 6Dh, 61h,   0, 65h, 98h,   0, 68h, 6Dh, 88h, 5Dh
                 db 0FEh,0A8h,0A6h,0FFh
-txt045:         db 3                   
+txt045:         db 3
                 db  65h, 8Bh, 87h, 7Eh, 6Bh, 72h,0FEh,0B1h, 53h, 54h, 41h, 46h, 46h,0FEh, 6Bh, 96h
                 db  62h, 65h, 61h,0A8h,0FDh,   0,   0,   0,   0,   0, 4Dh, 41h, 49h, 4Eh,   0, 50h
                 db  52h, 4Fh, 47h, 52h, 41h, 4Dh,0FEh,0FEh,   0,   0,   0,   0, 48h, 49h, 52h, 4Fh
@@ -388,8 +388,8 @@ txt070:         db    3,0A1h,0A4h,0A8h,0FEh,0D1h, 5Bh,0FEh, 73h, 98h, 69h,   0, 
 txt071:         db    4,0CBh,0FEh,0D9h,0FFh
 txt072:         db    3,0A1h,0A4h,0A8h,0FEh,0CBh, 5Bh,0FEh, 6Dh, 40h, 86h, 40h, 5Ch, 7Bh, 67h,   0
                 db  65h, 5Bh,0FEh,0A8h,0A6h,0FFh
-txt073:         db 0FFh                
-txt074:         db 0FFh                
+txt073:         db 0FFh
+txt074:         db 0FFh
 txt075:         db    4,0C0h,0BFh,0FEh,0D9h,0FFh
 txt076:         db    3,0A1h,0A4h,0A8h,0FEh,0C0h,0BFh, 5Bh,0FEh,0C0h, 6Dh, 8Dh, 6Ah, 40h,   0, 65h
                 db  98h,   0, 7Fh, 63h, 88h,   0, 85h, 62h, 75h,   0, 74h, 88h, 5Dh,0FEh,0A8h,0A6h
@@ -436,9 +436,9 @@ txt094:         db  13h,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FEh,0CBh, 79h,   0, 7Ah, 
 txt095:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh,0FAh, 78h,   0,0F5h, 79h,   0,0DCh,0FEh, 31h, 32h
                 db  30h, 39h, 31h,   0, 75h,   0, 7Ch, 8Dh, 69h, 62h,   0, 6Ch, 88h, 8Bh, 5Dh,0FEh
                 db  7Eh, 6Fh,   0, 85h, 8Dh, 72h, 98h, 77h, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt096:         db    4,0BEh,0D9h,0FFh 
+txt096:         db    4,0BEh,0D9h,0FFh
 txt097:         db    3,0A1h,0A4h,0A8h,0FEh,0BEh, 5Bh,0FEh,0DFh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt098:         db    4,0C3h,0D9h,0FFh 
+txt098:         db    4,0C3h,0D9h,0FFh
 txt099:         db    3,0A1h,0A4h,0A8h,0FEh, 7Dh, 98h, 62h, 65h, 98h, 61h,   0, 72h, 98h, 8Dh, 79h
                 db  97h,   0, 65h, 98h,   0, 72h, 98h, 72h, 61h, 6Fh,   0, 65h, 98h, 5Eh,0FEh, 69h
                 db  89h, 72h, 98h,   0, 6Fh, 98h, 61h, 6Bh, 98h, 96h, 62h, 7Bh, 98h,   0, 6Fh, 98h
@@ -447,9 +447,9 @@ txt100:         db    3,0A1h,0ADh,0A8h,0FEh, 66h, 6Fh,   0,0E1h, 79h,   0, 62h, 
                 db  6Bh, 65h,0FEh,0F6h, 6Bh, 74h, 61h, 5Dh,0FEh,0A8h,0A6h,0FFh
 txt101:         db    1,0D7h,0FEh,0AEh, 79h,0FEh, 70h, 65h, 8Ah, 62h,   0, 75h,   0, 61h, 88h, 5Dh
                 db 0FFh
-txt102:         db 0FFh                
+txt102:         db 0FFh
 txt103:         db    4,0BBh, 35h,0FEh,0D9h,0FFh
-txt104:         db 0FFh                
+txt104:         db 0FFh
 txt105:         db    3,0A1h,0ADh,0A8h,0FEh, 7Fh, 74h, 7Fh,   0,0E1h, 79h,   0, 6Bh, 6Fh,   0, 75h
                 db    0, 6Bh, 65h,0FEh,0F6h, 6Bh, 74h, 61h, 5Dh,0FEh,0A8h,0A6h,0FFh
 txt106:         db    3,0A1h,0ADh,0A8h,0FEh, 69h, 78h,   0, 6Ah, 66h,   0, 79h,   0, 65h, 98h, 6Ch
@@ -486,7 +486,7 @@ txt117:         db    3,0A1h,0A5h,0A8h,0FEh,0D0h, 8Ch,   0, 85h, 62h, 61h,   0, 
 txt118:         db    3,0A1h,0A5h,0A8h,0FEh, 61h, 7Eh, 65h, 86h,   0,0D6h, 8Ch,   0, 60h, 68h, 88h
                 db  8Bh, 5Dh,0FEh,0A8h,0A6h,0FFh
 txt119:         db    4,0D0h,0FEh,0D9h,0FFh
-txt120:         db    4,0C7h,0D9h,0FFh 
+txt120:         db    4,0C7h,0D9h,0FFh
 txt121:         db    4,0C9h,0FEh,0D9h,0FFh
 txt122:         db    3,0A1h,0ADh,0A8h,0FEh,0C7h, 79h,   0, 32h, 46h,   0, 75h,   0, 60h, 88h, 5Dh
                 db 0FEh,0A8h,0A6h,0FFh
@@ -529,7 +529,7 @@ txt129:         db  12h, 60h, 87h, 65h, 98h, 73h, 62h,0A8h,0FEh,0FCh,0FEh,0AEh, 
 txt130:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh, 6Ah, 6Eh, 87h,   0, 78h,   0, 73h, 98h, 67h,   0
                 db  79h,   0,0C9h, 8Ch,0FEh, 71h, 65h, 62h,   0, 73h,   0, 61h, 61h, 8Bh, 5Dh,0FEh
                 db 0A8h,0A7h,0FFh
-txt131:         db    0,0D7h,0FFh      
+txt131:         db    0,0D7h,0FFh
 txt132:         db    3,0A1h,0A4h,0A8h,0FEh, 7Ah, 6Fh, 98h, 87h,   0, 78h,   0,0D6h, 7Ch,   0, 79h
                 db  61h, 89h, 3Dh,0FEh,0A8h,0A6h,0FFh
 txt133:         db    3,0A1h,0A4h,0A8h,0FEh, 7Fh, 66h, 98h,   0, 79h, 6Bh,   0, 78h,   0,0E4h, 7Ch
@@ -625,7 +625,7 @@ txt158:         db    3,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh,0AAh, 74h, 86h,   0, 
 txt159:         db  13h,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh, 7Eh, 6Fh,   0, 64h, 7Eh, 63h,   0, 65h
                 db  3Dh,0FDh, 82h, 62h, 5Eh,0AAh, 75h, 79h,0FEh, 70h, 65h, 71h, 98h, 65h, 74h, 61h
                 db  72h, 98h,   0, 67h, 89h, 3Eh,0FFh
-                
+
 ;----------------------------------------------------------------------------
 ;
 ; Dictionary index
@@ -810,8 +810,8 @@ DicEntry078:    db  6Ah, 65h, 98h, 6Dh,   0,0FFh
 DicEntry079:    db  74h, 65h, 75h, 8Bh,   0,0FFh
 DicEntry080:    db  79h, 40h, 61h, 5Dh,0FFh
 DicEntry081:    db  64h, 89h,   0, 79h,   0,0FFh
-DicEntry082:    db    0,0FFh           
-DicEntry083:    db    0,0FFh           
+DicEntry082:    db    0,0FFh
+DicEntry083:    db    0,0FFh
 DicEntry084:    db  79h, 65h, 61h,   0,0FFh
 DicEntry085:    db  6Bh, 98h, 95h, 8Dh, 79h, 98h, 8Dh,   0,0FFh
 DicEntry086:    db  89h, 8Dh, 86h, 67h,   0,0FFh

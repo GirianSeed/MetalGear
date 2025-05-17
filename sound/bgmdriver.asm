@@ -115,32 +115,32 @@ UpdateSound6:
 ;
 ;
 ; #FF = END, RET
-; 
+;
 ; #FE xx address = LOOP xx times
 ; #FE #00
 ; #FE #FE address = GOTO address
 ; #FE #FF address = CALL address
-; 
+;
 ; (F0-FD)
 ; #Fx yz = ADSR
 ;   x = volume 00-0D
 ;   y = Decay
 ;   z = Release
-; 
+;
 ; #Dx     = Tempo
-; 
+;
 ; #EC #XY = Vibrato X=Speed Y = Intensity
 ; #E0-#E7 = Octave
 ; #E8     = Detune
 ; #E9     = Instrument
 ; #EF     = Note OFF
-; 
+;
 ; #0x-#bx = Note
 ; #Cx     = Silence
 ;
 ; Alt:
 ; #2x     = SOUND.CFG value
-; 
+;
 ; #1x     = Noise period
 ;----------------------------------------------------------------------------
 
