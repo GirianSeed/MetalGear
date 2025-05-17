@@ -570,193 +570,193 @@ txtEmpty:           db 0FFh
 ; Dictionary index
 ;
 ;----------------------------------------------------------------------------
-idxDictionary:	    dw dicBigBoss
-		    dw dicPoints
-		    dw dicIntruder
-		    dw dicOutHeav
-		    dw dicDestroy
-		    dw dicUltimWeap
-		    dw dicMetalGear
-		    dw dicContact
-		    dw dicGreyFox
-		    dw dicSearchFor
-		    dw dicFrom
-		    dw dicNow
-		    dw dicOver
-		    dw dicMove
-		    dw dicYou
-		    dw dicCapture
-		    dw dicResistance
-		    dw dicMrSchneider
-		    dw dicWaveBand
-		    dw dicPutOn
-		    dw dicLeader
-		    dw dicRescued
-		    dw dicFoxHound
-		    dw dicEnemy
-		    dw dicKeyFor
-		    dw dicSelecting
-		    dw dicCheck
-		    dw dicHave
-		    dw dicConfined
-		    dw dicSecret
-		    dw dicSolitary
-		    dw dicCell
-		    dw dicWill
-		    dw dicMust
-		    dw dicOnly
-		    dw dicDrPettrovic
-		    dw dicBuilding
-		    dw dicBasement
-		    dw dicFloor
-		    dw dicJennifer
-		    dw dicEllen
-		    dw dicRocketLaunch
-		    dw dicSolidSnake
-		    dw dicEmergency
-		    dw dicDestruction
-		    dw dicThe
-		    dw dicCourtyard
-		    dw dicComplete
-		    dw dicThisIs
-		    dw dicWeapon
-		    dw dicEquipment
-		    dw dicCard
-		    dw dicPlease
-		    dw dicBand
-		    dw dicDiane
-		    dw dicGain
-		    dw dicWith
-		    dw dicAnd
-		    dw dicDoor
-		    dw dicHello
-		    dw dicBye
-		    dw dicMachGunKid
-		    dw dicRemoteCtrl
-		    dw dicMissile
-		    dw dicCan
-		    dw dicOn
-		    dw dicBe
-		    dw dicAvailable
-		    dw dicNot
-		    dw dicTo
-		    dw dicShould
-		    dw dicWall
-		    dw dicDefeat
-		    dw dicNever
-		    dw dicBy
-		    dw dicThere
-		    dw dicOpen
-		    dw dicTake
-		    dw dicLorry
-		    dw dicGas
-		    dw dicAccess
-		    dw dicFor
-		    dw dicBombBlastS
-		    dw dicHere
-		    dw dicLead
-		    dw dicRoom
-		    dw dicWay
-		    dw dicMrArnold
-		    dw dicKill
-		    dw dicFortress
-		    dw dicBreak
-		    dw dicTransceiver
+idxDictionary:      dw dicBigBoss
+                    dw dicPoints
+                    dw dicIntruder
+                    dw dicOutHeav
+                    dw dicDestroy
+                    dw dicUltimWeap
+                    dw dicMetalGear
+                    dw dicContact
+                    dw dicGreyFox
+                    dw dicSearchFor
+                    dw dicFrom
+                    dw dicNow
+                    dw dicOver
+                    dw dicMove
+                    dw dicYou
+                    dw dicCapture
+                    dw dicResistance
+                    dw dicMrSchneider
+                    dw dicWaveBand
+                    dw dicPutOn
+                    dw dicLeader
+                    dw dicRescued
+                    dw dicFoxHound
+                    dw dicEnemy
+                    dw dicKeyFor
+                    dw dicSelecting
+                    dw dicCheck
+                    dw dicHave
+                    dw dicConfined
+                    dw dicSecret
+                    dw dicSolitary
+                    dw dicCell
+                    dw dicWill
+                    dw dicMust
+                    dw dicOnly
+                    dw dicDrPettrovic
+                    dw dicBuilding
+                    dw dicBasement
+                    dw dicFloor
+                    dw dicJennifer
+                    dw dicEllen
+                    dw dicRocketLaunch
+                    dw dicSolidSnake
+                    dw dicEmergency
+                    dw dicDestruction
+                    dw dicThe
+                    dw dicCourtyard
+                    dw dicComplete
+                    dw dicThisIs
+                    dw dicWeapon
+                    dw dicEquipment
+                    dw dicCard
+                    dw dicPlease
+                    dw dicBand
+                    dw dicDiane
+                    dw dicGain
+                    dw dicWith
+                    dw dicAnd
+                    dw dicDoor
+                    dw dicHello
+                    dw dicBye
+                    dw dicMachGunKid
+                    dw dicRemoteCtrl
+                    dw dicMissile
+                    dw dicCan
+                    dw dicOn
+                    dw dicBe
+                    dw dicAvailable
+                    dw dicNot
+                    dw dicTo
+                    dw dicShould
+                    dw dicWall
+                    dw dicDefeat
+                    dw dicNever
+                    dw dicBy
+                    dw dicThere
+                    dw dicOpen
+                    dw dicTake
+                    dw dicLorry
+                    dw dicGas
+                    dw dicAccess
+                    dw dicFor
+                    dw dicBombBlastS
+                    dw dicHere
+                    dw dicLead
+                    dw dicRoom
+                    dw dicWay
+                    dw dicMrArnold
+                    dw dicKill
+                    dw dicFortress
+                    dw dicBreak
+                    dw dicTransceiver
 
 ;----------------------------------------------------------------------------
 ;
 ; Dictionary entries
 ;
 ;----------------------------------------------------------------------------
-dicBigBoss:	    db	"BIG",   0, "BOSS",0FFh
-dicPoints:	    db	#5c, #5c, #5c,0FFh
-dicIntruder:	    db	"INTRUDE",0FFh
-dicOutHeav:	    db	"OUTER",   0, "HEAVEN",0FFh
-dicDestroy:	    db	"DESTOROY",0FFh
-dicUltimWeap:	    db	"THE",   0, "ULTIMATE",   0, "WEAPON",0FFh
-dicMetalGear:	    db	"METAL",   0, "GEAR",0FFh
-dicContact:	    db	"CONTACT",0FFh
-dicGreyFox:	    db	"GREY",   0, "FOX",0FFh
-dicSearchFor:	    db	"SEARCH",   0, "FOR",0FFh
-dicFrom:	    db	"FROM",0FFh
-dicNow:		    db	"NOW",0FFh
-dicOver:	    db	"OVER",0FFh
-dicMove:	    db	"MOVE",0FFh
-dicYou:		    db	"YOU",0FFh
-dicCapture:	    db	"CAPTURE",0FFh
-dicResistance:	    db	"RESISTANCE",0FFh
-dicMrSchneider:	    db	"MR",#5C,"SCHNEIDER",0FFh
-dicWaveBand:	    db	"WAVEBAND",0FFh
-dicPutOn:	    db	"PUT",   0, "ON",0FFh
-dicLeader:	    db	"LEADER",0FFh
-dicRescued:	    db	"RESCUED",0FFh
-dicFoxHound:	    db	"FOX",   0, "HOUND",0FFh
-dicEnemy:	    db	"ENEMY",0FFh
-dicKeyFor:	    db	"KEY",   0, "FOR",0FFh
-dicSelecting:	    db	"SELECTING",0FFh
-dicCheck:	    db	"CHECK",0FFh
-dicHave:	    db	"HAVE",0FFh
-dicConfined:	    db	"CONFINED",0FFh
-dicSecret:	    db	"SECRET",0FFh
-dicSolitary:	    db	"SOLITARY",0FFh
-dicCell:	    db	"CELL",0FFh
-dicWill:	    db	"WILL",0FFh
-dicMust:	    db	"MUST",0FFh
-dicOnly:	    db	"ONLY",0FFh
-dicDrPettrovic:	    db	"DR",#5C,"PETTROVICH",0FFh
-dicBuilding:	    db	"BUILDING",0FFh
-dicBasement:	    db	"BASEMENT",0FFh
-dicFloor:	    db	"FLOOR",0FFh
-dicJennifer:	    db	"JENNIFER",0FFh
-dicEllen:	    db	"ELLEN",0FFh
-dicRocketLaunch:    db	"ROCKET",   0, "LAUNCHER",0FFh
-dicSolidSnake:	    db	"SOLID",   0, "SNAKE",0FFh
-dicEmergency:	    db	"EMERGENCY",0FFh
-dicDestruction:	    db	"DESTRUCTION",0FFh
-dicThe:		    db	"THE",0FFh
-dicCourtyard:	    db	"COURTYARD",0FFh
-dicComplete:	    db	"COMPLETE",0FFh
-dicThisIs:	    db	"THIS",   0, "IS",0FFh
-dicWeapon:	    db	"WEAPON",0FFh
-dicEquipment:	    db	"EQUIPMENTS",0FFh
-dicCard:	    db	"CARD",0FFh
-dicPlease:	    db	"PLEASE",0FFh
-dicBand:	    db	"BAND",0FFh
-dicDiane:	    db	"DIANE",0FFh
-dicGain:	    db	"GAIN",0FFh
-dicWith:	    db	"WITH",0FFh
-dicAnd:		    db	"AND",0FFh
-dicDoor:	    db	"DOOR",0FFh
-dicHello:	    db	"HELLO=",0FFh
-dicBye:		    db	"BYE",0FFh
-dicMachGunKid:	    db	"MACHINE",   0, "GUN",   0, "KID",0FFh
-dicRemoteCtrl:	    db	"REMOTE@CONTROL",0FFh
-dicMissile:	    db	"MISSILE",0FFh
-dicCan:		    db	"CAN",0FFh
-dicOn:		    db	"ON",0FFh
-dicBe:		    db	"BE",0FFh
-dicAvailable:	    db	"AVAILABLE",0FFh
-dicNot:		    db	"NOT",0FFh
-dicTo:		    db	"TO",0FFh
-dicShould:	    db	"SHOULD",0FFh
-dicWall:	    db	"WALL",0FFh
-dicDefeat:	    db	"DEFEAT",0FFh
-dicNever:	    db	"NEVER",0FFh
-dicBy:		    db	"BY",0FFh
-dicThere:	    db	"THERE",0FFh
-dicOpen:	    db	"OPEN",0FFh
-dicTake:	    db	"TAKE",0FFh
-dicLorry:	    db	"LORRY",0FFh
-dicGas:		    db	"GAS",0FFh
-dicAccess:	    db	"ACCESS",0FFh
-dicFor:		    db	"FOR",0FFh
-dicBombBlastS:	    db	"BOMB",   0, "BLAST",   0, "SUIT",0FFh
-dicHere:	    db	"HERE",0FFh
-dicLead:	    db	"LEAD",0FFh
-dicRoom:	    db	"ROOM",0FFh
-dicWay:		    db	"WAY",0FFh
-dicMrArnold:	    db	"MR",#5C,"ARNOLD",0FFh
-dicKill:	    db	"KILL",0FFh
-dicFortress:	    db	"FORTRESS",0FFh
-dicBreak:	    db	"BREAK",0FFh
-dicTransceiver:	    db	"TRANSCEIVER",0FFh
+dicBigBoss:         db  "BIG",   0, "BOSS",0FFh
+dicPoints:          db  #5c, #5c, #5c,0FFh
+dicIntruder:        db  "INTRUDE",0FFh
+dicOutHeav:         db  "OUTER",   0, "HEAVEN",0FFh
+dicDestroy:         db  "DESTOROY",0FFh
+dicUltimWeap:       db  "THE",   0, "ULTIMATE",   0, "WEAPON",0FFh
+dicMetalGear:       db  "METAL",   0, "GEAR",0FFh
+dicContact:         db  "CONTACT",0FFh
+dicGreyFox:         db  "GREY",   0, "FOX",0FFh
+dicSearchFor:       db  "SEARCH",   0, "FOR",0FFh
+dicFrom:            db  "FROM",0FFh
+dicNow:             db  "NOW",0FFh
+dicOver:            db  "OVER",0FFh
+dicMove:            db  "MOVE",0FFh
+dicYou:             db  "YOU",0FFh
+dicCapture:         db  "CAPTURE",0FFh
+dicResistance:      db  "RESISTANCE",0FFh
+dicMrSchneider:     db  "MR",#5C,"SCHNEIDER",0FFh
+dicWaveBand:        db  "WAVEBAND",0FFh
+dicPutOn:           db  "PUT",   0, "ON",0FFh
+dicLeader:          db  "LEADER",0FFh
+dicRescued:         db  "RESCUED",0FFh
+dicFoxHound:        db  "FOX",   0, "HOUND",0FFh
+dicEnemy:           db  "ENEMY",0FFh
+dicKeyFor:          db  "KEY",   0, "FOR",0FFh
+dicSelecting:       db  "SELECTING",0FFh
+dicCheck:           db  "CHECK",0FFh
+dicHave:            db  "HAVE",0FFh
+dicConfined:        db  "CONFINED",0FFh
+dicSecret:          db  "SECRET",0FFh
+dicSolitary:        db  "SOLITARY",0FFh
+dicCell:            db  "CELL",0FFh
+dicWill:            db  "WILL",0FFh
+dicMust:            db  "MUST",0FFh
+dicOnly:            db  "ONLY",0FFh
+dicDrPettrovic:     db  "DR",#5C,"PETTROVICH",0FFh
+dicBuilding:        db  "BUILDING",0FFh
+dicBasement:        db  "BASEMENT",0FFh
+dicFloor:           db  "FLOOR",0FFh
+dicJennifer:        db  "JENNIFER",0FFh
+dicEllen:           db  "ELLEN",0FFh
+dicRocketLaunch:    db  "ROCKET",   0, "LAUNCHER",0FFh
+dicSolidSnake:      db  "SOLID",   0, "SNAKE",0FFh
+dicEmergency:       db  "EMERGENCY",0FFh
+dicDestruction:     db  "DESTRUCTION",0FFh
+dicThe:             db  "THE",0FFh
+dicCourtyard:       db  "COURTYARD",0FFh
+dicComplete:        db  "COMPLETE",0FFh
+dicThisIs:          db  "THIS",   0, "IS",0FFh
+dicWeapon:          db  "WEAPON",0FFh
+dicEquipment:       db  "EQUIPMENTS",0FFh
+dicCard:            db  "CARD",0FFh
+dicPlease:          db  "PLEASE",0FFh
+dicBand:            db  "BAND",0FFh
+dicDiane:           db  "DIANE",0FFh
+dicGain:            db  "GAIN",0FFh
+dicWith:            db  "WITH",0FFh
+dicAnd:             db  "AND",0FFh
+dicDoor:            db  "DOOR",0FFh
+dicHello:           db  "HELLO=",0FFh
+dicBye:             db  "BYE",0FFh
+dicMachGunKid:      db  "MACHINE",   0, "GUN",   0, "KID",0FFh
+dicRemoteCtrl:      db  "REMOTE@CONTROL",0FFh
+dicMissile:         db  "MISSILE",0FFh
+dicCan:             db  "CAN",0FFh
+dicOn:              db  "ON",0FFh
+dicBe:              db  "BE",0FFh
+dicAvailable:       db  "AVAILABLE",0FFh
+dicNot:             db  "NOT",0FFh
+dicTo:              db  "TO",0FFh
+dicShould:          db  "SHOULD",0FFh
+dicWall:            db  "WALL",0FFh
+dicDefeat:          db  "DEFEAT",0FFh
+dicNever:           db  "NEVER",0FFh
+dicBy:              db  "BY",0FFh
+dicThere:           db  "THERE",0FFh
+dicOpen:            db  "OPEN",0FFh
+dicTake:            db  "TAKE",0FFh
+dicLorry:           db  "LORRY",0FFh
+dicGas:             db  "GAS",0FFh
+dicAccess:          db  "ACCESS",0FFh
+dicFor:             db  "FOR",0FFh
+dicBombBlastS:      db  "BOMB",   0, "BLAST",   0, "SUIT",0FFh
+dicHere:            db  "HERE",0FFh
+dicLead:            db  "LEAD",0FFh
+dicRoom:            db  "ROOM",0FFh
+dicWay:             db  "WAY",0FFh
+dicMrArnold:        db  "MR",#5C,"ARNOLD",0FFh
+dicKill:            db  "KILL",0FFh
+dicFortress:        db  "FORTRESS",0FFh
+dicBreak:           db  "BREAK",0FFh
+dicTransceiver:     db  "TRANSCEIVER",0FFh

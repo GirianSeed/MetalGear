@@ -1,68 +1,68 @@
 ;----------------------------------------------------------------------------
 ;
-; Index	of indexes of items in the rooms
+; Index of indexes of items in the rooms
 ;
 ;----------------------------------------------------------------------------
-idxRoomItemsIdx:    db	12h,   0,   0,	 0,   1,   2,	3,   0,	28h,   0,   4,	 0,   0,   7,	0,   6
-		    db	  5,   9,   8,	 0, 0Bh, 0Ah,	0,   0,	  0, 0Dh,   0, 0Ch,   0, 0Eh,	0, 29h
-		    db	  0,   0, 11h, 10h, 23h,   0, 13h,   0,	2Ah, 2Eh,   0,	 0,   0,   0, 14h, 19h
-		    db	17h, 16h, 2Bh,	 0, 18h, 15h, 1Ch, 1Bh,	1Ah, 0Fh,   0, 1Dh,   0, 1Eh, 1Fh, 20h
-		    db	  0, 21h, 24h,	 0,   0, 25h, 26h,   0,	  0,   0, 2Fh, 23h,   0,   0, 27h,   0
-		    db	  0,   0,   0,	 0,   0,   0,	0,   0,	  0,   0,   0,	 0, 2Ah,   0, 2Fh,   0
-		    db	2Dh
+idxRoomItemsIdx:    db  12h,   0,   0,   0,   1,   2,   3,   0, 28h,   0,   4,   0,   0,   7,   0,   6
+                    db    5,   9,   8,   0, 0Bh, 0Ah,   0,   0,   0, 0Dh,   0, 0Ch,   0, 0Eh,   0, 29h
+                    db    0,   0, 11h, 10h, 23h,   0, 13h,   0, 2Ah, 2Eh,   0,   0,   0,   0, 14h, 19h
+                    db  17h, 16h, 2Bh,   0, 18h, 15h, 1Ch, 1Bh, 1Ah, 0Fh,   0, 1Dh,   0, 1Eh, 1Fh, 20h
+                    db    0, 21h, 24h,   0,   0, 25h, 26h,   0,   0,   0, 2Fh, 23h,   0,   0, 27h,   0
+                    db    0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 2Ah,   0, 2Fh,   0
+                    db  2Dh
 
 ;----------------------------------------------------------------------------
 ;
-; Index	of Items sets
+; Index of Items sets
 ;
 ;----------------------------------------------------------------------------
-idxRoomItems:	    dw ItemRation
-		    dw ItemCard1
-		    dw ItemBinoculars
-		    dw ItemMines
-		    dw ItemGasMask
-		    dw ItemSMG
-		    dw ItemCard4
-		    dw ItemMines2
-		    dw ItemGoggles
-		    dw ItemParachute			    ; 10
-		    dw ItemPBombAmmo
-		    dw ItemAmmo
-		    dw ItemMissile
-		    dw ItemGrenade
-		    dw ItemPBomb
-		    dw ItemCard2
-		    dw ItemBox
-		    dw ItemCard3
-		    dw ItemMineDetect
-		    dw ItemBag				    ; 20
-		    dw ItemRation2
-		    dw ItemArmor
-		    dw ItemBombSuit
-		    dw ItemPBomb2
-		    dw ItemUniform
-		    dw ItemAntenna
-		    dw ItemUniMineAmm
-		    dw ItemFlashLight
-		    dw ItemAmmox3
-		    dw ItemAntidote			    ; 30
-		    dw ItemCompass
-		    dw ItemRocket
-		    dw ItemCard5Ammo
-		    dw ItemRation3
-		    dw ItemRation4
-		    dw ItemCard6
-		    dw ItemBombAmmRat
-		    dw ItemAmmox2
-		    dw ItemOxygen
-		    dw ItemGun
-		    dw ItemPBomb3
-		    dw ItemAmmo2
-		    dw ItemPBombAmmo2
-		    dw ItemAmmo3
-		    dw ItemRation5
-		    dw ItemMissile2
-		    dw ItemAmmox2_
+idxRoomItems:       dw ItemRation
+                    dw ItemCard1
+                    dw ItemBinoculars
+                    dw ItemMines
+                    dw ItemGasMask
+                    dw ItemSMG
+                    dw ItemCard4
+                    dw ItemMines2
+                    dw ItemGoggles
+                    dw ItemParachute                        ; 10
+                    dw ItemPBombAmmo
+                    dw ItemAmmo
+                    dw ItemMissile
+                    dw ItemGrenade
+                    dw ItemPBomb
+                    dw ItemCard2
+                    dw ItemBox
+                    dw ItemCard3
+                    dw ItemMineDetect
+                    dw ItemBag                              ; 20
+                    dw ItemRation2
+                    dw ItemArmor
+                    dw ItemBombSuit
+                    dw ItemPBomb2
+                    dw ItemUniform
+                    dw ItemAntenna
+                    dw ItemUniMineAmm
+                    dw ItemFlashLight
+                    dw ItemAmmox3
+                    dw ItemAntidote                         ; 30
+                    dw ItemCompass
+                    dw ItemRocket
+                    dw ItemCard5Ammo
+                    dw ItemRation3
+                    dw ItemRation4
+                    dw ItemCard6
+                    dw ItemBombAmmRat
+                    dw ItemAmmox2
+                    dw ItemOxygen
+                    dw ItemGun
+                    dw ItemPBomb3
+                    dw ItemAmmo2
+                    dw ItemPBombAmmo2
+                    dw ItemAmmo3
+                    dw ItemRation5
+                    dw ItemMissile2
+                    dw ItemAmmox2_
 
 
 ;----------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 ;----------------------------------------------------------------------------
 ;
-; Texts	description of items when they are taken
-; Not used in English version (the descriptions	are empty)
+; Texts description of items when they are taken
+; Not used in English version (the descriptions are empty)
 ;
 ;----------------------------------------------------------------------------
 ItemTakeText:       db   16,  56,  46, 119,  69,  18,  29,  43,  65,  67,  96,  75, 151,   0,  85,  98

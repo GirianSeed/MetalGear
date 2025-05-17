@@ -6,104 +6,104 @@
 ;
 ;----------------------------------------------------------------------------
 
-		    org	#6000
+                    org #6000
 
 
-	include	"sound/sound.asm"
+        include "sound/sound.asm"
 
 
-	include	"data/weapondamage.asm"
+        include "data/weapondamage.asm"
 
-	include	"data/shapes.asm"
-
-
-	include	"data/itemtaketextid.asm"
-
-	include	"data/itemtakeamount.asm"
+        include "data/shapes.asm"
 
 
-	include	"data/palettes.asm"
+        include "data/itemtaketextid.asm"
 
-	include	"data/elevatorrooms.asm"
-
-	include	"data/roomsconnections.asm"
+        include "data/itemtakeamount.asm"
 
 
-	include	"data/actorsinrooms.asm"
+        include "data/palettes.asm"
 
-	include	"data/actorspriteattr.asm"
+        include "data/elevatorrooms.asm"
 
-
-	include	"data/paths.asm"
-
-	include	"data/respawninfo.asm"
-
-	include	"data/maths.asm"
+        include "data/roomsconnections.asm"
 
 
-	include	"gfx/targetspr.asm"
+        include "data/actorsinrooms.asm"
+
+        include "data/actorspriteattr.asm"
 
 
-	include	"gfx/items.asm"
+        include "data/paths.asm"
 
-	include	"gfx/alerticon.asm"
+        include "data/respawninfo.asm"
 
-	include	"gfx/radio.asm"
-
-	include	"gfx/camera.asm"
+        include "data/maths.asm"
 
 
+        include "gfx/targetspr.asm"
 
-	include	"data/menuweapontexts.asm"
 
-	include	"data/menuequipmenttexts.asm"
+        include "gfx/items.asm"
 
-	include	"data/menuradiotexts.asm"
+        include "gfx/alerticon.asm"
+
+        include "gfx/radio.asm"
+
+        include "gfx/camera.asm"
 
 
 
-	include	"data/weapongfxxy.asm"
-	IF (JAPANESE)
-	include	"data/weaponnamesjp.asm"
-	ELSE
-	include	"data/weaponnames.asm"
-	ENDIF
+        include "data/menuweapontexts.asm"
+
+        include "data/menuequipmenttexts.asm"
+
+        include "data/menuradiotexts.asm"
 
 
 
-	include	"data/weaponcursorxy.asm"
+        include "data/weapongfxxy.asm"
+        IF (JAPANESE)
+        include "data/weaponnamesjp.asm"
+        ELSE
+        include "data/weaponnames.asm"
+        ENDIF
 
 
 
-	include	"data/itemgfxxy.asm"
-
-	IF (JAPANESE)
-	include	"data/itemnamesjp.asm"
-	ELSE
-	include	"data/itemnames.asm"
-	ENDIF
-
-	include	"data/itemcursorxy.asm"
+        include "data/weaponcursorxy.asm"
 
 
 
-	include	"data/itemsinrooms.asm"
+        include "data/itemgfxxy.asm"
 
-	include	"logic/spawnitem.asm"
+        IF (JAPANESE)
+        include "data/itemnamesjp.asm"
+        ELSE
+        include "data/itemnames.asm"
+        ENDIF
 
-	include	"logic/addroomitems.asm"
-
-	include	"logic/drawitemsinroom.asm"
-
-
-
-	include	"logic/gamedemo.asm"
-
-	include	"logic/checkpoints.asm"
-
-	include	"logic/passwords.asm"
+        include "data/itemcursorxy.asm"
 
 
-		    ; Fill empty space
-		    ds      (#C000-$),#ff
-		    ASSERT  $=#C000
+
+        include "data/itemsinrooms.asm"
+
+        include "logic/spawnitem.asm"
+
+        include "logic/addroomitems.asm"
+
+        include "logic/drawitemsinroom.asm"
+
+
+
+        include "logic/gamedemo.asm"
+
+        include "logic/checkpoints.asm"
+
+        include "logic/passwords.asm"
+
+
+                    ; Fill empty space
+                    ds      (#C000-$),#ff
+                    ASSERT  $=#C000
