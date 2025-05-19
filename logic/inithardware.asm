@@ -46,7 +46,7 @@ InitHardware2:
                     djnz    InitHardware2
 
                     ld      hl, FNKSTR
-                    ld      de,  FNKSTR+1
+                    ld      de, FNKSTR+1
                     ld      bc, 0A0h
                     ld      (hl), 0
                     ldir                                    ; Clear texts for function keys (!?)

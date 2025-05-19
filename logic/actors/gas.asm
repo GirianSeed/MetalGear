@@ -26,7 +26,6 @@ GasLogic:
                     dw GasWait
                     dw GasShow
 
-
 GasWait:
                     dec     (ix+GAS.TIMER)                  ; Decrement hidden time
                     ret     nz                              ; The gas is not visible yet
@@ -38,7 +37,6 @@ GasWait:
                     call    SetSprColor                     ; Set gas sprites colors
 
                     jp      NextActorStatus                 ; Next status
-
 
 GasShow:
                     ld      b, 7                            ; Animation bit mask (each 8 iterations)

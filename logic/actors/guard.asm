@@ -48,7 +48,6 @@ GuardLogic:
                     dw GuardSleeping
                     dw GuardWakeUp
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Guard patrol logic. Moves from point to point of the predefined path
@@ -58,7 +57,6 @@ GuardLogic:
 GuardPatrolLogic:
                     call    GuardPatrolLogic2
                     jr      ChangeGuardSprDir
-
 
 GuardPatrolLogic2:
                     call    ChkSleepyGuard                  ; Check if the guard fall asleep
@@ -159,7 +157,6 @@ NextGuardStatus:
                     inc     (ix+ACTOR.GuardStatus)          ; Next status
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and look
@@ -176,7 +173,6 @@ GuardPatrolWait:
                     ld      (ix+ACTOR.Direction), a         ; 1=Up, 2=Down, 3=Left, 4=Right
                     ld      (ix+ACTOR.GuardStatus), 0
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -214,7 +210,6 @@ ChkSleepyGuard:
                     ld      c, 40h                          ; Sleeping sign (Zzz)
                     jp      AddEnemy                        ; Add sleeping sign actor
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Guard sleeping logic
@@ -240,7 +235,6 @@ GuardSleeping:
                     ld      (hl), 0                         ; Reset life value to discard the actor and hide its sprites
                     jr      NextGuardStatus                 ; Wake up status
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Guard wake up logic
@@ -257,5 +251,3 @@ GuardWakeUp:
 
                     ld      a, 34                           ; TEXT: Overslept
                     jp      SetTextUnskippable
-
-

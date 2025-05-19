@@ -4,7 +4,6 @@
 ;
 ;----------------------------------------------------------------------------
 
-
                     org #4000
 
                     db  41h, 42h
@@ -54,7 +53,6 @@
                     dw SoundWorkAreaSfx
                     dw SoundWorkAreaSfx+1
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Functions entry points
@@ -65,81 +63,65 @@ ADD_HL_A_:
                     call    ADD_HL_A
                     jr      SetBanks_1_2_X___
 
-
 ADD_DE_A__:
                     call    ADD_DE_A
                     jr      SetBanks_1_2_X___
-
 
 SetSoundEntry__:
                     call    SetSoundEntryChk
                     jr      SetBanks_1_2_X___
 
-
 SetText_:
                     call    SetText
                     jr      SetBanks_1_2_X___
-
 
 ChkControlPlayer_:
                     call    ChkControlPlayer
                     jr      SetBanks_1_2_X___
 
-
 ControlPlayerV_:
                     call    ControlPlayerV
                     jr      SetBanks_1_2_X___
-
 
 ChkPlayerColl_:
                     call    ChkPlayerColl
                     jr      SetBanks_1_2_X___
 
-
 ChkExitScreen_:
                     call    ChkExitRoom
                     jr      SetBanks_1_2_X___
-
 
 SetPlayerSpr_:
                     call    AnimatePlayer
                     jr      SetBanks_1_2_X___
 
-
 DrawRadio_:
                     call    DrawRadio
                     jr      SetBanks_1_2_X___
-
 
 RadioSignalUp_:
                     call    RadioSignalUp
                     jr      SetBanks_1_2_X___
 
-
 ExitRadio_:
                     call    ExitRadio
                     jr      SetBanks_1_2_X___
-
 
 Load1bppGFX_:
                     call    Load1bppTiles
                     jr      SetBanks_1_2_X___
 
-
 Load2bppTile_:
                     call    Load2bppTile
                     jr      SetBanks_1_2_X___
-
 
 FillRect_:
                     call    FillRect
                     jr      SetBanks_1_2_X___
 
-
 ClearScreen_:
                     call    ClearScreen
                     jr      SetBanks_1_2_X___
-
 
 DisableScreenBnk:
                     call    DisableScreen
@@ -147,81 +129,65 @@ DisableScreenBnk:
 SetBanks_1_2_X___:
                     jr      SetBanks_1_2_X____
 
-
 VDP_Copy_Dot_:
                     call    VDP_Copy_Dot
                     jr      SetBanks_1_2_X____
-
 
 EnableScreenBnk:
                     call    EnableScreen
                     jr      SetBanks_1_2_X____
 
-
 PrintTextXY_:
                     call    PrintTextXY
                     jr      SetBanks_1_2_X____
-
 
 DrawTileP1_:
                     call    DrawTile_P1
                     jr      SetBanks_1_2_X____
 
-
 GetDirLeftRight_:
                     call    GetDirLeftRight
                     jr      SetBanks_1_2_X____
-
 
 GetPointerDE2A_:
                     call    GetPointerDE2A
                     jr      SetBanks_1_2_X____
 
-
 SetVRAMAddWR_:
                     call    SetVramAddressWR
                     jr      SetBanks_1_2_X____
-
 
 RAMtoVRAM__:
                     call    RAMtoVRAM
                     jr      SetBanks_1_2_X____
 
-
 SetPaletteColor_:
                     call    SetPaletteColor
                     jr      SetBanks_1_2_X____
-
 
 GetItemInvAdd_:
                     call    GetItemInvAdd
                     jr      SetBanks_1_2_X____
 
-
 IncClassLv_:
                     call    IncClassLv
                     jr      SetBanks_1_2_X____
-
 
 EraseTextXY_:
                     call    EraseTextXY
                     jr      SetBanks_1_2_X____
 
-
 InitGameArea:
                     call    InitGame4
                     jr      SetBanks_1_2_X____
-
 
 DrawChar_:
                     call    DrawChar
                     jr      SetBanks_1_2_X____
 
-
 ClearSprites_:
                     call    ClearSprAttr
                     jr      SetBanks_1_2_X____
-
 
 DrawMetalGear_:
                     call    DrawMetalGear
@@ -229,81 +195,65 @@ DrawMetalGear_:
 SetBanks_1_2_X____:
                     jr      SetBanks_1_2_X__
 
-
 ClearPage0_:
                     call    ClearPage0
                     jr      SetBanks_1_2_X__
-
 
 LoadRoomTiles_:
                     call    LoadRoomTiles
                     jr      SetBanks_1_2_X__
 
-
 ChkRoomPal_:
                     call    SetRoomPal
                     jr      SetBanks_1_2_X__
-
 
 DrawTileBlock_:
                     call    DrawTileBlkTimp
                     jr      SetBanks_1_2_X__
 
-
 EraseMetalGear_:
                     call    EraseMetalGear
                     jr      SetBanks_1_2_X__
-
 
 StoreControls__:
                     call    StoreControls_
                     jr      SetBanks_1_2_X__
 
-
 SetDefaultPal_:
                     call    SetDefaultPal
                     jr      SetBanks_1_2_X__
-
 
 SetPalette_:
                     call    SetPalette
                     jr      SetBanks_1_2_X__
 
-
 SetUpKonamiLogo_:
                     call    SetUpKonamiLogo
                     jr      SetBanks_1_2_X__
-
 
 VdpCopyByteBnks:
                     call    VDP_Copy_Byte
                     jr      SetBanks_1_2_X__
 
-
 SetTextUnskip_:
                     call    SetTextUnskippable
                     jr      SetBanks_1_2_X__
-
 
 DrawDestrucTimer_:
                     call    DrawDestrucTimer
                     jr      SetBanks_1_2_X__
 
-
 DrawLineVert_:
                     call    DrawLineVert
                     jr      SetBanks_1_2_X__
-
 
 DrawLineHoriz_:
                     call    DrawLineHoriz
                     jr      SetBanks_1_2_X__
 
-
 DismissActor2_:
                     call    DismissActor
                     jr      SetBanks_1_2_X__
-
 
 SetSound_:
                     call    SetSoundEntry
@@ -311,88 +261,71 @@ SetSound_:
 SetBanks_1_2_X__:
                     jr      SetBanks_1_2_X_
 
-
 SetRoomPal_:
                     call    SetRoomPal2
                     jr      SetBanks_1_2_X_
-
 
 TextBoxLogic_:
                     call    TextBoxLogic
                     jr      SetBanks_1_2_X_
 
-
 DrawRecv_:
                     call    PrintRecv
                     jr      SetBanks_1_2_X_
-
 
 DrawSend_:
                     call    PrintSend
                     jr      SetBanks_1_2_X_
 
-
 InitGame_:
                     call    InitGame
                     jr      SetBanks_1_2_X_
-
 
 GameLogic_:
                     call    GameLogic                       ; ;
                     jr      SetBanks_1_2_X_
 
-
 ClearPage_:
                     call    ClearPage
                     jr      SetBanks_1_2_X_
-
 
 Load3pppTile_:
                     call    Load3bppTiles
                     jr      SetBanks_1_2_X_
 
-
 SetMenuWeaponPal_:
                     call    SetMenuWeaponPal
                     jr      SetBanks_1_2_X_
-
 
 LoadGameGfx_:
                     call    LoadGameGfx
                     jr      SetBanks_1_2_X_
 
-
 CopyPalToRAM_:
                     call    CopyPalToRAM
                     jr      SetBanks_1_2_X_
-
 
 FadeOutLogic_:
                     call    FadeOutLogic
                     jr      SetBanks_1_2_X_
 
-
 DrawRadioFreq_:
                     call    DrawRadioFreq
                     jr      SetBanks_1_2_X_
-
 
 SetSnakeSprAttr_:
                     call    SetSnakeSprAtt
                     jr      SetBanks_1_2_X_
 
-
 SetSnakeSprPatt_:
                     call    SetSnakeSprPatt
                     jr      SetBanks_1_2_X_
-
 
 EraseSprAttRAM_:
                     call    EraseSprAttRAM
 
 SetBanks_1_2_X_:
                     jr      SetBanks_1_2_X
-
 
 ClearGameVars_:
                     call    ClearGameVars
@@ -424,9 +357,6 @@ SetBanks_1_2_X:
 SetBanks_1_2_X2:
                     pop     af
                     ret
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -470,7 +400,6 @@ InterruptTick2:
                     ei
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; HL = HL + (A - 1) * 2
@@ -504,7 +433,6 @@ ADD_HL_A:
                     inc     h
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; DE = DE + A
@@ -518,7 +446,6 @@ ADD_DE_A:
 
                     inc     d
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -539,7 +466,6 @@ JumpIndex:
                     ld      d, (hl)                         ; DE = Address to jump
                     ex      de, hl
                     jp      (hl)
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -607,7 +533,6 @@ Start:
 DummyLoop:
                     jr      $                               ; All the logic is handled in the interrupt routine
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set banks 1, 2, 3
@@ -669,7 +594,6 @@ SetBanks:
                     ei
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set banks 7,8,9
@@ -685,7 +609,6 @@ SetBanks_7_8_9:
                     push    af
                     ld      a, 7
                     jr      SetBanks
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -718,8 +641,6 @@ SetBanks_D_E_F:
                     push    af
                     ld      a, 0Dh
                     jr      SetBanks
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -772,7 +693,6 @@ SetSoundEntry:
                     ei
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get a pointer from an array of pointers depending on the room number
@@ -798,7 +718,6 @@ GetPointerDE2A:
                     ld      d, (hl)
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; HL = (A-1) * 4
@@ -814,7 +733,6 @@ HL_4xA:
                     add     hl, hl
                     add     hl, hl
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -834,7 +752,6 @@ SetColorsIndexes2:
                     ld      b, 0
                     ldir
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -872,7 +789,6 @@ GetNibbleHL_A2:
 GetNibbleHL_A3:
                     and     0Fh
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -924,8 +840,6 @@ GetNextRoomNum4:
                     ld      a, c
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Get elevator and player Y coordinate to match the floor used to enter the elevator
@@ -951,7 +865,6 @@ GetElevatorPos2:
                     inc     hl
                     inc     hl
                     jr      GetElevatorPos2
-
 
 ; Sets the player and elevator Y coordinates to match the floor used to enter
 
@@ -995,7 +908,6 @@ GetElevatorRoomDat:
 
                     jr      SetBanks_1_2_3_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Initializes the default statuses of the doors: open or locked
@@ -1004,7 +916,6 @@ GetElevatorRoomDat:
 
 SetDefaultDoorLock:
                     call    SetBanks_D_E_F
-
 
                     ld      de, IdDoorsLogic                ; Array that defines the open logic of each door and its default status (open/closed)
                     ld      hl, DoorOpenArray               ; 0=Open/1=Closed status of all doors
@@ -1026,7 +937,6 @@ SetDefaultDoorLock3:
 
                     jr      SetBanks_1_2_3_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check whether a room is isolated or not
@@ -1047,7 +957,6 @@ ChkIsolatedRoom:
                     ld      (IsolatedRoom), a               ; Can't use binoculars. Shooting does not trigger the alarm
 
                     jr      SetBanks_1_2_3_
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1092,7 +1001,6 @@ GET_DE_A:
                     ld      a, (de)
                     jr      SetBanks_1_2_3_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get (TempPointer)+A
@@ -1102,7 +1010,6 @@ GET_DE_A:
 GetTempPHL_A:
                     call    SetBanks_4_5_6
                     ld      hl, (TempData)
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1117,8 +1024,6 @@ Get_HL_A:
 SetBanks_1_2_3_:
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Get (HL + A - 1)
@@ -1129,8 +1034,6 @@ GET_HL_A_DEC:
                     call    SetBanks_4_5_6
                     dec     a
                     jr      Get_HL_A
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1149,7 +1052,6 @@ GetItemAmount:
                     ld      de, ItemTakeAmount
                     call    ADD_DE_A
                     jr      GET_DE_A
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1176,7 +1078,6 @@ GetShapeInfo:
 
                     jr      SetBanks_1_2_3_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get cursor coorinates for selected weapon
@@ -1186,7 +1087,6 @@ GetShapeInfo:
 CalcCursorXYWeapon:
                     ld      de, WeaponArrowXY
                     jr      CalcCursorXY
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1206,7 +1106,6 @@ CalcCursorXY:
 
                     jr      SetBanks_1_2_3_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get a pointer to item data in inventory
@@ -1220,12 +1119,10 @@ CalcCursorXY:
 ;
 ;----------------------------------------------------------------------------
 
-
 GetItemInvAdd:
                     ld      hl, Equipment                   ; +0 Item ID, +1 tens/units, +2 hundreds, +3 unused
                     ld      b, 25                           ; Max. number of items
                     jr      GetInventoryAdd
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1239,7 +1136,6 @@ GetItemInvAdd:
 ;  Cy = Weapon not in inventory
 ;
 ;----------------------------------------------------------------------------
-
 
 GetWeaponInvAdd:
                     ld      hl, Weapons
@@ -1259,7 +1155,6 @@ GetInventoryAdd2:
 
                     scf
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1303,8 +1198,6 @@ AddDoorsData3:
                     inc     hl                              ; HL+1
                     inc     de                              ; DE+1
 
-
-
                     push    de
 
                     dec     a
@@ -1327,8 +1220,6 @@ AddDoorsData3:
                     inc     hl                              ; HL+3
 
                     pop     de
-
-
 
                     ld      a, (de)                         ; DE+1
                     ld      (hl), a                         ; +3 (ID) Render type (door, wall...)
@@ -1422,8 +1313,6 @@ AddDoorsData4:
                     inc     de
                     jp      AddDoorsData3
 
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Draw a block of tiles
@@ -1442,9 +1331,6 @@ DrawTilesBlock:
                     inc     hl
                     jr      DrawTileBlkTimp3
 
-
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Draw Metal Gear in the room
@@ -1455,8 +1341,6 @@ DrawMetalGear:
                     ld      hl, MetalGearTileMap
                     jr      DrawTileBlkTimp
 
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Restore Metal Gear background
@@ -1465,7 +1349,6 @@ DrawMetalGear:
 
 EraseMetalGear:
                     ld      hl, MetalGearTileMap2
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -1531,7 +1414,6 @@ DrawTileBlkTimp5:
                     jr      nz, DrawTileBlkTimp4
 
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1599,7 +1481,6 @@ SetAreaMusic5:
                     ld      (AlertMode), a
                     ld      a, 1Eh
                     ld      (AlertRespawnTimer), a
-
 
 ;
 ; Checks the music for this area
@@ -1743,7 +1624,6 @@ ChkRadioCalls5:
                     ld      (RadioCallFlag), a              ; 1=Start incoming call, 2=Stop incoming call
                     jp      SetBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Rooms without alert
@@ -1763,7 +1643,6 @@ RoomsNoAlert:       db    6,   9,  10
                     db 133                                  ; Dr. Prettrovich is too late
                     db 129                                  ; Isolated room. Prisoner informs Dr. Pettrovich was moved to building 2
                     db 143                                  ; Parachute cell
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1806,7 +1685,6 @@ SaveBckgTiles3:
                     jr      nz, SaveBckgTiles2
 
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1854,7 +1732,6 @@ DecItemUnits2:
                     ld      (SelectedWeapon), a
                     jp      DrawWeaponHUD
 
-
 DecItemUnits3:
                     ld      a, (hl)
                     dec     hl
@@ -1895,7 +1772,6 @@ DecItemUnits3:
                     ld      (SelectedItem), a
                     jp      DrawItemHUD                     ; Erase item in HUD
 
-
 ;----------------------------------------------------------------------------
 ; Remove item from inventory
 ; Erase item ID and amount
@@ -1911,7 +1787,6 @@ RemoveItem:
                     inc     hl
                     ld      (hl), a                         ; Erase dummy
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1957,7 +1832,6 @@ SetActorSprColors3:
                     djnz    SetActorSprColors3
 
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2050,7 +1924,7 @@ DrawWeaponMenu3:
 
 DrawWeaponMenu4:
                     ld      a, (TempData2+1)                ; Enemy XY, MetaTileSetAddr
-                    ld      hl,  TempData3+1                ; MetaTiles, Enemy
+                    ld      hl, TempData3+1                 ; MetaTiles, Enemy
                     add     a, (hl)
                     ld      (TempData2+1), a                ; Enemy XY, MetaTileSetAddr
 
@@ -2067,7 +1941,6 @@ DrawWeaponMenu4:
                     ld      (TempData2+1), de               ; Next weapon coordinates
                     jr      DrawWeaponMenu6
 
-
 DrawWeaponMenu5:
                     cp      2
                     jr      nz, DrawWeaponMenu6
@@ -2081,7 +1954,6 @@ DrawWeaponMenu6:
 
 SetBanks_1_2_3__:
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2139,8 +2011,6 @@ RenderAmmoHUD:
                     ld      de, 0C0C8h                      ; Coordinates
                     jp      Render3Numbers                  ; Draw ammo amount
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Erase the content of the weapon box in HUD
@@ -2153,8 +2023,6 @@ EraseWeaponBox:
                     xor     a                               ; Black color
                     ld      d, a                            ; Page 0
                     jp      FillRect
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2260,7 +2128,6 @@ DrawEquipMenu5:
 
                     jp      SetBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw in the HUD the selected item
@@ -2325,7 +2192,6 @@ FillRectBlack:
                     ld      d, a                            ; Page 0
                     jp      FillRect
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw item amount in equipment screen
@@ -2368,8 +2234,6 @@ DrawItemAmountInv:
                     inc     hl                              ; Pointer to item amount
                     jp      Render3Numbers
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Setup radio frequencies availables in the room
@@ -2378,7 +2242,6 @@ DrawItemAmountInv:
 
 UpdateRadio:
                     call    SetBanks_D_E_F                  ; Setup radio frequencies and characters available
-
 
                     ld      de, idxRoomRadio
                     call    GetRoomPointer                  ; DE = Pointer to radio data
@@ -2441,13 +2304,10 @@ UpdateRadio3:
                     call    ADD_DE_A                        ; DE = Pointer to next available character on radio
                     jr      UpdateRadio2
 
-
 SetNumRadioPers:
                     ld      a, c                            ; Number of available characters on radio
                     ld      (NumRadioPersons), a
                     jp      SetBanks1_2_3
-
-
 
 ;----------------------------------------------------------------------------
 ; Radio frequencies
@@ -2459,7 +2319,6 @@ RadioFreqs:         db FREQ_BIGBOSS                         ; Big Boss
                     db FREQ_DIANE_BUILDING2                 ; Diane building 2
                     db FREQ_JENIFFER                        ; Jeniffer
                     db FREQ_BIGBOSS_BUILDING2               ; Big boss building 2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2473,8 +2332,6 @@ SetBankInA0_6:
                     ld      a, 6
                     jr      SetBankInA0
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set bank 9 in #A000-#BFFF
@@ -2486,7 +2343,6 @@ SetBankInA0_9:
                     push    af
                     ld      a, 9
                     jr      SetBankInA0
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2500,8 +2356,6 @@ SetBankInA0_C:
                     ld      a, 0Ch
                     jr      SetBankInA0
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set bank #F in #A000-#BFFF
@@ -2512,7 +2366,6 @@ SetBankInA0_F:
                     di
                     push    af
                     ld      a, 0Fh
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2529,7 +2382,6 @@ SetBankInA0:
                     pop     af
                     ei
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2625,8 +2477,6 @@ LoadColliTiles3:
 
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Load tileset
@@ -2659,7 +2509,6 @@ LoadTileset:
                     pop     bc
                     ret
 
-
 LoadTilesFlip:
                     ld      a, (TempData)
                     ld      b, a                            ; Number of tiles
@@ -2671,7 +2520,6 @@ LoadTilesFlip:
                     call    Load3bppTileFlip
                     pop     bc
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2698,7 +2546,6 @@ TileToVramAdd:
                     ld      de, 8000h                       ; Start of VRAM page 1
                     add     hl, de
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2739,7 +2586,6 @@ LoadGfxDoors:
 
                     jr      RestoreBanks1_2_3
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Load tiles gfx from ROM/RAM to VRAM in a block (e.g.: a door)
@@ -2767,7 +2613,6 @@ LoadTilesGfxBlk:
                     dec     c
                     jr      nz, LoadTilesGfxBlk
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -2802,10 +2647,8 @@ LoadRoomSpr2:
                     inc     de
                     jr      LoadRoomSpr2
 
-
 RestoreBanks1_2_3:
                     jp      SetBanks1_2_3
-
 
 LoadRoomSpr3:
                     ld      a, (de)
@@ -2824,7 +2667,6 @@ LoadRoomSpr3:
                     ld      e, c                            ; DE = Pointer to sprites gfx
                     jp      UnpackGfx1
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Draw pitfall in VRAM page 1
@@ -2835,8 +2677,6 @@ LoadRoomSpr3:
 DrawPitfall_:
                     call    SetBanks_7_8_9
                     jr      DrawPitfall
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -2863,7 +2703,6 @@ DrawPitfall:
                     call    DrawPitfallTiles
                     jr      RestoreBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set equipment and weapon menu palette
@@ -2875,7 +2714,6 @@ SetMenuWeaponPal:
                     ld      hl, PalMenuWeapon
                     call    SetPalette
                     jr      RestoreBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2891,7 +2729,6 @@ SnakePal:           db    7, 12h,   2
                     db  0Ah, 63h,   4
                     db 0FFh
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set radio screen palette
@@ -2903,8 +2740,6 @@ SetRadioPal:
                     ld      hl, RadioPalette
                     call    SetPalette
                     jr      SetBanks1_2_3_d
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -2963,7 +2798,6 @@ ChkFlashLight:
                     ld      a, 0Bh                          ; Black palette
                     jr      SetRoomPal2
 
-
 ChkGogglesPal:
                     ld      a, (SelectedItem)
                     cp      SELECTED_GOGGLES                ; Goggles
@@ -2971,7 +2805,6 @@ ChkGogglesPal:
 
                     ld      a, 0Ah
                     jr      SetRoomPal2                     ; Set gray colors to simulate infrared
-
 
 SetRoomPal1:
                     ld      a, b
@@ -2989,7 +2822,6 @@ SetRoomPal3:
 SetBanks1_2_3_d:
                     jp      SetBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Color numbers used when decoding 2/3 bpp graphics
@@ -3000,7 +2832,6 @@ ColorsItems:        db    0,   6,   7,   8, 0Ah, 0Ch, 0Eh, 0Fh
 ColorsCameras:      db    0,   2, 0Dh, 0Fh
 ColorsPitfall:      db    0,   5,   9, 0Fh
 ColSnakePic:        db    2,   4,   8, 0Bh, 0Dh, 0Ch, 0Eh, 0Fh
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3069,7 +2900,6 @@ LoadGameGfx:
 SetBanks_1_2_3_a:
                     jp      SetBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Print TRANSCEIVER title and RECV
@@ -3081,7 +2911,6 @@ PrintTransceiv:
                     ld      hl, txtTransceiv
                     call    PrintTextXY
                     jr      SetBanks_1_2_3_a
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3100,7 +2929,6 @@ LoadPowSwitTiles:
                     call    Load3bppTiles                   ; Decode and load 3bpp tiles
 
                     jr      SetBanks_1_2_3_a
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3181,7 +3009,6 @@ LoadSprExplosionBig:
                     ld      de, SprExplosionB
                     jr      LoadSprAmmo4
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Load small explosion sprites
@@ -3215,7 +3042,6 @@ LoadSprMissilRocket:
                     call    UnpackGfx1
 
                     jr      SetBanks_1_2_3_b
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3296,19 +3122,15 @@ DrawTileList2:
                     ld      e, a
                     jr      DrawTileList
 
-
 DrawTileList3:
                     ld      a, c
                     call    DrawTile_P1
                     call    CalcNextCharPos
                     jr      DrawTileList2
 
-
 DrawTileList4:
                     pop     de
                     jp      SetBanks1_2_3
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3317,7 +3139,6 @@ DrawTileList4:
 ; DE = Room tiles buffer
 ; HL = Room metatiles map
 ;----------------------------------------------------------------------------
-
 
 UnpackMetatiles:
                     ld      a, 8
@@ -3375,8 +3196,6 @@ UnpackMetatiles4:
                     dec     (hl)
                     jr      nz, UnpackMetatiles2
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3446,8 +3265,6 @@ RenderRoom3:
                     or      b
                     jr      nz, RenderRoom3
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3530,8 +3347,6 @@ RAMtoVRAM2:
                     jr      nz, RAMtoVRAM2                  ; Next iteration. B=0 so transfer 256 bytes
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Fill VRAM
@@ -3572,8 +3387,6 @@ FillVRAM3:
                     pop     de
                     ret
 
-
-
 ;
 ; Unused
 ;
@@ -3588,8 +3401,6 @@ WriteVRAM:
                     out     (c), a
                     pop     bc
                     ret
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -3629,8 +3440,6 @@ SetVramAddressWR:
                     ei
                     ret
 
-
-
 ;-------------------------------------------------------------------------------
 ; Set VRAM address (Read)
 ;
@@ -3665,7 +3474,6 @@ SetVramAddressRD:
                     pop     bc
                     ei
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -3714,7 +3522,6 @@ UnpackGfx2:
                     ex      de, hl
                     jr      UnpackGfx2
 
-
 UnpackGfx3:
                     ld      a, (de)
                     inc     de
@@ -3750,7 +3557,6 @@ EnableScreen:
                     call    WRTVDP
                     jr      EnableSprites
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Disable screen and sprites display
@@ -3764,8 +3570,6 @@ DisableScreen:
                     ld      c, 1
                     call    WRTVDP
                     jr      DisableSprites
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3810,7 +3614,6 @@ ClearSprAttr:
                     ld      bc, 80h                         ; 32 sprites x 4 bytes of attributes
                     jp      FillVRAM
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Clear sprite attributes in RAM buffer
@@ -3818,13 +3621,12 @@ ClearSprAttr:
 ;----------------------------------------------------------------------------
 
 EraseSprAttRAM:
-                    ld      de,  SprAttRAM+1
+                    ld      de, SprAttRAM+1
                     ld      hl, SprAttRAM
                     ld      bc, 7Fh
                     ld      (hl), 0E0h
                     ldir
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3839,7 +3641,6 @@ DisableSprites:
                     ld      c, 8
                     jp      WRTVDP
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Enable sprites
@@ -3852,8 +3653,6 @@ EnableSprites:
                     ld      b, a
                     ld      c, 8
                     jp      WRTVDP
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -3901,7 +3700,6 @@ SetPaletteColor:
                     pop     bc
                     ei
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -3972,7 +3770,6 @@ SetPalette:
                     call    SetPaletteColor
                     jr      SetPalette
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Wait until VDP command finishes
@@ -3985,7 +3782,6 @@ WaitVdpCmd:
                     rra
                     jp      c, WaitVdpCmd
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4026,7 +3822,6 @@ ReadStatusReg:
                     pop     bc
                     ei
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4078,7 +3873,6 @@ DrawLineHoriz:
                     ei
                     ret
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Draw vertical line
@@ -4090,7 +3884,6 @@ DrawLineHoriz:
 ;   B = NY
 ;   C = Color
 ;-------------------------------------------------------------------------------
-
 
 DrawLineVert:
                     call    WaitVdpCmd
@@ -4131,7 +3924,6 @@ DrawLineVert:
                     ei
                     ret
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Draw rectangle
@@ -4143,7 +3935,6 @@ DrawLineVert:
 ;   E = NY
 ;   C = Color
 ;-------------------------------------------------------------------------------
-
 
 DrawRect:
                     ld      b, e
@@ -4167,7 +3958,6 @@ DrawRect:
                     ld      b, e
                     jp      DrawLineVer_
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Draw vertical line (do not modify BC, DE, HL)
@@ -4180,7 +3970,6 @@ DrawRect:
 ;   C = Color
 ;-------------------------------------------------------------------------------
 
-
 DrawLineVer_:
                     push    hl
                     push    de
@@ -4190,8 +3979,6 @@ DrawLineVer_:
                     pop     de
                     pop     hl
                     ret
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4214,7 +4001,6 @@ DrawLineHor_:
                     pop     de
                     pop     hl
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4280,8 +4066,6 @@ FillRect3:
                     ei
                     ret
 
-
-
 ;-------------------------------------------------------------------------------
 ;
 ; HMMM command
@@ -4346,7 +4130,6 @@ VDP_Copy_Byte:
                     out     (c), a
                     ei
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4436,7 +4219,6 @@ Load1bppTiles:
                     call    CalcNextCharPos
                     djnz    Load1bppTiles
                     ret
-
 
 Load1bppTile:
                     push    bc
@@ -4529,7 +4311,6 @@ LoadTilesGfx2:
                     djnz    LoadTilesGfx
                     ret
 
-
 ;-------------------------------------------------------------------------------
 ; Load flipped tiles gfx from RAM to VRAM
 ;
@@ -4543,7 +4324,7 @@ LoadTilesGfxFlip:
                     push    bc
                     push    de
 
-                    ld      de,  DecodeTileBuf+3
+                    ld      de, DecodeTileBuf+3
                     ld      c, 8                            ; 8 lines
 
 LoadTilesGfxFlip2:
@@ -4588,7 +4369,6 @@ LoadTilesGfxFlip4:
 
                     djnz    LoadTilesGfxFlip
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ; Decode a tile (8x8 pixels) in 1bpp format
@@ -4646,7 +4426,6 @@ Decode1bppTile5:
                     djnz    Decode1bppTile2
                     ret
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Print white text
@@ -4662,7 +4441,6 @@ Decode1bppTile5:
 PrintTextXY:
                     ld      c, 0FFh
                     jr      PrintTextGetXY
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4748,7 +4526,6 @@ DrawChar2:
                     pop     bc
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw tile from page 1 to page 0
@@ -4775,7 +4552,6 @@ DrawTile:
                     pop     bc
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw tile with transparency from page 1 to page 0
@@ -4799,7 +4575,6 @@ DrawTileTIMP:
                     call    GetTileXY_B2                    ; Get the tile coordinates in bank 2
                     jr      DrawTileTIMP3
 
-
 DrawTileTIMP2:
                     call    GetTileXY                       ; Get tile coordinates
 
@@ -4813,7 +4588,6 @@ DrawTileTIMP3:
                     pop     hl
                     pop     bc
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4841,8 +4615,6 @@ DrawTile_P1:
                     pop     bc
                     ret
 
-
-
 ;-------------------------------------------------------------------------------
 ;
 ; Draw a tile in the pitfall buffer
@@ -4868,7 +4640,6 @@ DrawPitfallTile:
                     pop     hl
                     pop     bc
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4896,7 +4667,6 @@ GetTileXY:
                     ld      l, a
                     ret
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Get tile coordinates in tileset 2
@@ -4915,7 +4685,6 @@ GetTileXY_B2:
                     add     a, l
                     ld      l, a                            ; Y = Y + 128
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4947,8 +4716,6 @@ GetPitfallXY:
                     ld      l, a
                     ret
 
-
-
 ;-------------------------------------------------------------------------------
 ;
 ; Calculate the coordinates of the next tile to draw
@@ -4966,8 +4733,6 @@ CalcNextCharPos:
                     add     a, 8
                     ld      e, a
                     ret
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -4998,13 +4763,11 @@ DrawPitfallTiles2:
                     ld      e, a
                     jr      DrawPitfallTiles
 
-
 DrawPitfallTiles3:
                     ld      a, c
                     call    DrawPitfallTile
                     call    CalcNextCharPos
                     jr      DrawPitfallTiles2
-
 
 DrawPitfallTiles4:
                     pop     de
@@ -5040,8 +4803,6 @@ Load2bppTile:
                     djnz    Load2bppTile
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Decode a tile in 2 bit per pixel format
@@ -5061,8 +4822,6 @@ Decode2bppTile2:
                     pop     bc
                     djnz    Decode2bppTile2
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5115,7 +4874,6 @@ Decode2bppRow2:
                     djnz    Decode2bppRow2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Decode 3 bit per pixel tiles
@@ -5147,7 +4905,6 @@ Load3bppTiles:
                     djnz    Load3bppTiles
                     ret
 
-
 Load3bppTileFlip:
                     push    bc
 
@@ -5169,7 +4926,6 @@ Load3bppTileFlip:
                     djnz    Load3bppTileFlip
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Decode a tile in 3 bits per pixel format
@@ -5190,7 +4946,6 @@ Decode3bppTile2:
 
                     djnz    Decode3bppTile2
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5282,7 +5037,6 @@ GetText:
                     ld      de, idxTexts
                     call    GetPointerDE2A
 
-
                     ld      (TextPointer), de               ; Pointer to text
 
                     ld      a, (de)
@@ -5331,11 +5085,9 @@ DecodeText3:
                     inc     hl
                     jr      DecodeText2
 
-
 DecodeTextEnd:
                     xor     a
                     jr      DecodeTextEnd3
-
 
 DecodeTextEnd2:
                     ld      a, 1
@@ -5350,7 +5102,7 @@ DecodeTextEnd3:
 ;----------------------------------------------------------------------------
 
 AddDictEntry:
-        if      (JAPANESE)
+        IF (JAPANESE)
                     cp     #d9
                     ld     c,a
                     jr     nz,AddDictEntry1
@@ -5385,15 +5137,11 @@ AddDictEntry2:
                     inc     hl
                     jr      AddDictEntry2
 
-
 AddDictEntry3:
                     pop     hl
                     jr      DecodeText2
 
-
-
         include "logic/regionlock.asm"
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5522,8 +5270,6 @@ SetSnakeSprCol5:
 SetSnakeSprEnd:
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Update Snake sprite attributes and colors
@@ -5566,7 +5312,6 @@ SetSnakeSprPatt2:
                     otir
                     jr      SetSnakeSprPatt2
 
-
 SetSnakeSprPatt3:
                     ld      b, a                            ; Number of equal bytes
                     inc     hl
@@ -5577,8 +5322,6 @@ SetSnakeSprPatt4:
                     out     (c), a
                     djnz    SetSnakeSprPatt4
                     jr      SetSnakeSprPatt2
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5615,7 +5358,6 @@ SetShotSpr2:
                     inc     hl
                     jr      SetShotSpr4
 
-
 SetShotSpr3:
                     add     a, (ix+PLAYER_SHOT.Y)
                     ld      (hl), a                         ; Shot sprite Y
@@ -5642,7 +5384,6 @@ SetShotSpr4:
                     inc     de
                     djnz    SetShotSpr2
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5681,7 +5422,6 @@ InitLaserRoom3:
                     push    de
 
                     ld      (hl), ID_LASER                  ; 0 = ID
-
 
                     inc     hl
                     ld      a, (de)                         ; 1 = Status
@@ -5775,7 +5515,6 @@ InitLaserRoom4:
                     djnz    InitLaserRoom3
                     jr      SetBanks1_2_3___
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Moving lasers logic
@@ -5820,7 +5559,7 @@ DrawMovingLasers2:
                     ld      de, idxLaserOnOff
                     call    GetPointerDE2A
 
-                    ld      hl,  EnemyList+1                ; Array of enemies in the room
+                    ld      hl, EnemyList+1                 ; Array of enemies in the room
                     ld      a, (NumEnemies)
                     ld      b, a
 
@@ -5845,7 +5584,6 @@ DrawMovingLasers3:
 
 SetBanks1_2_3___:
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -5912,7 +5650,6 @@ UpdateActorSpr3:
 UpdateActorSpr4:
                     jp      SetBanks1_2_3
 
-
 ; Add common sprite offsets
 
 UpdateActorSpr5:
@@ -5952,7 +5689,6 @@ UpdateActorSpr6:
 
                     jp      SetBanks1_2_3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Index of shared sprites offsets
@@ -5980,7 +5716,6 @@ idxSprOffsets:      dw SprOffsets1
                     dw SprOffsets19
                     dw SprOffsets20
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update enemy sprite attributes and colors in RAM
@@ -6007,7 +5742,6 @@ UpdateEnemySprRAM2:
                     add     hl, de                          ; Pointer to next enemy structure
                     djnz    UpdateEnemySprRAM2
                     ret
-
 
 UpdateEnemySprRAM3:
                     set     5, l
@@ -6077,8 +5811,6 @@ UpdateEnemySprRAM6:
                     djnz    UpdateEnemySprRAM4
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Add the actors/enemies of current room
@@ -6126,7 +5858,7 @@ SetupEnemyRoom3:
                     ld      (NumBasementDogs), a            ; Number of dogs in the room
 
                     ld      hl, EnemyList                   ; Array of enemies in the room
-                    ld      de,  EnemyList+1                ; Array of enemies in the room
+                    ld      de, EnemyList+1                 ; Array of enemies in the room
                     ld      bc, 7FFh
                     ld      (hl), 0
                     ldir                                    ; Erase enemies
@@ -6177,8 +5909,6 @@ SetupEnemyRoom4:
 
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Hide the sprites used by the enemies
@@ -6187,12 +5917,11 @@ SetupEnemyRoom4:
 
 HideEnemySprs:
                     ld      hl, EnemySprAttRAM
-                    ld      de,  EnemySprAttRAM+1
+                    ld      de, EnemySprAttRAM+1
                     ld      bc, 57h
                     ld      (hl), 0E0h
                     ldir
                     ret
-
 
 ;
 ; (!?) Unused code
@@ -6219,7 +5948,6 @@ loc_10168A:
                     pop     hl
                     djnz    loc_10168A
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6257,14 +5985,11 @@ AddEnemy2:
                     push    ix
                     call    AddEnemy4                       ; Try to reserve the sprite layers and add the actor
 
-
                     push    ix
                     pop     hl                              ; HL = Pointer to new actor structure
 
-
                     pop     ix                              ; Restore IX
                     ret
-
 
 AddEnemy3:
                     add     hl, de
@@ -6272,7 +5997,6 @@ AddEnemy3:
 
                     xor     a
                     ret
-
 
 AddEnemy4:
                     ld      (TempData3), hl                 ; MetaTiles, Enemy
@@ -6347,7 +6071,6 @@ SetSpritesFree:
 
                     djnz    SetSpritesFree
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6466,11 +6189,8 @@ SetupActor:
                     dw InitBoomerang
                     dw InitSnoringSymbol
 
-
 InitDummy:
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6482,7 +6202,6 @@ InitMetalGear:
                     call    SetBankInA0_C
                     call    InitMetalGear_
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6520,7 +6239,6 @@ SetActorSprCols2:
                     djnz    SetActorSprCols2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Add to actor structure the layer number used by one of its sprites
@@ -6546,7 +6264,6 @@ SetSpriteLayer:
 
                     pop     hl
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6661,7 +6378,6 @@ ChkAlarmEnd:
                     ld      (RoomAlert), a                  ; Set current room in alert
                     ret
 
-
 ChkAlarmEnd2:
                     ld      a, (Room)
                     ld      hl, RoomAlert
@@ -6711,8 +6427,6 @@ StopAlert:
 
                     jp      SetAreaMusic2                   ; Restore area mucis
 
-
-
 ; (!?) Not used
                     ld      a, 1
                     ld      (AlertRespawnTimer), a
@@ -6737,7 +6451,7 @@ TransformAlertGuard:
                     call    SetBanks1_2_3
 
 TransformAlertGuard2:
-                    ld      (ix+ACTOR.ID),      a                   ; Change the actor to the type defined in the respawn info
+                    ld      (ix+ACTOR.ID), a                ; Change the actor to the type defined in the respawn info
                     ld      (ix+ACTOR.Status), 0
 
                     call    ResetActorSpeed                 ; Stop guard
@@ -6754,7 +6468,6 @@ TransformAlertGuard2:
                     call    AnimateGuard2                   ; Set walk sprite
                     jp      SetActorSprColors               ; Update sprites colors
 
-
 ;----------------------------------------------------------------------------
 ;
 ; HL = A * 3
@@ -6770,11 +6483,9 @@ HL_3xA:
                     add     hl, de
                     ret
 
-
 GetPathPoint_:
                     call    SetBanks_4_5_6
                     jp      GetPathPoint
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6786,7 +6497,6 @@ InitGuardFast:
                     ld      b, 8                            ; Guard speed
                     jr      InitGuard
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Initialize medium speed guard
@@ -6796,7 +6506,6 @@ InitGuardFast:
 InitGuardMedium:
                     ld      b, 4                            ; Guard speed
                     jr      InitGuard
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -6841,7 +6550,6 @@ InitGuard2:
 
                     call    InitGuardPath
                     jp      ChangeGuardSprDir
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -7030,7 +6738,6 @@ GetSpeedToPoint2:
 dummyAddr5:
                     jp      SetActorSpeed                   ; DE = Speed X, HL = Speed Y
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Enemy speeds: slow, medium, fast
@@ -7077,7 +6784,6 @@ UpdateActorPath:
 
                     xor     a                               ; First path point
                     jr      SetNextPathPoint
-
 
 SetLastPathPoint:
                     ld      a, c                            ; Number of path points
@@ -7143,8 +6849,6 @@ ChkWaitPathPoint:
                     ld      (ix+ACTOR.SpriteId), a          ; Guard idle looking in the same direction
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; The guard that exits the lorry does not wait at the first path point (just after exiting the lorry)
@@ -7158,7 +6862,6 @@ ChkWaitGuardLorry:
 
                     pop     hl                              ; Remove return address. Do not wait at that point
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -7177,7 +6880,6 @@ SetCamRndWait:
 SetCamRndWait2:
                     ld      (ix+ACTOR.Wait), a
                     jp      SetBanks1_2_3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -7227,7 +6929,6 @@ SetSentinelLookDir:
                     ld      a, r
                     ld      (ix+ACTOR.SENTINEL_WAIT), a     ; Random time looking in the same direction
                     jp      SetBanks1_2_3
-
 
 SetSentinelLookDir_:
                     call    SetBanks_4_5_6
@@ -7309,7 +7010,6 @@ SetActorSpeed:
                     ex      de, hl
                     jr      SetActorSpeedY
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Animate actor
@@ -7387,11 +7087,9 @@ NextActorStatus:
                     inc     (ix+ACTOR.Status)
                     ret
 
-
 ResetActorStatus:
                     ld      (ix+ACTOR.Status), 0
                     ret
-
 
 SetActorStatus:
                     ld      (ix+ACTOR.Status), a
@@ -7478,7 +7176,6 @@ SetSprColor2:
                     add     hl, de
                     djnz    SetSprColor2
                     ret
-
 
 GetFlameSinCos:
                     ld      a, (ix+FIRE_TROPPER.ANGLE)
@@ -7592,7 +7289,6 @@ CoordToBuffTile:
 txtPause:           dw 586Ch
                     db  "PAUSE"
                     db 0FFh
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -7799,11 +7495,9 @@ SetTextUnskippable:
                     ld      c, 2                            ; Text can not be skipped. Next text is automatically show after a pause
                     jr      SetText2
 
-
 SetTextUnskip2:
                     ld      c, 1                            ; Text can not be skipped. Waits key to show next text
                     jr      SetText2
-
 
 SetText:
                     ld      c, 0                            ; Text can be skipped
@@ -7845,7 +7539,6 @@ TextBoxLogic:
 
                     call    TextBoxExit
                     jp      ExitRadio
-
 
 TextBoxLogic2:
                     ld      a, (TextWindowStatus)
@@ -7959,7 +7652,7 @@ TW_PrintChar:
                     dec     a
                     jr      z, TW_PrintChar2                ; Do not check keys to skip the text
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     20h                             ; M/N
                     jp      nz, SkipText
 
@@ -8147,7 +7840,7 @@ TW_Wait:
                     cp      2
                     jr      z, TW_Wait2                     ; Wait. Do not check the keys that skip the text
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     20h                             ; M/N
                     jr      nz, EraseWinText
 
@@ -8197,7 +7890,6 @@ EraseWinText:
                     call    FillRect
                     jp      NextTextStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw blinking "enter" character
@@ -8216,7 +7908,6 @@ DrawEnterIcon2:
                     ld      de, (PromptXY)                  ; Intro char coordinates
                     ld      a, 3Fh                          ; Enter icon character
                     jp      DrawChar
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8261,7 +7952,6 @@ TW_GetTextPage1:
                     ld      (TextCharXY), de
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Text window end logic
@@ -8290,7 +7980,6 @@ TextBox_End:
                     call    DrawOpenPitfalls                ; Draw the pitfalls that are open
 
                     jr      TextBoxExit
-
 
 EraseTextBox:
                     ex      de, hl
@@ -8357,7 +8046,6 @@ GetTextBoxXYSize2:
                     inc     hl
                     ld      b, (hl)
                     ret
-
 
 ;----------------------------------------------------------------------------
 ; Iterations, SY, SX, StepY, StepX, StepNY, StepNX, Color
@@ -8520,8 +8208,6 @@ PunchLogic:
                     call    GetDirLeftRight
                     call    PunchLogic2                     ; Decrement punch timer and restore normal status when finished
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Player control: dead
@@ -8595,7 +8281,6 @@ AirFlowLogic:
                     dec     (hl)                            ; Move the player up
                     ret
 
-
 ExitAirFlow:
                     xor     a
                     ld      (PlayerControlMod), a           ; Walk mode
@@ -8661,8 +8346,6 @@ IntroScene:
                     call    ChkSaveGameStatus               ; Create checkpoint / save state
                     jp      SetBanks1_2_3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check player up/down direction
@@ -8674,8 +8357,6 @@ IntroScene:
 GetDirUpDown:
                     ld      c, 3
                     jr      GetPlayerDir2
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8689,8 +8370,6 @@ GetDirLeftRight:
                     ld      c, 0Ch
                     jr      GetPlayerDir2
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check player direction
@@ -8703,12 +8382,12 @@ GetPlayerDir:
                     ld      c, 0Fh                          ; Controls mask: directions only
 
 GetPlayerDir2:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     c
                     jr      nz, GetPlayerDir3               ; A new direction has been pressed
 
                     ld      hl, DirectionMask               ; Bitmask of the last pressed direction control
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     c                               ; Controls mask
                     ld      b, a
                     and     (hl)                            ; Same direction that was pressed?
@@ -8716,7 +8395,7 @@ GetPlayerDir2:
                     jr      nz, GetPlayerDir5               ; Yes, it is still pressed
 
                     ld      hl, DirectionMaskOld            ; Bitmask of the previous pressed direction control
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     c
                     and     (hl)
                     ld      a, b
@@ -8726,12 +8405,11 @@ GetPlayerDir2:
                     ld      (hl), 0                         ; Erase DirectionMaskOld
                     jr      GetPlayerDir4
 
-
 GetPlayerDir3:
                     ld      a, (DirectionMask)              ; Bitmask of the last pressed direction control
                     ld      (DirectionMaskOld), a           ; Bitmask of the previous pressed direction control
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     c                               ; Controls mask
                     ld      c, a
                     and     1                               ; Up
@@ -8758,7 +8436,6 @@ GetPlayerDir5:
                     ld      (PlayerDirectionNew), a         ; 1=Up, 2=Down, 3=Left, 4=Right
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Directions
@@ -8781,7 +8458,6 @@ IdsDirection:       db 0
                     db 0
                     db 0
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check up and down controls
@@ -8792,12 +8468,11 @@ ControlPlayerV:
                     xor     a
                     ld      (InAirFlow), a                  ; 1 = Snake is being pushed by the air floor in the roof
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     3                               ; Mask up and down
                     jr      nz, ControlPlayer               ; Up or down pressed
 
                     jr      SetStopPlayer
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8809,12 +8484,11 @@ ControlPlayerH:
                     xor     a
                     ld      (InAirFlow), a                  ; 1 = Snake is being pushed by the air floor in the roof
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Ch                             ; Mask left and right
                     jr      nz, ControlPlayer               ; Left or right pressed
 
                     jr      SetStopPlayer
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8827,7 +8501,7 @@ ChkControlPlayer:
                     cp      CONTROL_PUNCH                   ; Is punching?
                     ret     z                               ; Can't be controlled while punching
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Fh                             ; Any direction pressed?
                     jr      nz, ControlPlayer               ; Yes
 
@@ -8835,7 +8509,6 @@ SetStopPlayer:
                     inc     a
                     ld      (StopPlayerFlag), a             ; The player is not moving
                     jr      ControlPlayer2
-
 
 ControlPlayer:
                     xor     a
@@ -8869,7 +8542,6 @@ ControlPlayer2:
                     ld      hl, 0
                     jr      PlayerMovRight
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Stop the player
@@ -8879,7 +8551,6 @@ ControlPlayer2:
 StopPlayer:
                     ld      hl, 0
                     jr      PlayerMovDown
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8893,7 +8564,6 @@ PlayerMovUp:
 PlayerMovDown:
                     ld      de, 0                           ; Speed X = 0
                     jr      UpdatePlayerSpd
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -8932,7 +8602,7 @@ UpdatePlayerSpd:
 ;----------------------------------------------------------------------------
 
 chkPunch:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     20h                             ; M or fire?
                     ret     z                               ; Punch button not pressed
 
@@ -8960,8 +8630,6 @@ SetPlayerSpeed:
                     ld      (PlayerSpeedY), hl
                     ld      (PlayerSpeedX), hl
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -9006,8 +8674,6 @@ ChkPlayerColl:
 
                     jr      ResetPlayerSpd
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check punch collision with tiles
@@ -9051,8 +8717,6 @@ ChkPunchColl2:
                     call    c, SetSoundEntryChk
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Decrement punch timer and restore normal mode after finishing the punch action
@@ -9068,9 +8732,6 @@ PunchLogic2:
                     ld      (PlayerAnimation), a            ; 0=Normal, 1=Punch, 2=Water, 3=Parachute, 4=Deep water, 5=Ladder, 6=Dead, 7=Box
                     ld      (PlayerControlMod), a           ; 8=Intro scene, 7=Ladders climb, 6=ladders walk, 5=Air flow, 4=Parachute, 3=Dead, 2=Elevator, 1=Punch, 0=Walk
                     ret
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -9099,7 +8760,7 @@ ChkCtrlElevator:
                     inc     c                               ; Down control mask
 
 ChkCtrlElevator2:
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     c                               ; Control mask
                     ret     z                               ; Not valid control
 
@@ -9110,7 +8771,6 @@ ChkCtrlElevator2:
                     ld      c, 2                            ; Elevator down
                     ld      a, (ElevatorLimitDown)
                     jr      ChkCtrlElevator4
-
 
 ChkCtrlElevator3:
                     ld      c, 1                            ; Elevator up
@@ -9129,7 +8789,6 @@ ChkCtrlElevator4:
                     ld      a, GAME_MODE_ELEVATOR
                     ld      (GameMode), a                   ; 0=Playing,1=NextRoom,2=Weapons,3=Equipment,4=Radio,5=Lorry,6=Moving elevator,7=OpenDoor,8=Binoculars,9=Dead, A=Text window, B=Captured, C = Madnar moved:It's too late
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -9157,7 +8816,6 @@ ChkWater2:
                     xor     a
                     ld      (PlayerAnimation), a            ; Set walking mode
                     ret
-
 
 ChkWaterTiles:
                     call    GetTilePlayer
@@ -9206,8 +8864,6 @@ ChkWaterTiles3:
                     xor     a                               ; Normal mode. Not in water
                     jr      SetInWaterMode2
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Chech is shadow water tile is related to normal or deep water
@@ -9230,7 +8886,6 @@ ChkDeepShadow2:
 SetDeepWaterMode:
                     ld      a, 4                            ; Deep water mode
                     jr      SetInWaterMode2
-
 
 SetInWaterMode:
                     ld      a, 2                            ; In water mode
@@ -9256,7 +8911,6 @@ SetInWaterMode3:
 
                     ld      c, 8                            ; Damage delay
                     jp      DecrementLife_C                 ; Decrement life
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -9307,14 +8961,13 @@ ChkRoofAirFlow:
                     cp      0C0h
                     ret     nc                              ; Not in the air flow area
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     2                               ; Holding down?
                     jr      z, ChkRoofAirFlow2
 
                     ld      a, 1
                     ld      (InAirFlow), a                  ; 1 = Snake is being pushed by the air floor in the roof
                     ret
-
 
 ChkRoofAirFlow2:
                     ld      a, CONTROL_AIR_FLOW
@@ -9335,7 +8988,7 @@ ChkStartClimb:
                     cp      8                               ; Ladder left tile
                     ret     nz                              ; Not on a ladder
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     rra                                     ; Up
                     ret     nc                              ; Not pressing up
 
@@ -9375,7 +9028,7 @@ ChkExitLadders:
                     cp      99h                             ; Floor level (climbing)
                     ret     nz                              ; Not in the start of the ladder
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     1100b                           ; Left or right pressed?
                     ret     z                               ; No, he is not getting off the ladder
 
@@ -9455,7 +9108,6 @@ ChkLimitXElevator:
                     ld      (PlayerXdec), hl                ; The player can't move further
                     ret
 
-
 ChkLimitXElevator2:
                     ld      a, h                            ; Player X
                     cp      244                             ; Right boundary
@@ -9495,7 +9147,6 @@ ChkLadderDownlimit:
                     ld      h, 99h
                     ld      (PlayerYdec), hl
                     ret
-
 
 ChkNextLadderRoom:
                     ld      a, h
@@ -9582,7 +9233,7 @@ DowngradeRank:
                     ld      a, (RescuedArray+0Dh)           ; Jeniffer's brother rescued status
 
                     ld      hl, RescuedArray
-                    ld      de,  RescuedArray+1
+                    ld      de, RescuedArray+1
                     ld      bc, 17                          ; There are 23 prisoners. The first 6 are not restored
                     ld      (hl), b
                     ldir                                    ; Reset last 17 prisoners rescued status
@@ -9677,7 +9328,6 @@ UpdateLevels2:
                     call    DrawLife                        ; Draw life text and bar
                     jp      SetMaxAmmoVals                  ; Updates the limit of items and ammo depending on the rank
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Select player's sprite depending on the action and weapon
@@ -9697,8 +9347,6 @@ AnimatePlayer:
                     dw SetSprDead                           ; Dead
                     dw SetSprBox                            ; Box
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Player sprite: walk
@@ -9715,7 +9363,6 @@ SetSprIdle:
                     ld      (PlayerAnimWaitCnt), a
                     ld      (PlayerFrameNum), a
                     jr      SetSprWalk4
-
 
 SetSprWalk2:
                     ld      hl, PlayerAnimWaitCnt
@@ -9857,7 +9504,6 @@ SetSprLadder:
                     ld      (PlayerAnimWaitCnt), a
                     jr      SetSprLadder3
 
-
 SetSprLadder2:
                     ld      hl, PlayerAnimWaitCnt
                     inc     (hl)
@@ -9926,7 +9572,6 @@ SetSprBox:
 SetPlayerSprId:
                     ld      (SnakeSprId), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10002,12 +9647,10 @@ SetGrenaTargetSpr2:
                     cp      0C0h
                     jr      ChkGrenTargBoundsG              ; Hide if X greater
 
-
 ChkGrenTargBoundsU:
                     ld      a, c                            ; Player Y
                     cp      38h
                     jr      ChkGrenTargBounds
-
 
 ChkGrenTargBoundsD:
                     ld      a, c                            ; Player Y
@@ -10016,7 +9659,6 @@ ChkGrenTargBoundsD:
 ChkGrenTargBoundsG:
                     jr      nc, HideGrenadTargtSpr          ; Hide grenade target sprite
                     ret
-
 
 ChkGrenTargBoundsL:
                     ld      a, b                            ; Player X
@@ -10039,12 +9681,6 @@ TargetXYOffsets:    dw 0F9ACh
                     dw 0F936h
                     dw 0B2F0h
                     dw 3CF0h
-
-
-
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10080,7 +9716,6 @@ GameStatusLogic2:
                     dw GS_Pause                             ; 7 - Pause, load, save logic
                     dw GS_Ending                            ; 8 - Ending
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Game status: Konami logo
@@ -10105,7 +9740,6 @@ GS_KonamiLogo:
                     xor     a
                     jp      NextSubstatusT
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait in Konami logo and load intro graphics
@@ -10126,7 +9760,6 @@ GS_LoadIntroGfx:
                     call    SetBanks1_2_3
 
                     jr      NextSubstatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10165,7 +9798,6 @@ GS_InitKonamiLogo:
 
                     jr      NextSubstatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Checks if F5 is pressed to toggle music in demo mode
@@ -10186,7 +9818,6 @@ ChkEnableMusicDemo:
                     ld      (MusicInDemoMode), a            ; Flag to enable or disable music in demo mode
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Game status: menu wait
@@ -10201,7 +9832,6 @@ GS_WaitMenu:
                     ret     nz
 
                     jp      NextStatusT
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10223,7 +9853,6 @@ GS_DemoPlay:
                     or      a
                     ret     nz                              ; The demo/tutorial has not finished yet
 
-
 ResetGameStat:
                     xor     a                               ; Konami logo status
 
@@ -10233,7 +9862,6 @@ SetGameStatus:
                     ld      a, 20h
                     ld      (WaitCounter), a
                     jr      ResetSubstatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10260,7 +9888,6 @@ NextSubstatus:
                     inc     (hl)
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Game status: PLAY START flashing effect
@@ -10281,18 +9908,15 @@ GS_PlayStart:
 
                     jp      EraseTextXY
 
-
 GS_PlayStart2:
                     djnz    GS_PlayStart3
 
                     call    ClearGameVars                   ; Clear game variables
                     jr      NextStatusT                     ; Start game
 
-
 GS_PlayStart3:
                     ld      a, 50h                          ; "PLAY START" Flashing time
                     jr      NextSubstatusT
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10318,8 +9942,6 @@ ResetSubstatus:
                     xor     a
                     ld      (GameSubstatus), a
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10348,7 +9970,6 @@ GS_Playing:
 
                     jr      NextStatusT
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set pause mode
@@ -10360,7 +9981,7 @@ SetPauseMode:
 
                     xor     a
                     ld      hl, PasswordBuffer
-                    ld      de,  PasswordBuffer+1
+                    ld      de, PasswordBuffer+1
                     ld      (hl), a
                     ld      bc, 1Dh
                     ldir                                    ; Clear password's buffer
@@ -10399,8 +10020,6 @@ PrintPause:
                     ld      hl, txtPause
                     jp      PrintTextXY                     ; Print PAUSE
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Game status: game over
@@ -10431,7 +10050,6 @@ RebootGame:
                     ld      (hl), a
                     jp      ResetGameStat
 
-
 ChkContinueKey:
                     call    UpdateControls
 
@@ -10447,7 +10065,6 @@ ChkContinueKey:
                     inc     a
                     ld      (RestoreGameFlag), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10465,7 +10082,6 @@ PrintGameOver:
                     ld      (RestoreGameFlag), a
 
                     jp      NextSubstatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10498,7 +10114,6 @@ GS_Pause:
                     ld      (RestoreSoundData), a
                     ld      (RestoreGameFlag), a
                     jp      ChkGoBackGame
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10541,7 +10156,6 @@ SetLoadSaveMode:
                     ld      (SaveLoadStat), a
                     jp      ClearSprAttr
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Exit pause mode
@@ -10568,8 +10182,6 @@ ExitPauseMode:
                     ld      a, 5
                     jp      SetGameStatus
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending logic
@@ -10595,7 +10207,6 @@ GS_Ending:
                     ld      (hl), a
                     jp      RebootGame
 
-
 GS_Ending2:
                     call    SetBankInA0_F
 
@@ -10603,7 +10214,6 @@ GS_Ending2:
 
                     call    SetBanks1_2_3
                     jp      NextSubstatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10660,11 +10270,6 @@ GoToMenu:
                     call    MenuLogoLogic                   ; Draw the Metal Gear logo in a go
 
                     jp      SetBanks1_2_3
-
-
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10729,7 +10334,6 @@ DrawRadio:
 
                     jp      EnableScreen                    ; Enable screen rendering
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Radio idle mode
@@ -10754,14 +10358,13 @@ RadioIdle2:
                     ld      hl, txtSend
                     call    ErasePrintTxt                   ; Erase SEND and print RECV
 
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     1                               ; Up pressed?
                     jr      nz, SetRadioSend
 
                     ld      (RadioCmd), a                   ; 1=Send
                     call    ChgRadioFreq                    ; Check frequency change
                     jp      ChkRadioReceiv                  ; Check if there is someone available in the selected frequency
-
 
 SetRadioSend:
                     ld      (RadioCmd), a                   ; 1=Send
@@ -10776,7 +10379,6 @@ SetRadioSend:
 
                     ld      a, 0Ah                          ; This is Solid Snake... Your reply, please.
                     jp      SetText
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10827,7 +10429,6 @@ SetupRadioReply:
                     ld      a, (hl)                         ; Reply text
                     jp      SetText                         ; Enable text box mode
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Reset radio status and turn leds off
@@ -10863,7 +10464,6 @@ PrintRecv:
                     ld      hl, txtSend
                     jr      ErasePrintTxt
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Print SEND and erase RECV
@@ -10875,7 +10475,6 @@ PrintSend:
                     ld      hl, txtRecv
                     ld      de, txtSend
                     jr      ErasePrintTxt
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10889,13 +10488,9 @@ ErasePrintTxt:
                     pop     hl
                     jp      PrintTextXY
 
-
-
 ; (!?) Unused code
 
                     call    ErasePrintTxt
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10904,11 +10499,11 @@ ErasePrintTxt:
 ;----------------------------------------------------------------------------
 
 ChgRadioFreq:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     1100b                           ; Left or right pressed?
                     jr      nz, ChgRadioFreq2
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     1100b                           ; Left or right hold?
                     ret     z                               ; No
 
@@ -10918,7 +10513,6 @@ ChgRadioFreq:
 
                     ld      (hl), 2                         ; Set delay
                     jr      ChgRadioFreq3
-
 
 ChgRadioFreq2:
                     ld      hl, AutoReplyDone               ; Flag to indicate that autoreply has been done.
@@ -10944,7 +10538,6 @@ ChgRadioFreq3:
                     ld      (hl), a                         ; Increment freq.
                     ret
 
-
 DecrementFreq:
                     ld      hl, RadioFreq
                     ld      a, (hl)
@@ -10955,7 +10548,6 @@ DecrementFreq:
                     daa
                     ld      (hl), a                         ; Decrement freq.
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -10989,7 +10581,6 @@ ChkRadioReceiv3:
                     djnz    ChkRadioReceiv2
                     ret
 
-
 ChkRadioReceiv4:
                     inc     hl
                     inc     hl
@@ -11004,7 +10595,6 @@ ChkRadioReceiv4:
                     jr      z, ChkRadioReceiv3              ; No, ignore this frequency and try another (if available)
 
                     jr      RadioAutoReply2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11031,7 +10621,6 @@ RadioAutoReply2:
                     ld      a, 10h
                     ld      (RadioLedDelay), a              ; Delay before the first/next led turns on
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11079,7 +10668,6 @@ ChkReplyBigBoss2:
                     ld      (hl), 136                       ; Text: Stop operation. Switch off your MSX
                     jr      RadioReplyOk
 
-
 ;----------------------------------------------------------------------------
 ; Check if Big Boss informs about transmissor/bug
 ;----------------------------------------------------------------------------
@@ -11107,7 +10695,6 @@ ChkReplyBigBoss4:
                     ld      (hl), 50                        ; TEXT: THIS IS BIG BOSS... CHECK YOUR EQUIPMENTS! CHECK IF YOU HAVE BEEN BUGGED BY THE ENEMY. ...OVER
                     jr      RadioReplyOk
 
-
 ;----------------------------------------------------------------------------
 ; Check Scheneider reply
 ;----------------------------------------------------------------------------
@@ -11126,7 +10713,6 @@ ChkReplySchneider2:
                     jr      z, RadioReplyOk
 
                     jr      NoRadioReply
-
 
 ;----------------------------------------------------------------------------
 ; Check Jeniffer reply
@@ -11147,7 +10733,6 @@ ChkReplyJeniffer:
 
                     jr      RadioReplyOk
 
-
 ;
 ; Probably this check was made for Dr. Madnar
 ; Perhaps it was possible to contact him by radio before he was moved
@@ -11165,7 +10750,6 @@ ChkReplyMadnar:
 RadioReplyOk:
                     and     a
                     ret
-
 
 NoRadioReply:
                     scf
@@ -11221,7 +10805,6 @@ PrintDigit:
                     add     a, 8
                     ld      d, a                            ; X = X + 8
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11333,7 +10916,6 @@ DrawRadioLeds4:
                     djnz    DrawRadioLeds4
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Exit radio mode
@@ -11377,7 +10959,6 @@ MenuWeapon:
                     call    RenderHUD                       ; Render HUD
                     jp      EnableScreen                    ; Enable screen rendering
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Weapons menu control logic
@@ -11385,11 +10966,11 @@ MenuWeapon:
 ;----------------------------------------------------------------------------
 
 CtrlMenuWeapon:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Fh                             ; Any direction pressed?
                     jr      nz, CtrlMenuWeapon2             ; Yes
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Fh                             ; Any direction hold?
                     ret     z                               ; No
 
@@ -11420,7 +11001,6 @@ CtrlMenuWeapon2:
                     ld      c, a
                     jr      MenuWeaponMove
 
-
 CtrlMenuWeaponUp:
                     ld      a, (SelectIdx)
                     cp      1
@@ -11433,7 +11013,6 @@ CtrlMenuWeaponUp:
                     ld      c, a
                     jr      MenuWeaponMove
 
-
 CtrlMenuWeaponDown:
                     ld      a, (SelectIdx)
                     cp      4
@@ -11445,7 +11024,6 @@ CtrlMenuWeaponDown:
                     inc     a
                     ld      c, a
                     jr      MenuWeaponMove
-
 
 CtrlMenuWeaponLeft:
                     ld      a, (SelectIdx)
@@ -11474,7 +11052,6 @@ MenuWeaponMove:
 
 SelectWeapon_:
                     jr      SelectWeapon2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11555,7 +11132,6 @@ RenderScreen3:
                     call    RenderHUD                       ; Render HUD
                     jp      EnableScreen                    ; Enable screen rendering
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get the index of the selected weapon
@@ -11584,12 +11160,10 @@ GetMenuCursor2:
                     djnz    GetMenuCursor2
                     ret
 
-
 SetSelectedIdx:
                     ld      a, c
                     ld      (SelectIdx), a
                     ret
-
 
 GetMenuCursor4:
                     ld      a, (hl)
@@ -11603,7 +11177,6 @@ GetMenuCursor4:
                     ld      c, 1
                     jr      SetSelectedIdx
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Erase cursor/arrow
@@ -11613,7 +11186,6 @@ GetMenuCursor4:
 EraseArrow:
                     ld      a, 0
                     jr      DrawArrow2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11627,8 +11199,6 @@ DrawArrow:
 DrawArrow2:
                     ld      de, (MenuCursorXY)
                     jp      DrawChar
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11659,7 +11229,6 @@ CopyPalToRAM2:
                     ld      (de), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Fade out
@@ -11677,7 +11246,7 @@ FadeOutLogic:
 
 ; Check if all colors are black
 
-                    ld      hl,  CurrentPal+1               ; Color number, color data1, color data 2... #FF end
+                    ld      hl, CurrentPal+1                ; Color number, color data1, color data 2... #FF end
                     ld      b, 16                           ; Number of colors
 
                     xor     a
@@ -11696,7 +11265,6 @@ FadeOutLogic2:
                     scf
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Decrement RGB values in current palette
@@ -11708,7 +11276,7 @@ FadeOutColors:
                     and     3
                     ret     nz                              ; Skip this iteration
 
-                    ld      hl,  CurrentPal+1               ; Color number, color data1, color data 2... #FF end
+                    ld      hl, CurrentPal+1                ; Color number, color data1, color data 2... #FF end
                     ld      b, 10h
 
 FadeOutColors2:
@@ -11741,7 +11309,6 @@ FadeOutColors5:
                     inc     hl                              ; Pointer to next color data
                     djnz    FadeOutColors2
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -11832,7 +11399,6 @@ InitGame5:
                     call    AddDoorsData                    ; Get information about the doors in the room
                     jr      InitRoom2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Next room logic
@@ -11841,7 +11407,7 @@ InitGame5:
 
 NextRoomLogic:
                     ld      hl, PasswordBuffer
-                    ld      de,  PasswordBuffer+1
+                    ld      de, PasswordBuffer+1
                     ld      (hl), 0
                     ld      bc, 1Dh
                     ldir                                    ; Erase password buffer
@@ -11894,7 +11460,7 @@ InitRoom2:
                     jr      nc, InitRoom3                   ; Yes
 
                     ld      hl, SprShootsAtt
-                    ld      de,  SprShootsAtt+1
+                    ld      de, SprShootsAtt+1
                     ld      bc, 17h
                     ld      (hl), 0E0h
                     ldir                                    ; Hide shoots sprites
@@ -11964,7 +11530,6 @@ InitRoom6:
                     call    SetElevatorSpr                  ; Update elevator sprites
                     jp      SetBanks1_2_3
 
-
 InitRoom7:
                     ld      a, (SaveLoadMode)               ; 1=Load mode, 2=Save mode
                     or      a                               ; Returning from LOAD/SAVE?
@@ -11986,8 +11551,6 @@ InitRoom7:
                     ld      (DoNotAddEnemies), a
                     jp      SetBanks1_2_3
 
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Patch to update the sprites after destroying Metal Gear
@@ -12003,8 +11566,6 @@ TextBoxPatch:
                     jr      z, GameLogic4
 
                     jr      GameModeLogic
-
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -12088,7 +11649,6 @@ GameModeLogic:
                     dw CaptureLogic_
                     dw EventMadnarMoved
 
-
 ;---------------------------------------------------------------------------
 ; Playing
 ;
@@ -12108,7 +11668,6 @@ Playing:
                     cp      8                               ; Intro scene mode?
                     jr      z, PlayModeLogic                ; Do not check F1-F5 in intro scene
 
-
 ; It is not possible to pause the game, use the radio or select an item/weapon in the ladders rooms or while falling in parachute
 
                     ld      a, (Room)
@@ -12125,7 +11684,6 @@ Playing:
                     ld      a, 1
                     ld      (Pause_1_F5_2), a               ; Pause flag
                     ret
-
 
 ChkFuncKeys:
                     rra                                     ; F2
@@ -12146,7 +11704,6 @@ ChkFuncKeys:
                     ld      a, 2
                     ld      (Pause_1_F5_2), a               ; (!?) Is it used anywere?
                     ret
-
 
 PlayModeLogic:
                     call    ChkAlarmEnd                     ; Check if the alert mode ends
@@ -12282,7 +11839,6 @@ DeadLogic:
 
                     jr      RefreshSprites2
 
-
 DeadLogicEnd:
                     xor     a
                     ld      (PlayingFlag), a                ; Exit "playing" mode
@@ -12333,8 +11889,6 @@ EventMadnarMoved:
                     call    SetBanks1_2_3
                     jr      RefreshSprites                  ; Update the sprites (copy attributes and colors from RAM to VRAM)
 
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Update the sprites in VRAM
@@ -12360,7 +11914,6 @@ RefreshSprites2:
                     call    UpdateSprites                   ; Copy colors and attributes from RAM to VRAM
                     jr      SetBanks1_2_3_g
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set binoculars target sprites
@@ -12372,9 +11925,6 @@ SetBinoTargetSpr_:
                     call    SetBankInA0_F
                     call    SetBinoTargetSpr
                     jr      SetBanks1_2_3_g
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -12389,8 +11939,6 @@ UpdateSprites_:
 
 SetBanks1_2_3_g:
                     jp      SetBanks1_2_3
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -12415,8 +11963,8 @@ ExitBinocularMode:
                     ld      a, (AlertModeCopy2)
                     ld      (AlertModeCopy), a              ; Restore alert mode
 
-                    ld      hl,  SprAttRAM+0Eh
-                    ld      de,  SprAttRAM+0Fh
+                    ld      hl, SprAttRAM+0Eh
+                    ld      de, SprAttRAM+0Fh
                     ld      bc, 57h
                     ld      (hl), 0E0h
                     ldir                                    ; Hide target sprites (attributes in RAM)
@@ -12459,7 +12007,7 @@ BinocularLogic:
                     djnz    BinocularUp
 
 ; Check controls
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Fh                             ; Up, down, left, right
                     ret     z                               ; No direction pressed
 
@@ -12484,24 +12032,20 @@ MoveBinoculars:
                     dec     a
                     jr      MoveBinoculars2
 
-
 BinocularUp:
                     djnz    BinocularDown
                     ld      a, 2                            ; Down
                     jr      BinocularShowRoom
-
 
 BinocularDown:
                     djnz    BinocularLeft
                     ld      a, 1                            ; Up
                     jr      BinocularShowRoom
 
-
 BinocularLeft:
                     djnz    BinocularRight
                     ld      a, 4                            ; Right
                     jr      BinocularShowRoom
-
 
 BinocularRight:
                     djnz    DrawBinocRoom
@@ -12533,7 +12077,6 @@ MoveBinoculars2:
                     ld      (BinoculStatus), a              ; Status to draw the examined room
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw the room being examined with the binoculars
@@ -12556,13 +12099,13 @@ DrawBinocRoom:
                     call    DrawDoors                       ; Render the doors
 
                     ld      hl, EnemyList                   ; Array of enemies in the room
-                    ld      de,  EnemyList+1                ; Array of enemies in the room
+                    ld      de, EnemyList+1                 ; Array of enemies in the room
                     ld      (hl), 0
                     ld      bc, 7FFh
                     ldir                                    ; Erase enemies structures/actors data
 
                     ld      hl, EnemySprAttRAM
-                    ld      de,  EnemySprAttRAM+1
+                    ld      de, EnemySprAttRAM+1
                     ld      (hl), 0E0h
                     ld      bc, 57h
                     ldir                                    ; Erase enemies sprites attributes
@@ -12574,7 +12117,7 @@ DrawBinocRoom:
                     jr      nz, DrawBinocRoom2
 
                     ld      hl, EnemySprAttRAM
-                    ld      de,  EnemySprAttRAM+1
+                    ld      de, EnemySprAttRAM+1
                     ld      (hl), 0E0h
                     ld      bc, 57h
                     ldir                                    ; Remove sprites from player's room
@@ -12630,7 +12173,6 @@ EnemiesLogicLoop:
                     dec     (ix+ACTOR.StunnedCnt)           ; Decrement stunned timer
                     call    StunnedBounce                   ; Stunned bounce logic
                     jr      EnemiesLogic4                   ; Next enemy
-
 
 EnemiesLogic3:
                     call    RunEnemyLogic                   ; Enemy logic
@@ -12737,8 +12279,6 @@ RunEnemyLogic:
                     dw BoomerangLogic
                     dw SnoringSymbolLogic
                     dw BigExplosionLogic
-
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -12970,7 +12510,6 @@ DismissActor4:
                     ld      de, 3870h                       ; XY
                     jr      RemoveActorDrop                 ; Drop card 8
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Check Fire Trooper
@@ -12985,7 +12524,6 @@ DismissActor5:
                     ld      a, 1
                     ld      (FireTrooper_KO), a             ; Fire Tropped dead flag
                     jr      RemoveActorMusic
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -13002,7 +12540,6 @@ DismissActor6:
                     set     0, (hl)
                     jr      RemoveActorMusic
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Check Machine Gun Kid
@@ -13017,7 +12554,6 @@ DismissActor7:
                     ld      hl, MachGunStatus               ; Bit0 = Dead, 1 = Speech done
                     set     0, (hl)
                     jr      RemoveActorMusic
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -13038,7 +12574,6 @@ DismissActor8:
                     ld      de, 6224h                       ; XY
                     jr      RemoveActorDrop                 ; Drop supressor
 
-
 DismissActor9:
                     ld      a, (ix+ACTOR.ID)                ; Bit 7 = Killed
                     res     7, a                            ; Ignore bit 7
@@ -13050,9 +12585,8 @@ DismissActor9:
                     cp      ID_POWER_SWITCH
                     jr      nz, RemoveActor_
 
-                    ld      (ix+ACTOR.ID),      a                   ; Remove bit7 (dying)
+                    ld      (ix+ACTOR.ID), a                ; Remove bit7 (dying)
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13074,10 +12608,9 @@ RemoveActorMusic:
 
 ; Free actor structure and the sprites used by the actor
 
-
 RemoveActor_:
                     xor     a
-                    ld      (ix+ACTOR.ID),      a                   ; Free actor structure
+                    ld      (ix+ACTOR.ID), a                ; Free actor structure
                     ld      (ix+ACTOR.COLLISION_CFG), a     ; Bit0 = Check collision with player, Bit1 = Check player shots, bit2 = Pitfall is closed
 
                     push    ix
@@ -13136,7 +12669,6 @@ SpawnItem_:
                     pop     ix
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Restore the background of a mine
@@ -13154,7 +12686,6 @@ RestoreBackMine:
                     ld      bc, 1010h                       ; 16x16
                     ld      a, 40h                          ; From page 1 to 0
                     jp      VDP_Copy_Dot
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13265,8 +12796,6 @@ IdsKillLogic:       db    0,   1, 15h, 50h, 61h, 10h, 11h,   0, 66h, 14h, 44h,  
                     db  11h,   1,   6,   0, 10h,   7,   0,   1, 32h, 22h, 50h, 13h, 10h,   0,   0,   0
                     db    0
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Kill prisoner logic
@@ -13331,7 +12860,6 @@ KillJetpack2:
                     ld      b, 6                            ; Number of sprites to update
                     jr      ExplosionAnim3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Explosion animation
@@ -13363,7 +12891,6 @@ ExplosionAnim3:
                     ld      a, 25h                          ; Spr1 color
                     call    ADD_DE_A
                     jr      SetExplSprColors
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13454,7 +12981,6 @@ SetExplSprColors:
                     djnz    SetExplSprColors
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Metal Gear destruction logic
@@ -13513,12 +13039,10 @@ DestroyMetalG2:
                     ld      (OpenBigBossDoor), a            ; Flag to open door from Metal Gear to Big Boss room, and door to escape ladders.
                     ret
 
-
 ShowEmergencyText:
                     call    DismissActor
                     ld      a, 150                          ; TEXT: EMERGENCY!!*EMERGENCY!!*THE SELF-DESTRUCTION SWITCH OF* OUTER HEAVEN HAS BEEN ACTIVATED.*ESCAPE QUICKLY!!
                     jp      SetTextUnskippable
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13561,9 +13085,6 @@ ExplosSprColWht2:   dw 0E0Eh
                     dw 0
                     dw 0
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Remove Metal Gear entry call
@@ -13574,8 +13095,6 @@ RemoveMetalGear_:
                     call    SetBankInA0_C
                     call    RemoveMetalGear
                     jp      SetBanks1_2_3
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13603,7 +13122,7 @@ EraseBitmapActor:
 
                     xor     a
                     ld      (PowerSwitchOn), a              ; Mark the power switch as destroyed
-                    ld      (ix+ACTOR.ID),      a                   ; Disable actor/free structure
+                    ld      (ix+ACTOR.ID), a                ; Disable actor/free structure
 
                     ld      hl, PowerSwitchY
                     ld      a, (ix+ACTOR.Y)
@@ -13637,7 +13156,6 @@ ErasePowerSw:
 ErasePowerSw2:
                     ld      (ix+ACTOR.COLLISION_CFG), 0     ; Disable collision with missiles
                     jr      DrawDestroyPowSw                ; Render destroyed power switch
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13695,15 +13213,12 @@ DrawDestroyPowSw:
                     ld      a, 1                            ; From page 1 to 0
                     jp      VDP_Copy_Byte                   ; Render bottom tile
 
-
 ;----------------------------------------------------------------------------
 ; X coordinates of destroyed power switch tiles
 ; Y is always #10
 ;----------------------------------------------------------------------------
                     dw 3830h
 PowSwOffGfxX:       dw 7050h
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -13716,67 +13231,34 @@ RestLaserBack_:
                     call    RestLasersBack
                     jp      SetBanks1_2_3
 
-
-
-
         include "logic/doors.asm"
-
         include "logic/inithardware.asm"
-
         include "logic/controls.asm"
-
         include "logic/setalert.asm"
-
         include "logic/capturescene.asm"
-
         include "logic/menuequipment.asm"
-
         include "logic/checkweaponalert.asm"
-
         include "logic/weaponuse.asm"
-
         include "logic/textboxappear.asm"
-
         include "logic/collisions.asm"
-
         include "logic/helperdirections.asm"
-
         include "logic/weapon/handgun.asm"
-
         include "logic/weapon/smg.asm"
-
         include "logic/weapon/grenade.asm"
-
         include "logic/weapon/rocket.asm"
-
         include "logic/weapon/plasticbomb.asm"
-
         include "logic/weapon/mine.asm"
-
         include "logic/weapon/missile.asm"
-
-
-
         include "logic/common.asm"
-
         include "logic/items.asm"
-
         include "logic/hud.asm"
-
         include "logic/maxammo.asm"
-
         include "logic/incomingcall.asm"
-
         include "logic/destructiontimer.asm"
-
         include "logic/shrinkitems.asm"
-
         include "data/hudstartendtexts.asm"
-
         include "logic/nextroom.asm"
-
         include "logic/hudspritemask.asm"
-
         include "logic/actors.asm"
 
                     ; Fill empty space

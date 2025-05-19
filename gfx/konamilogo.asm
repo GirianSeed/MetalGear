@@ -11,7 +11,6 @@ gfxKonamiLogo:      db    7,   7, 0Fh, 0Fh, 0Fh, 1Fh, 1Fh, 3Fh,0FFh,0FFh,0FFh,0F
                     db 0F8h,0C0h,   0,   0,   0,   0,   0,   0, 1Fh, 1Fh, 1Fh, 3Fh, 3Fh, 3Fh, 7Fh, 7Fh
                     db 0F0h,0E0h,0E0h,0C0h,0C0h,0C0h, 80h, 80h
 
-
 gfxKonamiLogo2:     db    0,   0,   0,   0,   0,   1,   1,   3, 7Fh, 7Fh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db 0FFh,0FFh,0FFh,0FFh,0FFh,0FEh,0FEh,0FCh, 80h, 80h,   0,   0,   0,   0,   0,   0
                     db    0,   0,   0,   0,   0,   0,   0,   7,   3,   7,   7, 0Fh, 1Fh, 3Fh,0FFh,0FFh
@@ -19,7 +18,6 @@ gfxKonamiLogo2:     db    0,   0,   0,   0,   0,   1,   1,   3, 7Fh, 7Fh,0FFh,0F
                     db    0,   3, 0Fh, 1Fh, 3Fh, 7Fh,0FFh,0FFh,0FFh,0FCh,0F0h,0E0h,0C0h, 80h, 80h,   0
                     db    1,   1,   1,   3,   3,   3,   7,   7,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db 0FFh,0FEh,0FEh,0FCh,0FCh,0FCh,0F8h,0F8h
-
 
 gfxKonami:          db  3Ch, 3Ch, 78h, 78h, 79h,0F3h,0F7h,0FFh, 1Fh, 3Eh, 7Ch,0F9h,0F3h,0E3h,0C3h, 87h
                     db  1Fh, 7Fh,0F8h,0F0h,0E0h,0E0h,0C0h,0C0h,0C0h,0F0h,0F8h, 78h, 78h, 79h, 79h, 79h

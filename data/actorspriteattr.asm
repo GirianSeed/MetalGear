@@ -78,7 +78,6 @@ idxActorSprCols:    dw ActorSprNoColor
                     dw ActorSprColors17
                     dw ActorSprColors18
 
-
 ActorSprColors2:    db  0Ch, 0Ch
 
 ActorSprColors5:    db  0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch, 0Bh, 4Ch
@@ -614,7 +613,6 @@ SprOffsets8:        db  -32,  -7
                     db  -16,  -8
                     db  -16,  -8
 
-
 SprOffsets9:        db  -32, -16
                     db  -32, -16
                     db  -32,   0
@@ -624,12 +622,10 @@ SprOffsets9:        db  -32, -16
                     db  -16,   0
                     db  -16,   0
 
-
 SprOffsets10:       db  -32,  -8
                     db  -32,  -8
                     db  -16,  -8
                     db  -16,  -8
-
 
 SprOffsets11:       db  -31,  -8
                     db  -31,  -8
@@ -638,7 +634,6 @@ SprOffsets11:       db  -31,  -8
                     db    0,  -8
                     db    0,  -8
 
-
 SprOffsets12:       db 0E0h,0F8h
                     db 0E0h,0F8h
                     db 0F0h,0F8h
@@ -646,14 +641,12 @@ SprOffsets12:       db 0E0h,0F8h
                     db  1Eh,0F8h
                     db  1Eh,0F8h
 
-
 SprOffsets14:       db  -32, -16
                     db  -32, -16
                     db  -48,  -8
                     db  -48,  -8
                     db  -16,   0
                     db  -16,   0
-
 
 SprOffsets13:       db  -31,   0
                     db  -31,   0
@@ -668,36 +661,30 @@ SprOffsets13:       db  -31,   0
                     db  -31,   0
                     db  -31,   0
 
-
 SprOffsets15:       db  -16,  -8
                     db  -16,  -8
                     db    0,  -8
                     db    0,  -8
-
 
 SprOffsets16:       db   -8, -16
                     db   -8, -16
                     db   -8,   0
                     db   -8,   0
 
-
 SprOffsets17:       db  -16,  -8
                     db  -16,  -8
                     db  -16,  -8
                     db  -16,  -8
-
 
 SprOffsets18:       db  -15,  -8
                     db  -15,  -8
                     db  -15,  -8
                     db  -15,  -8
 
-
 SprOffsets19:       db   -8, -16
                     db   -8, -16
                     db   -8, -16
                     db   -8, -16
-
 
 SprOffsets20:       db  -32,  -8
                     db  -32,  -8

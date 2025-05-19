@@ -61,7 +61,6 @@ JetpacTakeoff:
                     ld      (ix+JETPACK.NumSprites), 4
                     ret
 
-
 JetpackTakeoffEnd:
                     ld      (ix+JETPACK.ID), ID_JETPACK     ; Transform into flying jetpack guard
                     ld      (ix+JETPACK.Moving), 1          ; Enable movement
@@ -115,7 +114,6 @@ JetpackSwitchLogic:
                     ld      a, 5Ah
                     jp      SetAlertModeRespawn
 
-
 JetpackSwitchLogic2:
                     ld      a, (ix+ACTOR.Y)
                     cp      86h
@@ -163,7 +161,6 @@ JetPackAlert:
                     ld      a, 1Eh
                     jp      SetAlertModeRespawn
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Jetpack guard logic
@@ -195,7 +192,6 @@ JetpackLogic:
                     db  7Eh ; ~
                     db  11h
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update jetpack sprite ID (on floor, shoter legs) depending on its direction
@@ -206,8 +202,6 @@ SetJetpackFloorSpr:
                     add     a, 54h                          ; (#55 = JetPack up sprite ID) - 1 (Up)
                     ld      (ix+ACTOR.SpriteId), a
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -222,7 +216,6 @@ SetJetpackFlySpr2:
                     add     a, 58h
                     ld      (ix+ACTOR.SpriteId), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -274,4 +267,3 @@ JetPackMove5:
                     ld      (ix+ACTOR.SpeedXdec), l
                     ld      (ix+ACTOR.SpeedX), h            ; Update speed X
                     ret
-

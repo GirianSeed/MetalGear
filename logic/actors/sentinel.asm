@@ -41,7 +41,6 @@ InitSentinel3:
 InitSentinel4:
                     jp      GetSentinelLookDirs
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Sentinel logic
@@ -53,7 +52,6 @@ SentinelChkPlayer:
                     jp      c, GuardSetAlarm                ; Yes, trigger the alarm
 
                     jr      SentinelLogic2
-
 
 SentinelLogic:
                     ld      a, (ix+ACTOR.REMOVE_GUARD)      ; (!?) Is it used?

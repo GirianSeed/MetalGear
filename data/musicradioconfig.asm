@@ -54,7 +54,6 @@ RoomsMusic:         db    8,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,  
 ; There are some rooms/values that does not seem to match. Perhaps the rooms where modified/reused for other areas.
 ;----------------------------------------------------------------------------
 
-
 idxMapZones:        db    0,   0,   0,   0,   0,   0,   0,   0
                     db  11h, 11h, 11h, 11h, 11h, 11h, 22h, 22h
                     db  22h, 22h, 22h, 22h, 33h, 33h, 33h, 33h

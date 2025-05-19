@@ -61,7 +61,6 @@ SetTutorialDemo:
                     ld      (EquipRadioStatus), a           ; Equip and radio status
                     jr      SetDemoPlay6
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set up gameplay demo 1
@@ -72,7 +71,6 @@ SetDemoPlay1:
                     ld      a, 5
                     ld      (Room), a
                     jr      SetDemoPlay3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -120,7 +118,6 @@ SetDemoPlay6:
                     ld      (PlayingFlag), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Game demo logic
@@ -152,7 +149,6 @@ GameDemoLogic:
                     ld      a, 36                           ; Tutorial text
                     jp      SetTextUnskip_                  ; Set textbox mode
 
-
 ShowGameTutorial:
                     call    TextBoxLogic_                   ; Show text of the tutorial
 
@@ -166,7 +162,6 @@ NextTutorialStatus:
 
 TutorialDummy:
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -194,13 +189,10 @@ DemoControler2:
                     ld      a, (hl)                         ; Action/control data
                     jp      StoreControls__                 ; Simulate controls pressed
 
-
 EndDemoMode:
                     xor     a
                     ld      (PlayingFlag), a
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -212,8 +204,7 @@ idxDemoPlayCtrl:    dw DemoTutorial
                     dw DemoTutorial
                     dw DemoGameplay2
 
-
-        IF      (JAPANESE)
+        IF (JAPANESE)
 DemoGameplay1:      db  23h,   8,   4,   0,   2,   2,0A8h,   0, 0Bh,   2, 0Ch,   8,   5,   1, 10h,   0, 0Eh,   4
                     db    6,   1, 14h,   4, 70h,   0, 2Ch,   8, 0Ah,   0, 49h,   4,   9,   2, 4Eh,   0,   2, 20h
                     db  0Ah,   0,   3, 20h, 0Ah,   0, 10h, 20h,   6,   2, 49h,   4, 42h,   1,0FFh

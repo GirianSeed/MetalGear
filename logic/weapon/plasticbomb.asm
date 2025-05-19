@@ -5,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkPBombShot:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z
 
@@ -71,7 +71,6 @@ ChkPBombShot:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Plastic bomb location offsets depending on the direction
@@ -81,7 +80,6 @@ PBombDirOffset:     db    0,-10h,   0,   0
                     db    0,   8,   0,   0
                     db    0,   0,   0,-0Ch
                     db    0,   0,   0, 0Ch
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -97,8 +95,6 @@ PlayerPBombLogic:
                     dw PBombExplode
                     dw MedExplosionLogic
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Plastic bomb countdown
@@ -111,8 +107,6 @@ PBombTimer:
 
                     ld      (ix+PLAYER_SHOT.KILL_BY_CONTACT), 1
                     jr      PBombNextStat
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -132,8 +126,6 @@ PBombExplode:
 PBombNextStat:
                     inc     (ix+PLAYER_SHOT.status)         ; Set next plastic bomb status
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -161,4 +153,3 @@ MedExplosionLogic:
 MedExplosionLogic2:
                     ld      (ix+PLAYER_SHOT.SpriteID), c
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
-

@@ -21,7 +21,6 @@ BulldozerLogic:
                     dw BuldozerStop3
                     dw BulldozerDummy
 
-
 BuldozerMoving:
                     dec     (ix+BULLDOZER.Timer)
                     ret     nz
@@ -82,9 +81,6 @@ StopBulldozer:
                     ld      de, 0                           ; Speed Y
                     jp      SetActorSpeedY
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Init bulldozer
@@ -109,7 +105,6 @@ InitBulldozer:
                     call    SetActorSpeed                   ; Set Bulldozer start speed
 
                     jp      SetBossMusic                    ; Boss music (Mercenary theme)
-
 
 ;----------------------------------------------------------------------------
 ;

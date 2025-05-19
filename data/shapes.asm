@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ; Enemies size/shape id (projectiles collision)
 ; This id is used to get the shape/size data of the enemy in order to check collisions with bullets, missile, rocket
@@ -8,7 +7,6 @@ ActorShapeProject:  db 0FFh,0FFh,0FFh,   0,   0,   2,0FFh,0FFh,   3,   0,   0,  
                     db    0,   0,0FFh, 12h,   2,   4,0FFh,0FFh,   0,   6,0FFh,   2,0FFh,0FFh,0FFh,   0
                     db    0,   0,   0,   0,   0,0FFh,   0,   0,   0,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db 0FFh
-
 
 ;----------------------------------------------------------------------------
 ; Enemies size/shape ids (explosive collision)

@@ -4,8 +4,6 @@ DoorClosedTiles:    db    2,   2,   2,   2,   2,   2,   2,   2
 DoorOpenTiles:      db    1,   1,   1,   1,   1,   1,   1,   1
                     db    1,   1,   1,   1,   1,   1,   1,   1
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; OpenOffsetY, OpenNY, OpenOffsetX, OpenNX, EnterOffY, EnterNY, EnterOffsetX, EnterNY
@@ -32,7 +30,6 @@ DoorOpenEnterDat:   db  20h,   8,   4, 10h, 10h, 10h,   0, 20h
                     db  10h, 30h,0F6h, 2Ah, 20h, 20h,   0,   8
                     db  10h, 18h,   0, 2Ah,0D0h, 10h,   0, 20h
                     db  28h, 10h,   8,   8,0F0h, 40h,   0,   8
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -919,7 +916,6 @@ IdDoorsLogic:       db    2, 41h,   5,   5,   5, 45h,   5, 42h,   3, 43h, 41h, 2
                     db  81h, 81h, 42h, 81h, 81h, 81h, 81h, 81h, 42h, 81h,   2, 10h, 10h, 10h, 10h, 10h
                     db  81h, 81h, 81h, 81h, 81h, 81h, 81h, 81h, 81h, 0Ah,   2, 42h
 
-
 TilesBasemWall60:   db 6
                     db 4
                     db  19h, 19h, 19h, 19h
@@ -929,11 +925,9 @@ TilesBasemWall60:   db 6
                     db  39h, 38h, 39h, 39h
                     db  41h, 41h, 41h, 41h
 
-
 TilesBasemWall61:   db 1
                     db 4
                     db  19h, 19h, 19h, 19h
-
 
 TilesBasemWall59:   db 0Dh
                     db 3
@@ -951,7 +945,6 @@ TilesBasemWall59:   db 0Dh
                     db  18h, 3Dh, 41h
                     db  18h, 3Dh, 41h
 
-
 TilesBasemWall58:   db 0Dh
                     db 5
                     db  3Ah, 17h, 18h, 3Dh, 41h
@@ -967,7 +960,6 @@ TilesBasemWall58:   db 0Dh
                     db  3Ah, 17h, 18h, 3Dh, 41h
                     db  3Ah, 17h, 18h, 3Dh, 41h
                     db  3Ah, 17h, 18h, 3Dh, 41h
-
 
 TilesBasemWall63:   db 0Ch
                     db 5
@@ -1014,7 +1006,6 @@ TilesWallPrison1:   db 0Dh
                     db  14h, 33h, 35h
                     db  14h, 33h, 35h
 
-
 TilesWallPrison:    db 0Ch
                     db 2
                     db  32h, 13h
@@ -1030,7 +1021,6 @@ TilesWallPrison:    db 0Ch
                     db  32h, 13h
                     db  32h, 13h
 
-
 TilesWallBld3_108:  db 0Ah
                     db 8
                     db  21h, 21h, 21h, 21h, 21h, 21h, 21h, 21h
@@ -1043,7 +1033,6 @@ TilesWallBld3_108:  db 0Ah
                     db  49h, 46h, 49h, 49h, 43h, 49h, 47h, 49h
                     db  4Ah, 4Bh, 4Ah, 4Bh, 4Ah, 4Bh, 4Ah, 4Bh
                     db  61h, 61h, 61h, 61h, 61h, 61h, 61h, 61h
-
 
 TilesBasemWall93:   db 0Ch
                     db 2
@@ -1060,7 +1049,6 @@ TilesBasemWall93:   db 0Ch
                     db  3Ah, 17h
                     db  3Ah, 17h
 
-
 TilesBasemWall100:  db 0Ch
                     db 5
                     db  26h, 17h, 18h, 3Dh, 41h
@@ -1075,7 +1063,6 @@ TilesBasemWall100:  db 0Ch
                     db  3Ah, 17h, 18h, 23h, 39h
                     db  3Ah, 17h, 18h, 24h, 37h
                     db  3Ah, 17h, 18h, 25h, 39h
-
 
 TilesBasemWall112:  db 5
                     db 6

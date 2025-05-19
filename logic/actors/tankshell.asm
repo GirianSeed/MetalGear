@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Init tanks shell
@@ -50,4 +49,3 @@ ThankShellLogic2:
 
                     ld      a, 1Ah                          ; SFX explosion
                     jp      SetSoundEntryChk
-

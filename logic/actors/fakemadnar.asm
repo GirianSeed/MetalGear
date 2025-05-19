@@ -13,7 +13,6 @@ FakeMadnadLogic:
                     dw FakeMadnarTrap
                     dw FakeMadnarFall
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Waits until the player rescues him
@@ -29,7 +28,6 @@ FakeMadnarWait:
                     ld      (ix+ACTOR2.SpriteId), 40h       ; Free fake Madnar sprite ID
                     jp      NextActorStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Fake Madnar tells Snake that it is a trap
@@ -41,7 +39,6 @@ FakeMadnarSpeak:
                     call    SetTextUnskippable
 
                     jp      NextActorStatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -64,7 +61,6 @@ FakeMadnarTrap:
                     ld      c, ID_PITFALL
                     jp      AddEnemy                        ; Add a pitfall in the room
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Fake Madnar falls (FALL_TIME) and disappears
@@ -76,4 +72,3 @@ FakeMadnarFall:
                     ret     nz                              ; Continue falling
 
                     jp      DismissActor0                   ; Remove actor
-

@@ -12,8 +12,6 @@ InitPowerSwitch:
                     ld      (PowerSwitchOn), a              ; Power switch status 1=On, 0=Off/destroyed
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Power switch
@@ -56,7 +54,6 @@ PowerSwitchLogic:
 PowerSwitchLogic2:
                     ld      a, b
                     jp      SetPaletteColor                 ; Change the electric floor color
-
 
 ;----------------------------------------------------------------------------
 ;

@@ -63,7 +63,6 @@ DrawTextBoxIn3:
                     and     a
                     ret
 
-
 DrawTextBoxIn4:
                     scf
                     ret

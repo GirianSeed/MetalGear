@@ -15,7 +15,6 @@ MusRedAlertA1:      db  22h,   1,0B1h, 78h,0B1h, 70h,0B1h, 60h,0B1h, 50h,0B1h, 4
                     db 0FEh,0FEh
                     dw Mus_AlertA2
 
-
 Mus_RedAlertB:      db 0FEh,   0
 MusRedAlertB1:      db  22h,   1,0B1h, 79h,0B1h, 79h,0B1h, 71h,0B1h, 61h,0B1h, 51h,0B1h, 41h,0B1h, 31h
                     db 0B1h, 21h,0B1h, 11h,0B1h,   1,0B0h,0F1h,0BBh,0E1h,0B0h,0D1h,0B0h,0C1h, 22h,   3
@@ -27,7 +26,6 @@ MusRedAlertB1:      db  22h,   1,0B1h, 79h,0B1h, 79h,0B1h, 71h,0B1h, 61h,0B1h, 5
                     db 0FEh,   0,0D1h,0FAh,   0,0E2h,0C0h
                     db 0FEh,0FEh
                     dw Mus_AlertB2
-
 
 Mus_RedAlertC:      db 0FEh,   0
 MusRedAlertC1:      db  22h,   1,0B1h, 7Ah,0B1h, 7Ah,0B1h, 7Ah,0B1h, 72h,0B1h, 62h,0B1h, 52h,0B1h, 42h
@@ -78,7 +76,6 @@ MusAlertC5:         db 0E9h,   1,0B0h,0B0h,0EFh,0FCh, 41h,0ECh, 52h,0E2h, 41h,0C
                     db 0E3h, 91h,0E2h, 40h,0C0h, 41h,0E3h,0B0h,0E2h, 40h, 71h, 60h,0C0h, 61h, 20h, 60h
                     db  91h,0E9h,   1,0B0h,0B0h,0EFh, 41h,0C0h, 41h, 40h, 61h,0FFh
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Alert
@@ -109,7 +106,6 @@ Mus_AlertA2:        db 0FEh,0FFh
                     db 0FEh,0FEh
                     dw Mus_AlertA2
 
-
 Mus_AlertB:         db 0D3h,0FBh, 11h,0E3h, 30h, 60h, 90h,0E2h,   0, 30h, 60h, 90h,0E1h,   0, 37h,0C7h
 Mus_AlertB2:        db 0D5h,0FDh, 32h,0E4h, 41h, 41h, 40h, 40h, 41h, 41h, 41h, 40h, 40h, 41h, 21h, 21h
                     db  20h, 20h, 21h, 21h, 21h, 20h, 20h, 21h,   1,   1,   0,   0,   1,   1,   1,   0
@@ -131,7 +127,6 @@ Mus_AlertB2:        db 0D5h,0FDh, 32h,0E4h, 41h, 41h, 40h, 40h, 41h, 41h, 41h, 4
                     db 0B0h,0B0h,0B1h, 91h, 91h, 70h, 70h, 60h, 60h
                     db 0FEh,0FEh
                     dw Mus_AlertB2
-
 
 Mus_AlertC:         db 0D3h,0FBh, 11h,0E3h,   0, 30h, 60h, 90h,0E2h,   0, 30h, 60h, 90h,0E1h,   7,0C7h
 Mus_AlertC2:        db 0FEh,0FFh
@@ -158,4 +153,3 @@ Mus_AlertC2:        db 0FEh,0FFh
                     db  60h, 80h, 90h,0B0h, 90h,0EFh,0FCh, 41h,0ECh, 52h, 63h, 43h, 33h,0E3h,0B3h
                     db 0FEh,0FEh
                     dw Mus_AlertC2
-

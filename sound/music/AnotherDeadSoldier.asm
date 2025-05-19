@@ -26,4 +26,3 @@ Mus_GameOverC:      db 0EFh,0D4h,0FCh,   0,0E1h,   0,0E2h, 90h, 60h, 30h,   0, 6
                     db  91h,0FCh, 22h,0E4h, 90h, 90h,0FDh, 22h, 91h, 91h,0FCh, 22h, 90h, 90h, 91h, 91h
                     db 0FDh, 22h,0E4h,0B0h,0B0h,0E5h,0B1h,0E4h, 21h, 41h,0FCh, 22h, 41h,0FDh, 20h, 21h
                     db  43h,0FAh,   0, 41h,0F9h,   0, 41h,0FFh
-

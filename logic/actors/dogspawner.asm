@@ -43,6 +43,3 @@ SpawnDogLogic:
                     ld      d, (ix+DOG.SpawnX)
                     ld      c, ID_DOG_BASEMENT
                     jp      AddEnemy                        ; Spawn a dog
-
-
-

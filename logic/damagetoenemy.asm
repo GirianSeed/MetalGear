@@ -42,9 +42,6 @@ ChkPlayerShots3:
                     djnz    ChkPlayerShots3
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if any enemy is hit by a weapon
@@ -75,9 +72,6 @@ ChkHitEnemies2:
                     pop     bc
                     djnz    ChkHitEnemies2
                     ret
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -187,8 +181,8 @@ ChkEnemyHitByShot5:
                     inc     a                               ; Right
 
 ChkBombOrder:
-                    ld      de,  BombOrderBuffer+0Fh
-                    ld      hl,  BombOrderBuffer+0Eh
+                    ld      de, BombOrderBuffer+0Fh
+                    ld      hl, BombOrderBuffer+0Eh
                     ld      bc, 0Fh
                     lddr
 

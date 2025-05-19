@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player triggers the alert by touching a laser bean
@@ -41,7 +40,6 @@ ChkTouchLaser3:
 
                     jr      TouchLaserAlarm
 
-
 ChkTouchLaser4:
                     ld      a, e
                     sub     (ix+ACTOR.Y)
@@ -77,7 +75,6 @@ TouchLaserAlarm:
                     call    RemoveLaserBeans                ; Remove laser beans
                     pop     ix
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;

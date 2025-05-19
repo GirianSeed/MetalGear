@@ -36,13 +36,11 @@ RadioTilesMap:      db 9
                     db  5Bh, 56h, 47h, 47h, 47h, 56h, 59h, 5Fh, 66h, 60h, 56h, 56h, 56h, 56h, 56h, 56h, 56h, 62h
                     db  4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 5Ch, 63h, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh, 4Bh
 
-
 SnakeTilesMap:      dw 404h
                     db  10h, 11h, 12h, 13h
                     db  14h, 15h, 16h, 17h
                     db  18h, 19h, 1Ah, 1Bh
                     db  1Ch, 1Dh, 1Eh, 1Fh
-
 
 SnakePicture0:      dw 202h
                     db  15h, 16h

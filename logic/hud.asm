@@ -12,7 +12,6 @@ RenderHUD:
                     call    DrawWeaponHUD
                     jp      DrawItemHUD
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw CALL signal or destruction timer
@@ -54,7 +53,6 @@ DrawCallTimer2:
                     ld      hl, txtCALL                     ; CALL sign tiles data
                     jp      PrintTextGetXY                  ; Draw/erase CALL sign
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw destruction countdown
@@ -88,7 +86,6 @@ DrawDestrucTimer:
                     ld      a, (DestructTimer)
                     jp      PrintDigit                      ; Units
 
-
 ;----------------------------------------------------------------------------
 ; Decrement 4 points of life
 ;----------------------------------------------------------------------------
@@ -118,7 +115,6 @@ DecrementLifeLoop:
 
                     jp      DrawLife                        ; Update life bar
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set dead status
@@ -144,14 +140,13 @@ SetDead:
                     ld      (DamageDelayTimer), a           ; Reset damage delay timer
 
                     ld      hl, SprShootsAtt
-                    ld      de,  SprShootsAtt+1
+                    ld      de, SprShootsAtt+1
                     ld      bc, 17h
                     ld      (hl), 0E0h
                     ldir                                    ; Remove all bullets
 
                     ld      a, 44h                          ; Music: Just another dead soldier
                     jp      SetSoundEntryChk
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -204,7 +199,6 @@ EraseLifeBar:
                     ld      d, a                            ; Page
                     jp      FillRect                        ; Erase empty bar
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Draw class text and stars
@@ -242,15 +236,10 @@ DrawStar:
                     djnz    DrawStar
                     ret
 
-
-
 ;
 ; (!?) Code not used
 ;
                     ld      c, 0
-
-
-
 
 Render2Numbers_:
                     dec     b
@@ -275,7 +264,6 @@ RenderUnits:
                     djnz    Render2Numbers_
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Render 3 digits number
@@ -292,7 +280,6 @@ Render3Numbers:
                     ld      c, 0                            ; Mask to erase the hundreds digit in case it is 0
                     ld      b, 2                            ; 2 bytes
                     jr      RenderUnits
-
 
 ;----------------------------------------------------------------------------
 ; Render 1 digit number
@@ -317,5 +304,3 @@ RenderNumber2:
                     add     a, 8                            ; X = X + 8
                     ld      d, a
                     ret
-
-

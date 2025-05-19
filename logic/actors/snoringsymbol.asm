@@ -12,10 +12,6 @@ InitSnoringSymbol:
                     ld      (ix+ACTOR.SpriteId), 3Ah        ; Snoring symbol frame 1 sprite ID
                     ret
 
-
-
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Snoring symbol logic

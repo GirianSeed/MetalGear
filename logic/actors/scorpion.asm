@@ -15,8 +15,6 @@ InitScorpion:
                     inc     a
                     jp      SetScorpionSprId                ; Random scorpion sprite
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Scorpion logic
@@ -31,14 +29,11 @@ ScorpionLogic:
                     dw ScorpionAttack
                     dw ScorpionWait
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; The scorpion moves in random directions. If the scorpion detects the player, walks towards him
 ;
 ;----------------------------------------------------------------------------
-
 
 ScorpionWander:
                     call    GetDistancePlayer
@@ -64,7 +59,6 @@ ScorpionNewDir:
 
                     jr      ScorpionSetSpeed                ; Set scorpion speed depending on the direction
 
-
 ;----------------------------------------------------------------------------
 ; Set the speed to move toward the player
 ;----------------------------------------------------------------------------
@@ -87,7 +81,6 @@ ScorpionTurn:
                     call    SetScorpionSprId
                     jr      ScorpionSetSpeed
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Move in the selected direction towards the player for a while
@@ -106,7 +99,6 @@ ScorpionAttackEnd:
                     ld      (ix+ACTOR.Wait), 14h
                     jp      ResetActorSpeed                 ; Stop the scorpion
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait, select a new direction and start moving again
@@ -121,14 +113,11 @@ ScorpionWait:
                     ld      (ix+ACTOR.Moving), 1            ; Enable movement
                     jr      ScorpionNewDir                  ; Select a random direction
 
-
 RandomWait5_8:
                     call    GetRandom3
                     add     a, 5
                     ld      (ix+ACTOR.Wait), a
                     ret
-
-
 
 ; (!?) Unused code
 
@@ -151,7 +140,6 @@ SetScorpionSprId:
 SetScorpionSprId2:
                     ld      (ix+ACTOR.SpriteId), a
                     ret
-
 
 ScorpionSetSpeed:
                     ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
@@ -198,4 +186,3 @@ ChkScorpionLimits:
                     add     a, 10h
                     cp      21h
                     ret
-

@@ -37,7 +37,6 @@ DrawMine:
                     ld      a, 48h                          ; From VRAM page 1 to 0 (transparency)
                     jp      VDP_Copy_Dot                    ; Draw mine
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get mine background coordinates and offset X in VRAM buffer
@@ -65,7 +64,6 @@ GetMineBackXY:
                     rlca                                    ; x16
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Draw mines if the mine detector is selected
@@ -91,7 +89,6 @@ DrawMines2:
                     djnz    DrawMines2
                     ret
 
-
 DrawMines3:
                     ld      l, (ix+ACTOR.Y)
                     ld      h, (ix+ACTOR.X)                 ; (!?) HL is not used!
@@ -101,6 +98,3 @@ DrawMines3:
                     pop     bc
 
                     ret
-
-
-

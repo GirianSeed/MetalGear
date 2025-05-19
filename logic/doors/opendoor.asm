@@ -12,7 +12,6 @@ ChkOpenDoor:
                     xor     a                               ; Snake can't open doors in cardboard mode
                     ret
 
-
 ChkOpenDoor2:
                     ld      a, (hl)                         ; +2 = Door logic
                     and     1Fh                             ; Keep only the type of logic to open the door
@@ -64,7 +63,6 @@ ChkElevatorDoor:
 
                     jr      ChkTouchDoor_
 
-
 ChkNoCardDoorUp:
                     ld      a, (PlayerDirection)            ; 1=Up, 2 = Down, 3=Left, 4=Right
                     dec     a                               ; Going up?
@@ -72,7 +70,6 @@ ChkNoCardDoorUp:
 
 ChkTouchDoor_:
                     jp      ChkTouchDoor
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -84,36 +81,29 @@ ChkCard1:
                     ld      d, SELECTED_CARD1
                     jr      ChkCard
 
-
 ChkCard2:
                     ld      d, SELECTED_CARD2
                     jr      ChkCard
-
 
 ChkCard3:
                     ld      d, SELECTED_CARD3
                     jr      ChkCard
 
-
 ChkCard4:
                     ld      d, SELECTED_CARD4
                     jr      ChkCard
-
 
 ChkCard5:
                     ld      d, SELECTED_CARD5
                     jr      ChkCard
 
-
 ChkCard6:
                     ld      d, SELECTED_CARD6
                     jr      ChkCard
 
-
 ChkCard7:
                     ld      d, SELECTED_CARD7
                     jr      ChkCard
-
 
 ChkCard8:
                     ld      d, SELECTED_CARD8
@@ -155,7 +145,6 @@ ChkPunchDoor:
 
                     jp      ChkTouchDoor
 
-
 ;----------------------------------------------------------------------------
 ;
 ; (!?) Unused? Lorry's doors are always open
@@ -180,7 +169,6 @@ ChkDoorLorry:
                     inc     hl                              ; HL = Pointer to check area Y
                     jp      ChkBombLocation
 
-
 ChkDoorLorry2:
                     ld      a, (PlayerControlMod)           ; 8=Intro scene, 7=Ladders climb, 6=ladders walk, 5=Air flow, 4=Parachute, 3=Dead, 2=Elevator, 1=Punch, 0=Walk
                     dec     a                               ; Is the player punching?
@@ -198,8 +186,6 @@ ChkDoorLorry2:
                     jp      nz, DoorLocked
 
                     jp      PlayBreakableSfx
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -222,7 +208,6 @@ ChkDesertDoorBuild2:
 
                     jp      ChkTouchDoor
 
-
 ChkDesertDoorBuild2_:
                     ld      a, (DoorBuild2LockedF)          ; 0 = Entrance door of building 2 is closed. 1 = Open
                     and     a
@@ -233,7 +218,6 @@ ChkDesertDoorBuild2_:
                     xor     a
                     ld      (DoorBuild2LockedF), a          ; 0 = Entrance door of building 2 is closed. 1 = Open
                     jp      DoorUnlocked
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -254,7 +238,6 @@ ChkCompassDoor:
                     ld      (JeniOpenDoorF), a              ; Flag to open the door to the compass room
                     jp      DoorUnlocked
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Door from Metal Gear to Big Boss room
@@ -273,7 +256,6 @@ ChkBigBossDoor:
                     xor     a
                     ld      (OpenBigBossDoor), a            ; Flag to open door from Metal Gear to Big Boss room, and door to escape ladders.
                     jp      DoorUnlocked
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -318,8 +300,6 @@ ChkPrisonWalls2:
 
                     jr      DoorUnlocked
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the breakable walls in the basement
@@ -346,7 +326,6 @@ ChkBasementWall:
                     inc     hl
                     jr      ChkBombLocation
 
-
 ChkPunchBaseWall:
                     ld      a, (hl)                         ; Door render type
                     sub     7                               ; DrawBasemWall60 (Adjust render type to start at 0)
@@ -372,7 +351,6 @@ PlayBreakableSfx:
                     and     a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ; List of directions to punch each breakable wall
 ;----------------------------------------------------------------------------
@@ -390,7 +368,6 @@ PunchWallDirs:      db DIR_DOWN
                     db DIR_RIGHT
                     db DIR_UP
                     db DIR_LEFT
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -427,7 +404,6 @@ ChkTouchDoor3:
 DoorLocked:
                     and     a
                     ret
-
 
 DoorUnlocked:
                     scf

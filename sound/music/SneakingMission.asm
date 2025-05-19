@@ -9,8 +9,6 @@ MusBasementA3B:     db 0FBh, 23h,0E2h,0B0h,0B0h,0B1h,0F9h, 23h,0E3h,0B0h,0B0h,0B
 MusBasementC3B:     db 0FBh, 23h,0E2h, 40h, 40h, 41h,0F9h, 23h,0E3h, 40h, 40h, 41h,0F8h, 23h, 40h, 40h
                     db 0FFh
 
-
-
 Mus_Basement:       db 0D9h,0C1h
 Mus_BasementA2:     db 0ECh, 53h,0D9h,0FBh, 23h,0E2h,0B7h,0E1h, 27h, 17h,0E2h, 97h,0E1h,   7,0E2h,0B7h
                     db  67h, 97h,0BFh,0E1h, 0Fh,0E2h,0B3h,0E1h, 43h, 53h,0B3h,0E0h, 2Fh
@@ -33,7 +31,6 @@ MusBasementA4:      db 0EFh,0FBh, 21h,0E2h,0B0h,0E1h, 40h, 50h,0B0h,   0, 50h, 6
                     db 0FEh,0FEh
                     dw Mus_BasementA2
 
-
 Mus_BasementB:      db 0D9h,0C1h
 Mus_BasementB2:     db 0D9h,0FCh, 21h,0E5h,0B3h,0E4h,   3, 43h, 33h
                     db 0FEh,   2
@@ -55,7 +52,6 @@ MusBasementB5:      db 0EFh,0FCh, 21h,0E5h,0B0h,0E4h, 40h, 50h,0B0h,   0, 50h,0B
                     db  40h
                     db 0FEh,0FEh
                     dw Mus_BasementB2
-
 
 Mus_BasementC:      db 0D9h,0C1h
 Mus_BasementC2:     db 0E8h,0ECh, 43h,0D9h,0F9h, 23h,0E2h, 90h,0A0h,0B7h,0E1h, 27h, 17h,0E2h, 97h,0E1h
@@ -81,4 +77,3 @@ MusBasementC4:      db 0EFh,0FCh, 23h,0E4h,0B0h,0E3h, 40h, 50h,0B0h,0E3h,   0, 5
                     db  23h, 40h
                     db 0FEh,0FEh
                     dw Mus_BasementC2
-

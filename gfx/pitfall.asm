@@ -12,7 +12,6 @@ PitfallTileMap:     db    1,   9,   9,   9,   9,   9,   9,   5,0FEh
                     db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FEh
                     db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FFh
 
-
 GfxPitfall:         db 0FFh, 88h, 8Ch,0FBh, 8Ch,0FBh,0FFh,0FFh,0FFh,0C0h,0C0h,0FFh,0C0h,0FFh,0FFh,0FFh
                     db 0BFh,0E8h, 6Ch,0FBh, 6Ch,0FBh, 7Fh,0FFh,0BFh,0F0h, 70h,0FFh, 70h,0FFh, 7Fh,0FFh
                     db 0BFh,0F8h, 7Ch,0FBh, 6Ch,0FBh, 6Fh,0FFh,0BFh,0FCh, 7Ch,0FFh, 6Ch,0FFh, 6Ch,0FFh

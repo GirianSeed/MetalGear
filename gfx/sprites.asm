@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ;
@@ -15,7 +14,6 @@ SprSnakeDown1:      db  95h,   3,   7,   7, 3Dh, 74h, 36h,0FFh,0CEh,0FEh,0BFh, 3
                     db  3Fh, 1Fh, 0Fh,   3,   6,   0, 8Bh, 30h, 10h, 90h, 20h, 20h, 40h,0A0h, 60h, 60h
                     db 0A0h,0C0h,   5,   0,   0
 
-
 SprSnakeDown:       db 0C2h,   3,   7,   7, 1Dh, 3Ch, 6Eh, 5Fh,0F6h,0F6h,0FFh,0BFh,0F8h, 9Fh,0FBh, 77h
                     db  37h, 80h,0C0h,0F0h,0D8h,0ECh,0ECh,0FCh,0FCh,0F8h,0F4h,0FCh,0BAh,0FCh,0B0h,0D8h
                     db 0F0h,   3,   7,   4, 1Fh, 37h, 57h, 33h, 8Bh,0DBh,0B1h,0DCh,0BFh,0FEh, 95h, 79h
@@ -24,7 +22,6 @@ SprSnakeDown:       db 0C2h,   3,   7,   7, 1Dh, 3Ch, 6Eh, 5Fh,0F6h,0F6h,0FFh,0B
                     db    4,0E0h, 85h,0B0h,0D0h,0E0h,0E0h,0C0h,   6,   0,   2, 21h, 85h, 11h, 13h, 19h
                     db  13h, 0Bh,   4, 1Fh, 81h, 0Eh,   4,   0, 8Ah, 90h,0A0h,   0,0A0h,0E0h,0F0h,0F0h
                     db 0E0h,0E0h,0C0h,   6,   0,   0
-
 
 SprSnakeDown2:      db 0CCh,   0,   3, 3Fh, 7Fh, 5Dh, 74h, 76h, 3Fh, 2Eh, 2Eh, 1Fh, 1Fh, 1Ah, 3Fh, 2Fh
                     db  27h,   0, 80h,0C0h,0C0h,0F8h,0DAh,0DEh,0FFh,0F3h,0FFh,0FDh,0FEh, 3Ch,0F0h,0F0h
@@ -35,7 +32,6 @@ SprSnakeDown2:      db 0CCh,   0,   3, 3Fh, 7Fh, 5Dh, 74h, 76h, 3Fh, 2Eh, 2Eh, 1
                     db  44h, 24h, 2Ch,   3, 3Fh, 83h, 7Fh, 7Ch, 78h,   4,   0, 8Ah, 10h,0B0h,0D0h,0A0h
                     db    0,0C0h,0E0h,0E0h,0C0h, 80h,   6,   0,   0
 
-
 SprSnakeLeft1:      db 0C9h,   7, 0Fh, 0Fh, 19h, 1Bh, 1Eh, 1Dh, 1Fh, 0Fh, 0Ch, 0Fh, 1Fh, 3Fh, 6Fh, 5Dh
                     db  79h,   0, 80h, 80h,0C0h,0F0h,0B8h, 6Ch, 7Ch,0D8h,0E8h, 88h,0F0h,0F0h, 70h, 70h
                     db 0B0h,   7, 0Fh,   9, 1Fh, 1Dh, 17h, 17h, 12h, 0Bh, 0Fh, 0Ch, 13h, 22h, 56h, 64h
@@ -44,7 +40,6 @@ SprSnakeLeft1:      db 0C9h,   7, 0Fh, 0Fh, 19h, 1Bh, 1Eh, 1Dh, 1Fh, 0Fh, 0Ch, 0
                     db  25h,   3,   0,0C0h,0E0h,0E0h,0C0h,   6,   0, 89h, 49h, 10h, 70h, 50h,0FCh,0FFh
                     db 0FFh, 1Fh,   7,   7,   0, 8Ah, 18h,0AEh, 4Dh, 27h,   3,   0,0C0h,0E0h,0E0h,0C0h
                     db    6,   0,   0
-
 
 SprSnakeLeft:       db  91h,   7, 0Fh, 0Fh,   9, 1Bh, 1Eh, 1Dh, 1Dh, 1Fh, 2Fh, 2Fh, 5Dh, 3Fh, 17h, 2Fh
                     db  3Fh,   0,   3, 80h, 9Dh,0F0h,0ACh, 74h, 7Eh, 7Bh, 79h, 7Dh,0F9h, 26h,0E4h,0B8h
@@ -55,7 +50,6 @@ SprSnakeLeft:       db  91h,   7, 0Fh, 0Fh,   9, 1Bh, 1Eh, 1Dh, 1Dh, 1Fh, 2Fh, 2
                     db  46h, 4Dh, 29h, 38h, 38h, 74h, 6Fh, 7Fh, 3Fh,   7,   1,   4,   0, 89h, 30h, 60h
                     db  10h, 10h, 90h,0F0h, 70h, 58h,0D8h,   3,0FCh, 81h, 70h,   3,   0,   0
 
-
 SprSnakeLeft2:      db 0C2h,   0,   7, 0Fh, 0Fh,   9, 1Bh, 36h, 35h, 7Dh, 9Fh,0EFh, 7Fh, 1Dh,   7,   7
                     db  0Fh,   0,   0, 80h, 80h,0F8h,0FEh,0AFh,0B9h,0BCh,0FDh,0F2h,0F4h, 78h,0F8h,0D8h
                     db 0B0h,   0,   7, 0Fh,   9, 0Fh, 1Dh, 2Fh, 2Fh, 67h,0F2h, 98h, 6Ch, 1Fh,   7,   6
@@ -64,7 +58,6 @@ SprSnakeLeft2:      db 0C2h,   0,   7, 0Fh, 0Fh,   9, 1Bh, 36h, 35h, 7Dh, 9Fh,0E
                     db  82h,0F0h,0E0h,   3,0C0h,   3,0E0h,   2, 78h, 82h,0F0h,0C0h,   4,   0,   2, 0Ah
                     db    3,   4, 88h,   2,   3,   3,   2,   7, 0Fh, 0Fh,   7,   3,   0, 8Ch, 10h, 20h
                     db 0C0h, 40h, 40h,0A0h,0A0h, 60h,0F8h,0F8h,0F0h,0C0h,   4,   0,   0
-
 
 SprSnakeUp1:        db  8Bh,   0,   3,   7,   7, 1Fh, 37h, 78h, 77h, 77h, 37h, 3Fh,   5, 1Fh, 8Dh,   0
                     db  80h,0C0h,0F8h,0ACh, 66h, 76h, 72h, 7Ah, 7Eh,0FAh,0FCh, 70h,   3,0F0h,0A4h,   0
@@ -75,7 +68,6 @@ SprSnakeUp1:        db  8Bh,   0,   3,   7,   7, 1Fh, 37h, 78h, 77h, 77h, 37h, 3
                     db    0, 81h,   1,   3,   3, 81h,   1,   4,   0, 8Ch, 90h,0F0h, 50h, 10h,0A0h, 60h
                     db 0D0h,0D0h,0E0h,0E0h,0C0h, 80h,   4,   0,   0
 
-
 SprSnakeUp:         db 0C1h,   3,   7,   7, 1Fh, 7Bh, 5Dh, 5Ch, 7Fh,0DDh, 9Dh,0B8h, 6Fh, 1Fh, 1Dh, 3Bh
                     db  3Bh, 80h,0C0h,0C0h,0F0h,0D8h,0DCh, 5Ch,0FCh,0D8h,0F8h, 1Ch,0E0h,0B0h, 30h,0F0h
                     db 0F0h,   3,   4,   7, 1Fh, 44h, 26h, 27h, 6Fh,0F7h,0F2h,0DFh, 6Fh, 10h, 12h, 24h
@@ -84,7 +76,6 @@ SprSnakeUp:         db 0C1h,   3,   7,   7, 1Fh, 7Bh, 5Dh, 5Ch, 7Fh,0DDh, 9Dh,0B
                     db  87h, 70h, 50h, 58h,0F8h,0F8h,0E0h, 80h,   5,   0, 8Ch, 23h, 26h, 32h, 22h, 14h
                     db  14h, 1Ch, 0Fh, 1Fh, 3Bh, 3Fh, 1Eh,   4,   0, 8Bh, 90h,0B0h,0D0h, 90h, 70h, 70h
                     db  78h,0F8h,0F8h,0E0h, 80h,   5,   0,   0
-
 
 SprSnakeUp2:        db  8Dh,   0,   1,   3, 1Fh, 35h, 66h, 6Eh, 4Eh, 5Eh, 7Eh, 5Fh, 3Fh, 0Eh,   3, 0Fh
                     db  8Bh,   0,0C0h,0E0h,0E0h,0F8h,0ECh, 1Eh,0EEh,0EEh,0ECh,0FCh,   5,0F8h,0A0h,   0
@@ -95,7 +86,6 @@ SprSnakeUp2:        db  8Dh,   0,   1,   3, 1Fh, 35h, 66h, 6Eh, 4Eh, 5Eh, 7Eh, 5
                     db    5,   6, 0Bh, 0Bh,   7,   7,   3,   1,   4,   0, 84h, 58h, 18h, 58h, 10h,   3
                     db    0, 81h, 80h,   3,0C0h, 81h, 80h,   4,   0,   0
 
-
 SprSnakeRight1:     db 0CAh,   0,   1,   1,   3, 0Fh, 1Dh, 36h, 3Eh, 1Bh, 17h, 11h, 0Fh, 0Fh, 0Eh,   6
                     db    6,0E0h,0F0h,0F0h, 98h,0D8h, 78h,0B8h,0F8h,0F0h, 30h,0F0h,0F8h,0FCh,0F6h,0FBh
                     db 0FFh,   0,   1,   1,   3, 0Dh, 13h, 29h, 2Dh, 17h, 1Bh, 1Eh,   9, 0Eh,   9,   5
@@ -104,7 +94,6 @@ SprSnakeRight1:     db 0CAh,   0,   1,   1,   3, 0Fh, 1Dh, 36h, 3Eh, 1Bh, 17h, 1
                     db  0Eh, 0Eh, 3Bh,0FDh,0FFh,0FCh,0F0h,0C0h,   6,   0, 8Ah, 0Eh, 38h, 7Dh, 58h, 20h
                     db    1,   7, 0Fh, 0Fh,   7,   6,   0, 8Ah, 5Dh, 92h, 0Eh, 0Ah, 3Fh,0FFh,0FFh,0FCh
                     db 0F0h,0C0h,   6,   0,   0
-
 
 SprSnakeRight:      db  81h,   0,   3,   1, 9Dh, 1Fh, 35h, 6Eh, 7Eh,0DEh, 9Eh,0BEh, 9Fh, 64h, 27h, 1Dh
                     db  1Eh,0E0h,0F0h,0F0h, 90h,0D8h, 78h,0B8h,0B8h,0F8h,0F4h,0F4h,0BAh,0FCh,0E8h,0F4h
@@ -115,7 +104,6 @@ SprSnakeRight:      db  81h,   0,   3,   1, 9Dh, 1Fh, 35h, 6Eh, 7Eh,0DEh, 9Eh,0B
                     db  0Ch,   6,   8,   9,   9, 0Eh, 1Bh, 17h,   3, 3Fh, 81h, 0Ch,   3,   0, 8Bh, 7Ah
                     db  62h,0A6h, 94h, 98h, 38h, 5Ch,0EEh,0FEh,0FCh,0E0h,   5,   0,   0
 
-
 SprSnakeRight2:     db    2,   0,   2,   1,0BEh, 1Fh, 7Fh,0F5h, 9Dh, 3Dh,0BFh, 4Fh, 2Fh, 1Eh, 1Fh, 1Bh
                     db  0Dh,   0,0E0h,0F0h,0F0h, 90h,0D8h, 6Ch,0ACh,0BEh,0F9h,0F7h,0FEh,0B8h,0E0h,0E0h
                     db 0F0h,   0,   0,   1,   1, 17h, 63h,0ABh, 72h,0F6h,0DEh, 7Ch, 1Fh, 1Fh, 13h, 14h
@@ -124,7 +112,6 @@ SprSnakeRight2:     db    2,   0,   2,   1,0BEh, 1Fh, 7Fh,0F5h, 9Dh, 3Dh,0BFh, 4
                     db 0F0h,   3,0E0h,   2,0C0h, 85h, 40h,0E0h,0E0h, 60h,0C0h,   4,   0, 8Ch,   8,   4
                     db    3,   2,   2,   5,   5, 0Eh, 0Fh,   7,   7,   3,   4,   0,   2, 50h,   3, 20h
                     db  87h, 40h,0C0h,0C0h, 60h,0E0h,0E0h,0C0h,   4,   0,   0
-
 
 SprSnakeDown1W:     db  91h,   3,   7,   7, 0Dh, 1Ch, 3Eh, 35h, 7Bh, 5Fh, 3Dh, 3Dh, 1Fh, 1Eh, 3Fh, 17h
                     db  2Fh, 80h,   3,0C0h, 9Dh,0E0h,0F0h,0D8h,0BCh,0F4h, 6Ch,0FCh,0D8h,   8,0F8h,0D8h
@@ -135,7 +122,6 @@ SprSnakeDown1W:     db  91h,   3,   7,   7, 0Dh, 1Ch, 3Eh, 35h, 7Bh, 5Fh, 3Dh, 3
                     db  46h, 4Ch, 24h, 2Ch, 14h, 1Eh, 17h, 17h, 3Fh, 3Fh, 1Fh,   6,   4,   8,   0, 88h
                     db  98h,0E8h, 50h,   0, 30h,0F8h,0F8h,0F0h,0E0h, 80h,   5,   0,   0
 
-
 SprSnakeDownW:      db  91h,   3,   7,   7, 1Dh, 3Ch, 76h, 77h, 7Dh, 3Dh, 3Fh, 7Fh, 5Fh, 3Fh, 1Fh, 3Fh
                     db  37h, 80h,   3,0C0h, 9Dh,0E0h,0F8h,0ACh,0F6h, 76h, 7Eh,0ECh,0CCh,0D8h,0F0h, 78h
                     db 0D8h,   3,   7,   4, 1Fh, 27h, 5Fh, 4Bh, 5Fh, 73h, 72h, 58h, 7Ch, 3Fh, 17h, 23h
@@ -144,7 +130,6 @@ SprSnakeDownW:      db  91h,   3,   7,   7, 1Dh, 3Ch, 76h, 77h, 7Dh, 3Dh, 3Fh, 7
                     db    4,0F0h, 85h,0D0h,0B8h,0F8h,0D8h, 70h,   3,   0, 83h, 27h, 13h, 17h,   3, 1Bh
                     db  85h, 3Fh, 1Fh,   7,   3,   1,   5,   0, 8Dh,   8, 88h, 18h, 28h, 90h, 90h,0F0h
                     db 0B0h,0B0h,0D8h,0B8h,0F8h, 70h,   3,   0,   0
-
 
 SprSnakeDown2W:     db  92h,   0,   3,   7,   7, 3Dh, 7Ch,0D6h,0F7h,0F6h,0BEh,0BBh,0FFh, 5Fh, 3Fh, 1Fh
                     db  37h,   0, 80h,   3,0C0h, 9Dh,0F0h,0ECh,0FEh,0DBh,0DBh,0FFh,0FFh,0F3h,0E6h,0BCh
@@ -155,7 +140,6 @@ SprSnakeDown2W:     db  92h,   0,   3,   7,   7, 3Dh, 7Ch,0D6h,0F7h,0F6h,0BEh,0B
                     db  1Ah,   4,   0,   0, 0Eh, 1Fh, 1Fh,   7,   1,   1,   3,   0, 90h, 88h, 48h, 88h
                     db  88h, 98h,0C8h, 90h,0D0h,0F0h,0D8h,0F8h,0F8h,0F0h,0C0h, 40h, 20h,   0
 
-
 SprSnakeLeft1W:     db 0C1h,   7, 0Fh, 0Fh,   9, 0Bh, 0Ch, 0Bh, 0Dh, 1Bh, 1Fh,0FDh,0D0h, 3Bh, 1Fh,   7
                     db    7,   0, 80h,0B8h,0DCh,0FCh,0E6h, 5Eh,0BAh,0FEh,0FFh,0F7h,0EFh,0BEh,0F6h,0CCh
                     db  7Ch,   7, 0Fh,   9, 0Fh, 0Dh, 0Fh, 0Fh, 0Ah, 14h, 16h,0FFh,0FFh, 25h, 1Fh,   6
@@ -164,7 +148,6 @@ SprSnakeLeft1W:     db 0C1h,   7, 0Fh, 0Fh,   9, 0Bh, 0Ch, 0Bh, 0Dh, 1Bh, 1Fh,0F
                     db 0F8h, 88h,0B8h, 28h, 48h,0FCh,0FCh,0F8h,0E0h,0C0h,   4,   0, 86h,   4,   8,   9
                     db  0Ah,   8,   5,   3, 0Bh, 84h, 7Fh, 15h, 1Fh, 0Fh,   3,   0, 8Ch, 38h, 78h,0C8h
                     db 0D8h,0A8h, 38h, 78h,0ECh,0FCh,0F8h,0E0h,0C0h,   4,   0,   0
-
 
 SprSnakeLeftW:      db 0C0h,   7, 0Fh, 0Fh,   9, 0Bh, 0Fh, 18h, 1Fh, 1Bh, 1Fh,0FBh,0B1h,0C7h, 3Fh,   7
                     db  0Eh,   0, 80h,0F8h,0DCh, 6Eh,0FFh,0CDh, 3Fh, 7Eh, 77h,0EFh, 9Fh,0FEh,0EEh, 9Ch
@@ -175,7 +158,6 @@ SprSnakeLeftW:      db 0C0h,   7, 0Fh, 0Fh,   9, 0Bh, 0Fh, 18h, 1Fh, 1Bh, 1Fh,0F
                     db  11h, 11h, 0Ah, 0Fh,   3, 0Bh, 83h, 0Fh, 1Fh, 1Fh,   4,   0, 8Ch, 74h,0CCh,0C2h
                     db  26h, 3Ch, 1Ah, 1Ah, 7Ah,0FAh,0FEh,0F0h, 80h,   4,   0,   0
 
-
 SprSnakeLeft2W:     db 0CCh,   0,   7, 0Fh, 0Fh,   9, 0Ah, 0Fh, 1Bh, 3Dh, 36h,0FEh,0AFh,0E7h, 3Fh, 1Fh
                     db  37h,   0,   0, 98h,0FCh,0BEh,0DEh,0EDh,0DDh,0BEh, 7Ch,0FFh,0EFh, 3Ch,0FCh,0ECh
                     db 0F8h,   0,   7, 0Fh,   9, 0Fh, 0Fh, 0Ch, 1Eh, 27h, 2Bh,0F1h,0FFh,0DEh, 27h, 19h
@@ -184,7 +166,6 @@ SprSnakeLeft2W:     db 0CCh,   0,   7, 0Fh, 0Fh,   9, 0Ah, 0Fh, 1Bh, 3Dh, 36h,0F
                     db 0F8h,0F0h,0F8h,0FCh,0F6h, 7Bh, 0Dh,   5,0E2h,0F0h,0F0h,0E0h,   4,   0, 87h, 43h
                     db  4Fh, 65h, 3Dh, 28h, 2Ch, 1Ch,   3, 3Fh, 82h, 1Fh,   1,   4,   0, 8Ch,   8, 10h
                     db  28h, 0Ch, 9Ah, 75h, 0Fh,   7,0E2h,0F0h,0F0h,0E0h,   4,   0,   0
-
 
 SprSnakeUp1W:       db  81h,   3,   3,   7, 88h, 1Fh, 36h, 36h, 30h, 3Fh, 3Fh, 1Fh, 10h,   4, 1Fh, 8Dh
                     db  80h,0C0h,0C0h,0F0h, 78h,0ECh,0ECh,0FCh, 64h,0E4h, 74h,0FCh,0F8h,   3,0F0h,0A0h
@@ -195,7 +176,6 @@ SprSnakeUp1W:       db  81h,   3,   3,   7, 88h, 1Fh, 36h, 36h, 30h, 3Fh, 3Fh, 1
                     db  0Fh, 0Fh,   7,   3,   1,   5,   0,   2, 10h, 89h,0D0h, 90h,0A0h,0E0h,0A0h, 70h
                     db  30h,0F0h,0E0h,   5,   0,   0
 
-
 SprSnakeUpW:        db 0C9h,   3,   7,   7, 1Fh, 3Fh, 37h, 37h, 30h, 1Fh, 3Fh, 1Fh, 14h, 1Fh, 1Fh, 0Ch
                     db  0Fh, 80h,0C0h,0C0h,0F8h,0BCh, 6Eh, 76h,0FEh, 64h,0F2h,0FEh,0FCh,0F8h,0F0h,0F0h
                     db  70h,   3,   6,   7, 1Fh, 28h, 19h, 19h, 2Fh, 17h, 21h, 18h, 1Fh, 17h, 10h, 0Bh
@@ -204,7 +184,6 @@ SprSnakeUpW:        db 0C9h,   3,   7,   7, 1Fh, 3Fh, 37h, 37h, 30h, 1Fh, 3Fh, 1
                     db    5,0F0h,   2,0E0h, 92h, 60h, 20h,0F0h,0B0h,0F0h,0E0h, 40h,   0,   0, 0Ah, 0Bh
                     db    5,   7, 0Dh, 0Dh, 0Fh,   7,   7,   3,   3, 81h,   1,   3,   0,   3, 10h, 8Dh
                     db 0D0h, 10h, 20h,0A0h,0E0h,0E0h, 70h, 70h,0F0h,0E0h, 40h,   0,   0,   0
-
 
 SprSnakeUp2W:       db  82h,   0,   3,   3,   7, 8Dh, 1Eh, 2Dh, 2Dh, 31h, 3Eh, 3Fh, 1Eh, 11h, 3Fh, 3Fh
                     db  1Fh,   0, 80h,   3,0C0h,0B8h,0E0h, 70h, 70h,0F0h,0C8h,0C8h,0E8h,0F8h,0F0h,0F8h
@@ -216,7 +195,6 @@ SprSnakeUp2W:       db  82h,   0,   3,   3,   7, 8Dh, 1Eh, 2Dh, 2Dh, 31h, 3Eh, 3
                     db  8Dh,0C8h, 88h,0D0h, 78h, 68h, 58h,0F8h,0F0h,0F0h,0E0h,0C0h,0C0h, 80h,   3,   0
                     db    0
 
-
 SprSnakeRight1W:    db 0CCh,   0,   1,   1,   3, 0Fh, 1Eh, 3Ah, 36h, 7Dh, 5Dh, 67h,0F9h,0F9h, 1Fh, 1Dh
                     db  1Dh,0E0h,0F0h,0F0h, 90h,0D8h, 7Ch,0BCh,0B4h,0FCh,0FCh,0FFh,0FAh,0FCh,0F8h,0ECh
                     db 0F6h,   0,   1,   1,   3, 0Dh, 17h, 25h, 2Bh, 76h, 6Eh, 5Fh,0E7h,0FFh, 1Eh, 1Ah
@@ -225,7 +203,6 @@ SprSnakeRight1W:    db 0CCh,   0,   1,   1,   3, 0Fh, 1Eh, 3Ah, 36h, 7Dh, 5Dh, 6
                     db 0FFh, 81h, 8Fh,   3, 0Fh, 86h, 3Bh,0FBh,0FDh,0FEh,0FCh,0C0h,   4,   0, 8Ch,   8
                     db  0Ch, 10h, 21h, 76h,0E8h,0F0h,0A1h, 6Fh, 1Fh, 1Fh, 0Fh,   4,   0, 8Ch, 41h,0F5h
                     db  89h,   9, 0Bh, 0Dh, 3Dh,0FFh,0FFh,0FEh,0FCh,0C0h,   4,   0,   0
-
 
 SprSnakeRightW:     db 0C0h,   0,   1,   1, 1Fh, 3Fh, 65h, 7Dh, 5Dh,0CBh, 9Bh, 4Fh,0E7h,0F9h, 1Fh, 1Dh
                     db  0Dh,0E0h,0F0h,0F0h, 90h,0D8h, 7Ch,0BEh,0B6h,0FEh,0FEh,0FFh,0FAh,0FEh,0FCh,0F4h
@@ -236,7 +213,6 @@ SprSnakeRightW:     db 0C0h,   0,   1,   1, 1Fh, 3Fh, 65h, 7Dh, 5Dh,0CBh, 9Bh, 4
                     db  0Ch, 11h, 13h, 12h, 1Ch, 35h, 5Fh, 5Fh, 3Fh, 1Fh,   4,   0, 8Bh,0F2h,0A2h, 92h
                     db  24h, 2Ch, 78h, 50h,0B0h, 98h,0FEh,0F0h,   5,   0,   0
 
-
 SprSnakeRight2W:    db    2,   0,   2,   1,0BEh,   7, 1Fh, 3Dh, 3Dh, 5Bh, 4Bh, 6Fh, 2Fh,0F7h,0F7h, 0Fh
                     db  0Eh,   0,0E0h,0F0h,0F0h, 90h,0D8h, 7Ch, 6Eh, 6Eh,0EEh,0FEh,0FEh,0FFh,0FAh,0F8h
                     db 0F8h,   0,   0,   1,   1,   7, 15h, 23h, 32h, 6Eh, 7Ch, 5Ch, 37h,0EFh,0EFh, 0Fh
@@ -245,7 +221,6 @@ SprSnakeRight2W:    db    2,   0,   2,   1,0BEh,   7, 1Fh, 3Dh, 3Dh, 5Bh, 4Bh, 6
                     db 0F0h, 85h, 70h, 78h, 3Fh,0F8h, 70h,   3,   0, 8Ch,   8,   4,   3,   2,   3,   2
                     db    1,   5, 0Fh,   7,   3,   1,   4,   0, 81h, 48h,   3, 28h,   2, 30h, 87h, 70h
                     db 0F0h,0B0h,0F8h,0FFh,0F8h, 70h,   3,   0,   0
-
 
 SprSnakePunchD:     db 0CDh,   3,   7,   7,   5, 0Ch, 1Eh, 3Bh, 33h, 3Fh, 3Bh, 33h, 37h, 39h, 39h, 7Fh
                     db  3Fh, 80h,0F0h,0F8h,0D8h,0D8h,0FCh,0F4h,0BCh,0B0h,0F0h,0F0h,0A0h,0F0h,0F0h,0B8h
@@ -256,7 +231,6 @@ SprSnakePunchD:     db 0CDh,   3,   7,   7,   5, 0Ch, 1Eh, 3Bh, 33h, 3Fh, 3Bh, 3
                     db  73h, 56h, 4Ch, 78h, 70h, 7Ch,0FFh,0FFh, 7Fh, 1Fh, 0Fh, 0Fh,   3,   3,   0,   3
                     db  88h, 8Dh, 48h, 88h, 88h,0D8h,0F0h,0F0h,0F8h,0FCh,0FEh,0FCh, 78h,   0,   0,   0
 
-
 SprSnakePunchL:     db    2,   0, 87h,   1, 0Fh,0FBh, 2Fh, 45h,0FFh,   3,   3,   1, 9Dh,   0,   1,   3
                     db    6,   0,0E0h,0F0h,0FEh, 3Dh, 75h,0F7h,0B4h,0BCh,0E6h,0E8h,0FDh,0D6h,0FEh, 76h
                     db  7Eh,   0,   0,   1, 0Fh,0FDh,0F9h,0FEh,0FEh,   2,   3,   1, 9Fh,   0,   1,   2
@@ -265,7 +239,6 @@ SprSnakePunchL:     db    2,   0, 87h,   1, 0Fh,0FBh, 2Fh, 45h,0FFh,   3,   3,  
                     db  88h,0FEh,0BAh, 1Ah, 0Eh, 7Eh,0FFh,0FFh,0F8h,   6,   0, 8Bh,   8,   9, 18h, 10h
                     db  0Dh, 0Eh, 0Eh, 1Fh, 3Fh, 3Fh, 0Fh,   5,   0, 8Ah, 0Ch, 3Ch,0E6h,0AEh, 1Eh, 0Eh
                     db  7Eh,0FFh,0FFh,0F8h,   6,   0,   0
-
 
 SprSnakePunchU:     db  81h,   0,   3,   1, 9Dh,   0,   7, 0Fh, 0Fh, 1Fh, 3Eh, 33h, 3Fh, 7Fh, 53h, 43h
                     db  74h,0C0h, 20h, 20h, 90h, 90h,0F0h,0F8h,0E8h,0B8h,0D8h, 10h, 50h, 50h, 70h,0D0h
@@ -276,7 +249,6 @@ SprSnakePunchU:     db  81h,   0,   3,   1, 9Dh,   0,   7, 0Fh, 0Fh, 1Fh, 3Eh, 3
                     db  1Fh, 10h, 20h, 21h, 2Fh, 16h, 1Ch, 3Ch, 7Fh, 7Fh, 3Fh, 1Fh, 0Fh,   3,   0,   0
                     db  98h,   8,0C8h, 88h, 8Ch,0E4h, 44h, 5Ch, 3Ch,0BCh,   5,0FCh, 81h, 18h,   0
 
-
 SprSnakePunchR:     db 0CAh,   3,   7, 1Fh, 7Eh,0B7h,0ADh, 6Bh, 36h, 37h, 37h, 25h, 33h, 7Fh, 6Fh, 67h
                     db  77h, 80h,0C0h,0E0h, 60h, 60h,0E0h,0FFh,0C1h,0DDh,0FBh,0C0h,0E0h,0E0h,0B0h, 98h
                     db 0D8h,   3,   7, 1Eh, 67h,0FEh,0FFh, 74h, 3Dh, 2Ch, 2Bh, 3Ah, 3Fh, 4Fh, 51h, 5Bh
@@ -286,31 +258,26 @@ SprSnakePunchR:     db 0CAh,   3,   7, 1Fh, 7Eh,0B7h,0ADh, 6Bh, 36h, 37h, 37h, 2
                     db  3Fh, 7Fh, 7Fh, 3Fh, 0Fh,   6,   0, 85h, 7Dh,0D3h, 9Ah, 0Eh, 3Fh,   3,0FFh, 82h
                     db 0FEh, 80h,   6,   0,   0
 
-
 SprSnakeWaterD:     db  9Eh,   0,   3,   7,   7, 1Dh, 3Ch, 6Eh,0DFh,0F6h,0F6h,0FFh,0BFh,0F8h, 9Eh,0F0h
                     db  60h,   0, 80h,0C0h,0F0h,0D8h,0ECh,0ECh,0FCh,0FCh,0F8h,0F4h,0FCh,0BAh, 1Ch,   3
                     db    0, 9Fh,   3,   7,   4, 1Fh, 37h, 57h,0B3h, 8Bh,0DBh,0B1h,0DCh,0BFh,0FEh, 90h
                     db  69h,   0, 80h,0C0h,0F0h,0E8h,0F4h,0F4h, 9Ch, 94h, 98h, 1Ch, 35h,0FEh, 1Ch,   2
                     db 0C8h,   0
 
-
 SprSnakeWaterL:     db  8Eh,   0,   7, 0Fh, 0Fh,   9, 1Bh, 1Eh, 1Dh, 1Dh, 1Fh, 2Fh, 2Fh, 5Dh, 21h,   4
                     db    0,   3, 80h, 9Dh,0F8h,0ACh, 74h, 7Eh, 7Bh, 79h, 7Dh,0F9h, 27h, 66h,   0,   0
                     db    7, 0Fh,   9, 0Fh, 1Dh, 1Fh, 17h, 17h, 1Ch, 38h, 3Ch, 7Fh, 21h, 10h, 0Eh,   0
                     db    0,   3, 80h, 8Bh,0F8h,0F4h,0C8h,0C6h,0EDh,0D7h,0BAh,0DFh,0FBh, 7Eh, 20h,   0
-
 
 SprSnakeWaterU:     db  8Dh,   0,   3,   7,   7, 1Fh, 7Bh, 5Dh,0DCh,0FFh,0DDh, 9Dh,0B8h, 6Fh,   4,   0
                     db  8Ch, 80h,0C0h,0C0h,0F8h,0DCh,0DEh, 5Eh,0FEh,0DAh,0FAh, 1Ch,0F0h,   4,   0, 9Fh
                     db    3,   4,   7, 1Fh, 44h, 26h,0A7h,0EFh,0F7h,0F2h,0DFh, 6Fh, 80h, 1Ah,   0,   0
                     db  80h,0C0h,0C0h,0F8h,0F4h, 76h,0A6h,0F6h, 7Eh, 2Eh,0FCh,0F1h,   2, 18h,   0,   0
 
-
 SprSnakeWaterR:     db    2,   0,   3,   1, 9Ah, 1Fh, 35h, 2Eh, 7Eh,0DEh, 9Eh,0BEh, 9Fh, 64h, 27h, 18h
                     db    0,0E0h,0F0h,0F0h, 90h,0D8h, 78h,0B8h,0B8h,0F8h,0F4h,0F4h,0BAh,0F4h, 80h,   3
                     db    0,   3,   1, 9Bh, 1Fh, 2Fh, 13h, 63h,0B7h,0EBh, 5Dh,0FBh, 5Fh,0BFh, 58h,   0
                     db 0E0h,0F0h, 90h,0F0h,0B8h,0F8h,0E8h,0E8h, 38h, 1Ch, 3Ch,0FEh,0F4h, 81h, 0Ch,   0
-
 
 SprSnakeWaterDW:    db  92h,   0,   3,   7,   7, 1Dh, 3Ch, 76h, 77h, 7Dh, 3Dh, 3Fh, 7Fh, 5Fh, 3Fh, 0Fh
                     db    1,   0, 80h,   3,0C0h, 9Dh,0E0h,0F8h,0ACh,0F6h, 76h, 7Eh,0ECh,0CCh,0D8h,0F0h
@@ -318,13 +285,11 @@ SprSnakeWaterDW:    db  92h,   0,   3,   7,   7, 1Dh, 3Ch, 76h, 77h, 7Dh, 3Dh, 3
                     db  31h,   0, 80h,   3,0C0h, 8Bh,0E0h,0D8h,0F4h, 4Ah,0CAh,0DAh,0FCh,0F4h,0AAh,0B2h
                     db 0C4h,   0
 
-
 SprSnakeWaterLW:    db  8Fh,   0,   7, 0Fh, 0Fh,   9, 0Bh, 0Fh, 18h, 1Fh, 1Bh, 1Fh,0FBh,0B1h,0C7h, 3Ch
                     db    3,   0, 8Ch, 80h,0F8h,0DCh, 6Eh,0FFh,0CDh, 3Fh, 7Eh, 77h,0EFh, 90h,0E0h,   3
                     db    0, 9Fh,   7, 0Fh,   9, 0Fh, 0Dh, 0Eh, 1Fh, 13h, 14h, 14h,0FEh,0EFh,0FBh, 3Ch
                     db  0Ch,   0,   0, 80h,0F8h,0E4h, 9Ah, 1Fh, 7Fh,0F9h,0CEh,0CFh, 9Fh,0F0h,0E1h,   2
                     db  18h,   0
-
 
 SprSnakeWaterUW:    db  8Eh,   0,   3,   7,   7, 1Fh, 3Fh, 77h, 77h, 70h, 7Fh, 3Fh, 3Fh, 14h, 0Fh,   3
                     db    0,0AFh, 80h,0C0h,0C0h,0F8h,0BCh, 6Eh, 76h,0FEh, 66h,0F2h,0F6h,0FCh,0F8h,0F0h
@@ -332,13 +297,11 @@ SprSnakeWaterUW:    db  8Eh,   0,   3,   7,   7, 1Fh, 3Fh, 77h, 77h, 70h, 7Fh, 3
                     db  0Ch,   0, 80h, 40h,0C0h,0F8h,0E4h,0D2h,0CAh,0DAh,0FEh,0EEh,0FAh,0F4h, 78h, 72h
                     db    4,   0
 
-
 SprSnakeWaterRW:    db    2,   0,   2,   1, 9Bh, 1Fh, 3Fh, 65h, 7Dh, 5Dh,0CBh, 9Bh, 4Fh,0E7h,0F9h, 1Eh
                     db    0,   0,0E0h,0F0h,0F0h, 90h,0D8h, 7Ch,0BEh,0B6h,0FEh,0FEh,0FFh,0FAh,0FCh,0C0h
                     db    3,   0,   2,   1, 9Ch, 1Bh, 25h, 5Bh, 66h, 76h,0BCh,0FEh, 77h,0FFh,0FFh, 5Eh
                     db  30h,   0,0E0h,0F0h, 90h,0F0h,0B8h,0FCh,0F6h,0FAh, 5Ah, 36h,0BFh,0F6h,0FCh,0C2h
                     db  18h,   0
-
 
 SprParachute:       db    3, 3Fh,   3, 3Eh, 81h, 1Eh,   3, 2Ch, 83h, 34h, 28h, 10h,   3,   0,   6,0F8h
                     db  81h,0F0h,   3, 68h, 83h, 58h, 28h, 10h,   3,   0, 8Dh, 22h, 27h, 23h, 32h, 26h
@@ -361,16 +324,13 @@ SprParachute:       db    3, 3Fh,   3, 3Eh, 81h, 1Eh,   3, 2Ch, 83h, 34h, 28h, 1
                     db  3Bh, 5Bh, 2Bh, 11h, 1Ch, 27h, 1Bh, 2Ch,0B0h, 90h,0B8h,0FCh,0ECh,0F4h,0FCh,0EAh
                     db 0B2h,0ACh,0B0h, 10h, 70h,0C8h,0B0h, 68h,   0
 
-
 SprWaterShadow:     db    4,   0, 88h, 1Fh, 7Fh,0FEh,0FFh,0FFh, 3Fh, 1Fh,   7,   7,   0, 89h,0F8h,0BEh
                     db 0FEh,0FFh,0DFh,0FFh,0FEh,0FCh,0F8h,   9,   0, 83h,   4,   5, 13h, 0Ch,   0, 85h
                     db 0C0h, 60h,0D0h, 38h, 20h,   7,   0,   0
 
-
 SprWaterShadow2:    db    4,   0, 88h,   7, 3Eh,0FFh, 6Fh, 7Fh, 0Fh, 7Fh,   1,   7,   0,   2,0F8h, 87h
                     db 0FFh,0ECh,0FEh,0FFh,0FCh,0E4h,0E0h,   9,   0, 84h,   5,   4, 11h,   2, 0Bh,   0
                     db    2, 80h, 83h, 58h,0F0h, 10h,   7,   0,   0
-
 
 SprSnakeClimb1:     db    4,   0, 9Ch,   3,   7,   7, 3Fh, 57h, 77h,0F4h,0B7h, 97h, 7Fh, 30h, 1Fh, 18h
                     db  24h, 34h, 16h, 92h,0CAh,0FEh,0F6h,0B6h,0BCh, 3Ch,0B8h,0B0h,0F0h, 30h,0F0h,   4
@@ -381,7 +341,6 @@ SprSnakeClimb1:     db    4,   0, 9Ch,   3,   7,   7, 3Fh, 57h, 77h,0F4h,0B7h, 9
                     db  2Ah, 2Eh, 1Ch, 1Ch, 3Ch, 3Ch, 18h,   0,   8,   8,0C4h,0F4h,0A8h, 78h, 78h, 30h
                     db    8,   0,   0
 
-
 SprSnakeClimb2:     db  90h, 18h, 34h, 24h, 68h, 49h, 5Bh, 7Fh, 6Fh, 6Bh, 7Bh, 3Ah, 1Bh, 1Bh, 1Fh,   8
                     db  0Fh,   4,   0, 9Ch,0C0h,0E0h,0E0h,0FCh,0DEh,0DBh, 1Bh,0DFh,0D9h,0FDh, 1Eh,0F8h
                     db  18h, 2Ch, 3Ch, 58h, 79h, 7Bh, 6Fh, 57h, 5Fh, 46h, 25h, 1Fh, 1Eh, 14h, 0Fh, 0Fh
@@ -391,7 +350,6 @@ SprSnakeClimb2:     db  90h, 18h, 34h, 24h, 68h, 49h, 5Bh, 7Fh, 6Fh, 6Bh, 7Bh, 3
                     db  1Eh, 0Ch,   8,   0, 8Ah,   8,   4,0CCh, 84h,0C2h, 3Ah, 22h, 42h, 54h, 34h,   3
                     db  38h, 83h, 3Ch, 18h,   0,   0
 
-
 SprSnakeDead:       db    9,   0, 87h, 10h, 3Bh, 7Fh, 7Ch, 7Bh, 77h, 37h,   9,   0, 87h, 10h,0B8h,0FCh
                     db  7Ch,0BCh,0FCh, 3Ch,   9,   0, 87h, 18h, 2Bh, 5Fh, 4Bh, 6Fh, 58h, 3Bh,   9,   0
                     db  8Ah, 30h,0A8h, 64h, 94h,0E4h, 4Ch,0CCh, 3Fh, 1Fh, 1Fh,   4, 3Fh, 86h, 3Eh, 3Fh
@@ -399,7 +357,6 @@ SprSnakeDead:       db    9,   0, 87h, 10h, 3Bh, 7Fh, 7Ch, 7Bh, 77h, 37h,   9,  
                     db 0E0h, 90h, 48h, 30h,   0, 28h, 10h, 13h, 21h, 21h, 2Bh, 17h, 22h, 2Fh, 1Fh, 0Dh
                     db  1Ah, 0Ch,   3,   0, 90h, 58h, 38h,0B8h, 10h, 10h, 90h,0E8h, 88h, 90h,0D0h,0F0h
                     db 0E0h,0F0h, 78h, 30h,   0,   0
-
 
 SprSnakeLeaned:     db    5,   0, 8Bh,   1,   3, 1Bh, 3Ah, 3Bh, 3Bh, 7Ch, 5Bh, 7Fh, 2Fh, 0Fh,   5,   0
                     db  8Bh,0C0h,0E0h,0FCh, 1Eh,0DEh,0DEh, 3Eh,0DAh,0FAh,0FCh,0F8h,   5,   0, 8Bh,   1
@@ -410,13 +367,11 @@ SprSnakeLeaned:     db    5,   0, 8Bh,   1,   3, 1Bh, 3Ah, 3Bh, 3Bh, 7Ch, 5Bh, 7
                     db  0Fh,   3,   0,   0,0E8h, 84h, 44h, 74h, 48h, 38h, 3Ch, 7Eh,0FEh,0FCh,0FCh,0F8h
                     db 0E0h,   3,   0,   0
 
-
 SprBox:             db    8,   0, 88h, 3Fh, 41h, 51h, 51h,0B1h,0A1h,0A1h, 81h,   8,   0, 88h,0F8h, 8Ch
                     db  9Ch, 8Ch,0BEh, 96h, 9Eh, 86h,   8,   0, 88h, 3Fh, 7Fh, 6Fh, 6Fh,0EFh,0DEh,0FFh
                     db 0FFh,   8,   0, 88h,0F8h, 74h, 64h, 74h, 4Ah, 6Ah, 6Ah, 7Ah, 10h,0FFh,   5,0FEh
                     db  0Bh,0FFh, 85h, 81h,0BFh,0BFh,0BCh,0B0h,   5,0A0h,   2, 80h, 89h,0A0h, 81h, 80h
                     db 0FFh,   2,0FAh, 0Ah,   2,   2,   8,   3, 83h, 83h,   3,0FFh,   0
-
 
 SprExplosionS:      db    6,   0, 81h, 17h,   3, 0Fh, 81h,   7, 0Ah,   0, 85h, 80h,0C0h,0C0h,0E0h,0C0h
                     db  0Dh,   0, 83h,   1,   3,   1, 0Dh,   0, 83h, 80h,0C0h, 80h,   8,   0, 8Ah, 70h
@@ -428,7 +383,6 @@ SprExplosionS:      db    6,   0, 81h, 17h,   3, 0Fh, 81h,   7, 0Ah,   0, 85h, 8
                     db 0FCh, 74h, 80h,   0,   0,   2,   3, 0Ch, 3Ch, 5Ch, 58h, 60h, 30h, 0Ch, 1Fh, 0Fh
                     db  12h, 1Fh,   0,   0, 80h, 18h, 85h,0FCh,0EAh, 2Ah, 24h, 26h, 47h, 6Fh,0CCh, 9Ch
                     db  38h, 88h, 78h,   0,   0
-
 
 SprExplosionB:      db    6,   0, 81h, 17h,   3, 0Fh, 81h,   7, 0Ah,   0, 85h, 80h,0C0h,0C0h,0E0h,0C0h
                     db  0Dh,   0, 83h,   1,   3,   1, 0Dh,   0, 83h, 80h,0C0h, 80h,   7,   0,0BEh, 72h
@@ -444,7 +398,6 @@ SprExplosionB:      db    6,   0, 81h, 17h,   3, 0Fh, 81h,   7, 0Ah,   0, 85h, 8
                     db 0C7h,0C7h, 17h, 13h, 38h, 78h, 60h,0C0h, 80h, 3Fh, 7Fh,0FFh,0FFh,0FEh,0FEh,   5
                     db 0FFh, 82h, 0Eh,0F0h,   3,   0, 90h, 80h,0C0h,0E0h,0F0h,0FCh, 7Eh, 66h, 63h, 41h
                     db    2, 20h, 60h, 10h, 18h,   0,   0,   0
-
 
 SprElevator:        db    4,   0, 83h, 3Fh, 59h,0B0h,   3,0B6h, 83h,0B0h,0B6h,0B6h,   3,0B0h,   4,   0
                     db  85h,0C0h,0E0h,0F0h,0F0h,0FEh,   7,0B3h,   4,   0, 82h, 3Fh, 67h,   3,0CFh, 84h
@@ -464,7 +417,6 @@ SprElevator:        db    4,   0, 83h, 3Fh, 59h,0B0h,   3,0B6h, 83h,0B0h,0B6h,0B
                     db  83h, 0Ch,   4,   4,   6, 0Ch, 8Ah,   4,0B3h,0B3h,0FFh, 7Eh,   4,   4, 0Ch,   4
                     db  0Ch,   7,   0, 83h,0CFh,0FFh, 7Fh,   3, 0Ch, 83h,   4, 0Ch, 0Ch,   6,   4, 8Ah
                     db  0Ch,0CFh,0CFh,0FFh, 7Eh, 0Ch, 0Ch,   4, 0Ch, 0Ch,   7,   0,   0
-
 
 SprPrisoner:        db    2,   0,0BEh,   3,   7,   5, 1Ch, 3Ch, 7Ah, 7Bh, 5Ch, 6Eh, 7Eh, 63h, 3Ch, 1Fh
                     db  3Fh,   0,   0, 80h,0C0h, 40h, 70h,0F8h,0FCh,0FEh, 7Ah, 76h,0FEh,0C6h, 3Ch,0FCh
@@ -487,7 +439,6 @@ SprPrisoner:        db    2,   0,0BEh,   3,   7,   5, 1Ch, 3Ch, 7Ah, 7Bh, 5Ch, 6
                     db  3Fh, 3Fh, 1Fh, 3Eh, 3Eh, 3Ch,   3,   0, 87h,0FCh, 94h, 86h,0C2h,0D2h,0E6h,0FEh
                     db    3,0FCh, 86h, 7Ch, 3Eh, 3Eh, 1Eh,   4,   0,   0
 
-
 SprPrisoner2:       db    2,   0,0AAh,   3,   7, 1Fh, 3Fh, 7Dh, 7Ah, 7Fh, 7Ch, 7Eh, 7Eh, 5Fh, 70h, 7Fh
                     db  7Fh,   0,   0, 80h,0F0h,0FCh,0FEh,0FEh,0FFh,0FFh,0FEh,0FEh,0FAh,0C4h, 3Ch,0F8h
                     db 0F8h,   0,   0,   3,   7, 1Fh, 27h, 47h, 47h, 43h, 53h, 71h, 79h,   3, 7Fh,0AAh
@@ -508,7 +459,6 @@ SprPrisoner2:       db    2,   0,0AAh,   3,   7, 1Fh, 3Fh, 7Dh, 7Ah, 7Fh, 7Ch, 7
                     db 0F2h,0FAh, 1Bh, 0Dh, 0Fh,   0,0BFh, 9Fh, 9Fh,0C7h, 43h, 63h, 37h,   4, 1Fh,   2
                     db  3Fh, 93h, 1Ch,   0,   0, 87h, 86h, 82h, 82h,0E2h,0E2h,0C2h,0E2h,0E6h,0FEh,0FEh
                     db 0F6h, 1Fh, 0Bh, 0Fh,   0,   0
-
 
 SprBigBoss:         db 0A1h,   3,   4,   7,   6, 1Ch, 36h, 35h, 3Dh, 3Fh, 3Fh, 1Fh, 1Fh, 0Eh, 19h, 1Fh
                     db  1Fh, 80h,0C0h, 40h, 40h, 60h,0F8h,0DCh,0BEh,0B6h,0EEh,0FCh, 98h, 30h,0F8h,0F8h
@@ -558,7 +508,6 @@ SprBigBoss:         db 0A1h,   3,   4,   7,   6, 1Ch, 36h, 35h, 3Dh, 3Fh, 3Fh, 1
                     db  15h, 15h, 29h, 29h, 32h, 3Ch, 58h, 9Fh,0BFh,0DFh,0FFh, 7Fh, 48h, 58h,0E4h,0C0h
                     db 0EAh, 38h, 10h, 12h, 0Eh, 0Ah,0F9h,0FBh,0FCh,0FFh,0FEh, 80h,   0
 
-
 SprShotGunner:      db  92h,   0,   7, 0Bh, 0Fh, 3Fh, 79h, 5Dh, 7Fh, 7Fh,0BFh,0FFh,0FFh,0BFh,0EFh, 77h
                     db  3Fh,   0,   0,   3, 80h, 9Dh,0E0h,0F8h,0FCh,0F6h,0F6h,0EEh,0FCh, 9Ch, 78h,0F0h
                     db 0E0h,   0,   7, 0Ch,   8, 3Fh, 6Fh, 7Fh, 5Fh, 79h,0FBh,0BFh,0FFh,0FFh,0BCh, 6Ch
@@ -590,7 +539,6 @@ SprShotGunner:      db  92h,   0,   7, 0Bh, 0Fh, 3Fh, 79h, 5Dh, 7Fh, 7Fh,0BFh,0F
                     db 0CFh,0FDh,0FEh,0FFh,0CFh, 67h, 67h, 3Fh, 0Fh, 38h,0F8h, 38h, 7Ch,0DCh,0FCh, 7Eh
                     db  3Ch,0BEh,0BEh,0F6h,0EEh, 94h,0CCh, 18h,0E0h,   0
 
-
 SprCamera:          db  85h,   3,   9, 0Bh, 0Fh,   9,   4, 0Bh, 89h, 1Bh, 29h, 2Fh, 2Fh, 1Fh,   7,   1
                     db  40h,0B0h,   8,0F0h, 81h, 30h,   4,0F0h, 86h, 80h,   2, 0Eh, 0Ch, 0Fh, 0Eh,   4
                     db  0Ch, 8Bh, 1Ch, 2Eh, 0Fh, 2Eh, 1Eh,   6,   1,0C0h, 50h, 10h,0F0h,   6, 10h, 89h
@@ -607,7 +555,6 @@ SprCamera:          db  85h,   3,   9, 0Bh, 0Fh,   9,   4, 0Bh, 89h, 1Bh, 29h, 2
                     db    3,   0, 8Dh, 10h, 48h,0BFh,0FFh, 70h, 7Ch,0F7h,0C0h, 40h, 40h, 3Fh,   0,   1
                     db    5,   0, 8Dh,0F8h, 70h, 33h, 33h,0FCh, 27h, 23h, 23h,0F8h,   0, 60h,   0,   0
                     db    0
-
 
 SprTank:            db  84h,   0,   7, 0Fh,   3,   3,   7, 8Ah,   6,   7,   6,   7,   6,   7,   7, 17h
                     db  16h,   0,   4,0FFh, 83h,0F8h,0FBh,0FBh,   4,0FAh,   4,0FEh,   3,   0, 83h, 0Ch
@@ -646,7 +593,6 @@ SprTank:            db  84h,   0,   7, 0Fh,   3,   3,   7, 8Ah,   6,   7,   6,  
                     db  80h,0FFh,0FCh,0E3h,0FFh, 8Dh,0FFh,0FFh,   4,0CFh, 8Ch,0FFh, 9Fh, 9Fh, 1Fh, 1Fh
                     db 0FFh,0FFh,0BFh,0FFh,0FEh,0FCh,0E0h,   0
 
-
 SprBulldozer:       db    2,   0, 8Ah,   7, 0Dh, 0Dh, 1Fh, 3Fh, 2Fh, 2Fh, 2Ch, 2Dh, 2Ch,   3, 2Dh, 86h
                     db  2Eh,   0, 0Fh, 9Eh,0D4h,0DFh,   4,0FFh, 81h,0BFh,   5,0FFh, 8Ah, 7Fh,   0,   0
                     db    7, 0Ah, 0Ah, 1Fh, 20h, 32h, 33h,   3, 37h,   3, 36h, 96h, 37h,   0, 0Fh, 95h
@@ -680,7 +626,6 @@ SprBulldozer:       db    2,   0, 8Ah,   7, 0Dh, 0Dh, 1Fh, 3Fh, 2Fh, 2Fh, 2Ch, 2
                     db  5Bh, 13h,0CFh,0CFh,0FFh,0FBh,   3,0FFh, 81h,   0,   3,0FFh, 8Dh, 36h,   0,   0
                     db 0DFh,0FFh,0FBh,0FFh,0FFh, 6Eh,0FEh,0FCh,0FFh,   3,   3,0FFh, 88h, 77h,   5,   5
                     db 0A7h,0EFh,0FBh,0FEh,0FFh,   0
-
 
 SprArnold:          db  10h,   0, 82h,   3,   6,   3,   7, 83h, 1Fh, 3Eh, 7Fh,   5,0FFh,   2, 7Fh, 81h
                     db  3Ch, 10h,   0, 81h,   3,   3,   5, 84h,   6, 1Fh, 25h, 5Fh,   4,0FFh, 8Dh,0F7h
@@ -721,7 +666,6 @@ SprArnold:          db  10h,   0, 82h,   3,   6,   3,   7, 83h, 1Fh, 3Eh, 7Fh,  
                     db    5,0E0h, 91h,0C0h,0E0h,0D0h,0D0h, 50h,0B0h,0FEh,0D3h,0FFh,0FFh,0FBh,0FBh,0FCh
                     db 0FDh,0F9h,0FCh,0F4h,   6,   0,   2, 80h,   2,0C0h,   5,0E0h, 81h,0C0h,   0
 
-
 SprElen:            db    3,   0, 8Dh,   3,   7, 0Fh, 0Fh,   7,   7, 0Bh, 13h, 13h, 10h, 1Fh, 1Fh, 0Fh
                     db    3,   0, 8Dh, 80h,0C0h,0E0h,0E0h,0F0h,0F8h,0DCh,0CCh, 8Eh, 1Eh,0FEh,0FEh,0F4h
                     db    3,   0, 8Dh,   3,   7, 0Fh, 0Dh,   4,   6, 0Fh, 1Eh, 1Eh, 1Fh, 1Fh, 10h, 0Fh
@@ -741,7 +685,6 @@ SprElen:            db    3,   0, 8Dh,   3,   7, 0Fh, 0Fh,   7,   7, 0Bh, 13h, 1
                     db  87h,0D8h,0ECh, 44h, 9Eh,   2,   6, 0Ch,   4,0FFh, 81h,0E7h,   4,   0, 8Bh, 9Eh
                     db 0BFh,0FFh, 7Fh,0FFh,0FFh, 7Fh, 3Fh, 0Fh,   1,   1,   5,   0, 83h, 58h,0FCh,0FCh
                     db    3,0FEh, 86h,0FCh,0FFh, 39h, 9Dh,0BDh,0E7h,   4,   0,   0
-
 
 SprGuard:           db  92h,   0,   3,   5,   5, 1Fh, 35h, 3Eh, 3Fh, 7Fh, 5Fh, 7Fh, 3Fh, 1Fh, 1Fh, 1Dh
                     db  1Fh,   0, 80h,   3,0C0h,0C5h,0E0h,0F0h, 98h, 3Ch,0E6h,0E6h,0FEh,0FEh, 1Ch,0D8h
@@ -807,7 +750,6 @@ SprGuard:           db  92h,   0,   3,   5,   5, 1Fh, 35h, 3Eh, 3Fh, 7Fh, 5Fh, 7
                     db  16h, 12h, 18h, 2Bh, 21h, 36h, 5Ch,0CCh, 9Fh,0CFh,0FFh, 7Fh,   0, 18h, 68h,0D4h
                     db 0CCh,0FAh,0A2h, 22h, 16h, 1Eh, 1Ah,0F3h,0F7h,0F9h,0FEh, 80h,   0,   0
 
-
 SprFireTrooper:     db 0B4h,   0,   3,   5, 0Bh, 0Fh, 0Bh, 0Fh, 1Fh, 3Fh, 2Fh, 1Fh, 1Fh, 1Ah, 2Fh, 3Eh
                     db 0FEh,   0, 80h, 7Ch, 2Eh, 32h,0BAh,0FEh,0D6h,0AAh,0AEh,0EEh,0FEh, 7Ah,0DAh, 64h
                     db  78h,   0,   3,   6, 0Ch, 0Fh, 0Eh, 0Dh, 15h, 2Ah, 3Eh, 1Ah, 1Ah, 1Fh, 3Fh, 3Fh
@@ -833,7 +775,6 @@ SprFireTrooper:     db 0B4h,   0,   3,   5, 0Bh, 0Fh, 0Bh, 0Fh, 1Fh, 3Fh, 2Fh, 1
                     db  18h, 1Bh, 11h, 11h, 13h, 13h, 1Bh, 0Fh, 0Bh, 0Fh, 1Bh, 3Bh, 3Bh, 17h, 0Fh,0E0h
                     db  30h,0B0h, 10h, 10h, 30h, 30h,0B0h,0E0h,0A0h,0E0h,0B0h,0B0h,0B8h,0D8h,0F0h,   0
 
-
 SprRollingBarrel:   db    3,   0, 85h, 0Eh, 1Eh, 1Eh, 9Eh,0AEh,   4,0BEh, 8Ah,0B6h,0AEh, 8Eh, 9Eh,   0
                     db    0, 20h,0A4h,0AEh,0AEh, 0Ah,0AFh,   2,   0, 85h, 0Fh, 31h, 61h, 61h,0E1h,   6
                     db 0D9h, 89h,0D1h,0F1h,0E1h,   0,   0,0F0h, 7Ch, 76h, 76h, 0Ah, 77h, 88h, 9Eh, 90h
@@ -854,13 +795,11 @@ SprRollingBarrel:   db    3,   0, 85h, 0Eh, 1Eh, 1Eh, 9Eh,0AEh,   4,0BEh, 8Ah,0B
                     db    0,   3,0A1h, 82h,0AFh,0BFh,   7,0FFh, 84h, 69h, 38h, 0Fh,   0,   3, 77h, 81h
                     db 0F7h,   8,0FFh, 84h,0FEh,0FCh,0F0h,   0,   0
 
-
 SprBridge:          db  90h, 7Fh,0BFh,0FFh, 41h, 7Fh,0BFh,0FFh, 41h, 7Fh,0BFh,0FFh, 41h,0FFh,0BFh,0FFh
                     db  41h,   3,0FFh, 81h,   0,   3,0FFh, 81h,   0,   3,0FFh, 81h,   0,   3,0FFh, 81h
                     db    0,   3,0FFh, 81h,   0,   3,0FFh, 81h,   0,   3,0FFh, 81h,   0,   3,0FFh, 91h
                     db    0,0FEh,0FDh,0FFh, 82h,0FFh,0FDh,0FFh, 82h,0FEh,0FDh,0FFh, 82h,0FFh,0FDh,0FEh
                     db  82h,   0
-
 
 SprJetGuard:        db  99h,   0, 20h, 73h, 55h, 5Fh, 5Fh, 6Ch,0EEh,0AFh,0BEh,0FEh,0FFh,0CFh, 6Fh, 3Bh
                     db  1Ch,   0,   8, 9Ch,0DCh,0FCh,0FCh,0ECh,0EEh,0EEh,   3,0FEh,0E7h,0E6h,0ECh,0B8h
@@ -895,7 +834,6 @@ SprJetGuard:        db  99h,   0, 20h, 73h, 55h, 5Fh, 5Fh, 6Ch,0EEh,0AFh,0BEh,0F
                     db 0B8h, 28h, 24h, 3Ch,0ACh,0BCh,0E4h,0E8h, 78h,0E8h, 50h, 50h,0C8h, 70h, 80h,   0
                     db    0
 
-
 SprMGunKid:         db  9Dh,   0,   7, 0Dh, 39h, 6Fh,0CBh,0CDh,0DFh,0F6h,0B8h, 59h, 7Fh, 3Ah, 3Fh, 6Fh
                     db 0DFh, 18h, 20h,0C6h,0B8h,0E0h,0F0h, 98h, 4Ch, 64h,0C4h,0ECh, 18h, 70h,   3,0F0h
                     db 0F2h,   0,   7, 0Ah, 3Fh, 5Ah,0BCh,0BFh,0EEh,0DDh,0FFh, 7Fh, 5Eh, 3Dh, 2Fh, 57h
@@ -912,7 +850,6 @@ SprMGunKid:         db  9Dh,   0,   7, 0Dh, 39h, 6Fh,0CBh,0CDh,0DFh,0F6h,0B8h, 5
                     db 0B0h, 85h, 60h,0E0h,0C0h,0C0h,0E0h,   3,0F0h, 95h,0E0h,   0, 80h,   0,0CDh,0DEh
                     db  6Ah, 52h, 23h,   2, 39h, 7Eh, 7Eh, 3Eh, 1Fh,   7,   3,   1,   0,   0, 10h,   3
                     db  50h, 8Ch,0A0h,0E0h, 40h,0C0h, 60h,0F0h, 70h,0F0h,0E0h,   0, 80h,   0,   0
-
 
 SprAirScrew:        db    7,   0, 89h,   3,   4,   8,   9, 1Eh, 1Bh, 22h, 2Bh, 7Fh,   4,   0, 8Ch, 40h
                     db  84h, 28h, 2Ah, 92h, 10h, 11h, 55h, 7Dh,0F9h,0FFh,0FFh,   6,   0, 8Ah,   1,   0
@@ -941,7 +878,6 @@ SprAirScrew:        db    7,   0, 89h,   3,   4,   8,   9, 1Eh, 1Bh, 22h, 2Bh, 7
                     db    2,   0,0FEh,0DEh,0BCh,0B6h, 2Eh,0F2h,0A2h, 92h, 54h, 24h, 20h, 28h, 88h, 10h
                     db  20h,   0,   0
 
-
 SprGas:             db    9,   0, 87h,   7, 0Eh,   3, 0Fh,   4, 0Ah,   7,   8,   0, 88h, 40h,0D0h, 90h
                     db 0E0h, 70h, 68h,0D0h, 60h,   9,   0,   2,   1, 85h, 0Ch,   8, 0Bh, 0Dh,   7,   9
                     db    0,0A7h, 30h, 70h, 20h, 90h, 98h,0B0h,0E0h,   0,   0,   1,   3, 0Fh, 0Eh, 3Ch
@@ -950,11 +886,9 @@ SprGas:             db    9,   0, 87h,   7, 0Eh,   3, 0Fh,   4, 0Ah,   7,   8,  
                     db    7,   3, 0Ah, 59h, 78h, 3Ch,   7,   2,   3,   3,   0, 8Dh, 10h, 18h, 38h,0F0h
                     db 0C4h, 22h, 22h, 64h,0ECh, 38h, 50h, 80h, 80h,   0
 
-
 SprZzz:             db  8Dh, 0Ch, 74h, 88h,   8, 3Ch, 11h, 26h, 58h, 63h, 40h,   1,   0,   1, 0Ah,   0
                     db  88h,0C0h, 40h, 40h, 90h,0E6h, 0Ah,   5,   6, 0Ch,   0, 81h,   1, 0Eh,   0, 86h
                     db  60h,0A0h, 42h,0D6h, 63h, 82h, 1Dh,   0, 83h,   2,   5,   2,   0
-
 
 SprCowardDuck:      db    2,   0, 8Eh,   7, 0Fh, 0Ah, 3Fh, 59h,0BDh,0BBh,0FDh, 3Fh,0FFh,0FFh, 7Fh, 32h
                     db  3Fh,   3,   0,   3, 80h, 9Ah,0E0h,0F8h,0ECh,0C4h,0C4h,0CCh,0E8h, 18h, 70h,0E0h
@@ -972,7 +906,6 @@ SprCowardDuck:      db    2,   0, 8Eh,   7, 0Fh, 0Ah, 3Fh, 59h,0BDh,0BBh,0FDh, 3
                     db  60h, 40h, 40h,0C0h,0C0h,   3, 80h, 87h,0E0h,0F0h,0F0h,0E0h, 2Fh, 21h, 33h,   3
                     db  24h, 93h, 14h, 16h, 15h, 0Dh, 0Eh, 3Dh, 75h, 7Dh, 3Fh, 1Fh, 40h, 20h, 20h, 60h
                     db 0A0h,0C0h,0C0h, 40h, 40h,   3, 80h, 84h,0E0h,0F0h,0F0h,0E0h,   0
-
 
 SprMadnar:          db    4,   0, 8Ch,   7, 7Fh,0CCh, 93h, 93h, 9Fh,0F7h,0BBh,0CFh, 70h, 5Fh, 57h,   4
                     db    0, 8Ch,0C0h,0FCh,0E6h, 92h, 92h,0F2h,0DEh,0BAh,0E6h, 1Ch,0F4h,0D4h,   4,   0
@@ -994,19 +927,15 @@ SprMadnar:          db    4,   0, 8Ch,   7, 7Fh,0CCh, 93h, 93h, 9Fh,0F7h,0BBh,0C
                     db    0, 23h, 63h,0C3h, 87h,0E7h, 3Fh, 1Fh, 1Fh, 0Fh, 0Fh, 1Fh,   3, 3Fh, 85h, 1Fh
                     db    0,0E3h,0F9h,0FFh,   4,0FEh,   7,0FFh, 82h,0FEh,   0,   0
 
-
 SprLaser:           db  10h,   1, 10h, 80h,   0
-
 
 SprShadow:          db    5,   0, 83h,   7, 1Fh, 3Fh,   3, 7Fh, 83h, 3Fh, 1Fh,   7,   7,   0, 83h,0F0h
                     db 0FCh,0FEh,   3,0FFh, 85h,0FEh,0FCh,0F0h,   0,   0,   0
-
 
 SprBoomenrang:      db    5,   0, 85h,   3,   7, 0Fh, 1Ch, 30h, 0Bh,   0, 85h, 80h,0C0h,0E0h, 70h, 18h
                     db  0Ah,   0,   3,   8,   3, 1Ch,   2, 1Fh, 81h, 0Fh, 0Dh,   0, 83h, 80h,0F0h, 80h
                     db  0Dh,   0, 83h,   1, 0Fh,   1,   7,   0,   3, 10h,   3, 38h,   2,0F8h, 81h,0F0h
                     db    3,   0,   0
-
 
 SprBullet:          db    7,   0,   2,   1, 0Eh,   0,   2, 80h,   7,   0,   0 ; ...
 
@@ -1018,40 +947,33 @@ SprGrenade:         db    4,   0, 88h,   3,   6, 0Dh, 0Bh, 0Eh, 0Dh, 0Fh,   7,  
                     db  80h,0E0h,   0, 0Eh,   2,   2,   4,   0, 81h,0C0h,   4,   0,   2,   2, 82h, 0Eh
                     db    0,   0
 
-
 SprRocketUp:        db  82h,   0,   1,   5,   3,   2,   1,   4,   3, 85h,   2,   0,   0, 80h, 40h,   5
                     db  60h,   2, 40h,   3,0A0h, 82h, 60h, 20h,   3,   0, 81h,   1,   5,   2,   2,   1
                     db    3,   2, 86h,   3,   2,   0,   0, 80h,0C0h,   5,0A0h,   2,0C0h,   2, 60h, 85h
                     db 0E0h, 60h, 20h,   0,   0,   0
 
-
 SprRocketRight:     db    6,   0, 85h, 3Eh, 1Fh, 0Eh, 11h, 3Eh, 0Bh,   0, 85h, 7Ch,0FEh,   1,0FEh, 7Ch
                     db  0Bh,   0, 85h, 3Eh, 11h,   9, 1Fh, 3Eh, 0Bh,   0, 85h, 7Ch, 82h,0FFh, 82h, 7Ch
                     db    5,   0,   0
-
 
 SprRocketDown:      db    2,   0, 82h,   4,   6,   3,   5,   2,   2,   5,   6, 85h,   2,   1,   0,   0
                     db  40h,   4,0C0h,   2, 80h,   5,0C0h, 81h, 80h,   3,   0, 87h,   4,   6,   7,   6
                     db    6,   3,   3,   5,   5, 86h,   3,   1,   0,   0, 40h,0C0h,   3, 40h,   2, 80h
                     db    5, 40h, 82h, 80h,   0,   0
 
-
 SprRocketLeft:      db    5,   0, 85h, 3Eh, 7Fh, 80h, 7Fh, 3Eh, 0Bh,   0, 85h, 7Ch, 88h, 70h,0F8h, 7Ch
                     db  0Bh,   0, 85h, 3Eh, 41h,0FFh, 41h, 3Eh, 0Bh,   0, 85h, 7Ch,0F8h, 90h, 88h, 7Ch
                     db    6,   0,   0
-
 
 SprPlasticBomb:     db  9Ah, 3Fh, 67h, 49h, 47h, 46h, 43h, 43h, 56h, 4Bh, 45h, 4Eh, 65h, 4Fh, 56h, 67h
                     db  3Fh, 9Ch,0FEh, 95h,0FDh,0DDh,0DBh,0A4h,0FFh,0FFh,0F7h,   5,0FFh,0A1h,   0, 3Fh
                     db  7Dh, 76h, 7Dh, 79h, 7Eh, 7Ch, 6Bh, 7Dh, 7Ah, 75h, 7Bh, 7Fh, 6Fh, 7Fh, 3Fh, 9Ch
                     db 0F6h,0FDh,0B5h, 9Dh,0DBh,0A4h,0FFh,0C1h,0DDh,0DDh,0E1h,0FDh,0C1h,0FFh,   0,   0
 
-
 SprCannonShell:     db    2,   0, 84h,   3,   4, 0Ch, 0Fh,   5, 0Ch, 89h, 0Dh, 0Ch, 0Ch,   6,   3,   0
                     db    0, 80h,0C0h,   9,0E0h, 8Ah, 60h,0C0h, 80h,   0,   0,   3,   7, 0Bh,   9, 0Fh
                     db    4, 0Bh, 8Ch, 0Ah, 0Bh, 0Bh,   5,   3,   0,   0, 80h, 40h, 20h,0A0h, 60h,   4
                     db  20h, 85h,0A0h, 60h,0A0h, 40h, 80h,   0
-
 
 SprSGunnerShot:     db    5,   0, 86h,   4,   3,   2,   3,   3,   4, 0Ah,   0, 81h, 20h,   4,0C0h, 81h
                     db  20h, 0Ah,   0, 85h,   2,   0,   1,   1,   4, 0Ah,   0, 87h, 40h,   0,   0,0A0h
@@ -1066,21 +988,17 @@ SprSGunnerShot:     db    5,   0, 86h,   4,   3,   2,   3,   3,   4, 0Ah,   0, 8
                     db  20h,   2, 10h,   0,   0, 40h,   2,   0, 10h, 40h,   0,   0, 80h,   0,   2, 10h
                     db    0,   0, 20h,   3,   0, 81h,   2,   3,   0, 81h, 40h,   0
 
-
 SprMissileUp:       db  83h,   0,   1,   1,   8,   0,   2,   1, 82h,   5,   4, 0Eh,   0,   2, 40h, 88h
                     db    0,   1,   2,   2,   3,   3,   7,   7,   4,   3, 86h,   2,   6, 0Ah, 0Bh, 0Fh
                     db    0,   4, 80h,   2,0C0h,   5, 80h, 84h,0C0h,0A0h,0A0h,0E0h,   0
-
 
 SprMissileRight:    db    5,   0, 85h, 60h,   0, 38h,   0, 60h, 0Dh,   0, 81h,   6, 0Ch,   0, 87h,0E0h
                     db  90h,0FFh,0C7h,0FFh, 90h,0E0h, 0Ah,   0, 85h, 60h,0FEh,0F9h,0FEh, 60h,   6,   0
                     db    0
 
-
 SprMissileDown:     db  83h,   0,   2,   2, 0Eh,   0, 84h, 20h,0A0h, 80h, 80h,   8,   0,   2, 80h, 85h
                     db    0,   7,   5,   5,   3,   5,   1,   2,   3,   4,   1, 86h,   0,0F0h,0D0h, 50h
                     db  60h, 40h,   4,0C0h,   2,0E0h,   2,0C0h,   2, 40h, 81h, 80h,   0
-
 
 SprMissileLeft:     db    8,   0, 81h, 60h, 0Dh,   0, 85h,   6,   0, 1Ch,   0,   6, 0Bh,   0, 85h,   6
                     db  7Fh, 9Fh, 7Fh,   6, 0Ah,   0, 87h,   7,   9,0FFh,0E3h,0FFh,   9,   7,   4,   0
@@ -1090,7 +1008,6 @@ SprMine:            db    4,   0, 82h,   7, 0Fh,   6, 1Fh, 81h, 0Fh,   7,   0, 8
                     db 0E8h,0E8h,0D8h,0F8h,0F0h,   7,   0, 89h,   7,   8, 11h, 12h, 13h, 11h, 18h, 1Fh
                     db  0Fh,   7,   0, 89h,0E0h, 30h, 98h,0D8h,0D8h, 98h, 38h,0F8h,0F0h,   3,   0,   0
 
-
 SprFlame:           db  9Fh,   0,   1, 11h, 13h, 13h, 3Fh, 6Ah, 60h, 4Dh, 6Eh, 65h, 25h, 33h,   0, 0Ch
                     db    7,0C0h,0C0h, 80h,0C8h,0B8h, 90h, 51h,0A6h, 9Eh,0CCh, 44h, 88h, 18h, 50h,0E0h
                     db    7,   0, 89h, 15h, 1Fh, 3Bh, 19h, 1Bh, 1Bh, 0Dh, 0Fh,   3,   5,   0, 8Ah, 40h
@@ -1099,7 +1016,6 @@ SprFlame:           db  9Fh,   0,   1, 11h, 13h, 13h, 3Fh, 6Ah, 60h, 4Dh, 6Eh, 6
                     db  1Ah, 1Ch, 64h,0F5h, 72h, 66h,0ECh,0C9h, 3Ch, 70h,0C0h,   4,   0, 8Bh,   8, 0Eh
                     db    7, 3Fh, 1Fh, 0Eh,   7, 0Fh, 1Bh,   7,   1,   5,   0, 8Ch, 40h,0E0h,0E0h,0B8h
                     db  38h,0BCh,0D8h,0F0h,0F0h,0C0h, 80h,   0,   0
-
 
 SprDog:             db  0Dh,   0, 82h,   8,   4, 0Eh,   0, 82h, 10h, 20h,   6,   0, 82h,   1,   7,   4
                     db  0Fh,   2,   7, 83h, 17h, 0Bh, 0Fh,   5,   0, 82h, 80h,0E0h,   4,0F0h,   2,0E0h
@@ -1160,7 +1076,6 @@ SprDog:             db  0Dh,   0, 82h,   8,   4, 0Eh,   0, 82h, 10h, 20h,   6,  
                     db  0Ch,   0, 10h, 18h, 0Ch,   0,   0, 27h, 1Fh, 1Fh, 3Ah, 7Fh, 73h, 78h, 7Eh,0FFh
                     db 0DEh,0FFh, 59h, 40h, 90h, 60h,   0,0B0h, 7Ch,0FEh,0FEh,   3,0FFh, 89h, 7Eh,0F8h
                     db 0D3h,0EEh,0E8h, 24h, 10h, 0Ch,   0,   0
-
 
 SprScorpion:        db  90h,   0, 14h, 0Eh, 4Bh, 85h,0A3h,0D6h,0E7h,0D7h, 6Bh, 35h,   9, 39h, 61h,   1
                     db    1,   3,   0,   3, 80h, 88h,0C4h, 42h,0E2h,0A3h,0C6h, 76h, 38h, 80h,   3,   0

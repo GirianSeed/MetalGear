@@ -34,7 +34,6 @@ InitPrisoner:
                     ld      (ix+PRISONER.P_RESCUED_H), h    ; Store the pointer to rescued status
                     ret
 
-
 ;----------------------------------------------------------------------------
 ; Rooms with prisoners
 ; The first 6 prisoners are not restored after killing one of them
@@ -44,7 +43,6 @@ RoomsPrisoner:      db  189, 182, 167, 164, 203, 202
                     db  198, 195, 194, 193, 190, 186
                     db  180, 161, 159, 152, 148, 146
                     db  145, 144, 136, 134, 129
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -60,7 +58,6 @@ PrisonerLogic:
                     dw PrisonerWait
                     dw PrisonerRescued
                     dw PrisonerDummy
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -95,7 +92,6 @@ PrisonerIdle2:
                     ld      (ix+ACTOR2.SpriteId), 40h       ; Prisoner free sprite ID
                     jr      PrisonerNextStat                ; Next status
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Help me text logic
@@ -110,7 +106,6 @@ ChkSayHelpMe:
 
                     ld      a, 128                          ; TEXT: Help me
                     jp      SetTextUnskippable
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -138,7 +133,6 @@ RescuePrisoner:
 
                     pop     af
                     jp      SetText                         ; Print his/her text
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -189,7 +183,6 @@ ChkRescJenBro:
                     ld      a, 140                          ; TEXT: RESCUED!*I'M A BROTHER OF*JENNIFER.*CLIMB THE LEFT*LADDER*WHEN ESCAPING.
                     jr      RescueAndShowTxt
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Prisoner delay before next status
@@ -201,7 +194,6 @@ PrisonerWait:
                     ret     nz
 
                     jr      PrisonerNextStat
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -234,7 +226,6 @@ RescuedLogic2:
                     djnz    RescuedLogic2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set the prisoner as rescued, print his text, increment number of rescued prisoners
@@ -254,8 +245,6 @@ RescuedLogic3:
                     pop     ix
 
                     jr      PrisonerNextStat                ; Next status -> Do nothing
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -291,7 +280,6 @@ PrisonerTexts:      db  129,  90
 ;
 ;---------------------------------------------------------------------------
 
-
 InitEllenVoice:
                     ld      a, (RescuedArray+14h)
                     or      a                               ; Was Ellen rescued?
@@ -300,7 +288,6 @@ InitEllenVoice:
                     ld      (ix+PRISONER.COLLISION_CFG), 0  ; Do not detect collisions with the player or his shots
                     ld      (ix+PRISONER.TIMER), 20h
                     ret
-
 
 ;---------------------------------------------------------------------------
 ;

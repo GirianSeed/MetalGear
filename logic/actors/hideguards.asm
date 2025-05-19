@@ -26,7 +26,6 @@ HideGuardSpr:
                     ld      (ix+ACTOR.NumSprites), 0        ; (!?)
                     jp      HideSprColor                    ; (!?) Setting 0 sprites this call does nothing
 
-
 ;----------------------------------------------------------------------------
 ; Remove guard from room 13
 ;----------------------------------------------------------------------------
@@ -39,7 +38,6 @@ HideGuardRoom13:
                     ret     nz
 
                     jr      HideGuardChkCoord
-
 
 ;----------------------------------------------------------------------------
 ; Remove guard from room 15
@@ -54,7 +52,6 @@ HideGuardRoom15:
 
                     jr      HideGuardChkCoord
 
-
 ;----------------------------------------------------------------------------
 ; Remove guard from room 17
 ;----------------------------------------------------------------------------
@@ -67,7 +64,6 @@ HideGuardRoom17:
                     jr      nz, HideGuardChkCoord
 
                     jr      HideGuardChkCoordN
-
 
 ;----------------------------------------------------------------------------
 ; Remove guard from room 18
@@ -96,7 +92,6 @@ HideGuardChkCoord:
 
                     jr      HideGuardSpr
 
-
 ;----------------------------------------------------------------------------
 ; Remove guard from room 19
 ;----------------------------------------------------------------------------
@@ -115,7 +110,6 @@ HideGuardRoom19:
                     ld      c, 0A8h
                     jr      HideGuardChkCoord
 
-
 ;----------------------------------------------------------------------------
 ; Remove guard from room 22
 ;----------------------------------------------------------------------------
@@ -129,7 +123,6 @@ HideGuardRoom22:
 
                     ld      c, 0F0h
                     jr      HideGuardChkCoord
-
 
 ;----------------------------------------------------------------------------
 ; Remove guard from room 35
@@ -150,7 +143,6 @@ HideGuardRoom35:
 
                     jr      HideGuardChkCoord
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Hide one of  the guards in room 39 depending on the player entering the room
@@ -168,4 +160,3 @@ HideGuardRoom39:
 
                     ld      c, 176                          ; South guard Y
                     jr      HideGuardChkCoord
-

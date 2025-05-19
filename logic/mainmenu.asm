@@ -31,7 +31,6 @@ LoadIntroGfx:
 
                     jp      EnableScreenBnk
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Metal Gear logo logic
@@ -57,7 +56,6 @@ idxIntro:           dw LogoSfx
                     dw PrintPushSpace                       ; Print "KONAMI 1987" and "PUSH SPACE" texts
                     dw DrawMenuNow                          ; Used for showing the menu without intro effect
 
-
 ;----------------------------------------------------------------------------
 ; Metal Gear logo moving SFX
 ;----------------------------------------------------------------------------
@@ -73,8 +71,6 @@ NextMenuStatus:
                     inc     (hl)
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Metal Gear logo scroll logic
@@ -85,7 +81,6 @@ LogoScroll:
                     ld      hl, MenuCnt                     ; Logo scroll iterations
                     dec     (hl)
                     jr      z, NextMenuStatus
-
 
 DrawMG_Logo:
                     ld      a, (MenuCnt)
@@ -115,7 +110,6 @@ DrawMG_Logo:
                     ld      a, 48h
                     jp      VDP_Copy_Dot_                   ; Draw "Gear"
 
-
 ;-------------------------------------------------------------------------------
 ; Erase scroll rests
 ;-------------------------------------------------------------------------------
@@ -131,7 +125,6 @@ EraseLogoRests:
                     ld      (MenuCnt), a                    ; (!?)
                     jp      NextMenuStatus
 
-
 ;-------------------------------------------------------------------------------
 ; Print "KONAMI 1987" and "PUSH SPACE" texts
 ;-------------------------------------------------------------------------------
@@ -143,11 +136,9 @@ PrintPushSpace:
 
                     call    NextMenuStatus
 
-
 PrintPushSpace2:
                     ld      hl, txtPushSpace
                     jp      PrintTextXY_
-
 
 ;-------------------------------------------------------------------------------
 ; Draw Metal Gear logo directly, without scroll effect
@@ -161,7 +152,6 @@ DrawMenuNow:
                     call    SetSound_
 
                     jp      PrintPushSpace2
-
 
 ;----------------------------------------------------------------------------
 ; KONAMI 1987
@@ -177,9 +167,7 @@ txtPushSpace:       dw 604Eh
                     db  "PUSH", 0, "SPACE", 0, "KEY"
                     db 0FFh
 
-
 MGLogoColors:       db    0,   2,   3,   4,   5,   9, 10, 14
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -232,7 +220,6 @@ DrawTiles2:
                     dec     c                               ; Decrement number of rows
                     jr      nz, DrawTiles
                     ret
-
 
 ;----------------------------------------------------------------------------
 ; Metal Gear logo Y values (scroll effect)

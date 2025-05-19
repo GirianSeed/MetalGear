@@ -30,7 +30,6 @@ InitKonamiLogo:
 
                     call    EnableScreenBnk
 
-
                     ld      hl, Room
                     ld      (hl), 3Ch
                     inc     hl
@@ -48,8 +47,6 @@ KonamiLogoPal:      db    0,   0,   0
                     db    3, 44h,   4
                     db  0Fh, 77h,   7
                     db 0FFh
-
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -73,7 +70,6 @@ DrawKonamiLogo:
                     ld      (Class), a                      ; Logo end flag
                     ret
 
-
 DrawKonamiLogo2:
                     ld      a, 49
                     sub     (hl)
@@ -84,7 +80,6 @@ DrawKonamiLogo2:
                     ld      d, h                            ; Destination XY
                     ld      a, 1                            ; From page 1 to 0
                     jp      VdpCopyByteBnks
-
 
 ;----------------------------------------------------------------------------
 ;

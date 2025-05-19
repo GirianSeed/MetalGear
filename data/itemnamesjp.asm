@@ -29,7 +29,6 @@ idxItemName:    dw txtArmor
                 dw txtUniform
                 dw txtBox
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Items names

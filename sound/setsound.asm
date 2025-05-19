@@ -23,7 +23,6 @@ SetSound2:
 
                     jr      SetSound3
 
-
 SaveSoundState:
                     ld      a, c
                     ld      hl, SoundWorkArea
@@ -34,7 +33,7 @@ SaveSoundState:
                     ld      (SoundDataSaved), a
 
 SetSound3:
-                    ld      hl,  SoundWorkArea+2
+                    ld      hl, SoundWorkArea+2
                     ld      b, 1                            ; 1 channel
 
                     ld      a, c
@@ -70,8 +69,6 @@ SetMusic2:
 GetSoundData_:
                     jr      GetSoundData
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set SFX
@@ -98,7 +95,6 @@ SetSfx:
 ; B = Number of channels
 ;
 ;----------------------------------------------------------------------------;
-
 
 GetSoundData:
                     ld      a, c
@@ -162,4 +158,3 @@ GetSoundData4:
 idxSoundScore:
                     djnz    GetSoundData4
                     ret
-

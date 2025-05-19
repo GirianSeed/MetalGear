@@ -28,8 +28,6 @@ InitFlame2:
 jpSetActorSpeed:
                     jp      SetActorSpeed                   ; DE = Speed X, HL = Speed Y
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Flame logic
@@ -63,7 +61,6 @@ FlamesLogic:
 
                     jr      FlamesLogic3
 
-
 FlamesLogic2:
                     cp      80h
                     ret     nc                              ; Out of the screen
@@ -77,8 +74,6 @@ SetFlameSprColor:
                     ld      a, 8
                     ld      c, 46h
                     jr      SetSprColor_
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -99,5 +94,3 @@ FlameOutScreen:
 
 SetSprColor_:
                     jp      SetSprColor
-
-

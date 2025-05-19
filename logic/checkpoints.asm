@@ -34,7 +34,6 @@ ChkSaveGameStatus3:
                     djnz    ChkSaveGameStatus2
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Restore checkpoint
@@ -48,7 +47,6 @@ RestoreGameStat:
                     xor     a
                     ld      (DamageDelayTimer), a
                     ret
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -100,8 +98,6 @@ SaveGameStaus4:
 SaveGameStaus5:
                     pop     hl
                     jr      SaveGameStaus3
-
-
 
 ;---------------------------------------------------------------------------
 ;

@@ -13,7 +13,7 @@ ElevatorRoomLogic:
                     xor     a
                     ld      (GameMode), a                   ; 0=Playing,1=NextRoom,2=Weapons,3=Equipment,4=Radio,5=Lorry,6=Moving elevator,7=OpenDoor,8=Binoculars,9=Dead, A=Text window, B=Captured, C = Madnar moved:It's too late
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Ch                             ; Left/Right
                     jr      z, ElevatorLogic2
 
@@ -27,7 +27,6 @@ ElevatorLogic2:
                     ld      (PlayerDirectionNew), a         ; 1=Up, 2=Down, 3=Left, 4=Right
                     ret
 
-
 ElevatorNextRoom:
                     djnz    MoveElevator
 
@@ -37,14 +36,13 @@ ElevatorNextRoom:
                     ld      (GameMode), a                   ; 0=Playing,1=NextRoom,2=Weapons,3=Equipment,4=Radio,5=Lorry,6=Moving elevator,7=OpenDoor,8=Binoculars,9=Dead, A=Text window, B=Captured, C = Madnar moved:It's too late
                     ret
 
-
 MoveElevator:
                     call    GetDirLeftRight_
 
                     ld      a, (Room)
                     ld      b, a
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     ld      d, a
 
                     ld      a, (ElevatorDir)                ; 1=up, 2=down
@@ -103,7 +101,6 @@ ChkStopFloor2:
 
                     jr      SetElevatorSpr
 
-
 ElevatorDown:
                     ld      a, (PlayerY)
                     inc     a
@@ -153,7 +150,6 @@ ElevatorDown4:
 
                     jr      SetElevatorSpr
 
-
 ElevatorNextStatus_:
                     call    SetElevatorSpr
 
@@ -162,12 +158,10 @@ ElevatorNextStatus:
                     inc     (hl)
                     ret
 
-
 ElevatorExitRoom:
                     call    ElevatorNextStatus
                     inc     (hl)
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;

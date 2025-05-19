@@ -91,7 +91,6 @@ ChkMachineGun2:
 
                     jp      AnimateTank
 
-
 TankMachineGun:
                     ld      a, (ix+TANK.ANIM_CNT)
                     and     7
@@ -132,7 +131,6 @@ TankMachineGun3:
                     ld      (hl), a                         ; Set unsigned bullet X speed (0-4)
 
 ; Animate tank
-
 
 AnimateTank:
                     ld      a, (ix+TANK.Status)
@@ -215,7 +213,6 @@ TankMoveLong:
                     ld      (ix+TANK.SpeedY), 0             ; Speed Y = 0.5
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Tank idle
@@ -232,11 +229,7 @@ TankIdle:
                     ld      (ix+TANK.Moving), 1             ; Enable movement
                     ret
 
-
 TankAlive:
                     xor     a                               ; Not used (!?)
                     ld      (BossTank_KO), a
                     ret
-
-
-

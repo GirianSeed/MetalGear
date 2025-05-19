@@ -115,7 +115,6 @@ GuardLorryLogic3:
                     call    SetActorSpeed                   ; The guard walks down out of the lorrie
                     jr      GuardLorryNextStat
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Walk out of the lorrie and get the first path point
@@ -186,7 +185,6 @@ GuardLorryWalkEnd:
                     ld      (ix+ACTOR.SpriteId), 0          ; Guard up sprite ID
                     jr      GuardLorryNextStat
 
-
 ;---------------------------------------------------------------------------
 ; The guard walks into the lorry
 ;---------------------------------------------------------------------------
@@ -224,4 +222,3 @@ GuardEnterLorry3:
 
                     call    InitGuardLorry2
                     jp      ResetActorStatus
-

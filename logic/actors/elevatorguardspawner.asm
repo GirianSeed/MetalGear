@@ -17,7 +17,6 @@ InitSpawnGuardElev:
                     ld      (ix+ELEV_GUARD_SPAWNER.WaitLoops), 13h ; Enough time for the guards waiting and leaving
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Elevator guard spawner logic

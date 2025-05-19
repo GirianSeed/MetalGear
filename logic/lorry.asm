@@ -22,8 +22,6 @@ ChkLorryMov:
 ;----------------------------------------------------------------------------
 MovingLorries:      db  199, 217, 219, 213, 215, 173
 
-
-
 ;---------------------------------------------------------------------------
 ; Moving lorry logic
 ; Print "I goofed. The lorry started to move"
@@ -76,7 +74,6 @@ LorryMovFX:
                     ld      a, (hl)
                     jr      SetVertScroll                   ; Shake screen
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Scroll register values
@@ -90,7 +87,6 @@ VertScrollOffset:   db 2
                     db -3
                     db -1
                     db 0
-
 
 LorryEnd:
                     ld      a, 28h                          ; Stop lorry engine sfx

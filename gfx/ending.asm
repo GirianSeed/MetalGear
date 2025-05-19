@@ -67,7 +67,6 @@ GfxEnding:          db 0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0E0h,0E0h,0FFh,0C0h,0C
                     db  7Fh, 7Fh,0FFh, 7Fh, 7Fh,0FFh, 7Fh, 7Fh, 17h, 17h, 97h, 6Fh, 6Fh, 6Fh,0DFh,0DFh
                     db 0DFh, 7Fh, 7Fh, 7Fh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
 
-
 GfxEnding2:         db 0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db 0FFh,0FFh,0FFh,0FFh,0FEh, 48h, 48h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db 0FFh,0FFh,0FFh,0F0h,0F8h,0F8h, 80h, 80h, 80h,   3,   0,   0, 3Fh,   0, 1Fh,0FFh

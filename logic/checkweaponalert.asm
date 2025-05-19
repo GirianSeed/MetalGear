@@ -28,7 +28,6 @@ ChkAlertTrigger2:
                     ld      a, 5Ah
                     jp      SetAlertModeRespawn             ; Trigger the alert
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Rooms where the alert is not triggered by using a weapon

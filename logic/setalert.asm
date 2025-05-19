@@ -59,7 +59,6 @@ SetAlertMode4:
                     ld      c, 32h                          ; MUSIC: Alert
                     jr      SetAlertMode6
 
-
 SetAlertMode5:
                     ld      c, 2Fh                          ; MUSIC: Red alert
 
@@ -76,4 +75,3 @@ SetAlertMode7:
                     ld      a, c
                     ld      (AreaMusic), a
                     jp      SetSoundEntry                   ; Play alert music
-

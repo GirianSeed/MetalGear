@@ -29,8 +29,6 @@ InitShotGunner2:
                     ld      (ix+SHOT_GUNNER.COLLISION_CFG), 0 ; Disable collisions with the player and his shots
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Shoot gunner logic
@@ -44,7 +42,6 @@ ShotGunnerLogic:
                     dw ShotGunnerIntro
                     dw ShotGunnerRoll
                     dw SGunnerShotLogic
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -68,7 +65,6 @@ ShotGunnerIntro:
 ShotGunnerIntro2:
                     ld      (ix+ACTOR.Status), 1
                     jp      SetBossMusic
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -102,8 +98,6 @@ ShotGunnerStop:
                     ld      (ix+ACTOR.COLLISION_CFG), 3     ; Enable collisions with the player and his shots
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Shoot gunner shoot logic
@@ -130,7 +124,6 @@ SGunnerShotLogic2:
                     ld      c, ID_SGUNNER_SHOT
                     jp      AddEnemyShot2                   ; Create shot
 
-
 SGunnerThinkDir:
                     ld      a, (PlayerX)
                     cp      (ix+ACTOR.X)
@@ -148,7 +141,6 @@ SGunnerThinkDir2:
                     ld      (ix+ACTOR.Wait), 0Bh
                     ld      (ix+ACTOR.COLLISION_CFG), 0     ; Disable collisions while rolling
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update rolling animation
@@ -165,7 +157,6 @@ SetSGunnerRollSpr:
                     ld      (ix+ACTOR.SpriteId), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Shoot gunner rolling sprites IDs
@@ -175,9 +166,6 @@ SGunnerRollSpr:     db 5Eh
                     db 5Fh
                     db 60h
                     db 5Fh
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -204,7 +192,6 @@ InitShotGunnerShot:
 ; The shot expands while moving
 ;
 ;---------------------------------------------------------------------------
-
 
 ShotGunnerShot:
                     inc     (ix+ACTOR.Wait)

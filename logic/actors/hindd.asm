@@ -4,7 +4,6 @@
 ;
 ;---------------------------------------------------------------------------
 
-
 InitHindD:
                     ld      a, (BossHindD_KO)
                     or      a
@@ -38,7 +37,6 @@ ChkDrawHindD:
 ; Wait before firing again
 ;
 ;---------------------------------------------------------------------------
-
 
 HindDLogic:
                     inc     (ix+HIND_D.AnimationCnt)        ; Increment propeller sprite animation counter
@@ -74,12 +72,10 @@ HindDLogic2:
                     ld      d, (ix+HIND_D.X)
                     jp      AddEnemy
 
-
 HindDLogic3:
                     ld      (ix+HIND_D.Status), 1           ; Stop burst and wait before next one
                     ld      (ix+HIND_D.ShootDelay), 11h
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -99,20 +95,14 @@ HindDBurstWait:
 DummyLogic2:
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Remove Hind D
 ;
 ;----------------------------------------------------------------------------
 
-
 RemoveHindD:
                     ld      de, 4000h
                     ld      hl, HindDTileMap2
                     call    DrawTileBlkTimp
                     jp      DismissActor
-
-

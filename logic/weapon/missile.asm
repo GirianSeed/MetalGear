@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player launches a missile
@@ -6,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkMissileShot:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z
 
@@ -72,8 +71,6 @@ SetMissileSpr:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
-
 ;----------------------------------------------------------------------------
 ; Missiles speeds per direction
 ;----------------------------------------------------------------------------
@@ -85,7 +82,6 @@ MissileIniSpeed:    db -4
                     db -4
                     db 0
                     db 4
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -101,8 +97,6 @@ PlayerMissileLogic:
                     dw MissileExplode
                     dw MedExplosionLogic
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Missile remote control logic
@@ -110,7 +104,7 @@ PlayerMissileLogic:
 ;----------------------------------------------------------------------------
 
 ControlMissile:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     rra
                     ld      c, DIR_UP
                     jr      c, ControlMissile2              ; Up
@@ -148,8 +142,6 @@ ControlMissile4:
                     call    LoadSprMissilRocket             ; Update missile sprites depending on its direction
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
-
-
 
 ;----------------------------------------------------------------------------
 ;

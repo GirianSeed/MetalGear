@@ -65,7 +65,6 @@ ChkTileCollision4:
                     ld      a, c                            ; Direction
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Shapes/sizes used to check collisions
@@ -95,8 +94,6 @@ BoxColliderDat:     db -5
                     db 3
                     db 7
 
-
-
 ; Size/shape 1
                     db -9                                   ; Up (-9,-8) & (-9, 7)
                     db -8
@@ -118,7 +115,6 @@ BoxColliderDat:     db -5
                     db 7
                     db 8
 
-
 ; Size/shape 2
                     db -5                                   ; Up (-5, -4) & (-5, 3)
                     db -4
@@ -139,8 +135,6 @@ BoxColliderDat:     db -5
                     db 4
                     db 3
                     db 4
-
-
 
 ;----------------------------------------------------------------------------
 ;

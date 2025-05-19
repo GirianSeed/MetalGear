@@ -128,7 +128,6 @@ ChkDoorDest2:
                     add     hl, de
                     jr      ChkDoorDest2
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Set the destination room number
@@ -153,7 +152,6 @@ SetDoorDestination:
                     jr      c, GetDoorDest2                 ; (!?) This could be changed by a jp c,NormalGameMode
 
                     jr      SetElevatorPosY                 ; Set elevator and player Y coordinate
-
 
 ; This routine does nothing. Just jump to NormalGameMode
 ; Probably some code was removed
@@ -235,7 +233,6 @@ FreeFall:
 
                     ld      b, 0FFh                         ; All life
                     jp      DecrementLife_B                 ; Snake is dead
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -320,7 +317,6 @@ LocatePlayerEntry:
 
                     jr      SetRoomEntryXY                  ; Locate the player in the new room depending on his position when exiting the previous one
 
-
 SetDoorOrElev:
                     ld      a, (Room)
                     cp      0F0h
@@ -331,7 +327,6 @@ SetDoorOrElev:
                     jr      nc, SetPlayerInDoor             ; Exiting from elevator room
 
                     jp      SetPlayerInDoor2                ; From room to room through a door
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -354,7 +349,6 @@ SetRoomEntryXY:
                     ld      (PlayerYdec), hl
                     ret
 
-
 SetRoomEntryX:
                     ld      (PlayerXdec), hl
                     ret
@@ -363,7 +357,6 @@ EntryRoomXY:        dw 0B800h
                     dw 1200h
                     dw 0F200h
                     dw 0C00h
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -382,7 +375,6 @@ DisableControls:
                     ld      (DirectionMask), a              ; Bitmask of the last pressed direction control
                     ld      (DirectionMaskOld), a           ; Bitmask of the previous pressed direction control
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -406,7 +398,6 @@ SetPlayerInDoor3:
 
                     add     hl, de
                     jr      SetPlayerInDoor3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -452,8 +443,6 @@ SetPlayerInDoor4:
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
                     ret
 
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Information about how to center the player in the doors
@@ -479,7 +468,6 @@ PlayerInDoorDat:    db  28h, 0Ch,   2
                     db  30h,0F6h,   3
                     db  30h,0F6h,   3
                     db  30h, 10h,   2
-
 
 ;----------------------------------------------------------------------------
 ; Set parachute mode
@@ -556,14 +544,12 @@ SetLandingDogsR:
                     ld      (PlayerXdec), hl
                     ret
 
-
 SetLandingLorries:
                     ld      h, 38h
                     ld      (PlayerYdec), hl
                     ld      h, 68h
                     ld      (PlayerXdec), hl
                     ret
-
 
 SetLandingDogsL:
                     ld      h, 0A8h

@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Variables
@@ -15,9 +14,9 @@ TickCounter:        # 1
 WaitCounter:        # 1
 TickInProgress:     # 1
 ControlsTrigger:    # 1
-                                                            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                                                            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
 ControlsHold:       # 1
-                                                            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                                                            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
 Pause_1_F5_2:       # 1
 TutorialStatus:     # 1
 DemolHoldTime:      # 1
@@ -39,7 +38,6 @@ SoundWorkAreaSfx:   # 20h
 SoundWorkArea2:     # 60h
                                                             ; Sound work area backup
 
-
 PGS_MixerVal:       # 1
 RestoreSoundData:   # 1
 SoundDataSaved:     # 1
@@ -56,7 +54,6 @@ RadioFreqOffset:    # 1
 UnusedVar3:         # 1
 BigBossDeadSnd:     # 1
 UnusedVar4:         # 14h
-
 
 ControlsTrig_:      # 1
 ControlsHold_:      # 1
@@ -230,7 +227,6 @@ TextBoxStepX:       # 1
 TextBoxEff_NY:      # 1
 TextBoxEff_NX:      # 1
 TextBoxEff_Col:     # 1
-
 
 Equipment:          # 1
                                                             ; +0 Item ID, +1 tens/units, +2 hundreds, +3 unused
@@ -430,7 +426,6 @@ EnemySprAttRAM:     # 18h
 SnakeAttrLow:       # 10h
 SprElevatorAttr:    # 1B0h
 
-
 TempData:           # 2
 TempData2:          # 2                                     ; Enemy XY, MetaTileSetAddr
 TempData3:          # 2                                     ; MetaTiles, Enemy
@@ -457,4 +452,3 @@ MusicInDemoMode:    # 1
                                                             ; Flag to enable or disable music in demo mode
 FKeysTriggerMen:    # 1
 FKeysHoldMenu:      # 1                                     ; 0 0 RET F5 F4 F3 F2 F1
-

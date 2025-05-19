@@ -15,7 +15,6 @@ FireTrooperLoogic:
                     dw FT_MoveFlames                        ; Move flamethrower jet
                     dw FT_BringInFlames                     ; Bring in the flames
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Intro speech
@@ -30,7 +29,6 @@ FireTrooperIntro:
 
                     ld      a, 108                          ; TEXT: I'm fire trooper. Burn alive
                     jp      SetTextUnskip2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -55,8 +53,6 @@ FT_GetFlames2:
 FT_GetFlames3:
                     add     hl, de                          ; Pointer to next actor
                     djnz    FT_GetFlames2
-
-
 
                     ld      a, c
                     or      a                               ; Number of flames found
@@ -85,8 +81,6 @@ FT_MoveToPlayer_:
                     call    FT_MoveToPlayer
                     jp      FT_NextStatus                   ; Init flames
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Setup the actor to move to the left or to the right, depending on where the player is
@@ -109,8 +103,6 @@ FT_MoveToPlayer:
 FT_MoveToPlayer2:
                     ld      (ix+FIRE_TROPPER.SpriteId), b   ; Set Fire Tropper sprite
                     jp      SetActorSpeedX
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -148,7 +140,7 @@ FT_InitFlames2:
 ; Locate all flames in the flamethrower
 
                     ld      b, (ix+FIRE_TROPPER.NUM_FLAMES)
-                    ld      hl,  EnemyListEntry1+3          ; Pointer to flame 1 actor, Y property
+                    ld      hl, EnemyListEntry1+3           ; Pointer to flame 1 actor, Y property
                     ld      de, 7Eh                         ; Offset to next actor
 
 FT_InitFlames3:
@@ -159,7 +151,6 @@ FT_InitFlames3:
 
                     add     hl, de
                     djnz    FT_InitFlames3
-
 
                     ld      de, 0
                     ld      h, d
@@ -201,9 +192,6 @@ FT_NextStatus:
                     inc     (ix+FIRE_TROPPER.Status)
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Throw flames logic
@@ -217,7 +205,6 @@ FT_ThrowFlames:
 
                     ld      (ix+FIRE_TROPPER.FLAME_JET_CNT), 50h
                     jr      FT_NextStatus
-
 
 FT_ThrowFlames2:
                     ld      a, (ix+FIRE_TROPPER.FLAME_JET_CNT)
@@ -247,8 +234,6 @@ FT_ThrowFlames3:
 
                     jp      FT_MoveFlames11
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Move the flames
@@ -263,7 +248,6 @@ FT_MoveFlames:
                     inc     a
                     ld      (ix+FIRE_TROPPER.FLAME_JET_CNT), a ; Number of steps to reduce the flamethrower jet
                     jr      FT_NextStatus                   ; Status to bring the flames in
-
 
 FT_MoveFlames2:
                     ld      d, (ix+FIRE_TROPPER.DELTA_)
@@ -456,9 +440,6 @@ FT_MoveFlames12:
                     pop     de
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Bring the flames in logic
@@ -497,14 +478,11 @@ FT_BringInFlames:
                     pop     ix
                     ret
 
-
 RestartFireTropper:
                     call    InitFireTrooper2
                     call    FT_MoveToPlayer
                     ld      a, 1
                     jp      SetActorStatus                  ; Walk towards the player status
-
-
 
 ; (!?) Not used
                     ld      b, 2
@@ -528,7 +506,6 @@ loc_106472:
                     ld      de, -200h
                     jr      loc_10649F
 
-
 loc_106499:
                     cp      60h
                     ret     nc
@@ -536,8 +513,6 @@ loc_106499:
 
 loc_10649F:
                     jp      SetActorSpeedX
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -573,5 +548,3 @@ InitFireTrooper2:
                     ld      de, -200h
                     ld      hl, 0
                     jr      jpSetActorSpeed
-
-

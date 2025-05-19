@@ -163,7 +163,6 @@ idxTexts:           dw txtRelieve
                     dw txtEmpty                             ; Diane is taking a shower
                     dw txtEmpty                             ; Stop coming to Diane!
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Texts
@@ -563,7 +562,6 @@ txtTheyHaveSil:     db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh, 49h,   0, 53h, 5
                     db  43h, 45h, 52h, 5Ch,0FEh,0A2h,0DDh,0FFh
 
 txtEmpty:           db 0FFh
-
 
 ;----------------------------------------------------------------------------
 ;

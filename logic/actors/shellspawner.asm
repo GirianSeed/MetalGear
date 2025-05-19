@@ -13,8 +13,6 @@ InitSpawnTankShell:
                     ld      (ix+ACTOR.Wait), 14h
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Spawn tank shell logic
@@ -23,7 +21,6 @@ InitSpawnTankShell:
 ; Status 1: Wait, create a new shell, set status 0
 ;
 ;----------------------------------------------------------------------------
-
 
 SpawnTankShell:
                     dec     (ix+ACTOR.Wait)
@@ -38,14 +35,11 @@ SpawnTankShell:
                     ld      a, 0Bh                          ; Shell shot sfx
                     jp      SetSoundEntryChk
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Create a new shell
 ;
 ;----------------------------------------------------------------------------
-
 
 SpawnTankShell2:
                     ld      (ix+ACTOR.Status), 0

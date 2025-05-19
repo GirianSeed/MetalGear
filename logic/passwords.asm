@@ -1,4 +1,3 @@
-
 ;---------------------------------------------------------------------------
 ;
 ;
@@ -10,7 +9,6 @@
 ChkCharTyped:
                     call    ReadKeyboard                    ; Check pressed keys
                     jp      GetTyped
-
 
 ReadKeyboard:
                     ld      b, 9                            ; Keyboard rows to read
@@ -43,7 +41,6 @@ ReadKeyboard2:
                     djnz    ReadKeyboard2
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Check typed keys
@@ -63,7 +60,6 @@ GetTyped2:
                     djnz    GetTyped2
                     ret
 
-
 GetTyped3:
                     dec     b
                     ld      e, b                            ; E = keyboard row
@@ -77,7 +73,6 @@ GetTyped4:
                     djnz    GetTyped4
                     ret
 
-
 AddCharPassBuf:
                     ld      a, e                            ; row
                     add     a, a
@@ -85,7 +80,7 @@ AddCharPassBuf:
                     add     a, a                            ; x8
                     add     a, c
                     ld      de, PasswordBuffer
-                    ld      hl,  PasswordBuffer+1
+                    ld      hl, PasswordBuffer+1
                     ld      bc, 0Bh
                     ldir
                     ld      (de), a
@@ -106,9 +101,8 @@ PassISOLATION:      db  24h, 23h, 19h, 2Eh, 11h, 26h, 23h, 2Fh, 19h,0FFh
 ;HIRAKE GOMA
 PassHIRAKE:         db  11h, 25h, 23h, 1Bh, 47h, 1Dh, 27h, 11h, 20h, 19h, 1Ah,0FFh
 
-
 ChkPassword:
-                    ld      hl,  PasswordBuffer+0Bh
+                    ld      hl, PasswordBuffer+0Bh
 
 ChkPassword2:
                     ld      a, (de)
@@ -121,7 +115,6 @@ ChkPassword2:
                     dec     hl
                     inc     de
                     jr      ChkPassword2
-
 
 ChkPasswords:
                     ld      de, PassDS_4
@@ -186,7 +179,6 @@ SetMaxAmmount2:
                     djnz    SetMaxAmmount2
                     ret
 
-
 ;---------------------------------------------------------------------------
 ; ISOLATION: Max. ammount rations
 ;---------------------------------------------------------------------------
@@ -201,7 +193,6 @@ SetMaxRations:
                     ld      hl, 999h
                     ld      (MaxRations), hl
                     ret
-
 
 ;---------------------------------------------------------------------------
 ; HIRAKE GOMA: Get all cards
@@ -230,7 +221,6 @@ SetAllCards2:
                     ld      (DoorOpenArray+0Bh), a          ; Open GreyFox cell door
                     ret
 
-
 AddCardToEquip:
                     ld      hl, Equipment                   ; +0 Item ID, +1 tens/units, +2 hundreds, +3 unused
 
@@ -242,7 +232,6 @@ AddCardToEquip2:
                     ld      a, 4
                     call    ADD_HL_A_
                     jr      AddCardToEquip2
-
 
 AddCardToEquip3:
                     ld      (hl), e

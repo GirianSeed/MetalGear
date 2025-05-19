@@ -44,7 +44,6 @@ ElevatorRoom3:      dw 0C878h
                     db 39
                     dw 0B8B4h
 
-
 ElevatorRoom4:      dw 0B828h
                     db 51h
                     dw 3834h
@@ -53,11 +52,9 @@ ElevatorRoom4:      dw 0B828h
                     db 5Fh
                     dw 0B8B4h
 
-
 ElevatorRoom5:      dw 0C8B8h
                     db 58h
                     dw 0B8B4h
-
 
 ElevatorRoom6:      dw 0B828h
                     db 0CDh
@@ -67,16 +64,13 @@ ElevatorRoom6:      dw 0B828h
                     db 0CFh
                     dw 0B8B4h
 
-
 ElevatorRoom7:      dw 0C8B8h
                     db 9Ah
                     dw 0B8B4h
 
-
 ElevatorRoom8:      dw 0C838h
                     db 6Dh
                     dw 3834h
-
 
 ElevatorRoom9_10:   dw 0C828h
                     db 0
@@ -85,7 +79,6 @@ ElevatorRoom9_10:   dw 0C828h
                     dw 0
                     db 0
                     dw 0
-
 
 ElevatorRoom11:     dw 0B828h
                     db 73h

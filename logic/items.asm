@@ -31,7 +31,6 @@ ChkTakeItems2:
                     ld      b, 1                            ; An item description is being shown. Do not check more items
                     jr      ChkTakeItems4
 
-
 ChkTakeItems3:
                     pop     bc
 
@@ -45,8 +44,6 @@ ChkTakeItems4:
                     inc     c                               ; Next item index
                     djnz    ChkTakeItems2
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -128,8 +125,6 @@ ChkTakeItem4:
                     call    AddItemAmount                   ; Increment the amount of the item
                     jp      EraseTakenItem
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Add an item to inventory
@@ -155,7 +150,6 @@ AddItemInventory2:
                     djnz    AddItemInventory2               ; Check next inventory slot
                     ret
 
-
 AddItemInventory3:
                     ld      (hl), c                         ; Set item ID
 
@@ -173,8 +167,6 @@ AddItemInventory4:
                     call    AddItemAmount                   ; Increment item units
                     jp      EraseTakenItem
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Add supressor to equipment
@@ -187,7 +179,6 @@ PickSupressor:
                     ld      a, SUPRESSOR
                     ld      (InvSupressor), a               ; set the supressor in the last slot
                     jp      EraseTakenItem
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -218,7 +209,6 @@ PickUpWeapon:
                     call    RenderAmmoHUD                   ; Update ammo counter
                     jp      EraseTakenItem
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Add the weapon to the equipment
@@ -243,7 +233,6 @@ GetWeapon2:
 
                     djnz    GetWeapon2                      ; Check next equipment slot
                     ret
-
 
 GetWeapon3:
                     ld      (hl), c                         ; Weapon ID
@@ -310,7 +299,6 @@ RecoverEquipment2:
                     call    ADD_HL_A                        ; Pointer to next item slot
                     jr      RecoverEquipment2
 
-
 AddTransmitter:
                     ld      (hl), SELECTED_TRANSMITTER
                     inc     hl
@@ -321,7 +309,6 @@ AddTransmitter:
                     call    DrawWeaponHUD
                     call    DrawItemHUD
                     jr      EraseTakenItem
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -406,14 +393,12 @@ ErasePickedItem3:
                     and     a
                     ret     z                               ; No description available for this item
 
-        IF      (!JAPANESE)
+        IF (!JAPANESE)
                     cp      62                              ; TEXT: I took back the weapon and equipment
                     ret     nz                              ; (!?) The other item descriptions are ignored in the English version.
                                                             ; In the Japanese version this check is not done
         ENDIF
                     jp      SetText
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -479,8 +464,6 @@ LimitAmmo:
                     call    nc, ChkMaxAmount
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set the item/weapon as taken
@@ -514,7 +497,6 @@ SetItemAsTaken3:
                     call    ADD_HL_A
                     ld      (hl), 1                         ; Set as picked
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;

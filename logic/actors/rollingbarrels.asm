@@ -30,9 +30,7 @@ RollingBarrelLogic:
 
                     ret
 
-
 ; (!?) Not used
-
 
 RollingBarrelLogic2:
                     call    GetPlayerXY                     ; D = Player X, E = Player Y

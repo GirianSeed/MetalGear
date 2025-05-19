@@ -11,18 +11,15 @@ idxSprWeapon:       dw SprBullet
                     dw SprMine
                     dw idxSprRocket
 
-
 idxSprRocket:       dw SprRocketUp
                     dw SprRocketDown
                     dw SprRocketLeft
                     dw SprRocketRight
 
-
 idxSprMissile:      dw SprMissileUp
                     dw SprMissileDown
                     dw SprMissileLeft
                     dw SprMissileRight
-
 
 idxShotSprAtt:      dw SprBulletAttr
                     dw SprGrenadeAttr

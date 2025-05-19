@@ -19,7 +19,6 @@ CowardDuckLogic:
                     dw CD_ChoseLRCenter
                     dw CW_MoveRestart
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Coward Duck introduction
@@ -44,13 +43,11 @@ CowardDuckIntro2:
                     ld      (ix+COWARD_D.TIMER), 10h        ; Wait time after the speech
                     jr      CowDuckNextStat                 ; Next status
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Choose to move left or right depending on the position of the player
 ;
 ;---------------------------------------------------------------------------
-
 
 CD_ChoseLR:
                     dec     (ix+COWARD_D.TIMER)
@@ -73,13 +70,11 @@ CowDuckNextStat:
                     inc     (ix+COWARD_D.Status)            ; Next status
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Moves and then shot
 ;
 ;---------------------------------------------------------------------------
-
 
 CD_MoveAndShot:
                     ld      b, 7                            ; Animation timer mask
@@ -101,7 +96,6 @@ CD_MoveAndShot:
                     ld      d, (ix+COWARD_D.X)              ; Boomerang X
                     ld      c, ID_BOOMERANG
                     jp      AddEnemy                        ; Throw a boomerang
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -127,13 +121,11 @@ CD_ChoseLRCenter2:
                     call    SetActorSpeedX                  ; Set the actor's speed to move to the centre of the room
                     jr      CowDuckNextStat                 ; Next status
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Moves to the centre of the room and restart movement logic
 ;
 ;---------------------------------------------------------------------------
-
 
 CW_MoveRestart:
                     ld      b, 7
@@ -258,7 +250,6 @@ BoomerangLogic4:
                     neg
                     jr      BoomerangLogic6
 
-
 BoomerangLogic5:
                     ld      a, b
 
@@ -266,7 +257,6 @@ BoomerangLogic6:
                     add     a, (ix+BOOMERANG.START_X)
                     ld      (ix+BOOMERANG.X), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -286,7 +276,6 @@ BoomInvertYSpeed:
 
 DismissActor_:
                     jp      DismissActor0
-
 
 BoomChgXDelta:
                     ld      a, (ix+BOOMERANG.ANGLE_DELTA_X)

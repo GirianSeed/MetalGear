@@ -42,7 +42,6 @@ ArnoldLogic:
                     dw ArnoldReturn
                     dw ArnoldBounceBack3
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if Arnold can see the player. If so, look at it and start runnig towards him
@@ -74,7 +73,6 @@ ArnoldSeePlayer2:
 
                     jp      SetChaseSpeed
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and select a random direction (just the sprite ID)
@@ -95,7 +93,6 @@ ArnoldTurn:                                                 ; Set random wait ti
                     add     a, 82h                          ; Sprite ID Arnold left
                     ld      (ix+ARNOLD.SpriteId), a         ; Randomly select right or left sprite
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -125,7 +122,6 @@ ArnoldTowards2:                                             ; 1=Up, 2=Down, 3=Le
 
                     jr      ArnoldSeePlayer
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Stop running towards the player and start walking back
@@ -147,7 +143,6 @@ ArnoldStopChase2:
                     ld      b, DIR_RIGHT
                     call    SetArnoldWalkSpr2
                     jp      SetWalkSpeed
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -174,7 +169,6 @@ ArnoldReturn2:
                     ld      (ix+ARNOLD.Status), 0           ; Watch status
                     ld      (ix+ARNOLD.SpeedX), 0           ; Stop moving
                     jr      SetArnoldRndWait
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -251,14 +245,12 @@ SetArnoldSpr:
                     ld      (ix+ARNOLD.SpriteId), a
                     ret
 
-
 SetArnoldSprStill:
                     ld      a, (ix+ARNOLD.Direction)        ; 1=Up, 2=Down, 3=Left, 4=Right
 
 SetArnoldSprStill2:
                     add     a, a
                     jr      SetArnoldSpr
-
 
 ;----------------------------------------------------------------------------
 ;

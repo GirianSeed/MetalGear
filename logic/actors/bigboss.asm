@@ -16,8 +16,6 @@ InitBigBoss:
                     ld      (ix+BIG_BOSS.Direction), DIR_RIGHT ; 1=Up, 2=Down, 3=Left, 4=Right
                     jr      BigBossSetSpr_
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Big Boss logic
@@ -34,7 +32,6 @@ BigBossLogic:
                     dw BigBossShowUp                        ; Shows up to shoot
                     dw BB_Shoot
                     dw BigBossCover
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -57,7 +54,6 @@ BigBossSpeech:
 
                     ld      a, 147                          ; Big Boss confession
                     jp      SetTextUnskip2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -83,7 +79,6 @@ BigBossThink:
 
                     jr      BigBossSetSpr_
 
-
 BigBossSetRunAway:
                     ld      (ix+BIG_BOSS.Status), 2
                     ld      (ix+BIG_BOSS.Moving), 1         ; 0=Does not move
@@ -91,7 +86,6 @@ BigBossSetRunAway:
 
 BigBossSetSpr_:
                     jr      BigBossSetSpr                   ; Animate and update the sprite
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -107,8 +101,6 @@ BBSetMovToPlayer:
                     call    BBSetDirToPlayer                ; Sets the direction to move towards the player
 
                     jr      BigBossSetSpr                   ; Animate and update the sprite
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -134,8 +126,6 @@ BigBossRun:
                     ld      (ix+BIG_BOSS.Moving), 0         ; Stop moving
                     jr      BBAimToPlayer                   ; Select direction to show up from the crate
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Show up from a crate
@@ -151,8 +141,6 @@ BigBossShowUp:
                     ld      (ix+BIG_BOSS.Moving), 0         ; Stop moving
                     ld      (ix+BIG_BOSS.Wait), 5
                     jr      BBAimToPlayer                   ; Select direction towards the player
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -180,7 +168,6 @@ BB_Shoot:
 
                     jp      AddEnemyShot2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Big Boss takes cover
@@ -198,7 +185,6 @@ BigBossCover:
                     call    SetRandomWait1_20
 
                     jr      BBAimToPlayer
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -219,7 +205,6 @@ BigBossSetSpr2:
 BigBossSetSpr3:
                     ld      (ix+BIG_BOSS.SpriteId), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -242,7 +227,6 @@ BBAimToPlayer2:
                     sub     b
                     neg
                     jr      BigBossSetSpr2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -279,7 +263,6 @@ BigBossSetSpeed:
                     ld      (ix+BIG_BOSS.SpeedX), d
                     ret
 
-
 BigBossCalcAway2:
                     ld      a, (PlayerY)
                     cp      (ix+BIG_BOSS.Y)
@@ -289,8 +272,6 @@ BigBossCalcAway2:
                     dec     a                               ; Up
 
                     jr      BigBossSetDir                   ; Set Big Boss direction and update his speed according to it
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -310,7 +291,6 @@ BBSetDirToPlayer:
                     inc     a                               ; Right
                     jr      BigBossSetDir                   ; Set Big Boss direction and update his speed according to it
 
-
 BBCalcShowUpDir2:
                     ld      a, (PlayerY)
                     cp      (ix+BIG_BOSS.Y)
@@ -320,8 +300,6 @@ BBCalcShowUpDir2:
                     inc     a                               ; Down
 
                     jr      BigBossSetDir                   ; Set Big Boss direction and update his speed according to it
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -349,7 +327,6 @@ BBChkTurnCorner2:
 
                     jr      BigBossSetDir                   ; Set Big Boss direction and update his speed according to it
 
-
 BBChkTurnCorner3:
                     ld      a, (ix+BIG_BOSS.Y)
                     cp      56
@@ -367,7 +344,6 @@ BBChkTurnCorner4:
 
                     jr      BigBossSetDir                   ; Set Big Boss direction and update his speed according to it
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Sets a random value (1-32) in .Wait field
@@ -381,7 +357,6 @@ SetRandomWait1_20:
                     inc     a
                     ld      (ix+BIG_BOSS.Wait), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -401,7 +376,6 @@ BBChkCovered2:
                     cp      98h
                     ret
 
-
 BBChkCovered3:
                     ld      a, (ix+BIG_BOSS.X)
                     cp      30h
@@ -412,7 +386,6 @@ BBChkCovered3:
 
                     cp      0B0h
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -433,7 +406,6 @@ BBChkPlayerNear:
                     cp      91h
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if Big Boss is in a good place to shoot
@@ -451,7 +423,6 @@ BBChkShoot:
                     sub     (ix+BIG_BOSS.X)
                     jr      CheckCrateSize
 
-
 CheckCrateColumn:
                     ld      a, (PlayerY)
                     sub     (ix+BIG_BOSS.Y)
@@ -460,7 +431,6 @@ CheckCrateSize:
                     add     a, 30h
                     cp      61h
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -475,8 +445,6 @@ BBChkUpDownCorridors:
 
                     cp      168
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;

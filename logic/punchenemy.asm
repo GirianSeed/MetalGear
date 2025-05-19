@@ -16,8 +16,6 @@ PunchEnemies:       db ID_GUARD_SLOW
                     db ID_SENTINEL
                     db ID_FAKE_MADNAR
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player punches an enemy
@@ -40,7 +38,6 @@ ChkPunchEnemy2:
                     djnz    ChkPunchEnemy2                  ; Check next enemy type
 
                     ret
-
 
 ChkPunchEnemy3:
                     ld      a, (PlayerDirection)            ; 1=Up, 2 = Down, 3=Left, 4=Right
@@ -73,8 +70,6 @@ ChkPunchEnemy4:
                     ld      a, 8                            ; Punch enemy sfx
                     jp      SetSoundEntry
 
-
-
 ;----------------------------------------------------------------------------
 ; Punch areas depending on the direction
 ;----------------------------------------------------------------------------
@@ -84,8 +79,6 @@ PunchLeftDat:       dw 0C00h
 PunchDownDat:       dw 0CF4h
 PunchRightDat:      dw 0C00h
                     dw 0CF4h
-
-
 
 ;----------------------------------------------------------------------------
 ;

@@ -5,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkLMineShot:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z
 
@@ -47,7 +47,6 @@ ChkLMineShot:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Mine logic
@@ -61,7 +60,6 @@ PlayerMineLogic:
                     dw MineDummy
                     dw MineExplode
                     dw SmallExplosionLogic
-
 
 ;----------------------------------------------------------------------------
 ;

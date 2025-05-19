@@ -7,7 +7,7 @@
 
 AddRoomItems:
                     ld      hl, ItemsInTheRoom              ; ID, size, Y, X
-                    ld      de,  ItemsInTheRoom+1           ; ID, size, Y, X
+                    ld      de, ItemsInTheRoom+1            ; ID, size, Y, X
                     ld      bc, 2Fh
                     ld      (hl), b
                     ldir
@@ -73,7 +73,6 @@ AddRoomItems5:
                     inc     de
                     inc     de
                     jr      AddRoomItems2
-
 
 AddItemToRoom:
                     ld      a, (de)

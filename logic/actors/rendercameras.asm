@@ -4,7 +4,6 @@
 ;
 ;----------------------------------------------------------------------------
 
-
 RenderCamera:
                     ld      (ix+ACTOR.Status), 2            ; Do nothing status
                     ld      (ix+ACTOR.Moving), 0            ; Not moving
@@ -59,7 +58,6 @@ DrawCameras2:
                     djnz    DrawCameras2
                     ret
 
-
 DrawCamera_:
                     push    hl
                     push    bc
@@ -72,4 +70,3 @@ DrawCamera_:
                     pop     bc
                     pop     hl
                     ret
-

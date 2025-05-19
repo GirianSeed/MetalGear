@@ -8,17 +8,11 @@
 
                     org #6000
 
-
         include "data/playersprite.asm"
-
         include "data/spritesets.asm"
-
         include "data/weaponspratt.asm"
-
         include "gfx/sprites.asm"
-
         include "data/laserconfig.asm"
-
         include "data/musicradioconfig.asm"
 
         IF (JAPANESE)
@@ -52,14 +46,10 @@ ChkDrawMetalGear:
                     ld      de, 6020h
                     jp      DrawMetalGear_
 
-
 RemoveMetalGear:
                     ld      de, 6020h
                     jp      EraseMetalGear_
 
-
-
                     ; Fill empty space
                     ds      (#C000-$),#ff
                     ASSERT  $=#C000
-

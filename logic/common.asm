@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Common game logic
@@ -46,13 +45,8 @@ CommonLogic:
                     ld      (CaptureStatus), a              ; Reset the capture scene status
                     ret
 
-
-
-
         include "touchenemy.asm"
-
         include "punchenemy.asm"
-
         include "laserbeams.asm"
 
 ;----------------------------------------------------------------------------
@@ -69,16 +63,9 @@ SetOnBridge:
 
                     ret
 
-
-
         include "pitfall.asm"
-
         include "damagelaser.asm"
-
         include "bridge.asm"
-
         include "damageelectric.asm"
-
         include "damagegas.asm"
-
         include "damagetoenemy.asm"

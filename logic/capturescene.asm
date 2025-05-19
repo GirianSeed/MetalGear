@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Capture scene logic
@@ -16,13 +15,11 @@ CaptureSceneLogic:
                     dw CaptureFadeOut                       ; Fade out
                     dw PutInPrison                          ; Put Snake in prison
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Add a "capture guard" in the same Y than the player
 ;
 ;----------------------------------------------------------------------------
-
 
 AddCaptureGuard:
                     ld      hl, CaptureStatus
@@ -33,7 +30,6 @@ AddCaptureGuard:
                     ld      e, a                            ; Guard Y
                     ld      d, 0F0h                         ; Guard X
                     jp      AddEnemy                        ; The logic of this guard will control part of the scene
-
 
 CaptureSetup:
                     ld      hl, CaptureStatus
@@ -48,7 +44,6 @@ CaptureSetup:
 DummyRet4:
                     ret
 
-
 CaptureWait:
                     ld      hl, CaptureTimer
                     dec     (hl)
@@ -57,8 +52,6 @@ CaptureWait:
                     dec     hl
                     inc     (hl)                            ; Next capture scene status
                     jp      CopyPalToRAM
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -76,7 +69,6 @@ CaptureFadeOut:
                     inc     hl
                     ld      (hl), 10h                       ; Capture timer
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -116,7 +108,6 @@ PutInPrison:
                     ld      (hl), 0
                     jp      InitGame4
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Init capture scene
@@ -128,9 +119,6 @@ InitCaptureScene:
                     ld      (ix+ACTOR.COLLISION_CFG), 0     ; Bit0 = Check collision with player, Bit1 = Check player shots, bit2 = Pitfall is closed
                     ld      (ix+ACTOR.Wait), 2
                     ret
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -150,7 +138,6 @@ CaptureGuardsLogic:
                     dw CaptureWaitText                      ; Wait after showing the text and before the fade out
                     dw CaptureDummy                         ; Do nothing
 
-
 CaptureDelay:
                     dec     (ix+ACTOR.Wait)
                     ret     nz                              ; Wait
@@ -158,14 +145,12 @@ CaptureDelay:
                     inc     (ix+ACTOR.Status)               ; Next status
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Guard says: "DON'T MOVE"
 ; Add capture guard B. It is located above or under the player depending on his position
 ;
 ;----------------------------------------------------------------------------
-
 
 AddCaptureGuardB:
                     ld      (ix+ACTOR.Status), 6            ; This guard will do nothing from now on
@@ -224,7 +209,6 @@ CaptureGuardBX2:
                     ld      (ix+ACTOR.Direction), a         ; Set the direction towards Snake
                     jp      SetWalkSpeedFast
 
-
 ;----------------------------------------------------------------------------
 ; The second guard moves vertically towards the player
 ;----------------------------------------------------------------------------
@@ -243,7 +227,6 @@ CaptureGuardBY:
                     ld      (ix+ACTOR.Wait), 2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ; The guard B says :"YOU ARE CAPTURED"
 ;----------------------------------------------------------------------------
@@ -257,7 +240,6 @@ CaptureGuardBSpeak:
 
                     ld      a, 7                            ; TXT: YOU ARE CAPTURED
                     jp      SetTextUnskippable
-
 
 ;----------------------------------------------------------------------------
 ; Wait a bit after the "YOU ARE CAPTURED" text

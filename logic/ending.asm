@@ -30,7 +30,6 @@ EndingSetup:
                     ld      (RadioFreq), a
                     jp      EnableScreenBnk
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 1: Explosion and Snake turns back
@@ -61,7 +60,6 @@ EndingLogic:
                     call    FillRect_                       ; Erase the explosion
                     jr      NextEndingStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 2: Snake stares back
@@ -79,7 +77,6 @@ EndingLogic2:
                     ld      (EndingCnt), a
                     jr      NextEndingStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 3: Second explosion
@@ -93,7 +90,6 @@ EndingLogic3:
                     dec     (hl)
                     jp      nz, EndingExplosion
                     jr      NextEndingStatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -116,7 +112,6 @@ EndingLogic4:
                     ld      (EndingCnt), a
                     jr      NextEndingStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 5: Wait switch to SEND mode
@@ -134,7 +129,6 @@ EndingLogic5:
 
                     ld      a, 9Bh                          ; TEXT: THIS IS SOLID SNAKE... METAL GEAR'S DESTRUCTION IS A SUCCESS.* OPERATION  INTRUDE N313 FINISHED!...* EVERYTHING IS FINISHED.* I WILL GO BACK NOW. ...OVER
                     jr      EndingSetText__
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -154,7 +148,6 @@ EndingLogic6:
                     call    SetSoundEntry__
 
                     jr      NextEndingStatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -193,7 +186,6 @@ NextEndingStatus:
                     inc     (hl)
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 8: Radio gets signal
@@ -217,7 +209,6 @@ EndingLogic8:
 EndingSetText__:
                     jr      EndingSetText_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 9: News on the radio about the explosion
@@ -238,7 +229,6 @@ EndingLogic9:
 EndingSetText_:
                     jr      EndingSetText
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 10: Staff
@@ -258,7 +248,6 @@ EndingLogic10:
 
                     jr      NextEndingStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 11: Fade out
@@ -276,7 +265,6 @@ EndingLogic11:
                     ld      a, 70h
                     ld      (EndingCnt), a
                     jr      NextEndingStatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -305,7 +293,6 @@ EndingSetText:
                     call    NextEndingStatus
                     jp      SetTextUnskip_
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending 13: Big boss threat
@@ -320,7 +307,6 @@ EndingLogic13:
 
                     call    EnableScreenBnk
                     jr      NextEndingStatus
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -365,7 +351,6 @@ EndingTimerEnd:
                     call    FillRect_
                     jp      NextEndingStatus
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Ending textbox
@@ -380,7 +365,6 @@ EndingTextBox:
                     ld      a, (GameMode)                   ; 0=Playing,1=NextRoom,2=Weapons,3=Equipment,4=Radio,5=Lorry,6=Moving elevator,7=OpenDoor,8=Binoculars,9=Dead, A=Text window, B=Captured, C = Madnar moved:It's too late
                     cp      GAME_MODE_RADIO
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -406,7 +390,6 @@ EndingSnakeRun2:
 EndingSnakeRun3:
                     call    SetSnakeSprAttr_
                     jp      SetSnakeSprPatt_
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -450,7 +433,6 @@ EndingExplosion:
 
 EndingExplosion2:
                     jp      SetRoomPal_
-
 
 EndDrawExplosBig:
                     ld      e, 40h

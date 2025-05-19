@@ -35,11 +35,11 @@ IntroScene1:
                     jr      z, IntroScene1b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     ld      a, 3                            ; Left
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
                     ld      a, 4                            ; Left
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     jp      IntroSceneControls
 
 ;----------------------------------------------------------------------------
@@ -69,8 +69,8 @@ IntroScene2:
                     jr      z, IntroScene2b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     jp      IntroSceneControls
 
 ;----------------------------------------------------------------------------
@@ -100,11 +100,10 @@ IntroScene3:
                     jr      z, IntroScene3b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     ld      a, 4
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     jp      IntroSceneControls
-
 
 IntroScene3b:
                     ld      a, 20h
@@ -123,11 +122,11 @@ IntroScene4:
                     jr      z, IntroScene4b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     ld      a, 1
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
                     ld      a, 1
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     jr      IntroSceneControls
 
 ;----------------------------------------------------------------------------
@@ -246,11 +245,11 @@ IntroScene9:
                     jr      z, IntroScene9b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     ld      a, DIR_RIGHT
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
                     rlca
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
 
 IntroSceneControls:
                     call    ChkControlPlayer_
@@ -259,7 +258,6 @@ IntroSceneControls:
 IntroChkExitScreen:
                     call    ChkExitScreen_
                     jp      SetPlayerSpr_
-
 
 IntroScene9b:
                     ld      a, 30h
@@ -278,12 +276,11 @@ IntroScene10:
                     jr      z, IntroScene10b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     inc     a
                     ld      (PlayerDirection), a            ; Up
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     jr      IntroSceneControls
-
 
 IntroScene10b:
                     ld      hl, 8800h
@@ -310,13 +307,12 @@ IntroScene11:
                     jr      z, IntroScene11b
 
                     xor     a
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     inc     a                               ; Up
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     call    ControlPlayerV_
                     jr      IntroChkExitScreen
-
 
 IntroScene11b:
                     ld      hl, 6600h
@@ -344,8 +340,8 @@ IntroScene12:
                     jp      z, NextIntroScene
 
                     xor     a
-                    ld      (ControlsHold), a               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
-                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsHold), a               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      (ControlsTrigger), a            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     inc     a
                     ld      (PlayerDirection), a            ; 1=Up, 2 = Down, 3=Left, 4=Right
 

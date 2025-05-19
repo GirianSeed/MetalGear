@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player fires the hand gun
@@ -6,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkHandGunShot:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z                               ; No
 
@@ -79,7 +78,6 @@ ChkHandGunShot2:
 
                     jp      SetShotSpr
 
-
 ;----------------------------------------------------------------------------
 ; Speeds of the bullet depending on the direction
 ;----------------------------------------------------------------------------
@@ -87,7 +85,6 @@ ShootDirSpeeds:     dw 0FAh
                     dw 6
                     dw -600h
                     dw 600h
-
 
 ;----------------------------------------------------------------------------
 ;

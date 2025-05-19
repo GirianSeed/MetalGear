@@ -124,63 +124,36 @@ idxSoundData:       dw Sfx_None
 ;----------------------------------------------------------------------------
 
         include "sfx/SfxRadioNoise.asm"
-
         include "sfx/SfxSpawnItem.asm"
-
         include "sfx/SfxMenuLogo.asm"
-
         include "sfx/SfxRank.asm"
-
         include "sfx/SfxPropeller.asm"
 
 Sfx_Dummy:          db 0FFh
 
         include "sfx/SfxDogBark.asm"
-
         include "sfx/SfxBulletShot.asm"
-
         include "sfx/SfxPitfall.asm"
-
         include "sfx/SfxPunch.asm"
-
         include "sfx/SfxShots.asm"
-
         include "sfx/SfxClick.asm"
-
         include "sfx/SfxGuardDead.asm"
-
         include "sfx/SfxPBombMineSet.asm"
-
         include "sfx/SfxExplosions.asm"
-
         include "sfx/SfxPickUpItem.asm"
-
         include "sfx/SfxElectricDamage.asm"
-
         include "sfx/SfxDoors.asm"
-
         include "sfx/SfxDamage.asm"
-
         include "sfx/SfxRoofAir.asm"
-
         include "sfx/SfxTextPrint.asm"
-
         include "sfx/SfxWallBroken.asm"
-
         include "sfx/SfxLorry.asm"
-
         include "sfx/SfxMenuMove.asm"
-
         include "sfx/SfxUseItem.asm"
-
         include "sfx/SfxRadioCall.asm"
-
         include "sfx/SfxShellWhistle.asm"
-
         include "sfx/SfxBarrelHit.asm"
-
         include "sfx/SfxLaser.asm"
-
         include "sfx/SfxBoomerang.asm"
 
 ;----------------------------------------------------------------------------
@@ -190,21 +163,13 @@ Sfx_Dummy:          db 0FFh
 ;----------------------------------------------------------------------------
 
         include "music/ThemeOfTara.asm"
-
         include "music/RedAlert.asm"
-
         include "music/SneakingMission.asm"
-
         include "music/BeyondBigBoss.asm"
-
         include "music/MetalGearTX55.asm"
-
         include "music/Mercenary.asm"
-
         include "music/ReturnOfFoxHunder.asm"
-
         include "music/AnotherDeadSoldier.asm"
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -213,14 +178,5 @@ Sfx_Dummy:          db 0FFh
 ;----------------------------------------------------------------------------
 
         include "sfx/SfxPause.asm"
-
         include "sfx/SfxBigBossDead.asm"
-
         include "sfx/SfxEndingExplosion.asm"
-
-
-
-
-
-
-

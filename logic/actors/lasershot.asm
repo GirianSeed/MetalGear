@@ -31,9 +31,6 @@ InitLaserShot2:
                     ld      a, 4                            ; SFX laser shot
                     jp      SetSoundEntryChk
 
-
-
-
 ;---------------------------------------------------------------------------
 ;
 ; Laser shot logic
@@ -47,8 +44,6 @@ LaserShotLogic:
                     dw LaserIncrease
                     dw LaserDecrease
                     dw LaserShotDummy
-
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -68,7 +63,6 @@ LaserIncrease:
                     ld      (ix+ACTOR.LASER_WAIT), 1        ; bit1:0=Red laser,1=White laser
 
                     jp      NextActorStatus
-
 
 LaserSetSprColor:
                     ld      a, 0Bh                          ; Max. number of sprites used to draw a laser
@@ -92,8 +86,6 @@ LaserSetSprColor3:
 
                     ld      (hl), c                         ; Set sprite color
                     ret
-
-
 
 ;---------------------------------------------------------------------------
 ;
@@ -124,7 +116,6 @@ LaserDecrease2:
 
                     jp      DismissActor0
 
-
 EraseLaserTrace:
                     ld      a, 0Bh
                     sub     (ix+ACTOR.COUNTER)
@@ -132,7 +123,6 @@ EraseLaserTrace:
 
                     ld      c, 0                            ; Color 0 = remove sprite
                     jr      LaserSetSprColor2
-
 
 LaserShotDummy:
                     ret

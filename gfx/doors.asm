@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Doors graphics
@@ -37,7 +36,6 @@ GfxDoorFront:       db  11h, 3Fh,0FFh,0FFh,0FFh,0FFh,0CCh,0CCh,0FCh, 1Fh,0C5h, 5
                     db  59h, 53h,0F3h, 33h, 99h, 53h,0FFh,0FFh, 99h, 53h,0FCh, 1Fh, 59h, 53h,0FFh, 3Fh
                     db  99h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 33h, 33h,0F1h, 3Fh,0FFh,0FFh,0FFh,0FFh
 
-
 GfxDoorElevator:    db  11h, 3Fh,0FFh,0FFh,0FFh,0FFh,0CCh,0C5h,0FCh, 1Fh,0C5h, 55h,0F1h,0FFh,0C5h, 55h
                     db 0F1h, 3Fh,0C5h, 55h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h
                     db 0FFh,0FFh,0FFh,0FFh,0FCh,0CCh,0CCh,0CFh, 5Fh,0C5h, 55h, 5Fh, 55h,0FCh, 55h, 5Fh
@@ -71,7 +69,6 @@ GfxDoorElevator:    db  11h, 3Fh,0FFh,0FFh,0FFh,0FFh,0CCh,0C5h,0FCh, 1Fh,0C5h, 5
                     db  59h, 53h,0F3h, 33h, 55h, 53h,0FFh,0FFh, 59h, 53h,0FCh, 1Fh, 59h, 53h,0FFh, 3Fh
                     db  99h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 33h, 33h,0F1h, 3Fh,0FFh,0FFh,0FFh,0FFh
 
-
 GfxDoorLeft:        db 0FFh, 33h, 33h, 3Fh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db  1Fh,0FFh,0FFh,0F9h, 15h, 55h, 5Fh, 59h, 15h, 55h, 55h, 59h, 15h, 55h,0F5h, 59h
                     db  15h, 55h, 15h, 59h, 15h, 55h, 18h, 59h, 15h, 5Fh, 18h, 59h, 15h,0FFh, 18h, 55h
@@ -81,7 +78,6 @@ GfxDoorLeft:        db 0FFh, 33h, 33h, 3Fh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0F
                     db  15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h
                     db  11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h
 
-
 GfxDoorRight:       db 0F1h, 11h, 11h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
                     db  9Fh,0FFh,0FFh,0FCh, 95h,0F5h, 55h, 5Ch, 95h, 55h, 55h, 5Ch, 95h, 5Fh, 55h, 5Ch
                     db  95h, 5Ch, 55h, 5Ch, 95h, 8Ch, 55h, 5Ch, 95h, 8Ch,0F5h, 5Ch, 55h, 8Ch,0FFh, 5Ch
@@ -90,7 +86,6 @@ GfxDoorRight:       db 0F1h, 11h, 11h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0F
                     db  55h,0FFh,0FFh, 5Ch, 99h, 5Fh,0FFh, 5Ch, 55h, 55h,0FFh, 5Ch, 55h, 55h, 5Fh, 5Ch
                     db  55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch
                     db  11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch
-
 
 GfxDoorDown:        db 0FFh,0FFh,0FFh,0FFh,0FEh,0EEh,0EEh,0EEh,0FEh,0CCh,0CCh,0CCh,0FEh,0C3h, 33h, 33h
                     db 0FEh,0C3h,0CCh,0CCh,0FEh,0CEh,0EEh,0EEh,0FEh,0CCh,0CCh,0CCh,0FEh, 11h, 11h, 11h

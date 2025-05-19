@@ -39,7 +39,6 @@ DesertSecurityLogic:
                     dw DesertSecurity1
                     dw DesertSecurity2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Checks if Snake is near the guards.
@@ -72,7 +71,6 @@ DesertSecurity2:
 
                     jp      DismissActor0                   ; Remove the security logic actor
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and show warning message about an intruder
@@ -101,7 +99,6 @@ ChkDesertGuardTxt:
                     ld      a, 35                           ; TEXT: PROBABLY,FOXHOUNDER GAINED ACCESS. DON'T MAKE WAY FOR HIM, AT ANY COST.
                     jp      SetTextUnskippable
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check building 2 door status
@@ -120,7 +117,6 @@ DesertSecurity3:
 
                     ld      a, 127                          ; TEXT: Come in
                     jp      SetTextUnskippable
-
 
 DesertSecurity4:
                     cp      2

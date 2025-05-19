@@ -162,7 +162,6 @@ RadioRoom_123:      db RADIO_DIANE2 | RADIO_AUTOREPLY
 RadioRoom_150:      db RADIO_DIANE | RADIO_WAITCALL | RADIO_END
                     db 156                                  ; Diane: HELLO THIS IS DIANE... I SUPPOSE THEY HAVE A SILENCER. ...BYE
 
-
 RadioRoom_165:      db RADIO_BIGBOSS | RADIO_AUTOREPLY | RADIO_END
                     db 58                                   ; This is Big Boss... Infiltration successful. Find Grey Fox's cell. CHECK THE WALL!! ...Over
 
@@ -183,7 +182,6 @@ RadioRoom_193:      db RADIO_JENIFFER | RADIO_AUTOREPLY
 
 RadioRoom_202:      db RADIO_SCHNEIDER2 | RADIO_WAITCALL | RADIO_END
                     db 122                                  ; This is Schneider... The Compass is on floor 2. ...Over
-
 
 NoRadio:            db 0
 
@@ -443,4 +441,3 @@ idxRoomRadio:       dw RadioRoom_000
                     dw NoRadio
                     dw NoRadio
                     dw NoRadio
-

@@ -58,7 +58,6 @@ GuardSilencerLogic:
                     dw GuardSilencTurn                      ; Turn
                     dw GuardSilencWalk                      ; Walk
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and decide in which direction to move
@@ -80,7 +79,6 @@ GuardSilencIdle:
 
                     call    AnimateGuard2                   ; Update the guard sprite ID
                     jp      SetWalkSpeedFast
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -112,7 +110,6 @@ GuardSilencMovShot:
                     dec     c                               ; ID_BULLET_HORIZ
                     jp      AddEnemyShot2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait after shooting and turn back
@@ -132,7 +129,6 @@ GuardSilencTurn:
 
                     call    AnimateGuard2                   ; Set walk sprite ID depending on the direction
                     jp      SetWalkSpeedFast
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -171,7 +167,6 @@ SetGuardSprId:
                     ld      (ix+GUARD_SILENCER.SpriteId), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; If the player is too close to the guard, the guard chases the player
@@ -190,7 +185,6 @@ ChkChasePlayer:
 
                     jr      ChkChasePlayer3
 
-
 ChkChasePlayer2:
                     ld      a, (PlayerX)
                     sub     (ix+GUARD_SILENCER.X)
@@ -206,6 +200,3 @@ ChkChasePlayer3:
                     pop     hl                              ; Remove CALL return address to skip the logic of this actor
 
                     jp      TransformAlertGuard2            ; Setup the guard to chase the player
-
-
-

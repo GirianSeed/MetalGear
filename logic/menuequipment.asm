@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Equipment menu logic
@@ -39,7 +38,6 @@ MenuEquip:
                     call    RenderHUD                       ; Render the HUD (life, class, selected item...)
                     jp      EnableScreen                    ; Enable screen rendering
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Equipment menu logic
@@ -49,14 +47,14 @@ MenuEquip:
 ;----------------------------------------------------------------------------
 
 MenuEquipLogic:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     bit     4, a                            ; Fire key pressed?
                     jp      nz, ChkUseItem
 
                     and     0Fh                             ; Any direction triggered?
                     jr      nz, MenuEquipLogic2
 
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     0Fh
                     ret     z                               ; No direction is pressed
 
@@ -87,7 +85,6 @@ MenuEquipLogic2:
                     ld      c, a
                     jr      MenuEquipMove
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Move the cursor up (if it is possible)
@@ -108,7 +105,6 @@ MenuEquipUp:
                     dec     a                               ; Move up
                     ld      c, a
                     jr      MenuEquipMove
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -131,7 +127,6 @@ MenuEquipDown:
                     ld      c, a
                     jr      MenuEquipMove
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Move the cursor left (if it is possible)
@@ -145,7 +140,6 @@ MenuEquipLeft:
 
                     sub     9                               ; Move left
                     ld      c, a
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -176,7 +170,6 @@ MenuEquipMove:
                     xor     a                               ; Any item selected
                     jr      SetSelectedItem2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Select the choosen item
@@ -193,7 +186,6 @@ SetSelectedItem:
 SetSelectedItem2:
                     ld      (SelectedItem), a
                     jp      DrawItemHUD
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -230,7 +222,6 @@ ChkUseItem:
                     call    DrawLife                        ; Draw life bar
                     jr      UseItemSfx                      ; Play sfx
 
-
 ;----------------------------------------------------------------------------
 ; Check if the transmitter/bug is dropped
 ;----------------------------------------------------------------------------
@@ -247,7 +238,6 @@ ChkDropTransmitter:
                     ld      (TransmiTaken), a               ; Erase transmitter flag
                     jr      UseItemSfx
 
-
 ;----------------------------------------------------------------------------
 ; Check if the antidote is used
 ;----------------------------------------------------------------------------
@@ -259,7 +249,6 @@ ChkUseAntidote:
                     xor     a
                     ld      (Poisoned), a                   ; Remove poisoned status
                     jr      UseItemSfx
-
 
 ;----------------------------------------------------------------------------
 ; Cigarettes can only be used in the final countdown to add 2000 extra units to the counter
@@ -288,7 +277,6 @@ ChkUseCigarettes:
 UseItemSfx:
                     ld      a, 21h                          ; SFX item used
                     jp      SetSoundEntryChk
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -329,8 +317,8 @@ ExitEquipMenu:
                     ld      a, (AlertModeCopy)
                     ld      (AlertModeCopy2), a             ; Save alert mode status
 
-                    ld      hl,  SprAttRAM+0Eh
-                    ld      de,  SprAttRAM+0Fh
+                    ld      hl, SprAttRAM+0Eh
+                    ld      de, SprAttRAM+0Fh
                     ld      bc, 57h
                     ld      (hl), 0E0h
                     ldir                                    ; Hide sprites
@@ -341,13 +329,12 @@ ExitEquipMenu:
                     ldir                                    ; Set the binoculars target sprites attributes
 
                     ld      hl, BinocularSprCol
-                    ld      de,  BinocularSprCol+1
+                    ld      de, BinocularSprCol+1
                     ld      bc, 3Fh
                     ld      (hl), 0Eh                       ; White
                     ldir                                    ; Set the sprites colors
 
                     jp      LoadSprTarget                   ; Set sprites patterns
-
 
 ;----------------------------------------------------------------------------
 ; Binoculars target sprites attributes

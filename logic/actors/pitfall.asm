@@ -28,7 +28,6 @@ PitfallLogic:
 NextPitfallStat:
                     jp      NextActorStatus
 
-
 PitfallLogic2:
                     dec     b
                     ret     nz                              ; Do nothing if the pitfall if fully open
@@ -108,8 +107,6 @@ PitfallLogic3:
                     ld      a, 1                            ; From page 1 to 0
                     jp      VDP_Copy_Byte                   ; Draw right part
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Get pitfall render coordinates
@@ -125,7 +122,6 @@ GetPitfallCoord:
                     ld      h, (ix+PITFALL.RENDER_SX)
                     ld      l, (ix+PITFALL.RENDER_SY)
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -191,7 +187,6 @@ DrawOpenPitfalls3:
                     djnz    DrawOpenPitfalls3
                     ret
 
-
 DrawOpenPitfalls4:
                     push    hl
 
@@ -214,7 +209,6 @@ DrawOpenPitfalls4:
                     pop     hl
                     ret
 
-
 RenderPitfallP0:
                     call    GetPitfallCoord
                     res     0, d
@@ -233,5 +227,3 @@ RenderPitfallP0_2:
                     inc     c
                     ld      a, 1                            ; From page 1 to 0
                     jp      VDP_Copy_Byte                   ; Draw pitfall
-
-

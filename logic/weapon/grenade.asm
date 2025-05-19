@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player launches a grenade
@@ -6,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkGrenadeShot:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z                               ; No
 
@@ -66,7 +65,6 @@ ChkGrenadeShot:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
 ;----------------------------------------------------------------------------
 ; Speeds of the grenade depending on the direction
 ;----------------------------------------------------------------------------
@@ -78,7 +76,6 @@ GrenadeSpeeds:      db -3
                     db -3
                     db 0
                     db 3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -92,8 +89,6 @@ PlayerGrenadeLogic:
 
                     dw MoveGrenade
                     dw SmallExplosionLogic
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -124,7 +119,6 @@ MoveGrenade:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
 ;----------------------------------------------------------------------------
 ; Grenade parabole Y offsets
 ;----------------------------------------------------------------------------
@@ -133,8 +127,6 @@ GrenadeYOffsets:    db  10h
                     db    0
                     db   -4,  -8,-0Ch,-10h,-14h,-18h,-1Ch,-20h,-24h,-26h,-28h,-26h,-24h,-20h,-1Ch,-18h
                     db -14h,-10h,-0Ch,  -8,  -4,   0
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -154,9 +146,6 @@ GrenadeExplode:
                     ld      (ix+PLAYER_SHOT.KILL_BY_CONTACT), 1 ; Kills by contact
 
                     jp      ChkAlertTrigger                 ; Check if the explosion triggers the alert
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -184,6 +173,3 @@ SmallExplosionLogic:
 SmallExplosionLogic2:
                     ld      (ix+PLAYER_SHOT.SpriteID), c    ; Set the sprite ID of current explosion frame
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
-
-
-

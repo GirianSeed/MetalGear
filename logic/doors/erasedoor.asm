@@ -29,7 +29,6 @@ EraseDoorLogic:
                     dw EraseBasemWall63
                     dw EraseBasemWall112
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Setup opening door animation.
@@ -87,7 +86,6 @@ DoorOpenSfxs:       db  19h
                     db  1Bh
                     db  1Bh
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Open north door animation logic
@@ -124,8 +122,6 @@ EraseDoorNorth:
                     ld      c, 0                            ; Black color
                     jp      DrawLineVert                    ; Draw a vertical line
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Open south door animation logic
@@ -158,8 +154,6 @@ EraseDoorSouth:
                     ld      b, 8                            ; Door height (NY)
                     ld      c, 0                            ; Black color
                     jp      DrawLineVert                    ; Draw a vertical line
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -216,8 +210,6 @@ EraseDoorWest2:
 
                     djnz    EraseDoorWest2
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -277,8 +269,6 @@ EraseDoorEast2:
 
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Open elavator door animation logic
@@ -333,8 +323,6 @@ EraseDoorElevator:
                     ld      c, 0                            ; Black color
                     jp      DrawLineVert                    ; Erase right door slide
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Doors that do not need opening animation (i.e.: elevator exits, isolated rooms with a broken wall at the north)
@@ -343,8 +331,6 @@ EraseDoorElevator:
 
 EraseDoorDummy:
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -356,41 +342,33 @@ EraseBasemWall60:
                     ld      bc, 406h
                     jr      RestoreSavedTiles
 
-
 EraseBasemWall61:
                     ld      bc, 401h
                     jr      RestoreSavedTiles
-
 
 EraseBasemWall59:
                     ld      bc, 30Dh
                     jr      RestoreSavedTiles
 
-
 EraseBasemWall58:
                     ld      bc, 50Dh
                     jr      RestoreSavedTiles
-
 
 EraseBasemWall63:
                     ld      bc, 50Ch
                     jr      RestoreSavedTiles
 
-
 EraseWallPrison2:
                     ld      bc, 401h
                     jr      RestoreSavedTiles
-
 
 EraseBasemWall93:
                     ld      bc, 20Ch
                     jr      RestoreSavedTiles
 
-
 EraseWallBuil3_108:
                     ld      bc, 80Ah
                     jr      RestoreSavedTiles
-
 
 EraseBasemWall112:
                     ld      bc, 605h
@@ -416,7 +394,6 @@ RestoreSavedTiles:
                     pop     hl
 
                     dec     hl
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -508,7 +485,6 @@ EraseDoor2:
                     ld      bc, 404h                        ; Width and height in tiles
                     jr      SetOpenDoorTiles                ; Elevator door
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw transparent tiles on the door to change the collision map
@@ -525,7 +501,6 @@ SetOpenDoorTiles:
                     ld      hl, DoorOpenTiles
                     jp      DrawTileBlkTimp2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Get a pointer to the structure of the door that is opening
@@ -539,8 +514,6 @@ GetOpeningDoorDat:
                     add     a, a
                     add     a, a
                     jp      ADD_HL_2A
-
-
 
 ;----------------------------------------------------------------------------
 ;

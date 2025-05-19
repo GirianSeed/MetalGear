@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Region lock
@@ -14,7 +13,6 @@
 ; +---------------- Default interrupt frequency
 ;                   0 = 60Hz, 1 = 50Hz
 ;
-;
 ; BASVER2:
 ;
 ; 7 6 5 4 3 2 1 0
@@ -25,14 +23,14 @@
 ;                   0 = Japanese, 1 = International
 ;----------------------------------------------------------------------------
 RegionLock:
-	if	(JAPANESE)
-		ld     hl,(BASVER1)
-		ld     a,l
-		and    #f7		; Japanese character set? Y-M-D date format? 60Hz?
-		jp     nz,#0000   	; No, reset the computer
+	IF (JAPANESE)
+		ld	hl, (BASVER1)
+		ld	a, l
+		and	#f7		; Japanese character set? Y-M-D date format? 60Hz?
+		jp	nz, #0000	; No, reset the computer
 
-		ld     a,h
-		and    #cf		; Japanese keyboard type?
-		jp     nz,#0000   	; No, reset the computer
+		ld	a, h
+		and	#cf		; Japanese keyboard type?
+		jp	nz, #0000	; No, reset the computer
 	ENDIF
 		ret

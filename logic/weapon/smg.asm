@@ -14,8 +14,6 @@ ResetSMGunCnt:
                     ld      (hl), 0
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player fires the Sub Machine Gun (SMG)
@@ -24,7 +22,7 @@ ResetSMGunCnt:
 
 ChkSMGShot:
                     ld      hl, SubMachGunTimer
-                    ld      a, (ControlsHold)               ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsHold)               ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button hold?
                     jr      z, ResetSMGunCnt
 

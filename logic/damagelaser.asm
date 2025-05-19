@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player touches a laser shot
@@ -29,7 +28,6 @@ ChkLaserShot2:
 
                     ld      a, 7                            ; Force the length to 7 (short)
                     jr      ChkLaserShot4
-
 
 ChkLaserShot3:
                     ld      a, (ix+ACTOR.ANIM_CNT)

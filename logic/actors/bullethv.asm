@@ -5,7 +5,6 @@
 ;
 ;---------------------------------------------------------------------------
 
-
 InitBulletHor:
                     ld      hl, -40h
                     ld      a, r
@@ -51,6 +50,3 @@ InitBulletVert2:
 
                     ld      a, 5                            ; SFX bullet shot
                     jp      SetSoundEntryChk
-
-
-

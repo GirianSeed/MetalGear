@@ -1016,7 +1016,6 @@ ActorPrisoner:      db 1
 NoActorsInRoom:     db    0
 ;3Ah
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Index of the actors in each room

@@ -65,7 +65,6 @@ GetEmptyShotDat2:
                     and     a
                     ret
 
-
 GetEmptyShotDat3:
                     push    hl
                     pop     ix
@@ -139,7 +138,6 @@ ReserveShotSpr3:
                     xor     a                               ; Clear carry flag
                     ret
 
-
 ReserveShotSpr4:
                     ld      a, (SelectedWeapon)
                     ld      (ix+0), a                       ; Shot ID/type
@@ -158,7 +156,6 @@ NumSprShot:         db    1
                     db    4                                 ; Plastic bomb
                     db    2                                 ; Land mine
                     db    4                                 ; Missile
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -186,7 +183,6 @@ PlayerShotsLogic2:
                     djnz    PlayerShotsLogic2
                     ret
 
-
 PlayerShotLogic:
                     push    hl
                     pop     ix
@@ -205,7 +201,6 @@ PlayerShotLogic:
                     dw PlayerPBombLogic
                     dw PlayerMineLogic
                     dw PlayerMissileLogic
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -278,8 +273,6 @@ SetPlayerShotSpr5:
 
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Update player's shot position
@@ -311,7 +304,6 @@ MovePlayerShotX:
                     ld      (ix+PLAYER_SHOT.X), h
                     ret
 
-
 MovePlayerShotAlt:
                     call    MovePlayerShotX
 
@@ -328,7 +320,6 @@ MovePlayerShotAlt2:
                     ld      (ix+PLAYER_SHOT.Y_Alt), h       ; Same Y used by the player
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check shot collision with tiles
@@ -338,7 +329,6 @@ MovePlayerShotAlt2:
 ChkShotCollision:
                     ld      l, (ix+PLAYER_SHOT.Y)
                     jr      ChkShotCollision2
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -378,7 +368,7 @@ RemoveShot:
                     push    ix
                     pop     de
 
-                    ld      (ix+PLAYER_SHOT.ID), 0                  ; Disable the actor
+                    ld      (ix+PLAYER_SHOT.ID), 0          ; Disable the actor
 
                     ld      a, PLAYER_SHOT.NumSprites
                     call    ADD_DE_A

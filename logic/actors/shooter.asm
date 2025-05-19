@@ -130,7 +130,6 @@ ShooterLogic:
 ;
 ;---------------------------------------------------------------------------
 
-
 ShooterWait:
                     dec     (ix+SHOOTER.Wait)
                     ret     nz                              ; Wait idle
@@ -163,7 +162,6 @@ ShooterSetDir:
 ;
 ;---------------------------------------------------------------------------
 
-
 ShooterWalk:
                     call    AnimateGuard                    ; Update walk animation
 
@@ -188,7 +186,6 @@ ShooterWalk:
 ;
 ;---------------------------------------------------------------------------
 
-
 ShooterShot:
                     dec     (ix+SHOOTER.Wait)
                     jp      z, ShooterTurnBack
@@ -200,13 +197,11 @@ ShooterShot:
                     ld      c, ID_BULLET_VERT               ; Bullet from guard shooter
                     jp      AddEnemyShot2                   ; Shoot
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Setup the movement to go back
 ;
 ;---------------------------------------------------------------------------
-
 
 ShooterTurnBack:
                     inc     (ix+SHOOTER.Status)             ; Status to move back to his initial position
@@ -223,13 +218,11 @@ ShooterTurnBack:
 
                     jp      AnimateGuard2                   ; Update guard sprite
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Go back to the initial position
 ;
 ;---------------------------------------------------------------------------
-
 
 ShooterHide:
                     call    AnimateGuard                    ; Update walk animation

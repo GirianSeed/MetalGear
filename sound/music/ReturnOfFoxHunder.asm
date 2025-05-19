@@ -73,4 +73,3 @@ Mus_EndingC2:       db 0FEh,0FFh
                     db    0, 90h,0B0h,0E2h,   0, 20h
                     db 0FEh,0FEh
                     dw Mus_EndingC2
-

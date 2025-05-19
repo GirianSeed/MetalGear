@@ -18,14 +18,12 @@ InitGuardAlert:
                     ld      a, (Guard1ExitedLorry)          ; Is the guard outside the lorry?
                     jr      ChkDismissGuard
 
-
 InitGuardAlert2:
                     sub     131                             ; Second lorry in room 7 (there are 4 soldiers inside)
                     jr      nz, InitGuardAlert3
 
                     ld      a, (Guard2ExitedLorry)
                     jr      ChkDismissGuard
-
 
 InitGuardAlert3:
                     dec     a
@@ -81,7 +79,6 @@ SetRespawnTime3:
                     ld      (AlertRespawnTimer), hl
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Alert guard logic
@@ -99,8 +96,6 @@ GuardAlertLogic:
                     dw GuardAvoidObstacle
                     dw GuardWalkAwayShot
                     dw GuardWaitChkAlert
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -139,7 +134,6 @@ GuardChasePlayer:
                     ld      a, b                            ; Try the other axis direction
                     jp      GuardSetNewDirection
 
-
 GuardChasePlayer2:
                     ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
                     call    AnimateGuard2
@@ -168,7 +162,6 @@ AddEnemyShot2:
                     ld      d, (ix+ACTOR.X)
                     jp      AddEnemy                        ; Add a shot
 
-
 ;(!?) Unused code
 
         IF (JAPANESE)
@@ -176,7 +169,6 @@ AddEnemyShot2:
         ELSE
                 db 0CDh, 56h, 83h,0DDh, 77h, 11h,0DDh, 36h, 12h, 1Eh,0CDh, 23h,0A9h,0C3h,   8,0A9h
         ENDIF
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -198,8 +190,6 @@ SetGuardWalkAway:
                     ld      (ix+ALERT_GUARD.WalkAwayDir), a
                     ld      a, b
                     jp      GuardSetNewDirection
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -226,8 +216,6 @@ GuardWaitShot:
                     jp      z, AddEnemyShot
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set guard action time
@@ -249,8 +237,6 @@ SetGuardRndCounter2:
                     add     a, b
                     ld      (ix+ALERT_GUARD.Counter), a
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -291,7 +277,6 @@ GuardSetNewDirection:
                     call    SetWalkSpeedFast
                     jp      SetGuardRndCounter
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Walk away and then shot
@@ -315,8 +300,6 @@ GuardWalkAwayShot:
                     ld      b, 14h
                     jp      GuardShot                       ; Shoot to the player
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait, start following the player and trigger the alert
@@ -335,8 +318,6 @@ GuardWaitChkAlert:
 
                     jp      SetAlertMode                    ; Trigger the alert
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set guard walk speed
@@ -352,8 +333,6 @@ SetWalkSpeed2:
                     ld      (ix+ALERT_GUARD.SpeedY), e
                     ld      (ix+ALERT_GUARD.SpeedX), d
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -387,7 +366,6 @@ DirectionSpeeds2:   db 0
                     db 0
                     db 2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Animate a guard actor depending on his direction and base animation sprite
@@ -410,7 +388,6 @@ AnimateGuard3:
                     ld      (ix+ACTOR.SpriteId), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set the sprite frame that matchs the actor direction
@@ -425,7 +402,6 @@ GuardLookDirection2:
                     add     a, (ix+ACTOR.BASE_SPR_ID)
                     ld      (ix+ACTOR.SpriteId), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -511,7 +487,6 @@ ChkGuardWater2:
                     ld      (ix+ACTOR.BASE_SPR_ID), 49h     ; Guard up in water sprite ID
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Turn 180 degrees
@@ -529,8 +504,6 @@ MoveAwayExit:
                     call    AnimateGuard2
 
                     jp      SetWalkSpeedFast
-
-
 
 ;----------------------------------------------------------------------------
 ;

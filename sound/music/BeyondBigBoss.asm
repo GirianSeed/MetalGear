@@ -18,8 +18,6 @@ MusEscapeShare10:   db 0A0h,0A1h,0A0h, 70h, 71h, 70h, 40h, 41h, 40h, 70h, 71h,0F
 MusEscapeShare11:   db 0FCh, 23h,0E2h, 21h, 20h, 20h, 21h, 20h, 20h, 61h, 60h, 60h, 61h, 60h, 60h, 91h
                     db  90h, 90h, 91h,0FFh
 
-
-
 Mus_Escape:         db 0D5h,0FEh, 23h,0E4h,0C3h, 51h, 51h, 51h, 51h, 61h, 61h, 61h, 61h
 Mus_EscapeA2:       db 0FEh,0FFh
                     dw MusEscapeShare1
@@ -63,7 +61,6 @@ MusEscapeA8:        db 0FEh,0FFh
                     dw MusEscapeA8
                     db 0FEh,0FEh
                     dw Mus_EscapeA2
-
 
 Mus_EscapeB:        db 0D5h,0F9h,   3,0ECh, 51h,0E1h,0C3h,   1,   1,0FAh,   3,   1,   1,0FBh,   3, 11h
                     db  11h, 11h, 11h
@@ -109,7 +106,6 @@ MusEscapeB7:        db 0E2h, 70h, 90h,0A0h,0E1h,   0
                     db  90h
                     db 0FEh,0FEh
                     dw Mus_EscapeB2
-
 
 Mus_EscapeC:        db 0D5h,0FCh, 23h,0E5h,0C3h, 51h, 51h,0E9h,   1,0A3h,0EFh, 61h, 61h,0E9h,   1,0A3h
                     db 0EFh

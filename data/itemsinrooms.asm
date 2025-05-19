@@ -64,7 +64,6 @@ idxRoomItems:       dw ItemRation
                     dw ItemMissile2
                     dw ItemAmmox2_
 
-
 ;----------------------------------------------------------------------------
 ; Items
 ;

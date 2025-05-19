@@ -34,7 +34,6 @@ DogLogic:
                     dw DogListen
                     dw DogMove
 
-
 ;----------------------------------------------------------------------------
 ;
 ; The dog is sleeping for (Wait) time.
@@ -59,7 +58,6 @@ DogSleep:
                     ld      (ix+ACTOR2.SpriteId), 15h
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Listen for (LISTEN_TIME) time
@@ -80,7 +78,6 @@ DogListen:
                     ld      (ix+ACTOR2.SpriteId), 14h       ; Dog laying sprite ID
                     ret
 
-
 DogStartMoving:
                     ld      (ix+ACTOR.Status), 2            ; Set moving status
                     ld      (ix+ACTOR.Moving), 1            ; Enable movement
@@ -100,8 +97,6 @@ DogStartMoving2:
                     call    AnimateRunningDog2              ; Set running dog sprite
                     call    SetChaseSpeed                   ; Set the dog's speed depending on its direction
                     jr      DogMove4                        ; Set how much time it will run in the same direction
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -146,7 +141,6 @@ DogMove4:
                     ld      (ix+ACTOR.Wait), a              ; How much time the dog will run in the same direction
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Animate running dog
@@ -169,7 +163,6 @@ AnimateRunningDog3:
                     ld      (ix+ACTOR.SpriteId), a          ; Set dog moving sprite ID
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set the dog speed depending on its direction
@@ -186,7 +179,6 @@ _DummyAddr2:
                     ld      (ix+ACTOR.SpeedX), d
                     ret
 
-
 ;----------------------------------------------------------------------------
 ; Dog speeds
 ;----------------------------------------------------------------------------
@@ -198,7 +190,6 @@ DogSpeeds:          db -3
                     db -3
                     db 0
                     db 3
-
 
 ;----------------------------------------------------------------------------
 ;

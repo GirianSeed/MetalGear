@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player falls into a pitfall
@@ -39,7 +38,6 @@ ChkPitfall3:
                     ld      b, 0FFh                         ; All life
                     jp      DecrementLife_B                 ; Kill the player
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player triggers a pitfall
@@ -71,5 +69,3 @@ ChkTriggerPitfall3:
 
                     set     7, (ix+PITFALL.TOUCH_INFO)      ; Trigger the pitfall
                     ret
-
-

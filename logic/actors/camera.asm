@@ -18,7 +18,6 @@ InitCameraLaser2:
                     ld      a, ID_CAMERA_LASER
                     jr      InitCamera2
 
-
 ;---------------------------------------------------------------------------
 ;
 ; Init camera
@@ -64,8 +63,6 @@ InitCamera2:
 InitCamera3:
                     ld      b, (ix+ACTOR.IDX_SAME_ID)       ; Index of the predefined paths in this room
                     jp      GetPathPoints                   ; Get camera path
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -119,7 +116,6 @@ CamDirs7:           db 3
                     db 2
                     db 2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Camera logic
@@ -133,8 +129,6 @@ CameraLogic:
                     dw CamameraMove
                     dw CamAlertAnim
                     dw DummyCamLogic
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -174,7 +168,6 @@ CamameraMove:
                     ld      (ix+ACTOR.Wait), 20h            ; Number of iterations changing the color of the camera
                     jp      NextActorStatus                 ; Start camera color animation
 
-
 CamMoveWait:
                     ld      a, (ix+ACTOR.Moving)            ; Get moving flag
                     or      a                               ; Is the camera moving?
@@ -188,8 +181,6 @@ CamMoveWait:
                     ld      a, r
                     ld      (ix+ACTOR.Wait), a
                     jp      SetDirToPoint                   ; Set the direction towards the next point
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -213,8 +204,6 @@ CamAlertAnim2:
                     ld      a, b
                     jp      SetSprColor                     ; Change camera color
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Do nothing
@@ -223,8 +212,6 @@ CamAlertAnim2:
 
 DummyCamLogic:
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -235,8 +222,6 @@ CameraDrawOffsets:  db -0Ch,   0
                     db  2Bh,   0
                     db    0,-11h
                     db    0, 10h
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -252,8 +237,6 @@ LaserCameraLogic:
                     dw LaserCameraMove
                     dw LaserCameraShot
                     dw LaserCamDummy
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -300,8 +283,6 @@ LaserCamChkShot:
                     ld      a, 0FFh                         ; Firing!
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Decrement the laser timer
@@ -347,7 +328,7 @@ LaserCameraShot4:
                     jr      nz, CameraChkContinue
 
                     ld      a, (ix+ACTOR.IDX_SAME_ID)       ; Index of the camera in the room
-                    ld      hl,  LaserCameraShot9+1         ; List of X postions to check
+                    ld      hl, LaserCameraShot9+1          ; List of X postions to check
                     call    ADD_HL_2A
 
                     ld      a, (ix+ACTOR.X)
@@ -362,14 +343,12 @@ LaserCameraShot4:
 
                     jr      CameraChkContinue
 
-
 LaserCameraShot5:
                     ld      (ix+ACTOR.KO_POINTER_H), c      ; C value does not seems to be used. It just check if it is 0 or not
 
 StopLaserCamera:
                     ld      de, 0
                     jp      SetActorSpeedX
-
 
 ;
 ; Check the location of the player
@@ -394,14 +373,12 @@ LaserCameraShot8:
 LaserCameraShot9:
                     jp      SetActorSpeedX
 
-
 ; Room 115 X coordinates?
 
                     db 10h                                  ; Left cam left limit?
                     db 58h                                  ; Left cam right limit?
                     db 0C0h                                 ; Right cam left limit?
                     db 0F0h                                 ; Right cam right limit?
-
 
 LaserCamDummy:
                     ret

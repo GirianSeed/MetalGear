@@ -61,7 +61,6 @@ DrawLaserBeams3:
 
                     jr      DrawLaserBeams5
 
-
 DrawLaserBeams4:
                     call    DrawLineHoriz_
 

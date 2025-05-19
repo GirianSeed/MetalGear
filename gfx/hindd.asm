@@ -16,7 +16,6 @@ GfxHindD:           db    0,0BAh, 45h, 77h, 88h, 77h, 40h, 1Fh,0E0h,   0,0FFh,  
                     db  54h,0BBh, 81h,0D1h,0AFh, 80h,0C0h,0BFh,0EEh,0DDh,0EEh,0AAh,0DDh,0AAh,0EEh,0DDh
                     db 0EEh,0EEh,0DDh,0EEh,0AEh,0DDh,0AEh,0BBh,0FFh,0BBh, 81h,0D1h,0AFh, 80h,0C0h,0BFh
 
-
 ;----------------------------------------------------------------------------
 ;
 ; GFX: Hind D (2nd part)

@@ -4,7 +4,6 @@
 ;
 ;----------------------------------------------------------------------------
 
-
 InitMachGunKid:
                     ld      hl, MachGunStatus               ; Bit0 = Dead, 1 = Speech done
                     bit     0, (hl)                         ; Is he dead?
@@ -14,14 +13,11 @@ InitMachGunKid:
                     ld      (ix+ACTOR2.TIMER), 2
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid logic
 ;
 ;----------------------------------------------------------------------------
-
 
 MachGunKidLogic:
                     ld      a, (ix+ACTOR.Status)
@@ -33,13 +29,11 @@ MachGunKidLogic:
                     dw MG_Shooting
                     dw MG_MoveToHide
 
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid intro speech
 ;
 ;----------------------------------------------------------------------------
-
 
 MachGunKidIntro:
                     dec     (ix+ACTOR2.TIMER)
@@ -58,7 +52,6 @@ MachGunKidIntro2:
                     call    SetBossMusic                    ; Set boss music (Mercenary theme)
                     jp      MG_ChoseDir
 
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid thinks next movement
@@ -66,7 +59,6 @@ MachGunKidIntro2:
 ; If the player is in a different wall, moves towards him
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_ThinkMovement:
                     dec     (ix+ACTOR.Wait)
@@ -92,13 +84,11 @@ MG_ThinkMovement3:
                     ld      (ix+ACTOR2.Status), 2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player is in the same wall
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_ChkSameWall:
                     ld      a, (PlayerX)
@@ -123,14 +113,11 @@ MG_ThinkMovement5:
                     ld      (ix+ACTOR2.SpeedX), a
                     jr      MG_ThinkMovement3
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid walks in the chosen direction and then shoots
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_MoveToShot:
                     bit     2, (ix+ACTOR2.ANIM_CNT)
@@ -150,14 +137,11 @@ MG_MoveToShot2:
                     ld      (ix+ACTOR2.SpeedX), 0           ; Stops
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid shoots a burst of bullets
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_Shooting:
                     ld      a, (PlayerX)
@@ -198,8 +182,6 @@ MG_Shooting2:
                                                             ; Shot speed = (direction * 64) - #80
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid chooses where to move
@@ -207,7 +189,6 @@ MG_Shooting2:
 ; Moves toward the player
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_ChoseDir:
                     ld      a, (ix+ACTOR2.X)
@@ -245,7 +226,6 @@ MG_ChoseDir2:
                     ld      (ix+ACTOR2.MOVING), 1           ; Enable movement
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; MachineGun Kid moves to hide
@@ -253,7 +233,6 @@ MG_ChoseDir2:
 ; Set think status
 ;
 ;----------------------------------------------------------------------------
-
 
 MG_MoveToHide:
                     bit     2, (ix+ACTOR2.ANIM_CNT)
@@ -274,15 +253,11 @@ MG_MoveToHide2:
                     ld      (ix+ACTOR2.SpriteId), 31h       ; Machinegun Kid fire sprite ID
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Init MachineGun Kid shot
 ;
 ;----------------------------------------------------------------------------
-
 
 InitMGunKidShot:
                     ld      (ix+M_GUN_KID_SHOT.Moving), 1   ; Enable movement
@@ -295,7 +270,6 @@ InitMGunKidShot:
 ; MachineGun Kid shot logic
 ;
 ;---------------------------------------------------------------------------
-
 
 MGunKidShotLogic:
                     bit     0, (ix+M_GUN_KID_SHOT.Configured)
@@ -322,4 +296,3 @@ MGunKidShotLogic:
 
                     ld      a, 5                            ; SFX Shot
                     jp      SetSoundEntryChk
-

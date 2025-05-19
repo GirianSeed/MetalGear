@@ -16,8 +16,6 @@ InitTankShellBoss:
                     ld      a, 13h                          ; SFX shell shot
                     jp      SetSoundEntryChk
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Init tank shot
@@ -28,8 +26,6 @@ InitTankShot:
                     ld      (ix+TANK_SHOT.SpriteId), 72h    ; Bullet sprite ID
                     ld      (ix+TANK_SHOT.COLLISION_CFG), 1 ; Enable collisions with the player
                     jp      ResetActorSpeed
-
-
 
 ;----------------------------------------------------------------------------
 ;

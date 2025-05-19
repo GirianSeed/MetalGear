@@ -9,13 +9,9 @@
                     org #6000
 
         include "data/rooms.asm"
-
         include "data/metatiles.asm"
-
         include "data/doors.asm"
-
         include "gfx/powerswitch.asm"
-
         include "data/tileblocks.asm"
 
         IF (JAPANESE)
@@ -25,11 +21,8 @@
         ENDIF
 
         include "logic/updatesprites.asm"
-
         include "logic/saveload.asm"
-
         include "logic/ending.asm"
-
         include "logic/drawlaserbeams.asm"
 
                     ; Fill empty space

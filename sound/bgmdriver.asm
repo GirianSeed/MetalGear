@@ -1,5 +1,3 @@
-
-
 ;----------------------------------------------------------------------------
 ;
 ;
@@ -7,7 +5,6 @@
 ;
 ;
 ;----------------------------------------------------------------------------
-
 
 UpdateSound:
                     ld      a, (SoundDataSaved)
@@ -67,8 +64,6 @@ UpdateSound3:
                     or      a                               ; Is there a new music waiting to be played?
                     call    nz, MusicFadeOut                ; Fade out current music and set the new one
 
-
-
 ProcessChannels:
                     ld      c, 1
                     ld      ix, SoundWorkArea
@@ -99,15 +94,11 @@ UpdateSound6:
                     djnz    UpdateSound5
                     ret
 
-
-
 ;(!?) Not used
 
                     ld      h, 0
                     call    UpdateVolume
                     jr      UpdateSound6
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -223,8 +214,6 @@ skipToneLenght:
                     ld      b, a                            ; Volume 0
                     jr      SfxLogic4
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; SFX logic
@@ -338,8 +327,6 @@ SetSfxFreq:
                     ld      (ix+SOUND.INSTRUMENT_CNT), a
                     jp      UpdateVolume
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set note lenght
@@ -348,10 +335,8 @@ SetSfxFreq:
 
 SetNoteLenght:
                     ld      a, (ix+SOUND.NOTE_LENGHT)
-                    ld      (ix+SOUND.NOTE_COUNTER),    a
+                    ld      (ix+SOUND.NOTE_COUNTER), a
                     jp      UpdateVolume
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -394,7 +379,6 @@ NoteLogic:
 
                     jp      UpdateFreqVol
 
-
 Decay:
                     dec     (ix+SOUND.DECAY_CNT)            ; Remaining steps (Note lengh + release steps)
 
@@ -406,7 +390,6 @@ Decay2:
                     ld      (ix+SOUND.DECAY_VOL), a
                     ld      (ix+SOUND.VOLUME), a            ; Envelope wave shape
                     jp      UpdateVolume
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -427,7 +410,6 @@ ChkVibratoAttack:
 
                     xor     a
                     jp      VibratoLogic4
-
 
 VibratoLogic:
                     ld      a, (ix+SOUND.VIBRATO_CFG)       ; #xy: X = Speed/iterations delay, Y = Freq. offset
@@ -464,7 +446,6 @@ VibratoLogic:
                     inc     d                               ; Carry, increment high byte
                     jr      VibratoLogic3
 
-
 VibratoLogic2:
                     sub     b
                     ld      e, a
@@ -482,8 +463,6 @@ VibratoLogic3:
 VibratoLogic4:
                     ld      (ix+SOUND.VIBRATO_WAIT), a
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -560,7 +539,6 @@ ProcessCommand_Ex:
                     ld      (ix+SOUND.INSTRUMENT), a
                     jr      GetNote
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Note OFF command
@@ -587,8 +565,6 @@ NoteOffCmd:
 
                     jr      ProcessCommand
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Vibrato command
@@ -602,7 +578,6 @@ VibratoCmd:
                     ld      (ix+SOUND.VIBRATO_CFG), a       ; #xy: X = Speed/iterations delay, Y = Freq. offset
                     jp      NextCmd
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Detune command
@@ -615,7 +590,6 @@ DetuneCmd:
 NextCmd:
                     inc     hl
                     jp      ProcessCommand
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -675,7 +649,7 @@ SetNote2:
                     ld      (ix+SOUND.VIBRATO_CLK), a
 
                     ld      e, (ix+SOUND.NOTE_LENGHT)
-                    ld      (ix+SOUND.NOTE_COUNTER),    e
+                    ld      (ix+SOUND.NOTE_COUNTER), e
 
                     ld      a, (MuteSoundFlag)              ; 1 = Mute
                     or      a
@@ -717,7 +691,6 @@ SetNoteFreq:
                     call    UpdateChFreq
                     jp      UpdateVolume
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Set instrument
@@ -740,7 +713,7 @@ SetInstrument2:
                     ld      h, a                            ; HL = Pointer to instrument family
 
                     ld      a, (ix+SOUND.NOTE_LENGHT)
-                    ld      (ix+SOUND.NOTE_COUNTER),    a
+                    ld      (ix+SOUND.NOTE_COUNTER), a
 
                     ld      a, (MuteSoundFlag)              ; 1 = Mute
                     or      a
@@ -765,7 +738,6 @@ SetInstrument3:
                     ld      a, (hl)
                     jp      ChkCmd_2x
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Instrument tick
@@ -785,8 +757,6 @@ InstrumentTick:
 
                     jp      ChkCmd_2x
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Set instrument pointer
@@ -799,8 +769,6 @@ SetInstrumentPointer:
                     ld      (ix+SOUND.INSTRUMENT_H), h
                     jp      SetRadioFreqTone
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Mute channel
@@ -812,7 +780,6 @@ MuteChannel:
                     ld      (ix+SOUND.CONFIG), a            ; 3=Use Envelope, 2=Set Env. Freq. 1=Channel ON/OFF, 0=Noise ON/OFF
                     ld      (ix+SOUND.VOLUME), a            ; Envelope wave shape
                     jp      UpdateVolume
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -827,11 +794,10 @@ MuteNote:
                     ld      (ix+SOUND.VOLUME), a            ; Envelope wave shape
 
                     ld      a, (ix+SOUND.NOTE_LENGHT)
-                    ld      (ix+SOUND.NOTE_COUNTER),    a
+                    ld      (ix+SOUND.NOTE_COUNTER), a
                     call    UpdateChFreq
 
                     jp      UpdateVolume
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -849,9 +815,8 @@ CmdEndRetLogic:
                     ld      (ix+SOUND.POINTER_L), a         ; Restore return address
 
                     ld      (ix+SOUND.RETURN_H), 0          ; Erase return address to avoid confusing END and RET commands
-                    ld      (ix+SOUND.NOTE_COUNTER),    1
+                    ld      (ix+SOUND.NOTE_COUNTER), 1
                     jp      ProcessChannelData
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -887,7 +852,6 @@ CmdEndLogic:
 
                     jp      UpdateChVol
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update frequency and volume
@@ -901,7 +865,6 @@ UpdateFreqVol:
 
                     call    UpdateChFreq
                     jp      UpdateVolume
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -924,7 +887,6 @@ UpdateChFreq:
 
                     jr      SetChnFreq                      ; Update music channel 3 frequency
 
-
 UpdateSfxFreq:
                     ld      a, e
                     or      a                               ; Sfx playing?
@@ -937,7 +899,6 @@ UpdateSfxFreq:
                     inc     c
                     inc     c                               ; Restore "channel 4/sfx" value
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -987,15 +948,12 @@ WrtPsgChnFreq:
                     ld      (ix+SOUND.CONFIG), 2            ; 3=Use Envelope, 2=Set Env. Freq. 1=Channel ON/OFF, 0=Noise ON/OFF
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Notes base frequency
 ;
 ;----------------------------------------------------------------------------
 NoteFrequency:      db  6Bh, 65h, 5Fh, 5Ah, 55h, 50h, 4Ch, 47h, 43h, 40h, 3Ch, 39h
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1016,7 +974,6 @@ MusicFadeOut:
                     ret     c                               ; Slower fade than normal fade
 
                     jr      MusicFadeOut3
-
 
 MusicFadeOut2:
                     ld      a, (hl)
@@ -1047,7 +1004,6 @@ MusicFadeOut3:
                     ld      a, e
                     jp      SetSound                        ; Play music
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update volume
@@ -1069,7 +1025,6 @@ UpdateVolume:
                     ret     nz                              ; No
 
                     jr      UpdateChVol
-
 
 UpdateSfxVol:
                     ld      a, e
@@ -1130,8 +1085,6 @@ SetChnVolume:
                     ld      e, h                            ; H = Volume
                     jp      WRTPSG
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Copy channels data
@@ -1146,7 +1099,6 @@ CopySoundData:
                     xor     a
                     ld      (RestoreSoundData), a
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1190,7 +1142,6 @@ CmdLoopLogic2:
 
                     jr      DoNextCommand2
 
-
 CmdLoopEnd:
                     inc     hl
                     inc     hl                              ; Skip pointer to address
@@ -1204,7 +1155,6 @@ DoNextCommand:
 DoNextCommand2:
                     inc     (ix+SOUND.NOTE_COUNTER)
                     jp      ProcessChannelData
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1220,14 +1170,11 @@ ChangeMode:
                     dec     (ix+SOUND.NOTE_MODE)            ; 1 = Note mode, 0 = Sfx mode
                     jr      DoNextCommand_
 
-
 ChangeMode2:
                     inc     (ix+SOUND.NOTE_MODE)            ; 1 = Note mode, 0 = Sfx mode
 
 DoNextCommand_:
                     jr      DoNextCommand
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1250,7 +1197,6 @@ CmdCallLogic:
                     ex      de, hl
                     jp      ProcessChanneldData4
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update pointer to next command
@@ -1262,7 +1208,6 @@ PointerNextCmd:
                     ld      (ix+SOUND.POINTER_L), l
                     ld      (ix+SOUND.POINTER_H), h
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -1311,13 +1256,11 @@ SetPsgMixer:
                     ld      a, 7
                     jp      WRTPSG
 
-
 DisableMixerBit:
                     cpl
                     and     e
                     ld      e, a
                     ret
-
 
 EnableMixerBit:
                     or      e
@@ -1325,4 +1268,3 @@ EnableMixerBit:
 DummyAddr4:
                     ld      e, a
                     ret
-

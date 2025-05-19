@@ -12,14 +12,12 @@ LasersRoom24:       db 6
                     db    1, 50h, 80h,0A2h,   0, 20h,   1
                     db    1, 98h,0AFh, 98h, 98h, 20h,   0
 
-
 LasersRoom25:       db 5
                     db    1, 30h,   8,0A0h,   0, 38h,   1
                     db    1, 38h, 4Fh, 98h, 9Eh, 28h,   0
                     db    1, 78h, 4Fh, 98h, 9Ch, 20h,   0
                     db    1, 50h,0E0h,0A2h,   0, 18h,   1
                     db    1,0B0h, 88h,0A4h,   0, 18h,   1
-
 
 LasersRoom72:       db 0Ah
                     db    1, 10h,0AFh, 98h, 9Eh, 30h,   0

@@ -10,7 +10,6 @@ CompactWeapons:
                     ld      b, 6
                     jr      FindEmptySlot
 
-
 CompactEquipment:
                     ld      de, Equipment                   ; +0 Item ID, +1 tens/units, +2 hundreds, +3 unused
                     ld      b, 24
@@ -25,7 +24,6 @@ FindEmptySlot:
                     djnz    FindEmptySlot
                     ret
 
-
 FindUsedSlot:
                     push    de
                     pop     hl
@@ -39,7 +37,6 @@ FindUsedSlot:
 
                     djnz    FindUsedSlot                    ; (!?) The loop should skip PUSH DE / POP HL
                     ret
-
 
 MoveItemSlot:
                     push    bc
@@ -56,4 +53,3 @@ MoveItemSlot2:
                     pop     bc
                     djnz    FindEmptySlot
                     ret
-

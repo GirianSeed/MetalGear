@@ -7,7 +7,6 @@ MetalGearShare1:    db  50h, 60h, 70h, 80h, 90h,0A0h,0B1h,0FFh
 MetalGearShare2:    db  80h, 90h,0A0h,0B0h,0E2h,   0, 10h, 21h,0FFh
 MetalGearShare3:    db  10h, 20h, 30h, 40h, 50h, 60h, 71h,0FFh
 
-
 Mus_MetalGear:      db 0D6h,0C2h
 Mus_MetalGearA2:    db 0D6h,0FBh, 13h,0ECh, 52h,0E3h, 47h,0D1h,0FAh,   0, 40h ; ...
                     db 0FEh,0FFh
@@ -54,7 +53,6 @@ MetalGearA3:        db 0D6h,0FBh, 13h,0ECh, 52h,0E2h,   7,0D1h,0F9h,   0,   0 ; 
                     db 0FEh,0FEh
                     dw Mus_MetalGearA2
 
-
 Mus_MetalGearB:     db 0D6h,0C2h
 Mus_MetalGearB2:    db 0D6h,0FDh, 33h,0E4h, 41h,0FAh
                     db  22h, 41h,0FDh, 33h, 41h,0FAh, 22h, 41h,0FDh, 33h, 41h,0FAh, 22h, 41h,0FDh, 33h
@@ -70,7 +68,6 @@ MetalGearB3:        db 0EFh,0E8h,0FDh, 33h,0E4h,   1,0FAh, 22h,   1,0FDh, 33h,  
                     dw MetalGearB3
                     db 0FEh,0FEh
                     dw Mus_MetalGearB2
-
 
 Mus_MetalGearC:     db 0D6h,0C2h
 Mus_MetalGearC2:    db 0EFh,0D6h,0E9h,   4, 41h, 41h, 41h, 41h, 41h, 41h, 41h, 40h, 40h, 71h, 71h, 71h

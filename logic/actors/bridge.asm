@@ -26,8 +26,6 @@ BridgeLogic3:
                     add     hl, de
                     djnz    BridgeLogic2
 
-
-
                     ld      a, c                            ; Number of bridge actors
                     or      a                               ; Any bridge actors?
                     jr      z, NextBridgeStatus
@@ -53,7 +51,6 @@ BridgeLogic4:
                     ld      (hl), d                         ; Save the pointer to the bridge part
                     inc     l
                     djnz    BridgeLogic4
-
 
 ; Set the speed of each bridge actor
 
@@ -107,11 +104,6 @@ BridgeLogic6:
 NextBridgeStatus:
                     jp      NextActorStatus
 
-
-
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Move bridges and change the direction of the movement
@@ -160,7 +152,6 @@ BridgeCtrlLogic2:
                     jr      nz, BridgeCtrlLogic2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Speed of each bridge actor
@@ -175,10 +166,6 @@ BridgesSpeeds:      dw 40h
                     dw 80h
                     dw 40h
 
-
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Initialize bridge
@@ -191,5 +178,3 @@ InitBridge:
                     ld      (ix+BRIDGE.MOVEMENT_CNT), 10h
                     ld      (ix+BRIDGE.COLLISION_CFG), 1    ; Enable collosion with the player
                     ret
-
-

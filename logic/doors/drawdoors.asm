@@ -48,7 +48,6 @@ DrawDoors3:
 DrawDoorDummy:
                     ret
 
-
 DrawDoorType:
                     dec     a
                     call    JumpIndex
@@ -93,7 +92,6 @@ PutDoorCollTiles:
                     ld      hl, DoorClosedTiles             ; Transparent but collision tiles
                     jp      DrawTileBlkTimp2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw west door. Draw a 8x32 gfx in perspective
@@ -133,7 +131,6 @@ DrawDoorWest2:
                     sub     8
                     ld      d, a                            ; Door X - 8
                     jr      SetDoorEWColl
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -182,7 +179,6 @@ SetDoorEWColl:
                     ld      e, a                            ; Dooy Y + 32 (collision zone)
                     jp      PutDoorCollTiles                ; Set transparent collision tiles
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw north door
@@ -202,8 +198,6 @@ DrawDoorNorth:
                     sub     b
                     ld      d, a                            ; DX - 4
                     jr      PutDoorCollTiles
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -225,9 +219,6 @@ DrawDoorElevator:
                     ld      d, a                            ; DX - 4
                     jp      PutDoorCollTiles
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Draw breakable walls
@@ -238,41 +229,33 @@ DrawBasemWall60:
                     ld      de, TilesBasemWall60
                     jr      DrawWall
 
-
 DrawBasemWall61:
                     ld      de, TilesBasemWall61
                     jr      DrawWall
-
 
 DrawBasemWall59_96:
                     ld      de, TilesBasemWall59
                     jr      DrawWall
 
-
 DrawBasemWall58:
                     ld      de, TilesBasemWall58
                     jr      DrawWall
-
 
 DrawBasemWall63:
                     ld      de, TilesBasemWall63
                     jr      DrawWall
 
-
 DrawWallPrison2:
                     ld      de, TilesWallPrison2
                     jr      DrawWall
-
 
 DrawWallPrison2_:
                     ld      de, TilesWallPrison2
                     jr      DrawWall
 
-
 DrawWallPrison1:
                     ld      de, TilesWallPrison1
                     jr      DrawWall
-
 
 ; Prison: Elen and GreyFox
 
@@ -280,26 +263,20 @@ DrawWallPrison:
                     ld      de, TilesWallPrison
                     jr      DrawWall
 
-
 DrawWallBuil3_108:
                     ld      de, TilesWallBld3_108
                     jr      DrawWall
-
 
 DrawBasemWall93:
                     ld      de, TilesBasemWall93
                     jr      DrawWall
 
-
 DrawBasemWall100:
                     ld      de, TilesBasemWall100
                     jr      DrawWall
 
-
 DrawWallBasem112:
                     ld      de, TilesBasemWall112
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -317,5 +294,3 @@ DrawWall:
                     pop     de
 
                     jp      DrawTileBlkTimp                 ; Draw a block of tiles
-
-

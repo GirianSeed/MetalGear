@@ -24,7 +24,6 @@ LoadSaveLogic:
                     call    ResetFilename
                     jr      NextSaveLoadStat_
 
-
 ;----------------------------------------------------------------------------
 ; Enter filename for saving (status 1)
 ;----------------------------------------------------------------------------
@@ -50,7 +49,6 @@ InitSave:
 
 NextSaveLoadStat_:
                     jr      NextSaveLoadStat
-
 
 ;----------------------------------------------------------------------------
 ; Save on tape the file name (status 2)
@@ -91,7 +89,6 @@ SaveFilename3:
 
                     jr      NextSaveLoadStat
 
-
 SaveError:
                     call    TAPOOF                          ; Stops writing to the tape
 
@@ -103,7 +100,6 @@ SaveError2:
                     ld      b, 6
                     ld      hl, txtSaveError
                     jp      PrintError
-
 
 ;----------------------------------------------------------------------------
 ; Save on tape the game data (status 3)
@@ -148,8 +144,6 @@ NextSaveLoadStat:
                     inc     (hl)
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ; Waits user input to verify saved data (status 4)
 ;----------------------------------------------------------------------------
@@ -177,7 +171,6 @@ SaveChkVerify:
                     ld      a, 5
                     ld      (SaveLoadStat), a
                     ret
-
 
 SaveVerify:
                     ld      hl, txtYesNo
@@ -242,8 +235,6 @@ SaveVerify4:
 
                     jp      NextSaveLoadStat
 
-
-
 ;----------------------------------------------------------------------------
 ; This part has no sense. After selecting not to verify it ask to try again.
 ; Trying to retry always shows an error (status 5)
@@ -264,14 +255,13 @@ SaveNotVerify:
 
                     jp      SaveError2
 
-
 SaveNotVerify2:
                     inc     hl
                     bit     3, (hl)                         ; N key pressed?
                     ret     z                               ; No
 
 ExitSaveLoad:
-                    ld      de,  SoundWorkArea+1
+                    ld      de, SoundWorkArea+1
                     ld      hl, SoundWorkArea
                     ld      bc, 0DFh
                     ld      (hl), 0
@@ -290,8 +280,6 @@ ExitSaveLoad:
 
                     inc     (hl)                            ; Set "RestoreSavedGame"
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ; Waits user input to retry to save (status 6)
@@ -315,10 +303,8 @@ SaveRetry:
                     ld      (SaveLoadStat), a               ; Enter filename mode
                     jp      InitSave
 
-
 VerifyError:
                     jr      TapeError
-
 
 SaveRetry2:
                     inc     hl
@@ -328,8 +314,6 @@ SaveRetry2:
                     ld      a, 1
                     ld      (DoNotAddEnemies), a
                     jr      ExitSaveLoad
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -351,8 +335,6 @@ LoadMode:
                     call    ResetFilename
                     jp      NextSaveLoadStat
 
-
-
 ;----------------------------------------------------------------------------
 ; Input filename for loading (status 1)
 ;----------------------------------------------------------------------------
@@ -367,7 +349,6 @@ EnterLoadName:
                     ld      (DoNotAddEnemies), a
                     jr      ExitSaveLoad
 
-
 loc_11FAFB:
                     push    af
                     ld      hl, txtLoadError
@@ -378,8 +359,6 @@ loc_11FAFB:
                     ret     nz
 
                     jp      NextSaveLoadStat
-
-
 
 ;----------------------------------------------------------------------------
 ; Load data from tape (status 2)
@@ -429,7 +408,6 @@ LoadData2:
                     ld      (DoNotAddEnemies), a
                     jp      ExitSaveLoad
 
-
 TapeError:
                     call    TAPIOF                          ; Stops reading from the tape
 
@@ -458,8 +436,6 @@ PrintError:
 
                     jp      ResetFilename
 
-
-
 ;----------------------------------------------------------------------------
 ; Waits user input to retry to load (status 3)
 ;----------------------------------------------------------------------------
@@ -481,15 +457,12 @@ ChkLoadRetry:
                     ld      hl, txtVerify                   ; Erase VERIFY? YES NO
                     jp      EraseTextXY_
 
-
 ChkLoadRetry2:
                     inc     hl
                     bit     3, (hl)                         ; N key pressed?
                     ret     z
 
                     jp      ExitSaveLoad
-
-
 
 ;----------------------------------------------------------------------------
 ; Search the file that matches the filename
@@ -553,8 +526,6 @@ SearchFile4:
 
                     ret
 
-
-
 ;----------------------------------------------------------------------------
 ; Print SKIP and the filename found
 ;----------------------------------------------------------------------------
@@ -570,8 +541,6 @@ PrintFileFound:
                     ld      de, 5860h
                     ld      hl, FilenameFound
                     jr      PrintFilename2
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -633,17 +602,14 @@ GetKeyTyped2:
                     ld      (hl), a                         ; Increment filename lenght
                     jr      PrintFilename
 
-
 GetKeyTyped3:
                     scf
                     ret
-
 
 PrintFilename_:
                     call    PrintFilename
                     ld      a, 0Dh                          ; Return key code
                     ret
-
 
 ;----------------------------------------------------------------------------
 ; Erase a character from the filename
@@ -669,7 +635,6 @@ EraseCharacter:
                     ld      (hl), a                         ; Erase the previous character
                     jr      PrintFilename
 
-
 EraseCharacter2:
                     ex      de, hl
                     inc     (hl)                            ; Increment filename character offset
@@ -694,7 +659,6 @@ PrintFilename3:
                     xor     a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Initialize SAVE/LOAD mode
@@ -718,7 +682,6 @@ InitSaveLoad:
                     ld      b, 6
                     jr      ClearBuffer
 
-
 ResetFilename:
                     ld      hl, FilenameSize
                     ld      b, 0Eh
@@ -728,7 +691,6 @@ ClearBuffer:
                     inc     hl
                     djnz    ClearBuffer
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -751,9 +713,6 @@ CalcDataChecksum2:
                     jr      nz, CalcDataChecksum2
                     ld      hl, TailDataByte
                     ret
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -818,4 +777,3 @@ txtFound:           dw 6028h
 txtLoadError:       dw 6028h
                     db  "LOAD",   0, "ERROR",   0,   0,   0
                     db 0FFh
-

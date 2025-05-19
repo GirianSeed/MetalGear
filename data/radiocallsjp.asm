@@ -388,7 +388,6 @@ RadioRoom_205to207:
 
 NoRadio:        db 0
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Index of Radio characters available in rooms

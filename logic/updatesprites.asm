@@ -74,7 +74,6 @@ UpdateSpritesShuf3:
                     jr      nz, UpdateSpritesShuf3
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Update sprites colors and attributes in VRAM from RAM buffers
@@ -86,7 +85,6 @@ UpdateSprites:
                     ld      de, (SprColAddress)
                     ld      bc, 280h                        ; #200 color + #80 attributes
                     jr      RAMtoVRAM_
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -112,4 +110,3 @@ SetBinoTargetSpr:
 
 RAMtoVRAM_:
                     jp      RAMtoVRAM__
-

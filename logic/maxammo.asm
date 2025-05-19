@@ -1,4 +1,3 @@
-
 ;---------------------------------------------------------------------------
 ;
 ; Set limit values for ammo and rations
@@ -8,7 +7,7 @@
 ;---------------------------------------------------------------------------
 
 SetMaxAmmoVals:
-                    ld      de,  MaxAmmoGun+1
+                    ld      de, MaxAmmoGun+1
                     ld      hl, MaxAmmoGun
                     ld      bc, 4Fh
                     ld      (hl), 0FFh
@@ -102,7 +101,6 @@ ChkMaxAmmo3:
                     djnz    ChkMaxAmmo2
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Maximum ammo values per rank
@@ -154,7 +152,6 @@ MaxAmmoVals:        dw 999h
                     dw 999h
                     dw 999h
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the current amount of a item or weapon ammo is within the limit. Clamp the value if the amount exceeds the limit
@@ -164,7 +161,6 @@ MaxAmmoVals:        dw 999h
 ;  BC = Max. amount
 ;
 ;----------------------------------------------------------------------------
-
 
 ChkMaxAmount:
                     inc     hl

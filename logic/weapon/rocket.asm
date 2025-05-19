@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player launches a rocket
@@ -6,7 +5,7 @@
 ;----------------------------------------------------------------------------
 
 ChkFireRocket:
-                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M,  4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
+                    ld      a, (ControlsTrigger)            ; 5 = Fire2 / M, 4 = Fire / Space, 3 = Right, 2 = Left, 1 = Down, 0 = Up
                     and     10h                             ; Fire button pressed?
                     ret     z
 
@@ -71,7 +70,6 @@ ChkFireRocket:
 
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
 ;----------------------------------------------------------------------------
 ; Speeds of the rocket depending on the direction
 ;----------------------------------------------------------------------------
@@ -79,7 +77,6 @@ RocketSpeeds:       db   -5,   0
                     db    5,   0
                     db    0,  -5
                     db    0,   5
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -94,8 +91,6 @@ PlayerRocketLogic:
                     dw RocketMove
                     dw RocketExplode
                     dw MedExplosionLogic
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -119,8 +114,6 @@ RocketMove2:
                     call    ChkShotBoundaries               ; Check if the rocket is in the room boundaries
                     jp      SetShotSpr                      ; Add to shot structure the attributes of the sprites used
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Rocket explode logic
@@ -140,5 +133,3 @@ RocketExplode:
 NextRocketStat:
                     inc     (ix+PLAYER_SHOT.status)         ; Next rocket status
                     ret
-
-

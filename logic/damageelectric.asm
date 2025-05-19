@@ -1,4 +1,3 @@
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player is on an electrified floor
@@ -60,4 +59,3 @@ ChkElectricFloor3:
                     ld      (DamageDelayTimer), a
 
                     jr      DecrementLife_2                 ; Decrement two points of life
-

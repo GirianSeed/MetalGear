@@ -18,17 +18,10 @@ idxWeaponName:      dw txtHandGun
 ;
 ;----------------------------------------------------------------------------
 txtHandGun:         db  "HAND",   0, "GUN", #ff
-
 txtSMG:             db  "SMG", #ff
-
 txtGrenade:         db  "GRENADE", #ff
-
 txtRocket:          db  "ROCKET", #ff
-
 txtP_Bomb:          db  "P@BOMB", #ff
-
 txtLandMine:        db  "L@MAIN", #ff
-
 txtMissile:         db  "MISSILE", #ff
-
 txtSilencer:        db  "SILENCER", #ff

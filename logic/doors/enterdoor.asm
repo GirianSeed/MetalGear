@@ -107,7 +107,6 @@ ChkEnterDoor3:
                     ld      (GameMode), a                   ; Next room mode
                     ret
 
-
 ChkNextDoor:
                     pop     hl
                     pop     bc

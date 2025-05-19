@@ -48,7 +48,6 @@ LorryShooterLogic:
                     dw LorryShooterWaitOut                  ; Waits outside the lorry
                     dw LorryShooterWalkIn                   ; Walks towards the lorry
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and decide to exit the lorry or shot from inside
@@ -71,8 +70,6 @@ LorryShooterThink:
                     ld      (ix+ACTOR.Wait), 0Ah
                     jr      LorShooterSetCol                ; Enable collisions and set sprites colors
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Shoot and wait
@@ -89,8 +86,6 @@ LorryShooterShot:
                     ld      c, ID_BULLET
                     jp      AddEnemyShot2
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and disable collisions, hide sprite and set think status
@@ -105,8 +100,6 @@ LorryShooterWait:
                     ld      (ix+ACTOR.COLLISION_CFG), 0     ; Disable collisions
                     call    HideSprColor                    ; Hide actor
                     jr      LorrySetRndWait
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -129,8 +122,6 @@ LorryShooterWalkOut:
                     call    GuardLookDirection2             ; Update guard sprite
                     jr      LorryShooterShot                ; Shoots
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Wait and start walking back into the lorry
@@ -146,8 +137,6 @@ LorryShooterWaitOut:
                     ld      (ix+ACTOR.Direction), DIR_UP    ; Up
                     ld      (ix+ACTOR.Wait), 0Ah
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -168,8 +157,6 @@ LorryShooterWalkIn:
                     ld      (ix+ACTOR.COLLISION_CFG), a     ; Disable collisions
                     call    HideSprColor                    ; Hice actor
                     jp      LorrySetRndWait
-
-
 
 ;----------------------------------------------------------------------------
 ;

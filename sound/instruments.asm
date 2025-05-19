@@ -9,7 +9,6 @@ Instruments:        dw Drumkit
                     dw SlapBass
                     dw Bass
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Drum kit
@@ -27,7 +26,6 @@ Drumkit:            dw HitHat
                     dw Tom3
                     dw Tom4
                     dw BassDrum
-
 
 HitHat:             db  21h,   1, 10h,0B0h,0FFh
 
@@ -56,7 +54,6 @@ Tom4:               db  22h,   1,0E4h,   0,0D4h, 15h,0C4h, 30h,0C4h, 45h,0B4h, 6
                     db  84h,0B0h, 74h,0D0h, 74h,0F0h,0FFh
 
 BassDrum:           db  2Ah,   1,   3,   0, 93h,0D0h, 2Eh,   1, 96h,   0, 97h,   0, 98h,   0,0FFh
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -98,7 +95,6 @@ DummyInstrument2:   dw DummyInstrumentDat2
 
 DummyInstrumentDat2:db 0FFh
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Slap bass
@@ -133,7 +129,6 @@ DummySlapBass4:     db 0FFh
 
 SlapBass4:          db  22h,   1,0C7h, 14h,0C3h, 8Ah, 22h,   4,0C7h, 14h,0B7h, 16h,0A7h, 18h, 97h, 1Ah
                     db  87h, 1Ch, 87h, 1Eh, 77h, 20h, 77h, 22h, 67h, 24h, 67h, 26h,0FFh
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -184,4 +179,3 @@ BassDummy3:         db 0FFh
 
 Bass9:              db  22h,   1,0C3h, 8Ah,0C1h,0C5h, 22h,   4,0C3h, 8Ah,0B3h, 8Bh,0A3h, 8Ch, 93h, 8Dh
                     db  83h, 8Eh, 83h, 8Fh, 73h, 90h, 73h, 91h, 63h, 92h, 53h, 93h,0FFh
-

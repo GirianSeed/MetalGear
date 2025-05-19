@@ -37,7 +37,6 @@ ResetActorSpeed:
 SetActorSpeed_:                                             ; DE = Speed X, HL = Speed Y
                     jp      SetActorSpeed
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Initialize running dog
@@ -98,9 +97,6 @@ DogBasementLogic2:
                     dw DogBaseRun
                     dw DogBaseChase
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; BAsement dog chases the player
@@ -132,8 +128,6 @@ SetDogHorSpeed:
                     ld      de, 300h                        ; Speed X
                     jr      SetBaseDogSprSpeed
 
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Dog speeds per direction
@@ -162,9 +156,6 @@ SetDogSprColNxStat:
                     ld      a, 0Dh
                     ld      c, 0Fh
                     jp      SetSprColor
-
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -307,7 +298,6 @@ ChkDogChgDir7:
                     ld      (ix+DOG.SpriteId), a
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Select next direction and checks collisions
@@ -319,7 +309,6 @@ ChangeDogDir:
                     inc     a
                     and     3
                     jr      ChkDogChgDir3
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -334,8 +323,6 @@ DogSpeedDat:        db -8
                     db -8
                     db 0
                     db 8
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -374,7 +361,6 @@ ChkDogNearPlayer2:
                     ld      (ix+DOG.Timer), 18h
                     jp      NextActorStatus                 ; The dog chases the player
 
-
 ChkDogNearPlayer3:
                     ld      a, e                            ; Player Y
                     sub     l                               ; Dog Y
@@ -397,4 +383,3 @@ ChkDogNearPlayer4:
 
                     ld      (ix+DOG.Timer), 18h
                     jp      NextActorStatus                 ; The dog chases the player
-

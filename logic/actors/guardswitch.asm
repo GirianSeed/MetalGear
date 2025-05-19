@@ -38,7 +38,6 @@ GuardSwitchLogic:
                     dw GuardSwShot
                     dw GuardSwWaitSwitch
 
-
 GuardSwPatrol:
                     ld      a, (AlertMode)
                     or      a                               ; Alert on?
@@ -111,7 +110,6 @@ GuardSwTurnLeft:
                     ld      b, DIR_LEFT
                     jr      GuardSwTurn
 
-
 GuardSwChkPlayer:
                     ld      a, (ix+ACTOR.X)
                     cp      0D0h
@@ -123,7 +121,6 @@ GuardSwChkPlayer:
                                                             ; The guard can see the player unless he is in the cardboard box
 
                     jr      GuardSwChkSeeY
-
 
 GuardSwChkSee:
                     ld      a, (PlayerX)
@@ -171,7 +168,6 @@ GuardSwAlarm:
 
                     jp      GuardLookDirection2             ; Update sprite to look at the player
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Move towards the switch and enable electrified floor
@@ -197,7 +193,6 @@ GuardSwGoToSw:
                     ld      de, 2470h
                     jp      AddEnemy                        ; Add power switch / Enable electrified floor
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Waits in front of the switch and face right
@@ -214,7 +209,6 @@ GuardSwWait:
                     ld      (ix+ACTOR.Direction), DIR_RIGHT ; 1=Up, 2=Down, 3=Left, 4=Right
                     call    AnimateGuard2
                     jp      SetWalkSpeed
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -233,13 +227,11 @@ GuardSwRight:
                     ld      (ix+ACTOR.Wait), 1
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; The guard shots if the player is in front of him
 ;
 ;----------------------------------------------------------------------------
-
 
 GuardSwShot:
                     ld      a, (PlayerY)
@@ -255,7 +247,6 @@ GuardSwShot:
                     ld      (ix+ACTOR.Wait), 10h            ; Shot delay (cadence)
                     ld      c, ID_BULLET
                     jp      AddEnemyShot2                   ; Shoot to the player
-
 
 ;----------------------------------------------------------------------------
 ;

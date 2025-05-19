@@ -52,4 +52,3 @@ gfxRadio2:          db  10h,   0, 3Fh, 28h, 20h, 3Fh, 14h, 14h, 1Fh, 0Ah, 0Ah, 0
                     db 0FFh, 40h,   0,0FFh, 40h,   0,0FFh, 20h,   0, 7Fh, 20h,   0, 7Fh, 50h, 40h, 7Fh
                     db    0,   0,0FFh,   0,   0,0FFh,   0,   0,0FFh,   0,   0,0FFh, 80h, 80h,0FFh,0E0h
                     db 0E0h,0FFh,0FFh,0FFh,0FFh, 3Fh, 3Fh, 3Fh
-

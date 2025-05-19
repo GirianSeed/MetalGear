@@ -59,7 +59,6 @@ ChkSeePlayer2:
                     dw ChkLookLeft
                     dw ChkLookRight
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player is above or under the enemy
@@ -76,7 +75,6 @@ ChkPosAboveUnder:
                     sub     b
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the player is to the right or to the left of the enemy
@@ -89,7 +87,6 @@ ChkPosLeftRight:
                     ld      a, (TempData2)                  ; Enemy X
                     sub     b
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -115,7 +112,6 @@ ChkLookUp:
 ChkLookUp2:
                     ld      c, -20h                         ; Offset to next row
                     jr      ChkViewObstacles
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -144,7 +140,6 @@ ChkLookDown2:
                     ld      c, 20h                          ; Offset to next row
                     jr      ChkViewObstacles
 
-
 ;----------------------------------------------------------------------------
 ;
 ; The guard/camera is looking to the left
@@ -168,7 +163,6 @@ ChkLookLeft:
 ChkLookLeft2:
                     ld      c, -1                           ; Offset to next tile
                     jr      ChkViewObstacles
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -195,7 +189,6 @@ ChkLookRight:
 ChkLookRight2:
                     ld      c, 1                            ; Offset to next tile
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if there is an obstacle between the guard/camera and the player
@@ -207,7 +200,6 @@ ChkLookRight2:
 ;   NZ = There is an obstacle
 ;
 ;----------------------------------------------------------------------------
-
 
 ChkViewObstacles:
                     ld      b, a                            ; Number of tiles (distance)
@@ -289,7 +281,6 @@ CalcNextTileAddress2:
                     add     hl, de                          ; HL = Pointer to next tile
                     djnz    ChkViewObstacles2
 
-
 ; There are no obstacles. The enemy can see the player
 
                     ld      a, (ix+ACTOR.ID)                ; Check if the enemy is a surveillance camera
@@ -314,7 +305,6 @@ SetAlertRoom:
                     ld      (AlertIconTimer), a             ; Set alert sign timer
                     ret
 
-
 ;---------------------------------------------------------------------------
 ;
 ; A guard triggers the alarm
@@ -322,7 +312,6 @@ SetAlertRoom:
 ; Depending on the room number, the alert level is different and the guards are respawned
 ;
 ;---------------------------------------------------------------------------
-
 
 GuardSetAlarm:
                     ld      a, (AlertMode)
@@ -426,7 +415,6 @@ GuardSetAlarm7:
 
                     jp      TransformAlertGuard
 
-
 ;-------------------------------------------------------------------------------
 ;
 ; Read Alert rooms
@@ -434,7 +422,6 @@ GuardSetAlarm7:
 ;
 ;-------------------------------------------------------------------------------
 RedAlertRooms:      db    1, 1Ch,   3,   0,0A3h, 10h, 58h,   0,   4,   1, 9Fh,   0,   0,   8,   0,   1
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -458,8 +445,6 @@ ChkViewVertical:
                     ld      a, d                            ; Enemy X
                     cp      e
                     ret
-
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -532,7 +517,6 @@ ChkDiscoverPlayer4:
 
                     or      a
                     ret
-
 
 ChkDiscoverPlayer5:
                     inc     hl

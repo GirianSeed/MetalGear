@@ -56,9 +56,6 @@ InitGuardRelieve:
                     ld      (ix+ELEVATOR_GUARD.DestinationX), 50h ; Destination of the first guard
                     ret
 
-
-
-
 ;----------------------------------------------------------------------------
 ;
 ; Elevator guard logic
@@ -119,7 +116,6 @@ GuardElevatorWalk:
                     ld      (hl), 90h                       ; Destination X of the second guard
                     ret
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Stop, look down and set idle mode
@@ -136,7 +132,6 @@ GuardReachElevator:
                     ld      (ix+ELEVATOR_GUARD.Direction), a ; 1=Up, 2=Down, 3=Left, 4=Right
                     ld      (ix+ELEVATOR_GUARD.SpriteId), 9 ; Guard down sprite ID
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -166,7 +161,6 @@ GuardElevIdle:
                     ld      a, 1                            ; TEXT: Relieve
                     jp      z, SetTextUnskippable
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -241,7 +235,6 @@ DrawAlertSign:
 
                     jp      SetAlertRoom
 
-
 ;-----------------------------------------------------------------------------
 ;
 ; Saves the background of the alert icon
@@ -258,7 +251,6 @@ SaveAlertIconBacknd:
                     call    VDP_Copy_Byte
                     pop     de
                     ret
-
 
 ;-------------------------------------------------------------------------------
 ;
@@ -308,7 +300,6 @@ GuardRandomDir:
                     ld      (ix+ELEVATOR_GUARD.Direction), a ; 1=Up, 2=Down, 3=Left, 4=Right
                     jp      GuardLookDirection2
 
-
 ;----------------------------------------------------------------------------
 ;
 ; Check if the guard can see the player
@@ -328,7 +319,6 @@ GuardElevLeave:
                     jp      nc, GuardElevSetAlert           ; The guard can see the player
 
                     ret
-
 
 ;----------------------------------------------------------------------------
 ;
@@ -356,5 +346,3 @@ GuardElevAlert:
 
 GuardElevFlees:
                     jp      AnimateGuard
-
-
