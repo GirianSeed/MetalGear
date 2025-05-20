@@ -3,7 +3,8 @@
 ; Index of item names
 ;
 ;----------------------------------------------------------------------------
-idxItemName:    dw txtArmor
+idxItemName:
+                dw txtArmor
                 dw txtSuit
                 dw txtLight
                 dw txtGoggles

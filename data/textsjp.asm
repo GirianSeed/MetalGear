@@ -3,7 +3,8 @@
 ; Texts index
 ;
 ;----------------------------------------------------------------------------
-idxTexts:       dw txt001
+idxTexts:
+                dw txt001
                 dw txt002
                 dw txt003
                 dw txt004
@@ -631,7 +632,8 @@ txt159:         db  13h,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh, 7Eh, 6Fh,   0, 64h, 
 ; Dictionary index
 ;
 ;----------------------------------------------------------------------------
-idxDictionary:  dw DicEntry001
+idxDictionary:
+                dw DicEntry001
                 dw DicEntry002
                 dw DicEntry003
                 dw DicEntry004

@@ -10,15 +10,15 @@
 ;---------------------------------------------------------------------------
 
 InitDesertSecurity:
-                    call    StopAlert
+                call    StopAlert
 
-                    ld      a, (PreviousRoom)
-                    cp      73                              ; 2nd building fisrt room
-                    jp      z, RemoveActor_                 ; The players comes from building 2. Remove the actor
+                ld      a, (PreviousRoom)
+                cp      73                              ; 2nd building fisrt room
+                jp      z, RemoveActor_                 ; The players comes from building 2. Remove the actor
 
-                    ld      (ix+ACTOR2.TIMER), 10h          ; Wait time before warning text
-                    ld      (ix+ACTOR.COLLISION_CFG), 0     ; Bit0 = Check collision with player, Bit1 = Check player shots, bit2 = Pitfall is closed
-                    ret
+                ld      (ix+ACTOR2.TIMER), 10h          ; Wait time before warning text
+                ld      (ix+ACTOR.COLLISION_CFG), 0     ; Bit0 = Check collision with player, Bit1 = Check player shots, bit2 = Pitfall is closed
+                ret
 
 ;---------------------------------------------------------------------------
 ;
@@ -27,17 +27,17 @@ InitDesertSecurity:
 ;---------------------------------------------------------------------------
 
 DesertSecurityLogic:
-                    ld      a, (AlertMode)
-                    or      a                               ; Alert mode?
-                    jp      nz, RemoveActor_                ; Remove this actor
+                ld      a, (AlertMode)
+                or      a                               ; Alert mode?
+                jp      nz, RemoveActor_                ; Remove this actor
 
-                    call    ChkDesertGuardTxt
+                call    ChkDesertGuardTxt
 
-                    ld      a, (ix+ACTOR2.Status)
-                    call    JumpIndex
+                ld      a, (ix+ACTOR2.Status)
+                call    JumpIndex
 
-                    dw DesertSecurity1
-                    dw DesertSecurity2
+                dw DesertSecurity1
+                dw DesertSecurity2
 
 ;----------------------------------------------------------------------------
 ;
@@ -47,29 +47,29 @@ DesertSecurityLogic:
 ;----------------------------------------------------------------------------
 
 DesertSecurity1:
-                    call    GetPlayerXY                     ; D = Player X, E = Player Y
-                    ld      a, e                            ; Player Y
-                    cp      128
-                    ret     nc                              ; Not near the guards
+                call    GetPlayerXY                     ; D = Player X, E = Player Y
+                ld      a, e                            ; Player Y
+                cp      128
+                ret     nc                              ; Not near the guards
 
-                    ld      a, d                            ; Player X
-                    cp      38h                             ; Minimum X
-                    ret     c                               ; Not near the guards
+                ld      a, d                            ; Player X
+                cp      38h                             ; Minimum X
+                ret     c                               ; Not near the guards
 
-                    cp      0B8h                            ; Maximum X
-                    ret     nc                              ; Snake is not near the guards
+                cp      0B8h                            ; Maximum X
+                ret     nc                              ; Snake is not near the guards
 
-                    inc     (ix+ACTOR2.Status)              ; Next status
+                inc     (ix+ACTOR2.Status)              ; Next status
 
 DesertSecurity2:
-                    ld      a, (SelectedItem)
-                    cp      SELECTED_UNIFORM                ; Uniform
-                    jr      z, DesertSecurity3              ; Let Snake pass in
+                ld      a, (SelectedItem)
+                cp      SELECTED_UNIFORM                ; Uniform
+                jr      z, DesertSecurity3              ; Let Snake pass in
 
-                    ld      a, 1Eh                          ; Respawn time
-                    call    SetAlertModeRespawn             ; Trigger the alert
+                ld      a, 1Eh                          ; Respawn time
+                call    SetAlertModeRespawn             ; Trigger the alert
 
-                    jp      DismissActor0                   ; Remove the security logic actor
+                jp      DismissActor0                   ; Remove the security logic actor
 
 ;----------------------------------------------------------------------------
 ;
@@ -78,26 +78,26 @@ DesertSecurity2:
 ;----------------------------------------------------------------------------
 
 ChkDesertGuardTxt:
-                    ld      a, (AlertMode)
-                    or      a
-                    ret     nz                              ; Alert on
+                ld      a, (AlertMode)
+                or      a
+                ret     nz                              ; Alert on
 
-                    ld      a, (ix+ACTOR2.TIMER)
-                    or      a
-                    ret     z
+                ld      a, (ix+ACTOR2.TIMER)
+                or      a
+                ret     z
 
-                    dec     (ix+ACTOR2.TIMER)               ; Decrement wait time
-                    ret     nz
+                dec     (ix+ACTOR2.TIMER)               ; Decrement wait time
+                ret     nz
 
-                    ld      hl, DesertGuardsTextF
-                    ld      a, (hl)
-                    or      a
-                    ret     nz                              ; Text already shown
+                ld      hl, DesertGuardsTextF
+                ld      a, (hl)
+                or      a
+                ret     nz                              ; Text already shown
 
-                    ld      (hl), 1                         ; Set "text shown" flag
+                ld      (hl), 1                         ; Set "text shown" flag
 
-                    ld      a, 35                           ; TEXT: PROBABLY,FOXHOUNDER GAINED ACCESS. DON'T MAKE WAY FOR HIM, AT ANY COST.
-                    jp      SetTextUnskippable
+                ld      a, 35                           ; TEXT: PROBABLY,FOXHOUNDER GAINED ACCESS. DON'T MAKE WAY FOR HIM, AT ANY COST.
+                jp      SetTextUnskippable
 
 ;----------------------------------------------------------------------------
 ;
@@ -109,22 +109,22 @@ ChkDesertGuardTxt:
 ;----------------------------------------------------------------------------
 
 DesertSecurity3:
-                    ld      a, (ix+ACTOR2.DOOR_STATUS)
-                    or      a
-                    jr      nz, DesertSecurity4             ; Not opened yet
+                ld      a, (ix+ACTOR2.DOOR_STATUS)
+                or      a
+                jr      nz, DesertSecurity4             ; Not opened yet
 
-                    inc     (ix+ACTOR2.DOOR_STATUS)
+                inc     (ix+ACTOR2.DOOR_STATUS)
 
-                    ld      a, 127                          ; TEXT: Come in
-                    jp      SetTextUnskippable
+                ld      a, 127                          ; TEXT: Come in
+                jp      SetTextUnskippable
 
 DesertSecurity4:
-                    cp      2
-                    ret     nc
+                cp      2
+                ret     nc
 
-                    ld      a, 1
-                    ld      (DoorBuild2LockedF), a          ; Open door flag
-                    ld      (byte_C62D), a
+                ld      a, 1
+                ld      (DoorBuild2LockedF), a          ; Open door flag
+                ld      (byte_C62D), a
 
-                    inc     (ix+ACTOR2.DOOR_STATUS)         ; Next door status
-                    ret
+                inc     (ix+ACTOR2.DOOR_STATUS)         ; Next door status
+                ret

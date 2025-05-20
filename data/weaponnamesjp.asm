@@ -3,7 +3,8 @@
 ; Index of weapon names
 ;
 ;----------------------------------------------------------------------------
-idxWeaponName:  dw txtHandGun
+idxWeaponName:
+                dw txtHandGun
                 dw txtSMG
                 dw txtGrenade
                 dw txtRocket

@@ -5,79 +5,79 @@
 ;----------------------------------------------------------------------------
 
 InitGuardAlert:
-                    ld      (ix+ALERT_GUARD.Status), 4      ; Wait and check alert. Then go to status 0
+                ld      (ix+ALERT_GUARD.Status), 4      ; Wait and check alert. Then go to status 0
 
-                    ld      a, (AlertMode)
-                    or      a
-                    jr      nz, InitGuardAlert4             ; In alert mode
+                ld      a, (AlertMode)
+                or      a
+                jr      nz, InitGuardAlert4             ; In alert mode
 
-                    ld      a, (Room)
-                    cp      127                             ; Lorry card 1
-                    jr      nz, InitGuardAlert2
+                ld      a, (Room)
+                cp      127                             ; Lorry card 1
+                jr      nz, InitGuardAlert2
 
-                    ld      a, (Guard1ExitedLorry)          ; Is the guard outside the lorry?
-                    jr      ChkDismissGuard
+                ld      a, (Guard1ExitedLorry)          ; Is the guard outside the lorry?
+                jr      ChkDismissGuard
 
 InitGuardAlert2:
-                    sub     131                             ; Second lorry in room 7 (there are 4 soldiers inside)
-                    jr      nz, InitGuardAlert3
+                sub     131                             ; Second lorry in room 7 (there are 4 soldiers inside)
+                jr      nz, InitGuardAlert3
 
-                    ld      a, (Guard2ExitedLorry)
-                    jr      ChkDismissGuard
+                ld      a, (Guard2ExitedLorry)
+                jr      ChkDismissGuard
 
 InitGuardAlert3:
-                    dec     a
-                    jr      nz, InitGuardAlert4
-                    ld      a, (Guard3ExitedLorry)
+                dec     a
+                jr      nz, InitGuardAlert4
+                ld      a, (Guard3ExitedLorry)
 
 ChkDismissGuard:
-                    or      a
-                    jp      nz, DismissActor0               ; Remove the actor if the guard exited the lorry
+                or      a
+                jp      nz, DismissActor0               ; Remove the actor if the guard exited the lorry
 
 InitGuardAlert4:
-                    ld      (ix+ALERT_GUARD.COLLISION_CFG), 3 ; Enable collisions with the player and his shots
+                ld      (ix+ALERT_GUARD.COLLISION_CFG), 3 ; Enable collisions with the player and his shots
 
-                    call    GetDirToPlayer
-                    ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    GetDirToPlayer
+                ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
 
-                    call    AnimateGuard2
-                    call    SetWalkSpeedFast
+                call    AnimateGuard2
+                call    SetWalkSpeedFast
 
-                    xor     a
-                    ld      (ix+ALERT_GUARD.speedYdec), a
-                    ld      (ix+ALERT_GUARD.SpeedXdec), a
-                    ld      (ix+ALERT_GUARD.BaseSpriteId), a
-                    ld      (ix+ALERT_GUARD.Counter), 14h
-                    inc     a
-                    ld      (ix+ALERT_GUARD.Moving), a      ; 0=Does not move
-                    ld      (ix+ALERT_GUARD.WalkAwayDir), a
+                xor     a
+                ld      (ix+ALERT_GUARD.speedYdec), a
+                ld      (ix+ALERT_GUARD.SpeedXdec), a
+                ld      (ix+ALERT_GUARD.BaseSpriteId), a
+                ld      (ix+ALERT_GUARD.Counter), 14h
+                inc     a
+                ld      (ix+ALERT_GUARD.Moving), a      ; 0=Does not move
+                ld      (ix+ALERT_GUARD.WalkAwayDir), a
 
 SetRespawnTime:
-                    ld      a, (Room)
-                    ld      hl, 0                           ; No respawning
-                    cp      216
-                    jr      z, SetRespawnTime3
+                ld      a, (Room)
+                ld      hl, 0                           ; No respawning
+                cp      216
+                jr      z, SetRespawnTime3
 
-                    cp      187
-                    jr      z, SetRespawnTime2
+                cp      187
+                jr      z, SetRespawnTime2
 
-                    cp      154
-                    jr      z, SetRespawnTime2
+                cp      154
+                jr      z, SetRespawnTime2
 
-                    sub     88
-                    cp      5
-                    ret     nc                              ; Roof building 2
+                sub     88
+                cp      5
+                ret     nc                              ; Roof building 2
 
 SetRespawnTime2:
-                    ld      h, 0Ah
-                    ld      a, r
-                    and     0Fh
-                    add     a, 10h
-                    ld      l, a                            ; Random respawn time
+                ld      h, 0Ah
+                ld      a, r
+                and     0Fh
+                add     a, 10h
+                ld      l, a                            ; Random respawn time
 
 SetRespawnTime3:
-                    ld      (AlertRespawnTimer), hl
-                    ret
+                ld      (AlertRespawnTimer), hl
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -86,16 +86,16 @@ SetRespawnTime3:
 ;----------------------------------------------------------------------------
 
 GuardAlertLogic:
-                    call    ChkGuardWater                   ; Check if the guard enters in the water, or is about to enter a door/lorry
+                call    ChkGuardWater                   ; Check if the guard enters in the water, or is about to enter a door/lorry
 
-                    ld      a, (ix+ALERT_GUARD.Status)
-                    call    JumpIndex
+                ld      a, (ix+ALERT_GUARD.Status)
+                call    JumpIndex
 
-                    dw GuardWalk
-                    dw GuardWaitShot
-                    dw GuardAvoidObstacle
-                    dw GuardWalkAwayShot
-                    dw GuardWaitChkAlert
+                dw GuardWalk
+                dw GuardWaitShot
+                dw GuardAvoidObstacle
+                dw GuardWalkAwayShot
+                dw GuardWaitChkAlert
 
 ;----------------------------------------------------------------------------
 ;
@@ -105,62 +105,62 @@ GuardAlertLogic:
 ;----------------------------------------------------------------------------
 
 GuardWalk:
-                    call    AnimateGuard                    ; Animate guard
+                call    AnimateGuard                    ; Animate guard
 
-                    ld      b, 0                            ; Shape/size
-                    ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    ChkTileCollision
-                    jp      c, GuardWalk2                   ; Collision
+                ld      b, 0                            ; Shape/size
+                ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    ChkTileCollision
+                jp      c, GuardWalk2                   ; Collision
 
-                    dec     (ix+ALERT_GUARD.Counter)
-                    ret     nz                              ; Continue walking in the same direction
+                dec     (ix+ALERT_GUARD.Counter)
+                ret     nz                              ; Continue walking in the same direction
 
 GuardWalk2:
-                    call    ChkNearPlayer                   ; Is the guard near the player?
-                    jp      c, SetGuardWalkAway
+                call    ChkNearPlayer                   ; Is the guard near the player?
+                jp      c, SetGuardWalkAway
 
 GuardChasePlayer:
-                    call    GetDirToPlayer                  ; Get the direction towards the player
+                call    GetDirToPlayer                  ; Get the direction towards the player
 
-                    exx
-                    ld      b, 0                            ; Shape/size
-                    ld      c, a                            ; Direction to check
-                    call    ChkTileCollision                ; Check if it is possible to move in that direction
-                    exx
-                    jp      nc, GuardChasePlayer2           ; It is possible to move
+                exx
+                ld      b, 0                            ; Shape/size
+                ld      c, a                            ; Direction to check
+                call    ChkTileCollision                ; Check if it is possible to move in that direction
+                exx
+                jp      nc, GuardChasePlayer2           ; It is possible to move
 
-                    ld      (ix+ALERT_GUARD.Status), 2      ; Skip obstacle status
-                    ld      (ix+ALERT_GUARD.WalkAwayDir), a
-                    ld      a, b                            ; Try the other axis direction
-                    jp      GuardSetNewDirection
+                ld      (ix+ALERT_GUARD.Status), 2      ; Skip obstacle status
+                ld      (ix+ALERT_GUARD.WalkAwayDir), a
+                ld      a, b                            ; Try the other axis direction
+                jp      GuardSetNewDirection
 
 GuardChasePlayer2:
-                    ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    AnimateGuard2
-                    call    SetWalkSpeedFast
+                ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    AnimateGuard2
+                call    SetWalkSpeedFast
 
-                    ld      a, r
-                    xor     (ix+ALERT_GUARD.ANIM_CNT)
-                    and     7
-                    add     a, 0Fh
-                    ld      b, a
-                    and     3
-                    jp      z, SetGuardRndCounter           ; Decide to shot or continue walking
+                ld      a, r
+                xor     (ix+ALERT_GUARD.ANIM_CNT)
+                and     7
+                add     a, 0Fh
+                ld      b, a
+                and     3
+                jp      z, SetGuardRndCounter           ; Decide to shot or continue walking
 
 GuardShot:
-                    ld      (ix+ALERT_GUARD.Counter), b
-                    ld      (ix+ALERT_GUARD.Status), 1
-                    ld      (ix+ALERT_GUARD.Moving), 0      ; Disable movement
+                ld      (ix+ALERT_GUARD.Counter), b
+                ld      (ix+ALERT_GUARD.Status), 1
+                ld      (ix+ALERT_GUARD.Moving), 0      ; Disable movement
 
 AddEnemyShot:
-                    ld      c, ID_GUARD_BULLET
+                ld      c, ID_GUARD_BULLET
 
 AddEnemyShot2:
-                    ld      a, (ix+ACTOR.Y)
-                    sub     10h
-                    ld      e, a
-                    ld      d, (ix+ACTOR.X)
-                    jp      AddEnemy                        ; Add a shot
+                ld      a, (ix+ACTOR.Y)
+                sub     10h
+                ld      e, a
+                ld      d, (ix+ACTOR.X)
+                jp      AddEnemy                        ; Add a shot
 
 ;(!?) Unused code
 
@@ -177,19 +177,19 @@ AddEnemyShot2:
 ;----------------------------------------------------------------------------
 
 SetGuardWalkAway:
-                    call    GetOppositePlayer               ; Get the opposite direction to the player
+                call    GetOppositePlayer               ; Get the opposite direction to the player
 
-                    exx
-                    ld      b, 0
-                    ld      c, a
-                    call    ChkTileCollision                ; Check if it is possible to move in the new direction
-                    jp      nc, GuardChasePlayer2           ; Yes
+                exx
+                ld      b, 0
+                ld      c, a
+                call    ChkTileCollision                ; Check if it is possible to move in the new direction
+                jp      nc, GuardChasePlayer2           ; Yes
 
-                    exx
-                    ld      (ix+ALERT_GUARD.Status), 3
-                    ld      (ix+ALERT_GUARD.WalkAwayDir), a
-                    ld      a, b
-                    jp      GuardSetNewDirection
+                exx
+                ld      (ix+ALERT_GUARD.Status), 3
+                ld      (ix+ALERT_GUARD.WalkAwayDir), a
+                ld      a, b
+                jp      GuardSetNewDirection
 
 ;----------------------------------------------------------------------------
 ;
@@ -200,21 +200,21 @@ SetGuardWalkAway:
 ;----------------------------------------------------------------------------
 
 GuardWaitShot:
-                    call    GetDirToPlayer
-                    call    GuardLookDirection2
+                call    GetDirToPlayer
+                call    GuardLookDirection2
 
-                    dec     (ix+ALERT_GUARD.Counter)
-                    ret     nz                              ; continue waiting
+                dec     (ix+ALERT_GUARD.Counter)
+                ret     nz                              ; continue waiting
 
-                    call    SetGuardRndCounter
+                call    SetGuardRndCounter
 
-                    ld      (ix+ALERT_GUARD.Status), 0      ; Walk status
-                    ld      (ix+ALERT_GUARD.Moving), 1      ; Enable movement
+                ld      (ix+ALERT_GUARD.Status), 0      ; Walk status
+                ld      (ix+ALERT_GUARD.Moving), 1      ; Enable movement
 
-                    ld      a, (ix+ALERT_GUARD.ID)                  ; Bit 7 = Killed
-                    cp      ID_GUARD_REDALERT
-                    jp      z, AddEnemyShot
-                    ret
+                ld      a, (ix+ALERT_GUARD.ID)                  ; Bit 7 = Killed
+                cp      ID_GUARD_REDALERT
+                jp      z, AddEnemyShot
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -223,20 +223,20 @@ GuardWaitShot:
 ;----------------------------------------------------------------------------
 
 SetGuardRndCounter:
-                    ld      a, (ix+ALERT_GUARD.ID)                  ; Bit 7 = Killed
-                    cp      ID_GUARD_REDALERT
-                    ld      b, 14h
-                    jp      nz, SetGuardRndCounter2
+                ld      a, (ix+ALERT_GUARD.ID)                  ; Bit 7 = Killed
+                cp      ID_GUARD_REDALERT
+                ld      b, 14h
+                jp      nz, SetGuardRndCounter2
 
-                    ld      b, 0Ah
+                ld      b, 0Ah
 
 SetGuardRndCounter2:
-                    ld      a, r
-                    xor     (ix+ALERT_GUARD.ANIM_CNT)
-                    and     0Fh
-                    add     a, b
-                    ld      (ix+ALERT_GUARD.Counter), a
-                    ret
+                ld      a, r
+                xor     (ix+ALERT_GUARD.ANIM_CNT)
+                and     0Fh
+                add     a, b
+                ld      (ix+ALERT_GUARD.Counter), a
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -245,37 +245,37 @@ SetGuardRndCounter2:
 ;----------------------------------------------------------------------------
 
 GuardAvoidObstacle:
-                    call    AnimateGuard
+                call    AnimateGuard
 
-                    ld      b, 0                            ; Shape/size
-                    ld      c, (ix+ALERT_GUARD.WalkAwayDir)
-                    call    ChkTileCollision
-                    jp      nc, ContinueThisWay
+                ld      b, 0                            ; Shape/size
+                ld      c, (ix+ALERT_GUARD.WalkAwayDir)
+                call    ChkTileCollision
+                jp      nc, ContinueThisWay
 
-                    ld      b, 0                            ; Shape/size
-                    ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    ChkTileCollision
-                    ret     nc
+                ld      b, 0                            ; Shape/size
+                ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    ChkTileCollision
+                ret     nc
 
-                    ld      a, (ix+ALERT_GUARD.WalkAwayDir)
-                    call    GetOppositeDir
+                ld      a, (ix+ALERT_GUARD.WalkAwayDir)
+                call    GetOppositeDir
 
-                    ld      b, 0                            ; Shape/size
-                    ld      c, a                            ; Direction
-                    call    ChkTileCollision
-                    jp      nc, ContinueThisWay
+                ld      b, 0                            ; Shape/size
+                ld      c, a                            ; Direction
+                call    ChkTileCollision
+                jp      nc, ContinueThisWay
 
-                    ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    GetOppositeDir
+                ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    GetOppositeDir
 
 ContinueThisWay:
-                    ld      (ix+ALERT_GUARD.Status), 0      ; Chase the player status
+                ld      (ix+ALERT_GUARD.Status), 0      ; Chase the player status
 
 GuardSetNewDirection:
-                    ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    AnimateGuard2
-                    call    SetWalkSpeedFast
-                    jp      SetGuardRndCounter
+                ld      (ix+ALERT_GUARD.Direction), a   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    AnimateGuard2
+                call    SetWalkSpeedFast
+                jp      SetGuardRndCounter
 
 ;----------------------------------------------------------------------------
 ;
@@ -284,21 +284,21 @@ GuardSetNewDirection:
 ;----------------------------------------------------------------------------
 
 GuardWalkAwayShot:
-                    call    AnimateGuard
+                call    AnimateGuard
 
-                    ld      b, 0
-                    ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    ChkTileCollision
-                    jp      c, GuardChasePlayer             ; Can not continue. Chase the player again
+                ld      b, 0
+                ld      c, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    ChkTileCollision
+                jp      c, GuardChasePlayer             ; Can not continue. Chase the player again
 
-                    dec     (ix+ALERT_GUARD.Counter)
-                    ret     nz                              ; Continue walking away
+                dec     (ix+ALERT_GUARD.Counter)
+                ret     nz                              ; Continue walking away
 
-                    call    ChkNearPlayer                   ; Check if the player is near
-                    jp      c, SetGuardWalkAway             ; Yes, walk away
+                call    ChkNearPlayer                   ; Check if the player is near
+                jp      c, SetGuardWalkAway             ; Yes, walk away
 
-                    ld      b, 14h
-                    jp      GuardShot                       ; Shoot to the player
+                ld      b, 14h
+                jp      GuardShot                       ; Shoot to the player
 
 ;----------------------------------------------------------------------------
 ;
@@ -307,16 +307,16 @@ GuardWalkAwayShot:
 ;----------------------------------------------------------------------------
 
 GuardWaitChkAlert:
-                    dec     (ix+ALERT_GUARD.WalkAwayDir)
-                    ret     nz
+                dec     (ix+ALERT_GUARD.WalkAwayDir)
+                ret     nz
 
-                    ld      (ix+ALERT_GUARD.Status), 0      ; Chase the player status
+                ld      (ix+ALERT_GUARD.Status), 0      ; Chase the player status
 
-                    ld      a, (AlertMode)
-                    or      a
-                    ret     nz                              ; Already in alert
+                ld      a, (AlertMode)
+                or      a
+                ret     nz                              ; Already in alert
 
-                    jp      SetAlertMode                    ; Trigger the alert
+                jp      SetAlertMode                    ; Trigger the alert
 
 ;----------------------------------------------------------------------------
 ;
@@ -325,14 +325,14 @@ GuardWaitChkAlert:
 ;----------------------------------------------------------------------------
 
 SetWalkSpeed:
-                    ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
-                    ld      de, DirectionSpeeds
+                ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                ld      de, DirectionSpeeds
 
 SetWalkSpeed2:
-                    call    GetPointerDE2A
-                    ld      (ix+ALERT_GUARD.SpeedY), e
-                    ld      (ix+ALERT_GUARD.SpeedX), d
-                    ret
+                call    GetPointerDE2A
+                ld      (ix+ALERT_GUARD.SpeedY), e
+                ld      (ix+ALERT_GUARD.SpeedX), d
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -341,30 +341,31 @@ SetWalkSpeed2:
 ;----------------------------------------------------------------------------
 
 SetWalkSpeedFast:
-                    ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
+                ld      a, (ix+ALERT_GUARD.Direction)   ; 1=Up, 2=Down, 3=Left, 4=Right
 
 SetWalkSpeedFast2:
-                    ld      de, DirectionSpeeds2
+                ld      de, DirectionSpeeds2
 
 DirectionSpeeds:
-                    jr      SetWalkSpeed2
+                jr      SetWalkSpeed2
 
-                    db -1
-                    db 0
-                    db 1
-                    db 0
-                    db 0
-                    db -1
-DirectionSpeeds2:   db 0
-                    db 1
-                    db -2
-                    db 0
-                    db 2
-                    db 0
-                    db 0
-                    db -2
-                    db 0
-                    db 2
+                db -1
+                db 0
+                db 1
+                db 0
+                db 0
+                db -1
+DirectionSpeeds2:
+                db 0
+                db 1
+                db -2
+                db 0
+                db 2
+                db 0
+                db 0
+                db -2
+                db 0
+                db 2
 
 ;----------------------------------------------------------------------------
 ;
@@ -373,20 +374,20 @@ DirectionSpeeds2:   db 0
 ;----------------------------------------------------------------------------
 
 AnimateGuard:
-                    ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
+                ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
 
 AnimateGuard2:
-                    dec     a
-                    add     a, a
-                    bit     2, (ix+ACTOR.ANIM_CNT)
-                    jp      z, AnimateGuard3
+                dec     a
+                add     a, a
+                bit     2, (ix+ACTOR.ANIM_CNT)
+                jp      z, AnimateGuard3
 
-                    inc     a
+                inc     a
 
 AnimateGuard3:
-                    add     a, (ix+ACTOR.BASE_SPR_ID)       ; Sprite base ID (i.e.: guard normal = 0, guard in water = #49)
-                    ld      (ix+ACTOR.SpriteId), a
-                    ret
+                add     a, (ix+ACTOR.BASE_SPR_ID)       ; Sprite base ID (i.e.: guard normal = 0, guard in water = #49)
+                ld      (ix+ACTOR.SpriteId), a
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -395,13 +396,13 @@ AnimateGuard3:
 ;----------------------------------------------------------------------------
 
 GuardLookDirection:
-                    ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
+                ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
 
 GuardLookDirection2:
-                    add     a, 7                            ; Guard up (8) - 1 sprite ID
-                    add     a, (ix+ACTOR.BASE_SPR_ID)
-                    ld      (ix+ACTOR.SpriteId), a
-                    ret
+                add     a, 7                            ; Guard up (8) - 1 sprite ID
+                add     a, (ix+ACTOR.BASE_SPR_ID)
+                ld      (ix+ACTOR.SpriteId), a
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -410,35 +411,35 @@ GuardLookDirection2:
 ;----------------------------------------------------------------------------
 
 ChkNearPlayer:
-                    ld      a, (ix+ACTOR.ID)                ; Bit 7 = Killed
-                    cp      ID_GUARD_REDALERT
-                    scf
-                    ccf
-                    ret     nz
+                ld      a, (ix+ACTOR.ID)                ; Bit 7 = Killed
+                cp      ID_GUARD_REDALERT
+                scf
+                ccf
+                ret     nz
 
 GetDistancePlayer:
-                    ld      a, (PlayerX)
-                    sub     (ix+ACTOR.X)
-                    jp      nc, GetDistancePlayer2
+                ld      a, (PlayerX)
+                sub     (ix+ACTOR.X)
+                jp      nc, GetDistancePlayer2
 
-                    neg
+                neg
 
 GetDistancePlayer2:
-                    ld      b, a
-                    ld      a, (PlayerY)
-                    sub     (ix+ACTOR.Y)
-                    jp      nc, GetDistancePlayer3
+                ld      b, a
+                ld      a, (PlayerY)
+                sub     (ix+ACTOR.Y)
+                jp      nc, GetDistancePlayer3
 
-                    neg
+                neg
 
 GetDistancePlayer3:
-                    cp      b
-                    jp      nc, GetDistancePlayer4
-                    ld      a, b
+                cp      b
+                jp      nc, GetDistancePlayer4
+                ld      a, b
 
 GetDistancePlayer4:
-                    cp      30h
-                    ret
+                cp      30h
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -448,44 +449,44 @@ GetDistancePlayer4:
 ;----------------------------------------------------------------------------
 
 ChkGuardWater:
-                    ld      a, (ix+ACTOR.X)
-                    sub     4
-                    ld      h, a
-                    ld      l, (ix+ACTOR.Y)
-                    call    GetTileInXY                     ; Get tiles under guard's feet
+                ld      a, (ix+ACTOR.X)
+                sub     4
+                ld      h, a
+                ld      l, (ix+ACTOR.Y)
+                call    GetTileInXY                     ; Get tiles under guard's feet
 
-                    ld      a, l                            ; Left tile
-                    dec     a                               ; Is an exit? door, lorry
-                    jp      z, MoveAwayExit
+                ld      a, l                            ; Left tile
+                dec     a                               ; Is an exit? door, lorry
+                jp      z, MoveAwayExit
 
-                    ld      a, h                            ; Right tile
-                    dec     a                               ; Is an exit? door, lorry
-                    jp      z, MoveAwayExit
+                ld      a, h                            ; Right tile
+                dec     a                               ; Is an exit? door, lorry
+                jp      z, MoveAwayExit
 
-                    ld      a, (Room)
-                    cp      70                              ; First water room. Water room before Bulldozer
-                    ret     c
+                ld      a, (Room)
+                cp      70                              ; First water room. Water room before Bulldozer
+                ret     c
 
-                    ld      (ix+ACTOR.BASE_SPR_ID), 0       ; Guard up sprite ID
+                ld      (ix+ACTOR.BASE_SPR_ID), 0       ; Guard up sprite ID
 
-                    ld      a, l
-                    cp      6Dh                             ; Water tile
-                    jp      z, ChkGuardWater2
+                ld      a, l
+                cp      6Dh                             ; Water tile
+                jp      z, ChkGuardWater2
 
-                    sub     6Fh
-                    cp      8
-                    ret     nc                              ; Not a water tile
+                sub     6Fh
+                cp      8
+                ret     nc                              ; Not a water tile
 
-                    ld      a, h
-                    jp      z, ChkGuardWater2
+                ld      a, h
+                jp      z, ChkGuardWater2
 
-                    sub     6Fh
-                    cp      8
-                    ret     nc                              ; Not a water tile
+                sub     6Fh
+                cp      8
+                ret     nc                              ; Not a water tile
 
 ChkGuardWater2:
-                    ld      (ix+ACTOR.BASE_SPR_ID), 49h     ; Guard up in water sprite ID
-                    ret
+                ld      (ix+ACTOR.BASE_SPR_ID), 49h     ; Guard up in water sprite ID
+                ret
 
 ;----------------------------------------------------------------------------
 ;
@@ -494,16 +495,16 @@ ChkGuardWater2:
 ;----------------------------------------------------------------------------
 
 MoveAwayExit:
-                    ld      (ix+ACTOR.Status), 0            ; Chase the player mode
-                    ld      (ix+ACTOR.Wait), 0Ah
+                ld      (ix+ACTOR.Status), 0            ; Chase the player mode
+                ld      (ix+ACTOR.Wait), 0Ah
 
-                    ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    GetOppositeDir
+                ld      a, (ix+ACTOR.Direction)         ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    GetOppositeDir
 
-                    ld      (ix+ACTOR.Direction), a         ; 1=Up, 2=Down, 3=Left, 4=Right
-                    call    AnimateGuard2
+                ld      (ix+ACTOR.Direction), a         ; 1=Up, 2=Down, 3=Left, 4=Right
+                call    AnimateGuard2
 
-                    jp      SetWalkSpeedFast
+                jp      SetWalkSpeedFast
 
 ;----------------------------------------------------------------------------
 ;
@@ -515,7 +516,7 @@ MoveAwayExit:
 ;----------------------------------------------------------------------------
 
 GetRandom3:
-                    ld      a, r
-                    xor     (ix+ACTOR.ANIM_CNT)
-                    and     3
-                    ret
+                ld      a, r
+                xor     (ix+ACTOR.ANIM_CNT)
+                and     3
+                ret

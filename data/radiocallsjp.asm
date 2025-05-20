@@ -386,14 +386,16 @@ RadioRoom_205to207:
                 db RADIO_SCHNEIDER2 | RADIO_WAITCALL | RADIO_END
                 db 105                  ; This is Schneider... The south elevator only goes down. ...Over
 
-NoRadio:        db 0
+NoRadio:
+                db 0
 
 ;----------------------------------------------------------------------------
 ;
 ; Index of Radio characters available in rooms
 ;
 ;----------------------------------------------------------------------------
-idxRoomRadio:   dw RadioRoom_000
+idxRoomRadio:
+                dw RadioRoom_000
                 dw RadioRoom_001
                 dw RadioRoom_002_3_39
                 dw RadioRoom_002_3_39

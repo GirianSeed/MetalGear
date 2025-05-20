@@ -1,9 +1,10 @@
 ;----------------------------------------------------------------------------
 ; Weapon menu texts
 ;----------------------------------------------------------------------------
-txtWeaponSelect:    dw 1048h
-                    db  "WEAPON",   0,   0, "SELECT"
-                    db 0FEh
-                    dw 9068h
-                    db  "OPTION"
-                    db 0FFh
+txtWeaponSelect:
+                dw 1048h
+                db  "WEAPON",   0,   0, "SELECT"
+                db 0FEh
+                dw 9068h
+                db  "OPTION"
+                db 0FFh
