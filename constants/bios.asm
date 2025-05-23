@@ -85,7 +85,7 @@ STMOTR:         equ     #f3                             ; Sets the cassette moto
 LFTQ:           equ     #f6                             ; Gives number of bytes in queue
 PUTQ:           equ     #f9                             ; Put byte in queue
 RIGHTC:         equ     #fc                             ; Shifts screenpixel to the right
-                                                        ; Shifts screenpixel to the left
+LEFTC:          equ     #ff                             ; Shifts screenpixel to the left
 UPC:            equ     #102                            ; Shifts screenpixel up
 TUPC:           equ     #105                            ; Tests whether UPC is possible, if possible, execute UPC
 DOWNC:          equ     #108                            ; Shifts screenpixel down
