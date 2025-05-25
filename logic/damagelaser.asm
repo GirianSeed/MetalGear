@@ -68,15 +68,15 @@ ChkLaserShot6:
                 jp      TouchPlayer
 
 LaserLenghts:
-                db    1
-                db    1
-                db    2
-                db    3
-                db    4
-                db    5
-                db    6
-                db    7
-                db    8
-                db    9
-                db  0Ah
-                db  0Bh
+                db 1
+                db 1
+                db 2
+                db 3
+                db 4
+                db 5
+                db 6
+                db 7
+                db 8
+                db 9
+                db 10
+                db 11

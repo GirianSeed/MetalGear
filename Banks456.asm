@@ -6,7 +6,7 @@
 ;
 ;----------------------------------------------------------------------------
 
-                org #6000
+                org $6000
 
         include "sound/sound.asm"
 
@@ -58,5 +58,5 @@
         include "logic/passwords.asm"
 
                 ; Fill empty space
-                ds      (#C000-$),#ff
-                ASSERT  $=#C000
+                ds      ($C000-$),$FF
+                ASSERT  $=$C000

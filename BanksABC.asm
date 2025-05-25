@@ -6,7 +6,7 @@
 ;
 ;----------------------------------------------------------------------------
 
-                org #6000
+                org $6000
 
         include "data/playersprite.asm"
         include "data/spritesets.asm"
@@ -51,5 +51,5 @@ RemoveMetalGear:
                 jp      EraseMetalGear_
 
                 ; Fill empty space
-                ds      (#C000-$),#ff
-                ASSERT  $=#C000
+                ds      ($C000-$),$FF
+                ASSERT  $=$C000

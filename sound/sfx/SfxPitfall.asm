@@ -1,4 +1,4 @@
 Sfx_Pitfall:
-                db 0FEh,   0, 21h,   3, 1Fh, 90h,0A0h,0B0h,0C0h,0D0h, 1Eh,0D0h, 1Dh,0D0h, 1Ch,0D0h
-                db  1Bh,0D0h, 1Ah,0D0h, 19h,0D0h, 18h,0D0h, 17h,0D0h, 16h,0D0h, 15h,0D0h, 14h,0D0h
-                db  13h,0D0h, 12h,0D0h,0FFh
+                db $FE,$00,$21,$03,$1F,$90,$A0,$B0,$C0,$D0,$1E,$D0,$1D,$D0,$1C,$D0
+                db $1B,$D0,$1A,$D0,$19,$D0,$18,$D0,$17,$D0,$16,$D0,$15,$D0,$14,$D0
+                db $13,$D0,$12,$D0,$FF

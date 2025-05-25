@@ -38,5 +38,5 @@ SetHUDSprMask4:
 ; Attributes for 2 sprites at (192,255) and (208,255)
 ;
 MaskSprAttrib:
-                db 0C0h,0FFh,   0,0E0h
-                db 0D0h,0FFh,   0,0E0h                  ; Spr att: Y, X, num, EC-color
+                db $C0,$FF,$00,$E0
+                db $D0,$FF,$00,$E0                      ; Spr att: Y, X, num, EC-color

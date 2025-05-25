@@ -4,266 +4,266 @@
 ;
 ;----------------------------------------------------------------------------
 ThemeOfTaraShared1:
-                db 0EFh,0D7h,0FAh,   3,0ECh, 53h,0E2h, 33h, 41h,0F7h, 22h, 41h,0E9h,   4, 43h,0B3h
-                db 0E9h,   5,   3,0E9h,   4, 93h,0B3h, 73h,0FFh
+                db $EF,$D7,$FA,$03,$EC,$53,$E2,$33,$41,$F7,$22,$41,$E9,$04,$43,$B3
+                db $E9,$05,$03,$E9,$04,$93,$B3,$73,$FF
 
 ThemeOfTaraShared2:
-                db 0EFh,0D7h,0FAh,   3,0ECh, 53h,0E3h, 63h, 71h,0F8h, 22h, 71h,0F9h,   3,0ECh, 63h
-                db 0E2h, 77h, 67h, 27h,0FFh
+                db $EF,$D7,$FA,$03,$EC,$53,$E3,$63,$71,$F8,$22,$71,$F9,$03,$EC,$63
+                db $E2,$77,$67,$27,$FF
 
 ThemeOfTaraShared3:
-                db 0EFh,0FAh, 12h,0E3h,0B1h,0B1h,0B1h,0F9h, 21h,0B1h,0FAh, 12h,0B1h,0F9h, 21h,0B1h
-                db 0FFh
+                db $EF,$FA,$12,$E3,$B1,$B1,$B1,$F9,$21,$B1,$FA,$12,$B1,$F9,$21,$B1
+                db $FF
 
 ThemeOfTaraShared4:
-                db 0FBh, 23h,0E2h,   1,   1,   1,0F9h, 21h,   1,0FBh, 23h,   1,0F9h, 21h,   1,0FFh
+                db $FB,$23,$E2,$01,$01,$01,$F9,$21,$01,$FB,$23,$01,$F9,$21,$01,$FF
 
 ThemeOfTaraShared5:
-                db 0EFh,0D7h,0FAh,   3,0ECh, 53h,0E3h,0A3h,0B1h,0F7h, 22h,0B1h,0E8h,0F6h,   3,0E2h
-                db  79h, 67h, 25h,0FFh
+                db $EF,$D7,$FA,$03,$EC,$53,$E3,$A3,$B1,$F7,$22,$B1,$E8,$F6,$03,$E2
+                db $79,$67,$25,$FF
 
 ThemeOfTaraShared6:
-                db 0EFh,0FAh, 12h,0E2h, 51h, 51h, 51h,0F9h, 31h, 51h,0FAh, 12h, 51h,0F9h, 21h, 51h
-                db 0FFh
+                db $EF,$FA,$12,$E2,$51,$51,$51,$F9,$31,$51,$FA,$12,$51,$F9,$21,$51
+                db $FF
 
 ThemeOfTaraShared7:
-                db 0EFh,0FAh,   3,0ECh, 62h,0E2h, 51h,   1, 51h,0E1h,   9,0E2h, 61h, 11h, 61h,0FFh
+                db $EF,$FA,$03,$EC,$62,$E2,$51,$01,$51,$E1,$09,$E2,$61,$11,$61,$FF
 
 ThemeOfTaraShared8:
-                db 0E9h,   5, 51h, 51h, 51h, 51h, 51h, 51h, 51h, 51h, 61h, 61h, 61h, 61h,0FFh
+                db $E9,$05,$51,$51,$51,$51,$51,$51,$51,$51,$61,$61,$61,$61,$FF
 
 ;----------------------------------------------------------------------------
 ; Intro
 ;----------------------------------------------------------------------------
 Mus_IntroTara:
-                db 0D1h,0CDh,0E9h,   1, 22h, 23h, 26h, 26h,   6, 2Dh, 26h, 26h, 2Dh, 2Dh,0D7h,0E9h
-                db    5,0B1h,0E9h,   4,0B1h,0EFh,0FBh, 22h,0ECh, 52h,0E2h, 43h,0E5h, 40h, 40h,0E2h
-                db  40h, 40h, 41h, 41h, 71h,0B1h, 92h, 90h,0E1h, 47h, 21h,   1,0E2h,0BBh,0E1h, 43h
-                db 0F9h,   0, 37h,0F8h,   0, 32h,0F7h,   0, 32h,0F6h,   0, 32h,0F5h,   0, 32h,0CFh
+                db $D1,$CD,$E9,$01,$22,$23,$26,$26,$06,$2D,$26,$26,$2D,$2D,$D7,$E9
+                db $05,$B1,$E9,$04,$B1,$EF,$FB,$22,$EC,$52,$E2,$43,$E5,$40,$40,$E2
+                db $40,$40,$41,$41,$71,$B1,$92,$90,$E1,$47,$21,$01,$E2,$BB,$E1,$43
+                db $F9,$00,$37,$F8,$00,$32,$F7,$00,$32,$F6,$00,$32,$F5,$00,$32,$CF
 
 ;----------------------------------------------------------------------------
 ; Theme of Tara (A)
 ;----------------------------------------------------------------------------
 Mus_ThemeTara:
-                db 0EFh,0D7h,0C3h
+                db $EF,$D7,$C3
 MusThemeOfTara1:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E2h, 33h, 41h,0F7h, 22h, 41h,0E9h,   5, 43h, 43h, 43h
-                db  43h, 43h, 43h
+                db $EF,$FA,$03,$EC,$53,$E2,$33,$41,$F7,$22,$41,$E9,$05,$43,$43,$43
+                db $43,$43,$43
 
-                db 0FEh,   2
+                db $FE,$02
                 dw MusThemeOfTara1
 MusThemeTara2:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared1
 
-                db 0FEh,   3
+                db $FE,$03
                 dw MusThemeTara2
-                db 0EFh,0FAh,   3,0ECh, 53h,0E2h, 33h, 41h,0F7h, 22h, 41h,0FCh, 36h,0E5h, 43h,0B3h
-                db 0E4h,   3,0E5h, 93h,0FBh, 20h,0B3h,0F8h,   0,0B3h,0F7h,   0,0B3h,0F6h,   0,0B3h
-                db 0F5h,   0,0B3h,0F4h,   0,0B3h
+                db $EF,$FA,$03,$EC,$53,$E2,$33,$41,$F7,$22,$41,$FC,$36,$E5,$43,$B3
+                db $E4,$03,$E5,$93,$FB,$20,$B3,$F8,$00,$B3,$F7,$00,$B3,$F6,$00,$B3
+                db $F5,$00,$B3,$F4,$00,$B3
 MusThemeTara3:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E2h, 83h, 91h,0F7h, 22h, 91h,0E9h,   4, 93h,0E9h,   5
-                db  43h, 53h, 23h, 43h,   3
-                db 0FEh,   2
+                db $EF,$FA,$03,$EC,$53,$E2,$83,$91,$F7,$22,$91,$E9,$04,$93,$E9,$05
+                db $43,$53,$23,$43,$03
+                db $FE,$02
                 dw MusThemeTara3
 
 MusThemeTara4:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared1
 
-                db 0FEh,   2
+                db $FE,$02
                 dw MusThemeTara4
 MusThemeTara5:
-                db 0E9h,   5, 51h, 51h, 53h, 53h, 51h, 51h, 53h, 53h, 51h, 51h, 53h
+                db $E9,$05,$51,$51,$53,$53,$51,$51,$53,$53,$51,$51,$53
 
-                db 0FEh,   4
+                db $FE,$04
                 dw MusThemeTara5
 
 MusThemeTara6:
-                db 0E9h,   5, 51h, 51h, 51h, 51h, 51h, 51h, 51h, 51h, 61h, 61h, 61h, 61h, 61h, 61h
-                db  61h, 61h
-                db 0FEh,   2
+                db $E9,$05,$51,$51,$51,$51,$51,$51,$51,$51,$61,$61,$61,$61,$61,$61
+                db $61,$61
+                db $FE,$02
                 dw MusThemeTara6
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared7
-                db 0E1h, 19h
-                db 0FEh,0FFh
+                db $E1,$19
+                db $FE,$FF
                 dw ThemeOfTaraShared7
-                db 0E1h, 11h,0E2h, 71h, 21h, 71h,0E1h, 21h,0FAh, 12h,0ECh, 53h,0E2h, 2Bh, 43h, 75h
-                db  65h, 73h, 95h, 51h, 9Fh, 73h, 93h,0BBh,0B3h, 95h, 75h, 63h, 70h, 60h, 49h, 23h
-                db  40h, 60h, 70h, 60h, 4Bh, 2Bh,0E1h, 43h,0E2h,0B5h, 95h, 73h, 95h, 51h, 9Fh, 73h
-                db  93h,0B5h, 71h,0E1h, 47h,0E2h,0B5h, 71h,0E1h, 47h,0FAh, 2Fh,0E3h, 70h, 72h,0F8h
-                db  2Fh, 70h, 72h,0F6h, 2Fh, 70h, 72h,0F4h, 2Fh, 70h, 72h,0C1h,0F9h, 2Fh, 90h, 92h
-                db 0F7h, 2Fh, 90h, 92h,0F5h, 2Fh, 90h, 92h,0F3h, 2Fh, 90h, 92h, 90h, 92h, 90h, 92h
-                db 0FEh,0FEh
+                db $E1,$11,$E2,$71,$21,$71,$E1,$21,$FA,$12,$EC,$53,$E2,$2B,$43,$75
+                db $65,$73,$95,$51,$9F,$73,$93,$BB,$B3,$95,$75,$63,$70,$60,$49,$23
+                db $40,$60,$70,$60,$4B,$2B,$E1,$43,$E2,$B5,$95,$73,$95,$51,$9F,$73
+                db $93,$B5,$71,$E1,$47,$E2,$B5,$71,$E1,$47,$FA,$2F,$E3,$70,$72,$F8
+                db $2F,$70,$72,$F6,$2F,$70,$72,$F4,$2F,$70,$72,$C1,$F9,$2F,$90,$92
+                db $F7,$2F,$90,$92,$F5,$2F,$90,$92,$F3,$2F,$90,$92,$90,$92,$90,$92
+                db $FE,$FE
                 dw MusThemeTara2
 
 ;----------------------------------------------------------------------------
 ; Intro Theme of Tara (B)
 ;----------------------------------------------------------------------------
 Mus_IntroTaraB:
-                db 0D7h,0C1h,0E9h,   1,   0,   0,   9,0B1h,0B1h,0EFh,0FCh, 23h,0E4h, 43h, 40h, 40h
-                db  41h, 23h, 23h, 10h, 10h,0E3h, 10h,0E4h, 10h, 10h,0E3h, 10h,0E4h, 10h, 10h,   1
-                db    1,0E3h,   1,0E4h,   1,0E5h,0B3h,0B3h,0B3h,0D2h,0FAh,   0,0E5h,0B1h,0E4h,   0
-                db  10h, 20h, 30h, 40h, 50h, 60h, 70h, 80h, 90h,0A0h,0B0h,0D7h,0F9h,   0,0ECh, 54h
-                db 0B7h,0F8h,   0,0B2h,0F7h,   0,0B2h,0F6h,   0,0B2h,0F5h,   0,0B2h,0CFh
+                db $D7,$C1,$E9,$01,$00,$00,$09,$B1,$B1,$EF,$FC,$23,$E4,$43,$40,$40
+                db $41,$23,$23,$10,$10,$E3,$10,$E4,$10,$10,$E3,$10,$E4,$10,$10,$01
+                db $01,$E3,$01,$E4,$01,$E5,$B3,$B3,$B3,$D2,$FA,$00,$E5,$B1,$E4,$00
+                db $10,$20,$30,$40,$50,$60,$70,$80,$90,$A0,$B0,$D7,$F9,$00,$EC,$54
+                db $B7,$F8,$00,$B2,$F7,$00,$B2,$F6,$00,$B2,$F5,$00,$B2,$CF
 
 ;----------------------------------------------------------------------------
 ; Theme of Tara (B)
 ;----------------------------------------------------------------------------
 Mus_ThemeTaraB:
-                db 0EFh,0D7h,0C3h
+                db $EF,$D7,$C3
 MusThemeTaraB1:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E3h,0A3h,0B1h,0F7h, 22h,0B1h,0E9h,   4, 43h, 43h, 43h
-                db  43h, 43h, 43h
-                db 0FEh,   2
+                db $EF,$FA,$03,$EC,$53,$E3,$A3,$B1,$F7,$22,$B1,$E9,$04,$43,$43,$43
+                db $43,$43,$43
+                db $FE,$02
                 dw MusThemeTaraB1
 Mus_ThemeTaraB2:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared2
-                db 0FEh,   3
+                db $FE,$03
                 dw Mus_ThemeTaraB2
-                db 0EFh,0FAh,   3,0ECh, 53h,0E3h, 63h, 71h,0F8h, 22h, 71h,0F9h,   3,0ECh, 63h,0E2h
-                db  77h, 67h,0FAh, 20h, 23h,0F7h,   0, 23h,0F6h,   0, 23h,0F5h,   0, 23h,0F4h,   0
-                db  23h,0F3h,   0, 23h
+                db $EF,$FA,$03,$EC,$53,$E3,$63,$71,$F8,$22,$71,$F9,$03,$EC,$63,$E2
+                db $77,$67,$FA,$20,$23,$F7,$00,$23,$F6,$00,$23,$F5,$00,$23,$F4,$00
+                db $23,$F3,$00,$23
 MusThemeTaraB3:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E2h, 33h, 41h,0F8h, 22h, 41h,0F9h,   3,0ECh, 72h,0E1h
-                db    7,0E2h,0B7h, 97h
-                db 0FEh,   2
+                db $EF,$FA,$03,$EC,$53,$E2,$33,$41,$F8,$22,$41,$F9,$03,$EC,$72,$E1
+                db $07,$E2,$B7,$97
+                db $FE,$02
                 dw MusThemeTaraB3
 MusThemeTaraB4:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared2
-                db 0FEh,   2
+                db $FE,$02
                 dw MusThemeTaraB4
 MusThemeTaraB5:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared3
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared3
-                db 0FAh, 12h,0B1h,0B1h,0B1h,0F9h, 21h,0B1h
-                db 0FEh,0FFh
+                db $FA,$12,$B1,$B1,$B1,$F9,$21,$B1
+                db $FE,$FF
                 dw ThemeOfTaraShared4
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared4
-                db 0FAh, 12h,   1,   1,   1,0F9h, 21h,   1
-                db 0FEh,   2
+                db $FA,$12,$01,$01,$01,$F9,$21,$01
+                db $FE,$02
                 dw MusThemeTaraB5
 MusThemeTaraB6:
-                db 0F6h,   0,0ECh, 61h,0E1h, 50h,0F7h,   0, 50h,0F8h,   0, 50h,0F9h,   3, 5Ch,0F6h
-                db    0, 40h,0F7h,   0, 40h,0F8h,   0, 40h,0F9h,   3, 4Ch
-                db 0FEh,   2
+                db $F6,$00,$EC,$61,$E1,$50,$F7,$00,$50,$F8,$00,$50,$F9,$03,$5C,$F6
+                db $00,$40,$F7,$00,$40,$F8,$00,$40,$F9,$03,$4C
+                db $FE,$02
                 dw MusThemeTaraB6
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared8
-                db  61h, 61h, 61h, 61h
-                db 0FEh,0FFh
+                db $61,$61,$61,$61
+                db $FE,$FF
                 dw ThemeOfTaraShared8
-                db  71h, 71h, 71h, 71h
+                db $71,$71,$71,$71
 MusThemeTaraB7:
-                db 0EFh,0E9h,   5, 41h
-                db 0FEh, 10h
+                db $EF,$E9,$05,$41
+                db $FE,$10
                 dw MusThemeTaraB7
 MusThemeTaraB8:
-                db 0EFh,0E9h,   5, 51h
-                db 0FEh, 10h
+                db $EF,$E9,$05,$51
+                db $FE,$10
                 dw MusThemeTaraB8
 MusThemeTaraB9:
-                db  41h
-                db 0FEh,   8
+                db $41
+                db $FE,$08
                 dw MusThemeTaraB9
 MusThemeTaraB10:
-                db  21h
-                db 0FEh,   8
+                db $21
+                db $FE,$08
                 dw MusThemeTaraB10
-                db    1,   1,   1,   1,   0,0E9h,   4, 70h,0E9h,   5,   0, 40h, 70h, 40h,   0, 40h
-                db  21h, 21h, 21h, 21h, 20h,0E9h,   4, 90h,0E9h,   5, 20h, 60h, 90h, 60h, 20h, 60h
-                db 0EFh,0FCh, 33h
+                db $01,$01,$01,$01,$00,$E9,$04,$70,$E9,$05,$00,$40,$70,$40,$00,$40
+                db $21,$21,$21,$21,$20,$E9,$04,$90,$E9,$05,$20,$60,$90,$60,$20,$60
+                db $EF,$FC,$33
 MusThemeTaraB11:
-                db 0E4h, 41h, 40h, 40h
-                db 0FEh,   8
+                db $E4,$41,$40,$40
+                db $FE,$08
                 dw MusThemeTaraB11
 MusThemeTaraB12:
-                db  51h, 50h, 50h
-                db 0FEh,   8
+                db $51,$50,$50
+                db $FE,$08
                 dw MusThemeTaraB12
-                db  42h, 40h,0B1h,0E3h, 43h,0E4h, 41h,0B1h,0E3h, 41h,0E4h, 22h, 20h, 91h,0E3h, 23h
-                db 0E4h, 21h, 91h,0E3h, 21h,0FCh, 2Fh,0E3h,   0,   2,0F9h, 2Fh,   0,   2,0F7h, 2Fh
-                db    0,   2,0F5h, 2Fh,   0,   2,0FBh, 2Fh, 20h, 22h,0F9h, 2Fh, 20h, 22h,0F7h, 2Fh
-                db  20h, 22h,0F5h, 2Fh, 20h, 22h, 20h, 22h, 20h, 22h, 20h, 20h
-                db 0FEh,0FEh
+                db $42,$40,$B1,$E3,$43,$E4,$41,$B1,$E3,$41,$E4,$22,$20,$91,$E3,$23
+                db $E4,$21,$91,$E3,$21,$FC,$2F,$E3,$00,$02,$F9,$2F,$00,$02,$F7,$2F
+                db $00,$02,$F5,$2F,$00,$02,$FB,$2F,$20,$22,$F9,$2F,$20,$22,$F7,$2F
+                db $20,$22,$F5,$2F,$20,$22,$20,$22,$20,$22,$20,$20
+                db $FE,$FE
                 dw Mus_ThemeTaraB2
 ;----------------------------------------------------------------------------
 ; Intro Theme of Tara (C)
 ;----------------------------------------------------------------------------
 Mus_IntroTaraC:
-                db 0D7h,0FBh, 21h,0E3h,0C1h,0CFh,0B3h,0E9h,   1, 30h, 30h, 10h,0EFh,0B0h,0B1h,0B1h
-                db 0E2h, 21h, 71h, 42h, 40h, 93h, 73h, 71h, 71h
+                db $D7,$FB,$21,$E3,$C1,$CF,$B3,$E9,$01,$30,$30,$10,$EF,$B0,$B1,$B1
+                db $E2,$21,$71,$42,$40,$93,$73,$71,$71
 MusIntroThemeTaraC1:
-                db 0FAh, 11h, 40h,0E3h,0B0h, 90h
-                db 0FEh,   5
+                db $FA,$11,$40,$E3,$B0,$90
+                db $FE,$05
                 dw MusIntroThemeTaraC1
-                db  40h,0B0h,0E2h, 30h, 60h, 90h,0B0h,0E1h, 30h, 60h, 90h,0F7h,   0,0B2h,0F6h,   0
-                db 0B2h,0F5h,   0,0B2h,0F4h,   0,0B2h,0CFh
+                db $40,$B0,$E2,$30,$60,$90,$B0,$E1,$30,$60,$90,$F7,$00,$B2,$F6,$00
+                db $B2,$F5,$00,$B2,$F4,$00,$B2,$CF
 ;----------------------------------------------------------------------------
 ; Theme of Tara (C)
 ;----------------------------------------------------------------------------
 Mus_ThemeTaraC:
-                db 0EFh,0D7h,0C3h
+                db $EF,$D7,$C3
 MusThemeTaraC1:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E3h, 63h, 71h,0F7h, 22h, 71h,0E9h,   1,0B3h,0B3h,0B3h
-                db 0B3h,0B3h,0B3h
-                db 0FEh,   2
+                db $EF,$FA,$03,$EC,$53,$E3,$63,$71,$F7,$22,$71,$E9,$01,$B3,$B3,$B3
+                db $B3,$B3,$B3
+                db $FE,$02
                 dw MusThemeTaraC1
 
 Mus_ThemeTaraC2:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared5
 
-                db 0FEh,   3
+                db $FE,$03
                 dw Mus_ThemeTaraC2
-                db 0EFh,0FAh,   3,0ECh, 53h,0E3h,0A3h,0B1h,0F7h, 22h,0B1h,0E8h,0F7h,   3,0E2h, 79h
-                db  65h,0F8h, 20h, 23h,0F5h,   0, 23h,0F4h,   0, 23h,0F3h,   0, 23h,0F2h,   0, 27h
+                db $EF,$FA,$03,$EC,$53,$E3,$A3,$B1,$F7,$22,$B1,$E8,$F7,$03,$E2,$79
+                db $65,$F8,$20,$23,$F5,$00,$23,$F4,$00,$23,$F3,$00,$23,$F2,$00,$27
 
 MusThemeTaraC3:
-                db 0EFh,0FAh,   3,0ECh, 53h,0E3h,0B3h,0E2h,   1,0F7h, 22h,   1,0F8h,   3,0ECh, 72h
-                db  97h, 87h, 47h
-                db 0FEh,   2
+                db $EF,$FA,$03,$EC,$53,$E3,$B3,$E2,$01,$F7,$22,$01,$F8,$03,$EC,$72
+                db $97,$87,$47
+                db $FE,$02
                 dw MusThemeTaraC3
 
 MusThemeTaraC4:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared5
 
-                db 0FEh,   2
+                db $FE,$02
                 dw MusThemeTaraC4
 
 MusThemeTaraC5:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared6
 
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw ThemeOfTaraShared6
-                db 0FAh, 12h, 51h, 51h, 51h,0F9h, 21h, 51h
+                db $FA,$12,$51,$51,$51,$F9,$21,$51
 
-                db 0FEh,   4
+                db $FE,$04
                 dw MusThemeTaraC5
 
 MusThemeTaraC6:
-                db 0EFh,0F6h,   0,0ECh, 61h,0E2h,0B0h,0F7h,   0,0B0h,0F8h,   0,0B0h,0F9h,   3,0BCh
-                db 0F6h,   0,0E1h, 10h,0F7h,   0, 10h,0F8h,   0, 10h,0F9h,   3, 1Ch
+                db $EF,$F6,$00,$EC,$61,$E2,$B0,$F7,$00,$B0,$F8,$00,$B0,$F9,$03,$BC
+                db $F6,$00,$E1,$10,$F7,$00,$10,$F8,$00,$10,$F9,$03,$1C
 
-                db 0FEh,   2
+                db $FE,$02
                 dw MusThemeTaraC6
-                db 0E8h,0F9h,   2,0ECh, 62h,0E2h, 53h,   1, 51h, 51h,   1, 51h,0E1h,   3,0E2h, 61h
-                db  11h, 61h, 61h, 11h, 61h,0E1h, 13h,0E2h, 51h,   1, 51h, 51h,   1, 51h,0E1h,   3
-                db 0E2h, 61h, 11h, 61h,0E1h, 11h,0E2h, 71h, 21h, 71h,0F9h, 12h,0ECh, 54h,0E3h, 9Bh
-                db 0B3h,0E2h, 45h, 25h,0E3h,0B3h,0E2h,   5,   1, 5Fh, 43h, 53h, 7Bh, 73h, 65h, 45h
-                db  23h, 40h, 20h, 0Bh,   1,0E3h, 91h, 91h, 9Bh,0ECh, 53h,0E3h, 75h, 45h,0FAh, 12h
-                db 0E2h, 73h, 75h, 65h, 43h,   5,   1, 5Fh,0E3h,0B3h, 93h, 75h, 71h, 77h, 65h, 61h
-                db  67h,0FBh, 2Fh,0E3h, 40h, 42h,0F9h, 2Fh, 40h, 42h,0F7h, 2Fh, 40h, 42h,0F5h, 2Fh
-                db  40h, 42h,0FBh, 2Fh, 60h, 62h,0F9h, 2Fh, 60h, 62h,0F7h, 2Fh, 60h, 62h,0F5h, 2Fh
-                db  60h, 62h, 60h, 62h, 60h, 62h, 60h, 60h
+                db $E8,$F9,$02,$EC,$62,$E2,$53,$01,$51,$51,$01,$51,$E1,$03,$E2,$61
+                db $11,$61,$61,$11,$61,$E1,$13,$E2,$51,$01,$51,$51,$01,$51,$E1,$03
+                db $E2,$61,$11,$61,$E1,$11,$E2,$71,$21,$71,$F9,$12,$EC,$54,$E3,$9B
+                db $B3,$E2,$45,$25,$E3,$B3,$E2,$05,$01,$5F,$43,$53,$7B,$73,$65,$45
+                db $23,$40,$20,$0B,$01,$E3,$91,$91,$9B,$EC,$53,$E3,$75,$45,$FA,$12
+                db $E2,$73,$75,$65,$43,$05,$01,$5F,$E3,$B3,$93,$75,$71,$77,$65,$61
+                db $67,$FB,$2F,$E3,$40,$42,$F9,$2F,$40,$42,$F7,$2F,$40,$42,$F5,$2F
+                db $40,$42,$FB,$2F,$60,$62,$F9,$2F,$60,$62,$F7,$2F,$60,$62,$F5,$2F
+                db $60,$62,$60,$62,$60,$62,$60,$60
 
-                db 0FEh,0FEh
+                db $FE,$FE
                 dw Mus_ThemeTaraC2

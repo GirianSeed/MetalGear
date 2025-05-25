@@ -354,10 +354,10 @@ SetRoomEntryX:
                 ret
 
 EntryRoomXY:
-                dw 0B800h
-                dw 1200h
-                dw 0F200h
-                dw 0C00h
+                dw $B800
+                dw $1200
+                dw $F200
+                dw $0C00
 
 ;----------------------------------------------------------------------------
 ;
@@ -451,25 +451,25 @@ SetPlayerInDoor4:
 ;
 ;---------------------------------------------------------------------------
 PlayerInDoorDat:
-                db  28h, 0Ch,   2
-                db 0F8h, 10h,   1
-                db  30h, 10h,   4
-                db  30h,0F6h,   3
-                db  28h, 0Ch,   2
-                db    0,   0,   0
-                db  28h, 10h,   2
-                db 0F8h, 10h,   1
-                db  30h, 18h,   4
-                db  30h, 10h,   4
-                db  30h,0F6h,   3
-                db  28h, 10h,   2
-                db 0F8h, 10h,   1
-                db  30h, 18h,   4
-                db  30h,0F8h,   3
-                db  30h,0F6h,   3
-                db  30h,0F6h,   3
-                db  30h,0F6h,   3
-                db  30h, 10h,   2
+                db $28,$0C,DIR_DOWN
+                db $F8,$10,DIR_UP
+                db $30,$10,DIR_RIGHT
+                db $30,$F6,DIR_LEFT
+                db $28,$0C,DIR_DOWN
+                db $00,$00,$00
+                db $28,$10,DIR_DOWN
+                db $F8,$10,DIR_UP
+                db $30,$18,DIR_RIGHT
+                db $30,$10,DIR_RIGHT
+                db $30,$F6,DIR_LEFT
+                db $28,$10,DIR_DOWN
+                db $F8,$10,DIR_UP
+                db $30,$18,DIR_RIGHT
+                db $30,$F8,DIR_LEFT
+                db $30,$F6,DIR_LEFT
+                db $30,$F6,DIR_LEFT
+                db $30,$F6,DIR_LEFT
+                db $30,$10,DIR_DOWN
 
 ;----------------------------------------------------------------------------
 ; Set parachute mode

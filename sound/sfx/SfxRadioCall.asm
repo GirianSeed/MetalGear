@@ -1,7 +1,7 @@
 Sfx_RadioCall:
-                db 0FEh,   0
+                db $FE,$00
 SfxRadioCall2:
-                db  22h,   1,0A0h,0CAh,0A0h,0A9h,0A1h,   0
-                db 0FEh,   6
+                db $22,$01,$A0,$CA,$A0,$A9,$A1,$00
+                db $FE,$06
                 dw SfxRadioCall2
-                db 0FFh
+                db $FF

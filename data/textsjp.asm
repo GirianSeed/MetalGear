@@ -169,463 +169,463 @@ idxTexts:
 ; Texts
 ;
 ;----------------------------------------------------------------------------
-txt001:         db    0, 69h, 62h, 6Fh, 61h, 6Fh, 98h, 3Eh,0FFh
-txt002:         db  13h,0A1h,0A4h,0A8h,0FEh, 4Fh, 50h, 45h, 52h, 41h, 54h, 49h, 4Fh, 4Eh,   0, 49h
-                db  4Eh, 54h, 52h, 55h, 44h, 45h,   0, 4Eh, 33h, 31h, 33h, 5Dh,0FEh, 72h, 66h,   0
-                db  85h, 62h, 6Ah, 61h,   0,0B2h, 75h,   0,0ECh, 5Eh,0DAh,0FEh,0B1h, 8Ch,   0,0F3h
-                db  6Dh, 85h, 3Dh,0FDh, 7Eh, 6Ch, 98h, 79h,   0, 6Bh, 96h, 62h, 6Eh, 67h,   0, 8Ch
-                db    0, 6Fh, 93h, 6Fh, 5Eh,0FEh,0A9h, 73h,   0,0E8h, 5Eh,0FEh,0DAh, 5Eh,0B1h, 78h
-                db 0FEh, 6Bh, 96h, 62h, 6Fh, 61h,   0, 8Ch,   0, 6Ah, 67h, 98h, 89h, 5Dh,0FEh,0FDh
-                db  61h, 69h, 98h,   0, 78h,   0,0F5h, 79h,   0,0DCh,0FEh, 31h, 32h, 30h, 38h, 35h
-                db    0, 72h, 98h,   0, 64h, 69h, 74h, 62h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt003:         db    3,0A1h,0A4h,0A8h,0FEh, 75h, 8Dh, 80h,   0, 79h,   0,0ECh, 6Fh, 98h, 5Dh,0FEh
-                db  67h, 89h, 67h, 98h, 89h, 82h,   0, 72h, 66h, 75h,   0, 7Fh, 71h, 65h, 86h, 76h
-                db    0, 85h, 62h,   0, 75h,0FEh, 69h, 62h, 73h, 98h, 62h,   0, 6Bh, 8Ah, 5Dh,0FEh
-                db 0A8h,0A6h,0FFh
-txt004:         db  13h,0A1h,0A4h,0A8h,0FEh,0E5h, 79h,   0, 72h, 66h,   0, 78h,   0,0E4h, 5Eh,0FEh
-                db  7Bh, 98h, 66h, 69h,   0, 65h, 86h,   0, 62h, 79h, 98h, 63h, 3Dh,0FEh,0E0h, 79h
-                db    0, 7Fh, 79h, 87h,   0, 65h, 86h, 5Eh, 62h, 79h, 98h, 63h, 3Eh,0FDh,0D6h, 8Ch
-                db    0, 60h, 68h, 88h,   0, 75h, 79h,0FEh,0BBh, 65h, 98h,   0,0E6h,0FEh,0BBh, 8Ch
-                db    0, 6Ah, 65h, 98h, 6Dh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt005:         db    3,0A1h,0A4h,0A8h,0FEh,0E1h, 75h,   0, 78h, 88h, 73h,   0,0E7h, 65h, 8Dh,   0
-                db  78h,   0,0F6h, 65h, 98h,   0, 72h, 98h, 66h, 88h, 5Dh,0E1h, 78h,0FEh, 61h, 70h
-                db    0, 8Ch,   0, 64h, 7Dh, 98h, 63h, 88h,   0, 69h, 73h, 6Fh, 98h, 5Dh,0FEh,0A8h
-                db 0A6h,0FFh
-txt006:         db    0, 62h, 69h, 98h, 67h, 74h, 3Eh,0FFh
-txt007:         db    0, 89h, 8Dh, 69h, 62h, 6Ch, 88h, 3Dh,0FFh
-txt008:         db    4,0CAh,0D9h,0FFh
-txt009:         db    3,0A1h,0A4h,0A8h,0FEh,0CAh, 5Bh,0FEh, 7Ah, 6Bh, 98h, 96h, 62h,   0, 85h, 62h
-                db    0, 6Bh, 96h, 67h, 87h, 96h, 62h,   0, 6Fh, 98h, 5Dh,0FEh, 6Ch, 67h, 98h,   0
-                db  75h,   0, 6Fh, 7Ch, 98h, 6Ch, 98h,   0, 75h,   0, 78h, 69h, 6Bh, 72h,   0, 64h
-                db  68h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt010:         db    3,0A1h,0A2h,0A8h,0FEh, 64h, 62h, 73h, 62h,   0, 77h, 65h, 98h, 61h,   0, 7Eh
-                db  6Ch, 5Dh,0FFh
-txt011:         db    4,0BBh, 31h,0FEh,0D9h,0FFh
-txt012:         db  13h,0A1h,0A4h,0A8h,0FEh,0BBh, 5Bh,0FEh,0D6h, 8Ch,   0, 60h, 68h, 88h,   0,0BBh
-                db  6Fh, 98h, 5Dh,0FDh,0D6h, 75h,   0, 85h, 93h, 72h, 5Eh,0FEh,0BBh, 74h, 8Dh, 79h
-                db  98h, 40h,   0, 65h, 98h,   0, 70h, 65h, 98h, 62h, 5Dh,0FEh,0E3h, 5Dh,0FEh,0A8h
-                db 0A6h,0FFh
-txt013:         db    4,0C4h,0FEh,0D9h,0FFh
-txt014:         db  13h,0A1h,0A4h,0A8h,0FEh,0C4h, 5Bh,0FDh, 6Bh, 95h, 62h, 61h,   0, 8Ch,   0, 7Fh
-                db  88h, 73h, 66h,   0, 75h,   0,0EAh, 5Dh,0FEh, 73h, 64h, 67h,   0, 78h,   0, 70h
-                db  68h, 61h,   0, 83h,   0, 72h, 66h,   0, 78h,   0, 79h, 61h, 70h,   0, 65h, 98h
-                db  8Bh, 65h, 88h, 5Dh, 71h, 77h, 75h,   0,0C4h, 8Ch,0FEh, 71h, 65h, 62h, 85h, 62h
-                db    0, 75h,   0, 69h, 69h, 8Ah,   0, 65h, 98h, 68h, 8Ah, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt015:         db    3,0A8h, 66h, 69h, 63h, 88h, 65h, 5Bh,0FEh,0A2h,0A8h,0FEh,0FCh, 6Bh, 74h, 8Dh
-                db 0A8h,0FEh, 61h, 71h, 65h, 5Eh, 68h, 93h, 70h, 94h, 67h,   0, 8Ch,   0, 71h, 68h
-                db  85h, 62h, 5Dh,0FDh, 61h, 71h, 78h, 7Ah, 65h,0A8h,0FEh, 7Eh, 6Fh,   0, 60h, 64h
-                db  62h, 3Dh,0FFh
-txt016:         db    4,0CDh,0FEh,0D9h,0FFh
-txt017:         db  13h,0A1h,0A4h,0A8h,0FEh,0CDh, 5Bh,0FEh, 42h, 45h, 4Ch, 4Ch, 45h, 54h, 41h,   0
-                db  4Dh, 39h, 32h, 46h,0A8h,0FDh,0DFh, 5Dh,0FEh,0E0h, 8Ch,   0,0EDh, 5Dh,0FEh, 6Fh
-                db  7Eh,   0, 79h,   0, 80h, 6Fh, 98h, 71h, 98h, 65h, 61h,   0, 6Ch, 88h, 74h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt018:         db    4,0C2h,0D9h,0FFh
-txt019:         db    3,0A1h,0A4h,0A8h,0FEh,0C2h, 5Bh,0FEh,0DFh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt020:         db    3,0A1h,0A4h,0A8h,0FEh,0ABh, 65h, 98h,   0, 61h, 88h, 79h, 6Ch, 98h,   0, 6Fh
-                db  98h, 5Dh,0FEh, 80h, 6Dh, 8Dh,   0, 72h, 98h,   0,0E8h, 6Bh, 72h, 7Fh, 8Ah, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt021:         db    4,0E0h,0D9h,0FFh
-txt022:         db    3,0A1h,0A4h,0A8h,0FEh,0E0h, 79h,   0, 82h, 72h, 88h,   0, 65h, 6Ch, 98h,   0
-                db  75h,   0, 6Dh, 61h, 68h, 98h, 8Dh,   0,0FEh, 65h, 98h,   0, 60h, 88h, 5Dh,0FEh
-                db 0E3h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt023:         db  13h,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FDh,0F7h, 78h,   0, 74h, 61h, 7Bh, 98h,   0
-                db  75h,   0, 71h, 61h, 72h,   0, 65h, 98h, 61h, 73h, 98h,   0, 6Ch, 88h, 5Dh,0FEh
-                db 0DCh, 31h, 32h, 30h, 37h, 39h,   0, 72h, 98h,0FEh,0F5h, 6Ah, 89h, 6Fh, 6Bh, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt024:         db    3,0A1h,0A4h,0A8h,0FEh, 65h, 8Dh, 6Bh, 65h, 81h, 86h,   0, 75h,   0,0E3h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt025:         db  13h,0A1h,0A4h,0A8h,0FEh,0E2h, 5Eh,0FEh, 65h, 98h, 6Ch, 70h, 6Fh, 61h,   0, 72h
-                db  98h, 79h,   0,0C1h, 65h, 98h,0FEh,0E6h,0FDh,0C1h, 78h,   0, 60h, 87h, 65h,   0
-                db  79h,0FEh,0ABh,0ACh,0ADh, 65h, 98h,   0, 6Bh, 93h, 72h, 61h, 88h,   0, 79h, 6Ch
-                db  98h, 6Fh, 98h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt026:         db    3,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FEh,0C1h, 79h,   0, 31h, 46h,   0, 78h,   0
-                db  7Fh, 74h, 7Fh,   0, 75h,   0, 60h, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt027:         db  11h,0D7h,0FDh,0DCh, 31h, 32h, 30h, 33h, 33h,   0, 72h, 98h,0FEh,0ABh, 78h,   0
-                db 0AAh, 65h, 98h,0FEh,0E9h, 6Bh, 72h, 67h, 89h, 88h, 5Dh,0FDh,0AAh, 79h,   0, 72h
-                db  66h,   0, 78h,   0, 6Bh, 98h, 96h, 62h, 7Dh, 62h, 75h,   0, 67h, 8Bh, 6Bh, 61h
-                db  79h, 6Ch, 98h,   0, 6Fh, 98h, 5Dh,0FFh
-txt028:         db    0,0D7h,0FFh
-txt029:         db    4,0D3h,0FEh,0D9h,0FFh
-txt030:         db  13h,0A1h,0A4h,0A8h,0FEh,0D3h, 5Bh,0FDh, 87h, 82h, 69h, 8Dh,   0, 6Eh, 62h, 6Ah
-                db    0, 72h, 98h, 66h, 88h,   0, 7Fh, 6Ah, 61h, 88h,   0, 6Fh, 98h, 5Dh,0FEh, 6Bh
-                db  96h, 62h, 65h, 98h, 61h, 7Bh, 98h, 71h,   0, 78h,0FEh, 64h, 64h, 61h,   0,0F9h
-                db  72h, 98h,   0,0EAh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt031:         db    3,0A1h, 86h, 6Bh, 98h, 64h,   0, 4Bh, 4Eh, 4Bh, 5Dh,0FEh, 87h, 8Dh, 6Bh, 98h
-                db  75h, 95h, 40h, 6Ch,   0, 8Ch,   0, 82h, 62h, 6Bh, 60h, 68h, 98h, 7Eh, 6Ch, 5Dh
-                db 0FDh, 7Dh, 8Dh, 6Bh, 98h, 71h,   0, 7Fh, 81h, 61h, 5Eh, 53h, 4Fh, 55h, 54h, 48h
-                db    0, 41h, 46h, 52h, 49h, 43h, 41h,   0, 47h, 41h, 4Ch, 5Ah, 42h, 55h, 52h, 47h
-                db    0, 7Bh, 66h, 8Dh,   0, 72h, 98h,   0, 6Fh, 98h, 61h, 66h, 7Dh, 98h,   0, 74h
-                db 0FEh, 6Bh, 98h, 6Bh, 8Dh,   0, 65h, 98h,   0, 60h, 93h, 6Fh, 82h, 85h, 62h,0A8h
-                db 0FFh
-txt032:         db  11h,0D7h,0FDh, 6Ch, 62h, 6Bh, 98h, 71h,   0, 7Eh, 63h,   0, 75h,   0,0ECh,0FEh
-                db  6Bh, 72h, 66h, 6Fh,   0,0B0h,0FEh, 74h, 86h, 5Eh, 7Bh, 98h, 6Bh, 98h, 6Fh, 98h
-                db  5Dh,0FDh, 83h, 71h, 86h,   0, 75h,   0, 73h, 86h, 63h, 86h, 89h,   0, 72h,   0
-                db  61h, 88h, 5Dh,0FFh
-txt033:         db    0,0D2h,0FFh
-txt034:         db    0,0D5h,0FFh
-txt035:         db    1,0B0h, 65h, 98h,0FEh,0ECh, 6Bh, 72h, 61h, 88h,   0, 86h, 6Bh, 61h, 5Dh,0FEh
-                db  6Dh, 98h, 93h, 6Fh, 61h,   0, 75h,   0, 73h, 64h, 6Ch, 74h, 3Dh,0FFh
-txt036:         db    3,0A1h,0A4h,0A8h,0FEh, 46h, 55h, 4Eh, 43h, 54h, 49h, 4Fh, 4Eh,   0, 4Bh, 45h
-                db  59h,   0, 78h,   0, 6Dh, 71h, 81h, 61h,   0, 8Ch,0FEh, 6Ch, 88h, 5Dh,0FEh, 46h
-                db  31h,   0,0B3h, 7Dh, 97h, 40h, 6Ch, 98h, 5Dh,0FDh, 46h, 32h,   0,0B3h, 7Bh, 98h
-                db  66h,   0, 6Dh, 89h, 67h, 73h, 5Dh,0FEh, 46h, 33h,   0,0B3h, 6Eh, 62h, 7Ah, 98h
-                db 0FEh, 6Dh, 89h, 67h, 73h, 5Dh,0FEh, 46h, 34h,   0,0B3h, 80h, 6Dh, 8Dh,   0, 82h
-                db  40h, 73h, 98h, 5Dh,0FDh, 85h, 67h, 5Eh, 60h, 6Fh, 7Eh,   0, 75h,   0, 61h, 89h
-                db  72h,   0, 64h, 67h, 69h, 73h,   0, 6Fh, 98h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt037:         db    4,0BBh, 32h,0FEh,0D9h,0FFh
-txt038:         db  13h,0A1h,0A4h,0A8h,0FEh,0E2h, 5Eh, 69h, 62h, 60h, 71h, 72h, 98h, 8Dh, 87h, 95h
-                db  62h,   0, 79h,0FEh, 72h, 98h, 8Dh, 68h, 98h, 8Dh,   0, 79h, 97h, 77h, 88h,   0
-                db  8Ch,   0,0F3h, 6Dh, 85h, 5Dh,0FDh,0D3h, 8Ch,   0, 71h, 65h, 62h, 78h, 6Fh, 98h
-                db  5Dh,0FEh,0D3h, 78h,   0, 60h, 87h, 65h,   0, 79h,0FEh,0ABh,0ACh,0ADh,0FEh, 65h
-                db  98h,   0, 6Bh, 93h, 72h, 61h, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt039:         db    3,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FEh,0D3h, 79h,   0, 6Dh, 61h, 74h, 8Dh,   0
-                db  75h,   0, 60h, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt040:         db    4,0CCh,0FEh,0D9h,0FFh
-txt041:         db    3,0A1h,0A4h,0A8h,0FEh,0CCh, 5Bh,0FEh, 7Ah, 93h, 69h, 6Bh,   0, 72h, 98h, 82h
-                db    0, 6Ch, 88h, 78h, 65h, 5Bh,0FEh,0A8h,0A6h,0FFh
-txt042:         db    3,0A1h,0A4h,0A8h,0FEh,0E2h, 5Eh,0DEh, 79h,0FEh, 62h, 61h, 8Dh, 73h, 98h, 5Ch
-                db  79h, 98h, 87h, 60h,   0, 65h, 98h, 5Eh, 79h, 86h, 89h, 72h, 61h, 88h, 5Dh,0FEh
-                db 0BDh, 8Ch,   0, 6Ah, 65h, 98h, 6Dh, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt043:         db    4,0D4h,0FEh,0D9h,0FFh
-txt044:         db    3,0A1h,0A4h,0A8h,0FEh,0D4h, 5Bh,0FEh, 69h, 89h,   0, 8Ch,   0, 71h, 68h, 88h
-                db  73h, 5Eh, 6Bh, 98h, 95h, 62h, 6Dh, 61h,   0, 65h, 98h,   0, 68h, 6Dh, 88h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt045:         db 3
-                db  65h, 8Bh, 87h, 7Eh, 6Bh, 72h,0FEh,0B1h, 53h, 54h, 41h, 46h, 46h,0FEh, 6Bh, 96h
-                db  62h, 65h, 61h,0A8h,0FDh,   0,   0,   0,   0,   0, 4Dh, 41h, 49h, 4Eh,   0, 50h
-                db  52h, 4Fh, 47h, 52h, 41h, 4Dh,0FEh,0FEh,   0,   0,   0,   0, 48h, 49h, 52h, 4Fh
-                db  59h, 55h, 4Bh, 49h,   0, 46h, 55h, 4Bh, 55h, 49h,0FEh,0FDh,   0,   0,   0,   0
-                db    0,   0, 53h, 55h, 42h,   0, 50h, 52h, 4Fh, 47h, 52h, 41h, 4Dh,0FEh,0FEh,   0
-                db    0,   0,   0, 54h, 4Fh, 4Dh, 4Fh, 4Eh, 4Fh, 52h, 49h,   0, 4Fh, 54h, 53h, 55h
-                db  4Bh, 41h,0FEh,   0,   0,   0,   0,   0, 4Bh, 4Fh, 4Ah, 49h,   0, 54h, 4Fh, 59h
-                db  4Fh, 48h, 41h, 52h, 41h,0FDh,   0,   0,   0,   0, 47h, 52h, 41h, 50h, 48h, 49h
-                db  43h,   0, 44h, 45h, 53h, 49h, 47h, 4Eh,0FEh,0FEh,   0,   0,   0,   0,   0, 4Dh
-                db  41h, 53h, 41h, 4Dh, 49h,   0, 54h, 41h, 42h, 41h, 54h, 41h,0FEh,   0,   0,   0
-                db    0,   0, 41h, 5Ah, 55h, 53h, 41h,   0, 46h, 55h, 4Ah, 49h, 4Dh, 4Fh, 54h, 4Fh
-                db 0FDh,   0,   0,   0, 4Dh, 41h, 49h, 4Eh,   0, 53h, 4Fh, 55h, 4Eh, 44h,   0, 45h
-                db  46h, 46h, 45h, 43h, 54h,0FEh,0FEh,   0,   0,   0,   0,   0,   0, 49h, 4Bh, 55h
-                db    0, 4Dh, 49h, 5Ah, 55h, 54h, 41h, 4Eh, 49h,0FDh,   0,   0,   0, 53h, 55h, 42h
-                db    0, 53h, 4Fh, 55h, 4Eh, 44h,   0, 45h, 46h, 46h, 45h, 43h, 54h,0FEh,0FEh,   0
-                db  53h, 48h, 49h, 47h, 45h, 48h, 49h, 52h, 4Fh,   0, 54h, 41h, 4Bh, 45h, 4Eh, 4Fh
-                db  55h, 43h, 48h, 49h,0FEh,   0,   0,   0,   0, 4Dh, 4Fh, 54h, 4Fh, 41h, 4Bh, 49h
-                db    0, 46h, 55h, 52h, 55h, 4Bh, 41h, 57h, 41h,0FDh,   0,   0,   0,   0,   0,   0
-                db  47h, 41h, 4Dh, 45h,   0, 44h, 45h, 53h, 49h, 47h, 4Eh,0FEh,0FEh,   0,   0,   0
-                db    0,   0, 48h, 49h, 44h, 45h, 4Fh,   0, 4Bh, 4Fh, 4Ah, 49h, 4Dh, 41h,0FDh,   0
-                db    0,   0,   0,   0, 50h, 52h, 45h, 53h, 45h, 4Eh, 54h, 45h, 44h,   0,   0, 42h
-                db  59h,0FEh,0FEh,   0,   0,   0,   0,   0,   0,   0,   0, 4Bh, 4Fh, 4Eh, 41h, 4Dh
-                db  49h,0FEh,0FEh,   0,   0,   0,   0,   0,   0,   0,   0,   0, 31h, 39h, 38h, 37h
-                db 0FFh
-txt046:         db    4,0CFh,0FEh,0D9h,0FFh
-txt047:         db    3,0A1h,0A4h,0A8h,0FEh,0CFh,0FEh, 4Dh, 37h, 39h, 5Bh,0FEh,0DFh, 5Dh,0FEh,0A8h
-                db 0A6h,0FFh
-txt048:         db    3,0A1h,0A4h,0A8h,0FEh,0E2h,0C0h, 6Dh, 8Dh, 6Ah, 40h,   0, 75h, 79h,   0,0E3h
-                db  5Dh,0FEh,0C0h,0BFh, 65h, 98h,   0,0E6h,0A8h,0A6h,0FFh
-txt049:         db    3,0A1h,0A4h,0A8h,0FEh, 7Fh, 73h, 64h, 6Bh,   0, 78h,   0, 85h, 61h,   0,0F9h
-                db  79h, 5Eh,0FEh, 65h, 82h, 7Bh, 86h, 40h, 6Bh, 98h, 95h,   0, 65h, 98h,   0,0E6h
-                db 0FEh, 6Fh, 73h, 63h, 79h, 98h, 5Eh, 74h, 75h, 65h,   0, 8Ch,   0, 65h, 7Bh, 98h
-                db  88h,   0, 73h, 65h,0A8h,0FEh,0A8h,0A6h,0FFh
-txt050:         db  13h,0A1h,0A4h,0A8h,0FEh, 6Eh, 62h, 7Ah, 98h,   0, 8Ch,   0, 72h, 8Dh, 68h, 8Dh
-                db    0, 6Bh, 72h, 7Fh, 8Ah, 3Eh,0FDh, 72h, 66h,   0, 75h,   0, 79h, 93h, 6Bh, 8Dh
-                db  66h,   0, 65h,   0, 74h, 75h, 65h, 5Eh,0FEh, 73h, 87h, 71h, 68h, 86h, 89h, 72h
-                db    0, 79h,   0, 61h, 74h, 61h, 65h, 5Bh,0FEh,0A8h,0A6h,0FFh
-txt051:         db    3,0A1h,0ADh,0A8h,0FEh,0BDh, 79h,   0, 70h, 65h,   0, 75h,   0, 60h, 88h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt052:         db  11h,0D7h,0FDh,0A9h, 73h, 65h, 61h, 62h,0FEh,0B0h, 74h, 86h,0A8h,0FDh,0EBh, 75h
-                db    0, 65h, 8Dh, 66h, 8Dh,   0, 6Ah, 89h, 72h,   0, 61h, 88h, 79h, 6Ch, 98h, 6Fh
-                db  98h, 5Dh,0FFh
-txt053:         db    3,0A1h,0ADh,0A8h,0FEh,0EBh, 5Bh,0FEh, 6Ah, 98h, 8Dh, 77h, 8Dh,   0, 74h, 65h
-                db  98h, 86h, 5Eh, 6Bh, 86h, 74h, 61h,0A8h,0FEh,0A8h,0A6h,0FFh
-txt054:         db  11h,0D7h,0FDh,0EBh, 75h,   0, 70h, 65h, 71h, 98h, 67h,0FEh, 61h, 70h, 79h, 98h
-                db  8Dh,   0, 78h,   0, 7Dh, 62h, 7Dh, 62h,   0, 79h,   0, 72h, 66h,   0, 75h,0FEh
-                db  8Bh, 6Ah, 98h, 73h,   0, 71h, 65h, 7Eh, 88h,   0, 69h, 73h, 6Fh, 98h,0A8h,0FFh
-txt055:         db    4,0BBh, 34h,0FEh,0D9h,0FFh
-txt056:         db    4,0CEh,0FEh,0D9h,0FFh
-txt057:         db    3,0A1h,0A4h,0A8h,0FEh,0CEh, 5Bh,0FEh, 49h, 4Eh, 47h, 52h, 55h, 4Dh,   0, 4Dh
-                db  41h, 43h,   0, 31h, 31h,0A8h,0FEh,0DFh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt058:         db  13h,0A1h,0A4h,0A8h,0FEh,0ECh, 6Dh, 61h, 69h, 62h,   0, 6Fh, 98h, 5Dh,0FEh,0A9h
-                db  78h,   0, 73h, 98h, 67h, 7Dh, 98h, 62h,   0, 8Ch,0FEh,0EDh, 5Dh,0FDh, 65h, 7Ch
-                db  98h,   0, 8Ch,   0, 6Bh, 86h, 7Ch, 98h, 72h,   0, 7Fh, 8Ah, 3Eh,0FEh,0A8h,0A6h
-                db 0FFh
-txt059:         db  12h, 85h, 67h, 66h, 72h, 67h, 89h, 6Fh,0A8h, 6Bh, 8Dh, 61h, 87h, 5Dh,0FEh,0A9h
-                db  6Fh, 98h, 5Dh,0FDh,0DAh,0FEh,0B1h, 73h, 79h,0FEh, 60h, 86h, 84h, 88h,   0, 70h
-                db  68h, 61h,   0, 75h,   0, 6Fh, 61h, 64h, 62h,0FEh,0F8h, 65h, 67h,   0, 73h, 62h
-                db  6Ah, 61h, 5Eh,0FEh, 6Bh, 98h, 95h, 62h, 7Dh, 69h, 62h,   0, 6Dh, 8Dh, 6Bh, 94h
-                db    0, 6Fh, 98h, 5Dh,0FDh, 69h, 89h,   0, 65h, 98h,   0, 65h, 8Dh, 6Dh, 61h,   0
-                db  6Ch, 88h, 73h, 5Eh,0FEh, 70h, 66h, 95h, 62h, 6Bh, 98h, 96h, 62h,   0, 78h,   0
-                db  60h, 86h, 84h, 88h,0FEh,0F9h, 65h, 86h,   0, 78h,   0, 65h, 67h, 69h, 62h, 68h
-                db  98h, 66h,0FEh, 65h, 98h,   0, 65h, 78h, 62h,   0, 73h,   0, 74h, 88h, 5Dh,0FDh
-                db  74h, 8Dh, 73h,   0, 6Bh, 72h, 82h,   0, 65h, 8Dh, 6Dh, 61h, 7Eh, 63h,   0, 75h
-                db 0FEh,0F3h, 6Bh, 74h, 68h, 89h, 79h, 98h,   0, 74h, 86h, 74h, 61h, 5Dh,0FEh,0B1h
-                db 0F3h,0FEh, 78h,   0, 7Dh, 62h, 7Dh, 62h,   0, 79h,   0, 6Fh, 6Fh, 98h, 7Ah, 73h
-                db  71h, 5Dh,0FDh, 6Eh, 89h,   0, 79h,0FEh,0DDh,0FEh,0AEh, 65h, 98h,0FEh, 6Bh, 93h
-                db  72h, 61h, 88h,0A8h,0FDh, 69h, 78h,   0, 7Ah, 98h, 88h,   0, 78h,   0, 73h, 98h
-                db  69h, 65h,   0, 75h,0FEh, 65h, 8Dh, 66h, 8Dh,   0, 6Ah, 89h, 72h, 61h, 88h,   0
-                db  79h, 6Ch, 98h, 6Fh, 98h, 5Dh,0FEh,0AEh, 8Ch,   0, 6Ah, 65h, 98h, 6Dh, 3Dh,0FFh
-txt060:         db  13h,0A1h,0A4h,0A8h,0FEh, 62h, 79h, 98h, 8Bh, 89h, 6Fh, 5Eh,0E5h, 8Ch,   0, 73h
-                db  87h, 65h, 63h, 6Bh, 5Eh,0FBh, 6Dh, 85h, 3Dh,0FDh, 73h, 98h, 69h, 65h,   0, 78h
-                db    0, 7Ch, 83h,   0, 75h,0FEh, 65h, 67h, 6Ah, 89h, 72h,   0, 61h, 88h, 79h, 6Ch
-                db  98h, 6Fh, 98h, 5Dh,0FEh, 79h, 97h, 8Dh, 70h,   0, 72h, 98h,   0, 6Ah, 65h, 98h
-                db  6Dh, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt061:         db    1,0F0h,0FEh,0B4h, 6Fh, 98h, 3Eh,0FDh, 69h, 69h, 65h, 86h,   0, 6Fh, 98h, 93h
-                db  6Eh, 62h,   0, 72h, 98h, 66h, 6Fh, 82h, 78h,   0, 79h,   0, 61h, 74h, 61h, 3Dh
-                db 0FFh
-txt062:         db    4,0E5h, 8Ch,   0, 73h, 87h, 65h, 63h, 6Bh, 6Fh, 3Eh,0FFh
-txt063:         db    4,0BBh, 33h,0FEh,0D9h,0FFh
-txt064:         db  13h,0A1h,0ADh,0A8h,0FDh, 65h, 7Ch, 98h,   0, 8Ch,   0, 6Fh, 6Fh, 61h, 72h, 5Eh
-                db 0FEh, 64h, 73h,   0, 65h, 98h,   0, 70h, 65h, 98h, 62h,   0, 73h, 69h, 8Ah,0FEh
-                db  8Ch,   0, 79h, 98h, 67h, 79h,   0, 6Ch, 88h, 73h,   0, 61h, 61h, 5Dh,0FEh,0A8h
-                db 0A6h,0FFh
-txt065:         db    4,0BCh,0FEh,0D9h,0FFh
-txt066:         db    3,0A1h,0A4h,0A8h,0FEh,0BCh, 5Bh,0FEh, 64h, 73h, 69h,   0, 74h, 86h,   0, 71h
-                db  65h, 62h, 74h, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt067:         db    4,0BDh,0FEh,0D9h,0FEh,0FFh
-txt068:         db    3,0A1h,0A4h,0A8h,0FEh,0BDh, 5Bh,0FEh, 79h, 98h, 67h, 7Bh, 62h,   0, 83h,   0
-                db  65h, 6Dh, 98h,   0, 75h,   0, 71h, 85h, 61h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt069:         db    4,0D1h,0FEh,0D9h,0FFh
-txt070:         db    3,0A1h,0A4h,0A8h,0FEh,0D1h, 5Bh,0FEh, 73h, 98h, 69h,   0, 75h,   0, 72h, 98h
-                db  82h,   0, 6Dh, 93h, 73h,   0, 72h, 98h, 66h, 88h, 5Eh,0FEh, 79h, 98h, 67h, 6Fh
-                db  98h, 8Dh,   0, 6Fh, 98h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt071:         db    4,0CBh,0FEh,0D9h,0FFh
-txt072:         db    3,0A1h,0A4h,0A8h,0FEh,0CBh, 5Bh,0FEh, 6Dh, 40h, 86h, 40h, 5Ch, 7Bh, 67h,   0
-                db  65h, 5Bh,0FEh,0A8h,0A6h,0FFh
-txt073:         db 0FFh
-txt074:         db 0FFh
-txt075:         db    4,0C0h,0BFh,0FEh,0D9h,0FFh
-txt076:         db    3,0A1h,0A4h,0A8h,0FEh,0C0h,0BFh, 5Bh,0FEh,0C0h, 6Dh, 8Dh, 6Ah, 40h,   0, 65h
-                db  98h,   0, 7Fh, 63h, 88h,   0, 85h, 62h, 75h,   0, 74h, 88h, 5Dh,0FEh,0A8h,0A6h
-                db 0FFh
-txt077:         db  11h,0D7h,0FDh,0EEh, 7Ch,   0, 61h, 67h, 75h, 79h,   0,0DEh, 65h, 86h, 5Eh,0C8h
-                db  69h, 62h, 65h,0FEh, 6Ch, 88h, 6Bh, 65h,   0, 74h, 61h, 5Dh,0FFh
-txt078:         db    1,0D7h,0FEh,0AEh, 79h,0FEh,0EEh, 78h,   0, 73h, 98h, 67h, 7Dh, 98h, 62h,   0
-                db  75h,   0, 61h, 88h, 5Dh,0FFh
-txt079:         db    1,0F0h,0FEh,0B5h, 3Eh,0FEh, 69h, 78h, 6Ah, 66h,   0, 79h,   0, 73h, 64h, 6Ah
-                db  8Dh, 3Dh,0FFh
-txt080:         db  13h,0EFh,0A1h,0AAh,0A8h,0FDh,0B5h, 79h,0FEh,0D3h, 75h,   0, 85h, 8Bh, 61h,   0
-                db  79h, 6Ch, 98h,   0, 85h, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt081:         db    4,0C8h,0FEh,0D9h,0FFh
-txt082:         db    3,0A1h,0A4h,0A8h,0FEh,0C8h, 5Bh,0FEh, 69h, 62h, 65h,   0, 7Eh, 63h,   0, 75h
-                db    0, 6Dh, 93h, 73h,   0, 6Bh, 8Ah, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt083:         db    3,0A1h,0ADh,0A8h,0FEh,0C8h, 79h,   0, 32h, 46h,   0, 75h,   0, 60h, 88h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt084:         db    1,0D7h,0FEh,0C8h, 65h, 98h,   0, 60h, 89h, 79h, 98h,   0, 6Ah, 67h,   0, 78h
-                db    0, 66h, 89h, 81h,   0, 65h, 86h, 5Eh, 69h, 62h, 65h,   0,0F8h, 5Dh,0FFh
-txt085:         db    4,0C2h,0C6h,0D9h,0FFh
-txt086:         db    3,0A1h,0A4h,0A8h,0FEh,0C2h,0C6h, 5Bh,0FEh,0C2h, 78h,   0, 61h, 70h,   0, 65h
-                db  98h,   0, 8Bh, 65h, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt087:         db    3,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FEh,0C2h,0C6h, 79h,   0,0DEh, 75h,   0, 60h
-                db  88h, 5Dh,0A8h,0A6h,0FFh
-txt088:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh, 48h, 49h, 4Eh, 44h,   0, 44h,   0, 79h,   0,0CFh
-                db 0FEh, 72h, 98h,   0, 6Fh, 64h, 6Dh, 88h, 8Bh, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt089:         db    1,0AEh,0A8h,0FEh, 64h, 6Eh, 65h, 93h, 6Fh, 65h,0A8h,0FFh
-txt090:         db  11h,0D7h,0FDh,0AEh, 79h,0FEh, 7Ah, 73h, 60h, 6Bh, 6Ah, 66h,   0, 75h,0FEh, 7Ah
-                db  98h, 88h,   0, 32h,   0, 7Ch,   0, 62h, 71h, 6Ah, 89h, 6Fh, 5Dh,0FDh, 7Ah, 98h
-                db  88h,   0, 32h,   0, 79h,   0,0FAh, 66h, 6Fh,   0, 7Ch,0FEh, 31h, 30h,   0, 66h
-                db  8Ah,   0, 78h,   0,0F9h, 75h,   0, 60h, 88h, 5Dh,0FFh
-txt091:         db    4, 6Bh, 7Eh, 93h, 6Fh, 3Dh,0FEh,0E4h, 65h, 98h,   0, 62h, 69h, 98h, 66h, 6Fh
-                db  98h, 6Bh, 6Fh, 3Eh,0FFh
-txt092:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh,0B6h, 79h,   0,0C2h, 72h, 98h,   0, 6Fh, 64h, 6Dh
-                db  88h, 8Bh, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt093:         db  13h,0A1h,0A4h,0A8h,0FEh, 68h, 8Dh, 82h, 8Dh,   0, 6Fh, 98h, 5Dh,0FEh,0CBh, 8Ch
-                db    0, 66h, 72h, 5Eh,0ECh,0FEh, 6Dh, 85h, 3Dh,0FDh,0FAh, 78h,   0,0F5h, 79h,   0
-                db 0DCh,0FEh, 31h, 32h, 30h, 31h, 33h,   0, 72h, 98h,   0, 64h, 69h, 74h, 62h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt094:         db  13h,0A1h,0ABh,0ACh,0FEh,0ADh,0A8h,0FEh,0CBh, 79h,   0, 7Ah, 98h, 88h,   0, 31h
-                db    0, 78h,   0, 70h, 65h,0FEh, 75h,   0, 60h, 88h, 5Dh,0FDh,0FAh, 78h,   0,0F5h
-                db  79h,   0,0DCh,0FEh, 31h, 32h, 30h, 32h, 36h,   0, 75h,   0, 7Ch, 8Dh, 69h, 62h
-                db    0, 6Ch, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt095:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh,0FAh, 78h,   0,0F5h, 79h,   0,0DCh,0FEh, 31h, 32h
-                db  30h, 39h, 31h,   0, 75h,   0, 7Ch, 8Dh, 69h, 62h,   0, 6Ch, 88h, 8Bh, 5Dh,0FEh
-                db  7Eh, 6Fh,   0, 85h, 8Dh, 72h, 98h, 77h, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt096:         db    4,0BEh,0D9h,0FFh
-txt097:         db    3,0A1h,0A4h,0A8h,0FEh,0BEh, 5Bh,0FEh,0DFh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt098:         db    4,0C3h,0D9h,0FFh
-txt099:         db    3,0A1h,0A4h,0A8h,0FEh, 7Dh, 98h, 62h, 65h, 98h, 61h,   0, 72h, 98h, 8Dh, 79h
-                db  97h,   0, 65h, 98h,   0, 72h, 98h, 72h, 61h, 6Fh,   0, 65h, 98h, 5Eh,0FEh, 69h
-                db  89h, 72h, 98h,   0, 6Fh, 98h, 61h, 6Bh, 98h, 96h, 62h, 7Bh, 98h,   0, 6Fh, 98h
-                db  5Dh,0FEh,0A8h,0A6h,0FFh
-txt100:         db    3,0A1h,0ADh,0A8h,0FEh, 66h, 6Fh,   0,0E1h, 79h,   0, 62h, 63h,   0, 75h,   0
-                db  6Bh, 65h,0FEh,0F6h, 6Bh, 74h, 61h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt101:         db    1,0D7h,0FEh,0AEh, 79h,0FEh, 70h, 65h, 8Ah, 62h,   0, 75h,   0, 61h, 88h, 5Dh
-                db 0FFh
-txt102:         db 0FFh
-txt103:         db    4,0BBh, 35h,0FEh,0D9h,0FFh
-txt104:         db 0FFh
-txt105:         db    3,0A1h,0ADh,0A8h,0FEh, 7Fh, 74h, 7Fh,   0,0E1h, 79h,   0, 6Bh, 6Fh,   0, 75h
-                db    0, 6Bh, 65h,0FEh,0F6h, 6Bh, 74h, 61h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt106:         db    3,0A1h,0ADh,0A8h,0FEh, 69h, 78h,   0, 6Ah, 66h,   0, 79h,   0, 65h, 98h, 6Ch
-                db    0, 70h, 6Fh, 61h, 6Fh, 98h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt107:         db  11h,0D7h,0FDh, 69h, 78h,   0,0E7h, 65h, 86h,   0,0FBh,0FEh, 6Ch, 88h,   0, 75h
-                db  79h,   0, 66h, 6Fh,   0,0E1h, 8Ch,0FEh, 6Ah, 65h, 98h, 6Ch,   0, 6Bh, 65h, 74h
-                db  61h, 3Dh,0FFh
-txt108:         db    1,0F0h,0B8h, 3Eh,0FEh, 7Eh, 88h, 83h, 66h,   0, 75h,   0,   0,   0, 6Bh, 72h
-                db  83h, 88h, 3Eh,0FFh
-txt109:         db    1, 8Bh, 74h,   0, 75h,   0, 79h, 7Eh, 93h, 6Fh, 74h, 3Dh,0FDh, 7Dh, 8Dh, 82h
-                db  78h,   0, 78h,0FEh,0AEh, 79h,   0, 32h, 46h,   0, 75h,   0, 61h, 88h,0A8h,0FDh
-                db  6Bh, 77h, 3Eh,   0,0B0h, 3Dh,0FFh
-txt110:         db    4,0BBh, 36h,0FEh,0D9h,0FFh
-txt111:         db    3,0A1h,0ADh,0A8h,0FEh, 69h, 78h,   0, 6Ah, 66h,   0, 75h,   0, 66h, 6Fh,0FEh
-                db 0E1h, 65h, 98h,   0, 60h, 88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt112:         db    3,0A1h,0ADh,0A8h,0FEh,0BEh, 79h,   0, 31h, 46h,   0, 75h,   0, 60h, 88h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt113:         db    3,0EFh,0A1h,0AAh, 5Dh, 68h, 98h, 8Dh, 66h, 5Bh,0FEh, 64h, 73h, 6Bh, 60h, 74h
-                db    0, 75h,   0, 70h, 95h, 62h, 61h,   0, 6Bh, 72h, 3Dh,0FEh,0A8h,0A7h,0FFh
-txt114:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh,0D6h, 8Ch,   0, 7Eh, 82h, 93h, 72h,   0, 61h, 88h
-                db    0,0B9h, 79h,0FEh, 7Bh, 6Bh, 98h, 7Fh,   0, 6Fh, 98h, 8Bh, 3Dh,0FEh, 75h, 68h
-                db  98h, 72h, 3Eh,0FFh
-txt115:         db    1,0D7h,0FEh, 6Ah, 79h, 98h, 67h,   0, 8Ch,   0, 8Bh, 6Fh, 88h,   0, 75h, 79h
-                db    0,0C7h, 65h, 98h,   0,0E6h,0FFh
-txt116:         db  11h,0D7h,0FDh,0DCh, 31h, 32h, 30h, 34h, 38h,   0, 72h, 98h,0FEh,0ABh, 78h,   0
-                db 0A5h,0FEh, 73h,   0,0F5h, 65h, 98h,   0, 73h, 89h, 88h, 79h, 6Ch, 98h, 6Fh, 98h
-                db  5Dh,0FDh,0A5h, 79h,   0, 6Bh, 98h, 65h,   0, 75h,0FEh,0E9h, 6Bh, 72h, 67h, 89h
-                db  88h, 5Dh,0FDh, 6Bh, 65h, 6Bh, 5Eh, 7Bh, 97h, 86h, 61h, 73h, 98h,   0, 65h, 98h
-                db    0, 6Fh, 65h, 61h, 5Dh,0FDh, 71h, 77h,   0, 75h, 5Eh, 6Ah, 61h, 69h, 62h,   0
-                db  65h, 61h, 66h, 95h, 62h,   0, 72h, 98h,   0, 74h, 61h, 73h,   0, 64h, 62h, 73h
-                db  62h,   0, 6Bh, 72h, 67h, 89h,   0, 74h, 61h,0FEh, 6Fh, 98h, 8Ah, 62h, 5Dh,0FFh
-txt117:         db    3,0A1h,0A5h,0A8h,0FEh,0D0h, 8Ch,   0, 85h, 62h, 61h,   0, 6Ch, 88h, 8Bh, 5Dh
-                db 0FEh, 73h, 87h,   0, 75h,   0, 66h, 72h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt118:         db    3,0A1h,0A5h,0A8h,0FEh, 61h, 7Eh, 65h, 86h,   0,0D6h, 8Ch,   0, 60h, 68h, 88h
-                db  8Bh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt119:         db    4,0D0h,0FEh,0D9h,0FFh
-txt120:         db    4,0C7h,0D9h,0FFh
-txt121:         db    4,0C9h,0FEh,0D9h,0FFh
-txt122:         db    3,0A1h,0ADh,0A8h,0FEh,0C7h, 79h,   0, 32h, 46h,   0, 75h,   0, 60h, 88h, 5Dh
-                db 0FEh,0A8h,0A6h,0FFh
-txt123:         db    1,0D7h,0FEh, 6Ch, 61h, 69h, 62h,   0, 78h,   0, 64h, 67h,   0, 65h, 98h,   0
-                db  7Ah, 98h, 88h,   0, 33h,   0, 75h, 71h, 74h, 65h, 98h, 93h, 72h,   0, 61h, 88h
-                db  5Dh,0FFh
-txt124:         db  12h,0FCh,0FEh,0AEh,0FEh, 6Fh, 98h, 5Dh,0FEh, 80h, 6Ch, 81h,   0, 78h,   0,0AFh
-                db  65h, 98h,0FEh, 7Ah, 73h, 6Bh, 98h, 70h,   0, 75h,   0, 74h, 93h, 72h, 61h, 88h
-                db  5Dh,0FDh,0AFh, 8Ch,   0, 6Fh, 6Ch, 68h, 72h,0FEh, 67h, 89h, 74h, 68h, 89h, 79h
-                db  98h, 5Eh,0FEh,0B1h, 75h,0FEh, 71h, 61h, 72h, 5Eh, 79h, 74h, 6Ch, 69h, 73h,   0
-                db  79h,0FEh, 72h, 98h, 66h, 74h, 61h, 5Dh,0FDh,0AFh, 79h,   0, 7Ah, 98h, 88h,   0
-                db  31h,   0, 78h,0FEh, 70h, 65h,   0, 75h,   0, 65h, 8Dh, 66h, 8Dh,   0, 6Ah, 89h
-                db  72h, 61h, 88h, 5Dh,0FEh, 6Fh, 6Ch, 68h, 72h,   0, 67h, 89h, 5Dh,0FFh
-txt125:         db  12h,0FCh,0FEh,0AEh,0FEh, 6Fh, 98h, 5Dh,0FDh,0B1h, 79h,   0, 69h, 78h,   0, 7Ah
-                db  98h, 88h,   0, 65h, 86h,   0, 66h, 6Fh,   0, 75h,   0, 32h, 30h, 66h, 8Ah,0FEh
-                db  78h,   0,0F9h, 75h, 60h, 88h, 5Eh,0FEh, 7Ah, 98h, 88h,   0, 33h,   0, 78h,   0
-                db  70h, 65h,   0, 31h, 30h, 30h, 65h, 61h,0FEh, 75h,   0, 60h, 88h, 5Dh,0FDh,0B1h
-                db  78h,0FEh,0F3h, 7Dh, 62h, 7Dh, 62h,   0, 79h,   0, 7Ah, 73h, 71h, 5Dh,0FEh, 6Eh
-                db  62h, 69h, 62h,   0, 78h,   0, 62h, 6Ch, 61h,   0, 66h, 94h, 67h, 7Bh, 98h,0FEh
-                db  75h,   0,0D1h,0FEh, 6Dh, 93h, 73h,   0, 6Ch, 88h, 5Dh,0FDh,0F4h, 79h,   0, 52h
-                db  5Eh, 52h, 5Eh, 4Ch, 5Eh,0FEh, 52h, 5Eh, 4Ch, 5Eh, 4Ch, 5Eh, 52h, 5Eh, 4Ch, 5Eh
-                db 0FEh, 4Ch, 5Eh, 52h, 5Eh, 52h, 5Eh, 4Ch, 5Eh, 52h, 5Eh,0FEh, 4Ch, 5Eh, 52h, 5Eh
-                db 0A8h,0FEh, 60h, 73h,   0, 79h,   0, 8Bh, 6Ch, 89h, 72h, 6Bh, 7Eh, 93h, 6Fh, 3Dh
-                db 0FDh, 73h, 75h, 65h, 67h, 5Eh,0FEh, 31h, 36h, 69h,   0, 6Dh, 93h, 73h,   0, 6Ch
-                db  88h, 78h, 6Fh, 98h, 5Dh,0FDh, 7Ah, 98h, 88h,   0, 32h,   0, 8Ch,   0, 72h, 98h
-                db  88h,   0,0D6h, 78h,   0,0BBh, 79h,   0,0B9h, 65h, 98h,   0, 82h, 93h, 72h, 61h
-                db  88h, 5Dh,0B9h, 79h,   0,0D0h, 75h,0FEh, 85h, 8Bh, 61h, 3Dh,0FDh, 69h, 62h, 62h
-                db  8Dh,   0, 8Ch,   0, 61h, 78h, 88h,0A8h,0FFh
-txt126:         db    3,0A1h,0ADh,0A8h,0FEh, 7Ah, 98h, 88h,   0, 31h,   0, 75h, 79h, 5Eh, 70h, 65h
-                db    0, 78h,   0, 74h, 8Dh, 6Dh, 61h,   0, 65h, 86h,0FEh, 7Ah, 7Fh, 71h,   0, 78h
-                db    0, 70h, 65h, 71h, 62h, 8Ah,   0, 65h, 98h,   0,0F5h,0FEh, 6Bh, 72h, 61h, 88h
-                db  5Dh,0FEh,0A8h,0A6h,0FFh
-txt127:         db    0, 85h, 6Bh, 5Eh, 79h, 61h, 89h, 3Dh,0FFh
-txt128:         db    0, 6Fh, 6Ch, 68h, 72h, 3Dh,0FFh
-txt129:         db  12h, 60h, 87h, 65h, 98h, 73h, 62h,0A8h,0FEh,0FCh,0FEh,0AEh, 78h,   0, 80h, 6Ch
-                db  81h, 5Eh,0FEh,0AFh, 5Dh,0FDh, 70h, 70h,   0, 79h,   0, 66h, 96h, 62h, 79h, 67h
-                db    0, 6Ah, 89h, 72h, 5Eh,0FEh,0B1h, 8Ch,0FEh, 71h, 67h, 86h, 6Ah, 89h, 72h,   0
-                db  61h, 88h, 78h, 5Dh,0FEh, 79h, 83h, 67h,   0, 70h, 70h,   0, 8Ch,   0,0FEh, 6Fh
-                db  6Ch, 68h, 72h,   0, 67h, 6Fh, 98h, 6Ah, 61h, 5Dh,0FFh
-txt130:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh, 6Ah, 6Eh, 87h,   0, 78h,   0, 73h, 98h, 67h,   0
-                db  79h,   0,0C9h, 8Ch,0FEh, 71h, 65h, 62h,   0, 73h,   0, 61h, 61h, 8Bh, 5Dh,0FEh
-                db 0A8h,0A7h,0FFh
-txt131:         db    0,0D7h,0FFh
-txt132:         db    3,0A1h,0A4h,0A8h,0FEh, 7Ah, 6Fh, 98h, 87h,   0, 78h,   0,0D6h, 7Ch,   0, 79h
-                db  61h, 89h, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt133:         db    3,0A1h,0A4h,0A8h,0FEh, 7Fh, 66h, 98h,   0, 79h, 6Bh,   0, 78h,   0,0E4h, 7Ch
-                db    0, 79h, 61h, 89h, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt134:         db    3,0A1h,0A5h,0A8h,0FEh, 65h, 7Ch, 98h,   0, 8Ch,   0,0F3h, 6Ch, 88h, 78h, 85h
-                db  3Eh,0FEh,0A8h,0A6h,0FFh
-txt135:         db    3,0A1h,0A5h, 3Dh,0FEh, 65h, 7Ch, 98h,   0, 78h,   0, 80h, 69h, 62h,   0, 75h
-                db    0,0C5h, 65h, 98h,0FEh, 60h, 88h, 79h, 6Ch, 98h, 3Eh,0FEh,0A8h,0A6h,0FFh
-txt136:         db  13h,0A1h,0A4h,0A8h,0FEh,0A2h, 3Dh,0FEh, 6Ah, 67h, 6Dh, 8Dh,   0, 70h, 95h, 62h
-                db  6Bh,   0, 6Fh, 98h, 3Dh,0FEh, 6Fh, 6Fh, 98h, 70h,   0, 75h,   0, 66h, 65h, 8Dh
-                db    0, 6Dh, 85h, 5Dh,0FDh, 69h, 89h, 79h,   0, 81h, 61h, 89h, 61h,   0, 6Fh, 98h
-                db  3Eh,0FEh, 4Dh, 53h, 58h,   0, 78h,   0, 72h, 98h, 8Dh, 68h, 98h, 8Dh,   0, 8Ch
-                db    0, 66h, 89h, 3Eh,0FEh,0A8h,0A6h,0FFh
-txt137:         db  13h,0A1h,0A5h, 3Dh,0FDh, 69h, 78h, 6Ah, 66h,   0, 78h,   0,0D6h, 8Ch,   0, 60h
-                db  68h, 88h,   0,0BBh, 79h, 7Ah, 98h, 88h,   0, 33h,   0, 78h,   0, 7Ah, 65h, 98h
-                db  6Bh, 65h, 98h, 8Bh,   0, 75h,   0, 60h, 88h, 8Bh, 5Dh,0FEh, 6Eh, 69h,   0, 79h
-                db    0, 7Ah, 98h, 88h,   0, 32h,   0, 78h,   0, 6Ch, 61h, 69h, 62h,   0, 73h,0FEh
-                db  71h, 74h, 65h, 98h, 93h, 72h,   0, 61h, 88h, 78h, 85h, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt138:         db  13h,0A1h,0ADh,0A8h,0FEh,0B2h, 78h,   0, 7Dh, 98h, 6Ch,   0, 78h,0FEh, 6Bh, 96h
-                db  62h, 6Fh, 61h,   0, 65h, 98h,   0, 8Bh, 65h, 93h, 6Fh, 6Eh, 98h, 3Dh,0FDh, 74h
-                db  8Dh, 73h,0A8h,0FEh,0B2h, 78h,   0, 7Dh, 98h, 6Ch,   0, 79h,0A8h,0FDh,0A8h, 8Bh
-                db  40h, 3Eh,0FEh,0A8h,0FFh
-txt139:         db    1,0F0h,0BAh, 3Dh,0FDh, 62h, 72h, 88h, 82h, 78h,   0, 74h, 86h,   0, 62h, 93h
-                db  72h, 7Fh, 8Ah, 3Eh,0FFh
-txt140:         db  11h,0D7h,0FDh,0FCh,0A5h, 78h,0FDh, 60h, 75h,   0, 6Fh, 98h, 5Dh,0FDh,0FBh, 6Ch
-                db  88h, 73h, 66h,   0, 79h,   0, 7Ah, 6Fh, 98h, 87h, 79h, 6Bh,0FDh, 78h,   0, 79h
-                db  6Bh, 69h, 98h,   0, 8Ch,   0, 78h, 7Dh, 98h, 89h, 3Eh,0FFh
-txt141:         db    3,0EFh,0A1h,0AAh, 3Dh,0FEh, 7Fh, 65h, 6Fh,   0, 8Ch,   0, 69h, 8Ah, 6Ah, 6Ch
-                db  98h, 5Eh, 6Fh, 64h, 6Ch,   0, 7Dh, 62h, 7Dh, 62h,   0, 79h,   0,0CDh, 6Bh, 65h
-                db    0, 74h, 61h, 8Bh, 5Dh,0FEh,0A8h,0A7h,0FFh
-txt142:         db  13h,0A1h,0A5h,0A8h,0FEh,0BBh, 38h,   0, 79h,   0,0BAh, 65h, 98h,   0, 82h, 93h
-                db  72h, 61h, 88h, 8Bh, 5Dh,0FDh, 7Dh, 87h, 96h,   0, 78h,   0, 74h, 65h, 75h,   0
-                db  8Bh, 6Fh, 6Bh,   0, 78h,   0, 60h, 75h,   0, 65h, 98h,0FEh, 61h, 88h, 78h, 3Dh
-                db    0, 69h, 8Ah, 6Ah, 74h, 61h, 72h, 98h,0A8h,0FDh, 60h, 75h,   0, 75h,   0, 74h
-                db  75h, 65h,   0, 60h, 93h, 6Fh, 86h, 5Eh,0FEh, 82h, 62h, 5Eh, 66h, 96h, 62h, 87h
-                db  96h, 67h,   0, 6Bh, 74h, 61h, 8Bh, 3Dh,0FFh
-txt143:         db    4,0BBh, 38h,0D9h,0FFh
-txt144:         db  11h,0D7h,0FDh,0B2h, 78h,0FEh, 7Dh, 98h, 6Ch,   0, 79h,0FDh,0B0h,0FEh,0A3h, 5Eh
-                db 0A4h,0FEh, 6Fh, 98h, 3Dh,0FDh, 74h, 75h, 82h, 65h, 82h,   0, 83h, 71h,   0, 78h
-                db    0, 6Bh, 8Bh, 6Ah, 98h,   0, 6Fh, 98h, 3Eh,0FEh, 6Fh, 98h, 7Eh, 6Ah, 89h, 88h
-                db  74h, 3Eh,0FFh
-txt145:         db    3,0A1h,0A5h, 3Eh,0FEh, 7Ah, 6Fh, 98h, 87h,   0, 78h,   0, 65h, 7Ch, 98h,   0
-                db  8Ch,   0, 69h, 8Bh, 6Ch, 78h, 85h, 3Dh,0FEh,0A8h,0A6h,0FFh
-txt146:         db    3,0A1h,0A5h, 3Dh,0FEh, 61h, 93h, 66h,   0, 75h,   0, 79h, 6Bh, 88h, 6Bh, 65h
-                db  5Eh, 74h, 61h, 8Bh, 3Dh,0FEh,0CAh, 65h, 98h,   0, 60h, 89h, 79h, 98h,   0, 6Fh
-                db  98h, 61h, 6Bh, 98h, 96h, 62h, 7Bh, 98h, 85h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt147:         db  12h,0A2h, 3Dh,0FEh, 85h, 67h,   0, 69h, 69h, 7Eh, 72h, 98h,   0, 66h, 6Fh, 74h
-                db  3Dh,0A8h,0FDh,0A8h, 8Bh, 6Fh, 6Bh,   0, 65h, 98h,0FEh,0B0h,0FEh,0A3h, 5Eh, 6Eh
-                db  6Bh, 72h, 5Eh,0FDh, 69h, 78h,   0,0F7h, 5Eh,0FEh,0B2h, 78h,0FEh, 7Dh, 98h, 6Ch
-                db  5Eh,0A4h, 6Fh, 98h, 3Eh,0FDh, 6Bh, 8Dh, 61h, 87h,   0, 72h, 98h, 60h, 88h, 5Eh
-                db  64h, 7Eh, 63h,   0, 75h,   0, 69h, 78h,   0, 75h, 8Dh, 80h,   0, 8Ch,0FEh, 60h
-                db  6Fh, 63h, 6Fh,   0, 78h, 82h, 5Eh, 62h, 6Eh,   0, 78h,0FEh, 6Bh, 98h, 96h, 62h
-                db  7Dh, 62h,   0, 8Ch,   0, 82h, 70h, 65h, 63h, 86h, 6Dh, 88h, 6Fh, 81h, 6Fh, 98h
-                db  93h, 6Fh,0A8h,0FDh, 6Bh, 65h, 6Bh, 5Eh,0FEh, 64h, 7Eh, 63h,   0, 79h,   0, 83h
-                db  87h, 6Ch, 66h, 98h, 6Fh, 5Dh,0FEh, 83h, 87h, 6Ch, 66h, 98h, 6Fh, 78h, 6Fh, 98h
-                db  3Dh,0FDh,0A2h, 3Dh,0FDh,0FCh, 6Fh, 6Fh, 98h, 72h, 98h,   0, 79h,0FEh, 6Bh, 74h
-                db  74h, 61h, 5Dh,0FEh, 7Fh, 70h, 71h, 98h, 89h,   0, 75h,   0, 6Bh, 72h, 83h, 88h
-                db  3Eh,0FDh, 65h, 65h, 93h, 72h,   0, 69h, 61h, 3Dh,0FFh
-txt148:         db    3,0A1h,0A5h, 3Dh,0FEh, 6Fh, 79h, 98h, 69h,   0, 8Ch,   0, 71h, 65h, 62h,   0
-                db  73h,   0, 6Fh, 61h, 7Eh, 40h,   0, 65h, 98h,0FEh, 7Bh, 63h, 88h, 8Bh, 5Dh,0FEh
-                db  61h, 66h, 72h,   0, 65h, 63h, 93h, 72h, 77h, 3Dh,0FEh,0A2h,0A8h,0FFh
-txt149:         db  13h,0A1h,0AAh, 3Dh,0FEh,0A4h, 8Ch,   0, 6Fh, 64h, 6Ch,   0, 7Dh, 62h, 7Dh, 62h
-                db    0, 79h,0FEh, 6Bh, 86h, 74h, 61h, 8Bh,0A8h,0FEh, 6Eh, 89h,   0, 79h,   0, 60h
-                db  74h, 6Fh,   0, 6Bh, 6Fh, 98h, 61h, 3Dh,0FEh,0A2h, 3Dh,0FDh,0A8h, 8Bh, 6Fh, 6Bh
-                db 0A8h,0FEh, 60h, 74h, 6Fh,   0, 78h,   0, 69h, 73h,0A8h,0FEh, 61h, 63h, 5Eh, 74h
-                db  8Dh, 72h, 98h, 82h,   0, 74h, 61h, 8Bh,0A8h,0FEh, 69h, 98h, 7Bh, 98h, 6Bh, 98h
-                db    0, 72h, 98h,0A8h,0FFh
-txt150:         db  11h, 66h, 8Dh, 66h, 95h, 62h,   0, 6Bh, 98h, 6Fh, 61h, 3Eh,0FDh, 66h, 8Dh, 66h
-                db  95h, 62h,   0, 6Bh, 98h, 6Fh, 61h, 3Eh,0FDh,0B2h, 78h,   0, 79h, 98h, 67h, 79h
-                db 0FEh, 6Ch, 61h, 93h, 70h,   0, 65h, 98h, 5Eh, 6Ah, 73h, 98h, 62h,   0, 6Bh, 7Eh
-                db  6Bh, 6Fh, 3Dh,0FDh, 6Fh, 6Fh, 98h, 70h,   0, 75h,   0, 6Fh, 98h, 93h, 6Bh, 95h
-                db  71h,   0, 65h, 71h, 73h, 98h, 62h,   0, 8Ch,   0, 64h, 69h, 74h, 93h, 72h,   0
-                db  67h, 6Fh, 98h, 6Ah, 61h, 3Dh,0FFh
-txt151:         db    4,0C1h,0FEh,0D9h,0FFh
-txt152:         db    4,0C5h,0FEh,0D9h,0FFh
-txt153:         db    4,0BBh, 37h,0FEh,0D9h,0FFh
-txt154:         db    3,0A1h,0A4h,0A8h,0FEh,0C1h, 5Bh,0FEh, 65h, 98h, 6Ch, 70h, 6Fh, 61h,   0, 72h
-                db  98h,   0, 71h, 65h, 62h, 78h, 6Fh, 98h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt155:         db  13h,0A1h,0A2h,0A8h,0FEh,0B1h,0F3h, 75h,   0, 6Dh, 61h, 69h, 62h, 5Dh,0FEh, 4Fh
-                db  50h, 45h, 52h, 41h, 54h, 49h, 4Fh, 4Eh,   0, 49h, 4Eh, 54h, 52h, 55h, 44h, 45h
-                db    0, 4Eh, 33h, 31h, 33h,0FEh, 65h, 8Dh, 87h, 96h, 62h,   0, 6Bh, 6Fh, 3Dh,0FDh
-                db  74h, 75h, 82h, 65h, 82h,   0, 64h, 8Bh, 93h, 6Fh,0A8h,0FEh, 74h, 75h, 82h, 65h
-                db  82h,0A8h,0FDh, 6Fh, 6Fh, 98h, 61h, 7Eh,   0, 65h, 86h,   0, 66h, 65h, 8Dh, 6Ch
-                db  88h, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt156:         db    3,0EFh,0A1h,0AAh,0A8h,0FEh, 65h, 89h, 86h,   0, 79h,   0,0D4h, 8Ch,   0, 82h
-                db  93h, 72h, 61h, 88h, 8Bh, 5Dh,0FEh,0A8h,0A6h,0FFh
-txt157:         db    3,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh,0AAh, 74h, 86h, 5Eh, 65h, 61h, 82h, 78h
-                db    0, 75h,   0, 61h, 93h, 6Fh,   0, 7Eh, 7Eh, 5Eh, 65h, 63h, 93h, 72h,   0, 61h
-                db  74h, 61h,   0, 68h, 73h, 98h,0A8h,0FFh
-txt158:         db    3,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh,0AAh, 74h, 86h,   0, 61h, 7Eh, 5Eh, 6Bh
-                db  94h, 8Bh, 40h,   0, 8Ch,   0, 60h, 7Ah, 98h, 72h, 61h, 88h, 68h, 73h, 98h,0A8h
-                db 0FFh
-txt159:         db  13h,0A1h,0D8h,0A8h,0FEh,0AAh, 5Bh,0FEh, 7Eh, 6Fh,   0, 64h, 7Eh, 63h,   0, 65h
-                db  3Dh,0FDh, 82h, 62h, 5Eh,0AAh, 75h, 79h,0FEh, 70h, 65h, 71h, 98h, 65h, 74h, 61h
-                db  72h, 98h,   0, 67h, 89h, 3Eh,0FFh
+txt001:         db $00,$69,$62,$6F,$61,$6F,$98,$3E,$FF
+txt002:         db $13,$A1,$A4,$A8,$FE,$4F,$50,$45,$52,$41,$54,$49,$4F,$4E,$00,$49
+                db $4E,$54,$52,$55,$44,$45,$00,$4E,$33,$31,$33,$5D,$FE,$72,$66,$00
+                db $85,$62,$6A,$61,$00,$B2,$75,$00,$EC,$5E,$DA,$FE,$B1,$8C,$00,$F3
+                db $6D,$85,$3D,$FD,$7E,$6C,$98,$79,$00,$6B,$96,$62,$6E,$67,$00,$8C
+                db $00,$6F,$93,$6F,$5E,$FE,$A9,$73,$00,$E8,$5E,$FE,$DA,$5E,$B1,$78
+                db $FE,$6B,$96,$62,$6F,$61,$00,$8C,$00,$6A,$67,$98,$89,$5D,$FE,$FD
+                db $61,$69,$98,$00,$78,$00,$F5,$79,$00,$DC,$FE,$31,$32,$30,$38,$35
+                db $00,$72,$98,$00,$64,$69,$74,$62,$5D,$FE,$A8,$A6,$FF
+txt003:         db $03,$A1,$A4,$A8,$FE,$75,$8D,$80,$00,$79,$00,$EC,$6F,$98,$5D,$FE
+                db $67,$89,$67,$98,$89,$82,$00,$72,$66,$75,$00,$7F,$71,$65,$86,$76
+                db $00,$85,$62,$00,$75,$FE,$69,$62,$73,$98,$62,$00,$6B,$8A,$5D,$FE
+                db $A8,$A6,$FF
+txt004:         db $13,$A1,$A4,$A8,$FE,$E5,$79,$00,$72,$66,$00,$78,$00,$E4,$5E,$FE
+                db $7B,$98,$66,$69,$00,$65,$86,$00,$62,$79,$98,$63,$3D,$FE,$E0,$79
+                db $00,$7F,$79,$87,$00,$65,$86,$5E,$62,$79,$98,$63,$3E,$FD,$D6,$8C
+                db $00,$60,$68,$88,$00,$75,$79,$FE,$BB,$65,$98,$00,$E6,$FE,$BB,$8C
+                db $00,$6A,$65,$98,$6D,$5D,$FE,$A8,$A6,$FF
+txt005:         db $03,$A1,$A4,$A8,$FE,$E1,$75,$00,$78,$88,$73,$00,$E7,$65,$8D,$00
+                db $78,$00,$F6,$65,$98,$00,$72,$98,$66,$88,$5D,$E1,$78,$FE,$61,$70
+                db $00,$8C,$00,$64,$7D,$98,$63,$88,$00,$69,$73,$6F,$98,$5D,$FE,$A8
+                db $A6,$FF
+txt006:         db $00,$62,$69,$98,$67,$74,$3E,$FF
+txt007:         db $00,$89,$8D,$69,$62,$6C,$88,$3D,$FF
+txt008:         db $04,$CA,$D9,$FF
+txt009:         db $03,$A1,$A4,$A8,$FE,$CA,$5B,$FE,$7A,$6B,$98,$96,$62,$00,$85,$62
+                db $00,$6B,$96,$67,$87,$96,$62,$00,$6F,$98,$5D,$FE,$6C,$67,$98,$00
+                db $75,$00,$6F,$7C,$98,$6C,$98,$00,$75,$00,$78,$69,$6B,$72,$00,$64
+                db $68,$5D,$FE,$A8,$A6,$FF
+txt010:         db $03,$A1,$A2,$A8,$FE,$64,$62,$73,$62,$00,$77,$65,$98,$61,$00,$7E
+                db $6C,$5D,$FF
+txt011:         db $04,$BB,$31,$FE,$D9,$FF
+txt012:         db $13,$A1,$A4,$A8,$FE,$BB,$5B,$FE,$D6,$8C,$00,$60,$68,$88,$00,$BB
+                db $6F,$98,$5D,$FD,$D6,$75,$00,$85,$93,$72,$5E,$FE,$BB,$74,$8D,$79
+                db $98,$40,$00,$65,$98,$00,$70,$65,$98,$62,$5D,$FE,$E3,$5D,$FE,$A8
+                db $A6,$FF
+txt013:         db $04,$C4,$FE,$D9,$FF
+txt014:         db $13,$A1,$A4,$A8,$FE,$C4,$5B,$FD,$6B,$95,$62,$61,$00,$8C,$00,$7F
+                db $88,$73,$66,$00,$75,$00,$EA,$5D,$FE,$73,$64,$67,$00,$78,$00,$70
+                db $68,$61,$00,$83,$00,$72,$66,$00,$78,$00,$79,$61,$70,$00,$65,$98
+                db $8B,$65,$88,$5D,$71,$77,$75,$00,$C4,$8C,$FE,$71,$65,$62,$85,$62
+                db $00,$75,$00,$69,$69,$8A,$00,$65,$98,$68,$8A,$5D,$FE,$A8,$A6,$FF
+txt015:         db $03,$A8,$66,$69,$63,$88,$65,$5B,$FE,$A2,$A8,$FE,$FC,$6B,$74,$8D
+                db $A8,$FE,$61,$71,$65,$5E,$68,$93,$70,$94,$67,$00,$8C,$00,$71,$68
+                db $85,$62,$5D,$FD,$61,$71,$78,$7A,$65,$A8,$FE,$7E,$6F,$00,$60,$64
+                db $62,$3D,$FF
+txt016:         db $04,$CD,$FE,$D9,$FF
+txt017:         db $13,$A1,$A4,$A8,$FE,$CD,$5B,$FE,$42,$45,$4C,$4C,$45,$54,$41,$00
+                db $4D,$39,$32,$46,$A8,$FD,$DF,$5D,$FE,$E0,$8C,$00,$ED,$5D,$FE,$6F
+                db $7E,$00,$79,$00,$80,$6F,$98,$71,$98,$65,$61,$00,$6C,$88,$74,$5D
+                db $FE,$A8,$A6,$FF
+txt018:         db $04,$C2,$D9,$FF
+txt019:         db $03,$A1,$A4,$A8,$FE,$C2,$5B,$FE,$DF,$5D,$FE,$A8,$A6,$FF
+txt020:         db $03,$A1,$A4,$A8,$FE,$AB,$65,$98,$00,$61,$88,$79,$6C,$98,$00,$6F
+                db $98,$5D,$FE,$80,$6D,$8D,$00,$72,$98,$00,$E8,$6B,$72,$7F,$8A,$5D
+                db $FE,$A8,$A6,$FF
+txt021:         db $04,$E0,$D9,$FF
+txt022:         db $03,$A1,$A4,$A8,$FE,$E0,$79,$00,$82,$72,$88,$00,$65,$6C,$98,$00
+                db $75,$00,$6D,$61,$68,$98,$8D,$00,$FE,$65,$98,$00,$60,$88,$5D,$FE
+                db $E3,$5D,$FE,$A8,$A6,$FF
+txt023:         db $13,$A1,$AB,$AC,$FE,$AD,$A8,$FD,$F7,$78,$00,$74,$61,$7B,$98,$00
+                db $75,$00,$71,$61,$72,$00,$65,$98,$61,$73,$98,$00,$6C,$88,$5D,$FE
+                db $DC,$31,$32,$30,$37,$39,$00,$72,$98,$FE,$F5,$6A,$89,$6F,$6B,$5D
+                db $FE,$A8,$A6,$FF
+txt024:         db $03,$A1,$A4,$A8,$FE,$65,$8D,$6B,$65,$81,$86,$00,$75,$00,$E3,$5D
+                db $FE,$A8,$A6,$FF
+txt025:         db $13,$A1,$A4,$A8,$FE,$E2,$5E,$FE,$65,$98,$6C,$70,$6F,$61,$00,$72
+                db $98,$79,$00,$C1,$65,$98,$FE,$E6,$FD,$C1,$78,$00,$60,$87,$65,$00
+                db $79,$FE,$AB,$AC,$AD,$65,$98,$00,$6B,$93,$72,$61,$88,$00,$79,$6C
+                db $98,$6F,$98,$5D,$FE,$A8,$A6,$FF
+txt026:         db $03,$A1,$AB,$AC,$FE,$AD,$A8,$FE,$C1,$79,$00,$31,$46,$00,$78,$00
+                db $7F,$74,$7F,$00,$75,$00,$60,$88,$5D,$FE,$A8,$A6,$FF
+txt027:         db $11,$D7,$FD,$DC,$31,$32,$30,$33,$33,$00,$72,$98,$FE,$AB,$78,$00
+                db $AA,$65,$98,$FE,$E9,$6B,$72,$67,$89,$88,$5D,$FD,$AA,$79,$00,$72
+                db $66,$00,$78,$00,$6B,$98,$96,$62,$7D,$62,$75,$00,$67,$8B,$6B,$61
+                db $79,$6C,$98,$00,$6F,$98,$5D,$FF
+txt028:         db $00,$D7,$FF
+txt029:         db $04,$D3,$FE,$D9,$FF
+txt030:         db $13,$A1,$A4,$A8,$FE,$D3,$5B,$FD,$87,$82,$69,$8D,$00,$6E,$62,$6A
+                db $00,$72,$98,$66,$88,$00,$7F,$6A,$61,$88,$00,$6F,$98,$5D,$FE,$6B
+                db $96,$62,$65,$98,$61,$7B,$98,$71,$00,$78,$FE,$64,$64,$61,$00,$F9
+                db $72,$98,$00,$EA,$5D,$FE,$A8,$A6,$FF
+txt031:         db $03,$A1,$86,$6B,$98,$64,$00,$4B,$4E,$4B,$5D,$FE,$87,$8D,$6B,$98
+                db $75,$95,$40,$6C,$00,$8C,$00,$82,$62,$6B,$60,$68,$98,$7E,$6C,$5D
+                db $FD,$7D,$8D,$6B,$98,$71,$00,$7F,$81,$61,$5E,$53,$4F,$55,$54,$48
+                db $00,$41,$46,$52,$49,$43,$41,$00,$47,$41,$4C,$5A,$42,$55,$52,$47
+                db $00,$7B,$66,$8D,$00,$72,$98,$00,$6F,$98,$61,$66,$7D,$98,$00,$74
+                db $FE,$6B,$98,$6B,$8D,$00,$65,$98,$00,$60,$93,$6F,$82,$85,$62,$A8
+                db $FF
+txt032:         db $11,$D7,$FD,$6C,$62,$6B,$98,$71,$00,$7E,$63,$00,$75,$00,$EC,$FE
+                db $6B,$72,$66,$6F,$00,$B0,$FE,$74,$86,$5E,$7B,$98,$6B,$98,$6F,$98
+                db $5D,$FD,$83,$71,$86,$00,$75,$00,$73,$86,$63,$86,$89,$00,$72,$00
+                db $61,$88,$5D,$FF
+txt033:         db $00,$D2,$FF
+txt034:         db $00,$D5,$FF
+txt035:         db $01,$B0,$65,$98,$FE,$EC,$6B,$72,$61,$88,$00,$86,$6B,$61,$5D,$FE
+                db $6D,$98,$93,$6F,$61,$00,$75,$00,$73,$64,$6C,$74,$3D,$FF
+txt036:         db $03,$A1,$A4,$A8,$FE,$46,$55,$4E,$43,$54,$49,$4F,$4E,$00,$4B,$45
+                db $59,$00,$78,$00,$6D,$71,$81,$61,$00,$8C,$FE,$6C,$88,$5D,$FE,$46
+                db $31,$00,$B3,$7D,$97,$40,$6C,$98,$5D,$FD,$46,$32,$00,$B3,$7B,$98
+                db $66,$00,$6D,$89,$67,$73,$5D,$FE,$46,$33,$00,$B3,$6E,$62,$7A,$98
+                db $FE,$6D,$89,$67,$73,$5D,$FE,$46,$34,$00,$B3,$80,$6D,$8D,$00,$82
+                db $40,$73,$98,$5D,$FD,$85,$67,$5E,$60,$6F,$7E,$00,$75,$00,$61,$89
+                db $72,$00,$64,$67,$69,$73,$00,$6F,$98,$5D,$FE,$A8,$A6,$FF
+txt037:         db $04,$BB,$32,$FE,$D9,$FF
+txt038:         db $13,$A1,$A4,$A8,$FE,$E2,$5E,$69,$62,$60,$71,$72,$98,$8D,$87,$95
+                db $62,$00,$79,$FE,$72,$98,$8D,$68,$98,$8D,$00,$79,$97,$77,$88,$00
+                db $8C,$00,$F3,$6D,$85,$5D,$FD,$D3,$8C,$00,$71,$65,$62,$78,$6F,$98
+                db $5D,$FE,$D3,$78,$00,$60,$87,$65,$00,$79,$FE,$AB,$AC,$AD,$FE,$65
+                db $98,$00,$6B,$93,$72,$61,$88,$5D,$FE,$A8,$A6,$FF
+txt039:         db $03,$A1,$AB,$AC,$FE,$AD,$A8,$FE,$D3,$79,$00,$6D,$61,$74,$8D,$00
+                db $75,$00,$60,$88,$5D,$FE,$A8,$A6,$FF
+txt040:         db $04,$CC,$FE,$D9,$FF
+txt041:         db $03,$A1,$A4,$A8,$FE,$CC,$5B,$FE,$7A,$93,$69,$6B,$00,$72,$98,$82
+                db $00,$6C,$88,$78,$65,$5B,$FE,$A8,$A6,$FF
+txt042:         db $03,$A1,$A4,$A8,$FE,$E2,$5E,$DE,$79,$FE,$62,$61,$8D,$73,$98,$5C
+                db $79,$98,$87,$60,$00,$65,$98,$5E,$79,$86,$89,$72,$61,$88,$5D,$FE
+                db $BD,$8C,$00,$6A,$65,$98,$6D,$3D,$FE,$A8,$A6,$FF
+txt043:         db $04,$D4,$FE,$D9,$FF
+txt044:         db $03,$A1,$A4,$A8,$FE,$D4,$5B,$FE,$69,$89,$00,$8C,$00,$71,$68,$88
+                db $73,$5E,$6B,$98,$95,$62,$6D,$61,$00,$65,$98,$00,$68,$6D,$88,$5D
+                db $FE,$A8,$A6,$FF
+txt045:         db $03
+                db $65,$8B,$87,$7E,$6B,$72,$FE,$B1,$53,$54,$41,$46,$46,$FE,$6B,$96
+                db $62,$65,$61,$A8,$FD,$00,$00,$00,$00,$00,$4D,$41,$49,$4E,$00,$50
+                db $52,$4F,$47,$52,$41,$4D,$FE,$FE,$00,$00,$00,$00,$48,$49,$52,$4F
+                db $59,$55,$4B,$49,$00,$46,$55,$4B,$55,$49,$FE,$FD,$00,$00,$00,$00
+                db $00,$00,$53,$55,$42,$00,$50,$52,$4F,$47,$52,$41,$4D,$FE,$FE,$00
+                db $00,$00,$00,$54,$4F,$4D,$4F,$4E,$4F,$52,$49,$00,$4F,$54,$53,$55
+                db $4B,$41,$FE,$00,$00,$00,$00,$00,$4B,$4F,$4A,$49,$00,$54,$4F,$59
+                db $4F,$48,$41,$52,$41,$FD,$00,$00,$00,$00,$47,$52,$41,$50,$48,$49
+                db $43,$00,$44,$45,$53,$49,$47,$4E,$FE,$FE,$00,$00,$00,$00,$00,$4D
+                db $41,$53,$41,$4D,$49,$00,$54,$41,$42,$41,$54,$41,$FE,$00,$00,$00
+                db $00,$00,$41,$5A,$55,$53,$41,$00,$46,$55,$4A,$49,$4D,$4F,$54,$4F
+                db $FD,$00,$00,$00,$4D,$41,$49,$4E,$00,$53,$4F,$55,$4E,$44,$00,$45
+                db $46,$46,$45,$43,$54,$FE,$FE,$00,$00,$00,$00,$00,$00,$49,$4B,$55
+                db $00,$4D,$49,$5A,$55,$54,$41,$4E,$49,$FD,$00,$00,$00,$53,$55,$42
+                db $00,$53,$4F,$55,$4E,$44,$00,$45,$46,$46,$45,$43,$54,$FE,$FE,$00
+                db $53,$48,$49,$47,$45,$48,$49,$52,$4F,$00,$54,$41,$4B,$45,$4E,$4F
+                db $55,$43,$48,$49,$FE,$00,$00,$00,$00,$4D,$4F,$54,$4F,$41,$4B,$49
+                db $00,$46,$55,$52,$55,$4B,$41,$57,$41,$FD,$00,$00,$00,$00,$00,$00
+                db $47,$41,$4D,$45,$00,$44,$45,$53,$49,$47,$4E,$FE,$FE,$00,$00,$00
+                db $00,$00,$48,$49,$44,$45,$4F,$00,$4B,$4F,$4A,$49,$4D,$41,$FD,$00
+                db $00,$00,$00,$00,$50,$52,$45,$53,$45,$4E,$54,$45,$44,$00,$00,$42
+                db $59,$FE,$FE,$00,$00,$00,$00,$00,$00,$00,$00,$4B,$4F,$4E,$41,$4D
+                db $49,$FE,$FE,$00,$00,$00,$00,$00,$00,$00,$00,$00,$31,$39,$38,$37
+                db $FF
+txt046:         db $04,$CF,$FE,$D9,$FF
+txt047:         db $03,$A1,$A4,$A8,$FE,$CF,$FE,$4D,$37,$39,$5B,$FE,$DF,$5D,$FE,$A8
+                db $A6,$FF
+txt048:         db $03,$A1,$A4,$A8,$FE,$E2,$C0,$6D,$8D,$6A,$40,$00,$75,$79,$00,$E3
+                db $5D,$FE,$C0,$BF,$65,$98,$00,$E6,$A8,$A6,$FF
+txt049:         db $03,$A1,$A4,$A8,$FE,$7F,$73,$64,$6B,$00,$78,$00,$85,$61,$00,$F9
+                db $79,$5E,$FE,$65,$82,$7B,$86,$40,$6B,$98,$95,$00,$65,$98,$00,$E6
+                db $FE,$6F,$73,$63,$79,$98,$5E,$74,$75,$65,$00,$8C,$00,$65,$7B,$98
+                db $88,$00,$73,$65,$A8,$FE,$A8,$A6,$FF
+txt050:         db $13,$A1,$A4,$A8,$FE,$6E,$62,$7A,$98,$00,$8C,$00,$72,$8D,$68,$8D
+                db $00,$6B,$72,$7F,$8A,$3E,$FD,$72,$66,$00,$75,$00,$79,$93,$6B,$8D
+                db $66,$00,$65,$00,$74,$75,$65,$5E,$FE,$73,$87,$71,$68,$86,$89,$72
+                db $00,$79,$00,$61,$74,$61,$65,$5B,$FE,$A8,$A6,$FF
+txt051:         db $03,$A1,$AD,$A8,$FE,$BD,$79,$00,$70,$65,$00,$75,$00,$60,$88,$5D
+                db $FE,$A8,$A6,$FF
+txt052:         db $11,$D7,$FD,$A9,$73,$65,$61,$62,$FE,$B0,$74,$86,$A8,$FD,$EB,$75
+                db $00,$65,$8D,$66,$8D,$00,$6A,$89,$72,$00,$61,$88,$79,$6C,$98,$6F
+                db $98,$5D,$FF
+txt053:         db $03,$A1,$AD,$A8,$FE,$EB,$5B,$FE,$6A,$98,$8D,$77,$8D,$00,$74,$65
+                db $98,$86,$5E,$6B,$86,$74,$61,$A8,$FE,$A8,$A6,$FF
+txt054:         db $11,$D7,$FD,$EB,$75,$00,$70,$65,$71,$98,$67,$FE,$61,$70,$79,$98
+                db $8D,$00,$78,$00,$7D,$62,$7D,$62,$00,$79,$00,$72,$66,$00,$75,$FE
+                db $8B,$6A,$98,$73,$00,$71,$65,$7E,$88,$00,$69,$73,$6F,$98,$A8,$FF
+txt055:         db $04,$BB,$34,$FE,$D9,$FF
+txt056:         db $04,$CE,$FE,$D9,$FF
+txt057:         db $03,$A1,$A4,$A8,$FE,$CE,$5B,$FE,$49,$4E,$47,$52,$55,$4D,$00,$4D
+                db $41,$43,$00,$31,$31,$A8,$FE,$DF,$5D,$FE,$A8,$A6,$FF
+txt058:         db $13,$A1,$A4,$A8,$FE,$EC,$6D,$61,$69,$62,$00,$6F,$98,$5D,$FE,$A9
+                db $78,$00,$73,$98,$67,$7D,$98,$62,$00,$8C,$FE,$ED,$5D,$FD,$65,$7C
+                db $98,$00,$8C,$00,$6B,$86,$7C,$98,$72,$00,$7F,$8A,$3E,$FE,$A8,$A6
+                db $FF
+txt059:         db $12,$85,$67,$66,$72,$67,$89,$6F,$A8,$6B,$8D,$61,$87,$5D,$FE,$A9
+                db $6F,$98,$5D,$FD,$DA,$FE,$B1,$73,$79,$FE,$60,$86,$84,$88,$00,$70
+                db $68,$61,$00,$75,$00,$6F,$61,$64,$62,$FE,$F8,$65,$67,$00,$73,$62
+                db $6A,$61,$5E,$FE,$6B,$98,$95,$62,$7D,$69,$62,$00,$6D,$8D,$6B,$94
+                db $00,$6F,$98,$5D,$FD,$69,$89,$00,$65,$98,$00,$65,$8D,$6D,$61,$00
+                db $6C,$88,$73,$5E,$FE,$70,$66,$95,$62,$6B,$98,$96,$62,$00,$78,$00
+                db $60,$86,$84,$88,$FE,$F9,$65,$86,$00,$78,$00,$65,$67,$69,$62,$68
+                db $98,$66,$FE,$65,$98,$00,$65,$78,$62,$00,$73,$00,$74,$88,$5D,$FD
+                db $74,$8D,$73,$00,$6B,$72,$82,$00,$65,$8D,$6D,$61,$7E,$63,$00,$75
+                db $FE,$F3,$6B,$74,$68,$89,$79,$98,$00,$74,$86,$74,$61,$5D,$FE,$B1
+                db $F3,$FE,$78,$00,$7D,$62,$7D,$62,$00,$79,$00,$6F,$6F,$98,$7A,$73
+                db $71,$5D,$FD,$6E,$89,$00,$79,$FE,$DD,$FE,$AE,$65,$98,$FE,$6B,$93
+                db $72,$61,$88,$A8,$FD,$69,$78,$00,$7A,$98,$88,$00,$78,$00,$73,$98
+                db $69,$65,$00,$75,$FE,$65,$8D,$66,$8D,$00,$6A,$89,$72,$61,$88,$00
+                db $79,$6C,$98,$6F,$98,$5D,$FE,$AE,$8C,$00,$6A,$65,$98,$6D,$3D,$FF
+txt060:         db $13,$A1,$A4,$A8,$FE,$62,$79,$98,$8B,$89,$6F,$5E,$E5,$8C,$00,$73
+                db $87,$65,$63,$6B,$5E,$FB,$6D,$85,$3D,$FD,$73,$98,$69,$65,$00,$78
+                db $00,$7C,$83,$00,$75,$FE,$65,$67,$6A,$89,$72,$00,$61,$88,$79,$6C
+                db $98,$6F,$98,$5D,$FE,$79,$97,$8D,$70,$00,$72,$98,$00,$6A,$65,$98
+                db $6D,$3D,$FE,$A8,$A6,$FF
+txt061:         db $01,$F0,$FE,$B4,$6F,$98,$3E,$FD,$69,$69,$65,$86,$00,$6F,$98,$93
+                db $6E,$62,$00,$72,$98,$66,$6F,$82,$78,$00,$79,$00,$61,$74,$61,$3D
+                db $FF
+txt062:         db $04,$E5,$8C,$00,$73,$87,$65,$63,$6B,$6F,$3E,$FF
+txt063:         db $04,$BB,$33,$FE,$D9,$FF
+txt064:         db $13,$A1,$AD,$A8,$FD,$65,$7C,$98,$00,$8C,$00,$6F,$6F,$61,$72,$5E
+                db $FE,$64,$73,$00,$65,$98,$00,$70,$65,$98,$62,$00,$73,$69,$8A,$FE
+                db $8C,$00,$79,$98,$67,$79,$00,$6C,$88,$73,$00,$61,$61,$5D,$FE,$A8
+                db $A6,$FF
+txt065:         db $04,$BC,$FE,$D9,$FF
+txt066:         db $03,$A1,$A4,$A8,$FE,$BC,$5B,$FE,$64,$73,$69,$00,$74,$86,$00,$71
+                db $65,$62,$74,$3D,$FE,$A8,$A6,$FF
+txt067:         db $04,$BD,$FE,$D9,$FE,$FF
+txt068:         db $03,$A1,$A4,$A8,$FE,$BD,$5B,$FE,$79,$98,$67,$7B,$62,$00,$83,$00
+                db $65,$6D,$98,$00,$75,$00,$71,$85,$61,$5D,$FE,$A8,$A6,$FF
+txt069:         db $04,$D1,$FE,$D9,$FF
+txt070:         db $03,$A1,$A4,$A8,$FE,$D1,$5B,$FE,$73,$98,$69,$00,$75,$00,$72,$98
+                db $82,$00,$6D,$93,$73,$00,$72,$98,$66,$88,$5E,$FE,$79,$98,$67,$6F
+                db $98,$8D,$00,$6F,$98,$5D,$FE,$A8,$A6,$FF
+txt071:         db $04,$CB,$FE,$D9,$FF
+txt072:         db $03,$A1,$A4,$A8,$FE,$CB,$5B,$FE,$6D,$40,$86,$40,$5C,$7B,$67,$00
+                db $65,$5B,$FE,$A8,$A6,$FF
+txt073:         db $FF
+txt074:         db $FF
+txt075:         db $04,$C0,$BF,$FE,$D9,$FF
+txt076:         db $03,$A1,$A4,$A8,$FE,$C0,$BF,$5B,$FE,$C0,$6D,$8D,$6A,$40,$00,$65
+                db $98,$00,$7F,$63,$88,$00,$85,$62,$75,$00,$74,$88,$5D,$FE,$A8,$A6
+                db $FF
+txt077:         db $11,$D7,$FD,$EE,$7C,$00,$61,$67,$75,$79,$00,$DE,$65,$86,$5E,$C8
+                db $69,$62,$65,$FE,$6C,$88,$6B,$65,$00,$74,$61,$5D,$FF
+txt078:         db $01,$D7,$FE,$AE,$79,$FE,$EE,$78,$00,$73,$98,$67,$7D,$98,$62,$00
+                db $75,$00,$61,$88,$5D,$FF
+txt079:         db $01,$F0,$FE,$B5,$3E,$FE,$69,$78,$6A,$66,$00,$79,$00,$73,$64,$6A
+                db $8D,$3D,$FF
+txt080:         db $13,$EF,$A1,$AA,$A8,$FD,$B5,$79,$FE,$D3,$75,$00,$85,$8B,$61,$00
+                db $79,$6C,$98,$00,$85,$5D,$FE,$A8,$A7,$FF
+txt081:         db $04,$C8,$FE,$D9,$FF
+txt082:         db $03,$A1,$A4,$A8,$FE,$C8,$5B,$FE,$69,$62,$65,$00,$7E,$63,$00,$75
+                db $00,$6D,$93,$73,$00,$6B,$8A,$5D,$FE,$A8,$A6,$FF
+txt083:         db $03,$A1,$AD,$A8,$FE,$C8,$79,$00,$32,$46,$00,$75,$00,$60,$88,$5D
+                db $FE,$A8,$A6,$FF
+txt084:         db $01,$D7,$FE,$C8,$65,$98,$00,$60,$89,$79,$98,$00,$6A,$67,$00,$78
+                db $00,$66,$89,$81,$00,$65,$86,$5E,$69,$62,$65,$00,$F8,$5D,$FF
+txt085:         db $04,$C2,$C6,$D9,$FF
+txt086:         db $03,$A1,$A4,$A8,$FE,$C2,$C6,$5B,$FE,$C2,$78,$00,$61,$70,$00,$65
+                db $98,$00,$8B,$65,$88,$5D,$FE,$A8,$A6,$FF
+txt087:         db $03,$A1,$AB,$AC,$FE,$AD,$A8,$FE,$C2,$C6,$79,$00,$DE,$75,$00,$60
+                db $88,$5D,$A8,$A6,$FF
+txt088:         db $03,$EF,$A1,$AA,$A8,$FE,$48,$49,$4E,$44,$00,$44,$00,$79,$00,$CF
+                db $FE,$72,$98,$00,$6F,$64,$6D,$88,$8B,$5D,$FE,$A8,$A7,$FF
+txt089:         db $01,$AE,$A8,$FE,$64,$6E,$65,$93,$6F,$65,$A8,$FF
+txt090:         db $11,$D7,$FD,$AE,$79,$FE,$7A,$73,$60,$6B,$6A,$66,$00,$75,$FE,$7A
+                db $98,$88,$00,$32,$00,$7C,$00,$62,$71,$6A,$89,$6F,$5D,$FD,$7A,$98
+                db $88,$00,$32,$00,$79,$00,$FA,$66,$6F,$00,$7C,$FE,$31,$30,$00,$66
+                db $8A,$00,$78,$00,$F9,$75,$00,$60,$88,$5D,$FF
+txt091:         db $04,$6B,$7E,$93,$6F,$3D,$FE,$E4,$65,$98,$00,$62,$69,$98,$66,$6F
+                db $98,$6B,$6F,$3E,$FF
+txt092:         db $03,$EF,$A1,$AA,$A8,$FE,$B6,$79,$00,$C2,$72,$98,$00,$6F,$64,$6D
+                db $88,$8B,$5D,$FE,$A8,$A7,$FF
+txt093:         db $13,$A1,$A4,$A8,$FE,$68,$8D,$82,$8D,$00,$6F,$98,$5D,$FE,$CB,$8C
+                db $00,$66,$72,$5E,$EC,$FE,$6D,$85,$3D,$FD,$FA,$78,$00,$F5,$79,$00
+                db $DC,$FE,$31,$32,$30,$31,$33,$00,$72,$98,$00,$64,$69,$74,$62,$5D
+                db $FE,$A8,$A6,$FF
+txt094:         db $13,$A1,$AB,$AC,$FE,$AD,$A8,$FE,$CB,$79,$00,$7A,$98,$88,$00,$31
+                db $00,$78,$00,$70,$65,$FE,$75,$00,$60,$88,$5D,$FD,$FA,$78,$00,$F5
+                db $79,$00,$DC,$FE,$31,$32,$30,$32,$36,$00,$75,$00,$7C,$8D,$69,$62
+                db $00,$6C,$88,$5D,$FE,$A8,$A6,$FF
+txt095:         db $03,$EF,$A1,$AA,$A8,$FE,$FA,$78,$00,$F5,$79,$00,$DC,$FE,$31,$32
+                db $30,$39,$31,$00,$75,$00,$7C,$8D,$69,$62,$00,$6C,$88,$8B,$5D,$FE
+                db $7E,$6F,$00,$85,$8D,$72,$98,$77,$5D,$FE,$A8,$A7,$FF
+txt096:         db $04,$BE,$D9,$FF
+txt097:         db $03,$A1,$A4,$A8,$FE,$BE,$5B,$FE,$DF,$5D,$FE,$A8,$A6,$FF
+txt098:         db $04,$C3,$D9,$FF
+txt099:         db $03,$A1,$A4,$A8,$FE,$7D,$98,$62,$65,$98,$61,$00,$72,$98,$8D,$79
+                db $97,$00,$65,$98,$00,$72,$98,$72,$61,$6F,$00,$65,$98,$5E,$FE,$69
+                db $89,$72,$98,$00,$6F,$98,$61,$6B,$98,$96,$62,$7B,$98,$00,$6F,$98
+                db $5D,$FE,$A8,$A6,$FF
+txt100:         db $03,$A1,$AD,$A8,$FE,$66,$6F,$00,$E1,$79,$00,$62,$63,$00,$75,$00
+                db $6B,$65,$FE,$F6,$6B,$74,$61,$5D,$FE,$A8,$A6,$FF
+txt101:         db $01,$D7,$FE,$AE,$79,$FE,$70,$65,$8A,$62,$00,$75,$00,$61,$88,$5D
+                db $FF
+txt102:         db $FF
+txt103:         db $04,$BB,$35,$FE,$D9,$FF
+txt104:         db $FF
+txt105:         db $03,$A1,$AD,$A8,$FE,$7F,$74,$7F,$00,$E1,$79,$00,$6B,$6F,$00,$75
+                db $00,$6B,$65,$FE,$F6,$6B,$74,$61,$5D,$FE,$A8,$A6,$FF
+txt106:         db $03,$A1,$AD,$A8,$FE,$69,$78,$00,$6A,$66,$00,$79,$00,$65,$98,$6C
+                db $00,$70,$6F,$61,$6F,$98,$5D,$FE,$A8,$A6,$FF
+txt107:         db $11,$D7,$FD,$69,$78,$00,$E7,$65,$86,$00,$FB,$FE,$6C,$88,$00,$75
+                db $79,$00,$66,$6F,$00,$E1,$8C,$FE,$6A,$65,$98,$6C,$00,$6B,$65,$74
+                db $61,$3D,$FF
+txt108:         db $01,$F0,$B8,$3E,$FE,$7E,$88,$83,$66,$00,$75,$00,$00,$00,$6B,$72
+                db $83,$88,$3E,$FF
+txt109:         db $01,$8B,$74,$00,$75,$00,$79,$7E,$93,$6F,$74,$3D,$FD,$7D,$8D,$82
+                db $78,$00,$78,$FE,$AE,$79,$00,$32,$46,$00,$75,$00,$61,$88,$A8,$FD
+                db $6B,$77,$3E,$00,$B0,$3D,$FF
+txt110:         db $04,$BB,$36,$FE,$D9,$FF
+txt111:         db $03,$A1,$AD,$A8,$FE,$69,$78,$00,$6A,$66,$00,$75,$00,$66,$6F,$FE
+                db $E1,$65,$98,$00,$60,$88,$5D,$FE,$A8,$A6,$FF
+txt112:         db $03,$A1,$AD,$A8,$FE,$BE,$79,$00,$31,$46,$00,$75,$00,$60,$88,$5D
+                db $FE,$A8,$A6,$FF
+txt113:         db $03,$EF,$A1,$AA,$5D,$68,$98,$8D,$66,$5B,$FE,$64,$73,$6B,$60,$74
+                db $00,$75,$00,$70,$95,$62,$61,$00,$6B,$72,$3D,$FE,$A8,$A7,$FF
+txt114:         db $03,$EF,$A1,$AA,$A8,$FE,$D6,$8C,$00,$7E,$82,$93,$72,$00,$61,$88
+                db $00,$B9,$79,$FE,$7B,$6B,$98,$7F,$00,$6F,$98,$8B,$3D,$FE,$75,$68
+                db $98,$72,$3E,$FF
+txt115:         db $01,$D7,$FE,$6A,$79,$98,$67,$00,$8C,$00,$8B,$6F,$88,$00,$75,$79
+                db $00,$C7,$65,$98,$00,$E6,$FF
+txt116:         db $11,$D7,$FD,$DC,$31,$32,$30,$34,$38,$00,$72,$98,$FE,$AB,$78,$00
+                db $A5,$FE,$73,$00,$F5,$65,$98,$00,$73,$89,$88,$79,$6C,$98,$6F,$98
+                db $5D,$FD,$A5,$79,$00,$6B,$98,$65,$00,$75,$FE,$E9,$6B,$72,$67,$89
+                db $88,$5D,$FD,$6B,$65,$6B,$5E,$7B,$97,$86,$61,$73,$98,$00,$65,$98
+                db $00,$6F,$65,$61,$5D,$FD,$71,$77,$00,$75,$5E,$6A,$61,$69,$62,$00
+                db $65,$61,$66,$95,$62,$00,$72,$98,$00,$74,$61,$73,$00,$64,$62,$73
+                db $62,$00,$6B,$72,$67,$89,$00,$74,$61,$FE,$6F,$98,$8A,$62,$5D,$FF
+txt117:         db $03,$A1,$A5,$A8,$FE,$D0,$8C,$00,$85,$62,$61,$00,$6C,$88,$8B,$5D
+                db $FE,$73,$87,$00,$75,$00,$66,$72,$5D,$FE,$A8,$A6,$FF
+txt118:         db $03,$A1,$A5,$A8,$FE,$61,$7E,$65,$86,$00,$D6,$8C,$00,$60,$68,$88
+                db $8B,$5D,$FE,$A8,$A6,$FF
+txt119:         db $04,$D0,$FE,$D9,$FF
+txt120:         db $04,$C7,$D9,$FF
+txt121:         db $04,$C9,$FE,$D9,$FF
+txt122:         db $03,$A1,$AD,$A8,$FE,$C7,$79,$00,$32,$46,$00,$75,$00,$60,$88,$5D
+                db $FE,$A8,$A6,$FF
+txt123:         db $01,$D7,$FE,$6C,$61,$69,$62,$00,$78,$00,$64,$67,$00,$65,$98,$00
+                db $7A,$98,$88,$00,$33,$00,$75,$71,$74,$65,$98,$93,$72,$00,$61,$88
+                db $5D,$FF
+txt124:         db $12,$FC,$FE,$AE,$FE,$6F,$98,$5D,$FE,$80,$6C,$81,$00,$78,$00,$AF
+                db $65,$98,$FE,$7A,$73,$6B,$98,$70,$00,$75,$00,$74,$93,$72,$61,$88
+                db $5D,$FD,$AF,$8C,$00,$6F,$6C,$68,$72,$FE,$67,$89,$74,$68,$89,$79
+                db $98,$5E,$FE,$B1,$75,$FE,$71,$61,$72,$5E,$79,$74,$6C,$69,$73,$00
+                db $79,$FE,$72,$98,$66,$74,$61,$5D,$FD,$AF,$79,$00,$7A,$98,$88,$00
+                db $31,$00,$78,$FE,$70,$65,$00,$75,$00,$65,$8D,$66,$8D,$00,$6A,$89
+                db $72,$61,$88,$5D,$FE,$6F,$6C,$68,$72,$00,$67,$89,$5D,$FF
+txt125:         db $12,$FC,$FE,$AE,$FE,$6F,$98,$5D,$FD,$B1,$79,$00,$69,$78,$00,$7A
+                db $98,$88,$00,$65,$86,$00,$66,$6F,$00,$75,$00,$32,$30,$66,$8A,$FE
+                db $78,$00,$F9,$75,$60,$88,$5E,$FE,$7A,$98,$88,$00,$33,$00,$78,$00
+                db $70,$65,$00,$31,$30,$30,$65,$61,$FE,$75,$00,$60,$88,$5D,$FD,$B1
+                db $78,$FE,$F3,$7D,$62,$7D,$62,$00,$79,$00,$7A,$73,$71,$5D,$FE,$6E
+                db $62,$69,$62,$00,$78,$00,$62,$6C,$61,$00,$66,$94,$67,$7B,$98,$FE
+                db $75,$00,$D1,$FE,$6D,$93,$73,$00,$6C,$88,$5D,$FD,$F4,$79,$00,$52
+                db $5E,$52,$5E,$4C,$5E,$FE,$52,$5E,$4C,$5E,$4C,$5E,$52,$5E,$4C,$5E
+                db $FE,$4C,$5E,$52,$5E,$52,$5E,$4C,$5E,$52,$5E,$FE,$4C,$5E,$52,$5E
+                db $A8,$FE,$60,$73,$00,$79,$00,$8B,$6C,$89,$72,$6B,$7E,$93,$6F,$3D
+                db $FD,$73,$75,$65,$67,$5E,$FE,$31,$36,$69,$00,$6D,$93,$73,$00,$6C
+                db $88,$78,$6F,$98,$5D,$FD,$7A,$98,$88,$00,$32,$00,$8C,$00,$72,$98
+                db $88,$00,$D6,$78,$00,$BB,$79,$00,$B9,$65,$98,$00,$82,$93,$72,$61
+                db $88,$5D,$B9,$79,$00,$D0,$75,$FE,$85,$8B,$61,$3D,$FD,$69,$62,$62
+                db $8D,$00,$8C,$00,$61,$78,$88,$A8,$FF
+txt126:         db $03,$A1,$AD,$A8,$FE,$7A,$98,$88,$00,$31,$00,$75,$79,$5E,$70,$65
+                db $00,$78,$00,$74,$8D,$6D,$61,$00,$65,$86,$FE,$7A,$7F,$71,$00,$78
+                db $00,$70,$65,$71,$62,$8A,$00,$65,$98,$00,$F5,$FE,$6B,$72,$61,$88
+                db $5D,$FE,$A8,$A6,$FF
+txt127:         db $00,$85,$6B,$5E,$79,$61,$89,$3D,$FF
+txt128:         db $00,$6F,$6C,$68,$72,$3D,$FF
+txt129:         db $12,$60,$87,$65,$98,$73,$62,$A8,$FE,$FC,$FE,$AE,$78,$00,$80,$6C
+                db $81,$5E,$FE,$AF,$5D,$FD,$70,$70,$00,$79,$00,$66,$96,$62,$79,$67
+                db $00,$6A,$89,$72,$5E,$FE,$B1,$8C,$FE,$71,$67,$86,$6A,$89,$72,$00
+                db $61,$88,$78,$5D,$FE,$79,$83,$67,$00,$70,$70,$00,$8C,$00,$FE,$6F
+                db $6C,$68,$72,$00,$67,$6F,$98,$6A,$61,$5D,$FF
+txt130:         db $03,$EF,$A1,$AA,$A8,$FE,$6A,$6E,$87,$00,$78,$00,$73,$98,$67,$00
+                db $79,$00,$C9,$8C,$FE,$71,$65,$62,$00,$73,$00,$61,$61,$8B,$5D,$FE
+                db $A8,$A7,$FF
+txt131:         db $00,$D7,$FF
+txt132:         db $03,$A1,$A4,$A8,$FE,$7A,$6F,$98,$87,$00,$78,$00,$D6,$7C,$00,$79
+                db $61,$89,$3D,$FE,$A8,$A6,$FF
+txt133:         db $03,$A1,$A4,$A8,$FE,$7F,$66,$98,$00,$79,$6B,$00,$78,$00,$E4,$7C
+                db $00,$79,$61,$89,$3D,$FE,$A8,$A6,$FF
+txt134:         db $03,$A1,$A5,$A8,$FE,$65,$7C,$98,$00,$8C,$00,$F3,$6C,$88,$78,$85
+                db $3E,$FE,$A8,$A6,$FF
+txt135:         db $03,$A1,$A5,$3D,$FE,$65,$7C,$98,$00,$78,$00,$80,$69,$62,$00,$75
+                db $00,$C5,$65,$98,$FE,$60,$88,$79,$6C,$98,$3E,$FE,$A8,$A6,$FF
+txt136:         db $13,$A1,$A4,$A8,$FE,$A2,$3D,$FE,$6A,$67,$6D,$8D,$00,$70,$95,$62
+                db $6B,$00,$6F,$98,$3D,$FE,$6F,$6F,$98,$70,$00,$75,$00,$66,$65,$8D
+                db $00,$6D,$85,$5D,$FD,$69,$89,$79,$00,$81,$61,$89,$61,$00,$6F,$98
+                db $3E,$FE,$4D,$53,$58,$00,$78,$00,$72,$98,$8D,$68,$98,$8D,$00,$8C
+                db $00,$66,$89,$3E,$FE,$A8,$A6,$FF
+txt137:         db $13,$A1,$A5,$3D,$FD,$69,$78,$6A,$66,$00,$78,$00,$D6,$8C,$00,$60
+                db $68,$88,$00,$BB,$79,$7A,$98,$88,$00,$33,$00,$78,$00,$7A,$65,$98
+                db $6B,$65,$98,$8B,$00,$75,$00,$60,$88,$8B,$5D,$FE,$6E,$69,$00,$79
+                db $00,$7A,$98,$88,$00,$32,$00,$78,$00,$6C,$61,$69,$62,$00,$73,$FE
+                db $71,$74,$65,$98,$93,$72,$00,$61,$88,$78,$85,$5D,$FE,$A8,$A7,$FF
+txt138:         db $13,$A1,$AD,$A8,$FE,$B2,$78,$00,$7D,$98,$6C,$00,$78,$FE,$6B,$96
+                db $62,$6F,$61,$00,$65,$98,$00,$8B,$65,$93,$6F,$6E,$98,$3D,$FD,$74
+                db $8D,$73,$A8,$FE,$B2,$78,$00,$7D,$98,$6C,$00,$79,$A8,$FD,$A8,$8B
+                db $40,$3E,$FE,$A8,$FF
+txt139:         db $01,$F0,$BA,$3D,$FD,$62,$72,$88,$82,$78,$00,$74,$86,$00,$62,$93
+                db $72,$7F,$8A,$3E,$FF
+txt140:         db $11,$D7,$FD,$FC,$A5,$78,$FD,$60,$75,$00,$6F,$98,$5D,$FD,$FB,$6C
+                db $88,$73,$66,$00,$79,$00,$7A,$6F,$98,$87,$79,$6B,$FD,$78,$00,$79
+                db $6B,$69,$98,$00,$8C,$00,$78,$7D,$98,$89,$3E,$FF
+txt141:         db $03,$EF,$A1,$AA,$3D,$FE,$7F,$65,$6F,$00,$8C,$00,$69,$8A,$6A,$6C
+                db $98,$5E,$6F,$64,$6C,$00,$7D,$62,$7D,$62,$00,$79,$00,$CD,$6B,$65
+                db $00,$74,$61,$8B,$5D,$FE,$A8,$A7,$FF
+txt142:         db $13,$A1,$A5,$A8,$FE,$BB,$38,$00,$79,$00,$BA,$65,$98,$00,$82,$93
+                db $72,$61,$88,$8B,$5D,$FD,$7D,$87,$96,$00,$78,$00,$74,$65,$75,$00
+                db $8B,$6F,$6B,$00,$78,$00,$60,$75,$00,$65,$98,$FE,$61,$88,$78,$3D
+                db $00,$69,$8A,$6A,$74,$61,$72,$98,$A8,$FD,$60,$75,$00,$75,$00,$74
+                db $75,$65,$00,$60,$93,$6F,$86,$5E,$FE,$82,$62,$5E,$66,$96,$62,$87
+                db $96,$67,$00,$6B,$74,$61,$8B,$3D,$FF
+txt143:         db $04,$BB,$38,$D9,$FF
+txt144:         db $11,$D7,$FD,$B2,$78,$FE,$7D,$98,$6C,$00,$79,$FD,$B0,$FE,$A3,$5E
+                db $A4,$FE,$6F,$98,$3D,$FD,$74,$75,$82,$65,$82,$00,$83,$71,$00,$78
+                db $00,$6B,$8B,$6A,$98,$00,$6F,$98,$3E,$FE,$6F,$98,$7E,$6A,$89,$88
+                db $74,$3E,$FF
+txt145:         db $03,$A1,$A5,$3E,$FE,$7A,$6F,$98,$87,$00,$78,$00,$65,$7C,$98,$00
+                db $8C,$00,$69,$8B,$6C,$78,$85,$3D,$FE,$A8,$A6,$FF
+txt146:         db $03,$A1,$A5,$3D,$FE,$61,$93,$66,$00,$75,$00,$79,$6B,$88,$6B,$65
+                db $5E,$74,$61,$8B,$3D,$FE,$CA,$65,$98,$00,$60,$89,$79,$98,$00,$6F
+                db $98,$61,$6B,$98,$96,$62,$7B,$98,$85,$5D,$FE,$A8,$A6,$FF
+txt147:         db $12,$A2,$3D,$FE,$85,$67,$00,$69,$69,$7E,$72,$98,$00,$66,$6F,$74
+                db $3D,$A8,$FD,$A8,$8B,$6F,$6B,$00,$65,$98,$FE,$B0,$FE,$A3,$5E,$6E
+                db $6B,$72,$5E,$FD,$69,$78,$00,$F7,$5E,$FE,$B2,$78,$FE,$7D,$98,$6C
+                db $5E,$A4,$6F,$98,$3E,$FD,$6B,$8D,$61,$87,$00,$72,$98,$60,$88,$5E
+                db $64,$7E,$63,$00,$75,$00,$69,$78,$00,$75,$8D,$80,$00,$8C,$FE,$60
+                db $6F,$63,$6F,$00,$78,$82,$5E,$62,$6E,$00,$78,$FE,$6B,$98,$96,$62
+                db $7D,$62,$00,$8C,$00,$82,$70,$65,$63,$86,$6D,$88,$6F,$81,$6F,$98
+                db $93,$6F,$A8,$FD,$6B,$65,$6B,$5E,$FE,$64,$7E,$63,$00,$79,$00,$83
+                db $87,$6C,$66,$98,$6F,$5D,$FE,$83,$87,$6C,$66,$98,$6F,$78,$6F,$98
+                db $3D,$FD,$A2,$3D,$FD,$FC,$6F,$6F,$98,$72,$98,$00,$79,$FE,$6B,$74
+                db $74,$61,$5D,$FE,$7F,$70,$71,$98,$89,$00,$75,$00,$6B,$72,$83,$88
+                db $3E,$FD,$65,$65,$93,$72,$00,$69,$61,$3D,$FF
+txt148:         db $03,$A1,$A5,$3D,$FE,$6F,$79,$98,$69,$00,$8C,$00,$71,$65,$62,$00
+                db $73,$00,$6F,$61,$7E,$40,$00,$65,$98,$FE,$7B,$63,$88,$8B,$5D,$FE
+                db $61,$66,$72,$00,$65,$63,$93,$72,$77,$3D,$FE,$A2,$A8,$FF
+txt149:         db $13,$A1,$AA,$3D,$FE,$A4,$8C,$00,$6F,$64,$6C,$00,$7D,$62,$7D,$62
+                db $00,$79,$FE,$6B,$86,$74,$61,$8B,$A8,$FE,$6E,$89,$00,$79,$00,$60
+                db $74,$6F,$00,$6B,$6F,$98,$61,$3D,$FE,$A2,$3D,$FD,$A8,$8B,$6F,$6B
+                db $A8,$FE,$60,$74,$6F,$00,$78,$00,$69,$73,$A8,$FE,$61,$63,$5E,$74
+                db $8D,$72,$98,$82,$00,$74,$61,$8B,$A8,$FE,$69,$98,$7B,$98,$6B,$98
+                db $00,$72,$98,$A8,$FF
+txt150:         db $11,$66,$8D,$66,$95,$62,$00,$6B,$98,$6F,$61,$3E,$FD,$66,$8D,$66
+                db $95,$62,$00,$6B,$98,$6F,$61,$3E,$FD,$B2,$78,$00,$79,$98,$67,$79
+                db $FE,$6C,$61,$93,$70,$00,$65,$98,$5E,$6A,$73,$98,$62,$00,$6B,$7E
+                db $6B,$6F,$3D,$FD,$6F,$6F,$98,$70,$00,$75,$00,$6F,$98,$93,$6B,$95
+                db $71,$00,$65,$71,$73,$98,$62,$00,$8C,$00,$64,$69,$74,$93,$72,$00
+                db $67,$6F,$98,$6A,$61,$3D,$FF
+txt151:         db $04,$C1,$FE,$D9,$FF
+txt152:         db $04,$C5,$FE,$D9,$FF
+txt153:         db $04,$BB,$37,$FE,$D9,$FF
+txt154:         db $03,$A1,$A4,$A8,$FE,$C1,$5B,$FE,$65,$98,$6C,$70,$6F,$61,$00,$72
+                db $98,$00,$71,$65,$62,$78,$6F,$98,$5D,$FE,$A8,$A6,$FF
+txt155:         db $13,$A1,$A2,$A8,$FE,$B1,$F3,$75,$00,$6D,$61,$69,$62,$5D,$FE,$4F
+                db $50,$45,$52,$41,$54,$49,$4F,$4E,$00,$49,$4E,$54,$52,$55,$44,$45
+                db $00,$4E,$33,$31,$33,$FE,$65,$8D,$87,$96,$62,$00,$6B,$6F,$3D,$FD
+                db $74,$75,$82,$65,$82,$00,$64,$8B,$93,$6F,$A8,$FE,$74,$75,$82,$65
+                db $82,$A8,$FD,$6F,$6F,$98,$61,$7E,$00,$65,$86,$00,$66,$65,$8D,$6C
+                db $88,$5D,$FE,$A8,$A6,$FF
+txt156:         db $03,$EF,$A1,$AA,$A8,$FE,$65,$89,$86,$00,$79,$00,$D4,$8C,$00,$82
+                db $93,$72,$61,$88,$8B,$5D,$FE,$A8,$A6,$FF
+txt157:         db $03,$A1,$D8,$A8,$FE,$AA,$5B,$FE,$AA,$74,$86,$5E,$65,$61,$82,$78
+                db $00,$75,$00,$61,$93,$6F,$00,$7E,$7E,$5E,$65,$63,$93,$72,$00,$61
+                db $74,$61,$00,$68,$73,$98,$A8,$FF
+txt158:         db $03,$A1,$D8,$A8,$FE,$AA,$5B,$FE,$AA,$74,$86,$00,$61,$7E,$5E,$6B
+                db $94,$8B,$40,$00,$8C,$00,$60,$7A,$98,$72,$61,$88,$68,$73,$98,$A8
+                db $FF
+txt159:         db $13,$A1,$D8,$A8,$FE,$AA,$5B,$FE,$7E,$6F,$00,$64,$7E,$63,$00,$65
+                db $3D,$FD,$82,$62,$5E,$AA,$75,$79,$FE,$70,$65,$71,$98,$65,$74,$61
+                db $72,$98,$00,$67,$89,$3E,$FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -732,96 +732,96 @@ idxDictionary:
 ; Dictionary entries
 ;
 ;----------------------------------------------------------------------------
-DicEntry001:    db  69h, 70h, 86h,   0,0FFh
-DicEntry002:    db  "SOLID",   0, "SNAKE",   0,0FFh
-DicEntry003:    db  6Eh, 62h, 6Bh, 89h, 61h, 65h, 8Dh,   0,0FFh
-DicEntry004:    db  "BIG",   0, "BOSS",   0,0FFh
-DicEntry005:    db  "JENNIFER",   0,0FFh
-DicEntry006:    db  "OVER",   0,0FFh
-DicEntry007:    db  "BYE",   0,0FFh
-DicEntry008:    db  5Ch, 5Ch, 5Ch,   0,0FFh
-DicEntry009:    db  "GREY",   0, "FOX",   0,0FFh
-DicEntry010:    db  "DIANE",   0,0FFh
-DicEntry011:    db  89h, 6Bh, 98h, 6Ch, 6Fh, 8Dh, 6Ch,   0,0FFh
-DicEntry012:    db  87h, 40h, 6Fh, 98h, 40h,   0,0FFh
-DicEntry013:    db  "SCHNEIDER",   0,0FFh
-DicEntry014:    db  "DR", 5Ch, "PETTROVICH",   0,0FFh
-DicEntry015:    db  "ELEN",   0,0FFh
-DicEntry016:    db  "FOX",   0, "HOUNDER",   0,0FFh
-DicEntry017:    db  "METAL",   0, "GEAR",   0,0FFh
-DicEntry018:    db  "OUTER",   0, "HEAVEN",   0,0FFh
-DicEntry019:    db  "KEY",   0,  #8C,   0, #64, #6c,   0, #73, #5E,0FFh
-DicEntry020:    db  "SHOOT",   0, "GUNNER",   0,0FFh
-DicEntry021:    db  "MACHINEGUN",   0, "KID",   0,0FFh
-DicEntry022:    db  "TANK",   0,0FFh
-DicEntry023:    db  "HIND@D",   0,0FFh
-DicEntry024:    db  "FIRE",   0, "TROOPER",   0,0FFh
-DicEntry025:    db  "ARNOLD",   0,0FFh
-DicEntry026:    db  "COWARD",   0, "DUCK",   0,0FFh
-DicEntry027:    db  65h, 40h, 73h, 98h,   0,0FFh
-DicEntry028:    db  7Dh, 98h, 72h, 98h, 61h, 40h, 5Ch, 60h, 40h, 7Eh, 40h,   0,0FFh
-DicEntry029:    db  7Dh, 98h, 80h, 5Ch, 7Bh, 98h, 86h, 6Ch, 73h, 5Ch, 6Ch, 40h, 71h,   0,0FFh
-DicEntry030:    db  7Bh, 86h, 93h, 6Bh, 95h, 5Ch, 86h, 61h, 73h,   0,0FFh
-DicEntry031:    db  69h, 98h, 40h, 67h, 98h, 88h,   0,0FFh
-DicEntry032:    db  6Dh, 66h, 65h, 98h, 61h, 6Dh, 8Dh,   0,0FFh
-DicEntry033:    db  65h, 98h, 6Ch, 7Eh, 6Ch, 67h,   0,0FFh
-DicEntry034:    db  6Bh, 98h, 86h, 61h,   0,0FFh
-DicEntry035:    db  60h, 8Dh, 72h, 74h,   0,0FFh
-DicEntry036:    db  6Eh, 62h, 65h, 98h, 8Dh, 66h, 96h, 62h,   0,0FFh
-DicEntry037:    db  6Ah, 8Dh, 6Eh, 7Dh, 98h, 8Dh, 7Ch, 98h,   0,0FFh
-DicEntry038:    db  6Fh, 8Dh, 70h, 66h,   0,0FFh
-DicEntry039:    db  69h, 8Dh, 79h, 97h, 6Ch,   0,0FFh
-DicEntry040:    db  79h, 97h, 86h, 6Bh, 95h, 40h, 73h,   0,   0,0FFh
-DicEntry041:    db  68h, 98h, 73h, 98h, 67h, 6Ah, 98h, 61h,   0,0FFh
-DicEntry042:    db  89h, 40h, 6Bh, 96h, 8Dh,   0,0FFh
-DicEntry043:    db  72h, 66h,   0, 78h,   0, 84h, 75h, 7Dh, 40h, 80h,   0,0FFh
-DicEntry044:    db  6Fh, 98h, 8Dh, 7Dh, 98h, 40h, 88h,   0,0FFh
-DicEntry045:    db  79h, 8Dh, 73h, 98h, 65h, 98h, 8Dh,   0,0FFh
-DicEntry046:    db  6Ah, 7Bh, 98h, 7Eh, 6Bh, 8Dh, 65h, 98h, 8Dh,   0,0FFh
-DicEntry047:    db  67h, 98h, 89h, 77h, 40h, 73h, 98h, 5Ch, 86h, 8Dh, 70h, 94h, 40h,   0,0FFh
-DicEntry048:    db  8Ah, 68h, 93h, 73h, 5Ch, 86h, 8Dh, 70h, 94h, 40h,   0,0FFh
-DicEntry049:    db  7Bh, 97h, 86h, 6Ch, 70h, 93h, 67h, 5Ch, 79h, 98h, 67h, 6Fh, 98h, 8Dh,   0,0FFh
-DicEntry050:    db  60h, 40h, 3Dh, 77h, 80h, 61h, 3Eh,0FFh
-DicEntry051:    db  87h, 82h, 69h, 8Dh, 5Ch, 7Fh, 6Ah, 61h, 88h,   0,0FFh
-DicEntry052:    db  6Ah, 61h, 89h, 8Dh, 6Ah, 40h,   0,0FFh
-DicEntry053:    db  77h, 72h, 6Bh, 7Eh, 93h, 6Fh, 3Dh,0FFh
-DicEntry054:    db  73h, 7Ah, 98h, 86h,   0,0FFh
-DicEntry055:    db  6Fh, 6Ch, 65h, 93h, 6Fh, 3Dh,   0,0FFh
-DicEntry056:    db  "STEVE",0FFh
-DicEntry057:    db  8Ch,   0, 75h, 95h, 62h, 6Bh, 95h,   0, 6Bh, 6Fh, 5Dh,0FFh
-DicEntry058:    db  6Ah, 61h, 6Bh, 95h, 62h, 7Ch, 61h, 66h,   0,0FFh
-DicEntry059:    db  8Bh, 5Eh, 8Bh, 65h, 93h, 6Fh, 3Dh, 79h, 74h, 6Ch,   0,0FFh
-DicEntry060:    db  6Bh, 95h, 62h, 79h, 6Ch, 62h,   0,0FFh
-DicEntry061:    db  65h, 61h, 79h, 71h, 6Bh, 94h,   0,0FFh
-DicEntry062:    db  64h, 67h, 6Bh, 98h, 96h, 62h,   0,0FFh
-DicEntry064:    db  71h, 65h, 61h, 65h, 6Fh,   0, 79h,   0, 8Bh, 65h, 93h, 72h, 61h, 88h, 74h,   0,0FFh
-DicEntry065:    db  6Fh, 98h, 8Dh, 83h, 67h,   0,0FFh
-DicEntry066:    db  63h, 89h, 7Ch, 98h, 40h, 6Fh, 40h,   0,0FFh
-DicEntry067:    db  61h, 61h, 8Bh, 6Ch, 89h, 72h, 61h, 6Fh, 65h, 98h,   0,0FFh
-DicEntry068:    db  70h, 95h, 62h, 61h,   0, 6Bh, 8Ah,   0,0FFh
-DicEntry069:    db  73h, 86h, 93h, 67h,   0,0FFh
-DicEntry070:    db  7Bh, 98h, 66h, 5Eh, 6Eh, 62h, 7Ah, 98h,   0,0FFh
-DicEntry071:    db  7Ah, 71h, 85h, 62h, 6Fh, 98h, 5Dh,   0,0FFh
-DicEntry072:    db  7Bh, 8Ah, 60h,   0,0FFh
-DicEntry073:    db  69h, 8Dh, 6Fh, 67h, 73h,   0,0FFh
-DicEntry074:    db  6Ah, 7Dh, 97h, 40h, 73h,   0,0FFh
-DicEntry075:    db  71h, 65h, 63h,   0,0FFh
-DicEntry076:    db  7Ah, 7Fh, 71h,   0, 78h,   0, 73h, 98h, 67h, 7Dh, 98h, 62h,   0,0FFh
-DicEntry077:    db  6Dh, 8Dh, 75h, 95h, 62h,   0,0FFh
-DicEntry078:    db  6Ah, 65h, 98h, 6Dh,   0,0FFh
-DicEntry079:    db  74h, 65h, 75h, 8Bh,   0,0FFh
-DicEntry080:    db  79h, 40h, 61h, 5Dh,0FFh
-DicEntry081:    db  64h, 89h,   0, 79h,   0,0FFh
-DicEntry082:    db    0,0FFh
-DicEntry083:    db    0,0FFh
-DicEntry084:    db  79h, 65h, 61h,   0,0FFh
-DicEntry085:    db  6Bh, 98h, 95h, 8Dh, 79h, 98h, 8Dh,   0,0FFh
-DicEntry086:    db  89h, 8Dh, 86h, 67h,   0,0FFh
-DicEntry087:    db  61h, 73h, 98h, 62h,   0,0FFh
-DicEntry088:    db  85h, 62h, 6Ah, 61h,   0,0FFh
-DicEntry089:    db  72h, 98h, 66h, 88h,   0,0FFh
-DicEntry090:    db  73h, 69h, 8Ah,   0,0FFh
-DicEntry091:    db  69h, 69h, 65h, 86h,   0,0FFh
-DicEntry092:    db  6Fh, 98h, 93h, 6Bh, 95h, 71h,   0,0FFh
-DicEntry093:    db  8Bh, 6Fh, 6Bh,   0, 79h,   0,0FFh
-DicEntry094:    db  7Dh, 62h, 7Dh, 62h,   0,0FFh
+DicEntry001:    db $69,$70,$86,$00,$FF
+DicEntry002:    db "SOLID",$00,"SNAKE",$00,$FF
+DicEntry003:    db $6E,$62,$6B,$89,$61,$65,$8D,$00,$FF
+DicEntry004:    db "BIG",$00,"BOSS",$00,$FF
+DicEntry005:    db "JENNIFER",$00,$FF
+DicEntry006:    db "OVER",$00,$FF
+DicEntry007:    db "BYE",$00,$FF
+DicEntry008:    db $5C,$5C,$5C,$00,$FF
+DicEntry009:    db "GREY",$00,"FOX",$00,$FF
+DicEntry010:    db "DIANE",$00,$FF
+DicEntry011:    db $89,$6B,$98,$6C,$6F,$8D,$6C,$00,$FF
+DicEntry012:    db $87,$40,$6F,$98,$40,$00,$FF
+DicEntry013:    db "SCHNEIDER",$00,$FF
+DicEntry014:    db "DR",$5C,"PETTROVICH",$00,$FF
+DicEntry015:    db "ELEN",$00,$FF
+DicEntry016:    db "FOX",$00,"HOUNDER",$00,$FF
+DicEntry017:    db "METAL",$00,"GEAR",$00,$FF
+DicEntry018:    db "OUTER",$00,"HEAVEN",$00,$FF
+DicEntry019:    db "KEY",$00,$8C,$00,$64,$6C,$00,$73,$5E,$FF
+DicEntry020:    db "SHOOT",$00,"GUNNER",$00,$FF
+DicEntry021:    db "MACHINEGUN",$00,"KID",$00,$FF
+DicEntry022:    db "TANK",$00,$FF
+DicEntry023:    db "HIND@D",$00,$FF
+DicEntry024:    db "FIRE",$00,"TROOPER",$00,$FF
+DicEntry025:    db "ARNOLD",$00,$FF
+DicEntry026:    db "COWARD",$00,"DUCK",$00,$FF
+DicEntry027:    db $65,$40,$73,$98,$00,$FF
+DicEntry028:    db $7D,$98,$72,$98,$61,$40,$5C,$60,$40,$7E,$40,$00,$FF
+DicEntry029:    db $7D,$98,$80,$5C,$7B,$98,$86,$6C,$73,$5C,$6C,$40,$71,$00,$FF
+DicEntry030:    db $7B,$86,$93,$6B,$95,$5C,$86,$61,$73,$00,$FF
+DicEntry031:    db $69,$98,$40,$67,$98,$88,$00,$FF
+DicEntry032:    db $6D,$66,$65,$98,$61,$6D,$8D,$00,$FF
+DicEntry033:    db $65,$98,$6C,$7E,$6C,$67,$00,$FF
+DicEntry034:    db $6B,$98,$86,$61,$00,$FF
+DicEntry035:    db $60,$8D,$72,$74,$00,$FF
+DicEntry036:    db $6E,$62,$65,$98,$8D,$66,$96,$62,$00,$FF
+DicEntry037:    db $6A,$8D,$6E,$7D,$98,$8D,$7C,$98,$00,$FF
+DicEntry038:    db $6F,$8D,$70,$66,$00,$FF
+DicEntry039:    db $69,$8D,$79,$97,$6C,$00,$FF
+DicEntry040:    db $79,$97,$86,$6B,$95,$40,$73,$00,$00,$FF
+DicEntry041:    db $68,$98,$73,$98,$67,$6A,$98,$61,$00,$FF
+DicEntry042:    db $89,$40,$6B,$96,$8D,$00,$FF
+DicEntry043:    db $72,$66,$00,$78,$00,$84,$75,$7D,$40,$80,$00,$FF
+DicEntry044:    db $6F,$98,$8D,$7D,$98,$40,$88,$00,$FF
+DicEntry045:    db $79,$8D,$73,$98,$65,$98,$8D,$00,$FF
+DicEntry046:    db $6A,$7B,$98,$7E,$6B,$8D,$65,$98,$8D,$00,$FF
+DicEntry047:    db $67,$98,$89,$77,$40,$73,$98,$5C,$86,$8D,$70,$94,$40,$00,$FF
+DicEntry048:    db $8A,$68,$93,$73,$5C,$86,$8D,$70,$94,$40,$00,$FF
+DicEntry049:    db $7B,$97,$86,$6C,$70,$93,$67,$5C,$79,$98,$67,$6F,$98,$8D,$00,$FF
+DicEntry050:    db $60,$40,$3D,$77,$80,$61,$3E,$FF
+DicEntry051:    db $87,$82,$69,$8D,$5C,$7F,$6A,$61,$88,$00,$FF
+DicEntry052:    db $6A,$61,$89,$8D,$6A,$40,$00,$FF
+DicEntry053:    db $77,$72,$6B,$7E,$93,$6F,$3D,$FF
+DicEntry054:    db $73,$7A,$98,$86,$00,$FF
+DicEntry055:    db $6F,$6C,$65,$93,$6F,$3D,$00,$FF
+DicEntry056:    db "STEVE",$FF
+DicEntry057:    db $8C,$00,$75,$95,$62,$6B,$95,$00,$6B,$6F,$5D,$FF
+DicEntry058:    db $6A,$61,$6B,$95,$62,$7C,$61,$66,$00,$FF
+DicEntry059:    db $8B,$5E,$8B,$65,$93,$6F,$3D,$79,$74,$6C,$00,$FF
+DicEntry060:    db $6B,$95,$62,$79,$6C,$62,$00,$FF
+DicEntry061:    db $65,$61,$79,$71,$6B,$94,$00,$FF
+DicEntry062:    db $64,$67,$6B,$98,$96,$62,$00,$FF
+DicEntry064:    db $71,$65,$61,$65,$6F,$00,$79,$00,$8B,$65,$93,$72,$61,$88,$74,$00,$FF
+DicEntry065:    db $6F,$98,$8D,$83,$67,$00,$FF
+DicEntry066:    db $63,$89,$7C,$98,$40,$6F,$40,$00,$FF
+DicEntry067:    db $61,$61,$8B,$6C,$89,$72,$61,$6F,$65,$98,$00,$FF
+DicEntry068:    db $70,$95,$62,$61,$00,$6B,$8A,$00,$FF
+DicEntry069:    db $73,$86,$93,$67,$00,$FF
+DicEntry070:    db $7B,$98,$66,$5E,$6E,$62,$7A,$98,$00,$FF
+DicEntry071:    db $7A,$71,$85,$62,$6F,$98,$5D,$00,$FF
+DicEntry072:    db $7B,$8A,$60,$00,$FF
+DicEntry073:    db $69,$8D,$6F,$67,$73,$00,$FF
+DicEntry074:    db $6A,$7D,$97,$40,$73,$00,$FF
+DicEntry075:    db $71,$65,$63,$00,$FF
+DicEntry076:    db $7A,$7F,$71,$00,$78,$00,$73,$98,$67,$7D,$98,$62,$00,$FF
+DicEntry077:    db $6D,$8D,$75,$95,$62,$00,$FF
+DicEntry078:    db $6A,$65,$98,$6D,$00,$FF
+DicEntry079:    db $74,$65,$75,$8B,$00,$FF
+DicEntry080:    db $79,$40,$61,$5D,$FF
+DicEntry081:    db $64,$89,$00,$79,$00,$FF
+DicEntry082:    db $00,$FF
+DicEntry083:    db $00,$FF
+DicEntry084:    db $79,$65,$61,$00,$FF
+DicEntry085:    db $6B,$98,$95,$8D,$79,$98,$8D,$00,$FF
+DicEntry086:    db $89,$8D,$86,$67,$00,$FF
+DicEntry087:    db $61,$73,$98,$62,$00,$FF
+DicEntry088:    db $85,$62,$6A,$61,$00,$FF
+DicEntry089:    db $72,$98,$66,$88,$00,$FF
+DicEntry090:    db $73,$69,$8A,$00,$FF
+DicEntry091:    db $69,$69,$65,$86,$00,$FF
+DicEntry092:    db $6F,$98,$93,$6B,$95,$71,$00,$FF
+DicEntry093:    db $8B,$6F,$6B,$00,$79,$00,$FF
+DicEntry094:    db $7D,$62,$7D,$62,$00,$FF

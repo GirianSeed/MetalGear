@@ -6,7 +6,7 @@
 ;
 ;----------------------------------------------------------------------------
 
-                org #6000
+                org $6000
 
         include "data/rooms.asm"
         include "data/metatiles.asm"
@@ -26,5 +26,5 @@
         include "logic/drawlaserbeams.asm"
 
                 ; Fill empty space
-                ds      (#C000-$),#ff
-                ASSERT  $=#C000
+                ds      ($C000-$),$FF
+                ASSERT  $=$C000

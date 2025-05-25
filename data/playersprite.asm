@@ -65,10 +65,10 @@ idxSnakeSpr:
 ;
 ;----------------------------------------------------------------------------
 SnakeSprAttIds:
-                db    0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0
-                db    0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   6,   1,   1,   1,   1
-                db    1,   1,   1,   1,   5,   4,   4,   0,   0,   2,   3,   7,   8,   9,   9,   9
-                db    9,   9,   9,   9,   9
+                db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+                db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 1, 1, 1, 1
+                db 1, 1, 1, 1, 5, 4, 4, 0, 0, 2, 3, 7, 8, 9, 9, 9
+                db 9, 9, 9, 9, 9
 
 ;----------------------------------------------------------------------------
 ;
@@ -96,80 +96,80 @@ idxSnakeSprAttr:
 ;----------------------------------------------------------------------------
 SnakeAttrShare:
                 db 4
-                db 0E8h,0F8h,   0,   7
-                db 0E8h,0F8h,   4, 4Ah
-                db 0F8h,0F8h,   8,   7
-                db 0F8h,0F8h, 0Ch, 4Ch
+                db $E8,$F8,$00,$07
+                db $E8,$F8,$04,$4A
+                db $F8,$F8,$08,$07
+                db $F8,$F8,$0C,$4C
 
 SnakeAttrWater:
                 db 4
-                db 0F6h,0F8h,   0,   7
-                db 0F6h,0F8h,   4, 4Ah
-                db  80h,   0,   0,   0
-                db  80h,   0,   0,   0
+                db $F6,$F8,$00,$07
+                db $F6,$F8,$04,$4A
+                db $80,$00,$00,$00
+                db $80,$00,$00,$00
 
 SnakeAttrBox:
                 db 4
-                db 0E4h,0F8h,   0,   7
-                db 0E4h,0F8h,   4, 4Ah
-                db 0F4h,0F8h,   8,   7
-                db 0F4h,0F8h, 0Ch, 4Ah
+                db $E4,$F8,$00,$07
+                db $E4,$F8,$04,$4A
+                db $F4,$F8,$08,$07
+                db $F4,$F8,$0C,$4A
 
 WaterShadowAttr:
                 db 4
-                db 0F8h,0F8h,   0, 0Eh
-                db 0F8h,0F8h,   4, 0Fh
-                db  80h,   0,   0,   0
-                db  80h,   0,   0,   0
+                db $F8,$F8,$00,$0E
+                db $F8,$F8,$04,$0F
+                db $80,$00,$00,$00
+                db $80,$00,$00,$00
 
 SnakeAttrParach:
                 db 12
-                db 0E8h,0F8h, 28h,   7
-                db 0E8h,0F8h, 2Ch, 4Ah
-                db 0F8h,0F8h,   0,   7
-                db 0F8h,0F8h,   4, 4Ch
-                db 0C8h,0F0h,   8, 0Dh
-                db 0C8h,0F0h, 0Ch, 4Eh
-                db 0C8h,   0, 10h, 0Dh
-                db 0C8h,   0, 14h, 4Eh
-                db 0D8h,0F0h, 18h, 0Dh
-                db 0D8h,0F0h, 1Ch, 0Fh
-                db 0D8h,   0, 20h, 0Dh
-                db 0D8h,   0, 24h, 0Fh
+                db $E8,$F8,$28,$07
+                db $E8,$F8,$2C,$4A
+                db $F8,$F8,$00,$07
+                db $F8,$F8,$04,$4C
+                db $C8,$F0,$08,$0D
+                db $C8,$F0,$0C,$4E
+                db $C8,$00,$10,$0D
+                db $C8,$00,$14,$4E
+                db $D8,$F0,$18,$0D
+                db $D8,$F0,$1C,$0F
+                db $D8,$00,$20,$0D
+                db $D8,$00,$24,$0F
 
 SnakeAttrPunchR:
                 db 4
-                db 0E8h,0FBh,   0,   7
-                db 0E8h,0FBh,   4, 4Ah
-                db 0F8h,0F8h,   8,   7
-                db 0F8h,0F8h, 0Ch, 4Ch
+                db $E8,$FB,$00,$07
+                db $E8,$FB,$04,$4A
+                db $F8,$F8,$08,$07
+                db $F8,$F8,$0C,$4C
 
 SnakeAttrDead:
                 db 6
-                db 0E8h,0F8h,   0,   7                  ;
-                db 0E8h,0F8h,   4, 4Ah                  ;
-                db 0F8h,0F8h,   8,   7                  ;
-                db 0F8h,0F8h, 0Ch, 4Ch                  ;
-                db  80h,   0,   0,   0                  ; (!?) Empty sprites. Perhaps where used to add blood (seen on old screenshot)
-                db  80h,   0,   0,   0
+                db $E8,$F8,$00,$07                      ;
+                db $E8,$F8,$04,$4A                      ;
+                db $F8,$F8,$08,$07                      ;
+                db $F8,$F8,$0C,$4C                      ;
+                db $80,$00,$00,$00                      ; (!?) Empty sprites. Perhaps where used to add blood (seen on old screenshot)
+                db $80,$00,$00,$00
 
 SnakeAttrBox2:
                 db 4
-                db 0E3h,0F8h,   0,   7
-                db 0E3h,0F8h,   4, 4Ah
-                db 0F3h,0F8h,   8,   7
-                db 0F3h,0F8h, 0Ch, 4Ah
+                db $E3,$F8,$00,$07
+                db $E3,$F8,$04,$4A
+                db $F3,$F8,$08,$07
+                db $F3,$F8,$0C,$4A
 
 SnakeAttrWaterW:
                 db 4
-                db 0F5h,0F8h,   0,   7
-                db 0F5h,0F8h,   4, 4Ah
-                db  80h,   0,   0,   0
-                db  80h,   0,   0,   0
+                db $F5,$F8,$00,$07
+                db $F5,$F8,$04,$4A
+                db $80,$00,$00,$00
+                db $80,$00,$00,$00
 
 SnakeAttrDamage:
                 db 4
-                db    0,   0,   0,   8
-                db    0,   0,   0, 47h
-                db    0,   0,   0,   8
-                db    0,   0,   0, 47h
+                db $00,$00,$00,$08
+                db $00,$00,$00,$47
+                db $00,$00,$00,$08
+                db $00,$00,$00,$47

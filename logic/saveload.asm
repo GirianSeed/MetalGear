@@ -720,63 +720,63 @@ CalcDataChecksum2:
 ;
 ;----------------------------------------------------------------------------
 txtSaveMode:
-                dw 3010h
-                db  "SAVE",   0, "MODE"
-                db 0FEh
-                dw 4018h
-                db  "INPUT",   0, "FILE",   0, "NAME"
-                db 0FFh
+                dw $3010
+                db "SAVE",0,"MODE"
+                db $FE
+                dw $4018
+                db "INPUT",0,"FILE",0,"NAME"
+                db $FF
 txtLoadMode:
-                dw 3010h
-                db  "LOAD",   0, "MODE"
-                db 0FEh
-                dw 4018h
-                db  "INPUT",   0, "FILE",   0, "NAME"
-                db 0FFh
+                dw $3010
+                db "LOAD",0,"MODE"
+                db $FE
+                dw $4018
+                db "INPUT",0,"FILE",0,"NAME"
+                db $FF
 txtSaving:
-                dw 6028h
-                db  "SAVING"
-                db 0FFh
+                dw $6028
+                db "SAVING"
+                db $FF
 txtSaveError:
-                dw 6028h
-                db  "SAVE",   0, "ERROR"
-                db 0FFh
+                dw $6028
+                db "SAVE",0,"ERROR"
+                db $FF
 txtVerifyError:
-                dw 6028h
-                db  "VERIFY",   0, "ERROR"
-                db 0FFh
+                dw $6028
+                db "VERIFY",0,"ERROR"
+                db $FF
 txtVerifyOk:
-                dw 6020h
-                db  "VERIFY",   0, "SUCCESS"
-                db 0FEh
+                dw $6020
+                db "VERIFY",0,"SUCCESS"
+                db $FE
 txtRetry:
-                dw 7020h
-                db  "RETRY["
-                db 0FFh
+                dw $7020
+                db "RETRY["
+                db $0FF
 txtVerify:
-                dw 6028h
-                db  "VERIFY[",   0
-                db 0FEh
+                dw $6028
+                db "VERIFY[",0
+                db $FE
 txtYesNo:
-                dw 8020h
-                db  "YES",   0,   0,   0,   0, "Y"
-                db 0FEh
-                dw 8820h
-                db  "NO",   0,   0,   0,   0,   0, "N"
-                db 0FFh
+                dw $8020
+                db "YES",0,0,0,0,"Y"
+                db $FE
+                dw $8820
+                db "NO",0,0,0,0,0,"N"
+                db $FF
 txtIng:
-                dw 6058h
-                db  "ING"
-                db 0FFh
+                dw $6058
+                db "ING"
+                db $FF
 txtSkip:
-                dw 6028h
-                db  "SKIP"
-                db 0FFh
+                dw $6028
+                db "SKIP"
+                db $FF
 txtFound:
-                dw 6028h
-                db  "FOUND",   0,   0
-                db 0FFh
+                dw $6028
+                db "FOUND",0,0
+                db $FF
 txtLoadError:
-                dw 6028h
-                db  "LOAD",   0, "ERROR",   0,   0,   0
-                db 0FFh
+                dw $6028
+                db "LOAD",0,"ERROR",0,0,0
+                db $FF

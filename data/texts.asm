@@ -170,307 +170,308 @@ idxTexts:
 ;
 ;----------------------------------------------------------------------------
 txtRelieve:
-                db    0, 52h, 45h, 4Ch, 49h, 45h, 56h, 45h,0FFh
+                db $00,$52,$45,$4C,$49,$45,$56,$45,$FF
 txtOpIntrude:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh, 4Fh, 50h, 45h, 52h, 41h, 54h, 49h, 4Fh, 4Eh,   0
-                db 0A3h,   0, 4Eh, 33h, 31h, 33h, 5Ch,0FDh, 50h, 45h, 4Eh, 45h, 54h, 52h, 41h, 54h
-                db  45h,   0,0CEh,   0,0B8h, 97h, 53h,0FEh,0A4h,   0,0DAh,0FEh,0A5h,0FEh,0A6h,0FEh
-                db 0A7h, 3Dh,0FDh, 46h, 49h, 52h, 53h, 54h, 5Fh,0FEh,0A8h,   0, 4Dh, 49h, 53h, 53h
-                db  49h, 4Eh, 47h,0FEh,0A9h,   0,0DAh,   0,0AAh,0FEh,0A7h, 3Dh,0FDh,0A8h,   0, 49h
-                db  4Eh,   0,0CEh,   0,0D6h,   0, 4Fh, 46h,0FEh, 31h, 32h, 30h, 38h, 35h,   0,0ABh
-                db    0,0ACh,   0,0E2h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$4F,$50,$45,$52,$41,$54,$49,$4F,$4E,$00
+                db $A3,$00,$4E,$33,$31,$33,$5C,$FD,$50,$45,$4E,$45,$54,$52,$41,$54
+                db $45,$00,$CE,$00,$B8,$97,$53,$FE,$A4,$00,$DA,$FE,$A5,$FE,$A6,$FE
+                db $A7,$3D,$FD,$46,$49,$52,$53,$54,$5F,$FE,$A8,$00,$4D,$49,$53,$53
+                db $49,$4E,$47,$FE,$A9,$00,$DA,$00,$AA,$FE,$A7,$3D,$FD,$A8,$00,$49
+                db $4E,$00,$CE,$00,$D6,$00,$4F,$46,$FE,$31,$32,$30,$38,$35,$00,$AB
+                db $00,$AC,$00,$E2,$5C,$FE,$A2,$AD,$FF
 txtMission:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh, 4Dh, 49h, 53h, 49h, 4Fh, 4Eh, 3Dh,0FEh,0D8h,   0
-                db 0F1h,   0,0E6h,0FEh,0CEh,   0,0B8h, 97h, 53h,   0,0FAh, 5Fh,0FEh,0A4h, 5Ch,0FDh
-                db 0EEh,   0, 41h, 43h, 54h, 49h,0E2h,   0,0E5h,   0,0E6h,   0,0E3h,0FEh, 44h, 49h
-                db  53h, 43h, 4Fh, 56h, 45h, 52h, 45h, 44h,   0,0EBh,0FEh,0CEh,   0,0B8h, 5Ch,0FEh
-                db 0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$4D,$49,$53,$49,$4F,$4E,$3D,$FE,$D8,$00
+                db $F1,$00,$E6,$FE,$CE,$00,$B8,$97,$53,$00,$FA,$5F,$FE,$A4,$5C,$FD
+                db $EE,$00,$41,$43,$54,$49,$E2,$00,$E5,$00,$E6,$00,$E3,$FE,$44,$49
+                db $53,$43,$4F,$56,$45,$52,$45,$44,$00,$EB,$FE,$CE,$00,$B8,$5C,$FE
+                db $A2,$AD,$FF
 txtTakeWeapon:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0EEh,   0,0CEh,   0,0D2h, 53h,   0,0DAh,0FEh,0D3h
-                db    0,0ABh,0FEh,0CEh,   0,0B8h, 97h, 53h,   0,0EFh, 3Eh,0FDh,0AFh,   0,0E7h,   0
-                db 0BCh,0FEh, 41h, 4Eh,   0, 49h, 5Ch, 44h, 5Ch,0D4h,   0,0E6h,   0,0EDh,0FEh,0CEh
-                db    0,0DBh, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$EE,$00,$CE,$00,$D2,$53,$00,$DA,$FE,$D3
+                db $00,$AB,$FE,$CE,$00,$B8,$97,$53,$00,$EF,$3E,$FD,$AF,$00,$E7,$00
+                db $BC,$FE,$41,$4E,$00,$49,$5C,$44,$5C,$D4,$00,$E6,$00,$ED,$FE,$CE
+                db $00,$DB,$5C,$FE,$A2,$AD,$FF
 txtDontMove:
-                db    4, 44h, 4Fh, 4Eh, 97h, 54h,   0,0AEh, 3Dh,0FFh
+                db $04,$44,$4F,$4E,$97,$54,$00,$AE,$3D,$FF
 txtCaught:
-                db    4,0AFh,   0, 41h, 52h, 45h,   0,0B0h, 44h, 3Dh,0FFh
+                db $04,$AF,$00,$41,$52,$45,$00,$B0,$44,$3D,$FF
 txtYourReply:
-                db    3,0D1h,   0,0CBh,0A2h,0FEh,0AFh, 52h,   0, 52h, 45h, 50h, 4Ch, 59h, 5Fh,0D5h
-                db  5Ch,0FFh
+                db $03,$D1,$00,$CB,$A2,$FE,$AF,$52,$00,$52,$45,$50,$4C,$59,$5F,$D5
+                db $5C,$FF
 txtFinalThread:
-                db    3, 4Ch, 49h, 53h, 54h, 45h, 4Eh, 3Dh,   0,0CBh,0A2h,0FEh, 49h, 97h, 4Ch, 4Ch
-                db    0,0EAh,   0, 44h, 49h, 45h,0A2h,0FDh, 49h, 97h, 4Ch, 4Ch,   0, 47h, 45h, 54h
-                db    0,0AFh, 5Ch,0FEh, 4Fh, 4Eh, 45h,   0, 44h, 41h, 59h, 5Ch,0FDh, 53h, 45h, 45h
-                db    0,0AFh,   0, 41h,0D8h,0A2h,0FFh
+                db $03,$4C,$49,$53,$54,$45,$4E,$3D,$00,$CB,$A2,$FE,$49,$97,$4C,$4C
+                db $00,$EA,$00,$44,$49,$45,$A2,$FD,$49,$97,$4C,$4C,$00,$47,$45,$54
+                db $00,$AF,$5C,$FE,$4F,$4E,$45,$00,$44,$41,$59,$5C,$FD,$53,$45,$45
+                db $00,$AF,$00,$41,$D8,$A2,$FF
 txtResistance:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0ECh,   0,0C2h,   0,0E3h,0FEh, 53h, 4Fh, 4Dh, 45h
-                db    0,0B1h, 5Ch,0FDh, 54h, 52h, 59h,   0,0E6h,   0,0A8h,   0,0D9h,0FEh,0CEh,   0
-                db 0FCh, 3Dh,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$EC,$00,$C2,$00,$E3,$FE,$53,$4F,$4D,$45
+                db $00,$B1,$5C,$FD,$54,$52,$59,$00,$E6,$00,$A8,$00,$D9,$FE,$CE,$00
+                db $FC,$3D,$FE,$A2,$AD,$FF
 txtSchneider:
-                db  13h,0D1h,   0,0CEh,   0,0B1h,0FEh,0B5h, 5Fh,0B2h,0A2h,0FDh, 49h,   0,0C1h,   0
-                db  42h, 52h, 49h, 45h, 46h,   0,0AFh,   0,0E2h,0FEh,0CEh,   0,0FAh,   0, 44h, 45h
-                db  54h, 41h, 49h, 4Ch, 53h, 5Ch,0FEh,0D5h,   0,0A8h,   0,0E2h,0FEh,0B3h,   0, 31h
-                db  32h, 30h, 37h, 39h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$CE,$00,$B1,$FE,$B5,$5F,$B2,$A2,$FD,$49,$00,$C1,$00
+                db $42,$52,$49,$45,$46,$00,$AF,$00,$E2,$FE,$CE,$00,$FA,$00,$44,$45
+                db $54,$41,$49,$4C,$53,$5C,$FE,$D5,$00,$A8,$00,$E2,$FE,$B3,$00,$31
+                db $32,$30,$37,$39,$5C,$FE,$A2,$AD,$FF
 txtGasMask:
-                db    3,0D1h,   0,0A1h,0A2h,0FEh,0B4h,   0, 41h,   0,0F0h,   0, 4Dh, 41h, 53h, 4Bh
-                db    0, 49h, 4Eh,0FEh,0CEh,   0,0F0h,   0,0F6h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$A1,$A2,$FE,$B4,$00,$41,$00,$F0,$00,$4D,$41,$53,$4B
+                db $00,$49,$4E,$FE,$CE,$00,$F0,$00,$F6,$5C,$FE,$A2,$AD,$FF
 txtGasMaskLoc:
-                db  13h,0D1h,   0,0CEh,   0,0B1h,0FEh,0B5h, 5Fh,0B2h,0A2h,0FDh, 47h, 4Fh,   0,0E6h
-                db    0,0CEh,   0, 53h, 4Fh, 55h, 54h, 48h,   0, 50h, 41h, 52h, 54h,   0, 4Fh, 46h
-                db 0FEh,0CEh,   0, 31h, 53h, 54h,   0,0C7h,   0,0E6h,   0, 47h, 45h, 54h,0FEh,0AFh
-                db  52h,   0, 4Dh, 41h, 53h, 4Bh, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$CE,$00,$B1,$FE,$B5,$5F,$B2,$A2,$FD,$47,$4F,$00,$E6
+                db $00,$CE,$00,$53,$4F,$55,$54,$48,$00,$50,$41,$52,$54,$00,$4F,$46
+                db $FE,$CE,$00,$31,$53,$54,$00,$C7,$00,$E6,$00,$47,$45,$54,$FE,$AF
+                db $52,$00,$4D,$41,$53,$4B,$5C,$FE,$A2,$AD,$FF
 txtDianeFreq:
-                db  11h,0B6h, 3Dh,0FDh,0B1h, 5Fh,0D7h,0FEh,0C1h,   0, 53h, 55h, 50h, 50h, 4Fh, 52h
-                db  54h,   0,0AFh,0FEh,0E2h,   0,0B3h,   0, 31h, 32h, 30h, 33h, 33h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$B1,$5F,$D7,$FE,$C1,$00,$53,$55,$50,$50,$4F,$52
+                db $54,$00,$AF,$FE,$E2,$00,$B3,$00,$31,$32,$30,$33,$33,$5C,$FF
 txtImSaved:
-                db    0,0B6h,0FFh
+                db $00,$B6,$FF
 txtRadioKNK:
-                db  13h,0D1h,   0, 52h, 41h, 44h, 49h, 4Fh,   0, 4Bh, 4Eh, 4Bh, 5Ch,0FEh,0CCh,   0
-                db  4Eh, 45h, 57h, 53h,   0, 46h, 4Ch, 41h, 53h, 48h, 3Dh,0FDh,0ECh,   0, 57h, 41h
-                db  53h,   0, 41h, 50h, 50h, 41h, 52h, 45h, 4Eh, 54h, 4Ch, 59h,0FEh, 41h,   0, 54h
-                db  52h, 45h, 4Dh, 45h, 4Eh, 44h, 4Fh, 55h, 53h,   0, 45h, 41h, 52h, 54h, 48h,0FEh
-                db  54h, 52h, 45h, 4Dh, 4Fh, 52h,   0, 49h, 4Eh,   0,0CEh,   0, 52h, 45h, 47h, 49h
-                db  4Fh, 4Eh,   0, 4Fh, 46h,0FEh, 47h, 41h, 4Ch, 5Ah, 42h, 55h, 52h, 47h, 5Fh, 53h
-                db  4Fh, 55h, 54h, 48h,   0, 41h, 46h, 52h, 49h, 43h, 41h,0FEh, 41h, 54h,   0, 4Dh
-                db  49h, 44h, 4Eh, 49h, 47h, 48h, 54h, 5Ch,0FFh
+                db $13,$D1,$00,$52,$41,$44,$49,$4F,$00,$4B,$4E,$4B,$5C,$FE,$CC,$00
+                db $4E,$45,$57,$53,$00,$46,$4C,$41,$53,$48,$3D,$FD,$EC,$00,$57,$41
+                db $53,$00,$41,$50,$50,$41,$52,$45,$4E,$54,$4C,$59,$FE,$41,$00,$54
+                db $52,$45,$4D,$45,$4E,$44,$4F,$55,$53,$00,$45,$41,$52,$54,$48,$FE
+                db $54,$52,$45,$4D,$4F,$52,$00,$49,$4E,$00,$CE,$00,$52,$45,$47,$49
+                db $4F,$4E,$00,$4F,$46,$FE,$47,$41,$4C,$5A,$42,$55,$52,$47,$5F,$53
+                db $4F,$55,$54,$48,$00,$41,$46,$52,$49,$43,$41,$FE,$41,$54,$00,$4D
+                db $49,$44,$4E,$49,$47,$48,$54,$5C,$FF
 txtFoxHoundInf:
-                db  11h,0B6h, 3Dh,0FDh,0B7h, 45h, 52h,0FEh,0A3h, 44h,0FEh, 41h,   0, 46h, 45h, 57h
-                db    0, 44h, 41h, 59h, 53h,   0, 41h, 47h, 4Fh,0FDh,0DAh,   0, 49h, 53h,   0, 53h
-                db  41h, 46h, 45h,   0,0ACh, 5Ch,0FDh, 48h, 45h,   0, 57h, 41h, 53h,   0,0B0h, 44h
-                db    0,0EBh,0FEh,0CEh,   0,0B8h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$B7,$45,$52,$FE,$A3,$44,$FE,$41,$00,$46,$45,$57
+                db $00,$44,$41,$59,$53,$00,$41,$47,$4F,$FD,$DA,$00,$49,$53,$00,$53
+                db $41,$46,$45,$00,$AC,$5C,$FD,$48,$45,$00,$57,$41,$53,$00,$B0,$44
+                db $00,$EB,$FE,$CE,$00,$B8,$5C,$FF
 txtSleepy:
-                db    4, 49h, 97h, 4Dh,   0, 53h, 4Ch, 45h, 45h, 50h, 59h, 5Ch,0FFh
+                db $04,$49,$97,$4D,$00,$53,$4C,$45,$45,$50,$59,$5C,$FF
 txtSlept:
-                db    4,0ADh, 53h, 4Ch, 45h, 50h, 54h, 3Dh,0FFh
+                db $04,$AD,$53,$4C,$45,$50,$54,$3D,$FF
 txtDesetGuards:
-                db    1, 50h, 52h, 4Fh, 42h, 41h, 42h, 4Ch, 59h, 5Fh,0FEh,0B7h, 45h, 52h,0FEh,0D8h
-                db  45h, 44h,   0,0F1h, 5Ch,0FDh, 44h, 4Fh, 4Eh, 97h, 54h,   0, 4Dh, 41h, 4Bh, 45h
-                db    0,0F7h,0FEh,0F2h,   0, 48h, 49h, 4Dh, 5Fh,0FEh, 41h, 54h,   0, 41h, 4Eh, 59h
-                db    0, 43h, 4Fh, 53h, 54h, 5Ch,0FFh
+                db $01,$50,$52,$4F,$42,$41,$42,$4C,$59,$5F,$FE,$B7,$45,$52,$FE,$D8
+                db $45,$44,$00,$F1,$5C,$FD,$44,$4F,$4E,$97,$54,$00,$4D,$41,$4B,$45
+                db $00,$F7,$FE,$F2,$00,$48,$49,$4D,$5F,$FE,$41,$54,$00,$41,$4E,$59
+                db $00,$43,$4F,$53,$54,$5C,$FF
 txtTutorial:
-                db    3,0D1h,   0,0A1h,0A2h,0FEh,0C1h,   0, 45h, 58h, 50h, 4Ch, 41h, 49h, 4Eh,   0
-                db  48h, 4Fh, 57h,   0,0E6h,0FEh, 55h, 53h, 45h,   0, 46h, 40h, 4Bh, 45h, 59h, 5Ch
-                db 0FDh, 46h, 40h, 31h,   0,0B9h,   0, 50h, 41h, 55h, 53h, 45h, 5Ch,0FEh, 46h, 40h
-                db  32h,   0,0B9h,   0,0BAh,0FEh,0AFh, 52h,   0,0D2h, 53h, 5Ch,0FEh, 46h, 40h, 33h
-                db    0,0B9h,   0,0BAh,0FEh,0AFh, 52h,   0,0D3h, 5Ch,0FDh, 46h, 40h, 34h,   0,0B9h
-                db 0FEh,0FCh,   0,0D6h, 5Ch,0FEh, 52h, 45h, 4Dh, 45h, 4Dh, 42h, 45h, 52h,   0, 54h
-                db  48h, 45h, 53h, 45h,   0, 57h, 45h, 4Ch, 4Ch, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$A1,$A2,$FE,$C1,$00,$45,$58,$50,$4C,$41,$49,$4E,$00
+                db $48,$4F,$57,$00,$E6,$FE,$55,$53,$45,$00,$46,$40,$4B,$45,$59,$5C
+                db $FD,$46,$40,$31,$00,$B9,$00,$50,$41,$55,$53,$45,$5C,$FE,$46,$40
+                db $32,$00,$B9,$00,$BA,$FE,$AF,$52,$00,$D2,$53,$5C,$FE,$46,$40,$33
+                db $00,$B9,$00,$BA,$FE,$AF,$52,$00,$D3,$5C,$FD,$46,$40,$34,$00,$B9
+                db $FE,$FC,$00,$D6,$5C,$FE,$52,$45,$4D,$45,$4D,$42,$45,$52,$00,$54
+                db $48,$45,$53,$45,$00,$57,$45,$4C,$4C,$5C,$FE,$A2,$AD,$FF
 txtDestroyPS:
-                db  13h,0D1h,   0,0A1h,0A2h,0FDh,0FBh,   0, 44h, 4Fh, 57h, 4Eh,   0,0CEh,   0, 50h
-                db  4Fh, 57h, 45h, 52h,0FEh, 53h, 55h, 50h, 50h, 4Ch, 59h,   0, 42h, 4Fh, 58h,   0
-                db 0D9h,0FEh,0CEh,   0,0DFh,0FEh,0E0h,   0,0E6h,   0, 47h, 45h, 54h,   0, 52h, 49h
-                db  44h,   0, 4Fh, 46h,0FEh,0CEh,   0, 48h, 49h, 47h, 48h, 40h, 56h, 4Fh, 4Ch, 54h
-                db  41h, 47h, 45h, 5Ch,0FDh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FD,$FB,$00,$44,$4F,$57,$4E,$00,$CE,$00,$50
+                db $4F,$57,$45,$52,$FE,$53,$55,$50,$50,$4C,$59,$00,$42,$4F,$58,$00
+                db $D9,$FE,$CE,$00,$DF,$FE,$E0,$00,$E6,$00,$47,$45,$54,$00,$52,$49
+                db $44,$00,$4F,$46,$FE,$CE,$00,$48,$49,$47,$48,$40,$56,$4F,$4C,$54
+                db $41,$47,$45,$5C,$FD,$A2,$AD,$FF
 txtMissilLoc:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0CEh,   0,0DFh,0FEh,0E0h,   0, 49h, 53h,   0,0E4h
-                db    0, 49h, 4Eh,0FEh,0CEh,   0, 53h, 4Fh, 55h, 54h, 48h, 45h, 41h, 53h, 54h, 45h
-                db  52h, 4Eh,   0, 41h, 52h, 45h, 41h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$CE,$00,$DF,$FE,$E0,$00,$49,$53,$00,$E4
+                db $00,$49,$4E,$FE,$CE,$00,$53,$4F,$55,$54,$48,$45,$41,$53,$54,$45
+                db $52,$4E,$00,$41,$52,$45,$41,$5C,$FE,$A2,$AD,$FF
 txtWindBarrier:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh, 57h, 49h, 4Eh, 44h,   0, 42h, 41h, 52h, 52h, 49h
-                db  45h, 52h,   0, 49h, 53h,0FEh, 45h, 58h, 54h, 45h, 4Eh, 44h, 45h, 44h,   0,0E2h
-                db 0FEh,0CEh,   0, 52h, 4Fh, 4Fh, 46h, 54h, 4Fh, 50h, 5Ch,0FDh, 4Ch, 4Fh, 4Fh, 4Bh
-                db    0,0F2h,0FEh,0CEh,   0,0F3h,   0,0E6h,0FEh,0E3h,   0, 49h, 4Eh,0E6h,   0,0CEh
-                db    0, 42h, 41h, 52h, 52h, 49h, 45h, 52h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$57,$49,$4E,$44,$00,$42,$41,$52,$52,$49
+                db $45,$52,$00,$49,$53,$FE,$45,$58,$54,$45,$4E,$44,$45,$44,$00,$E2
+                db $FE,$CE,$00,$52,$4F,$4F,$46,$54,$4F,$50,$5C,$FD,$4C,$4F,$4F,$4B
+                db $00,$F2,$FE,$CE,$00,$F3,$00,$E6,$FE,$E3,$00,$49,$4E,$E6,$00,$CE
+                db $00,$42,$41,$52,$52,$49,$45,$52,$5C,$FE,$A2,$AD,$FF
 txtStaff:
-                db    3, 4Eh, 45h, 58h, 54h, 5Fh,0FEh, 57h, 45h,   0, 49h, 4Eh, 54h, 52h, 4Fh, 44h
-                db  55h, 43h, 45h,0FEh,0A7h,   0, 53h, 54h, 41h, 46h, 46h,0A2h,0FDh,   0,   0,   0
-                db    0,   0, 4Dh, 41h, 49h, 4Eh,   0, 50h, 52h, 4Fh, 47h, 52h, 41h, 4Dh,0FEh,0FEh
-                db    0,   0,   0,   0, 48h, 49h, 52h, 4Fh, 59h, 55h, 4Bh, 49h,   0, 46h, 55h, 4Bh
-                db  55h, 49h,0FEh,0FDh,   0,   0,   0,   0,   0,   0, 53h, 55h, 42h,   0, 50h, 52h
-                db  4Fh, 47h, 52h, 41h, 4Dh,0FEh,0FEh,   0,   0,   0,   0, 54h, 4Fh, 4Dh, 4Fh, 4Eh
-                db  4Fh, 52h, 49h,   0, 4Fh, 53h, 54h, 55h, 4Bh, 41h,0FEh,   0,   0,   0,   0,   0
-                db  4Bh, 4Fh, 4Ah, 49h,   0, 54h, 4Fh, 59h, 4Fh, 48h, 41h, 52h, 41h,0FDh,   0,   0
-                db    0,   0, 47h, 52h, 41h, 50h, 48h, 49h, 43h,   0, 44h, 45h, 53h, 49h, 47h, 4Eh
-                db 0FEh,0FEh,   0,   0,   0,   0,   0, 4Dh, 41h, 53h, 41h, 4Dh, 49h,   0, 54h, 41h
-                db  42h, 41h, 54h, 41h,0FEh,   0,   0,   0,   0,   0, 41h, 5Ah, 55h, 53h, 41h,   0
-                db  46h, 55h, 4Ah, 49h, 4Dh, 4Fh, 54h, 4Fh,0FDh,   0,   0,   0, 4Dh, 41h, 49h, 4Eh
-                db    0, 53h, 4Fh, 55h, 4Eh, 44h,   0, 45h, 46h, 46h, 45h, 43h, 54h,0FEh,0FEh,   0
-                db    0,   0,   0,   0,   0, 49h, 4Bh, 55h,   0, 4Dh, 49h, 5Ah, 55h, 54h, 41h, 4Eh
-                db  49h,0FDh,   0,   0,   0, 53h, 55h, 42h,   0, 53h, 4Fh, 55h, 4Eh, 44h,   0, 45h
-                db  46h, 46h, 45h, 43h, 54h,0FEh,0FEh,   0, 53h, 48h, 49h, 47h, 45h, 48h, 49h, 52h
-                db  4Fh,   0, 54h, 41h, 4Bh, 45h, 4Eh, 4Fh, 55h, 43h, 48h, 49h,0FEh,   0,   0,   0
-                db    0, 4Dh, 4Fh, 54h, 4Fh, 41h, 4Bh, 49h,   0, 46h, 55h, 52h, 55h, 4Bh, 41h, 57h
-                db  41h,0FDh,   0,   0,   0,   0,   0,   0, 47h, 41h, 4Dh, 45h,   0, 44h, 45h, 53h
-                db  49h, 47h, 4Eh,0FEh,0FEh,   0,   0,   0,   0,   0, 48h, 49h, 44h, 45h, 4Fh,   0
-                db  4Bh, 4Fh, 4Ah, 49h, 4Dh, 41h,0FDh,   0,   0,   0,   0,   0, 50h, 52h, 45h, 53h
-                db  45h, 4Eh, 54h, 45h, 44h,   0,   0, 42h, 59h,0FEh,0FEh,   0,   0,   0,   0,   0
-                db    0,   0,   0, 4Bh, 4Fh, 4Eh, 41h, 4Dh, 49h,0FEh,0FEh,   0,   0,   0,   0,   0
-                db    0,   0,   0,   0, 31h, 39h, 38h, 37h,0FFh
+                db $03,$4E,$45,$58,$54,$5F,$FE,$57,$45,$00,$49,$4E,$54,$52,$4F,$44
+                db $55,$43,$45,$FE,$A7,$00,$53,$54,$41,$46,$46,$A2,$FD,$00,$00,$00
+                db $00,$00,$4D,$41,$49,$4E,$00,$50,$52,$4F,$47,$52,$41,$4D,$FE,$FE
+                db $00,$00,$00,$00,$48,$49,$52,$4F,$59,$55,$4B,$49,$00,$46,$55,$4B
+                db $55,$49,$FE,$FD,$00,$00,$00,$00,$00,$00,$53,$55,$42,$00,$50,$52
+                db $4F,$47,$52,$41,$4D,$FE,$FE,$00,$00,$00,$00,$54,$4F,$4D,$4F,$4E
+                db $4F,$52,$49,$00,$4F,$53,$54,$55,$4B,$41,$FE,$00,$00,$00,$00,$00
+                db $4B,$4F,$4A,$49,$00,$54,$4F,$59,$4F,$48,$41,$52,$41,$FD,$00,$00
+                db $00,$00,$47,$52,$41,$50,$48,$49,$43,$00,$44,$45,$53,$49,$47,$4E
+                db $FE,$FE,$00,$00,$00,$00,$00,$4D,$41,$53,$41,$4D,$49,$00,$54,$41
+                db $42,$41,$54,$41,$FE,$00,$00,$00,$00,$00,$41,$5A,$55,$53,$41,$00
+                db $46,$55,$4A,$49,$4D,$4F,$54,$4F,$FD,$00,$00,$00,$4D,$41,$49,$4E
+                db $00,$53,$4F,$55,$4E,$44,$00,$45,$46,$46,$45,$43,$54,$FE,$FE,$00
+                db $00,$00,$00,$00,$00,$49,$4B,$55,$00,$4D,$49,$5A,$55,$54,$41,$4E
+                db $49,$FD,$00,$00,$00,$53,$55,$42,$00,$53,$4F,$55,$4E,$44,$00,$45
+                db $46,$46,$45,$43,$54,$FE,$FE,$00,$53,$48,$49,$47,$45,$48,$49,$52
+                db $4F,$00,$54,$41,$4B,$45,$4E,$4F,$55,$43,$48,$49,$FE,$00,$00,$00
+                db $00,$4D,$4F,$54,$4F,$41,$4B,$49,$00,$46,$55,$52,$55,$4B,$41,$57
+                db $41,$FD,$00,$00,$00,$00,$00,$00,$47,$41,$4D,$45,$00,$44,$45,$53
+                db $49,$47,$4E,$FE,$FE,$00,$00,$00,$00,$00,$48,$49,$44,$45,$4F,$00
+                db $4B,$4F,$4A,$49,$4D,$41,$FD,$00,$00,$00,$00,$00,$50,$52,$45,$53
+                db $45,$4E,$54,$45,$44,$00,$00,$42,$59,$FE,$FE,$00,$00,$00,$00,$00
+                db $00,$00,$00,$4B,$4F,$4E,$41,$4D,$49,$FE,$FE,$00,$00,$00,$00,$00
+                db $00,$00,$00,$00,$31,$39,$38,$37,$FF
 txtChkBugged:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0BBh,   0,0AFh, 52h,   0,0D3h, 3Dh,0FEh,0BBh,   0
-                db  49h, 46h,   0,0AFh,   0,0BCh,   0,0E3h, 45h, 4Eh,0FEh, 42h, 55h, 47h, 47h, 45h
-                db  44h,   0,0EBh,   0,0CEh,   0,0B8h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$BB,$00,$AF,$52,$00,$D3,$3D,$FE,$BB,$00
+                db $49,$46,$00,$AF,$00,$BC,$00,$E3,$45,$4E,$FE,$42,$55,$47,$47,$45
+                db $44,$00,$EB,$00,$CE,$00,$B8,$5C,$FE,$A2,$AD,$FF
 txtBombSuitLoc:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0CEh,   0,0F3h,0FEh,0E1h,   0,0E3h,   0, 46h, 4Fh
-                db  55h, 4Eh, 44h,   0, 49h, 4Eh,0FEh,0CEh,   0,0C6h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$CE,$00,$F3,$FE,$E1,$00,$E3,$00,$46,$4F
+                db $55,$4E,$44,$00,$49,$4E,$FE,$CE,$00,$C6,$5C,$FE,$A2,$AD,$FF
 txtFoxHundInfo:
-                db  11h,0B6h, 3Dh,0FDh,0B7h, 45h, 52h,0FEh, 43h, 41h, 4Ch, 4Ch, 45h, 44h,0FEh,0A9h
-                db    0,0C2h,   0, 42h, 45h,0FDh,0BDh,   0, 49h, 4Eh,0FEh,0CEh,   0,0BEh,   0,0C0h
-                db  5Ch,0FFh
+                db $11,$B6,$3D,$FD,$B7,$45,$52,$FE,$43,$41,$4C,$4C,$45,$44,$FE,$A9
+                db $00,$C2,$00,$42,$45,$FD,$BD,$00,$49,$4E,$FE,$CE,$00,$BE,$00,$C0
+                db $5C,$FF
 txtCellCaught:
-                db  11h,0B6h, 3Dh,0FDh,0CEh,   0, 42h, 45h, 53h, 54h,   0,0F7h,   0, 4Fh, 46h,0FEh
-                db 0D8h, 49h, 4Eh, 47h,   0,0F1h,   0, 54h, 4Fh,0FEh,0CEh,   0,0BEh,   0,0C0h, 5Fh
-                db 0FDh, 49h, 53h,   0,0E6h,   0, 41h, 4Ch, 4Ch, 4Fh, 57h,   0,0CEh,0FEh,0B8h,   0
-                db 0E6h,   0,0B0h,0FEh,0AFh, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$CE,$00,$42,$45,$53,$54,$00,$F7,$00,$4F,$46,$FE
+                db $D8,$49,$4E,$47,$00,$F1,$00,$54,$4F,$FE,$CE,$00,$BE,$00,$C0,$5F
+                db $FD,$49,$53,$00,$E6,$00,$41,$4C,$4C,$4F,$57,$00,$CE,$FE,$B8,$00
+                db $E6,$00,$B0,$FE,$AF,$5C,$FF
 txtChkWall:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0AEh,   0, 4Fh, 55h, 54h, 5Fh,0DAh,   0, 4Ch, 4Fh
-                db  43h, 41h, 54h, 45h,0FEh,0A9h, 97h, 53h,   0,0BFh,0FEh,0C0h, 5Ch,0FDh,0BBh,   0
-                db 0CEh,   0,0E8h, 3Dh,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$AE,$00,$4F,$55,$54,$5F,$DA,$00,$4C,$4F
+                db $43,$41,$54,$45,$FE,$A9,$97,$53,$00,$BF,$FE,$C0,$5C,$FD,$BB,$00
+                db $CE,$00,$E8,$3D,$FE,$A2,$AD,$FF
 txtGrayFox:
-                db  11h, 49h, 97h, 4Dh,   0,0A9h, 5Ch,0FDh,0A6h,0FEh,0A7h,   0, 48h, 41h, 53h,0FDh
-                db  4Eh, 55h, 43h, 4Ch, 45h, 41h, 52h,   0,0D2h, 53h,0FEh, 44h, 45h, 53h, 49h, 47h
-                db  4Eh, 45h, 44h,   0,0F2h,   0, 45h, 56h, 45h, 52h, 59h,0FEh, 50h, 41h, 52h, 54h
-                db    0, 4Fh, 46h,   0, 45h, 41h, 52h, 54h, 48h, 5Ch,0FDh, 49h, 46h,   0, 49h, 54h
-                db    0, 49h, 53h,   0,0D0h, 44h, 5Fh,0FEh, 4Eh, 55h, 43h, 4Ch, 45h, 41h, 52h,   0
-                db  41h, 54h, 54h, 41h, 43h, 4Bh,0FDh,0ABh,   0, 41h, 4Eh, 59h, 57h, 48h, 57h, 52h
-                db  45h,0FDh,0C1h,   0,0E3h,0FEh, 50h, 4Fh, 53h, 53h, 49h, 42h, 4Ch, 45h, 5Ch,0FDh
-                db 0A7h,   0,0C2h,   0,0E3h,0FEh,0A5h, 45h, 44h, 5Fh,0FDh,0E3h,0F2h, 45h,   0, 49h
-                db  54h,   0, 49h, 53h,0FEh,0D0h, 44h, 5Ch,0FDh,0ECh,   0, 49h, 53h,   0,0C3h,   0
-                db  4Fh, 4Eh, 45h,0FEh,0F7h,   0,0E6h,   0,0A5h,0FEh,0A7h, 5Ch,0FDh,0C4h, 5Fh, 57h
-                db  48h, 4Fh,0FEh, 44h, 45h, 56h, 45h, 4Ch, 4Fh, 50h, 45h, 44h,   0, 49h, 54h,   0
-                db  4Bh, 4Eh, 4Fh, 57h,0FEh,0CEh,   0,0C3h,   0, 4Dh, 45h, 54h, 48h, 4Fh, 44h, 5Ch
-                db 0FFh
+                db $11,$49,$97,$4D,$00,$A9,$5C,$FD,$A6,$FE,$A7,$00,$48,$41,$53,$FD
+                db $4E,$55,$43,$4C,$45,$41,$52,$00,$D2,$53,$FE,$44,$45,$53,$49,$47
+                db $4E,$45,$44,$00,$F2,$00,$45,$56,$45,$52,$59,$FE,$50,$41,$52,$54
+                db $00,$4F,$46,$00,$45,$41,$52,$54,$48,$5C,$FD,$49,$46,$00,$49,$54
+                db $00,$49,$53,$00,$D0,$44,$5F,$FE,$4E,$55,$43,$4C,$45,$41,$52,$00
+                db $41,$54,$54,$41,$43,$4B,$FD,$AB,$00,$41,$4E,$59,$57,$48,$57,$52
+                db $45,$FD,$C1,$00,$E3,$FE,$50,$4F,$53,$53,$49,$42,$4C,$45,$5C,$FD
+                db $A7,$00,$C2,$00,$E3,$FE,$A5,$45,$44,$5F,$FD,$E3,$F2,$45,$00,$49
+                db $54,$00,$49,$53,$FE,$D0,$44,$5C,$FD,$EC,$00,$49,$53,$00,$C3,$00
+                db $4F,$4E,$45,$FE,$F7,$00,$E6,$00,$A5,$FE,$A7,$5C,$FD,$C4,$5F,$57
+                db $48,$4F,$FE,$44,$45,$56,$45,$4C,$4F,$50,$45,$44,$00,$49,$54,$00
+                db $4B,$4E,$4F,$57,$FE,$CE,$00,$C3,$00,$4D,$45,$54,$48,$4F,$44,$5C
+                db $FF
 txtFindGear:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0EEh,   0, 42h, 41h, 43h, 4Bh,   0,0AFh, 52h,   0
-                db 0D2h, 53h,0FEh,0DAh,   0,0D3h, 5Fh,0FEh,0DAh,   0, 47h, 45h, 54h,   0, 4Fh, 55h
-                db  54h,   0, 4Fh, 46h,   0,0F4h, 3Dh,0FDh, 54h, 48h, 45h, 59h,   0,0C2h,   0,0E3h
-                db    0, 43h, 4Fh, 4Eh, 43h, 45h, 41h, 4Ch, 45h, 44h,0FEh, 49h, 4Eh,   0, 41h,   0
-                db 0F6h, 5Ch,0FEh,0FBh,   0,0CEh,   0,0DBh, 3Dh,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$EE,$00,$42,$41,$43,$4B,$00,$AF,$52,$00
+                db $D2,$53,$FE,$DA,$00,$D3,$5F,$FE,$DA,$00,$47,$45,$54,$00,$4F,$55
+                db $54,$00,$4F,$46,$00,$F4,$3D,$FD,$54,$48,$45,$59,$00,$C2,$00,$E3
+                db $00,$43,$4F,$4E,$43,$45,$41,$4C,$45,$44,$FE,$49,$4E,$00,$41,$00
+                db $F6,$5C,$FE,$FB,$00,$CE,$00,$DB,$3D,$FE,$A2,$AD,$FF
 txtGearTaken:
-                db    1, 49h,   0, 54h, 4Fh, 4Fh, 4Bh,   0, 42h, 41h, 43h, 4Bh,   0,0FEh,0CEh,   0
-                db 0D2h, 53h,0FEh,0DAh,   0,0D3h, 5Ch,0FFh
+                db $01,$49,$00,$54,$4F,$4F,$4B,$00,$42,$41,$43,$4B,$00,$FE,$CE,$00
+                db $D2,$53,$FE,$DA,$00,$D3,$5C,$FF
 txtShootGunn:
-                db    1, 49h, 97h, 4Dh,   0, 53h, 48h, 4Fh, 4Fh, 54h,   0, 47h, 55h, 4Eh, 4Eh, 45h
-                db  52h, 3Dh,0FDh, 4Eh, 4Fh, 42h, 4Fh, 44h, 59h,   0, 48h, 41h, 53h,0FDh, 45h, 56h
-                db  45h, 52h,   0,0E3h, 45h, 4Eh,   0, 41h, 42h, 4Ch, 45h,   0,0E6h,0FEh, 45h, 53h
-                db  43h, 41h, 50h, 45h,   0,0ABh,   0,0F4h, 5Ch,0FFh
+                db $01,$49,$97,$4D,$00,$53,$48,$4F,$4F,$54,$00,$47,$55,$4E,$4E,$45
+                db $52,$3D,$FD,$4E,$4F,$42,$4F,$44,$59,$00,$48,$41,$53,$FD,$45,$56
+                db $45,$52,$00,$E3,$45,$4E,$00,$41,$42,$4C,$45,$00,$E6,$FE,$45,$53
+                db $43,$41,$50,$45,$00,$AB,$00,$F4,$5C,$FF
 txtBombWall:
-                db  13h,0D1h,   0,0B2h,0A2h,0FDh,0AFh,   0,0E7h,   0, 4Bh, 4Eh, 4Fh, 43h, 4Bh,0FEh
-                db 0CEh,   0,0E8h,   0,0DAh,   0, 42h, 4Ch, 41h, 53h, 54h,   0, 49h, 54h,0FEh, 57h
-                db  48h, 49h, 43h, 48h,   0, 53h, 4Fh, 55h, 4Eh, 44h, 53h,0FEh, 49h, 52h, 52h, 45h
-                db  47h, 55h, 4Ch, 41h, 52h, 4Ch, 59h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$B2,$A2,$FD,$AF,$00,$E7,$00,$4B,$4E,$4F,$43,$4B,$FE
+                db $CE,$00,$E8,$00,$DA,$00,$42,$4C,$41,$53,$54,$00,$49,$54,$FE,$57
+                db $48,$49,$43,$48,$00,$53,$4F,$55,$4E,$44,$53,$FE,$49,$52,$52,$45
+                db $47,$55,$4C,$41,$52,$4C,$59,$5C,$FE,$A2,$AD,$FF
 txtParachCourtyard:
-                db  11h,0B6h, 3Dh,0FDh,0CEh,   0,0C3h,   0,0F7h,   0,0E6h,0FEh, 52h, 45h, 41h, 43h
-                db  48h,   0,0CEh,   0,0CFh,0FEh, 49h, 53h,   0,0EBh,   0, 50h, 41h, 52h, 41h, 43h
-                db  48h, 55h, 54h, 45h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$CE,$00,$C3,$00,$F7,$00,$E6,$FE,$52,$45,$41,$43
+                db $48,$00,$CE,$00,$CF,$FE,$49,$53,$00,$EB,$00,$50,$41,$52,$41,$43
+                db $48,$55,$54,$45,$5C,$FF
 txtMadnarLocation:
-                db  11h,0B6h, 3Dh,0FDh,0C4h,   0, 49h, 53h,0FEh,0BDh,   0,0E6h,0FDh, 41h,   0,0BFh
-                db    0,0C0h,   0, 49h, 4Eh,0FEh,0CEh,   0,0CFh, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$C4,$00,$49,$53,$FE,$BD,$00,$E6,$FD,$41,$00,$BF
+                db $00,$C0,$00,$49,$4E,$FE,$CE,$00,$CF,$5C,$FF
 txtMachGunKid:
-                db    1, 49h, 97h, 4Dh,   0,0FEh,0DEh, 3Dh,0FDh, 49h, 97h, 4Ch, 4Ch,   0,0EAh,   0
-                db  4Ch, 45h, 54h,0FEh,0AFh,   0, 47h, 4Fh,   0, 41h, 48h, 45h, 41h, 44h, 3Eh,0FFh
+                db $01,$49,$97,$4D,$00,$FE,$DE,$3D,$FD,$49,$97,$4C,$4C,$00,$EA,$00
+                db $4C,$45,$54,$FE,$AF,$00,$47,$4F,$00,$41,$48,$45,$41,$44,$3E,$FF
 txtMachGunKidInfo:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh,0DEh,   0,0C2h,   0,0E3h,0FEh,0F9h, 45h
-                db  44h,   0,0EBh,0FEh,0DFh,   0,0E0h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$DE,$00,$C2,$00,$E3,$FE,$F9,$45
+                db $44,$00,$EB,$FE,$DF,$00,$E0,$5C,$FE,$A2,$AD,$FF
 txtParacFind:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0AFh,   0,0E1h,   0, 47h, 45h, 54h,0FEh,0CEh,   0
-                db  50h, 41h, 52h, 41h, 43h, 48h, 55h, 54h, 45h,   0,0E2h,0FEh,0CEh,   0, 32h, 4Eh
-                db  44h,   0,0C7h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$AF,$00,$E1,$00,$47,$45,$54,$FE,$CE,$00
+                db $50,$41,$52,$41,$43,$48,$55,$54,$45,$00,$E2,$FE,$CE,$00,$32,$4E
+                db $44,$00,$C7,$5C,$FE,$A2,$AD,$FF
 txtRescued_:
-                db    0,0B6h,0FFh
+                db $00,$B6,$FF
 txtHindDGrenade:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh, 48h, 49h, 4Eh, 44h, 40h, 44h,   0,0C2h
-                db    0,0E3h,0FEh,0A5h, 45h, 44h,   0,0EBh,0FEh, 47h, 52h, 45h, 4Eh, 41h, 44h, 45h
-                db    0, 4Ch, 41h, 55h, 4Eh, 43h, 48h, 45h, 52h, 5Ch,0FEh,0A2h,0DDh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$48,$49,$4E,$44,$40,$44,$00,$C2
+                db $00,$E3,$FE,$A5,$45,$44,$00,$EB,$FE,$47,$52,$45,$4E,$41,$44,$45
+                db $00,$4C,$41,$55,$4E,$43,$48,$45,$52,$5C,$FE,$A2,$DD,$FF
 txtTooLate:
-                db    4,0A2h,0C4h, 5Ch,0FEh, 49h, 54h, 97h, 53h,   0,0E6h, 4Fh,   0, 4Ch, 41h, 54h
-                db  45h, 5Ch,0FFh
+                db $04,$A2,$C4,$5C,$FE,$49,$54,$97,$53,$00,$E6,$4F,$00,$4C,$41,$54
+                db $45,$5C,$FF
 txtDrMovedB2:
-                db  11h,0B6h, 3Dh,0FDh,0C4h,   0, 57h, 41h, 53h,0FEh, 51h, 55h, 49h, 43h, 4Bh, 4Ch
-                db  59h,   0,0AEh, 44h,   0,0E6h,0FEh,0C5h,   0, 4Eh, 4Fh, 5Ch, 32h, 5Ch,0FDh,0C5h
-                db    0, 4Eh, 4Fh, 5Ch, 32h,   0, 4Ch, 49h, 45h, 53h,0FEh, 31h, 30h, 4Bh, 4Dh,   0
-                db  54h, 4Fh,   0,0CEh,   0, 4Eh, 4Fh, 52h, 54h, 48h,0FEh,0ABh,   0,0F4h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$C4,$00,$57,$41,$53,$FE,$51,$55,$49,$43,$4B,$4C
+                db $59,$00,$AE,$44,$00,$E6,$FE,$C5,$00,$4E,$4F,$5C,$32,$5C,$FD,$C5
+                db $00,$4E,$4F,$5C,$32,$00,$4C,$49,$45,$53,$FE,$31,$30,$4B,$4D,$00
+                db $54,$4F,$00,$CE,$00,$4E,$4F,$52,$54,$48,$FE,$AB,$00,$F4,$5C,$FF
 txtGoofed:
-                db    1, 49h,   0, 47h, 4Fh, 4Fh, 46h, 45h, 44h, 3Eh,0FEh,0CEh,   0,0EFh,0FEh, 53h
-                db  54h, 41h, 52h, 54h, 45h, 44h,   0,0E6h,   0,0AEh, 3Dh,0FFh
+                db $01,$49,$00,$47,$4F,$4F,$46,$45,$44,$3E,$FE,$CE,$00,$EF,$FE,$53
+                db $54,$41,$52,$54,$45,$44,$00,$E6,$00,$AE,$3D,$FF
 txtTankMines:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh,0A5h,   0,0CEh,   0, 54h, 41h, 4Eh, 4Bh
-                db    0,0D9h,0FEh,0CEh,   0, 4Ch, 41h, 4Eh, 44h,   0, 4Dh, 49h, 4Eh, 45h, 5Ch,0FEh
-                db 0A2h,0DDh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$A5,$00,$CE,$00,$54,$41,$4E,$4B
+                db $00,$D9,$FE,$CE,$00,$4C,$41,$4E,$44,$00,$4D,$49,$4E,$45,$5C,$FE
+                db $A2,$DD,$FF
 txtUseUniform:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0BBh,   0, 50h, 4Fh, 49h, 4Eh, 54h, 3Dh,0FDh,0B4h
-                db 0FEh, 41h, 4Eh,   0,0B8h, 97h, 53h,   0, 55h, 4Eh, 49h,0F2h, 4Dh,0FEh,0DAh,   0
-                db 0D8h,   0,0F1h, 5Ch,0FDh,0C1h,   0, 55h, 53h, 45h,   0,0B3h,   0, 31h, 32h, 30h
-                db  31h, 33h,0FEh,0F2h,   0, 46h, 55h, 54h, 55h, 52h, 45h,   0,0A8h, 5Ch,0FEh,0A2h
-                db 0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$BB,$00,$50,$4F,$49,$4E,$54,$3D,$FD,$B4
+                db $FE,$41,$4E,$00,$B8,$97,$53,$00,$55,$4E,$49,$F2,$4D,$FE,$DA,$00
+                db $D8,$00,$F1,$5C,$FD,$C1,$00,$55,$53,$45,$00,$B3,$00,$31,$32,$30
+                db $31,$33,$FE,$F2,$00,$46,$55,$54,$55,$52,$45,$00,$A8,$5C,$FE,$A2
+                db $AD,$FF
 txtUniformLoc:
-                db  13h,0D1h,   0,0B2h,0A2h,0FDh,0B8h, 97h, 53h,   0, 55h, 4Eh, 49h,0F2h, 4Dh,   0
-                db  49h, 53h,0FEh,0E4h,   0, 49h, 4Eh,0FEh,0CEh,   0,0C6h,   0, 4Fh, 46h,0FEh,0C5h
-                db    0, 4Eh, 4Fh, 5Ch, 31h, 5Ch,0FDh,0C1h,   0,0A8h,0FEh, 49h, 4Eh,   0,0CEh,   0
-                db 0D6h,   0, 4Fh, 46h,   0, 31h, 32h, 30h, 32h, 36h,0FEh,0ABh,   0,0ACh,   0,0E2h
-                db  5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$B2,$A2,$FD,$B8,$97,$53,$00,$55,$4E,$49,$F2,$4D,$00
+                db $49,$53,$FE,$E4,$00,$49,$4E,$FE,$CE,$00,$C6,$00,$4F,$46,$FE,$C5
+                db $00,$4E,$4F,$5C,$31,$5C,$FD,$C1,$00,$A8,$FE,$49,$4E,$00,$CE,$00
+                db $D6,$00,$4F,$46,$00,$31,$32,$30,$32,$36,$FE,$AB,$00,$AC,$00,$E2
+                db $5C,$FE,$A2,$AD,$FF
 txtDianeNewFreq:
-                db  13h,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh,0C1h,   0,0A8h,   0,0E2h,0FEh,0B3h,   0
-                db  31h, 32h, 30h, 39h, 31h,   0,0ABh,0FEh,0ACh,   0,0E2h, 5Ch,0FDh,0A2h,0DDh,0FFh
+                db $13,$DC,$00,$D1,$00,$D7,$A2,$FE,$C1,$00,$A8,$00,$E2,$FE,$B3,$00
+                db $31,$32,$30,$39,$31,$00,$AB,$FE,$AC,$00,$E2,$5C,$FD,$A2,$DD,$FF
 txtJammingAtk:
-                db    3,0D1h,   0,0A1h,0A2h,0FEh, 49h, 54h,   0, 57h, 41h, 53h,   0, 4Ah, 41h, 4Dh
-                db  4Dh, 49h, 4Eh, 47h, 5Fh, 42h, 55h, 54h,0A2h,0FEh, 4Fh, 4Bh,   0,0ACh, 5Ch,0FEh
-                db 0A2h,0ADh,0FFh
+                db $03,$D1,$00,$A1,$A2,$FE,$49,$54,$00,$57,$41,$53,$00,$4A,$41,$4D
+                db $4D,$49,$4E,$47,$5F,$42,$55,$54,$A2,$FE,$4F,$4B,$00,$AC,$5C,$FE
+                db $A2,$AD,$FF
 txtDrUndergCell:
-                db  11h,0B6h, 3Dh,0FDh,0C4h,   0, 49h, 53h,0FEh,0BDh,   0, 49h, 4Eh,0FEh,0CEh,   0
-                db 0C6h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$C4,$00,$49,$53,$FE,$BD,$00,$49,$4E,$FE,$CE,$00
+                db $C6,$5C,$FF
 txtGasArea:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0F5h,   0,0AFh,   0,0E6h,0FEh,0CEh,   0,0F0h,   0
-                db 0F6h, 3Dh,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$F5,$00,$AF,$00,$E6,$FE,$CE,$00,$F0,$00
+                db $F6,$3D,$FE,$A2,$AD,$FF
 txtUserNorthElev:
-                db    0,0B6h,0FFh
+                db $00,$B6,$FF
 txtImFireTrop:
-                db    4, 49h, 97h, 4Dh,   0, 46h, 49h, 52h, 45h,   0, 54h, 52h, 4Fh, 4Fh, 50h, 45h
-                db  52h, 3Dh,0FDh, 49h,   0,0C1h,0FDh, 42h, 55h, 52h, 4Eh,   0,0AFh,   0, 41h, 4Ch
-                db  49h, 56h, 45h, 3Dh,0FFh
+                db $04,$49,$97,$4D,$00,$46,$49,$52,$45,$00,$54,$52,$4F,$4F,$50,$45
+                db $52,$3D,$FD,$49,$00,$C1,$FD,$42,$55,$52,$4E,$00,$AF,$00,$41,$4C
+                db $49,$56,$45,$3D,$FF
 
 ;YOU ARE CAUGHT IN A TRAP.*IN FACT,*WE HAVE CONFINED DR. PETTROVICH ON THE SECOND FLOOR.* I WILL GET YOU FOXHOUNDER!
 txtTrap:
-                db    1,0AFh,   0, 41h, 52h, 45h,   0, 43h, 41h, 55h, 47h, 48h, 54h,   0, 49h, 4Eh
-                db 0FEh, 41h,   0, 54h, 52h, 41h, 50h, 5Ch,0FDh, 49h, 4Eh,   0, 46h, 41h, 43h, 54h
-                db  5Fh,0FDh, 57h, 45h,   0,0BCh,   0,0BDh,0FEh,0C4h,   0,0E2h,0FEh,0CEh,   0, 53h
-                db  45h, 43h,0E2h, 44h,   0,0C7h, 5Ch,0FDh, 49h,   0,0C1h,   0, 47h, 45h, 54h,   0
-                db 0AFh,0FEh,0B7h, 45h, 52h, 3Dh,0FFh
+                db $01,$AF,$00,$41,$52,$45,$00,$43,$41,$55,$47,$48,$54,$00,$49,$4E
+                db $FE,$41,$00,$54,$52,$41,$50,$5C,$FD,$49,$4E,$00,$46,$41,$43,$54
+                db $5F,$FD,$57,$45,$00,$BC,$00,$BD,$FE,$C4,$00,$E2,$FE,$CE,$00,$53
+                db $45,$43,$E2,$44,$00,$C7,$5C,$FD,$49,$00,$C1,$00,$47,$45,$54,$00
+                db $AF,$FE,$B7,$45,$52,$3D,$FF
 txtFlashLoc:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0CEh,   0, 46h, 4Ch, 41h, 53h, 48h,   0, 4Ch, 49h
-                db  47h, 48h, 54h,   0,0E1h,   0,0E3h,0FEh, 46h, 4Fh, 55h, 4Eh, 44h,   0,0E2h,   0
-                db 0CEh,   0, 31h, 53h, 54h,   0,0C7h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$CE,$00,$46,$4C,$41,$53,$48,$00,$4C,$49
+                db $47,$48,$54,$00,$E1,$00,$E3,$FE,$46,$4F,$55,$4E,$44,$00,$E2,$00
+                db $CE,$00,$31,$53,$54,$00,$C7,$5C,$FE,$A2,$AD,$FF
 txtPitfalls:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh,0D5h,   0, 54h, 41h, 4Bh, 45h,   0, 43h
-                db  41h, 52h, 45h, 5Fh,0FEh,0ECh,   0, 4Dh, 41h, 59h,   0,0E3h,   0, 41h,   0, 50h
-                db  49h, 54h, 46h, 41h, 4Ch, 4Ch, 5Ch,0FEh,0A2h,0DDh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$D5,$00,$54,$41,$4B,$45,$00,$43
+                db $41,$52,$45,$5F,$FE,$EC,$00,$4D,$41,$59,$00,$E3,$00,$41,$00,$50
+                db $49,$54,$46,$41,$4C,$4C,$5C,$FE,$A2,$DD,$FF
 txtArnorlds:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh,0CEh,   0,0DBh, 4Bh, 45h, 45h, 50h, 45h
-                db  52h, 5Fh,0FEh,0F8h,0FEh, 49h, 53h,   0, 49h, 4Eh, 56h, 49h, 4Eh, 43h, 49h, 42h
-                db  4Ch, 45h, 3Dh,0FEh, 45h, 53h, 43h, 41h, 50h, 45h, 3Dh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$CE,$00,$DB,$4B,$45,$45,$50,$45
+                db $52,$5F,$FE,$F8,$FE,$49,$53,$00,$49,$4E,$56,$49,$4E,$43,$49,$42
+                db $4C,$45,$3D,$FE,$45,$53,$43,$41,$50,$45,$3D,$FF
 txtUseCompass:
-                db  11h,0B6h, 3Dh,0FDh,0AFh,   0,0C2h,   0,0BCh,0FEh, 41h,   0, 43h, 4Fh, 4Dh, 50h
-                db  41h, 53h, 53h,   0,0E6h,   0, 43h, 52h, 4Fh, 53h, 53h,0FEh,0CEh,   0, 44h, 45h
-                db  53h, 45h, 52h, 54h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$AF,$00,$C2,$00,$BC,$FE,$41,$00,$43,$4F,$4D,$50
+                db $41,$53,$53,$00,$E6,$00,$43,$52,$4F,$53,$53,$FE,$CE,$00,$44,$45
+                db $53,$45,$52,$54,$5C,$FF
 txtJennifer:
-                db  11h,0B6h, 3Dh,0FDh,0AFh,   0, 4Dh, 49h, 47h, 48h, 54h,   0,0E3h,   0, 41h, 42h
-                db  4Ch, 45h,0FEh,0E6h,   0,0A8h,   0,0C8h,0FEh, 4Fh, 46h,   0,0B1h,   0,0E2h,0FDh
-                db 0B3h,   0, 31h, 32h, 30h, 34h, 38h, 5Ch,0FDh, 42h, 55h, 54h,   0, 53h, 48h, 45h
-                db    0, 49h, 53h,   0, 50h, 52h, 4Fh, 55h, 44h, 5Fh,0FEh,0DAh,0FEh, 57h, 4Fh, 55h
-                db  4Ch, 44h, 4Eh, 97h, 54h,   0, 41h, 4Eh, 53h, 57h, 45h, 52h, 5Fh,0FDh, 49h, 46h
-                db    0,0AFh,   0, 57h, 45h, 52h, 45h,   0,0E5h,0FEh,0CEh,   0, 45h, 58h, 45h, 43h
-                db  55h, 54h, 49h, 56h, 45h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$AF,$00,$4D,$49,$47,$48,$54,$00,$E3,$00,$41,$42
+                db $4C,$45,$FE,$E6,$00,$A8,$00,$C8,$FE,$4F,$46,$00,$B1,$00,$E2,$FD
+                db $B3,$00,$31,$32,$30,$34,$38,$5C,$FD,$42,$55,$54,$00,$53,$48,$45
+                db $00,$49,$53,$00,$50,$52,$4F,$55,$44,$5F,$FE,$DA,$FE,$57,$4F,$55
+                db $4C,$44,$4E,$97,$54,$00,$41,$4E,$53,$57,$45,$52,$5F,$FD,$49,$46
+                db $00,$AF,$00,$57,$45,$52,$45,$00,$E5,$FE,$CE,$00,$45,$58,$45,$43
+                db $55,$54,$49,$56,$45,$5C,$FF
 txtRocketLaunch:
-                db  13h,0D1h,   0,0C8h,0A2h,0FEh,0C1h,   0, 41h, 52h, 52h, 41h, 4Eh, 47h, 45h,0FEh
-                db  41h,   0,0CAh, 5Ch,0FDh, 43h, 4Fh, 4Dh, 45h,   0,0F2h,0FEh, 41h,   0,0CAh, 3Dh
-                db 0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$C8,$A2,$FE,$C1,$00,$41,$52,$52,$41,$4E,$47,$45,$FE
+                db $41,$00,$CA,$5C,$FD,$43,$4F,$4D,$45,$00,$F2,$FE,$41,$00,$CA,$3D
+                db $FE,$A2,$AD,$FF
 txtOpeningDoor:
-                db    3,0D1h,   0,0C8h,0A2h,0FEh,0C1h,   0,0EDh,   0,0CEh,   0,0DBh, 5Ch,0FEh,0A2h
-                db 0ADh,0FFh
+                db $03,$D1,$00,$C8,$A2,$FE,$C1,$00,$ED,$00,$CE,$00,$DB,$5C,$FE,$A2
+                db $AD,$FF
 txtCompassLoc:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh,0CEh,   0, 43h, 4Fh, 4Dh, 50h, 41h, 53h, 53h,   0
-                db 0E1h,   0,0E3h,0FEh, 46h, 4Fh, 55h, 4Eh, 44h,   0,0E2h,   0,0CEh,   0, 32h, 4Eh
-                db  44h,   0,0C7h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$CE,$00,$43,$4F,$4D,$50,$41,$53,$53,$00
+                db $E1,$00,$E3,$FE,$46,$4F,$55,$4E,$44,$00,$E2,$00,$CE,$00,$32,$4E
+                db $44,$00,$C7,$5C,$FE,$A2,$AD,$FF
 txtWaterChan:
-                db    1,0B6h, 3Dh,0FDh,0CEh,   0, 44h, 49h, 54h, 43h, 48h,   0,0C1h,   0,0F5h,0FEh
-                db 0AFh,   0,0E6h,0FEh,0CEh,   0, 4Eh, 4Fh, 5Ch, 33h,   0,0C5h, 5Ch,0FFh
+                db $01,$B6,$3D,$FD,$CE,$00,$44,$49,$54,$43,$48,$00,$C1,$00,$F5,$FE
+                db $AF,$00,$E6,$FE,$CE,$00,$4E,$4F,$5C,$33,$00,$C5,$5C,$FF
+
 ;I'M DR. PETTROVICH.*MY DAUGHTER ELLEN WAS TAKEN AS HOSTAGE.*SAVE ELLEN OR,I WON'T DISCUSS METAL GEAR.
 txtSaveEllen:
-                db  11h, 49h, 97h, 4Dh,   0,0C4h, 5Ch,0FDh, 4Dh, 59h,   0, 44h, 41h, 55h, 47h, 48h
-                db  54h, 45h, 52h,   0,0C9h,0FEh, 57h, 41h, 53h,   0, 54h, 41h, 4Bh, 45h, 4Eh,0FEh
-                db  41h, 53h,   0, 48h, 4Fh, 53h, 54h, 41h, 47h, 45h, 5Ch,0FDh, 53h, 41h, 56h, 45h
-                db    0,0C9h,0FEh, 4Fh, 52h, 5Fh, 49h,   0, 57h, 4Fh, 4Eh, 97h, 54h,   0, 44h, 49h
-                db  53h, 43h, 55h, 53h, 53h,0FEh,0A7h, 5Ch,0FFh
+                db $11,$49,$97,$4D,$00,$C4,$5C,$FD,$4D,$59,$00,$44,$41,$55,$47,$48
+                db $54,$45,$52,$00,$C9,$FE,$57,$41,$53,$00,$54,$41,$4B,$45,$4E,$FE
+                db $41,$53,$00,$48,$4F,$53,$54,$41,$47,$45,$5C,$FD,$53,$41,$56,$45
+                db $00,$C9,$FE,$4F,$52,$5F,$49,$00,$57,$4F,$4E,$97,$54,$00,$44,$49
+                db $53,$43,$55,$53,$53,$FE,$A7,$5C,$FF
 
 ; I'M DR. PETTROVICH.* METAL GEAR IS IN 100TH BASEMENT OF BUILDING NO.3,*
 ;20KM TO THE NORTH OF HERE.* METAL GEAR CAN BE DESTOROYED IN ONLY ONE WAY.*
@@ -480,167 +481,167 @@ txtSaveEllen:
 ;MR. ARNOLD HAS AN I.D. CARD* TO GET OUT OF BUILDING NO.2.*
 ;YOU SHOULD USE A ROCKET LAUNCHER TO KILL MR. ARNOLD.
 txtImMadnar:
-                db  11h, 49h, 97h, 4Dh,   0,0C4h, 5Ch,0FDh,0A7h,   0, 49h, 53h,   0, 49h, 4Eh,0FEh
-                db  31h, 30h, 30h, 54h, 48h,   0,0C6h,   0, 4Fh, 46h,0FEh,0C5h,   0, 4Eh, 4Fh, 5Ch
-                db  33h, 5Fh,0FDh, 32h, 30h, 4Bh, 4Dh,   0,0E6h,   0,0CEh,   0, 4Eh, 4Fh, 52h, 54h
-                db  48h,0FEh, 4Fh, 46h,   0,0F4h, 5Ch,0FDh,0A7h,   0,0E1h,   0,0E3h,0FEh,0A5h, 45h
-                db  44h,0FEh, 49h, 4Eh,   0,0C3h,   0, 4Fh, 4Eh, 45h,   0,0F7h, 5Ch,0FDh, 41h, 54h
-                db  54h, 41h, 43h, 48h,   0, 50h, 4Ch, 41h, 53h, 54h, 49h, 43h,   0, 42h, 4Fh, 4Dh
-                db  42h,0FEh,0E6h,   0,0CEh,   0, 46h, 4Fh, 4Fh, 54h,   0, 4Fh, 46h,0FEh,0A7h, 5Ch
-                db 0FDh, 52h, 5Fh, 52h, 5Fh, 4Ch, 5Fh, 52h, 5Fh, 4Ch, 5Fh, 4Ch, 5Fh, 52h, 5Fh, 4Ch
-                db  5Fh, 4Ch, 5Fh,0FEh, 52h, 5Fh, 52h, 5Fh, 4Ch, 5Fh, 52h, 5Fh, 4Ch, 5Fh, 52h, 5Fh
-                db 0A2h,0FEh, 49h, 4Eh,   0, 4Fh, 52h, 44h, 45h, 52h, 5Ch,0FDh, 49h,   0,0F2h, 47h
-                db  4Fh, 54h,0FEh,0CEh,   0, 52h, 45h, 4Dh, 41h, 49h, 4Eh, 44h, 45h, 52h, 5Ch,0FDh
-                db  41h, 4Eh, 59h,0F7h, 5Fh,0FDh, 53h, 45h, 54h,   0, 31h, 36h,   0, 55h, 4Eh, 49h
-                db  54h, 53h, 5Ch,0FDh,0AFh,   0, 43h, 41h, 4Eh,   0,0E5h, 5Fh,0FEh,0A5h,0FDh, 49h
-                db  46h,   0,0AFh,   0, 43h, 4Fh, 4Dh, 4Dh, 49h, 54h,0FEh, 41h, 4Eh,   0, 45h, 52h
-                db  52h, 4Fh, 52h,0FEh, 49h, 4Eh,   0,0CEh,   0, 4Fh, 52h, 44h, 45h, 52h, 5Ch,0FDh
-                db 0F8h,   0, 48h, 41h, 53h,0FEh, 41h, 4Eh,   0, 49h, 5Ch, 44h, 5Ch,   0,0D4h,0FDh
-                db 0E6h,   0, 47h, 45h, 54h,   0, 4Fh, 55h, 54h,   0, 4Fh, 46h,0FEh,0C5h,   0, 4Eh
-                db  4Fh, 5Ch, 32h, 5Ch,0FDh,0AFh,   0,0E7h,   0, 55h, 53h, 45h,0FEh, 41h,   0,0CAh
-                db 0FEh,0E6h,   0,0F9h,   0,0F8h, 5Ch,0FFh
+                db $11,$49,$97,$4D,$00,$C4,$5C,$FD,$A7,$00,$49,$53,$00,$49,$4E,$FE
+                db $31,$30,$30,$54,$48,$00,$C6,$00,$4F,$46,$FE,$C5,$00,$4E,$4F,$5C
+                db $33,$5F,$FD,$32,$30,$4B,$4D,$00,$E6,$00,$CE,$00,$4E,$4F,$52,$54
+                db $48,$FE,$4F,$46,$00,$F4,$5C,$FD,$A7,$00,$E1,$00,$E3,$FE,$A5,$45
+                db $44,$FE,$49,$4E,$00,$C3,$00,$4F,$4E,$45,$00,$F7,$5C,$FD,$41,$54
+                db $54,$41,$43,$48,$00,$50,$4C,$41,$53,$54,$49,$43,$00,$42,$4F,$4D
+                db $42,$FE,$E6,$00,$CE,$00,$46,$4F,$4F,$54,$00,$4F,$46,$FE,$A7,$5C
+                db $FD,$52,$5F,$52,$5F,$4C,$5F,$52,$5F,$4C,$5F,$4C,$5F,$52,$5F,$4C
+                db $5F,$4C,$5F,$FE,$52,$5F,$52,$5F,$4C,$5F,$52,$5F,$4C,$5F,$52,$5F
+                db $A2,$FE,$49,$4E,$00,$4F,$52,$44,$45,$52,$5C,$FD,$49,$00,$F2,$47
+                db $4F,$54,$FE,$CE,$00,$52,$45,$4D,$41,$49,$4E,$44,$45,$52,$5C,$FD
+                db $41,$4E,$59,$F7,$5F,$FD,$53,$45,$54,$00,$31,$36,$00,$55,$4E,$49
+                db $54,$53,$5C,$FD,$AF,$00,$43,$41,$4E,$00,$E5,$5F,$FE,$A5,$FD,$49
+                db $46,$00,$AF,$00,$43,$4F,$4D,$4D,$49,$54,$FE,$41,$4E,$00,$45,$52
+                db $52,$4F,$52,$FE,$49,$4E,$00,$CE,$00,$4F,$52,$44,$45,$52,$5C,$FD
+                db $F8,$00,$48,$41,$53,$FE,$41,$4E,$00,$49,$5C,$44,$5C,$00,$D4,$FD
+                db $E6,$00,$47,$45,$54,$00,$4F,$55,$54,$00,$4F,$46,$FE,$C5,$00,$4E
+                db $4F,$5C,$32,$5C,$FD,$AF,$00,$E7,$00,$55,$53,$45,$FE,$41,$00,$CA
+                db $FE,$E6,$00,$F9,$00,$F8,$5C,$FF
 txtSecrPassage:
-                db    3,0D1h,   0,0B2h,0A2h,0FEh, 53h, 45h, 43h, 52h, 45h, 54h,   0, 53h, 55h, 42h
-                db 0F7h,   0,0ABh,0FEh,0CEh,   0, 53h, 4Fh, 55h, 54h, 48h, 45h, 41h, 53h, 54h,   0
-                db 0F5h, 53h,   0,0AFh,0FEh,0E6h,   0, 4Eh, 4Fh, 5Ch, 31h,   0,0C5h, 5Ch,0FEh,0A2h
-                db 0ADh,0FFh
+                db $03,$D1,$00,$B2,$A2,$FE,$53,$45,$43,$52,$45,$54,$00,$53,$55,$42
+                db $F7,$00,$AB,$FE,$CE,$00,$53,$4F,$55,$54,$48,$45,$41,$53,$54,$00
+                db $F5,$53,$00,$AF,$FE,$E6,$00,$4E,$4F,$5C,$31,$00,$C5,$5C,$FE,$A2
+                db $AD,$FF
 txtComeIn:
-                db    0, 43h, 4Fh, 4Dh, 45h,   0, 49h, 4Eh,0FFh
+                db $00,$43,$4F,$4D,$45,$00,$49,$4E,$FF
 txtHelpMe:
-                db    0, 48h, 45h, 4Ch, 50h,   0, 4Dh, 45h,0FFh
+                db $00,$48,$45,$4C,$50,$00,$4D,$45,$FF
 txtImElen:
-                db  11h, 54h, 48h, 41h, 4Eh, 4Bh,   0,0AFh, 5Ch,0FDh, 49h, 97h, 4Dh,   0,0CEh,   0
-                db  44h, 41h, 55h, 47h, 48h, 54h, 45h, 52h,   0, 4Fh, 46h,0FEh,0C4h, 5Fh,0FEh,0C9h
-                db  5Ch,0FDh, 4Dh, 59h,   0, 46h, 41h, 54h, 48h, 45h, 52h,   0, 57h, 41h, 53h,0FEh
-                db 0F2h, 43h, 45h, 44h,   0,0E6h,   0, 44h, 45h, 56h, 45h, 4Ch, 4Fh, 50h,0FEh,0A7h
-                db  5Ch,0FDh,0D5h,   0, 48h, 45h, 4Ch, 50h,0FEh, 4Dh, 59h,   0, 46h, 41h, 54h, 48h
-                db  45h, 52h,0FEh, 55h, 52h, 47h, 45h, 4Eh, 54h, 4Ch, 59h, 5Ch,0FFh
+                db $11,$54,$48,$41,$4E,$4B,$00,$AF,$5C,$FD,$49,$97,$4D,$00,$CE,$00
+                db $44,$41,$55,$47,$48,$54,$45,$52,$00,$4F,$46,$FE,$C4,$5F,$FE,$C9
+                db $5C,$FD,$4D,$59,$00,$46,$41,$54,$48,$45,$52,$00,$57,$41,$53,$FE
+                db $F2,$43,$45,$44,$00,$E6,$00,$44,$45,$56,$45,$4C,$4F,$50,$FE,$A7
+                db $5C,$FD,$D5,$00,$48,$45,$4C,$50,$FE,$4D,$59,$00,$46,$41,$54,$48
+                db $45,$52,$FE,$55,$52,$47,$45,$4E,$54,$4C,$59,$5C,$FF
 
 txtUseAntidote:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh, 41h, 4Eh,   0, 41h, 4Eh, 54h, 49h, 44h
-                db  4Fh, 54h, 45h,   0, 49h, 53h,   0, 47h, 4Fh, 4Fh, 44h,   0,0F2h,0FEh,0CEh,   0
-                db  50h, 4Fh, 49h, 53h, 4Fh, 4Eh,   0, 4Fh, 46h,0FEh, 41h,   0, 53h, 43h, 4Fh, 52h
-                db  50h, 49h, 4Fh, 4Eh, 5Ch,0FEh,0A2h,0DDh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$41,$4E,$00,$41,$4E,$54,$49,$44
+                db $4F,$54,$45,$00,$49,$53,$00,$47,$4F,$4F,$44,$00,$F2,$FE,$CE,$00
+                db $50,$4F,$49,$53,$4F,$4E,$00,$4F,$46,$FE,$41,$00,$53,$43,$4F,$52
+                db $50,$49,$4F,$4E,$5C,$FE,$A2,$DD,$FF
 txtRescued:
-                db    0,0B6h,0FFh
+                db $00,$B6,$FF
 txtGoLeftDoor:
-                db    3,0D1h,   0,0A1h,0A2h,0FEh, 45h, 4Eh, 54h, 45h, 52h,   0,0CEh,   0, 4Ch, 45h
-                db  46h, 54h,   0,0DBh, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$A1,$A2,$FE,$45,$4E,$54,$45,$52,$00,$CE,$00,$4C,$45
+                db $46,$54,$00,$DB,$5C,$FE,$A2,$AD,$FF
 txtRightLorry:
-                db    3,0D1h,   0,0A1h,0A2h,0FEh, 43h, 52h, 45h, 45h, 50h,   0, 49h, 4Eh,0E6h,   0
-                db 0CEh,   0,0EFh,0FEh,0E2h,   0,0CEh,   0, 52h, 49h, 47h, 48h, 54h,   0, 53h, 49h
-                db  44h, 45h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$A1,$A2,$FE,$43,$52,$45,$45,$50,$00,$49,$4E,$E6,$00
+                db $CE,$00,$EF,$FE,$E2,$00,$CE,$00,$52,$49,$47,$48,$54,$00,$53,$49
+                db $44,$45,$5C,$FE,$A2,$AD,$FF
 txtDestroyWall:
-                db    3,0D1h,   0,0C8h,0A2h,0FEh,0AFh,   0,0E7h,   0,0FBh,   0, 44h, 4Fh, 57h, 4Eh
-                db 0FEh,0CEh,   0,0E8h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$C8,$A2,$FE,$AF,$00,$E7,$00,$FB,$00,$44,$4F,$57,$4E
+                db $FE,$CE,$00,$E8,$5C,$FE,$A2,$AD,$FF
 txtOxygenLoc:
-                db    3,0D1h,   0,0C8h,0A2h,0FEh,0ECh,   0, 49h, 53h,   0, 41h, 4Eh,   0, 4Fh, 58h
-                db  59h, 47h, 45h, 4Eh,0FEh, 43h, 59h, 4Ch, 49h, 4Eh, 44h, 45h, 52h,   0,0E3h, 59h
-                db  4Fh, 4Eh, 44h,0FEh,0CEh,   0,0E8h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$C8,$A2,$FE,$EC,$00,$49,$53,$00,$41,$4E,$00,$4F,$58
+                db $59,$47,$45,$4E,$FE,$43,$59,$4C,$49,$4E,$44,$45,$52,$00,$E3,$59
+                db $4F,$4E,$44,$FE,$CE,$00,$E8,$5C,$FE,$A2,$AD,$FF
 txtSwitchOffMSX:
-                db  13h,0D1h,   0,0A1h,0A2h,0FEh,0CBh, 3Dh,0FEh, 53h, 54h, 4Fh, 50h,   0,0CEh,   0
-                db  4Fh, 50h, 45h, 52h, 41h, 54h, 49h, 4Fh, 4Eh, 5Ch,0FEh, 53h, 57h, 49h, 54h, 43h
-                db  48h,   0, 4Fh, 46h, 46h,   0,0AFh, 52h,   0, 4Dh, 53h, 58h,0FEh, 41h, 54h,   0
-                db 0E2h, 43h, 45h, 5Ch,0FDh,0D1h,   0,0CEh,   0, 43h, 4Fh, 4Dh, 4Dh, 41h, 4Eh, 44h
-                db  5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$A1,$A2,$FE,$CB,$3D,$FE,$53,$54,$4F,$50,$00,$CE,$00
+                db $4F,$50,$45,$52,$41,$54,$49,$4F,$4E,$5C,$FE,$53,$57,$49,$54,$43
+                db $48,$00,$4F,$46,$46,$00,$AF,$52,$00,$4D,$53,$58,$FE,$41,$54,$00
+                db $E2,$43,$45,$5C,$FD,$D1,$00,$CE,$00,$43,$4F,$4D,$4D,$41,$4E,$44
+                db $5C,$FE,$A2,$AD,$FF
 txtCardLoc:
-                db  13h,0D1h,   0,0C8h,0A2h,0FEh, 41h,   0,0D4h,   0, 57h, 48h, 49h, 43h, 48h,   0
-                db  4Fh, 50h, 45h, 4Eh,0FEh,0CEh,   0, 4Eh, 45h, 58h, 54h,   0,0DBh,   0, 4Ch, 49h
-                db  45h, 53h,   0, 49h, 4Eh,0FEh,0CEh,   0, 45h, 41h, 53h, 54h,   0, 4Fh, 46h,   0
-                db 0C5h,   0, 33h, 5Ch,0FDh,0CEh,   0, 45h, 41h, 53h, 54h, 45h, 52h, 4Eh,   0, 53h
-                db  49h, 44h, 45h,   0,0F5h, 53h,0FEh,0E6h,   0,0CEh,   0, 44h, 49h, 54h, 43h, 48h
-                db 0FEh, 4Fh, 46h,   0,0C5h,   0, 32h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$C8,$A2,$FE,$41,$00,$D4,$00,$57,$48,$49,$43,$48,$00
+                db $4F,$50,$45,$4E,$FE,$CE,$00,$4E,$45,$58,$54,$00,$DB,$00,$4C,$49
+                db $45,$53,$00,$49,$4E,$FE,$CE,$00,$45,$41,$53,$54,$00,$4F,$46,$00
+                db $C5,$00,$33,$5C,$FD,$CE,$00,$45,$41,$53,$54,$45,$52,$4E,$00,$53
+                db $49,$44,$45,$00,$F5,$53,$FE,$E6,$00,$CE,$00,$44,$49,$54,$43,$48
+                db $FE,$4F,$46,$00,$C5,$00,$32,$5C,$FE,$A2,$AD,$FF
 txtBossRevealed:
-                db  13h,0D1h,   0,0B2h,0A2h,0FEh, 49h,   0,0BCh,   0, 44h, 49h, 53h, 43h, 4Fh, 56h
-                db  45h, 52h, 45h, 44h,0FEh, 57h, 48h, 4Fh,   0,0CEh,   0, 42h, 4Fh, 53h, 53h,   0
-                db  4Fh, 46h,0FEh,0A4h,   0, 49h, 53h, 5Ch,0FDh,0CEh,   0, 42h, 4Fh, 53h, 53h,   0
-                db  49h, 53h, 5Ch,0A2h,0FDh, 4Fh, 48h,   0, 4Eh, 4Fh, 3Eh,0FEh, 57h, 48h, 41h, 5Ch
-                db  41h, 5Ch,0A2h,0A2h,0FFh
+                db $13,$D1,$00,$B2,$A2,$FE,$49,$00,$BC,$00,$44,$49,$53,$43,$4F,$56
+                db $45,$52,$45,$44,$FE,$57,$48,$4F,$00,$CE,$00,$42,$4F,$53,$53,$00
+                db $4F,$46,$FE,$A4,$00,$49,$53,$5C,$FD,$CE,$00,$42,$4F,$53,$53,$00
+                db $49,$53,$5C,$A2,$FD,$4F,$48,$00,$4E,$4F,$3E,$FE,$57,$48,$41,$5C
+                db $41,$5C,$A2,$A2,$FF
 txtCowardDuck:
-                db    1, 49h, 97h, 4Dh,   0, 43h, 4Fh, 57h, 41h, 52h, 44h,   0, 44h, 55h, 43h, 4Bh
-                db  3Dh,0FDh,0AFh,   0,0E1h, 97h, 54h,0FDh, 53h, 48h, 4Fh, 4Fh, 54h,   0, 4Dh, 45h
-                db  5Fh,0FDh,0E1h,   0,0AFh, 5Bh,0FFh
+                db $01,$49,$97,$4D,$00,$43,$4F,$57,$41,$52,$44,$00,$44,$55,$43,$4B
+                db $3D,$FD,$AF,$00,$E1,$97,$54,$FD,$53,$48,$4F,$4F,$54,$00,$4D,$45
+                db $5F,$FD,$E1,$00,$AF,$5B,$FF
 
 ;RESCUED!*I'M A BROTHER OF*JENNIFER.*CLIMB THE LEFT*LADDER*WHEN ESCAPING.
 txtClimbLeftLadder:
-                db  11h,0B6h, 3Dh,0FDh, 49h, 97h, 4Dh,   0, 41h,   0, 42h, 52h, 4Fh, 54h, 48h, 45h
-                db  52h,   0, 4Fh, 46h,0FDh,0C8h, 5Ch,0FDh, 43h, 4Ch, 49h, 4Dh, 42h,   0,0CEh,   0
-                db  4Ch, 45h, 46h, 54h,0FDh, 4Ch, 41h, 44h, 44h, 45h, 52h,0FDh, 57h, 48h, 45h, 4Eh
-                db    0, 45h, 53h, 43h, 41h, 50h, 49h, 4Eh, 47h, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$49,$97,$4D,$00,$41,$00,$42,$52,$4F,$54,$48,$45
+                db $52,$00,$4F,$46,$FD,$C8,$5C,$FD,$43,$4C,$49,$4D,$42,$00,$CE,$00
+                db $4C,$45,$46,$54,$FD,$4C,$41,$44,$44,$45,$52,$FD,$57,$48,$45,$4E
+                db $00,$45,$53,$43,$41,$50,$49,$4E,$47,$5C,$FF
 txtUseHandGun:
-                db  13h,0DCh,   0,0D1h,   0,0D7h,0A2h,0FDh, 55h, 53h, 45h,   0,0CEh,   0, 48h, 41h
-                db  4Eh, 44h,   0, 47h, 55h, 4Eh,   0,0E6h,0FEh,0B0h,   0,0CEh,   0, 50h, 52h, 49h
-                db  53h, 4Fh, 4Eh, 45h, 52h, 53h, 5Fh,0FEh,0E5h,   0,0E6h,   0,0F9h,   0, 54h, 48h
-                db  45h, 4Dh, 5Ch,0FEh,0A2h,0DDh,0FFh
+                db $13,$DC,$00,$D1,$00,$D7,$A2,$FD,$55,$53,$45,$00,$CE,$00,$48,$41
+                db $4E,$44,$00,$47,$55,$4E,$00,$E6,$FE,$B0,$00,$CE,$00,$50,$52,$49
+                db $53,$4F,$4E,$45,$52,$53,$5F,$FE,$E5,$00,$E6,$00,$F9,$00,$54,$48
+                db $45,$4D,$5C,$FE,$A2,$DD,$FF
 txtDuckCard8:
-                db  13h,0D1h,   0,0C8h,0A2h,0FEh, 43h, 4Fh, 57h, 41h, 52h, 44h,   0, 44h, 55h, 43h
-                db  4Bh,   0, 48h, 41h, 53h,   0,0D4h,   0, 38h, 5Ch,0FDh, 4Dh, 59h,   0, 42h, 52h
-                db  4Fh, 54h, 48h, 45h, 52h,   0, 49h, 53h,   0, 41h, 4Dh, 4Fh, 4Eh, 47h,0FEh,0CEh
-                db    0, 43h, 41h, 50h, 54h, 49h, 56h, 45h, 53h, 5Ch,0FEh,0D5h,   0, 44h, 4Fh, 4Eh
-                db  97h, 54h,   0,0F9h,   0, 54h, 48h, 45h, 4Dh, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $13,$D1,$00,$C8,$A2,$FE,$43,$4F,$57,$41,$52,$44,$00,$44,$55,$43
+                db $4B,$00,$48,$41,$53,$00,$D4,$00,$38,$5C,$FD,$4D,$59,$00,$42,$52
+                db $4F,$54,$48,$45,$52,$00,$49,$53,$00,$41,$4D,$4F,$4E,$47,$FE,$CE
+                db $00,$43,$41,$50,$54,$49,$56,$45,$53,$5C,$FE,$D5,$00,$44,$4F,$4E
+                db $97,$54,$00,$F9,$00,$54,$48,$45,$4D,$5C,$FE,$A2,$AD,$FF
 txtBigBossIdBad:
-                db  11h,0B6h, 3Dh,0FDh, 42h, 4Fh, 53h, 53h,   0, 4Fh, 46h,0FEh,0A4h,   0, 49h, 53h
-                db 0FEh,0A1h, 5Fh,0FDh, 47h, 45h, 4Eh, 45h, 52h, 41h, 4Ch,   0, 43h, 4Fh, 4Dh, 4Dh
-                db  41h, 4Eh, 44h, 41h, 4Eh, 54h,0FEh, 4Fh, 46h,   0,0B7h, 5Ch,0FDh, 45h, 56h, 45h
-                db  52h, 59h, 54h, 48h, 49h, 4Eh, 47h,   0, 49h, 53h,   0, 44h, 4Fh, 4Eh, 45h,0FEh
-                db 0EBh,   0, 48h, 49h, 4Dh, 5Ch,0FFh
+                db $11,$B6,$3D,$FD,$42,$4F,$53,$53,$00,$4F,$46,$FE,$A4,$00,$49,$53
+                db $FE,$A1,$5F,$FD,$47,$45,$4E,$45,$52,$41,$4C,$00,$43,$4F,$4D,$4D
+                db $41,$4E,$44,$41,$4E,$54,$FE,$4F,$46,$00,$B7,$5C,$FD,$45,$56,$45
+                db $52,$59,$54,$48,$49,$4E,$47,$00,$49,$53,$00,$44,$4F,$4E,$45,$FE
+                db $EB,$00,$48,$49,$4D,$5C,$FF
 txtRunFast:
-                db    3,0D1h,   0,0C8h,0A2h,0FEh,0AFh,   0,0C2h,   0, 52h, 55h, 4Eh,   0, 46h, 41h
-                db  53h, 54h, 5Ch,0FEh,0A2h,0ADh,0FFh
+                db $03,$D1,$00,$C8,$A2,$FE,$AF,$00,$C2,$00,$52,$55,$4E,$00,$46,$41
+                db $53,$54,$5C,$FE,$A2,$AD,$FF
 txtBigBossConf:
-                db  11h,0CBh, 3Dh,0FEh,0AFh, 97h, 56h, 45h,   0, 46h, 49h, 4Eh, 41h, 4Ch, 4Ch, 59h
-                db 0FEh, 43h, 4Fh, 4Dh, 45h,   0,0F4h, 5Ch,0FDh, 59h, 45h, 41h, 48h, 5Fh, 49h, 97h
-                db  4Dh,   0,0A1h,0FEh, 47h, 45h, 4Eh, 45h, 52h, 41h, 4Ch,   0, 43h, 4Fh, 4Dh, 4Dh
-                db  41h, 4Eh, 44h, 41h, 4Eh, 54h,0FEh, 4Fh, 46h,   0,0B7h, 5Ch,0FDh,0DAh,   0, 49h
-                db  4Eh,   0, 43h, 48h, 41h, 52h, 47h, 45h,   0, 4Fh, 46h,0FEh, 54h, 48h, 49h, 53h
-                db    0,0FAh, 5Fh,0FEh,0A4h, 5Ch,0FDh, 49h,   0, 47h, 41h, 56h, 45h,   0,0AFh,0FEh
-                db  49h, 4Eh, 53h, 54h, 52h, 55h, 43h, 54h, 49h, 4Fh, 4Eh, 53h,0FEh,0E6h,   0, 42h
-                db  52h, 49h, 4Eh, 47h,   0, 42h, 41h, 43h, 4Bh,0FDh, 46h, 41h, 4Ch, 53h, 45h,   0
-                db  49h, 4Eh,0F2h, 4Dh, 41h, 54h, 49h, 4Fh, 4Eh,0FEh, 4Fh, 46h,   0,0A7h, 5Ch,0FDh
-                db  48h, 4Fh, 57h, 45h, 56h, 45h, 52h, 5Fh,0FEh,0AFh,   0, 41h, 43h, 43h, 4Fh, 4Dh
-                db  50h, 4Ch, 49h, 53h, 48h, 45h, 44h,0FEh,0E6h, 4Fh,   0, 4Dh, 55h, 43h, 48h, 5Ch
-                db 0FDh,0AFh,   0,0BCh,0FEh,0D0h, 4Ch, 59h,   0, 53h, 4Dh, 41h, 53h, 48h, 45h, 44h
-                db 0FEh, 4Dh, 59h,   0, 41h, 4Dh, 42h, 49h, 54h, 49h, 4Fh, 4Eh, 53h, 5Ch,0FDh,0CBh
-                db  3Eh,0FDh, 49h,   0,0C1h,   0,0E5h,0FEh, 44h, 49h, 45h,   0, 41h, 4Ch, 4Fh, 4Eh
-                db  45h, 5Ch,0FDh,0AFh,   0,0C1h,   0, 4Ah, 4Fh, 49h, 4Eh,   0, 4Dh, 45h, 5Ch,0FFh
+                db $11,$CB,$3D,$FE,$AF,$97,$56,$45,$00,$46,$49,$4E,$41,$4C,$4C,$59
+                db $FE,$43,$4F,$4D,$45,$00,$F4,$5C,$FD,$59,$45,$41,$48,$5F,$49,$97
+                db $4D,$00,$A1,$FE,$47,$45,$4E,$45,$52,$41,$4C,$00,$43,$4F,$4D,$4D
+                db $41,$4E,$44,$41,$4E,$54,$FE,$4F,$46,$00,$B7,$5C,$FD,$DA,$00,$49
+                db $4E,$00,$43,$48,$41,$52,$47,$45,$00,$4F,$46,$FE,$54,$48,$49,$53
+                db $00,$FA,$5F,$FE,$A4,$5C,$FD,$49,$00,$47,$41,$56,$45,$00,$AF,$FE
+                db $49,$4E,$53,$54,$52,$55,$43,$54,$49,$4F,$4E,$53,$FE,$E6,$00,$42
+                db $52,$49,$4E,$47,$00,$42,$41,$43,$4B,$FD,$46,$41,$4C,$53,$45,$00
+                db $49,$4E,$F2,$4D,$41,$54,$49,$4F,$4E,$FE,$4F,$46,$00,$A7,$5C,$FD
+                db $48,$4F,$57,$45,$56,$45,$52,$5F,$FE,$AF,$00,$41,$43,$43,$4F,$4D
+                db $50,$4C,$49,$53,$48,$45,$44,$FE,$E6,$4F,$00,$4D,$55,$43,$48,$5C
+                db $FD,$AF,$00,$BC,$FE,$D0,$4C,$59,$00,$53,$4D,$41,$53,$48,$45,$44
+                db $FE,$4D,$59,$00,$41,$4D,$42,$49,$54,$49,$4F,$4E,$53,$5C,$FD,$CB
+                db $3E,$FD,$49,$00,$C1,$00,$E5,$FE,$44,$49,$45,$00,$41,$4C,$4F,$4E
+                db $45,$5C,$FD,$AF,$00,$C1,$00,$4A,$4F,$49,$4E,$00,$4D,$45,$5C,$FF
 txtUseCigarette:
-                db  13h,0D1h,   0,0C8h,0A2h,0FEh,0AFh,   0,0E1h,   0, 45h, 58h, 54h, 45h, 4Eh, 44h
-                db    0,0CEh,   0, 54h, 49h, 4Dh, 45h,0FEh, 4Ch, 49h, 4Dh, 49h, 54h,   0,0EBh,   0
-                db  55h, 53h, 49h, 4Eh, 47h,0FEh, 41h,   0, 43h, 49h, 47h, 41h, 52h, 45h, 54h, 54h
-                db  45h, 5Ch,0FDh,0D5h,   0, 52h, 45h, 54h, 55h, 52h, 4Eh,   0, 49h, 4Eh,0FEh, 53h
-                db  41h, 46h, 45h, 54h, 59h, 5Fh,0FEh,0CBh, 3Dh,0FFh
+                db $13,$D1,$00,$C8,$A2,$FE,$AF,$00,$E1,$00,$45,$58,$54,$45,$4E,$44
+                db $00,$CE,$00,$54,$49,$4D,$45,$FE,$4C,$49,$4D,$49,$54,$00,$EB,$00
+                db $55,$53,$49,$4E,$47,$FE,$41,$00,$43,$49,$47,$41,$52,$45,$54,$54
+                db $45,$5C,$FD,$D5,$00,$52,$45,$54,$55,$52,$4E,$00,$49,$4E,$FE,$53
+                db $41,$46,$45,$54,$59,$5F,$FE,$CB,$3D,$FF
 txtUpToYou:
-                db  13h,0D1h,   0,0D7h,0A2h,0FEh, 49h,   0, 44h, 4Fh, 4Eh, 97h, 54h,   0, 4Bh, 4Eh
-                db  4Fh, 57h,   0, 48h, 4Fh, 57h,   0,0E6h,0FEh,0E9h,   0,0A1h, 5Ch,0FEh, 49h, 54h
-                db    0, 41h, 4Ch, 4Ch,   0, 44h, 45h, 50h, 45h, 4Eh, 44h, 53h,   0,0E2h,   0,0AFh
-                db  5Ch,0FEh,0CBh, 3Dh,0FDh, 49h,   0, 4Ch, 4Fh, 56h, 45h,0A2h, 5Ch,0FEh, 4Eh, 4Fh
-                db  5Fh, 49h, 54h,   0, 57h, 41h, 53h,0FEh, 41h,   0, 4Dh, 45h, 52h, 45h,   0, 4Eh
-                db  4Fh, 54h, 48h, 49h, 4Eh, 47h, 3Dh,0FEh, 47h, 4Fh, 4Fh, 44h,   0, 4Ch, 55h, 43h
-                db  4Bh, 3Eh,0FFh
+                db $13,$D1,$00,$D7,$A2,$FE,$49,$00,$44,$4F,$4E,$97,$54,$00,$4B,$4E
+                db $4F,$57,$00,$48,$4F,$57,$00,$E6,$FE,$E9,$00,$A1,$5C,$FE,$49,$54
+                db $00,$41,$4C,$4C,$00,$44,$45,$50,$45,$4E,$44,$53,$00,$E2,$00,$AF
+                db $5C,$FE,$CB,$3D,$FD,$49,$00,$4C,$4F,$56,$45,$A2,$5C,$FE,$4E,$4F
+                db $5F,$49,$54,$00,$57,$41,$53,$FE,$41,$00,$4D,$45,$52,$45,$00,$4E
+                db $4F,$54,$48,$49,$4E,$47,$3D,$FE,$47,$4F,$4F,$44,$00,$4C,$55,$43
+                db $4B,$3E,$FF
 
 ; EMERGENCY!!*EMERGENCY!!*THE SELF-DESTRUCTION SWITCH OF* OUTER HEAVEN HAS BEEN ACTIVATED.*ESCAPE QUICKLY!!
 txtEmergency:
-                db    1,0CCh, 3Eh,0FDh,0CCh, 3Eh,0FDh,0CEh,0FEh, 53h, 45h, 4Ch, 46h, 40h,0CDh,0FEh
-                db  53h, 57h, 49h, 54h, 43h, 48h,   0, 4Fh, 46h,0FDh,0A4h,   0, 48h, 41h, 53h,0FEh
-                db 0E3h, 45h, 4Eh,   0, 41h, 43h, 54h, 49h, 56h, 41h, 54h, 45h, 44h, 5Ch,0FDh, 45h
-                db  53h, 43h, 41h, 50h, 45h,   0, 51h, 55h, 49h, 43h, 4Bh, 4Ch, 59h, 3Eh,0FFh
+                db $01,$CC,$3E,$FD,$CC,$3E,$FD,$CE,$FE,$53,$45,$4C,$46,$40,$CD,$FE
+                db $53,$57,$49,$54,$43,$48,$00,$4F,$46,$FD,$A4,$00,$48,$41,$53,$FE
+                db $E3,$45,$4E,$00,$41,$43,$54,$49,$56,$41,$54,$45,$44,$5C,$FD,$45
+                db $53,$43,$41,$50,$45,$00,$51,$55,$49,$43,$4B,$4C,$59,$3E,$FF
 txtN313End:
-                db  13h,0D1h,   0,0CBh,0A2h,0FEh,0A7h, 97h, 53h,0FEh,0CDh,   0, 49h, 53h,0FEh, 41h
-                db    0, 53h, 55h, 43h, 43h, 45h, 53h, 53h, 5Ch,0FDh, 4Fh, 50h, 45h, 52h, 41h, 54h
-                db  49h, 4Fh, 4Eh,   0,   0,0A3h,   0, 4Eh, 33h, 31h, 33h,0FEh, 46h, 49h, 4Eh, 49h
-                db  53h, 48h, 45h, 44h, 3Dh,0A2h,0FDh, 45h, 56h, 45h, 52h, 59h, 54h, 48h, 49h, 4Eh
-                db  47h,   0, 49h, 53h,   0, 46h, 49h, 4Eh, 49h, 53h, 48h, 45h, 44h, 5Ch,0FDh, 49h
-                db    0,0C1h,   0, 47h, 4Fh,   0, 42h, 41h, 43h, 4Bh,   0,0ACh, 5Ch,0FEh,0A2h,0ADh
-                db 0FFh
+                db $13,$D1,$00,$CB,$A2,$FE,$A7,$97,$53,$FE,$CD,$00,$49,$53,$FE,$41
+                db $00,$53,$55,$43,$43,$45,$53,$53,$5C,$FD,$4F,$50,$45,$52,$41,$54
+                db $49,$4F,$4E,$00,$00,$A3,$00,$4E,$33,$31,$33,$FE,$46,$49,$4E,$49
+                db $53,$48,$45,$44,$3D,$A2,$FD,$45,$56,$45,$52,$59,$54,$48,$49,$4E
+                db $47,$00,$49,$53,$00,$46,$49,$4E,$49,$53,$48,$45,$44,$5C,$FD,$49
+                db $00,$C1,$00,$47,$4F,$00,$42,$41,$43,$4B,$00,$AC,$5C,$FE,$A2,$AD
+                db $FF
 
 ; HELLO THIS IS DIANE... I SUPPOSE THEY HAVE A SILENCER. ...BYE
 txtTheyHaveSil:
-                db    3,0DCh,   0,0D1h,   0,0D7h,0A2h,0FEh, 49h,   0, 53h, 55h, 50h, 50h, 4Fh, 53h
-                db  45h,   0, 54h, 48h, 45h, 59h,   0,0BCh,0FEh, 41h,   0, 53h, 49h, 4Ch, 45h, 4Eh
-                db  43h, 45h, 52h, 5Ch,0FEh,0A2h,0DDh,0FFh
+                db $03,$DC,$00,$D1,$00,$D7,$A2,$FE,$49,$00,$53,$55,$50,$50,$4F,$53
+                db $45,$00,$54,$48,$45,$59,$00,$BC,$FE,$41,$00,$53,$49,$4C,$45,$4E
+                db $43,$45,$52,$5C,$FE,$A2,$DD,$FF
 
 txtEmpty:
-                db 0FFh
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -746,95 +747,95 @@ idxDictionary:
 ; Dictionary entries
 ;
 ;----------------------------------------------------------------------------
-dicBigBoss:     db  "BIG",   0, "BOSS",0FFh
-dicPoints:      db  #5c, #5c, #5c,0FFh
-dicIntruder:    db  "INTRUDE",0FFh
-dicOutHeav:     db  "OUTER",   0, "HEAVEN",0FFh
-dicDestroy:     db  "DESTOROY",0FFh
-dicUltimWeap:   db  "THE",   0, "ULTIMATE",   0, "WEAPON",0FFh
-dicMetalGear:   db  "METAL",   0, "GEAR",0FFh
-dicContact:     db  "CONTACT",0FFh
-dicGreyFox:     db  "GREY",   0, "FOX",0FFh
-dicSearchFor:   db  "SEARCH",   0, "FOR",0FFh
-dicFrom:        db  "FROM",0FFh
-dicNow:         db  "NOW",0FFh
-dicOver:        db  "OVER",0FFh
-dicMove:        db  "MOVE",0FFh
-dicYou:         db  "YOU",0FFh
-dicCapture:     db  "CAPTURE",0FFh
-dicResistance:  db  "RESISTANCE",0FFh
-dicMrSchneider: db  "MR",#5C,"SCHNEIDER",0FFh
-dicWaveBand:    db  "WAVEBAND",0FFh
-dicPutOn:       db  "PUT",   0, "ON",0FFh
-dicLeader:      db  "LEADER",0FFh
-dicRescued:     db  "RESCUED",0FFh
-dicFoxHound:    db  "FOX",   0, "HOUND",0FFh
-dicEnemy:       db  "ENEMY",0FFh
-dicKeyFor:      db  "KEY",   0, "FOR",0FFh
-dicSelecting:   db  "SELECTING",0FFh
-dicCheck:       db  "CHECK",0FFh
-dicHave:        db  "HAVE",0FFh
-dicConfined:    db  "CONFINED",0FFh
-dicSecret:      db  "SECRET",0FFh
-dicSolitary:    db  "SOLITARY",0FFh
-dicCell:        db  "CELL",0FFh
-dicWill:        db  "WILL",0FFh
-dicMust:        db  "MUST",0FFh
-dicOnly:        db  "ONLY",0FFh
-dicDrPettrovic: db  "DR",#5C,"PETTROVICH",0FFh
-dicBuilding:    db  "BUILDING",0FFh
-dicBasement:    db  "BASEMENT",0FFh
-dicFloor:       db  "FLOOR",0FFh
-dicJennifer:    db  "JENNIFER",0FFh
-dicEllen:       db  "ELLEN",0FFh
-dicRocketLaunch:db  "ROCKET",   0, "LAUNCHER",0FFh
-dicSolidSnake:  db  "SOLID",   0, "SNAKE",0FFh
-dicEmergency:   db  "EMERGENCY",0FFh
-dicDestruction: db  "DESTRUCTION",0FFh
-dicThe:         db  "THE",0FFh
-dicCourtyard:   db  "COURTYARD",0FFh
-dicComplete:    db  "COMPLETE",0FFh
-dicThisIs:      db  "THIS",   0, "IS",0FFh
-dicWeapon:      db  "WEAPON",0FFh
-dicEquipment:   db  "EQUIPMENTS",0FFh
-dicCard:        db  "CARD",0FFh
-dicPlease:      db  "PLEASE",0FFh
-dicBand:        db  "BAND",0FFh
-dicDiane:       db  "DIANE",0FFh
-dicGain:        db  "GAIN",0FFh
-dicWith:        db  "WITH",0FFh
-dicAnd:         db  "AND",0FFh
-dicDoor:        db  "DOOR",0FFh
-dicHello:       db  "HELLO=",0FFh
-dicBye:         db  "BYE",0FFh
-dicMachGunKid:  db  "MACHINE",   0, "GUN",   0, "KID",0FFh
-dicRemoteCtrl:  db  "REMOTE@CONTROL",0FFh
-dicMissile:     db  "MISSILE",0FFh
-dicCan:         db  "CAN",0FFh
-dicOn:          db  "ON",0FFh
-dicBe:          db  "BE",0FFh
-dicAvailable:   db  "AVAILABLE",0FFh
-dicNot:         db  "NOT",0FFh
-dicTo:          db  "TO",0FFh
-dicShould:      db  "SHOULD",0FFh
-dicWall:        db  "WALL",0FFh
-dicDefeat:      db  "DEFEAT",0FFh
-dicNever:       db  "NEVER",0FFh
-dicBy:          db  "BY",0FFh
-dicThere:       db  "THERE",0FFh
-dicOpen:        db  "OPEN",0FFh
-dicTake:        db  "TAKE",0FFh
-dicLorry:       db  "LORRY",0FFh
-dicGas:         db  "GAS",0FFh
-dicAccess:      db  "ACCESS",0FFh
-dicFor:         db  "FOR",0FFh
-dicBombBlastS:  db  "BOMB",   0, "BLAST",   0, "SUIT",0FFh
-dicHere:        db  "HERE",0FFh
-dicLead:        db  "LEAD",0FFh
-dicRoom:        db  "ROOM",0FFh
-dicWay:         db  "WAY",0FFh
-dicMrArnold:    db  "MR",#5C,"ARNOLD",0FFh
-dicKill:        db  "KILL",0FFh
-dicFortress:    db  "FORTRESS",0FFh
-dicBreak:       db  "BREAK",0FFh
-dicTransceiver: db  "TRANSCEIVER",0FFh
+dicBigBoss:     db "BIG",0,"BOSS",$FF
+dicPoints:      db $5C,$5C,$5C,$FF
+dicIntruder:    db "INTRUDE",$FF
+dicOutHeav:     db "OUTER",0,"HEAVEN",$FF
+dicDestroy:     db "DESTOROY",$FF
+dicUltimWeap:   db "THE",0,"ULTIMATE",0,"WEAPON",$FF
+dicMetalGear:   db "METAL",0,"GEAR",$FF
+dicContact:     db "CONTACT",$FF
+dicGreyFox:     db "GREY",0,"FOX",$FF
+dicSearchFor:   db "SEARCH",0,"FOR",$FF
+dicFrom:        db "FROM",$FF
+dicNow:         db "NOW",$FF
+dicOver:        db "OVER",$FF
+dicMove:        db "MOVE",$FF
+dicYou:         db "YOU",$FF
+dicCapture:     db "CAPTURE",$FF
+dicResistance:  db "RESISTANCE",$FF
+dicMrSchneider: db "MR",$5C,"SCHNEIDER",$FF
+dicWaveBand:    db "WAVEBAND",$FF
+dicPutOn:       db "PUT",0,"ON",$FF
+dicLeader:      db "LEADER",$FF
+dicRescued:     db "RESCUED",$FF
+dicFoxHound:    db "FOX",0,"HOUND",$FF
+dicEnemy:       db "ENEMY",$FF
+dicKeyFor:      db "KEY",0,"FOR",$FF
+dicSelecting:   db "SELECTING",$FF
+dicCheck:       db "CHECK",$FF
+dicHave:        db "HAVE",$FF
+dicConfined:    db "CONFINED",$FF
+dicSecret:      db "SECRET",$FF
+dicSolitary:    db "SOLITARY",$FF
+dicCell:        db "CELL",$FF
+dicWill:        db "WILL",$FF
+dicMust:        db "MUST",$FF
+dicOnly:        db "ONLY",$FF
+dicDrPettrovic: db "DR",$5C,"PETTROVICH",$FF
+dicBuilding:    db "BUILDING",$FF
+dicBasement:    db "BASEMENT",$FF
+dicFloor:       db "FLOOR",$FF
+dicJennifer:    db "JENNIFER",$FF
+dicEllen:       db "ELLEN",$FF
+dicRocketLaunch:db "ROCKET",0,"LAUNCHER",$FF
+dicSolidSnake:  db "SOLID",0,"SNAKE",$FF
+dicEmergency:   db "EMERGENCY",$FF
+dicDestruction: db "DESTRUCTION",$FF
+dicThe:         db "THE",$FF
+dicCourtyard:   db "COURTYARD",$FF
+dicComplete:    db "COMPLETE",$FF
+dicThisIs:      db "THIS",0,"IS",$FF
+dicWeapon:      db "WEAPON",$FF
+dicEquipment:   db "EQUIPMENTS",$FF
+dicCard:        db "CARD",$FF
+dicPlease:      db "PLEASE",$FF
+dicBand:        db "BAND",$FF
+dicDiane:       db "DIANE",$FF
+dicGain:        db "GAIN",$FF
+dicWith:        db "WITH",$FF
+dicAnd:         db "AND",$FF
+dicDoor:        db "DOOR",$FF
+dicHello:       db "HELLO=",$FF
+dicBye:         db "BYE",$FF
+dicMachGunKid:  db "MACHINE",0,"GUN",0,"KID",$FF
+dicRemoteCtrl:  db "REMOTE@CONTROL",$FF
+dicMissile:     db "MISSILE",$FF
+dicCan:         db "CAN",$FF
+dicOn:          db "ON",$FF
+dicBe:          db "BE",$FF
+dicAvailable:   db "AVAILABLE",$FF
+dicNot:         db "NOT",$FF
+dicTo:          db "TO",$FF
+dicShould:      db "SHOULD",$FF
+dicWall:        db "WALL",$FF
+dicDefeat:      db "DEFEAT",$FF
+dicNever:       db "NEVER",$FF
+dicBy:          db "BY",$FF
+dicThere:       db "THERE",$FF
+dicOpen:        db "OPEN",$FF
+dicTake:        db "TAKE",$FF
+dicLorry:       db "LORRY",$FF
+dicGas:         db "GAS",$FF
+dicAccess:      db "ACCESS",$FF
+dicFor:         db "FOR",$FF
+dicBombBlastS:  db "BOMB",0,"BLAST",0,"SUIT",$FF
+dicHere:        db "HERE",$FF
+dicLead:        db "LEAD",$FF
+dicRoom:        db "ROOM",$FF
+dicWay:         db "WAY",$FF
+dicMrArnold:    db "MR",$5C,"ARNOLD",$FF
+dicKill:        db "KILL",$FF
+dicFortress:    db "FORTRESS",$FF
+dicBreak:       db "BREAK",$FF
+dicTransceiver: db "TRANSCEIVER",$FF

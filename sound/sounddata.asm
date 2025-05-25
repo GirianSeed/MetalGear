@@ -131,7 +131,7 @@ idxSoundData:
         include "sfx/SfxPropeller.asm"
 
 Sfx_Dummy:
-                db 0FFh
+                db $FF
 
         include "sfx/SfxDogBark.asm"
         include "sfx/SfxBulletShot.asm"

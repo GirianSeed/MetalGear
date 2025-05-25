@@ -1,2 +1,2 @@
 Sfx_Boomerang:
-                db 0FEh,   0, 23h,   2, 13h,0A1h,0D0h,0C1h, 30h,0B1h, 80h, 82h,   0,0FFh
+                db $FE,$00,$23,$02,$13,$A1,$D0,$C1,$30,$B1,$80,$82,$00,$FF

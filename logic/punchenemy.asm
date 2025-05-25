@@ -75,15 +75,15 @@ ChkPunchEnemy4:
 ; Punch areas depending on the direction
 ;----------------------------------------------------------------------------
 PunchUpDat:
-                dw 0C0Ch
+                dw $0C0C
 PunchLeftDat:
-                dw 0C00h
-                dw 0C0Ch
+                dw $0C00
+                dw $0C0C
 PunchDownDat:
-                dw 0CF4h
+                dw $0CF4
 PunchRightDat:
-                dw 0C00h
-                dw 0CF4h
+                dw $0C00
+                dw $0CF4
 
 ;----------------------------------------------------------------------------
 ;

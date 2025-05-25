@@ -4,176 +4,176 @@
 ;
 ;----------------------------------------------------------------------------
 MusEscapeShare1:
-                db 0EFh,0FCh, 24h,0E4h, 71h, 70h, 70h,0E9h,   1,0A1h,0EFh,0E4h, 70h, 70h,0FFh
+                db $EF,$FC,$24,$E4,$71,$70,$70,$E9,$01,$A1,$EF,$E4,$70,$70,$FF
 MusEscapeShare2:
-                db 0E3h,   1,   0,   0,0E9h,   1,0A1h,0EFh,0E4h,   0,   0,0FFh
+                db $E3,$01,$00,$00,$E9,$01,$A1,$EF,$E4,$00,$00,$FF
 MusEscapeShare3:
-                db 0EFh,0E4h, 21h, 20h, 20h,0E9h,   1,0A1h,0A1h,0FFh
+                db $EF,$E4,$21,$20,$20,$E9,$01,$A1,$A1,$FF
 MusEscapeShare4:
-                db  51h, 50h, 50h,0E9h,   1,0A1h,0EFh, 50h, 50h,0FFh
+                db $51,$50,$50,$E9,$01,$A1,$EF,$50,$50,$FF
 MusEscapeShare5:
-                db  41h, 40h, 40h,0E9h,   1,0A1h,0EFh, 40h, 40h,0FFh
+                db $41,$40,$40,$E9,$01,$A1,$EF,$40,$40,$FF
 MusEscapeShare6:
-                db 0D5h,0FBh, 12h,0E1h, 71h, 21h,0E2h,0A1h,0E1h, 71h, 21h,0E2h,0A1h,0E1h, 71h, 21h
-                db 0FFh
+                db $D5,$FB,$12,$E1,$71,$21,$E2,$A1,$E1,$71,$21,$E2,$A1,$E1,$71,$21
+                db $FF
 MusEscapeShare7:
-                db 0EFh,0FBh, 12h,0E1h, 21h,0E2h,0A1h, 71h,0E1h, 21h,0E2h,0A1h, 71h,0E1h, 21h,0E2h
-                db 0A1h,0FFh
+                db $EF,$FB,$12,$E1,$21,$E2,$A1,$71,$E1,$21,$E2,$A1,$71,$E1,$21,$E2
+                db $A1,$FF
 MusEscapeShare8:
-                db  21h, 20h, 20h, 21h, 20h, 20h, 51h, 50h, 50h, 51h, 50h,0FFh
+                db $21,$20,$20,$21,$20,$20,$51,$50,$50,$51,$50,$FF
 MusEscapeShare9:
-                db  50h, 70h, 90h,0A0h, 90h,0A0h,0E1h,   0,0FFh
+                db $50,$70,$90,$A0,$90,$A0,$E1,$00,$FF
 MusEscapeShare10:
-                db 0A0h,0A1h,0A0h, 70h, 71h, 70h, 40h, 41h, 40h, 70h, 71h,0FFh
+                db $A0,$A1,$A0,$70,$71,$70,$40,$41,$40,$70,$71,$FF
 MusEscapeShare11:
-                db 0FCh, 23h,0E2h, 21h, 20h, 20h, 21h, 20h, 20h, 61h, 60h, 60h, 61h, 60h, 60h, 91h
-                db  90h, 90h, 91h,0FFh
+                db $FC,$23,$E2,$21,$20,$20,$21,$20,$20,$61,$60,$60,$61,$60,$60,$91
+                db $90,$90,$91,$FF
 
 Mus_Escape:
-                db 0D5h,0FEh, 23h,0E4h,0C3h, 51h, 51h, 51h, 51h, 61h, 61h, 61h, 61h
+                db $D5,$FE,$23,$E4,$C3,$51,$51,$51,$51,$61,$61,$61,$61
 Mus_EscapeA2:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare1
-                db 0FEh,   8
+                db $FE,$08
                 dw Mus_EscapeA2
 MusEscapeA3:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare2
-                db 0FEh,   4
+                db $FE,$04
                 dw MusEscapeA3
 MusEscapeA4:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare3
-                db 0FEh,   4
+                db $FE,$04
                 dw MusEscapeA4
 MusEscapeA5:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare1
-                db 0FEh,   8
+                db $FE,$08
                 dw MusEscapeA5
 MusEscapeA6:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare2
-                db 0FEh,   4
+                db $FE,$04
                 dw MusEscapeA6
 MusEscapeA7:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare3
-                db 0FEh,   4
+                db $FE,$04
                 dw MusEscapeA7
 MusEscapeA8:
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare1
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare1
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare4
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare4
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare5
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare5
-                db  31h, 30h, 30h,0E9h,   1,0A1h,0EFh, 70h,0A0h, 51h, 50h, 50h,0E9h,   1,0A1h,0EFh
-                db  90h,0E3h,   0
-                db 0FEh,   2
+                db $31,$30,$30,$E9,$01,$A1,$EF,$70,$A0,$51,$50,$50,$E9,$01,$A1,$EF
+                db $90,$E3,$00
+                db $FE,$02
                 dw MusEscapeA8
-                db 0FEh,0FEh
+                db $FE,$FE
                 dw Mus_EscapeA2
 
 Mus_EscapeB:
-                db 0D5h,0F9h,   3,0ECh, 51h,0E1h,0C3h,   1,   1,0FAh,   3,   1,   1,0FBh,   3, 11h
-                db  11h, 11h, 11h
-Mus_EscapeB2:
-                db 0EFh,0FBh, 12h,0E2h, 70h, 90h,0A0h,0E1h, 20h
-                db 0FEh,   8
-                dw Mus_EscapeB2
+                db $D5,$F9,$03,$EC,$51,$E1,$C3,$01,$01,$FA,$03,$01,$01,$FB,$03,$11
+                db $11,$11,$11
+MusEscapeB2:
+                db $EF,$FB,$12,$E2,$70,$90,$A0,$E1,$20
+                db $FE,$08
+                dw MusEscapeB2
 MusEscapeB3:
-                db 0E2h, 70h, 90h,0A0h,0E1h, 10h
-                db 0FEh,   8
+                db $E2,$70,$90,$A0,$E1,$10
+                db $FE,$08
                 dw MusEscapeB3
 MusEscapeB4:
-                db 0E2h, 70h, 90h,0A0h,0E1h,   0
-                db 0FEh,   8
+                db $E2,$70,$90,$A0,$E1,$00
+                db $FE,$08
                 dw MusEscapeB4
-                db 0E1h,   0,   0,0E2h,0B0h,0B0h,0A0h,0A0h, 90h, 90h,0E1h, 10h, 10h,   0,   0,0E2h
-                db 0B0h,0B0h,0A0h,0A0h, 70h, 70h, 60h, 60h, 50h, 50h, 40h, 40h,0E1h, 30h, 30h, 20h
-                db  20h, 10h, 10h,   0,   0
+                db $E1,$00,$00,$E2,$B0,$B0,$A0,$A0,$90,$90,$E1,$10,$10,$00,$00,$E2
+                db $B0,$B0,$A0,$A0,$70,$70,$60,$60,$50,$50,$40,$40,$E1,$30,$30,$20
+                db $20,$10,$10,$00,$00
 MusEscapeB5:
-                db 0E2h, 70h, 90h,0A0h,0E1h, 20h
-                db 0FEh,   8
+                db $E2,$70,$90,$A0,$E1,$20
+                db $FE,$08
                 dw MusEscapeB5
 MusEscapeB6:
-                db 0E2h, 70h, 90h,0A0h,0E1h, 10h
-                db 0FEh,   8
+                db $E2,$70,$90,$A0,$E1,$10
+                db $FE,$08
                 dw MusEscapeB6
 MusEscapeB7:
-                db 0E2h, 70h, 90h,0A0h,0E1h,   0
-                db 0FEh,   8
+                db $E2,$70,$90,$A0,$E1,$00
+                db $FE,$08
                 dw MusEscapeB7
-                db 0FEh,0FFh
+                db $FE,$FF
                 dw MusEscapeShare11
-                db  90h, 90h,0E1h,   1,   0,   0,   1, 60h,0E8h, 60h
-                db 0FEh,0FFh
+                db $90,$90,$E1,$01,$00,$00,$01,$60,$E8,$60
+                db $FE,$FF
                 dw MusEscapeShare6
-                db 0EFh,   0
-                db 0FEh,0FFh
+                db $EF,$00
+                db $FE,$FF
                 dw MusEscapeShare8
-                db  71h, 41h,0E2h,0A1h,0E1h, 51h, 41h,0E2h, 71h,0A1h, 91h, 70h
-                db 0FEh,0FFh
+                db $71,$41,$E2,$A1,$E1,$51,$41,$E2,$71,$A1,$91,$70
+                db $FE,$FF
                 dw MusEscapeShare9
-                db  20h,   0, 20h, 30h, 50h, 30h, 50h, 60h
-                db 0FEh,0FFh
+                db $20,$00,$20,$30,$50,$30,$50,$60
+                db $FE,$FF
                 dw MusEscapeShare6
-                db  90h, 90h, 51h,   1, 91h, 50h, 50h,   1, 91h, 51h
-                db 0FEh,0FFh
+                db $90,$90,$51,$01,$91,$50,$50,$01,$91,$51
+                db $FE,$FF
                 dw MusEscapeShare10
-                db  70h,0A1h,0A0h,0A0h, 70h, 30h,0E2h,0A0h, 70h, 91h, 90h, 90h, 50h,   0,0E2h, 50h
-                db  90h
-                db 0FEh,0FEh
-                dw Mus_EscapeB2
+                db $70,$A1,$A0,$A0,$70,$30,$E2,$A0,$70,$91,$90,$90,$50,$00,$E2,$50
+                db $90
+                db $FE,$FE
+                dw MusEscapeB2
 
 Mus_EscapeC:
-                db 0D5h,0FCh, 23h,0E5h,0C3h, 51h, 51h,0E9h,   1,0A3h,0EFh, 61h, 61h,0E9h,   1,0A3h
-                db 0EFh
+                db $D5,$FC,$23,$E5,$C3,$51,$51,$E9,$01,$A3,$EF,$61,$61,$E9,$01,$A3
+                db $EF
 Mus_EscapeC2:
-                db 0FBh, 12h,0E2h, 20h, 50h, 70h,0A0h
-                db 0FEh, 10h
+                db $FB,$12,$E2,$20,$50,$70,$A0
+                db $FE,$10
                 dw Mus_EscapeC2
 MusEscapeC3:
-                db 0E2h, 20h, 50h, 70h, 90h
-                db 0FEh,   8
+                db $E2,$20,$50,$70,$90
+                db $FE,$08
                 dw MusEscapeC3
-                db 0FCh, 22h,0E2h, 50h, 50h, 41h, 31h, 21h, 60h, 60h, 51h, 41h, 31h, 20h, 20h, 11h
-                db    1,0E3h,0B1h,0E2h, 80h, 80h, 71h, 61h, 51h,0FBh, 12h
+                db $FC,$22,$E2,$50,$50,$41,$31,$21,$60,$60,$51,$41,$31,$20,$20,$11
+                db $01,$E3,$B1,$E2,$80,$80,$71,$61,$51,$FB,$12
 MusEscapeC4:
-                db 0E2h, 20h, 50h, 70h,0A0h
-                db 0FEh, 10h
+                db $E2,$20,$50,$70,$A0
+                db $FE,$10
                 dw MusEscapeC4
 MusEscapeC5:
-                db 0E2h, 20h, 50h, 70h, 90h
-                db 0FEh,   8
+                db $E2,$20,$50,$70,$90
+                db $FE,$08
                 dw MusEscapeC5
-                db    1,   0,   0,   1,   0,   0
-                db 0FEh,0FFh
+                db $01,$00,$00,$01,$00,$00
+                db $FE,$FF
                 dw MusEscapeShare11
-                db 0E1h, 20h, 60h
-                db 0FEh,0FFh
+                db $E1,$20,$60
+                db $FE,$FF
                 dw MusEscapeShare7
-                db    0
-                db 0FEh,0FFh
+                db $00
+                db $FE,$FF
                 dw MusEscapeShare8
-                db 0FCh, 22h,0E1h, 41h,0E2h,0A1h, 71h,0E1h, 21h,   1,0E2h, 41h, 71h, 51h,0E8h, 70h
-                db 0FEh,0FFh
+                db $FC,$22,$E1,$41,$E2,$A1,$71,$E1,$21,$01,$E2,$41,$71,$51,$E8,$70
+                db $FE,$FF
                 dw MusEscapeShare9
-                db 0EFh,0E2h,0A0h, 90h,0A0h,0E1h,   0, 20h,   0, 20h, 30h
-                db 0FEh,0FFh
+                db $EF,$E2,$A0,$90,$A0,$E1,$00,$20,$00,$20,$30
+                db $FE,$FF
                 dw MusEscapeShare7
-                db 0E1h, 50h, 50h,   1,0E2h, 91h,0E1h, 51h,   0,   0,0E2h, 91h,0E1h, 51h,   1,0FBh
-                db  12h,0E8h,0A0h
-                db 0FEh,0FFh
+                db $E1,$50,$50,$01,$E2,$91,$E1,$51,$00,$00,$E2,$91,$E1,$51,$01,$FB
+                db $12,$E8,$A0
+                db $FE,$FF
                 dw MusEscapeShare10
-                db 0EFh,0FBh, 12h, 71h, 70h, 70h, 30h,0E2h,0A0h, 70h, 30h,0E8h, 90h, 91h, 90h, 90h
-                db  50h,   0,0E2h, 50h
-                db 0FEh,0FEh
+                db $EF,$FB,$12,$71,$70,$70,$30,$E2,$A0,$70,$30,$E8,$90,$91,$90,$90
+                db $50,$00,$E2,$50
+                db $FE,$FE
                 dw Mus_EscapeC2

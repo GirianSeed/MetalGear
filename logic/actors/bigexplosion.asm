@@ -38,6 +38,6 @@ BigExplosionLogic2:
 ; Explosion sprites colors
 ;----------------------------------------------------------------------------
 BigExplSprCols:
-                dw 4608h
-                dw 4608h
-                dw 0E0Eh
+                dw $4608
+                dw $4608
+                dw $0E0E

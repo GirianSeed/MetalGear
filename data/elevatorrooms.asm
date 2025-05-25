@@ -26,71 +26,71 @@ idxElevatorRoom:
 ; (...)
 ;----------------------------------------------------------------------------
 ElevatorRoom1:
-                dw 0B838h
+                dw $B838
                 db 31
-                dw 3834h
+                dw $3834
                 db 3
-                dw 0B8B4h
+                dw $B8B4
 
 ElevatorRoom2:
-                dw 0B828h
+                dw $B828
                 db 27
-                dw 3834h
+                dw $3834
                 db 15
-                dw 7874h
+                dw $7874
                 db 63
-                dw 0B8B4h
+                dw $B8B4
 
 ElevatorRoom3:
-                dw 0C878h
+                dw $C878
                 db 53
-                dw 7874h
+                dw $7874
                 db 39
-                dw 0B8B4h
+                dw $B8B4
 
 ElevatorRoom4:
-                dw 0B828h
-                db 51h
-                dw 3834h
-                db 48h
-                dw 7874h
-                db 5Fh
-                dw 0B8B4h
+                dw $B828
+                db 81
+                dw $3834
+                db 72
+                dw $7874
+                db 95
+                dw $B8B4
 
 ElevatorRoom5:
-                dw 0C8B8h
-                db 58h
-                dw 0B8B4h
+                dw $C8B8
+                db 88
+                dw $B8B4
 
 ElevatorRoom6:
-                dw 0B828h
-                db 0CDh
-                dw 3834h
-                db 0CEh
-                dw 7874h
-                db 0CFh
-                dw 0B8B4h
+                dw $B828
+                db 205
+                dw $3834
+                db 206
+                dw $7874
+                db 207
+                dw $B8B4
 
 ElevatorRoom7:
-                dw 0C8B8h
-                db 9Ah
-                dw 0B8B4h
+                dw $C8B8
+                db 154
+                dw $B8B4
 
 ElevatorRoom8:
-                dw 0C838h
-                db 6Dh
-                dw 3834h
+                dw $C838
+                db 109
+                dw $3834
 
 ElevatorRoom9_10:
-                dw 0C828h
+                dw $C828
                 db 0
-                dw 0
+                dw $0000
                 db 0
-                dw 0
+                dw $0000
                 db 0
-                dw 0
+                dw $0000
 
 ElevatorRoom11:
-                dw 0B828h
-                db 73h
-                dw 0B8B4h
+                dw $B828
+                db 115
+                dw $B8B4

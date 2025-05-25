@@ -4,25 +4,25 @@
 ;
 ;----------------------------------------------------------------------------
 PitfallTileMap:
-                db    1,   9,   9,   9,   9,   9,   9,   5,0FEh
-                db    2,   9,   9,   9,   9,   9,   9,   6,0FEh
-                db    3,   9,   9,   9, 0Ah,   9,   9,   7,0FEh
-                db    4,   9, 0Ah, 0Ah,   9, 0Ah,   9,   8,0FEh
-                db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FEh
-                db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FEh
-                db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FEh
-                db  0Bh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Dh, 0Ch,0FFh
+                db $01,$09,$09,$09,$09,$09,$09,$05,$FE
+                db $02,$09,$09,$09,$09,$09,$09,$06,$FE
+                db $03,$09,$09,$09,$0A,$09,$09,$07,$FE
+                db $04,$09,$0A,$0A,$09,$0A,$09,$08,$FE
+                db $0B,$0D,$0D,$0D,$0D,$0D,$0D,$0C,$FE
+                db $0B,$0D,$0D,$0D,$0D,$0D,$0D,$0C,$FE
+                db $0B,$0D,$0D,$0D,$0D,$0D,$0D,$0C,$FE
+                db $0B,$0D,$0D,$0D,$0D,$0D,$0D,$0C,$FF
 
 GfxPitfall:
-                db 0FFh, 88h, 8Ch,0FBh, 8Ch,0FBh,0FFh,0FFh,0FFh,0C0h,0C0h,0FFh,0C0h,0FFh,0FFh,0FFh
-                db 0BFh,0E8h, 6Ch,0FBh, 6Ch,0FBh, 7Fh,0FFh,0BFh,0F0h, 70h,0FFh, 70h,0FFh, 7Fh,0FFh
-                db 0BFh,0F8h, 7Ch,0FBh, 6Ch,0FBh, 6Fh,0FFh,0BFh,0FCh, 7Ch,0FFh, 6Ch,0FFh, 6Ch,0FFh
-                db 0BEh,0FFh, 7Eh,0FFh, 6Eh,0FFh, 6Eh,0FFh,0BFh,0FFh, 7Fh,0FFh, 6Fh,0FFh, 6Fh,0FFh
-                db 0FFh,   9,   9,0FFh,   9,0FFh,0FFh,0FFh,0FFh, 82h,0C3h,0BEh,0C3h,0BEh,0FFh,0FEh
-                db 0FDh, 0Fh, 0Fh,0FEh, 0Dh,0FEh,0FDh,0FEh,0FFh, 8Dh, 8Fh,0FEh, 8Dh,0FEh,0FDh,0FEh
-                db 0FFh, 1Dh, 17h,0FEh, 1Dh,0F6h,0FDh,0F6h,0FFh,0BDh,0F7h,0BEh,0FDh,0B6h,0FDh,0F6h
-                db 0DFh, 7Dh, 57h,0FEh, 5Dh,0F6h,0FDh,0F6h,0DFh,0FDh,0D7h,0FEh,0DDh,0F6h,0FDh,0F6h
-                db 0FFh,   8, 0Ch,0FBh, 0Ch,0FBh,0FFh,0FFh,0FFh, 80h,0C0h,0BFh,0C0h,0BFh,0FFh,0FFh
-                db 0FFh,   8, 0Ch,0FBh, 0Ch,0FBh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0BFh,0FFh, 7Fh,0FFh, 6Fh,0FFh, 6Fh,0FFh,0BFh,0FFh, 7Fh,0FFh, 6Fh,0FFh, 6Fh,0FFh
-                db 0DFh,0FDh,0D7h,0FEh,0DDh,0F6h,0FDh,0F6h,0DFh,0FDh,0D7h,0FEh,0DDh,0F6h,0FDh,0F6h
+                db $FF,$88,$8C,$FB,$8C,$FB,$FF,$FF,$FF,$C0,$C0,$FF,$C0,$FF,$FF,$FF
+                db $BF,$E8,$6C,$FB,$6C,$FB,$7F,$FF,$BF,$F0,$70,$FF,$70,$FF,$7F,$FF
+                db $BF,$F8,$7C,$FB,$6C,$FB,$6F,$FF,$BF,$FC,$7C,$FF,$6C,$FF,$6C,$FF
+                db $BE,$FF,$7E,$FF,$6E,$FF,$6E,$FF,$BF,$FF,$7F,$FF,$6F,$FF,$6F,$FF
+                db $FF,$09,$09,$FF,$09,$FF,$FF,$FF,$FF,$82,$C3,$BE,$C3,$BE,$FF,$FE
+                db $FD,$0F,$0F,$FE,$0D,$FE,$FD,$FE,$FF,$8D,$8F,$FE,$8D,$FE,$FD,$FE
+                db $FF,$1D,$17,$FE,$1D,$F6,$FD,$F6,$FF,$BD,$F7,$BE,$FD,$B6,$FD,$F6
+                db $DF,$7D,$57,$FE,$5D,$F6,$FD,$F6,$DF,$FD,$D7,$FE,$DD,$F6,$FD,$F6
+                db $FF,$08,$0C,$FB,$0C,$FB,$FF,$FF,$FF,$80,$C0,$BF,$C0,$BF,$FF,$FF
+                db $FF,$08,$0C,$FB,$0C,$FB,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $BF,$FF,$7F,$FF,$6F,$FF,$6F,$FF,$BF,$FF,$7F,$FF,$6F,$FF,$6F,$FF
+                db $DF,$FD,$D7,$FE,$DD,$F6,$FD,$F6,$DF,$FD,$D7,$FE,$DD,$F6,$FD,$F6

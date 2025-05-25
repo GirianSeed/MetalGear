@@ -4,100 +4,100 @@
 ;
 ;----------------------------------------------------------------------------
 GfxDoorFront:
-                db  11h, 3Fh,0FFh,0FFh,0FFh,0FFh,0CCh,0CCh,0FCh, 1Fh,0C5h, 55h,0F1h,0FFh,0C5h, 55h
-                db 0F1h, 3Fh,0C5h, 55h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h
-                db 0FFh,0FFh,0FFh,0FFh,0CCh,0CCh,0CCh,0CCh, 55h, 55h, 55h, 55h, 55h, 55h, 55h, 55h
-                db  55h,0FFh, 3Fh,0F3h, 55h,0FFh, 3Fh,0F3h, 55h,0FFh,0CFh,0FCh, 59h,0FFh,0CFh,0FCh
-                db 0FFh,0FFh,0FFh,0FFh,0CCh,0CCh,0CCh,0CCh, 55h, 55h, 55h, 55h, 55h, 55h, 55h, 55h
-                db 0FFh, 3Fh,0F3h, 95h,0FFh, 3Fh,0F3h, 55h,0FFh,0CFh,0F3h, 55h,0FFh,0CFh,0F3h, 55h
-                db 0FFh,0FFh,0F3h, 11h,0CCh,0CCh,0FFh,0FFh, 55h, 53h,0FCh, 1Fh, 55h, 53h,0FFh, 3Fh
-                db  55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh,0FFh
-                db  33h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 59h,0FCh, 3Fh,0C5h, 55h,0F1h,0FFh,0C5h, 55h
-                db 0F1h, 3Fh,0C5h, 55h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h
-                db  59h,0FFh,0CFh,0FCh, 59h,0FFh,0CFh,0FCh, 59h, 33h, 33h, 33h, 55h, 55h, 99h, 99h
-                db  55h, 55h, 59h, 55h, 55h, 55h, 55h, 55h, 55h, 5Fh,0FFh,0FFh, 55h, 5Fh,0CCh,0CCh
-                db 0FFh,0CFh,0F3h, 55h,0FFh,0CFh,0F3h, 95h, 33h, 33h, 33h, 95h, 99h, 99h, 99h, 95h
-                db  99h, 95h, 99h, 55h, 55h, 55h, 59h, 55h,0FFh,0FFh,0F5h, 55h,0CCh,0CCh,0F5h, 55h
-                db  55h, 53h,0F3h, 33h, 55h, 53h,0FFh,0FFh, 55h, 53h,0FCh, 1Fh, 55h, 53h,0FFh, 3Fh
-                db  55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 95h, 53h,0F1h, 3Fh, 55h, 53h,0FFh,0FFh
-                db  33h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h,0FCh, 3Fh,0C5h, 55h,0F1h,0FFh,0C5h, 59h
-                db 0F1h, 3Fh,0C5h, 59h,0F3h,0FFh,0C5h, 59h,0F1h, 3Fh,0C5h, 99h,0FFh,0FFh,0C5h, 95h
-                db  55h, 5Fh,0CCh,0CCh, 55h, 5Fh, 55h, 55h, 55h, 5Fh, 55h, 88h, 55h, 5Fh, 55h, 55h
-                db  55h, 5Fh,0FFh,0FFh, 55h, 5Fh,0FFh,0FFh, 55h, 59h, 55h, 55h, 55h, 99h, 59h, 55h
-                db 0CCh,0CCh,0F5h, 55h, 55h, 55h,0F5h, 55h, 88h, 55h,0F5h, 55h, 55h, 55h,0F5h, 55h
-                db 0FFh,0FFh,0F5h, 55h,0FFh,0FFh,0F5h, 55h, 55h, 59h, 55h, 55h, 55h, 99h, 59h, 55h
-                db  55h, 53h,0F3h, 33h, 55h, 53h,0FFh,0FFh, 55h, 53h,0FCh, 1Fh, 55h, 53h,0FFh, 3Fh
-                db  55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 95h, 53h,0F1h, 3Fh, 55h, 53h,0FFh,0FFh
-                db  33h, 3Fh,0C5h, 95h,0FFh,0FFh,0C5h, 99h,0FCh, 3Fh,0C5h, 95h,0F1h,0FFh,0C5h, 99h
-                db 0F1h, 3Fh,0C5h, 99h,0F3h,0FFh,0C5h, 99h,0F1h, 3Fh, 33h, 33h,0FFh,0FFh,0FFh,0FFh
-                db  95h, 55h, 99h, 95h, 95h, 95h, 59h, 99h, 99h, 99h, 55h, 59h, 95h, 59h, 55h, 99h
-                db  95h, 59h, 99h, 99h, 99h, 99h, 95h, 95h,0F3h,0FFh, 33h, 33h,0FFh,0FFh,0FFh,0FFh
-                db  55h, 99h, 55h, 59h, 55h, 99h, 55h, 59h, 95h, 95h, 55h, 59h, 99h, 99h, 55h, 99h
-                db  59h, 99h, 99h, 99h, 59h, 99h, 95h, 55h, 3Fh,0FFh, 3Fh, 33h,0FFh,0FFh,0FFh,0FFh
-                db  59h, 53h,0F3h, 33h, 99h, 53h,0FFh,0FFh, 99h, 53h,0FCh, 1Fh, 59h, 53h,0FFh, 3Fh
-                db  99h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 33h, 33h,0F1h, 3Fh,0FFh,0FFh,0FFh,0FFh
+                db $11,$3F,$FF,$FF,$FF,$FF,$CC,$CC,$FC,$1F,$C5,$55,$F1,$FF,$C5,$55
+                db $F1,$3F,$C5,$55,$F3,$FF,$C5,$55,$F1,$3F,$C5,$55,$FF,$FF,$C5,$55
+                db $FF,$FF,$FF,$FF,$CC,$CC,$CC,$CC,$55,$55,$55,$55,$55,$55,$55,$55
+                db $55,$FF,$3F,$F3,$55,$FF,$3F,$F3,$55,$FF,$CF,$FC,$59,$FF,$CF,$FC
+                db $FF,$FF,$FF,$FF,$CC,$CC,$CC,$CC,$55,$55,$55,$55,$55,$55,$55,$55
+                db $FF,$3F,$F3,$95,$FF,$3F,$F3,$55,$FF,$CF,$F3,$55,$FF,$CF,$F3,$55
+                db $FF,$FF,$F3,$11,$CC,$CC,$FF,$FF,$55,$53,$FC,$1F,$55,$53,$FF,$3F
+                db $55,$53,$F1,$3F,$55,$53,$FF,$3F,$55,$53,$F1,$3F,$55,$53,$FF,$FF
+                db $33,$3F,$C5,$55,$FF,$FF,$C5,$59,$FC,$3F,$C5,$55,$F1,$FF,$C5,$55
+                db $F1,$3F,$C5,$55,$F3,$FF,$C5,$55,$F1,$3F,$C5,$55,$FF,$FF,$C5,$55
+                db $59,$FF,$CF,$FC,$59,$FF,$CF,$FC,$59,$33,$33,$33,$55,$55,$99,$99
+                db $55,$55,$59,$55,$55,$55,$55,$55,$55,$5F,$FF,$FF,$55,$5F,$CC,$CC
+                db $FF,$CF,$F3,$55,$FF,$CF,$F3,$95,$33,$33,$33,$95,$99,$99,$99,$95
+                db $99,$95,$99,$55,$55,$55,$59,$55,$FF,$FF,$F5,$55,$CC,$CC,$F5,$55
+                db $55,$53,$F3,$33,$55,$53,$FF,$FF,$55,$53,$FC,$1F,$55,$53,$FF,$3F
+                db $55,$53,$F1,$3F,$55,$53,$FF,$3F,$95,$53,$F1,$3F,$55,$53,$FF,$FF
+                db $33,$3F,$C5,$55,$FF,$FF,$C5,$55,$FC,$3F,$C5,$55,$F1,$FF,$C5,$59
+                db $F1,$3F,$C5,$59,$F3,$FF,$C5,$59,$F1,$3F,$C5,$99,$FF,$FF,$C5,$95
+                db $55,$5F,$CC,$CC,$55,$5F,$55,$55,$55,$5F,$55,$88,$55,$5F,$55,$55
+                db $55,$5F,$FF,$FF,$55,$5F,$FF,$FF,$55,$59,$55,$55,$55,$99,$59,$55
+                db $CC,$CC,$F5,$55,$55,$55,$F5,$55,$88,$55,$F5,$55,$55,$55,$F5,$55
+                db $FF,$FF,$F5,$55,$FF,$FF,$F5,$55,$55,$59,$55,$55,$55,$99,$59,$55
+                db $55,$53,$F3,$33,$55,$53,$FF,$FF,$55,$53,$FC,$1F,$55,$53,$FF,$3F
+                db $55,$53,$F1,$3F,$55,$53,$FF,$3F,$95,$53,$F1,$3F,$55,$53,$FF,$FF
+                db $33,$3F,$C5,$95,$FF,$FF,$C5,$99,$FC,$3F,$C5,$95,$F1,$FF,$C5,$99
+                db $F1,$3F,$C5,$99,$F3,$FF,$C5,$99,$F1,$3F,$33,$33,$FF,$FF,$FF,$FF
+                db $95,$55,$99,$95,$95,$95,$59,$99,$99,$99,$55,$59,$95,$59,$55,$99
+                db $95,$59,$99,$99,$99,$99,$95,$95,$F3,$FF,$33,$33,$FF,$FF,$FF,$FF
+                db $55,$99,$55,$59,$55,$99,$55,$59,$95,$95,$55,$59,$99,$99,$55,$99
+                db $59,$99,$99,$99,$59,$99,$95,$55,$3F,$FF,$3F,$33,$FF,$FF,$FF,$FF
+                db $59,$53,$F3,$33,$99,$53,$FF,$FF,$99,$53,$FC,$1F,$59,$53,$FF,$3F
+                db $99,$53,$F1,$3F,$55,$53,$FF,$3F,$33,$33,$F1,$3F,$FF,$FF,$FF,$FF
 
 GfxDoorElevator:
-                db  11h, 3Fh,0FFh,0FFh,0FFh,0FFh,0CCh,0C5h,0FCh, 1Fh,0C5h, 55h,0F1h,0FFh,0C5h, 55h
-                db 0F1h, 3Fh,0C5h, 55h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h
-                db 0FFh,0FFh,0FFh,0FFh,0FCh,0CCh,0CCh,0CFh, 5Fh,0C5h, 55h, 5Fh, 55h,0FCh, 55h, 5Fh
-                db  55h, 5Fh,0C5h, 5Fh, 55h, 55h,0FFh,0FFh, 55h, 55h, 55h, 5Fh, 55h, 55h, 55h, 5Fh
-                db 0FFh,0FFh,0FFh,0FFh,0CCh,0CCh,0CCh,0FFh,0C5h, 55h, 5Fh,0F5h,0C5h, 55h,0FFh, 55h
-                db 0C5h, 5Fh,0F5h, 55h,0FFh,0FFh, 55h, 55h,0C5h, 55h, 55h, 55h,0C5h, 55h, 55h, 55h
-                db 0FFh,0FFh,0F3h, 11h, 5Ch,0CCh,0FFh,0FFh, 55h, 53h,0FCh, 1Fh, 55h, 53h,0FFh, 3Fh
-                db  55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh,0FFh
-                db  33h, 3Fh,0CFh, 55h,0FFh,0FFh,0CCh,0F5h,0FCh, 3Fh,0C5h,0CFh,0F1h,0FFh,0C5h, 5Ch
-                db 0F1h, 3Fh,0C5h, 55h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 55h
-                db  55h, 55h, 55h, 5Fh, 55h, 55h, 55h, 5Fh, 55h, 55h, 55h, 5Fh,0F5h, 55h, 55h, 5Fh
-                db 0CFh, 55h, 55h, 5Fh, 5Ch,0F5h, 55h, 5Fh, 55h,0F5h, 55h, 5Fh, 95h,0F5h, 55h, 5Fh
-                db 0C5h, 55h, 55h, 55h,0C5h, 55h, 55h, 55h,0C5h, 55h, 55h, 55h,0C5h, 55h, 55h, 5Fh
-                db 0C5h, 55h, 55h,0FCh,0C5h, 55h, 5Fh,0C5h,0C5h, 55h, 5Fh,0C5h,0C5h, 55h, 5Fh,0C5h
-                db  55h,0F3h,0F3h, 33h, 5Fh,0C3h,0FFh,0FFh,0FCh, 53h,0FCh, 1Fh,0C5h, 53h,0FFh, 3Fh
-                db  55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 55h, 53h,0F1h, 3Fh, 55h, 53h,0FFh,0FFh
-                db  33h, 3Fh,0C5h, 55h,0FFh,0FFh,0C5h, 59h,0FCh, 3Fh,0C5h, 95h,0F1h,0FFh,0C5h, 55h
-                db 0F1h, 3Fh,0C5h, 5Fh,0F3h,0FFh,0C5h,0FFh,0F1h, 3Fh,0CFh,0F5h,0FFh,0FFh,0CFh, 59h
-                db  95h,0F5h, 55h, 5Fh, 95h,0F5h, 55h, 5Fh, 5Fh,0F5h, 55h, 5Fh,0FFh, 55h, 55h, 5Fh
-                db 0F5h, 55h, 55h, 5Fh, 59h, 59h, 55h, 5Fh, 55h, 55h, 55h, 5Fh, 95h, 55h, 95h, 5Fh
-                db 0C5h, 95h, 5Fh,0C5h,0C5h, 55h, 5Fh,0C5h,0C5h, 55h, 5Fh,0C5h,0C5h, 55h, 55h,0F5h
-                db 0C5h, 95h, 55h, 5Fh,0C5h, 95h, 55h, 55h,0C5h, 95h, 59h, 55h,0C5h, 99h, 55h, 55h
-                db  95h, 53h,0F3h, 33h, 55h, 53h,0FFh,0FFh, 59h, 53h,0FCh, 1Fh, 59h, 93h,0FFh, 3Fh
-                db  59h, 93h,0F1h, 3Fh,0F5h, 53h,0FFh, 3Fh, 5Fh, 53h,0F1h, 3Fh, 55h,0F3h,0FFh,0FFh
-                db  33h, 3Fh,0C5h, 99h,0FFh,0FFh,0C5h, 95h,0FCh, 3Fh,0C5h, 99h,0F1h,0FFh,0C5h, 99h
-                db 0F1h, 3Fh,0C5h, 99h,0F3h,0FFh,0C5h, 55h,0F1h, 3Fh, 33h, 33h,0FFh,0FFh,0FFh,0FFh
-                db  99h, 99h, 99h, 5Fh, 99h, 95h, 55h, 5Fh, 99h, 5Fh,0FFh,0FFh, 95h,0FCh,0CCh,0CFh
-                db  5Fh,0C5h, 55h, 5Fh,0FCh, 55h, 55h, 5Fh,0F5h,0FFh, 33h, 3Fh,0FFh,0FFh,0FFh,0FFh
-                db 0C5h, 99h, 55h, 55h,0C5h, 55h, 95h, 95h,0FFh,0FFh, 99h, 99h,0CCh,0CFh,0F5h, 95h
-                db 0C5h, 55h,0FFh, 95h,0C5h, 55h, 5Fh,0F5h, 3Fh,0FFh, 3Fh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db  59h, 53h,0F3h, 33h, 55h, 53h,0FFh,0FFh, 59h, 53h,0FCh, 1Fh, 59h, 53h,0FFh, 3Fh
-                db  99h, 53h,0F1h, 3Fh, 55h, 53h,0FFh, 3Fh, 33h, 33h,0F1h, 3Fh,0FFh,0FFh,0FFh,0FFh
+                db $11,$3F,$FF,$FF,$FF,$FF,$CC,$C5,$FC,$1F,$C5,$55,$F1,$FF,$C5,$55
+                db $F1,$3F,$C5,$55,$F3,$FF,$C5,$55,$F1,$3F,$C5,$55,$FF,$FF,$C5,$55
+                db $FF,$FF,$FF,$FF,$FC,$CC,$CC,$CF,$5F,$C5,$55,$5F,$55,$FC,$55,$5F
+                db $55,$5F,$C5,$5F,$55,$55,$FF,$FF,$55,$55,$55,$5F,$55,$55,$55,$5F
+                db $FF,$FF,$FF,$FF,$CC,$CC,$CC,$FF,$C5,$55,$5F,$F5,$C5,$55,$FF,$55
+                db $C5,$5F,$F5,$55,$FF,$FF,$55,$55,$C5,$55,$55,$55,$C5,$55,$55,$55
+                db $FF,$FF,$F3,$11,$5C,$CC,$FF,$FF,$55,$53,$FC,$1F,$55,$53,$FF,$3F
+                db $55,$53,$F1,$3F,$55,$53,$FF,$3F,$55,$53,$F1,$3F,$55,$53,$FF,$FF
+                db $33,$3F,$CF,$55,$FF,$FF,$CC,$F5,$FC,$3F,$C5,$CF,$F1,$FF,$C5,$5C
+                db $F1,$3F,$C5,$55,$F3,$FF,$C5,$55,$F1,$3F,$C5,$55,$FF,$FF,$C5,$55
+                db $55,$55,$55,$5F,$55,$55,$55,$5F,$55,$55,$55,$5F,$F5,$55,$55,$5F
+                db $CF,$55,$55,$5F,$5C,$F5,$55,$5F,$55,$F5,$55,$5F,$95,$F5,$55,$5F
+                db $C5,$55,$55,$55,$C5,$55,$55,$55,$C5,$55,$55,$55,$C5,$55,$55,$5F
+                db $C5,$55,$55,$FC,$C5,$55,$5F,$C5,$C5,$55,$5F,$C5,$C5,$55,$5F,$C5
+                db $55,$F3,$F3,$33,$5F,$C3,$FF,$FF,$FC,$53,$FC,$1F,$C5,$53,$FF,$3F
+                db $55,$53,$F1,$3F,$55,$53,$FF,$3F,$55,$53,$F1,$3F,$55,$53,$FF,$FF
+                db $33,$3F,$C5,$55,$FF,$FF,$C5,$59,$FC,$3F,$C5,$95,$F1,$FF,$C5,$55
+                db $F1,$3F,$C5,$5F,$F3,$FF,$C5,$FF,$F1,$3F,$CF,$F5,$FF,$FF,$CF,$59
+                db $95,$F5,$55,$5F,$95,$F5,$55,$5F,$5F,$F5,$55,$5F,$FF,$55,$55,$5F
+                db $F5,$55,$55,$5F,$59,$59,$55,$5F,$55,$55,$55,$5F,$95,$55,$95,$5F
+                db $C5,$95,$5F,$C5,$C5,$55,$5F,$C5,$C5,$55,$5F,$C5,$C5,$55,$55,$F5
+                db $C5,$95,$55,$5F,$C5,$95,$55,$55,$C5,$95,$59,$55,$C5,$99,$55,$55
+                db $95,$53,$F3,$33,$55,$53,$FF,$FF,$59,$53,$FC,$1F,$59,$93,$FF,$3F
+                db $59,$93,$F1,$3F,$F5,$53,$FF,$3F,$5F,$53,$F1,$3F,$55,$F3,$FF,$FF
+                db $33,$3F,$C5,$99,$FF,$FF,$C5,$95,$FC,$3F,$C5,$99,$F1,$FF,$C5,$99
+                db $F1,$3F,$C5,$99,$F3,$FF,$C5,$55,$F1,$3F,$33,$33,$FF,$FF,$FF,$FF
+                db $99,$99,$99,$5F,$99,$95,$55,$5F,$99,$5F,$FF,$FF,$95,$FC,$CC,$CF
+                db $5F,$C5,$55,$5F,$FC,$55,$55,$5F,$F5,$FF,$33,$3F,$FF,$FF,$FF,$FF
+                db $C5,$99,$55,$55,$C5,$55,$95,$95,$FF,$FF,$99,$99,$CC,$CF,$F5,$95
+                db $C5,$55,$FF,$95,$C5,$55,$5F,$F5,$3F,$FF,$3F,$FF,$FF,$FF,$FF,$FF
+                db $59,$53,$F3,$33,$55,$53,$FF,$FF,$59,$53,$FC,$1F,$59,$53,$FF,$3F
+                db $99,$53,$F1,$3F,$55,$53,$FF,$3F,$33,$33,$F1,$3F,$FF,$FF,$FF,$FF
 
 GfxDoorLeft:
-                db 0FFh, 33h, 33h, 3Fh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db  1Fh,0FFh,0FFh,0F9h, 15h, 55h, 5Fh, 59h, 15h, 55h, 55h, 59h, 15h, 55h,0F5h, 59h
-                db  15h, 55h, 15h, 59h, 15h, 55h, 18h, 59h, 15h, 5Fh, 18h, 59h, 15h,0FFh, 18h, 55h
-                db  15h,0F1h, 15h, 55h, 15h,0F1h, 15h, 55h, 15h,0F1h, 15h,0F5h, 15h,0F1h, 1Fh,0F5h
-                db  15h,0F1h,0FFh,0F5h, 15h,0F1h,0FFh,0F9h, 15h,0F1h,0FFh, 59h, 15h,0F1h,0FFh, 99h
-                db  15h,0FFh,0F5h, 55h, 15h,0FFh,0F5h, 99h, 15h,0FFh, 55h, 55h, 15h,0F5h, 55h, 55h
-                db  15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h, 15h, 55h, 55h, 55h
-                db  11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h, 11h
+                db $FF,$33,$33,$3F,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $1F,$FF,$FF,$F9,$15,$55,$5F,$59,$15,$55,$55,$59,$15,$55,$F5,$59
+                db $15,$55,$15,$59,$15,$55,$18,$59,$15,$5F,$18,$59,$15,$FF,$18,$55
+                db $15,$F1,$15,$55,$15,$F1,$15,$55,$15,$F1,$15,$F5,$15,$F1,$1F,$F5
+                db $15,$F1,$FF,$F5,$15,$F1,$FF,$F9,$15,$F1,$FF,$59,$15,$F1,$FF,$99
+                db $15,$FF,$F5,$55,$15,$FF,$F5,$99,$15,$FF,$55,$55,$15,$F5,$55,$55
+                db $15,$55,$55,$55,$15,$55,$55,$55,$15,$55,$55,$55,$15,$55,$55,$55
+                db $11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11,$11
 
 GfxDoorRight:
-                db 0F1h, 11h, 11h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db  9Fh,0FFh,0FFh,0FCh, 95h,0F5h, 55h, 5Ch, 95h, 55h, 55h, 5Ch, 95h, 5Fh, 55h, 5Ch
-                db  95h, 5Ch, 55h, 5Ch, 95h, 8Ch, 55h, 5Ch, 95h, 8Ch,0F5h, 5Ch, 55h, 8Ch,0FFh, 5Ch
-                db  55h, 5Ch,0CFh, 5Ch, 55h, 5Ch,0CFh, 5Ch, 5Fh, 5Ch,0CFh, 5Ch, 5Fh,0FCh,0CFh, 5Ch
-                db  5Fh,0FFh,0CFh, 5Ch, 9Fh,0FFh,0CFh, 5Ch, 95h,0FFh,0CFh, 5Ch, 99h,0FFh,0CFh, 5Ch
-                db  55h,0FFh,0FFh, 5Ch, 99h, 5Fh,0FFh, 5Ch, 55h, 55h,0FFh, 5Ch, 55h, 55h, 5Fh, 5Ch
-                db  55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch, 55h, 55h, 55h, 5Ch
-                db  11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch, 11h, 11h, 11h, 1Ch
+                db $F1,$11,$11,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $9F,$FF,$FF,$FC,$95,$F5,$55,$5C,$95,$55,$55,$5C,$95,$5F,$55,$5C
+                db $95,$5C,$55,$5C,$95,$8C,$55,$5C,$95,$8C,$F5,$5C,$55,$8C,$FF,$5C
+                db $55,$5C,$CF,$5C,$55,$5C,$CF,$5C,$5F,$5C,$CF,$5C,$5F,$FC,$CF,$5C
+                db $5F,$FF,$CF,$5C,$9F,$FF,$CF,$5C,$95,$FF,$CF,$5C,$99,$FF,$CF,$5C
+                db $55,$FF,$FF,$5C,$99,$5F,$FF,$5C,$55,$55,$FF,$5C,$55,$55,$5F,$5C
+                db $55,$55,$55,$5C,$55,$55,$55,$5C,$55,$55,$55,$5C,$55,$55,$55,$5C
+                db $11,$11,$11,$1C,$11,$11,$11,$1C,$11,$11,$11,$1C,$11,$11,$11,$1C
 
 GfxDoorDown:
-                db 0FFh,0FFh,0FFh,0FFh,0FEh,0EEh,0EEh,0EEh,0FEh,0CCh,0CCh,0CCh,0FEh,0C3h, 33h, 33h
-                db 0FEh,0C3h,0CCh,0CCh,0FEh,0CEh,0EEh,0EEh,0FEh,0CCh,0CCh,0CCh,0FEh, 11h, 11h, 11h
-                db 0FFh,0FFh,0FFh,0FFh,0EEh,0EEh,0EEh,0EEh,0CCh,0CCh,0CCh,0CCh, 33h, 33h, 33h, 33h
-                db 0CCh,0CCh,0CCh,0CCh,0EEh,0EEh,0EEh,0EEh,0CCh,0CCh,0CCh,0CCh, 11h, 11h, 11h, 11h
-                db 0FFh,0FFh,0FFh,0FFh,0EEh,0EEh,0EEh,0EEh,0CCh,0CCh,0CCh,0CCh, 33h, 33h, 33h, 33h
-                db 0CCh,0CCh,0CCh,0CCh,0EEh,0EEh,0EEh,0EEh,0CCh,0CCh,0CCh,0CCh, 11h, 11h, 11h, 11h
-                db 0FFh,0FFh,0FFh,0FFh,0EEh,0EEh,0EEh,0EFh,0CCh,0CCh,0CCh, 1Fh, 33h, 33h, 3Ch, 1Fh
-                db 0CCh,0CCh,0ECh, 1Fh,0EEh,0EEh,0ECh, 1Fh,0CCh,0CCh,0CCh, 1Fh, 11h, 11h, 11h, 1Fh
+                db $FF,$FF,$FF,$FF,$FE,$EE,$EE,$EE,$FE,$CC,$CC,$CC,$FE,$C3,$33,$33
+                db $FE,$C3,$CC,$CC,$FE,$CE,$EE,$EE,$FE,$CC,$CC,$CC,$FE,$11,$11,$11
+                db $FF,$FF,$FF,$FF,$EE,$EE,$EE,$EE,$CC,$CC,$CC,$CC,$33,$33,$33,$33
+                db $CC,$CC,$CC,$CC,$EE,$EE,$EE,$EE,$CC,$CC,$CC,$CC,$11,$11,$11,$11
+                db $FF,$FF,$FF,$FF,$EE,$EE,$EE,$EE,$CC,$CC,$CC,$CC,$33,$33,$33,$33
+                db $CC,$CC,$CC,$CC,$EE,$EE,$EE,$EE,$CC,$CC,$CC,$CC,$11,$11,$11,$11
+                db $FF,$FF,$FF,$FF,$EE,$EE,$EE,$EF,$CC,$CC,$CC,$1F,$33,$33,$3C,$1F
+                db $CC,$CC,$EC,$1F,$EE,$EE,$EC,$1F,$CC,$CC,$CC,$1F,$11,$11,$11,$1F
 

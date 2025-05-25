@@ -54,4 +54,4 @@ ClearP1_24x8:
                 jp      FillRect_
 
 colorsCALL:
-                db    6,   8, 0Eh, 0Fh
+                db $06,$08,$0E,$0F

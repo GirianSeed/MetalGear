@@ -2,9 +2,9 @@
 ; Weapon menu texts
 ;----------------------------------------------------------------------------
 txtWeaponSelect:
-                dw 1048h
-                db  "WEAPON",   0,   0, "SELECT"
-                db 0FEh
-                dw 9068h
-                db  "OPTION"
-                db 0FFh
+                dw $1048
+                db "WEAPON",0,0,"SELECT"
+                db $FE
+                dw $9068
+                db "OPTION"
+                db $FF

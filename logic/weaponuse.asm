@@ -150,13 +150,13 @@ ReserveShotSpr4:
 ; Number of sprites used by each shot of a weapon
 ;----------------------------------------------------------------------------
 NumSprShot:
-                db    1
-                db    1                                 ; SMG
-                db    2                                 ; Grenade
-                db    4                                 ; Rocket
-                db    4                                 ; Plastic bomb
-                db    2                                 ; Land mine
-                db    4                                 ; Missile
+                db 1
+                db 1                                    ; SMG
+                db 2                                    ; Grenade
+                db 4                                    ; Rocket
+                db 4                                    ; Plastic bomb
+                db 2                                    ; Land mine
+                db 4                                    ; Missile
 
 ;----------------------------------------------------------------------------
 ;

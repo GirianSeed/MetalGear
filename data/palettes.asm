@@ -2,30 +2,30 @@
 ; Palette of weapon screen
 ;----------------------------------------------------------------------------
 PalMenuWeapon:
-                db    0,   0,   0
-                db    6, 70h,   7
-                db    8, 70h,   0
-                db  0Ch, 33h,   3
-                db  0Eh, 77h,   7
-                db  0Fh,   0,   0
-                db 0FFh
+                db $00,$00,$00
+                db $06,$70,$07
+                db $08,$70,$00
+                db $0C,$33,$03
+                db $0E,$77,$07
+                db $0F,$00,$00
+                db $FF
 
 ;----------------------------------------------------------------------------
 ; Palette of radio screen
 ;----------------------------------------------------------------------------
 RadioPalette:
-                db    1, 10h,   2
-                db    2, 42h,   3
-                db    3, 55h,   7
-                db    4, 31h,   2
-                db    5, 40h,   0
-                db    9, 23h,   2
-                db  0Bh, 20h,   1
-                db  0Ch, 33h,   3
-                db  0Dh,   5,   2
-                db  0Eh, 77h,   7
-                db  0Fh,   0,   0
-                db 0FFh
+                db $01,$10,$02
+                db $02,$42,$03
+                db $03,$55,$07
+                db $04,$31,$02
+                db $05,$40,$00
+                db $09,$23,$02
+                db $0B,$20,$01
+                db $0C,$33,$03
+                db $0D,$05,$02
+                db $0E,$77,$07
+                db $0F,$00,$00
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -34,14 +34,14 @@ RadioPalette:
 ;
 ;----------------------------------------------------------------------------
 IdsRoomPal:
-                db    0,   0,   2, 20h,   2, 20h,   0,   0, 11h, 11h, 11h, 11h, 11h, 11h, 33h, 33h
-                db  33h, 33h, 33h, 33h, 88h, 88h, 88h, 88h, 88h,0C8h, 88h,0EEh,0EEh,0EEh,0EEh,0EEh
-                db  55h, 55h, 55h,   0,   0,   0,   0,   1, 11h, 11h, 11h, 11h, 88h, 88h, 8Eh,0EEh
-                db 0EEh,0EEh,0EEh, 55h, 50h,   0,   0, 0Eh,0EEh,0EEh,0E8h, 99h, 50h,0EEh,0EEh, 77h
-                db  74h, 77h, 74h, 47h, 46h, 66h, 66h, 66h, 44h, 46h, 46h, 66h, 46h, 66h, 66h, 66h
-                db  64h, 66h, 44h, 44h, 66h, 66h, 67h, 77h, 66h, 66h, 46h, 46h, 66h, 46h, 64h, 44h
-                db  66h, 44h, 66h, 47h, 66h, 44h, 87h, 77h, 55h, 50h,   7, 77h, 77h, 77h,0EEh,   0
-                db  11h, 10h,   0,   0,   0,   0,   0,   0, 19h, 98h, 81h, 11h, 11h, 1Dh
+                db $00,$00,$02,$20,$02,$20,$00,$00,$11,$11,$11,$11,$11,$11,$33,$33
+                db $33,$33,$33,$33,$88,$88,$88,$88,$88,$C8,$88,$EE,$EE,$EE,$EE,$EE
+                db $55,$55,$55,$00,$00,$00,$00,$01,$11,$11,$11,$11,$88,$88,$8E,$EE
+                db $EE,$EE,$EE,$55,$50,$00,$00,$0E,$EE,$EE,$E8,$99,$50,$EE,$EE,$77
+                db $74,$77,$74,$47,$46,$66,$66,$66,$44,$46,$46,$66,$46,$66,$66,$66
+                db $64,$66,$44,$44,$66,$66,$67,$77,$66,$66,$46,$46,$66,$46,$64,$44
+                db $66,$44,$66,$47,$66,$44,$87,$77,$55,$50,$07,$77,$77,$77,$EE,$00
+                db $11,$10,$00,$00,$00,$00,$00,$00,$19,$98,$81,$11,$11,$1D
 
 ;----------------------------------------------------------------------------
 ;
@@ -72,120 +72,120 @@ idxRoomPalettes:
 ;
 ;----------------------------------------------------------------------------
 RoomPalette0:
-                db    1, 12h,   2
-                db    3,   1,   1
-                db    5, 31h,   2
-                db    9, 20h,   1
-                db 0FFh
+                db $01,$12,$02
+                db $03,$01,$01
+                db $05,$31,$02
+                db $09,$20,$01
+                db $FF
 
 RoomPalette1:
-                db    1, 22h,   2
-                db    3, 11h,   1
-                db    5, 13h,   2
-                db    9,   2,   1
-                db 0FFh
+                db $01,$22,$02
+                db $03,$11,$01
+                db $05,$13,$02
+                db $09,$02,$01
+                db $FF
 
 RoomPalette2:
-                db    1, 22h,   2
-                db    3, 11h,   1
-                db    5, 31h,   2
-                db    9,   0,   2
-                db 0FFh
+                db $01,$22,$02
+                db $03,$11,$01
+                db $05,$31,$02
+                db $09,$00,$02
+                db $FF
 
 RoomPalette3:
-                db    1, 21h,   2
-                db    3, 10h,   1
-                db    5, 22h,   2
-                db    9, 11h,   1
-                db 0FFh
+                db $01,$21,$02
+                db $03,$10,$01
+                db $05,$22,$02
+                db $09,$11,$01
+                db $FF
 
 RoomPalette4:
-                db    1, 22h,   2
-                db    3, 11h,   1
-                db    5, 12h,   2
-                db    9,   1,   1
-                db 0FFh
+                db $01,$22,$02
+                db $03,$11,$01
+                db $05,$12,$02
+                db $09,$01,$01
+                db $FF
 
 RoomPalette5:
-                db    1, 53h,   4
-                db    3, 42h,   3
-                db    5, 41h,   2
-                db    9, 20h,   2
-                db 0FFh
+                db $01,$53,$04
+                db $03,$42,$03
+                db $05,$41,$02
+                db $09,$20,$02
+                db $FF
 
 RoomPalette6:
-                db    1, 22h,   2
-                db    3, 11h,   1
-                db    5, 31h,   2
-                db    9, 20h,   1
-                db 0FFh
+                db $01,$22,$02
+                db $03,$11,$01
+                db $05,$31,$02
+                db $09,$20,$01
+                db $FF
 
 RoomPalette7:
-                db    1, 31h,   2
-                db    3, 20h,   1
-                db    5, 12h,   2
-                db    9,   1,   1
-                db 0FFh
+                db $01,$31,$02
+                db $03,$20,$01
+                db $05,$12,$02
+                db $09,$01,$01
+                db $FF
 
 RoomPalette8:
-                db    1, 40h,   2
-                db    3, 30h,   1
-                db    5, 12h,   2
-                db    9,   1,   1
-                db 0FFh
+                db $01,$40,$02
+                db $03,$30,$01
+                db $05,$12,$02
+                db $09,$01,$01
+                db $FF
 
 RoomPalette9:
-                db    1, 22h,   2
-                db    3, 10h,   1
-                db    5, 32h,   3
-                db    9, 11h,   1
-                db 0FFh
+                db $01,$22,$02
+                db $03,$10,$01
+                db $05,$32,$03
+                db $09,$11,$01
+                db $FF
 
 ; Gray
 RoomPalette10:
-                db    1, 44h,   4
-                db    3, 11h,   1
-                db    5, 22h,   2
-                db    9,   0,   0
-                db 0FFh
+                db $01,$44,$04
+                db $03,$11,$01
+                db $05,$22,$02
+                db $09,$00,$00
+                db $FF
 
 ;Black
 RoomPalette11:
-                db    1,   0,   0
-                db    3,   0,   0
-                db    5,   0,   0
-                db    9,   0,   0
-                db  0Ch,   0,   0
-                db 0FFh
+                db $01,$00,$00
+                db $03,$00,$00
+                db $05,$00,$00
+                db $09,$00,$00
+                db $0C,$00,$00
+                db $FF
 
 RoomPalette12:
-                db    1, 10h,   3
-                db    3, 30h,   1
-                db    5, 12h,   2
-                db    9,   1,   1
-                db 0FFh
+                db $01,$10,$03
+                db $03,$30,$01
+                db $05,$12,$02
+                db $09,$01,$01
+                db $FF
 
 RoomPalette13:
-                db    1, 70h,   4
-                db    3, 40h,   0
-                db    8, 70h,   0
-                db    9, 70h,   7
-                db 0FFh
+                db $01,$70,$04
+                db $03,$40,$00
+                db $08,$70,$00
+                db $09,$70,$07
+                db $FF
 
 RoomPalette14:
-                db    1, 22h,   2
-                db    3, 11h,   1
-                db    5, 11h,   2
-                db    9,   0,   1
-                db  0Ch, 33h,   3
-                db 0FFh
+                db $01,$22,$02
+                db $03,$11,$01
+                db $05,$11,$02
+                db $09,$00,$01
+                db $0C,$33,$03
+                db $FF
 
 RoomPalette15:
-                db    1, 70h,   7
-                db    3, 40h,   0
-                db    8, 70h,   4
-                db    9, 70h,   4
-                db 0FFh
+                db $01,$70,$07
+                db $03,$40,$00
+                db $08,$70,$04
+                db $09,$70,$04
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -233,126 +233,126 @@ idxSprSetPals:
 ; color index, RGB
 ;----------------------------------------------------------------------------
 SprsetPal0:
-                db    2, 27h,   2
-                db  0Bh, 22h,   2
-                db  0Dh, 55h,   5
+                db $02,$27,$02
+                db $0B,$22,$02
+                db $0D,$55,$05
 SprsetPalNone:
-                db 0FFh
+                db $FF
 
 SprsetPal2:
-                db    4, 50h,   0
-                db  0Bh, 50h,   0
-                db    2, 22h,   2
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $04,$50,$00
+                db $0B,$50,$00
+                db $02,$22,$02
+                db $0D,$42,$03
+                db $FF
 
 SprsetPal3:
-                db    2, 21h,   1
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$21,$01
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal4:
-                db    2, 40h,   0
-                db  0Dh, 70h,   0
-                db 0FFh
+                db $02,$40,$00
+                db $0D,$70,$00
+                db $FF
 
 SprsetPal5:
-                db    2, 30h,   2
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$30,$02
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal6:
-                db  0Dh, 73h,   4
-                db 0FFh
+                db $0D,$73,$04
+                db $FF
 
 SprsetPal7:
-                db    2, 21h,   2
-                db  0Dh, 53h,   4
-                db  0Bh, 55h,   5
-                db 0FFh
+                db $02,$21,$02
+                db $0D,$53,$04
+                db $0B,$55,$05
+                db $FF
 
 SprsetPal8:
-                db  0Dh, 53h,   4
-                db  0Bh, 41h,   0
-                db 0FFh
+                db $0D,$53,$04
+                db $0B,$41,$00
+                db $FF
 
 SprsetPal9:
-                db    2, 13h,   2
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $02,$13,$02
+                db $0D,$42,$03
+                db $FF
 
 SprsetPal10:
-                db    2, 12h,   1
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $02,$12,$01
+                db $0D,$42,$03
+                db $FF
 
 SprsetPal11:
-                db    2, 41h,   2
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$41,$02
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal13:
-                db  0Bh, 12h,   2
-                db 0FFh
+                db $0B,$12,$02
+                db $FF
 
 SprsetPal14:
-                db  0Bh, 12h,   1
-                db 0FFh
+                db $0B,$12,$01
+                db $FF
 
 SprsetPal15:
-                db    2,   2,   1
-                db  0Bh, 21h,   3
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$02,$01
+                db $0B,$21,$03
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal16:
-                db    2, 77h,   7
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$77,$07
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal17:
-                db    2, 20h,   2
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$20,$02
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal18:
-                db    2, 12h,   2
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$12,$02
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal19:
-                db    2, 44h,   4
-                db  0Dh, 22h,   2
-                db 0FFh
+                db $02,$44,$04
+                db $0D,$22,$02
+                db $FF
 
 SprsetPal20:
-                db    4, 50h,   0
-                db  0Bh, 50h,   0
-                db    2, 22h,   2
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $04,$50,$00
+                db $0B,$50,$00
+                db $02,$22,$02
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal24:
-                db    2, 55h,   5
-                db  0Dh, 22h,   2
-                db 0FFh
+                db $02,$55,$05
+                db $0D,$22,$02
+                db $FF
 
 SprsetPal27:
-                db    2, 21h,   1
-                db  0Dh, 53h,   4
-                db 0FFh
+                db $02,$21,$01
+                db $0D,$53,$04
+                db $FF
 
 SprsetPal29:
-                db    2, 20h,   0
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $02,$20,$00
+                db $0D,$42,$03
+                db $FF
 
 SprsetPal30:
-                db    2,   3,   0
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $02,$03,$00
+                db $0D,$42,$03
+                db $FF
 
 SprsetPal31:
-                db    2,   0,   2
-                db  0Dh, 42h,   3
-                db 0FFh
+                db $02,$00,$02
+                db $0D,$42,$03
+                db $FF

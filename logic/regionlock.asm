@@ -26,11 +26,11 @@ RegionLock:
 	IF (JAPANESE)
 		ld	hl, (BASVER1)
 		ld	a, l
-		and	#f7		; Japanese character set? Y-M-D date format? 60Hz?
-		jp	nz, #0000	; No, reset the computer
+		and	$F7		; Japanese character set? Y-M-D date format? 60Hz?
+		jp	nz, $0000	; No, reset the computer
 
 		ld	a, h
-		and	#cf		; Japanese keyboard type?
-		jp	nz, #0000	; No, reset the computer
+		and	$CF		; Japanese keyboard type?
+		jp	nz, $0000	; No, reset the computer
 	ENDIF
 		ret

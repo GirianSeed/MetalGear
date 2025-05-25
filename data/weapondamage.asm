@@ -16,43 +16,43 @@ idxWeaponPow:
 ;----------------------------------------------------------------------------
 
                 db 6
-BulletDamage:   db 0FFh,0FFh,0FFh,   2,   2,   0,0FFh,0FFh,   0,   2,   2,   0,   2,   2,   0,0FFh
-                db    0,   0,   2,   2,   2,   2,   0,   2,   2,   0,   2,   2,0FFh,   2,   2,   0
-                db    2,   2,0FFh,   2,   0,   0,0FFh,0FFh,   2,   2,0FFh,0FFh,0FFh,0FFh,0FFh,   2
-                db    2,   2,   2,   2,   0,0FFh,   2,   2,   2,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+BulletDamage:   db $FF,$FF,$FF,$02,$02,$00,$FF,$FF,$00,$02,$02,$00,$02,$02,$00,$FF
+                db $00,$00,$02,$02,$02,$02,$00,$02,$02,$00,$02,$02,$FF,$02,$02,$00
+                db $02,$02,$FF,$02,$00,$00,$FF,$FF,$02,$02,$FF,$FF,$FF,$FF,$FF,$02
+                db $02,$02,$02,$02,$00,$FF,$02,$02,$02,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF
 
                 db 2
-GrenadeDamage:  db 0FFh,0FFh,0FFh,   5,   5,   5,0FFh,0FFh,0FFh,   5,   5,0FFh,   5,   5,0FFh,0FFh
-                db 0FFh,   5,   5,   5,   5,   5,0FFh,   5,   5,0FFh,   5,   5,0FFh,   5,   5,   0
-                db    5,   5,0FFh,   5,0FFh,   5,0FFh,0FFh,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,   5
-                db    5,   5,   5,   5,   0,0FFh,   5,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+GrenadeDamage:  db $FF,$FF,$FF,$05,$05,$05,$FF,$FF,$FF,$05,$05,$FF,$05,$05,$FF,$FF
+                db $FF,$05,$05,$05,$05,$05,$FF,$05,$05,$FF,$05,$05,$FF,$05,$05,$00
+                db $05,$05,$FF,$05,$FF,$05,$FF,$FF,$05,$05,$FF,$FF,$FF,$FF,$FF,$05
+                db $05,$05,$05,$05,$00,$FF,$05,$05,$05,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF
 
                 db 1
-RocketDamage:   db 0FFh,0FFh,0FFh, 0Ah, 0Ah, 0Ah,0FFh,0FFh,   0, 0Ah, 0Ah,   0, 0Ah, 0Ah,   0,0FFh
-                db    0,   0, 0Ah, 0Ah, 0Ah, 0Ah,   0, 0Ah, 0Ah, 0Ah, 0Ah, 0Ah,0FFh, 0Ah, 0Ah, 0Ah
-                db  0Ah, 0Ah,0FFh, 0Ah,   0,   0,0FFh,0FFh, 0Ah, 0Ah,0FFh,0FFh,0FFh,0FFh,0FFh, 0Ah
-                db  0Ah, 0Ah, 0Ah, 0Ah,   0,0FFh, 0Ah, 0Ah, 0Ah,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+RocketDamage:   db $FF,$FF,$FF,$0A,$0A,$0A,$FF,$FF,$00,$0A,$0A,$00,$0A,$0A,$00,$FF
+                db $00,$00,$0A,$0A,$0A,$0A,$00,$0A,$0A,$0A,$0A,$0A,$FF,$0A,$0A,$0A
+                db $0A,$0A,$FF,$0A,$00,$00,$FF,$FF,$0A,$0A,$FF,$FF,$FF,$FF,$FF,$0A
+                db $0A,$0A,$0A,$0A,$00,$FF,$0A,$0A,$0A,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF
 
-                db    1
-PlasBombDamage: db 0FFh,0FFh,0FFh,   5,   5,   5,0FFh,0FFh,   0,   5,   5,   0,   5,   5,   0,0FFh
-                db    5,   0,   5,   5,   5,   5,   0,   5,   5,   0,   5,   5,0FFh,   5,   5,   0
-                db    5,   5,0FFh,   5,0FFh,   0,0FFh,0FFh,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,   5
-                db    5,   5,   5,   5,   0,0FFh,   5,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+                db 1
+PlasBombDamage: db $FF,$FF,$FF,$05,$05,$05,$FF,$FF,$00,$05,$05,$00,$05,$05,$00,$FF
+                db $05,$00,$05,$05,$05,$05,$00,$05,$05,$00,$05,$05,$FF,$05,$05,$00
+                db $05,$05,$FF,$05,$FF,$00,$FF,$FF,$05,$05,$FF,$FF,$FF,$FF,$FF,$05
+                db $05,$05,$05,$05,$00,$FF,$05,$05,$05,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF
 
-                db    3
-MineDamage:     db 0FFh,0FFh,0FFh,   5,   5,0FFh,0FFh,0FFh,   5,   5,   5,   0,   5,   5,   0,0FFh
-                db    0,   0,   5,   5,   5,   5,   0,   5,   5,   0,   5,   5,0FFh,   5,   5,   0
-                db    5,   5,0FFh,   5,0FFh,   0,0FFh,0FFh,   5,   0,0FFh,   0,0FFh,0FFh,0FFh,   5
-                db    5,   5,   5,   5,0FFh,0FFh,   5,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+                db 3
+MineDamage:     db $FF,$FF,$FF,$05,$05,$FF,$FF,$FF,$05,$05,$05,$00,$05,$05,$00,$FF
+                db $00,$00,$05,$05,$05,$05,$00,$05,$05,$00,$05,$05,$FF,$05,$05,$00
+                db $05,$05,$FF,$05,$FF,$00,$FF,$FF,$05,$00,$FF,$00,$FF,$FF,$FF,$05
+                db $05,$05,$05,$05,$FF,$FF,$05,$05,$05,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF
 
-                db    1
-MissileDamage:  db 0FFh,0FFh,0FFh,   5,   5,   5,0FFh,0FFh,   0,   5,   5,   0,   5,   5,   0,0FFh
-                db    0,   0,   5,   5,   5,   5,   0,   5,   5,   0,   5,   5,0FFh,   5,   5,   0
-                db    5,   5,0FFh,   5,   0,   0,0FFh,0FFh,   5,   5,0FFh,   5,0FFh,0FFh,0FFh,   5
-                db    5,   5,   5,   5,   0,0FFh,   5,   5,   5,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                db 0FFh
+                db 1
+MissileDamage:  db $FF,$FF,$FF,$05,$05,$05,$FF,$FF,$00,$05,$05,$00,$05,$05,$00,$FF
+                db $00,$00,$05,$05,$05,$05,$00,$05,$05,$00,$05,$05,$FF,$05,$05,$00
+                db $05,$05,$FF,$05,$00,$00,$FF,$FF,$05,$05,$FF,$05,$FF,$FF,$FF,$05
+                db $05,$05,$05,$05,$00,$FF,$05,$05,$05,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+                db $FF

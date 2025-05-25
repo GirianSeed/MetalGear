@@ -1,14 +1,14 @@
 Sfx_PunchGuard:
-                db 0FEh,   0, 21h,   1, 1Fh,0D0h, 1Ch,0D0h, 19h,0D0h, 17h,0D0h, 15h,0D0h, 13h,0D0h
-                db  11h,0D0h,0FFh
+                db $FE,$00,$21,$01,$1F,$D0,$1C,$D0,$19,$D0,$17,$D0,$15,$D0,$13,$D0
+                db $11,$D0,$FF
 
 Sfx_PunchWall:
-                db 0FEh,   0, 22h,   1,0E1h, 50h,0C6h,   0,0D1h, 80h,0D2h,   0,0B2h, 40h,0A2h,   0
-                db 0D4h,   0,0C4h, 68h,0B4h,0A5h,0A4h, 80h,   0,   0, 92h,   0, 82h, 40h, 72h,   0
-                db 0A4h,   0, 94h, 68h, 84h,0A5h,0FFh
+                db $FE,$00,$22,$01,$E1,$50,$C6,$00,$D1,$80,$D2,$00,$B2,$40,$A2,$00
+                db $D4,$00,$C4,$68,$B4,$A5,$A4,$80,$00,$00,$92,$00,$82,$40,$72,$00
+                db $A4,$00,$94,$68,$84,$A5,$FF
 
 Sfx_PunchWallBrk:
-                db 0FEh,   0, 22h,   1,0D2h,0F0h,0D2h,0B0h,0D2h, 80h,0D2h, 50h,0D2h, 38h,0D2h, 20h
-                db 0D2h,   8,0D1h,0F0h,0D1h,0D8h,0D1h,0C0h,0C2h, 20h,0C2h,   8,0C1h,0F0h,0C1h,0D8h
-                db 0C1h,0C0h,0C1h,0A8h,0C1h, 90h,0B1h,0F0h,0B1h,0D8h,0B1h,0C0h,0B1h,0A8h,0B1h, 90h
-                db 0FFh
+                db $FE,$00,$22,$01,$D2,$F0,$D2,$B0,$D2,$80,$D2,$50,$D2,$38,$D2,$20
+                db $D2,$08,$D1,$F0,$D1,$D8,$D1,$C0,$C2,$20,$C2,$08,$C1,$F0,$C1,$D8
+                db $C1,$C0,$C1,$A8,$C1,$90,$B1,$F0,$B1,$D8,$B1,$C0,$B1,$A8,$B1,$90
+                db $FF

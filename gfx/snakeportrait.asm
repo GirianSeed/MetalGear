@@ -4,35 +4,35 @@
 ;
 ;----------------------------------------------------------------------------
 gfxSnakePortrait:
-                db 0FFh,0FFh,   0,0FFh,0FFh,   1,0FFh,0FFh,   3,0FFh,0FFh,   3,0FFh,0FFh,   7,0FFh
-                db 0FFh, 0Fh,0FFh,0FFh, 1Eh,0FFh,0FFh, 1Eh,0FFh,0FFh, 3Fh,0FFh,0FCh,0F8h,0FFh,0FFh
-                db 0E3h,0FFh,0FFh,0FFh,0FFh,0EEh,0CEh,0FFh,0C4h,0C4h,0FFh,0FFh,0CFh,0FFh,0FFh,0F4h
-                db 0FFh,0FFh,0FFh,0FFh,0FFh,0F3h,0FFh,0FFh,0F0h,0FFh,0FFh,0FFh,0FFh,0F9h, 91h,0FFh
-                db 0FFh, 91h,0FFh,0FFh,0C8h,0FFh,0FFh, 36h,0FFh,0FFh, 80h,0FFh,0FFh,0C0h,0FFh,0FFh
-                db 0E0h,0FFh,0FFh, 60h,0FFh,0FFh,0E0h,0FFh,0FFh,0B0h,0FFh,0FFh, 90h,0FFh,0FFh, 50h
-                db 0FFh,0FFh, 1Eh,0FFh,0FFh, 0Fh,0FFh,0FFh, 0Fh,0FFh,0FFh, 0Dh,0FFh,0FFh,   9,0FFh
-                db 0FFh,   9,0FFh,0FFh,   5,0FFh,0FFh,   4,0FFh,0B2h, 82h, 91h, 81h,   1,0DFh, 1Fh
-                db    0,0FFh, 9Fh, 8Fh,0DEh,0CCh,0C7h,0D7h,0C0h,   0,0C2h, 80h,   0,0C1h, 80h, 80h
-                db 0FFh, 1Fh, 17h,0CFh, 0Ah,   3,0EFh,0C2h, 83h,0FEh,0E1h, 41h, 4Fh,   0, 81h, 17h
-                db    0,   1, 27h,   0,   1, 0Fh,   1,   2,0FFh,0FFh,0F0h, 7Fh, 3Fh, 30h,0FFh, 1Fh
-                db    8,0DFh,0D7h,   4,0FFh,0DBh, 12h,0FFh, 9Bh, 92h,0FFh,0AFh, 8Ch,0FFh, 2Fh,   8
-                db 0FFh,0FFh,   0,0FFh,0FFh,   1,0FFh,0FFh,   1,0FFh,0FFh,   0,0FFh,0FFh,   0,0FFh
-                db 0FFh,   0,0FFh,0FFh, 0Eh,0F1h,0F1h, 11h, 80h, 80h, 80h, 38h,   0,   0,0FCh,0F0h
-                db    0,0F0h,0E0h,0C0h,0FFh,0F2h, 5Eh,0F0h,0E0h, 40h,0FCh,0F4h, 24h,0F0h,0F0h, 20h
-                db  2Fh,   1,   2, 2Fh,   9,   2, 5Eh, 12h,   4, 3Eh, 26h,   8, 3Eh,   8, 10h, 3Eh
-                db  14h, 20h, 7Eh, 2Ch, 40h,0FFh, 58h, 80h,0FFh, 6Fh, 48h, 7Fh, 7Fh, 68h, 7Fh, 7Fh
-                db  78h, 3Fh, 3Fh, 3Eh, 1Fh, 11h, 11h, 0Fh, 0Dh,   9, 3Fh, 1Fh, 11h, 7Fh, 3Fh, 20h
-                db 0FFh,0EEh, 20h,0DFh,0DFh, 56h,0EFh,0CFh, 8Fh,0BFh, 27h, 27h,0DFh, 1Fh, 13h,0FFh
-                db 0EFh,0CBh,0FFh,0BFh, 27h,0FFh,0DFh, 9Ch,0FBh, 81h,0F2h,0FFh, 47h, 3Ch,0FFh,0FFh
-                db 0FFh,0FFh,0FFh,0DFh,0FFh,0DFh, 9Fh,0FFh, 9Ch, 1Ch,0FFh,0B3h, 30h,0FFh,0AFh, 2Eh
-                db 0FFh,0F8h,   0,0FFh,0FFh,   3,0FFh, 3Fh,   4,0FFh,0BEh,0B8h,0FFh,0FDh,0C9h,0FFh
-                db 0FBh, 33h,0FFh,0F7h, 46h,0FFh,0F3h,   3,0FFh, 7Fh, 59h,0FFh,0FFh,0C2h,0FFh,0FFh
-                db    7,0FFh,0FCh, 0Ch,0FFh,0F8h, 78h,0FFh,0F0h, 50h,0FFh,0F6h,0A6h,0FFh,0F8h,0C8h
+                db $FF,$FF,$00,$FF,$FF,$01,$FF,$FF,$03,$FF,$FF,$03,$FF,$FF,$07,$FF
+                db $FF,$0F,$FF,$FF,$1E,$FF,$FF,$1E,$FF,$FF,$3F,$FF,$FC,$F8,$FF,$FF
+                db $E3,$FF,$FF,$FF,$FF,$EE,$CE,$FF,$C4,$C4,$FF,$FF,$CF,$FF,$FF,$F4
+                db $FF,$FF,$FF,$FF,$FF,$F3,$FF,$FF,$F0,$FF,$FF,$FF,$FF,$F9,$91,$FF
+                db $FF,$91,$FF,$FF,$C8,$FF,$FF,$36,$FF,$FF,$80,$FF,$FF,$C0,$FF,$FF
+                db $E0,$FF,$FF,$60,$FF,$FF,$E0,$FF,$FF,$B0,$FF,$FF,$90,$FF,$FF,$50
+                db $FF,$FF,$1E,$FF,$FF,$0F,$FF,$FF,$0F,$FF,$FF,$0D,$FF,$FF,$09,$FF
+                db $FF,$09,$FF,$FF,$05,$FF,$FF,$04,$FF,$B2,$82,$91,$81,$01,$DF,$1F
+                db $00,$FF,$9F,$8F,$DE,$CC,$C7,$D7,$C0,$00,$C2,$80,$00,$C1,$80,$80
+                db $FF,$1F,$17,$CF,$0A,$03,$EF,$C2,$83,$FE,$E1,$41,$4F,$00,$81,$17
+                db $00,$01,$27,$00,$01,$0F,$01,$02,$FF,$FF,$F0,$7F,$3F,$30,$FF,$1F
+                db $08,$DF,$D7,$04,$FF,$DB,$12,$FF,$9B,$92,$FF,$AF,$8C,$FF,$2F,$08
+                db $FF,$FF,$00,$FF,$FF,$01,$FF,$FF,$01,$FF,$FF,$00,$FF,$FF,$00,$FF
+                db $FF,$00,$FF,$FF,$0E,$F1,$F1,$11,$80,$80,$80,$38,$00,$00,$FC,$F0
+                db $00,$F0,$E0,$C0,$FF,$F2,$5E,$F0,$E0,$40,$FC,$F4,$24,$F0,$F0,$20
+                db $2F,$01,$02,$2F,$09,$02,$5E,$12,$04,$3E,$26,$08,$3E,$08,$10,$3E
+                db $14,$20,$7E,$2C,$40,$FF,$58,$80,$FF,$6F,$48,$7F,$7F,$68,$7F,$7F
+                db $78,$3F,$3F,$3E,$1F,$11,$11,$0F,$0D,$09,$3F,$1F,$11,$7F,$3F,$20
+                db $FF,$EE,$20,$DF,$DF,$56,$EF,$CF,$8F,$BF,$27,$27,$DF,$1F,$13,$FF
+                db $EF,$CB,$FF,$BF,$27,$FF,$DF,$9C,$FB,$81,$F2,$FF,$47,$3C,$FF,$FF
+                db $FF,$FF,$FF,$DF,$FF,$DF,$9F,$FF,$9C,$1C,$FF,$B3,$30,$FF,$AF,$2E
+                db $FF,$F8,$00,$FF,$FF,$03,$FF,$3F,$04,$FF,$BE,$B8,$FF,$FD,$C9,$FF
+                db $FB,$33,$FF,$F7,$46,$FF,$F3,$03,$FF,$7F,$59,$FF,$FF,$C2,$FF,$FF
+                db $07,$FF,$FC,$0C,$FF,$F8,$78,$FF,$F0,$50,$FF,$F6,$A6,$FF,$F8,$C8
 
 ; Snake portrait (face animation frame)
 gfxSnakePortrait2:
-                db 0FFh,0B2h, 82h, 91h, 81h,   1,0DFh, 1Fh,   0,0FFh, 9Fh, 8Fh,0DCh,0CCh,0C7h,0D7h
-                db 0C0h,   0,0C2h, 80h,   0,0C1h, 80h, 80h,0FFh, 1Fh, 17h,0CFh, 0Ah,   3,0EFh,0C2h
-                db    3,0FEh,0E1h, 41h,0CFh,   0, 81h, 17h,   0,   1, 27h,   0,   1, 0Fh,   1,   2
-                db  80h, 80h, 80h, 38h,   0,   0,0FCh,0B0h,   0,0F2h,0E0h,0C0h,0FFh,0DEh, 4Eh,0FFh
-                db 0FEh, 40h,0F8h,0E0h, 40h,0FCh,0F4h, 24h
+                db $FF,$B2,$82,$91,$81,$01,$DF,$1F,$00,$FF,$9F,$8F,$DC,$CC,$C7,$D7
+                db $C0,$00,$C2,$80,$00,$C1,$80,$80,$FF,$1F,$17,$CF,$0A,$03,$EF,$C2
+                db $03,$FE,$E1,$41,$CF,$00,$81,$17,$00,$01,$27,$00,$01,$0F,$01,$02
+                db $80,$80,$80,$38,$00,$00,$FC,$B0,$00,$F2,$E0,$C0,$FF,$DE,$4E,$FF
+                db $FE,$40,$F8,$E0,$40,$FC,$F4,$24

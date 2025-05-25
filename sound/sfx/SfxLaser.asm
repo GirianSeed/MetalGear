@@ -1,7 +1,7 @@
 Sfx_Laser:
-                db 0FEh,   0, 22h,   1
+                db $FE,$00,$22,$01
 SfxLaser2:
-                db 0D0h, 50h,0D0h,0A0h
-                db 0FEh,   8
+                db $D0,$50,$D0,$A0
+                db $FE,$08
                 dw SfxLaser2
-                db 0FFh
+                db $FF

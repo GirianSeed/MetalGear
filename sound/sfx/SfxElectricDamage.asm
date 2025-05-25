@@ -1,7 +1,7 @@
 Sfx_ElecDamage:
-                db 0FEh,   0
+                db $FE,$00
 SfxDamage2:
-                db  2Ah,   2,   0, 11h, 80h, 10h, 80h, 20h
-                db 0FEh,   8
+                db $2A,$02,$00,$11,$80,$10,$80,$20
+                db $FE,$08
                 dw SfxDamage2
-                db 0FFh
+                db $FF

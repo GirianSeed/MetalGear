@@ -222,15 +222,15 @@ SetElevatorSpr4:
 ; Offset Y, offset X, sprite, color
 ;----------------------------------------------------------------------------
 SprElevatorDat:
-                db 0D0h,0F8h, 38h, 0Ch
-                db 0D0h,0F8h, 3Ch, 4Bh
-                db 0E0h,0F0h, 40h,   2
-                db 0E0h,0F0h, 44h, 4Dh
-                db 0E0h,   0, 48h,   2
-                db 0E0h,   0, 4Ch, 4Dh
-                db 0F0h,0F0h, 50h,   2
-                db 0F0h,0F0h, 54h, 4Dh
-                db 0F0h,   0, 58h,   2
-                db 0F0h,   0, 5Ch, 4Dh
-                db    0,0F8h, 60h, 0Ch
-                db    0,0F8h, 64h, 4Bh
+                db $D0,$F8,$38,$0C
+                db $D0,$F8,$3C,$4B
+                db $E0,$F0,$40,$02
+                db $E0,$F0,$44,$4D
+                db $E0,$00,$48,$02
+                db $E0,$00,$4C,$4D
+                db $F0,$F0,$50,$02
+                db $F0,$F0,$54,$4D
+                db $F0,$00,$58,$02
+                db $F0,$00,$5C,$4D
+                db $00,$F8,$60,$0C
+                db $00,$F8,$64,$4B

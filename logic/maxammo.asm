@@ -108,9 +108,9 @@ ChkMaxAmmo3:
 ;----------------------------------------------------------------------------
 
 MaxAmmoLv1:
-                dw 50h
-                dw 50h
-                dw 15h
+                dw 80
+                dw 80
+                dw 21
                 dw 5
                 dw 5
                 dw 5
@@ -118,44 +118,44 @@ MaxAmmoLv1:
                 dw 5
 
 MaxAmmoLv2:
-                dw 100h
-                dw 100h
-                dw 30h
-                dw 10h
-                dw 10h
-                dw 10h
-                dw 10h
-                dw 10h
+                dw 256
+                dw 256
+                dw 48
+                dw 16
+                dw 16
+                dw 16
+                dw 16
+                dw 16
 
 MaxAmmoLv3:
-                dw 200h
-                dw 200h
-                dw 60h
-                dw 20h
-                dw 15h
-                dw 15h
-                dw 15h
-                dw 15h
+                dw 512
+                dw 512
+                dw 96
+                dw 32
+                dw 21
+                dw 21
+                dw 21
+                dw 21
 
 MaxAmmoLv4:
-                dw 300h
-                dw 300h
-                dw 90h
-                dw 30h
-                dw 20h
-                dw 20h
-                dw 20h
-                dw 20h
+                dw 768
+                dw 768
+                dw 144
+                dw 48
+                dw 32
+                dw 32
+                dw 32
+                dw 32
 
 MaxAmmoVals:
-                dw 999h
-                dw 999h
-                dw 999h
-                dw 999h
-                dw 999h
-                dw 999h
-                dw 999h
-                dw 999h
+                dw $999
+                dw $999
+                dw $999
+                dw $999
+                dw $999
+                dw $999
+                dw $999
+                dw $999
 
 ;----------------------------------------------------------------------------
 ;

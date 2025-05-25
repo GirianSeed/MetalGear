@@ -6,7 +6,7 @@
 ;
 ;----------------------------------------------------------------------------
 
-                org #6000
+                org $6000
 
         include "data/roomtileset.asm"
         include "gfx/doors.asm"
@@ -38,5 +38,5 @@
         include "logic/madnarbigbossevent.asm"
 
                 ; Fill empty space
-                ds      (#C000-$),#ff
-                ASSERT  $=#C000
+                ds      ($C000-$),$FF
+                ASSERT  $=$C000

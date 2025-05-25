@@ -1,28 +1,28 @@
 Sfx_HandGunShot:
-                db 0FEh,   0, 21h,   1, 1Dh,0E0h, 22h,   1,0D6h,   0, 21h,   2, 1Dh,0D0h,0C0h,0B0h
-                db 0A0h, 90h, 80h, 70h, 60h,0FFh
+                db $FE,$00,$21,$01,$1D,$E0,$22,$01,$D6,$00,$21,$02,$1D,$D0,$C0,$B0
+                db $A0,$90,$80,$70,$60,$FF
 
 Sfx_SmgShot:
-                db 0FEh,   0, 23h,   1, 15h,0E2h, 80h,0C0h, 28h,0E2h,0A0h,0C1h, 70h, 21h,   5,0B0h
-                db  90h, 70h,0FFh
+                db $FE,$00,$23,$01,$15,$E2,$80,$C0,$28,$E2,$A0,$C1,$70,$21,$05,$B0
+                db $90,$70,$FF
 
 Sfx_FireShotSup:
-                db 0FEh,   0, 21h,   1, 15h,0E0h, 22h,   1,0D1h,0A0h, 21h,   2, 14h,0C0h,0A0h, 80h
-                db  60h,0FFh
+                db $FE,$00,$21,$01,$15,$E0,$22,$01,$D1,$A0,$21,$02,$14,$C0,$A0,$80
+                db $60,$FF
 
 Sfx_ShotGunner:
-                db 0FEh,   0, 21h,   2, 1Dh,0D0h, 22h,   1,0E6h,   0, 21h,   2, 10h,0D0h, 12h,0D0h
-                db  14h,0D0h, 16h,0D0h, 18h,0D0h, 1Ah,0D0h, 10h,0A0h, 12h,0A0h, 14h,0A0h, 16h,0A0h
-                db  18h,0A0h, 1Ah,0A0h, 10h, 70h, 12h, 70h,0FFh
+                db $FE,$00,$21,$02,$1D,$D0,$22,$01,$E6,$00,$21,$02,$10,$D0,$12,$D0
+                db $14,$D0,$16,$D0,$18,$D0,$1A,$D0,$10,$A0,$12,$A0,$14,$A0,$16,$A0
+                db $18,$A0,$1A,$A0,$10,$70,$12,$70,$FF
 
 Sfx_GrenadeShot:
-                db 0FEh,   0, 22h,   2, 80h, 40h, 80h, 41h, 80h, 42h, 80h, 43h, 90h, 44h, 90h, 45h
-                db  90h, 46h, 90h, 47h,0A0h, 48h,0A0h, 49h,0A0h, 4Ah,0A0h, 4Bh,0B0h, 4Ch,0B0h, 4Dh
-                db 0B0h, 4Eh,0B0h, 4Fh,0C0h, 50h,0C0h, 51h,0C0h, 52h,0C0h, 53h,0C0h, 54h,0FFh
+                db $FE,$00,$22,$02,$80,$40,$80,$41,$80,$42,$80,$43,$90,$44,$90,$45
+                db $90,$46,$90,$47,$A0,$48,$A0,$49,$A0,$4A,$A0,$4B,$B0,$4C,$B0,$4D
+                db $B0,$4E,$B0,$4F,$C0,$50,$C0,$51,$C0,$52,$C0,$53,$C0,$54,$FF
 
 Sfx_ShellShot:
-                db 0FEh,   0, 21h,   3, 16h,0E0h, 1Ch,0E0h,0C0h,0B0h,0A0h, 90h, 80h, 70h, 60h,0FFh
+                db $FE,$00,$21,$03,$16,$E0,$1C,$E0,$C0,$B0,$A0,$90,$80,$70,$60,$FF
 
 Sfx_MissileShot:
-                db 0FEh,   0, 21h,   2, 12h,0E0h, 1Fh,0E0h, 14h,0D0h, 17h,0B0h, 1Ah, 90h, 1Dh, 80h
-                db  21h, 0Fh,0A0h, 90h, 80h, 70h,0FFh
+                db $FE,$00,$21,$02,$12,$E0,$1F,$E0,$14,$D0,$17,$B0,$1A,$90,$1D,$80
+                db $21,$0F,$A0,$90,$80,$70,$FF

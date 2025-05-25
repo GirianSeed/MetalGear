@@ -69,205 +69,205 @@ idxSprSet:
 ; +1: Pointer to sprite gfx
 ;----------------------------------------------------------------------------
 SprSetElevator:
-                db 38h
+                db $38
                 dw SprElevator
 SprSetNone:
-                db 0FFh
+                db $FF
 
 SprSetGuard:
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprGuard
-                db 0E0h
+                db $E0
                 dw SprZzz
-                db 0FFh
+                db $FF
 
 SprSetPrisoner:
-                db 0D0h
+                db $D0
                 dw SprPrisoner
-                db 0FFh
+                db $FF
 
 SprSetScorpion:
-                db 60h
+                db $60
                 dw SprScorpion
-                db 0FFh
+                db $FF
 
 SprSetJetGuard:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 60h
+                db $60
                 dw SprGuard
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprJetGuard
-                db 0E0h
+                db $E0
                 dw SprShadow
-                db 0FFh
+                db $FF
 
 SprSetDog:
-                db 60h
+                db $60
                 dw SprDog
-                db 0FFh
+                db $FF
 
 SprSetMadnar:
-                db 0D0h
+                db $D0
                 dw SprMadnar
-                db 0FFh
+                db $FF
 
 SprSetElen:
-                db 0D0h
+                db $D0
                 dw SprElen
-                db 0FFh
+                db $FF
 
 SprSetPrisoner2:
-                db 0D0h
+                db $D0
                 dw SprPrisoner2
-                db 0FFh
+                db $FF
 
 SprSetSGunner:
-                db 60h
+                db $60
                 dw SprShotGunner
-                db 0A0h
+                db $A0
                 dw SprSGunnerShot
-                db 0FFh
+                db $FF
 
 SprSetMGunKid:
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprMGunKid
-                db 0FFh
+                db $FF
 
 SprSetHindD:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprAirScrew
-                db 0E0h
+                db $E0
                 dw SprExplosionB
-                db 0FFh
+                db $FF
 
 SprSetTank:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 50h
+                db $50
                 dw SprBullet
-                db 54h
+                db $54
                 dw SprCannonShell
-                db 60h
+                db $60
                 dw SprTank
-                db 0E0h
+                db $E0
                 dw SprExplosionB
-                db 0FFh
+                db $FF
 
 SprSetBulldozer:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 60h
+                db $60
                 dw SprBulldozer
-                db 0E0h
+                db $E0
                 dw SprExplosionB
-                db 0FFh
+                db $FF
 
 SprSetArnold:
-                db 38h
+                db $38
                 dw SprArnold
-                db 0FFh
+                db $FF
 
 SprSetFireTrop:
-                db 50h
+                db $50
                 dw SprFlame
-                db 60h
+                db $60
                 dw SprFireTrooper
-                db 0FFh
+                db $FF
 
 SprSetCowardDuck:
-                db 50h
+                db $50
                 dw SprBoomenrang
-                db 60h
+                db $60
                 dw SprCowardDuck
-                db 0D0h
+                db $D0
                 dw SprPrisoner
-                db 0FFh
+                db $FF
 
 SprSetBigBoss:
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprBigBoss
-                db 0FFh
+                db $FF
 
 SprSetRolBarrel:
-                db 0D0h
+                db $D0
                 dw SprRollingBarrel
-                db 0FFh
+                db $FF
 
 SprSetLaserCam:
-                db 60h
+                db $60
                 dw SprExplosionB
 SprSetLaserCam2:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 0DCh
+                db $DC
                 dw SprLaser
-                db 0E0h
+                db $E0
                 dw SprCamera
-                db 0FFh
+                db $FF
 
 SprSetBridge:
-                db 0F4h
+                db $F4
                 dw SprBridge
-                db 0FFh
+                db $FF
 
 SprSetCamGuard:
-                db 0E0h
+                db $E0
                 dw SprCamera
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprGuard
-                db 0FFh
+                db $FF
 
 SprSetExpGuard:
-                db 38h
+                db $38
                 dw SprExplosionS
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprGuard
-                db 0E0h
+                db $E0
                 dw SprExplosionB
-                db 0FFh
+                db $FF
 
 SprSetGas:
-                db 0E0h
+                db $E0
                 dw SprGas
-                db 0FFh
+                db $FF
 
 SprSetPrisDog:
-                db 0D0h
+                db $D0
                 dw SprPrisoner
-                db 60h
+                db $60
                 dw SprDog
-                db 0FFh
+                db $FF
 
 SprZzzGuard:
-                db 50h
+                db $50
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprGuard
-                db 0E0h
+                db $E0
                 dw SprZzz
-                db 0FFh
+                db $FF
 
-                db 50h                                  ; (!?) Spriteset not used
+                db $50                                  ; (!?) Spriteset not used
                 dw SprBullet
-                db 60h
+                db $60
                 dw SprGuard
-                db 0E0h
+                db $E0
                 dw SprZzz
-                db 0FFh
+                db $FF

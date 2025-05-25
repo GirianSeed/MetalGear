@@ -109,18 +109,18 @@ SaveGameStaus5:
 ;---------------------------------------------------------------------------
 GameDataAreas:
                 dw Room
-                db 20h
+                db $20
                 dw PlayerControlMod                     ; 8=Intro scene, 7=Ladders climb, 6=ladders walk, 5=Air flow, 4=Parachute, 3=Dead, 2=Elevator, 1=Punch, 0=Walk
-                db 20h
+                db $20
                 dw MaxAmmoGun
-                db 50h
+                db $50
                 dw DoorOpenArray                        ; 0=Open/1=Closed status of all doors
-                db 0D8h
+                db $D8
                 dw Equipment                            ; +0 Item ID, +1 tens/units, +2 hundreds, +3 unused
-                db 90h
+                db $90
                 dw GameDataArea
-                db 0A0h
-                db 0FFh
+                db $A0
+                db $FF
 
 ;---------------------------------------------------------------------------
 ;

@@ -88,23 +88,23 @@ AddCharPassBuf:
 
 ;DS 4
 PassDS_4:
-                db    3, 47h, 2Fh, 1Eh,0FFh
+                db $03,$47,$2F,$1E,$FF
 
 ;ANTA WA ERAI
 PassANTA_WA:
-                db  19h, 11h, 20h, 1Dh, 47h, 11h, 2Bh, 47h, 11h, 2Eh, 24h, 11h,0FFh
+                db $19,$11,$20,$1D,$47,$11,$2B,$47,$11,$2E,$24,$11,$FF
 
 ;INTRUDER
 PassINTRUDER:
-                db  20h, 1Dh, 1Eh, 2Dh, 20h, 2Eh, 24h, 19h,0FFh
+                db $20,$1D,$1E,$2D,$20,$2E,$24,$19,$FF
 
 ;ISOLATION
 PassISOLATION:
-                db  24h, 23h, 19h, 2Eh, 11h, 26h, 23h, 2Fh, 19h,0FFh
+                db $24,$23,$19,$2E,$11,$26,$23,$2F,$19,$FF
 
 ;HIRAKE GOMA
 PassHIRAKE:
-                db  11h, 25h, 23h, 1Bh, 47h, 1Dh, 27h, 11h, 20h, 19h, 1Ah,0FFh
+                db $11,$25,$23,$1B,$47,$1D,$27,$11,$20,$19,$1A,$FF
 
 ChkPassword:
                 ld      hl, PasswordBuffer+0Bh

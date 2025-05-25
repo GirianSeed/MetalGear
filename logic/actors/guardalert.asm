@@ -165,9 +165,9 @@ AddEnemyShot2:
 ;(!?) Unused code
 
         IF (JAPANESE)
-                db 0CDh,0A5h, 83h,0DDh, 77h, 11h,0DDh, 36h, 12h, 1Eh,0CDh, 6Fh,0A9h,0C3h, 54h,0A9h
+                db $CD,$A5,$83,$DD,$77,$11,$DD,$36,$12,$1E,$CD,$6F,$A9,$C3,$54,$A9
         ELSE
-                db 0CDh, 56h, 83h,0DDh, 77h, 11h,0DDh, 36h, 12h, 1Eh,0CDh, 23h,0A9h,0C3h,   8,0A9h
+                db $CD,$56,$83,$DD,$77,$11,$DD,$36,$12,$1E,$CD,$23,$A9,$C3,$08,$A9
         ENDIF
 
 ;----------------------------------------------------------------------------

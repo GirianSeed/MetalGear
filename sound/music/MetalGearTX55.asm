@@ -4,91 +4,91 @@
 ;
 ;----------------------------------------------------------------------------
 MetalGearShare1:
-                db  50h, 60h, 70h, 80h, 90h,0A0h,0B1h,0FFh
+                db $50,$60,$70,$80,$90,$A0,$B1,$FF
 MetalGearShare2:
-                db  80h, 90h,0A0h,0B0h,0E2h,   0, 10h, 21h,0FFh
+                db $80,$90,$A0,$B0,$E2,$00,$10,$21,$FF
 MetalGearShare3:
-                db  10h, 20h, 30h, 40h, 50h, 60h, 71h,0FFh
+                db $10,$20,$30,$40,$50,$60,$71,$FF
 
 Mus_MetalGear:
-                db 0D6h,0C2h
+                db $D6,$C2
 Mus_MetalGearA2:
-                db 0D6h,0FBh, 13h,0ECh, 52h,0E3h, 47h,0D1h,0FAh,   0, 40h ; ...
-                db 0FEh,0FFh
+                db $D6,$FB,$13,$EC,$52,$E3,$47,$D1,$FA,$00,$40
+                db $FE,$FF
                 dw MetalGearShare1
-                db 0F9h,   0, 40h
-                db 0FEh,0FFh
+                db $F9,$00,$40
+                db $FE,$FF
                 dw MetalGearShare1
-                db 0F7h,   0, 40h
-                db 0FEh,0FFh
+                db $F7,$00,$40
+                db $FE,$FF
                 dw MetalGearShare1
-                db 0F5h,   0, 40h
-                db 0FEh,0FFh
+                db $F5,$00,$40
+                db $FE,$FF
                 dw MetalGearShare1
-                db 0D6h,0FAh, 13h, 40h, 60h, 76h,0D1h,0FAh,   0,0E3h, 70h
-                db 0FEh,0FFh
+                db $D6,$FA,$13,$40,$60,$76,$D1,$FA,$00,$E3,$70
+                db $FE,$FF
                 dw MetalGearShare2
-                db 0F9h,   0,0E3h, 70h
-                db 0FEh,0FFh
+                db $F9,$00,$E3,$70
+                db $FE,$FF
                 dw MetalGearShare2
-                db 0F8h,   0,0E3h, 70h
-                db 0FEh,0FFh
+                db $F8,$00,$E3,$70
+                db $FE,$FF
                 dw MetalGearShare2
-                db 0F5h,   0,0E3h, 70h, 80h, 90h,0A0h,0B0h,0E2h,   0, 10h, 2Ch,0C6h
-                db 0FEh,   2
+                db $F5,$00,$E3,$70,$80,$90,$A0,$B0,$E2,$00,$10,$2C,$C6
+                db $FE,$02
                 dw Mus_MetalGearA2
 MetalGearA3:
-                db 0D6h,0FBh, 13h,0ECh, 52h,0E2h,   7,0D1h,0F9h,   0,   0 ; ...
-                db 0FEh,0FFh
+                db $D6,$FB,$13,$EC,$52,$E2,$07,$D1,$F9,$00,$00
+                db $FE,$FF
                 dw MetalGearShare3
-                db 0F8h,   0,   0
-                db 0FEh,0FFh
+                db $F8,$00,$00
+                db $FE,$FF
                 dw MetalGearShare3
-                db 0F6h,   0,   0
-                db 0FEh,0FFh
+                db $F6,$00,$00
+                db $FE,$FF
                 dw MetalGearShare3
-                db 0F4h,   0,   0
-                db 0FEh,0FFh
+                db $F4,$00,$00
+                db $FE,$FF
                 dw MetalGearShare3
-                db 0D6h,0FAh, 13h,   0, 20h,0E3h,0B6h,0D1h,0F9h,   0,0B0h,0E2h,   0, 10h, 20h, 30h
-                db  40h, 50h, 61h,0F8h,   0,0E3h,0B0h,0E2h,   0, 10h, 20h, 30h, 40h, 50h, 61h,0F7h
-                db    0,0E3h,0B0h,0E2h,   0, 10h, 20h, 30h, 40h, 50h, 61h,0F4h,   0,0E3h,0B0h,0E3h
-                db    0, 10h, 20h, 30h, 40h, 50h, 6Ch,0C6h
-                db 0FEh,   2
+                db $D6,$FA,$13,$00,$20,$E3,$B6,$D1,$F9,$00,$B0,$E2,$00,$10,$20,$30
+                db $40,$50,$61,$F8,$00,$E3,$B0,$E2,$00,$10,$20,$30,$40,$50,$61,$F7
+                db $00,$E3,$B0,$E2,$00,$10,$20,$30,$40,$50,$61,$F4,$00,$E3,$B0,$E3
+                db $00,$10,$20,$30,$40,$50,$6C,$C6
+                db $FE,$02
                 dw MetalGearA3
-                db 0FEh,0FEh
+                db $FE,$FE
                 dw Mus_MetalGearA2
 
 Mus_MetalGearB:
-                db 0D6h,0C2h
+                db $D6,$C2
 Mus_MetalGearB2:
-                db 0D6h,0FDh, 33h,0E4h, 41h,0FAh
-                db  22h, 41h,0FDh, 33h, 41h,0FAh, 22h, 41h,0FDh, 33h, 41h,0FAh, 22h, 41h,0FDh, 33h
-                db  41h, 40h, 60h, 71h,0FAh, 22h, 71h,0FDh, 33h, 71h,0FAh, 22h, 71h,0FDh, 33h, 71h
-                db 0FAh, 22h, 71h,0FDh, 33h, 91h,0FAh, 22h, 91h
-                db 0FEh,   2
+                db $D6,$FD,$33,$E4,$41,$FA
+                db $22,$41,$FD,$33,$41,$FA,$22,$41,$FD,$33,$41,$FA,$22,$41,$FD,$33
+                db $41,$40,$60,$71,$FA,$22,$71,$FD,$33,$71,$FA,$22,$71,$FD,$33,$71
+                db $FA,$22,$71,$FD,$33,$91,$FA,$22,$91
+                db $FE,$02
                 dw Mus_MetalGearB2
 MetalGearB3:
-                db 0EFh,0E8h,0FDh, 33h,0E4h,   1,0FAh, 22h,   1,0FDh, 33h,   1,0FAh, 22h,   1,0FDh
-                db  33h,   1,0FAh, 22h,   1,0FDh, 33h,   1,   0,   0,0E4h,0B1h,0FAh, 22h,0B1h,0FDh
-                db  33h,0B1h,0FAh, 22h,0B1h,0FDh, 33h,0B1h,0FAh, 22h,0B1h,0FDh, 33h,0B1h,0FAh, 22h
-                db 0B1h
-                db 0FEh,   2
+                db $EF,$E8,$FD,$33,$E4,$01,$FA,$22,$01,$FD,$33,$01,$FA,$22,$01,$FD
+                db $33,$01,$FA,$22,$01,$FD,$33,$01,$00,$00,$E4,$B1,$FA,$22,$B1,$FD
+                db $33,$B1,$FA,$22,$B1,$FD,$33,$B1,$FA,$22,$B1,$FD,$33,$B1,$FA,$22
+                db $B1
+                db $FE,$02
                 dw MetalGearB3
-                db 0FEh,0FEh
+                db $FE,$FE
                 dw Mus_MetalGearB2
 
 Mus_MetalGearC:
-                db 0D6h,0C2h
+                db $D6,$C2
 Mus_MetalGearC2:
-                db 0EFh,0D6h,0E9h,   4, 41h, 41h, 41h, 41h, 41h, 41h, 41h, 40h, 40h, 71h, 71h, 71h
-                db  71h, 71h, 71h, 91h, 91h
-                db 0FEh,   2
+                db $EF,$D6,$E9,$04,$41,$41,$41,$41,$41,$41,$41,$40,$40,$71,$71,$71
+                db $71,$71,$71,$91,$91
+                db $FE,$02
                 dw Mus_MetalGearC2
 MetalGearC3:
-                db 0EFh,0E9h,   5,   1,   1,   1,   1,   1,   1,   1,   0,   0,0E9h,   4,0B1h,0B1h
-                db 0B1h,0B1h,0B1h,0B1h,0B1h,0B1h
-                db 0FEh,   2
+                db $EF,$E9,$05,$01,$01,$01,$01,$01,$01,$01,$00,$00,$E9,$04,$B1,$B1
+                db $B1,$B1,$B1,$B1,$B1,$B1
+                db $FE,$02
                 dw MetalGearC3
-                db 0FEh,0FEh
+                db $FE,$FE
                 dw Mus_MetalGearC2

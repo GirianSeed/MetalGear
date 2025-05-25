@@ -18,11 +18,11 @@ idxWeaponName:
 ; Weapon names
 ;
 ;----------------------------------------------------------------------------
-txtHandGun:     db  "HAND",   0, "GUN", #ff
-txtSMG:         db  "SMG", #ff
-txtGrenade:     db  "GRENADE", #ff
-txtRocket:      db  "ROCKET", #ff
-txtP_Bomb:      db  "P@BOMB", #ff
-txtLandMine:    db  "L@MAIN", #ff
-txtMissile:     db  "MISSILE", #ff
-txtSilencer:    db  "SILENCER", #ff
+txtHandGun:     db "HAND",0,"GUN",$FF
+txtSMG:         db "SMG",$FF
+txtGrenade:     db "GRENADE",$FF
+txtRocket:      db "ROCKET",$FF
+txtP_Bomb:      db "P@BOMB",$FF
+txtLandMine:    db "L@MAIN",$FF
+txtMissile:     db "MISSILE",$FF
+txtSilencer:    db "SILENCER",$FF

@@ -188,9 +188,9 @@ JetpackLogic:
                 ld      c, ID_BULLET
                 jp      AddEnemyShot2                   ; Shoot to the player
 
-                db 0DDh ; Ý
-                db  7Eh ; ~
-                db  11h
+                db $DD
+                db $7E
+                db $11
 
 ;----------------------------------------------------------------------------
 ;

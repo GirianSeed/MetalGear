@@ -5,1016 +5,1015 @@
 ;---------------------------------------------------------------------------
 ActorsRoom001:  db 3
                 db ID_GUARD_MEDIUM
-                dw 40B0h
+                dw $40B0
                 db ID_GUARD_SLOW
-                dw 5050h
+                dw $5050
                 db ID_GUARD_MEDIUM
-                dw 0C018h
+                dw $C018
 
 ActorsRoom002:  db 2
                 db ID_GUARD_SLOW
-                dw 4030h
+                dw $4030
                 db ID_GUARD_MEDIUM
-                dw 0A870h
+                dw $A870
 
 ActorsRoom003:  db 3
                 db ID_SPAWN_GUARD_ELEV
-                dw 8080h
+                dw $8080
                 db ID_GUARD_ELEVATOR
-                dw 5030h
+                dw $5030
                 db ID_GUARD_ELEVATOR
-                dw 9030h
+                dw $9030
 
 ActorsRoom004:  db 2
                 db ID_GUARD_MEDIUM
-                dw 8888h
+                dw $8888
                 db ID_GUARD_FAST
-                dw 9888h
+                dw $9888
 
 ActorsRoom005:  db 1
                 db ID_GUARD_EXIT_LORRY
-                dw 7078h
+                dw $7078
 
 ActorsRoom006:  db 2
                 db ID_DOG
-                dw 0A040h
+                dw $A040
                 db ID_DOG
-                dw 7030h
+                dw $7030
 
 ActorsRoom007:  db 2
                 db ID_GUARD_EXIT_LORRY
-                dw 5078h
+                dw $5078
                 db ID_GUARD_EXIT_LORRY
-                dw 7078h
+                dw $7078
 
-ActorsRoom009:  db 0Ch
+ActorsRoom009:  db 12
                 db ID_LAND_MINE
-                dw 6848h
+                dw $6848
                 db ID_LAND_MINE
-                dw 8848h
+                dw $8848
                 db ID_LAND_MINE
-                dw 0E848h
+                dw $E848
                 db ID_LAND_MINE
-                dw 8868h
+                dw $8868
                 db ID_LAND_MINE
-                dw 0D868h
+                dw $D868
                 db ID_LAND_MINE
-                dw 6878h
+                dw $6878
                 db ID_LAND_MINE
-                dw 9888h
+                dw $9888
                 db ID_LAND_MINE
-                dw 0C888h
+                dw $C888
                 db ID_LAND_MINE
-                dw 7898h
+                dw $7898
                 db ID_LAND_MINE
-                dw 98A8h
+                dw $98A8
                 db ID_LAND_MINE
-                dw 0B8A8h
+                dw $B8A8
                 db ID_LAND_MINE
-                dw 0C8B8h
+                dw $C8B8
 
 ActorsRoom010:  db 3
                 db ID_DOG
-                dw 0B090h
+                dw $B090
                 db ID_DOG
-                dw 5080h
+                dw $5080
                 db ID_DOG
-                dw 6090h
+                dw $6090
 
 ActorsRoom011:  db 4
                 db ID_SENTINEL
-                dw 5050h
+                dw $5050
                 db ID_SENTINEL
-                dw 0A050h
+                dw $A050
                 db ID_SENTINEL
-                dw 5880h
+                dw $5880
                 db ID_SENTINEL
-                dw 0A080h
+                dw $A080
 
 ActorsRoom012:  db 2
                 db ID_GUARD_SLOW
-                dw 8860h
+                dw $8860
                 db ID_GUARD_SLOW
-                dw 0E878h
+                dw $E878
 
 ActorsRoom013:  db 2
                 db ID_GUARD_SLOW
-                dw 5870h
+                dw $5870
                 db ID_GUARD_SLOW
-                dw 8860h
+                dw $8860
 
 ActorsRoom014:  db 3
                 db ID_CAMERA
-                dw 4098h
+                dw $4098
                 db ID_CAMERA
-                dw 0C050h
+                dw $C050
                 db ID_CAMERA
-                dw 0A0B8h
+                dw $A0B8
 
 ActorsRoom015:  db 2
                 db ID_GUARD_SLOW
-                dw 10A8h
+                dw $10A8
                 db ID_GUARD_SLOW
-                dw 0E830h
+                dw $E830
 
 ActorsRoom016:  db 1
                 db ID_GUARD_SWITCH
-                dw 6086h
+                dw $6086
 
 ActorsRoom017:  db 4
                 db ID_GUARD_SLOW
-                dw 5830h
+                dw $5830
                 db ID_GUARD_SLOW
-                dw 0C030h
+                dw $C030
                 db ID_GUARD_SLOW
-                dw 0A090h
+                dw $A090
                 db ID_GUARD_SLOW
-                dw 60B0h
+                dw $60B0
 
 ActorsRoom018:  db 5
                 db ID_GUARD_SLOW
-                dw 6070h
+                dw $6070
                 db ID_GUARD_SLOW
-                dw 2013h
+                dw $2013
                 db ID_GUARD_SLOW
-                dw 0E013h
+                dw $E013
                 db ID_GUARD_SLOW
-                dw 1888h
+                dw $1888
                 db ID_GUARD_SLOW
-                dw 0C890h
+                dw $C890
 
 ActorsRoom019:  db 2
                 db ID_GUARD_FAST
-                dw 0C878h
+                dw $C878
                 db ID_GUARD_FAST
-                dw 38A8h
+                dw $38A8
 
 ActorsRoom020:  db 1
                 db ID_MACH_GUN_KID
-                dw 0E034h
+                dw $E034
 
 ActorsRoom021:  db 1
                 db ID_CAMERA
-                dw 8058h
+                dw $8058
 
 ActorsRoom022:  db 2
                 db ID_GUARD_FAST
-                dw 20A8h
+                dw $20A8
                 db ID_GUARD_FAST
-                dw 0F0A8h
+                dw $F0A8
 
 ActorsRoom023:  db 3
                 db ID_GUARD_SLOW
-                dw 8028h
+                dw $8028
                 db ID_GUARD_SLOW
-                dw 6850h
+                dw $6850
                 db ID_GUARD_SLOW
-                dw 6890h
+                dw $6890
 
 ActorLaserRooms:db 1
                 db ID_LASER
-                dw 0
+                dw $0000
 
 ActorsRoom026:  db 1
                 db ID_GUARD_SLOW
-                dw 8070h
+                dw $8070
 
 ActorsRoom027:  db 2
                 db ID_CAMERA
-                dw 5840h
+                dw $5840
                 db ID_CAMERA
-                dw 6068h
+                dw $6068
 
 ActorsRoom028:  db 2
                 db ID_CAMERA
-                dw 2068h
+                dw $2068
                 db ID_GUARD_SLOW
-                dw 0A868h
+                dw $A868
 
 ActorsRoom029:  db 4
                 db ID_GAS
-                dw 8070h
+                dw $8070
                 db ID_GAS
-                dw 2850h
+                dw $2850
                 db ID_GAS
-                dw 0C030h
+                dw $C030
                 db ID_GAS
-                dw 0A0B0h
+                dw $A0B0
 
 ActorsRoom030:  db 2
                 db ID_GUARD_FAST
-                dw 0C890h
+                dw $C890
                 db ID_GUARD_FAST
-                dw 38B0h
+                dw $38B0
 
 ActorsRoom031:  db 2
                 db ID_CAMERA
-                dw 4070h
+                dw $4070
                 db ID_CAMERA
-                dw 0C040h
+                dw $C040
 
 ActorsRoom032:  db 1
                 db ID_GUARD_SLOW
-                dw 0B858h
+                dw $B858
 
 ActorsRoom033:  db 2
                 db ID_GUARD_MEDIUM
-                dw 7830h
+                dw $7830
                 db ID_GUARD_MEDIUM
-                dw 8830h
+                dw $8830
 
 ActorsRoom034:  db 2
                 db ID_GUARD_FAST
-                dw 7828h
+                dw $7828
                 db ID_GUARD_MEDIUM
-                dw 0C828h
+                dw $C828
 
 ActorsRoom035:  db 3
                 db ID_GUARD_SLOW
-                dw 6828h
+                dw $6828
                 db ID_GUARD_FAST
-                dw 1860h
+                dw $1860
                 db ID_GUARD_SLOW
-                dw 88B0h
+                dw $88B0
 
 ActorsRoom036:  db 3
                 db ID_CAMERA
-                dw 6038h
+                dw $6038
                 db ID_CAMERA
-                dw 0F078h
+                dw $F078
                 db ID_GUARD_SLOW
-                dw 8870h
+                dw $8870
 
 ActorsRoom037:  db 1
                 db ID_POWER_SWITCH
-                db  10h, 64h
+                db $10,$64
 
 ActorsRoom038:  db 2
                 db ID_GUARD_SLOW
-                dw 3850h
+                dw $3850
                 db ID_GUARD_FAST
-                dw 4088h
+                dw $4088
 
 ActorsRoom039:  db 4
                 db ID_SENTINEL
-                dw 4048h
+                dw $4048
                 db ID_SENTINEL
-                dw 0C048h
+                dw $C048
                 db ID_SENTINEL
-                dw 50B0h
+                dw $50B0
                 db ID_SENTINEL
-                dw 0B8B0h
+                dw $B8B0
 
 ActorsRoom040:  db 1
                 db ID_JETPACK_SWITCH
-                dw 4460h
+                dw $4460
 
 ActorsRoom043:  db 2
                 db ID_GUARD_MEDIUM
-                dw 1890h
+                dw $1890
                 db ID_GUARD_SLOW
-                dw 0E828h
+                dw $E828
 
 ActorsRoom044:  db 1
                 db ID_JETPACK_TAKEOFF
-                dw 8880h
+                dw $8880
 
 ActorsRoom045:  db 9
                 db ID_BRIDGE_CTRL
-                dw 7030h
+                dw $7030
                 db ID_BRIDGE
-                dw 7327h
+                dw $7327
                 db ID_BRIDGE
-                dw 7B37h
+                dw $7B37
                 db ID_BRIDGE
-                dw 7E47h
+                dw $7E47
                 db ID_BRIDGE
-                dw 8257h
+                dw $8257
                 db ID_BRIDGE
-                dw 8567h
+                dw $8567
                 db ID_BRIDGE
-                dw 8977h
+                dw $8977
                 db ID_BRIDGE
-                dw 8C87h
+                dw $8C87
                 db ID_BRIDGE
-                dw 9097h
+                dw $9097
 
 ActorsRoom046:  db 9
                 db ID_BRIDGE_CTRL
-                dw 9030h
+                dw $9030
                 db ID_BRIDGE
-                dw 8C27h
+                dw $8C27
                 db ID_BRIDGE
-                dw 8937h
+                dw $8937
                 db ID_BRIDGE
-                dw 8547h
+                dw $8547
                 db ID_BRIDGE
-                dw 8257h
+                dw $8257
                 db ID_BRIDGE
-                dw 7E67h
+                dw $7E67
                 db ID_BRIDGE
-                dw 7B77h
+                dw $7B77
                 db ID_BRIDGE
-                dw 7387h
+                dw $7387
                 db ID_BRIDGE
-                dw 7097h
+                dw $7097
 
 ActorsRoom047:  db 2
                 db ID_GUARD_MEDIUM
-                dw 3878h
+                dw $3878
                 db ID_GUARD_MEDIUM
-                dw 88A8h
+                dw $88A8
 
 ActorsRoom048:  db 1
                 db ID_JETPACK_TAKEOFF
-                dw 9286h
+                dw $9286
 
 ActorsRoom049:  db 3
                 db ID_GUARD_MEDIUM
-                dw 4028h
+                dw $4028
                 db ID_GUARD_MEDIUM
-                dw 8050h
+                dw $8050
                 db ID_GUARD_MEDIUM
-                dw 0C028h
+                dw $C028
 
 ActorsRoom050:  db 1
                 db ID_HIND_D
-                dw 8058h
+                dw $8058
 
 ActorsRoom051:  db 1
                 db ID_GUARD_SLOW
-                dw 8030h
+                dw $8030
 
 ActorsRoom052:  db 2
                 db ID_GUARD_FAST
-                dw 0E030h
+                dw $E030
                 db ID_GUARD_FAST
-                dw 1890h
+                dw $1890
 
 ActorsRoom055:  db 2
                 db ID_DOG
-                dw 4858h
+                dw $4858
                 db ID_DOG
-                dw 187Eh
+                dw $187E
 
 ActorsRoom056:  db 4
                 db ID_DOG
-                dw 5268h
+                dw $5268
                 db ID_DOG
-                dw 9062h
+                dw $9062
                 db ID_DOG
-                dw 7036h
+                dw $7036
                 db ID_DOG
-                dw 0DA64h
+                dw $DA64
 
 ActorsRoom057:  db 1
                 db ID_SHOT_GUNNER
-                dw 9038h
+                dw $9038
 
 ActorsRoom058:  db 2
                 db ID_DOG_BASEMENT
-                dw 2090h
+                dw $2090
                 db ID_SPAWN_DOG
-                dw 8060h
+                dw $8060
 
 ActorsRoom060:  db 2
                 db ID_DOG_BASEMENT
-                dw 2040h
+                dw $2040
                 db ID_SPAWN_DOG
-                dw 8060h
+                dw $8060
 
 ActorsRoom61_63:db 2
                 db ID_DOG_BASEMENT
-                dw 0E060h
+                dw $E060
                 db ID_SPAWN_DOG
-                dw 8060h
+                dw $8060
 
 ActorsRoom59_62:db 1
                 db ID_SPAWN_DOG
-                dw 8060h
+                dw $8060
 
 ActorsRoom064:  db 9
                 db ID_LAND_MINE
-                dw 1838h
+                dw $1838
                 db ID_LAND_MINE
-                dw 6848h
+                dw $6848
                 db ID_LAND_MINE
-                dw 9848h
+                dw $9848
                 db ID_LAND_MINE
-                dw 0D858h
+                dw $D858
                 db ID_LAND_MINE
-                dw 7868h
+                dw $7868
                 db ID_LAND_MINE
-                dw 0A868h
+                dw $A868
                 db ID_LAND_MINE
-                dw 8878h
+                dw $8878
                 db ID_LAND_MINE
-                dw 0B888h
+                dw $B888
                 db ID_LAND_MINE
-                dw 4898h
+                dw $4898
 
 ActorsRoom65_66:db 1
                 db ID_SPAWN_TANK_SHELL
-                dw 8010h
+                dw $8010
 
 ActorsRoom067:  db 1
                 db ID_TANK
-                dw 9010h
+                dw $9010
 
 ActorsRoom069:  db 4
                 db ID_SENTINEL
-                dw 6048h
+                dw $6048
                 db ID_SENTINEL
-                dw 7070h
+                dw $7070
                 db ID_SENTINEL
-                dw 9870h
+                dw $9870
                 db ID_DESERT_SECURITY
-                dw 8078h
+                dw $8078
 
 ActorsRoom070:  db 2
                 db ID_GUARD_SLOW
-                dw 5045h
+                dw $5045
                 db ID_GUARD_SLOW
-                dw 0A02Bh
+                dw $A02B
 
 ActorsRoom071:  db 1
                 db ID_BULLDOZER
-                db  20h, 70h
+                db $20,$70
 
 ActorsRoom074:  db 3
                 db ID_GUARD_SLOW
-                dw 0C028h
+                dw $C028
                 db ID_GUARD_SLOW
-                dw 3060h
+                dw $3060
                 db ID_GUARD_SLOW
-                dw 90ABh
+                dw $90AB
 
 ActorsRoom076:  db 1
                 db ID_PITFALL
-                dw 0A080h
+                dw $A080
 
 ActorsRoom077:  db 3
                 db ID_SENTINEL
-                dw 2828h
+                dw $2828
                 db ID_GUARD_SLOW
-                dw 0D888h
+                dw $D888
                 db ID_GUARD_SLOW
-                dw 0C0ABh
+                dw $C0AB
 
 ActorsRoom079:  db 4
                 db ID_GUARD_FAST
-                dw 4030h
+                dw $4030
                 db ID_GUARD_FAST
-                dw 20ABh
+                dw $20AB
                 db ID_GUARD_FAST
-                dw 9048h
+                dw $9048
                 db ID_GUARD_SLOW
-                dw 0E070h
+                dw $E070
 
 ActorsRoom080:  db 3
                 db ID_SENTINEL
-                dw 3070h
+                dw $3070
                 db ID_SENTINEL
-                dw 8830h
+                dw $8830
                 db ID_SENTINEL
-                dw 9858h
+                dw $9858
 
 ActorsRoom081:  db 4
                 db ID_GUARD_SLOW
-                dw 1C80h
+                dw $1C80
                 db ID_GUARD_SLOW
-                dw 2030h
+                dw $2030
                 db ID_GUARD_SLOW
-                dw 0E02Bh
+                dw $E02B
                 db ID_GUARD_SLOW
-                dw 0E0B0h
+                dw $E0B0
 
 ActorsRoom082:  db 4
                 db ID_SENTINEL
-                dw 3060h
+                dw $3060
                 db ID_SENTINEL
-                dw 0D050h
+                dw $D050
                 db ID_SENTINEL
-                dw 80B0h
+                dw $80B0
                 db ID_SENTINEL
-                dw 0E0B0h
+                dw $E0B0
 
 ActorsRoom083:  db 2
                 db ID_ARNOLD
-                dw 802Ch
+                dw $802C
                 db ID_ARNOLD
-                dw 80B2h
+                dw $80B2
 
 ActorsRoom084:  db 4
                 db ID_GUARD_FAST
-                dw 402Ah
+                dw $402A
                 db ID_GUARD_FAST
-                dw 3070h
+                dw $3070
                 db ID_GUARD_MEDIUM
-                dw 0E030h
+                dw $E030
                 db ID_GUARD_MEDIUM
-                dw 0A070h
+                dw $A070
 
 ActorsRoom085:  db 1
                 db ID_GUARD_SLOW
-                dw 6070h
+                dw $6070
 
 ActorsRoom086:  db 3
                 db ID_SENTINEL
-                dw 0D068h
+                dw $D068
                 db ID_GUARD_SLOW
-                dw 3040h
+                dw $3040
                 db ID_GUARD_SLOW
-                dw 58ABh
+                dw $58AB
 
-ActorsRoom087:  db    3
+ActorsRoom087:  db 3
                 db ID_SENTINEL
-                dw 686Ah
+                dw $686A
                 db ID_SENTINEL
-                dw 0D038h
+                dw $D038
                 db ID_SENTINEL
-                dw 0D0A0h
+                dw $D0A0
 
 ActorsRoom088:  db 3
                 db ID_SHOOTER
-                dw 6030h
+                dw $6030
                 db ID_SHOOTER
-                dw 9830h
+                dw $9830
                 db ID_SHOOTER
-                dw 0C030h
+                dw $C030
 
 ActorsRoom089:  db 1
                 db ID_JETPACK_TAKEOFF
-                dw 7CA0h
+                dw $7CA0
 
 ActorsRoom090:  db 3
                 db ID_SHOOTER
-                dw 4030h
+                dw $4030
                 db ID_SHOOTER
-                dw 8030h
+                dw $8030
                 db ID_SHOOTER
-                dw 0C030h
+                dw $C030
 
 ActorsRoom091:  db 4
                 db ID_SHOOTER
-                dw 4830h
+                dw $4830
                 db ID_SHOOTER
-                dw 487Ah
+                dw $487A
                 db ID_SHOOTER
-                dw 7830h
+                dw $7830
                 db ID_SHOOTER
-                dw 0C030h
+                dw $C030
 
 ActorsRoom092:  db 1
                 db ID_JETPACK_TAKEOFF
-                dw 0B050h
+                dw $B050
 
 ActorsRoom093:  db 1
                 db ID_PITFALL
-                dw 0C850h
+                dw $C850
 
 ActorsRoom094:  db 4
                 db ID_GAS
-                dw 6030h
+                dw $6030
                 db ID_GAS
-                dw 0C030h
+                dw $C030
                 db ID_GAS
-                dw 3080h
+                dw $3080
                 db ID_GAS
-                dw 80B0h
+                dw $80B0
 
 ActorsRoom095:  db 9
                 db ID_FIRE_TROOPER
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
                 db ID_FLAME
-                dw 7020h
+                dw $7020
 
 ActorsRoom096:  db 4
                 db ID_GAS
-                dw 3040h
+                dw $3040
                 db ID_GAS
-                dw 0C020h
+                dw $C020
                 db ID_GAS
-                dw 50B0h
+                dw $50B0
                 db ID_GAS
-                dw 0D080h
+                dw $D080
 
 ActorsRoom097:  db 4
                 db ID_GAS
-                dw 4030h
+                dw $4030
                 db ID_GAS
-                dw 2070h
+                dw $2070
                 db ID_GAS
-                dw 0E840h
+                dw $E840
                 db ID_GAS
-                dw 0B098h
+                dw $B098
 
 ActorsRoom098:  db 4
                 db ID_GAS
-                dw 6028h
+                dw $6028
                 db ID_GAS
-                dw 0C028h
+                dw $C028
                 db ID_GAS
-                dw 40A8h
+                dw $40A8
                 db ID_GAS
-                dw 0C088h
+                dw $C088
 
 ActorsRoom100:  db 4
                 db ID_GAS
-                dw 1850h
+                dw $1850
                 db ID_GAS
-                dw 6020h
+                dw $6020
                 db ID_GAS
-                dw 8070h
+                dw $8070
                 db ID_GAS
-                dw 0D0A0h
+                dw $D0A0
 
 ActorsRoom101:  db 4
                 db ID_GAS
-                dw 3028h
+                dw $3028
                 db ID_GAS
-                dw 6090h
+                dw $6090
                 db ID_GAS
-                dw 0A058h
+                dw $A058
                 db ID_GAS
-                dw 0E8B0h
+                dw $E8B0
 
 ActorsRoom102:  db 6
                 db ID_SCORPION
-                db  82h,0D1h
+                db $82,$D1
                 db ID_SCORPION
-                db  33h, 86h
+                db $33,$86
                 db ID_SCORPION
-                db  74h, 95h
+                db $74,$95
                 db ID_SCORPION
-                db  55h, 54h
+                db $55,$54
                 db ID_SCORPION
-                db  46h, 73h
+                db $46,$73
                 db ID_SCORPION
-                db  61h, 22h
+                db $61,$22
 
 ActorsRoom103:  db 6
                 db ID_SCORPION
-                dw 8661h
+                dw $8661
                 db ID_SCORPION
-                dw 9592h
+                dw $9592
                 db ID_SCORPION
-                dw 5433h
+                dw $5433
                 db ID_SCORPION
-                dw 7374h
+                dw $7374
                 db ID_SCORPION
-                dw 2285h
+                dw $2285
                 db ID_SCORPION
-                dw 0D146h
+                dw $D146
 
 ActorsRoom104:  db 4
                 db ID_LORRY_SHOOTER                     ; Used in the lorries in the desert before building 3
-                dw 1050h
+                dw $1050
                 db ID_LORRY_SHOOTER                     ; Used in the lorries in the desert before building 3
-                dw 5050h
+                dw $5050
                 db ID_LORRY_SHOOTER                     ; Used in the lorries in the desert before building 3
-                dw 9050h
+                dw $9050
                 db ID_LORRY_SHOOTER                     ; Used in the lorries in the desert before building 3
-                dw 0D050h
+                dw $D050
 
 ActorsRoom107:  db 4
                 db ID_GUARD_SLOW
-                dw 3040h
+                dw $3040
                 db ID_GUARD_SLOW
-                dw 0D050h
+                dw $D050
                 db ID_GUARD_SLOW
-                dw 30B0h
+                dw $30B0
                 db ID_GUARD_SLOW
-                dw 0D0B0h
+                dw $D0B0
 
 ActorsRoom108:  db 3
                 db ID_GUARD_REDALERT
-                dw 427Ch
+                dw $427C
                 db ID_GUARD_REDALERT
-                dw 9A6Eh
+                dw $9A6E
                 db ID_GUARD_REDALERT
-                dw 0DCAEh
+                dw $DCAE
 
 ActorsRoom109:  db 3
                 db ID_PITFALL
-                dw 8050h
+                dw $8050
                 db ID_PITFALL
-                dw 40A0h
+                dw $40A0
                 db ID_PITFALL
-                dw 0A0A0h
+                dw $A0A0
 
 ActorsRoom110:  db 1
                 db ID_POWER_SWITCH
-                db  10h, 44h
+                db $10,$44
 
 ActorsRoom111:  db 2
                 db ID_CAMERA_LASER
-                dw 6818h
+                dw $6818
                 db ID_CAMERA_LASER
-                dw 0A878h
+                dw $A878
 
 ActorsRoom112:  db 3
                 db ID_GAS
-                dw 5030h
+                dw $5030
                 db ID_GAS
-                dw 9070h
+                dw $9070
                 db ID_GAS
-                dw 40ACh
+                dw $40AC
 
 ActorsRoom113:  db 2
                 db ID_PITFALL
-                dw 4070h
+                dw $4070
                 db ID_PITFALL
-                dw 0C088h
+                dw $C088
 
-ActorsRoom114:  db 0Bh
+ActorsRoom114:  db 11
                 db ID_LAND_MINE
-                dw 7828h
+                dw $7828
                 db ID_LAND_MINE
-                dw 5838h
+                dw $5838
                 db ID_LAND_MINE
-                dw 7848h
+                dw $7848
                 db ID_LAND_MINE
-                dw 9848h
+                dw $9848
                 db ID_LAND_MINE
-                dw 0A858h
+                dw $A858
                 db ID_LAND_MINE
-                dw 6868h
+                dw $6868
                 db ID_LAND_MINE
-                dw 7888h
+                dw $7888
                 db ID_LAND_MINE
-                dw 9898h
+                dw $9898
                 db ID_GAS
-                dw 7868h
+                dw $7868
                 db ID_GAS
-                dw 9030h
+                dw $9030
                 db ID_GAS
-                dw 68A8h
+                dw $68A8
 
 ActorsRoom115:  db 2
                 db ID_CAMERA_LASER
-                dw 5810h
+                dw $5810
                 db ID_CAMERA_LASER
-                dw 0C010h
+                dw $C010
 
 ActorsRoom116:  db 1
                 db ID_POWER_SWITCH                      ; (!?) It is hidden!
-                db  10h, 20h
+                db $10,$20
 
 ActorsRoom118:  db 3
                 db ID_METAL_GEAR
-                dw 8080h
+                dw $8080
                 db ID_CAMERA_LASER
-                dw 5818h
+                dw $5818
                 db ID_CAMERA_LASER
-                dw 0A818h
+                dw $A818
 
 ActorsRoom119:  db 1
                 db ID_BIG_BOSS
-                dw 3038h
+                dw $3038
 
 ActorsRoom120:  db 9
                 db ID_LAND_MINE
-                dw 3828h
+                dw $3828
                 db ID_LAND_MINE
-                dw 8828h
+                dw $8828
                 db ID_LAND_MINE
-                dw 0D838h
+                dw $D838
                 db ID_LAND_MINE
-                dw 0A848h
+                dw $A848
                 db ID_LAND_MINE
-                dw 6858h
+                dw $6858
                 db ID_LAND_MINE
-                dw 2868h
+                dw $2868
                 db ID_LAND_MINE
-                dw 8868h
+                dw $8868
                 db ID_LAND_MINE
-                dw 0E868h
+                dw $E868
                 db ID_LAND_MINE
-                dw 3888h
+                dw $3888
 
 ActorsRoom123:  db 3
                 db ID_PITFALL
-                dw 3080h
+                dw $3080
                 db ID_PITFALL
-                dw 8080h
+                dw $8080
                 db ID_PITFALL
-                dw 0D080h
+                dw $D080
 
 ActorsRoom124:  db 2
                 db ID_PITFALL
-                dw 4060h
+                dw $4060
                 db ID_PITFALL
-                dw 0C080h
+                dw $C080
 
 ActorsRoom127:  db 1
                 db ID_GUARD_ALERT
-                dw 4870h
+                dw $4870
 
 ActorsRoom131:  db 4
                 db ID_GUARD_ALERT
-                dw 4636h
+                dw $4636
                 db ID_GUARD_ALERT
-                dw 6836h
+                dw $6836
                 db ID_GUARD_ALERT
-                dw 385Ah
+                dw $385A
                 db ID_GUARD_ALERT
-                dw 6682h
+                dw $6682
 
 ActorsRoom132:  db 1
                 db ID_GUARD_ALERT
-                dw 4870h
+                dw $4870
 
 ActorsRoom138:  db 1
                 db ID_GUARD_SLOW
-                dw 0B858h
+                dw $B858
 
 ActorsRoom140:  db 6
                 db ID_SENTINEL
-                dw 3850h
+                dw $3850
                 db ID_SLEEPING_SIGN
-                dw 382Dh
+                dw $382D
                 db ID_SENTINEL
-                dw 6850h
+                dw $6850
                 db ID_SLEEPING_SIGN
-                dw 682Dh
+                dw $682D
                 db ID_SENTINEL
-                dw 5888h
+                dw $5888
                 db ID_SLEEPING_SIGN
-                dw 5865h
+                dw $5865
 
 ActorsRoom141:  db 1
                 db ID_ROLLING_BARREL
-                dw 8008h
+                dw $8008
 
 ActorsRoom205:  db 2
                 db ID_ROLLING_BARREL
-                dw 8008h
+                dw $8008
                 db ID_PITFALL
-                dw 0A060h
+                dw $A060
 
 ActorsRoom150:  db 4
                 db ID_GUARD_SILENCER
-                dw 1896h
+                dw $1896
                 db ID_GUARD_SILENCER
-                dw 503Ah
+                dw $503A
                 db ID_GUARD_SILENCER
-                dw 903Ah
+                dw $903A
                 db ID_GUARD_SILENCER
-                dw 0C896h
+                dw $C896
 
 ActorsRoom154:  db 1
                 db ID_GUARD_ALERT
-                dw 5060h
+                dw $5060
 
 ActorsRoom164:  db 1
                 db ID_GREY_FOX
-                dw 8060h
+                dw $8060
 
 ActorsRoom166:  db 2
                 db ID_HELPME_VOICE
-                dw 8060h
+                dw $8060
                 db ID_PITFALL
-                dw 0A060h
+                dw $A060
 
 ActorsRoom167:  db 1
                 db ID_ELLEN
-                dw 8060h
+                dw $8060
 
 ActorsRoom178:  db 1
                 db ID_GUARD_SLOW
-                dw 9860h
+                dw $9860
 
 ActorsRoom181:  db 2
                 db ID_GUARD_ALERT
-                dw 8866h
+                dw $8866
                 db ID_GUARD_ALERT
-                dw 0BC32h
+                dw $BC32
 
 ActorsRoom182:  db 1
                 db ID_MADNAR
-                dw 8060h
+                dw $8060
 
 ActorsRoom183:  db 2
                 db ID_GUARD_REDALERT
-                dw 5072h
+                dw $5072
                 db ID_GUARD_REDALERT
-                dw 0A154h
+                dw $A154
 
 ActorsRoom187:  db 2
                 db ID_GUARD_ALERT
-                dw 507Ah
+                dw $507A
                 db ID_GUARD_ALERT
-                dw 0BE62h
+                dw $BE62
 
 ActorsRoom189:  db 1
                 db ID_FAKE_MADNAR
-                dw 8060h
+                dw $8060
 
 ActorsRoom193:  db 5
                 db ID_COWARD_DUCK
-                db  38h, 80h
+                db $38,$80
                 db ID_PRISONER1
-                db  30h, 68h
+                db $30,$68
                 db ID_PRISONER1
-                db  30h, 98h
+                db $30,$98
                 db ID_PRISONER1
-                db  54h, 80h
+                db $54,$80
                 db ID_PITFALL
-                db  78h, 80h
+                db $78,$80
 
 ActorsRoom207:  db 2
                 db ID_DOG
-                dw 4F3Eh
+                dw $4F3E
                 db ID_DOG
-                dw 8876h
+                dw $8876
 
 ActorsRoom198:  db 1
                 db ID_PRISONER1
-                dw 8060h
+                dw $8060
 
 ActorsRoom201:  db 1
                 db ID_PITFALL
-                dw 0A060h
+                dw $A060
 
 ActorsRoom206:  db 2
                 db ID_SHOOTER
-                dw 5090h
+                dw $5090
                 db ID_SHOOTER
-                dw 0B090h
+                dw $B090
 
 ActorsRoom208:  db 6
                 db ID_SCORPION
-                dw 0B028h
+                dw $B028
                 db ID_SCORPION
-                dw 9870h
+                dw $9870
                 db ID_SCORPION
-                dw 6030h
+                dw $6030
                 db ID_SCORPION
-                dw 6385h
+                dw $6385
                 db ID_SCORPION
-                dw 9060h
+                dw $9060
                 db ID_SCORPION
-                dw 3174h
+                dw $3174
 
 ActorsRoom209:  db 6
                 db ID_SCORPION
-                dw 309Eh
+                dw $309E
                 db ID_SCORPION
-                dw 0CC5Ch
+                dw $CC5C
                 db ID_SCORPION
-                dw 3A56h
+                dw $3A56
                 db ID_SCORPION
-                dw 9880h
+                dw $9880
                 db ID_SCORPION
-                dw 9C3Ah
+                dw $9C3A
                 db ID_SCORPION
-                dw 6240h
+                dw $6240
 
 ActorsRoom216:  db 3
                 db ID_GUARD_REDALERT
-                dw 724Ch
+                dw $724C
                 db ID_GUARD_REDALERT
-                dw 567Ah
+                dw $567A
                 db ID_GUARD_REDALERT
-                dw 0C84Ah
+                dw $C84A
 
 ActorsRoom220:  db 3
                 db ID_PITFALL
-                dw 4080h
+                dw $4080
                 db ID_PITFALL
-                dw 8040h
+                dw $8040
                 db ID_PITFALL
-                dw 0C080h
+                dw $C080
 
 ActorsRoom221:  db 3
                 db ID_PITFALL
-                dw 3060h
+                dw $3060
                 db ID_PITFALL
-                dw 8080h
+                dw $8080
                 db ID_PITFALL
-                dw 0D040h
+                dw $D040
 
 ActorPrisoner:  db 1
                 db ID_PRISONER1
-                dw 8060h
+                dw $8060
 
-NoActorsInRoom: db    0
-;3Ah
+NoActorsInRoom: db 0
 
 ;----------------------------------------------------------------------------
 ;

@@ -4,9 +4,9 @@
 ;
 ;----------------------------------------------------------------------------
 
-                org #4000
+                org $4000
 
-                db  41h, 42h
+                db "AB"
                 dw Start
                 dw 0
                 dw 0
@@ -15,8 +15,8 @@
                 dw 0
                 dw 0
 
-                db  43h, 44h                            ; RC id
-                db    7, 50h                            ; RC750
+                db "CD"                                 ; RC id
+                db $07,$50                              ; RC750
                 dw 0
                 dw 0
                 dw 0
@@ -1634,12 +1634,12 @@ ChkRadioCalls5:
 ;----------------------------------------------------------------------------
 
 RoomsNoAlert:
-                db    6,   9,  10                       ; Building 1 courtyard
-                db 20                                   ; Machine Gun Kid room
-                db  102, 103, 120                       ; Desert tanks shells
-                db  173, 174, 175                       ; Lorries
-                db  208, 209                            ; Desert scorpions
-                db  135, 199                            ; Moving lorries
+                db   6,   9,  10                        ; Building 1 courtyard
+                db  20                                  ; Machine Gun Kid room
+                db 102, 103, 120                        ; Desert tanks shells
+                db 173, 174, 175                        ; Lorries
+                db 208, 209                             ; Desert scorpions
+                db 135, 199                             ; Moving lorries
                 db 133                                  ; Dr. Prettrovich is too late
                 db 129                                  ; Isolated room. Prisoner informs Dr. Pettrovich was moved to building 2
                 db 143                                  ; Parachute cell
@@ -2727,9 +2727,9 @@ SetSnakePal:
                 jp      SetPalette
 
 SnakePal:
-                db    7, 12h,   2
-                db  0Ah, 63h,   4
-                db 0FFh
+                db $07,$12,$02
+                db $0A,$63,$04
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -2830,15 +2830,15 @@ SetBanks1_2_3_d:
 ;
 ;----------------------------------------------------------------------------
 ColorsTileset:
-                db    1,   3,   5,   8,   9, 0Ch, 0Eh, 0Fh
+                db $01,$03,$05,$08,$09,$0C,$0E,$0F
 ColorsItems:
-                db    0,   6,   7,   8, 0Ah, 0Ch, 0Eh, 0Fh
+                db $00,$06,$07,$08,$0A,$0C,$0E,$0F
 ColorsCameras:
-                db    0,   2, 0Dh, 0Fh
+                db $00,$02,$0D,$0F
 ColorsPitfall:
-                db    0,   5,   9, 0Fh
+                db $00,$05,$09,$0F
 ColSnakePic:
-                db    2,   4,   8, 0Bh, 0Dh, 0Ch, 0Eh, 0Fh
+                db $02,$04,$08,$0B,$0D,$0C,$0E,$0F
 
 ;----------------------------------------------------------------------------
 ;
@@ -3738,22 +3738,22 @@ SetDefaultPal2:
 ; Default palette
 ;----------------------------------------------------------------------------
 DefaultPalette:
-                db    0,   0
-                db    0,   0
-                db  11h,   6
-                db  33h,   7
-                db  17h,   1
-                db  27h,   3
-                db  51h,   1
-                db  27h,   6
-                db  71h,   1
-                db  73h,   3
-                db  61h,   6
-                db  64h,   6
-                db  11h,   4
-                db  65h,   2
-                db  55h,   5
-                db  77h,   7
+                db $00,$00
+                db $00,$00
+                db $11,$06
+                db $33,$07
+                db $17,$01
+                db $27,$03
+                db $51,$01
+                db $27,$06
+                db $71,$01
+                db $73,$03
+                db $61,$06
+                db $64,$06
+                db $11,$04
+                db $65,$02
+                db $55,$05
+                db $77,$07
 
 ;----------------------------------------------------------------------------
 ;
@@ -6753,14 +6753,9 @@ dummyAddr5:
 ;
 ;----------------------------------------------------------------------------
 WalkSpeeds:
-                dw 100h
-                dw -100h
-
-                dw 140h
-                dw -140h
-
-                dw 180h
-                dw -180h
+                dw 256, -256
+                dw 320, -320
+                dw 384, -384
 
 ;----------------------------------------------------------------------------
 ;
@@ -7082,10 +7077,10 @@ AnimZzzSign2:
 dummyAddr6:
                 ret
 AnimZzzFrames:
-                db    1                                 ; AnimZzzFrames
-                db    2
-                db    1
-                db    0
+                db 1                                    ; AnimZzzFrames
+                db 2
+                db 1
+                db 0
 
 ;----------------------------------------------------------------------------
 ;
@@ -7297,9 +7292,9 @@ CoordToBuffTile:
 ;
 ;----------------------------------------------------------------------------
 txtPause:
-                dw 586Ch
-                db  "PAUSE"
-                db 0FFh
+                dw $586C
+                db "PAUSE"
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -8062,31 +8057,31 @@ GetTextBoxXYSize2:
 ; Iterations, SY, SX, StepY, StepX, StepNY, StepNX, Color
 ;----------------------------------------------------------------------------
 TextBoxEffectDat:
-                db    8, 1Fh,0BCh,   1,   4,   2,   8, 0Eh
-                db  13h, 1Ah, 78h,   1,   4,   4, 10h, 0Eh
-                db  1Eh, 22h, 94h,   1,   2,   4, 10h, 0Eh
-                db  21h, 94h, 80h,   1,   3,   1,   3, 0Eh
-                db  0Ch, 1Ah, 78h,   1,   6,   4, 10h, 0Eh
+                db $08,$1F,$BC,$01,$04,$02,$08,$0E
+                db $13,$1A,$78,$01,$04,$04,$10,$0E
+                db $1E,$22,$94,$01,$02,$04,$10,$0E
+                db $21,$94,$80,$01,$03,$01,$03,$0E
+                db $0C,$1A,$78,$01,$06,$04,$10,$0E
 
 ;----------------------------------------------------------------------------
 ; textY, textX, clearNY, clearNY, IntroY, introX
 ;----------------------------------------------------------------------------
 TextXYSize:
-                db  1Ch,0A4h,   8, 38h, 1Ch,0D4h
-                db  0Ch, 34h, 20h, 98h, 24h,0C4h
-                db    8, 5Ch, 38h, 80h, 38h,0D4h
-                db  78h, 24h, 38h,0B8h,0A8h,0D4h
-                db  12h, 38h, 14h, 88h, 1Eh,0B8h
+                db $1C,$A4,$08,$38,$1C,$D4
+                db $0C,$34,$20,$98,$24,$C4
+                db $08,$5C,$38,$80,$38,$D4
+                db $78,$24,$38,$B8,$A8,$D4
+                db $12,$38,$14,$88,$1E,$B8
 
 ;----------------------------------------------------------------------------
 ; window Y, window X, window NY, window NX
 ;----------------------------------------------------------------------------
 TextBoxXYSize:
-                db  18h,0A0h, 11h, 40h
-                db    8, 30h, 29h,0A0h
-                db    4, 58h, 40h, 88h
-                db  74h, 20h, 48h,0C8h
-                db    8, 30h, 29h,0A0h
+                db $18,$A0,$11,$40
+                db $08,$30,$29,$A0
+                db $04,$58,$40,$88
+                db $74,$20,$48,$C8
+                db $08,$30,$29,$A0
 
 ;----------------------------------------------------------------------------
 ;
@@ -9694,10 +9689,10 @@ HideGrenadTargtSpr:
 ;
 ;----------------------------------------------------------------------------
 TargetXYOffsets:
-                dw 0F9ACh
-                dw 0F936h
-                dw 0B2F0h
-                dw 3CF0h
+                dw $F9AC
+                dw $F936
+                dw $B2F0
+                dw $3CF0
 
 ;----------------------------------------------------------------------------
 ;
@@ -10829,16 +10824,16 @@ PrintDigit:
 ;
 ;----------------------------------------------------------------------------
 RedDigitTiles:
-                db 0A4h,0A5h
-                db 0A6h,0A7h
-                db 0A8h,0A9h
-                db 0AAh,0ABh
-                db 0ACh,0A7h
-                db 0ADh,0ABh
-                db 0ADh,0A5h
-                db 0AEh,0A7h
-                db 0AFh,0A5h
-                db 0AFh,0ABh
+                db $A4,$A5
+                db $A6,$A7
+                db $A8,$A9
+                db $AA,$AB
+                db $AC,$A7
+                db $AD,$AB
+                db $AD,$A5
+                db $AE,$A7
+                db $AF,$A5
+                db $AF,$AB
 
 ;----------------------------------------------------------------------------
 ;
@@ -10846,9 +10841,9 @@ RedDigitTiles:
 ;
 ;----------------------------------------------------------------------------
 txtRecv:
-                dw 4038h
-                db  "RECV"
-                db 0FFh
+                dw $4038
+                db "RECV"
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -10856,9 +10851,9 @@ txtRecv:
 ;
 ;----------------------------------------------------------------------------
 txtSend:
-                dw 3838h
-                db  "SEND"
-                db 0FFh
+                dw $3838
+                db "SEND"
+                db $FF
 
 ;----------------------------------------------------------------------------
 ;
@@ -12161,10 +12156,10 @@ DrawBinocRoom2:
 
 ArrowsChars:
                 db 0
-                db 9Ah                                  ; Arrow up
-                db 9Bh                                  ; Arrow down
-                db 99h                                  ; Arrow left
-                db 3Ch                                  ; Arrow right
+                db $9A                                  ; Arrow up
+                db $9B                                  ; Arrow down
+                db $99                                  ; Arrow left
+                db $3C                                  ; Arrow right
 
 ;---------------------------------------------------------------------------
 ;
@@ -12814,9 +12809,9 @@ KillActor3:
 ;
 ;----------------------------------------------------------------------------
 IdsKillLogic:
-                db    0,   1, 15h, 50h, 61h, 10h, 11h,   0, 66h, 14h, 44h,   1, 11h, 11h,   1, 11h
-                db  11h,   1,   6,   0, 10h,   7,   0,   1, 32h, 22h, 50h, 13h, 10h,   0,   0,   0
-                db    0
+                db $00,$01,$15,$50,$61,$10,$11,$00,$66,$14,$44,$01,$11,$11,$01,$11
+                db $11,$01,$06,$00,$10,$07,$00,$01,$32,$22,$50,$13,$10,$00,$00,$00
+                db $00
 
 ;----------------------------------------------------------------------------
 ;
@@ -13078,13 +13073,13 @@ ClearMetalGear:
                 jp      BossDefeatedLogic3              ; Remove explosion sprites
 
 ExplosionSprColx4:
-                dw 4806h
+                dw $4806
 ExplosionSprColx3:
-                dw 4806h
+                dw $4806
 ExplosionSprColx2:
-                dw 4806h
+                dw $4806
 ExplosionSprColx1:
-                dw 4806h
+                dw $4806
 EmptySprColx6:
                 dw 0
                 dw 0
@@ -13095,23 +13090,23 @@ EmptySprColx6:
 
 ; Big white explosion and 2 small (fire)
 ExpSprColWhtRed:
-                dw 0E0Eh
-                dw 0E0Eh
-                dw 4806h
-                dw 4806h
+                dw $0E0E
+                dw $0E0E
+                dw $4806
+                dw $4806
                 dw 0
                 dw 0
                 dw 0
                 dw 0
                 dw 0
 ExplosSprColWht:
-                dw 0E0Eh
-                dw 0E0Eh
-                dw 4806h
+                dw $0E0E
+                dw $0E0E
+                dw $4806
                 dw 0
 ExplosSprColWht2:
-                dw 0E0Eh
-                dw 0E0Eh
+                dw $0E0E
+                dw $0E0E
                 dw 0
                 dw 0
 
@@ -13247,9 +13242,9 @@ DrawDestroyPowSw:
 ; X coordinates of destroyed power switch tiles
 ; Y is always #10
 ;----------------------------------------------------------------------------
-                dw 3830h
+                dw $3830
 PowSwOffGfxX:
-                dw 7050h
+                dw $7050
 
 ;----------------------------------------------------------------------------
 ;
@@ -13293,5 +13288,5 @@ RestLaserBack_:
         include "logic/actors.asm"
 
                 ; Fill empty space
-                ds      (#C000-$),#ff
-                ASSERT  $=#C000
+                ds      ($C000-$),$FF
+                ASSERT  $=$C000

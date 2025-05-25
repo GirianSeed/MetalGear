@@ -221,10 +221,10 @@ DummyCamLogic:
 ;
 ;----------------------------------------------------------------------------
 CameraDrawOffsets:
-                db -0Ch,   0
-                db  2Bh,   0
-                db    0,-11h
-                db    0, 10h
+                db -12,   0
+                db  43,   0
+                db   0, -17
+                db   0,  16
 
 ;----------------------------------------------------------------------------
 ;
@@ -378,10 +378,10 @@ LaserCameraShot9:
 
 ; Room 115 X coordinates?
 
-                db 10h                                  ; Left cam left limit?
-                db 58h                                  ; Left cam right limit?
-                db 0C0h                                 ; Right cam left limit?
-                db 0F0h                                 ; Right cam right limit?
+                db $10                                  ; Left cam left limit?
+                db $58                                  ; Left cam right limit?
+                db $C0                                  ; Right cam left limit?
+                db $F0                                  ; Right cam right limit?
 
 LaserCamDummy:
                 ret
