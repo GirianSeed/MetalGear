@@ -2,6 +2,6 @@
 ; Equipment menu texts
 ;----------------------------------------------------------------------------
 txtEquipmentSel:
-                dw $1040
-                db "EQUIPMENT",0,0,"SELECT"
-                db $FF
+		dw $1040
+		db "EQUIPMENT",0,0,"SELECT"
+		db $FF

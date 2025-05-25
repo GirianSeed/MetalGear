@@ -35,7 +35,7 @@
 ;----------------------------------------------------------------------------
 
 
-JAPANESE        equ     0       ; 1 = Japanese version, 0 = English version
+JAPANESE	equ	0	; 1 = Japanese version, 0 = English version
 
 ;----------------------------------------------------------------------------
 ;
@@ -43,11 +43,11 @@ JAPANESE        equ     0       ; 1 = Japanese version, 0 = English version
 ;
 ;----------------------------------------------------------------------------
 
-        include "constants/bios.asm"
-        include "constants/SystemVariables.asm"
-        include "constants/structures.asm"
-        include "constants/Enums.asm"
-        include "Variables.asm"
+		include "constants/bios.asm"
+		include "constants/SystemVariables.asm"
+		include "constants/structures.asm"
+		include "constants/Enums.asm"
+		include "Variables.asm"
 
 ;----------------------------------------------------------------------------
 ;
@@ -55,10 +55,10 @@ JAPANESE        equ     0       ; 1 = Japanese version, 0 = English version
 ;
 ;----------------------------------------------------------------------------
 
-        include "Banks0123.asm"
-        include "Banks456.asm"
-        include "Banks789.asm"
-        include "BanksABC.asm"
-        include "BanksDEF.asm"
+		include "Banks0123.asm"
+		include "Banks456.asm"
+		include "Banks789.asm"
+		include "BanksABC.asm"
+		include "BanksDEF.asm"
 
-                end
+		end

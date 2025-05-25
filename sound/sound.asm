@@ -5,7 +5,7 @@
 ;
 ;----------------------------------------------------------------------------
 
-        include "bgmdriver.asm"
-        include "instruments.asm"
-        include "setsound.asm"
-        include "sounddata.asm"
+		include "bgmdriver.asm"
+		include "instruments.asm"
+		include "setsound.asm"
+		include "sounddata.asm"

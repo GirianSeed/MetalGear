@@ -6,37 +6,37 @@
 ;----------------------------------------------------------------------------
 
 SetHUDSprMask:
-                ld      de, SprAttRAM
-                ld      hl, MaskSprAttrib               ; Spr att: Y, X, num, EC-color
-                ld      b, 8                            ; 8 sprites
+		ld	de, SprAttRAM
+		ld	hl, MaskSprAttrib		; Spr att: Y, X, num, EC-color
+		ld	b, 8				; 8 sprites
 
 SetHUDSprMask2:
-                push    hl
-                ld      c, 8                            ; 2 sprites x 4 attributes bytes
+		push	hl
+		ld	c, 8				; 2 sprites x 4 attributes bytes
 
 SetHUDSprMask3:
-                ld      a, (hl)
-                ld      (de), a
-                inc     hl
-                inc     de
-                dec     c
-                jr      nz, SetHUDSprMask3
+		ld	a, (hl)
+		ld	(de), a
+		inc	hl
+		inc	de
+		dec	c
+		jr	nz, SetHUDSprMask3
 
-                pop     hl
-                djnz    SetHUDSprMask2
+		pop	hl
+		djnz	SetHUDSprMask2
 
-                ld      de, SpritesColors
-                ld      a, 0Fh
+		ld	de, SpritesColors
+		ld	a, 0Fh
 
 SetHUDSprMask4:
-                ld      (de), a
-                inc     de
-                djnz    SetHUDSprMask4
-                ret
+		ld	(de), a
+		inc	de
+		djnz	SetHUDSprMask4
+		ret
 
 ;
 ; Attributes for 2 sprites at (192,255) and (208,255)
 ;
 MaskSprAttrib:
-                db $C0,$FF,$00,$E0
-                db $D0,$FF,$00,$E0                      ; Spr att: Y, X, num, EC-color
+		db $C0,$FF,$00,$E0
+		db $D0,$FF,$00,$E0			; Spr att: Y, X, num, EC-color
