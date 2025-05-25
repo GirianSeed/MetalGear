@@ -3,15 +3,16 @@
 ; GFX: Crates
 ;
 ;----------------------------------------------------------------------------
-GfxCrates:          db 0FFh,0FFh,0FFh,0FFh, 80h,0FFh,0C0h, 80h,0C0h,0DFh, 8Fh,0CFh,0B8h, 98h, 98h,0DEh
-                    db  88h,0CEh,0BFh, 9Eh, 9Fh,0DFh, 89h,0C9h,0FFh,0FFh,0FFh,0DBh,   0,0DBh, 24h,   0
-                    db    0,0FFh,0FFh,0FFh,0FFh,0C0h,0C0h, 30h, 30h, 30h, 8Ch, 0Ch, 8Ch,0E3h, 83h,0E3h
-                    db 0DDh, 88h,0C8h,0DCh, 88h,0C8h,0DCh, 88h,0C8h,0DDh, 89h,0C9h,0BFh, 9Eh, 9Fh,0DEh
-                    db  88h,0CEh,0B8h, 98h, 98h,0DFh, 8Fh,0CFh,0FFh, 66h, 7Fh, 7Eh, 18h, 1Eh, 78h, 60h
-                    db  78h,0E1h, 81h,0E1h, 87h,   6, 86h, 1Eh, 18h, 18h, 78h, 60h, 60h,0FFh,0FFh,0FFh
-                    db 0DFh, 80h,0CFh,0C0h, 80h,0C0h,0FFh, 80h,0C0h,0FFh,0FFh,0FFh,0FFh, 80h, 80h,0FEh
-                    db  80h, 9Eh,0DFh, 9Fh, 9Fh,0DFh, 9Fh, 9Fh,0DBh,   0,0DBh, 24h,   0,   0,0FFh,   0
-                    db    0,0FFh,0FFh,0FFh,0FFh,   0,   0, 80h,   0, 80h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                    db 0DFh, 90h, 90h,0FFh, 80h, 80h,0F8h, 80h, 98h,0DFh, 9Fh, 9Fh,0DFh, 9Fh, 9Fh,0DFh
-                    db  90h, 90h,0FFh, 80h, 80h,0FFh,0FFh,0FFh,0FFh,   0,   0,0FFh,   0,   0, 80h,   0
-                    db  80h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,   0,   0,0FFh,   0,   0,0FFh,0FFh,0FFh
+GfxCrates:
+		db $FF,$FF,$FF,$FF,$80,$FF,$C0,$80,$C0,$DF,$8F,$CF,$B8,$98,$98,$DE
+		db $88,$CE,$BF,$9E,$9F,$DF,$89,$C9,$FF,$FF,$FF,$DB,$00,$DB,$24,$00
+		db $00,$FF,$FF,$FF,$FF,$C0,$C0,$30,$30,$30,$8C,$0C,$8C,$E3,$83,$E3
+		db $DD,$88,$C8,$DC,$88,$C8,$DC,$88,$C8,$DD,$89,$C9,$BF,$9E,$9F,$DE
+		db $88,$CE,$B8,$98,$98,$DF,$8F,$CF,$FF,$66,$7F,$7E,$18,$1E,$78,$60
+		db $78,$E1,$81,$E1,$87,$06,$86,$1E,$18,$18,$78,$60,$60,$FF,$FF,$FF
+		db $DF,$80,$CF,$C0,$80,$C0,$FF,$80,$C0,$FF,$FF,$FF,$FF,$80,$80,$FE
+		db $80,$9E,$DF,$9F,$9F,$DF,$9F,$9F,$DB,$00,$DB,$24,$00,$00,$FF,$00
+		db $00,$FF,$FF,$FF,$FF,$00,$00,$80,$00,$80,$FF,$FF,$FF,$FF,$FF,$FF
+		db $DF,$90,$90,$FF,$80,$80,$F8,$80,$98,$DF,$9F,$9F,$DF,$9F,$9F,$DF
+		db $90,$90,$FF,$80,$80,$FF,$FF,$FF,$FF,$00,$00,$FF,$00,$00,$80,$00
+		db $80,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$00,$00,$FF,$00,$00,$FF,$FF,$FF

@@ -3,78 +3,79 @@
 ; GFX: Hind D
 ;
 ;----------------------------------------------------------------------------
-GfxHindD:           db    0,0BAh, 45h, 77h, 88h, 77h, 40h, 1Fh,0E0h,   0,0FFh,   0, 40h,0BBh, 44h, 44h
-                    db 0ABh, 54h, 50h, 2Eh,0D1h, 40h, 3Fh,0C0h,   1, 23h,0DDh, 33h, 44h,0BBh, 20h, 79h
-                    db 0A6h,   0,0CCh, 33h, 40h, 22h,0DDh,   0, 67h, 98h, 10h, 48h,0B7h, 40h, 0Ch,0F3h
-                    db 0BDh,0C3h,0BDh,0BDh,0C3h,0BDh,0BDh,0C3h,0BDh,0BDh,0C3h,0BDh,0BDh,0C3h,0BDh,0BDh
-                    db 0C3h,0BDh,0BDh,0C3h,0BDh,0BDh,0C3h,0BDh,0FFh,   0,0FFh,0FFh,   0,0FFh,0FFh,   0
-                    db 0FFh,   0,0FFh,   0,   0,0FFh,   0,0FFh,0FFh,0FFh,0CCh,0FFh,0CCh,0EEh,0DDh,0EEh
-                    db    0, 3Ah,0C5h, 37h, 48h,0B7h,0A0h,0FFh,0A0h,   0, 0Fh,0F0h,   0, 43h,0BCh, 10h
-                    db  57h,0B8h, 80h,0D0h,0AFh, 80h,0C0h,0BFh,0EEh,0DDh,0EEh,0EEh,0DDh,0EEh,0EEh,0DDh
-                    db 0EEh,0EEh,0DDh,0EEh,0EEh,0DDh,0EEh,0EEh,0DDh,0EEh,0EEh,0DDh,0EEh,0EEh,0DDh,0EEh
-                    db  45h, 45h,0FFh,   0, 77h, 88h,0A0h,0E0h,0BFh,   0,   0,0FFh,   4, 44h,0BFh, 10h
-                    db  54h,0BBh, 81h,0D1h,0AFh, 80h,0C0h,0BFh,0EEh,0DDh,0EEh,0AAh,0DDh,0AAh,0EEh,0DDh
-                    db 0EEh,0EEh,0DDh,0EEh,0AEh,0DDh,0AEh,0BBh,0FFh,0BBh, 81h,0D1h,0AFh, 80h,0C0h,0BFh
-
+GfxHindD:
+		db $00,$BA,$45,$77,$88,$77,$40,$1F,$E0,$00,$FF,$00,$40,$BB,$44,$44
+		db $AB,$54,$50,$2E,$D1,$40,$3F,$C0,$01,$23,$DD,$33,$44,$BB,$20,$79
+		db $A6,$00,$CC,$33,$40,$22,$DD,$00,$67,$98,$10,$48,$B7,$40,$0C,$F3
+		db $BD,$C3,$BD,$BD,$C3,$BD,$BD,$C3,$BD,$BD,$C3,$BD,$BD,$C3,$BD,$BD
+		db $C3,$BD,$BD,$C3,$BD,$BD,$C3,$BD,$FF,$00,$FF,$FF,$00,$FF,$FF,$00
+		db $FF,$00,$FF,$00,$00,$FF,$00,$FF,$FF,$FF,$CC,$FF,$CC,$EE,$DD,$EE
+		db $00,$3A,$C5,$37,$48,$B7,$A0,$FF,$A0,$00,$0F,$F0,$00,$43,$BC,$10
+		db $57,$B8,$80,$D0,$AF,$80,$C0,$BF,$EE,$DD,$EE,$EE,$DD,$EE,$EE,$DD
+		db $EE,$EE,$DD,$EE,$EE,$DD,$EE,$EE,$DD,$EE,$EE,$DD,$EE,$EE,$DD,$EE
+		db $45,$45,$FF,$00,$77,$88,$A0,$E0,$BF,$00,$00,$FF,$04,$44,$BF,$10
+		db $54,$BB,$81,$D1,$AF,$80,$C0,$BF,$EE,$DD,$EE,$AA,$DD,$AA,$EE,$DD
+		db $EE,$EE,$DD,$EE,$AE,$DD,$AE,$BB,$FF,$BB,$81,$D1,$AF,$80,$C0,$BF
 
 ;----------------------------------------------------------------------------
 ;
 ; GFX: Hind D (2nd part)
 ;
 ;----------------------------------------------------------------------------
-GfxHindD2:          db    0,   0,   0,0E0h,   0,0E0h,0FCh,0E0h,0FCh, 1Fh, 1Ch,0FFh,   7, 47h,0BFh, 10h
-                    db  54h,0BBh, 41h, 11h,0EFh, 40h, 38h,0C7h,0FFh,   0,   0, 3Fh,   0,   0, 79h,   0
-                    db    0, 80h,   0, 80h,0F0h, 80h,0F0h,0FEh,0F0h,0FEh,0DFh,0CEh,0FFh,0B7h, 83h,0FBh
-                    db  80h,   0,   0, 87h,   0,   0, 87h,   0,   0,   3,   0,   0,   3,   0,   0,   7
-                    db    0,   0,0CFh,   0,0C0h,0FBh,0C0h,0F8h,   7,   0,   0,0DFh,   0,   0,0DFh,   0
-                    db    0,0FFh,   0,   0,0FDh,   0,   0,   1,   0,   0,   1,   0,   0,   0,   0,   0
-                    db 0FEh,   8,   8,0FEh,   8,   8,0FEh,   8,   8,0FCh,   8,   8,0FCh, 10h, 10h,0FCh
-                    db  10h, 10h,0BCh, 10h, 10h, 3Ch, 10h, 10h, 73h,   0, 70h, 53h, 20h, 70h,0D3h, 20h
-                    db 0F0h,0E3h,   0,0E0h,0E3h,   0,0E0h,0ABh, 40h,0E0h,0ABh, 40h,0E0h,0ABh, 40h,0E0h
-                    db 0AFh, 83h,0A3h,0AFh, 83h,0A3h,0AFh, 83h,0A3h,0AFh, 83h,0A3h,0AFh, 86h,0A7h,0AFh
-                    db  86h,0A7h,0AFh, 86h,0A7h,0EFh, 86h,0E7h,0BBh, 81h,0F9h,0BBh, 81h,0F9h,0ABh, 91h
-                    db 0F9h, 56h,0C3h, 72h, 6Ch,0A7h, 74h, 5Ch,0BBh, 5Ch, 58h, 3Eh,0D9h, 58h, 3Fh,0D8h
-                    db  78h, 7Fh,0F8h,   0, 70h, 8Fh,0A0h,0E0h,0BFh,   0, 80h, 7Fh, 44h,0B4h, 4Fh, 44h
-                    db 0AAh, 55h, 50h, 2Eh,0D1h, 40h, 3Fh,0C0h,   0,   0,   0,0C0h,   0,0C0h,0F8h,0C0h
-                    db 0F8h,0FFh,0F8h,0FFh, 97h, 87h,0FFh,0BFh, 83h,0FBh,0BBh, 81h,0F9h,0BBh, 81h,0F9h
-                    db  3Ch, 10h, 10h, 3Ch, 10h, 10h, 3Ch, 10h, 10h, 3Ch, 10h, 10h,0FCh, 10h,0F0h,0FCh
-                    db 0F0h,0F0h, 9Ch,0D0h,0B0h, 9Dh,0D1h,0B1h,0EFh,   1,0E1h,0AFh, 41h,0E1h,0EFh,   1
-                    db 0E1h,0CFh, 41h,0C1h,0CFh, 41h,0C1h,0CFh,0C1h,0C1h,0CFh,0C1h,0C1h,0CFh, 41h,0C1h
-                    db  6Ch, 0Ch, 6Ch, 6Dh, 0Dh, 6Dh, 6Fh, 0Fh, 6Fh, 6Fh, 0Fh, 6Fh, 6Fh, 0Dh, 6Fh, 6Eh
-                    db  0Dh, 6Fh, 6Fh, 0Eh, 6Fh, 4Fh, 0Dh, 4Fh, 7Dh, 61h,0E1h, 3Fh, 62h,0A3h,0BFh,0E2h
-                    db 0A3h, 3Eh, 24h,0E6h, 3Eh, 64h,0A6h, 3Ch, 68h,0ACh,0BCh,0E8h,0ACh,0B0h,0F0h,0B0h
-                    db 0CEh, 42h,0C2h,0CEh, 42h,0C2h,0CEh, 42h,0C2h,0CEh, 42h,0C2h,0CEh, 42h,0C2h,0CEh
-                    db  42h,0C2h,0CEh, 42h,0C2h,0CEh, 42h,0C2h, 5Ah, 19h, 5Bh,0DBh, 18h,0DBh,0DBh, 18h
-                    db 0DBh,0DAh, 19h,0DBh,0DAh, 19h,0DBh,0DAh, 19h,0DBh,0DAh, 19h,0DBh,0DAh, 19h,0DBh
-                    db  70h, 70h,0F0h, 28h, 60h,0A0h,0A8h,0E0h,0A0h, 38h, 20h,0E0h, 38h, 60h,0A0h, 38h
-                    db  60h,0A0h,0B8h,0E0h,0A0h,0B9h,0E1h,0A1h,0CEh, 42h,0C2h,0CEh, 42h,0C2h,0CEh, 42h
-                    db 0C2h,0CEh, 42h,0C2h, 8Eh, 82h, 82h, 8Eh, 82h, 82h, 86h, 82h, 82h,   6,   2,   2
-                    db  5Dh, 9Ch,0DDh,0DDh, 18h,0D9h,0DDh, 18h,0D9h,0DFh, 1Bh,0DBh, 4Fh, 8Dh,0CDh, 47h
-                    db  85h,0C5h,0C7h,   6,0C6h, 4Fh, 8Fh,0CFh, 59h,0D1h, 71h, 19h,0F1h, 11h, 3Ah, 72h
-                    db 0B2h, 1Eh, 92h, 72h, 1Eh,0D2h, 32h, 1Dh,0D4h, 35h, 1Dh, 54h,0B5h, 1Dh, 54h,0B5h
-                    db  0Eh,   2,   2, 1Eh,   2,   2, 9Fh,   3, 83h, 8Fh,   3, 83h, 0Fh, 81h, 81h,0CFh
-                    db    0,0C0h,0CEh,   0,0C0h,0CEh,   0,0C0h, 7Fh,0FFh,0FFh,0B3h,0C3h,0F3h,0F9h, 39h
-                    db 0F9h, 7Dh, 7Dh, 7Dh,0FFh,0FBh,0FBh,0BBh,0A3h,0A3h,0C7h, 47h, 47h, 7Fh, 3Eh, 3Eh
-                    db  0Dh, 88h, 79h, 4Dh,0B8h, 49h, 6Dh, 28h,0F9h, 0Dh,0C8h, 39h, 4Ch, 88h, 78h, 5Eh
-                    db  98h, 78h, 4Eh, 18h,0E8h, 4Eh,   8,0F8h, 46h, 80h,0C0h,0C6h,   0,0C0h, 46h, 80h
-                    db 0C0h, 47h, 80h,0C0h, 87h, 41h,0C1h,0A7h, 42h,0E3h,0AFh, 42h,0E3h,0AFh, 45h,0E7h
-                    db  7Fh,   7,   7, 5Fh, 18h, 1Fh,0FFh, 67h, 7Fh,0FFh, 9Fh,0FFh,0FFh, 7Fh,0FFh,0FFh
-                    db 0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,   6,0A4h, 5Ch, 66h, 94h, 6Ch, 46h,   4
-                    db 0FCh,   6,0E4h, 1Ch, 46h,0A4h, 5Ch, 56h,0B4h, 5Ch, 47h, 34h,0CCh, 47h, 24h,0DCh
-                    db 0AFh, 45h,0E7h,0AFh, 45h,0E7h,0EFh,   5,0E7h, 6Fh,   5, 67h, 47h, 22h, 63h, 57h
-                    db  22h, 73h, 57h, 21h, 71h, 77h,   2, 73h,0FFh,0FCh,0FFh,0FFh,0F3h,0FFh,0FFh,0EFh
-                    db 0FFh,0FFh,0DFh,0FFh,0FFh,0BFh,0FFh,0FFh,0BFh,0FFh,0FFh, 3Fh,0FFh,0FFh,0C0h,0FFh
-                    db    7,0B6h, 4Eh, 73h, 86h, 7Ah, 43h, 12h,0EEh,   3,0F2h, 0Eh, 47h,0B6h, 4Eh, 43h
-                    db 0A6h, 5Ah, 51h, 29h,0D7h, 41h, 39h,0C7h, 3Fh,   5, 3Fh, 3Fh, 0Bh, 3Fh, 2Fh, 0Bh
-                    db  2Fh,0BFh, 17h, 3Fh, 9Fh, 17h, 1Fh,0BFh, 2Fh, 3Fh,0BFh, 2Fh, 3Fh,0BFh, 2Fh, 3Fh
-                    db  0Fh, 0Fh,0FFh,0F9h,0F0h,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                    db 0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0C0h,0FFh,   5,0BDh, 47h, 74h, 8Bh, 74h, 40h, 1Ch
-                    db 0E3h,   0,0FCh,   3, 40h,0BAh, 45h, 44h,0AAh, 55h, 51h, 2Fh,0D1h, 40h, 3Fh,0C0h
-                    db 0FFh,0AEh,0BFh,0FFh,0A9h,0BFh,0FFh,0A7h,0BFh,0FFh,0AFh,0BFh,0FFh, 97h, 9Fh, 7Fh
-                    db  57h,0DFh,0FFh,0DBh,0DFh,0BFh,0FDh,0BFh,0FFh, 3Fh,0FFh,0FFh,0FEh,0FFh,0FFh,0F9h
-                    db 0FFh,0FFh,0F7h,0FFh,0FFh,0EFh,0FFh,0FFh,0EFh,0FFh,0FFh,0EFh,0FFh,0FFh,0EFh,0FFh
-                    db  0Fh, 8Ah, 7Bh, 4Bh,0B9h, 49h, 45h,   4,0FCh,   6,0E6h, 1Eh, 47h,0A5h, 5Dh, 55h
-                    db 0B4h, 5Ch, 52h, 22h,0DEh, 42h, 32h,0CEh,0FFh, 6Fh,0FFh, 9Ch, 90h,0FFh,0FFh, 7Fh
-                    db  7Fh, 7Fh,   0,   0,0CFh,   0,0C0h,0F1h,0C0h,0F0h, 70h, 30h, 30h,0BFh, 1Fh, 9Fh
-                    db 0BCh, 10h, 90h, 7Bh, 10h, 53h, 5Bh, 11h, 53h, 9Bh, 92h, 93h, 7Eh, 4Bh,0CBh, 3Eh
-                    db  7Fh,0BFh,   1, 51h,0AFh, 41h, 3Dh,0C2h
+GfxHindD2:
+		db $00,$00,$00,$E0,$00,$E0,$FC,$E0,$FC,$1F,$1C,$FF,$07,$47,$BF,$10
+		db $54,$BB,$41,$11,$EF,$40,$38,$C7,$FF,$00,$00,$3F,$00,$00,$79,$00
+		db $00,$80,$00,$80,$F0,$80,$F0,$FE,$F0,$FE,$DF,$CE,$FF,$B7,$83,$FB
+		db $80,$00,$00,$87,$00,$00,$87,$00,$00,$03,$00,$00,$03,$00,$00,$07
+		db $00,$00,$CF,$00,$C0,$FB,$C0,$F8,$07,$00,$00,$DF,$00,$00,$DF,$00
+		db $00,$FF,$00,$00,$FD,$00,$00,$01,$00,$00,$01,$00,$00,$00,$00,$00
+		db $FE,$08,$08,$FE,$08,$08,$FE,$08,$08,$FC,$08,$08,$FC,$10,$10,$FC
+		db $10,$10,$BC,$10,$10,$3C,$10,$10,$73,$00,$70,$53,$20,$70,$D3,$20
+		db $F0,$E3,$00,$E0,$E3,$00,$E0,$AB,$40,$E0,$AB,$40,$E0,$AB,$40,$E0
+		db $AF,$83,$A3,$AF,$83,$A3,$AF,$83,$A3,$AF,$83,$A3,$AF,$86,$A7,$AF
+		db $86,$A7,$AF,$86,$A7,$EF,$86,$E7,$BB,$81,$F9,$BB,$81,$F9,$AB,$91
+		db $F9,$56,$C3,$72,$6C,$A7,$74,$5C,$BB,$5C,$58,$3E,$D9,$58,$3F,$D8
+		db $78,$7F,$F8,$00,$70,$8F,$A0,$E0,$BF,$00,$80,$7F,$44,$B4,$4F,$44
+		db $AA,$55,$50,$2E,$D1,$40,$3F,$C0,$00,$00,$00,$C0,$00,$C0,$F8,$C0
+		db $F8,$FF,$F8,$FF,$97,$87,$FF,$BF,$83,$FB,$BB,$81,$F9,$BB,$81,$F9
+		db $3C,$10,$10,$3C,$10,$10,$3C,$10,$10,$3C,$10,$10,$FC,$10,$F0,$FC
+		db $F0,$F0,$9C,$D0,$B0,$9D,$D1,$B1,$EF,$01,$E1,$AF,$41,$E1,$EF,$01
+		db $E1,$CF,$41,$C1,$CF,$41,$C1,$CF,$C1,$C1,$CF,$C1,$C1,$CF,$41,$C1
+		db $6C,$0C,$6C,$6D,$0D,$6D,$6F,$0F,$6F,$6F,$0F,$6F,$6F,$0D,$6F,$6E
+		db $0D,$6F,$6F,$0E,$6F,$4F,$0D,$4F,$7D,$61,$E1,$3F,$62,$A3,$BF,$E2
+		db $A3,$3E,$24,$E6,$3E,$64,$A6,$3C,$68,$AC,$BC,$E8,$AC,$B0,$F0,$B0
+		db $CE,$42,$C2,$CE,$42,$C2,$CE,$42,$C2,$CE,$42,$C2,$CE,$42,$C2,$CE
+		db $42,$C2,$CE,$42,$C2,$CE,$42,$C2,$5A,$19,$5B,$DB,$18,$DB,$DB,$18
+		db $DB,$DA,$19,$DB,$DA,$19,$DB,$DA,$19,$DB,$DA,$19,$DB,$DA,$19,$DB
+		db $70,$70,$F0,$28,$60,$A0,$A8,$E0,$A0,$38,$20,$E0,$38,$60,$A0,$38
+		db $60,$A0,$B8,$E0,$A0,$B9,$E1,$A1,$CE,$42,$C2,$CE,$42,$C2,$CE,$42
+		db $C2,$CE,$42,$C2,$8E,$82,$82,$8E,$82,$82,$86,$82,$82,$06,$02,$02
+		db $5D,$9C,$DD,$DD,$18,$D9,$DD,$18,$D9,$DF,$1B,$DB,$4F,$8D,$CD,$47
+		db $85,$C5,$C7,$06,$C6,$4F,$8F,$CF,$59,$D1,$71,$19,$F1,$11,$3A,$72
+		db $B2,$1E,$92,$72,$1E,$D2,$32,$1D,$D4,$35,$1D,$54,$B5,$1D,$54,$B5
+		db $0E,$02,$02,$1E,$02,$02,$9F,$03,$83,$8F,$03,$83,$0F,$81,$81,$CF
+		db $00,$C0,$CE,$00,$C0,$CE,$00,$C0,$7F,$FF,$FF,$B3,$C3,$F3,$F9,$39
+		db $F9,$7D,$7D,$7D,$FF,$FB,$FB,$BB,$A3,$A3,$C7,$47,$47,$7F,$3E,$3E
+		db $0D,$88,$79,$4D,$B8,$49,$6D,$28,$F9,$0D,$C8,$39,$4C,$88,$78,$5E
+		db $98,$78,$4E,$18,$E8,$4E,$08,$F8,$46,$80,$C0,$C6,$00,$C0,$46,$80
+		db $C0,$47,$80,$C0,$87,$41,$C1,$A7,$42,$E3,$AF,$42,$E3,$AF,$45,$E7
+		db $7F,$07,$07,$5F,$18,$1F,$FF,$67,$7F,$FF,$9F,$FF,$FF,$7F,$FF,$FF
+		db $FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$06,$A4,$5C,$66,$94,$6C,$46,$04
+		db $FC,$06,$E4,$1C,$46,$A4,$5C,$56,$B4,$5C,$47,$34,$CC,$47,$24,$DC
+		db $AF,$45,$E7,$AF,$45,$E7,$EF,$05,$E7,$6F,$05,$67,$47,$22,$63,$57
+		db $22,$73,$57,$21,$71,$77,$02,$73,$FF,$FC,$FF,$FF,$F3,$FF,$FF,$EF
+		db $FF,$FF,$DF,$FF,$FF,$BF,$FF,$FF,$BF,$FF,$FF,$3F,$FF,$FF,$C0,$FF
+		db $07,$B6,$4E,$73,$86,$7A,$43,$12,$EE,$03,$F2,$0E,$47,$B6,$4E,$43
+		db $A6,$5A,$51,$29,$D7,$41,$39,$C7,$3F,$05,$3F,$3F,$0B,$3F,$2F,$0B
+		db $2F,$BF,$17,$3F,$9F,$17,$1F,$BF,$2F,$3F,$BF,$2F,$3F,$BF,$2F,$3F
+		db $0F,$0F,$FF,$F9,$F0,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+		db $FF,$FF,$FF,$FF,$FF,$FF,$C0,$FF,$05,$BD,$47,$74,$8B,$74,$40,$1C
+		db $E3,$00,$FC,$03,$40,$BA,$45,$44,$AA,$55,$51,$2F,$D1,$40,$3F,$C0
+		db $FF,$AE,$BF,$FF,$A9,$BF,$FF,$A7,$BF,$FF,$AF,$BF,$FF,$97,$9F,$7F
+		db $57,$DF,$FF,$DB,$DF,$BF,$FD,$BF,$FF,$3F,$FF,$FF,$FE,$FF,$FF,$F9
+		db $FF,$FF,$F7,$FF,$FF,$EF,$FF,$FF,$EF,$FF,$FF,$EF,$FF,$FF,$EF,$FF
+		db $0F,$8A,$7B,$4B,$B9,$49,$45,$04,$FC,$06,$E6,$1E,$47,$A5,$5D,$55
+		db $B4,$5C,$52,$22,$DE,$42,$32,$CE,$FF,$6F,$FF,$9C,$90,$FF,$FF,$7F
+		db $7F,$7F,$00,$00,$CF,$00,$C0,$F1,$C0,$F0,$70,$30,$30,$BF,$1F,$9F
+		db $BC,$10,$90,$7B,$10,$53,$5B,$11,$53,$9B,$92,$93,$7E,$4B,$CB,$3E
+		db $7F,$BF,$01,$51,$AF,$41,$3D,$C2

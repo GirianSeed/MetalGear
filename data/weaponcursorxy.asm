@@ -3,11 +3,12 @@
 ; Arrow coordinates for each weapon in the menu
 ;
 ;----------------------------------------------------------------------------
-WeaponArrowXY:      dw 0
-                    dw 102Ch
-                    dw 1044h
-                    dw 105Ch
-                    dw 1074h
-                    dw 802Ch
-                    dw 8044h
-                    dw 805Ch
+WeaponArrowXY:
+		dw $0000
+		dw $102C
+		dw $1044
+		dw $105C
+		dw $1074
+		dw $802C
+		dw $8044
+		dw $805C

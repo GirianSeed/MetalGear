@@ -1,29 +1,30 @@
 ;----------------------------------------------------------------------------
 ; Items coordinates in menu (arrow cursor)
 ;----------------------------------------------------------------------------
-ItemEquipXY:        dw 0
-                    dw 102Ch
-                    dw 103Ch
-                    dw 104Ch
-                    dw 105Ch
-                    dw 106Ch
-                    dw 107Ch
-                    dw 108Ch
-                    dw 109Ch
-                    dw 10ACh
-                    dw 602Ch
-                    dw 603Ch
-                    dw 604Ch
-                    dw 605Ch
-                    dw 606Ch
-                    dw 607Ch
-                    dw 608Ch
-                    dw 609Ch
-                    dw 60ACh
-                    dw 0B02Ch
-                    dw 0B03Ch
-                    dw 0B04Ch
-                    dw 0B05Ch
-                    dw 0B06Ch
-                    dw 0B07Ch
-                    dw 0B08Ch
+ItemEquipXY:
+		dw $0000
+		dw $102C
+		dw $103C
+		dw $104C
+		dw $105C
+		dw $106C
+		dw $107C
+		dw $108C
+		dw $109C
+		dw $10AC
+		dw $602C
+		dw $603C
+		dw $604C
+		dw $605C
+		dw $606C
+		dw $607C
+		dw $608C
+		dw $609C
+		dw $60AC
+		dw $B02C
+		dw $B03C
+		dw $B04C
+		dw $B05C
+		dw $B06C
+		dw $B07C
+		dw $B08C

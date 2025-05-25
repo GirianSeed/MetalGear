@@ -3,17 +3,18 @@
 ; Index of elevators
 ;
 ;----------------------------------------------------------------------------
-idxElevatorRoom:    dw ElevatorRoom1
-                    dw ElevatorRoom2
-                    dw ElevatorRoom3
-                    dw ElevatorRoom4
-                    dw ElevatorRoom5
-                    dw ElevatorRoom6
-                    dw ElevatorRoom7
-                    dw ElevatorRoom8
-                    dw ElevatorRoom9_10
-                    dw ElevatorRoom9_10
-                    dw ElevatorRoom11
+idxElevatorRoom:
+		dw ElevatorRoom1
+		dw ElevatorRoom2
+		dw ElevatorRoom3
+		dw ElevatorRoom4
+		dw ElevatorRoom5
+		dw ElevatorRoom6
+		dw ElevatorRoom7
+		dw ElevatorRoom8
+		dw ElevatorRoom9_10
+		dw ElevatorRoom9_10
+		dw ElevatorRoom11
 ;----------------------------------------------------------------------------
 ;
 ; Elevators
@@ -24,69 +25,72 @@ idxElevatorRoom:    dw ElevatorRoom1
 ; db Y player, Y elevator
 ; (...)
 ;----------------------------------------------------------------------------
-ElevatorRoom1:      dw 0B838h
-                    db 31
-                    dw 3834h
-                    db 3
-                    dw 0B8B4h
+ElevatorRoom1:
+		dw $B838
+		db 31
+		dw $3834
+		db 3
+		dw $B8B4
 
-ElevatorRoom2:      dw 0B828h
-                    db 27
-                    dw 3834h
-                    db 15
-                    dw 7874h
-                    db 63
-                    dw 0B8B4h
+ElevatorRoom2:
+		dw $B828
+		db 27
+		dw $3834
+		db 15
+		dw $7874
+		db 63
+		dw $B8B4
 
-ElevatorRoom3:      dw 0C878h
-                    db 53
-                    dw 7874h
-                    db 39
-                    dw 0B8B4h
+ElevatorRoom3:
+		dw $C878
+		db 53
+		dw $7874
+		db 39
+		dw $B8B4
 
+ElevatorRoom4:
+		dw $B828
+		db 81
+		dw $3834
+		db 72
+		dw $7874
+		db 95
+		dw $B8B4
 
-ElevatorRoom4:      dw 0B828h
-                    db 51h
-                    dw 3834h
-                    db 48h
-                    dw 7874h
-                    db 5Fh
-                    dw 0B8B4h
+ElevatorRoom5:
+		dw $C8B8
+		db 88
+		dw $B8B4
 
+ElevatorRoom6:
+		dw $B828
+		db 205
+		dw $3834
+		db 206
+		dw $7874
+		db 207
+		dw $B8B4
 
-ElevatorRoom5:      dw 0C8B8h
-                    db 58h
-                    dw 0B8B4h
+ElevatorRoom7:
+		dw $C8B8
+		db 154
+		dw $B8B4
 
+ElevatorRoom8:
+		dw $C838
+		db 109
+		dw $3834
 
-ElevatorRoom6:      dw 0B828h
-                    db 0CDh
-                    dw 3834h
-                    db 0CEh
-                    dw 7874h
-                    db 0CFh
-                    dw 0B8B4h
+ElevatorRoom9_10:
+		dw $C828
+		db 0
+		dw $0000
+		db 0
+		dw $0000
+		db 0
+		dw $0000
 
-
-ElevatorRoom7:      dw 0C8B8h
-                    db 9Ah
-                    dw 0B8B4h
-
-
-ElevatorRoom8:      dw 0C838h
-                    db 6Dh
-                    dw 3834h
-
-
-ElevatorRoom9_10:   dw 0C828h
-                    db 0
-                    dw 0
-                    db 0
-                    dw 0
-                    db 0
-                    dw 0
-
-
-ElevatorRoom11:     dw 0B828h
-                    db 73h
-                    dw 0B8B4h
+ElevatorRoom11:
+		dw $B828
+		db 115
+		dw $B8B4

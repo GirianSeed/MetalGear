@@ -3,73 +3,82 @@
 ; Mercenary
 ;
 ;----------------------------------------------------------------------------
-MusBossShare1:      db 0E4h,0A1h,0A1h,0E3h, 53h, 33h, 51h,0E4h,0A5h,0E3h, 53h, 33h, 53h,0E4h,0A3h,0E3h
-                    db  53h, 33h, 51h,0FFh
-MusBossShare2:      db 0E5h,0A1h,0A1h,0E3h,0A3h, 83h,0A1h,0E5h,0A5h,0E3h,0A3h, 83h,0A3h,0E5h,0A3h,0E3h
-                    db 0A3h, 83h,0A1h,0FFh
-MusBossShare3:      db 0EFh,0E9h,   1,0B1h,   0,   0, 21h,   1,0B1h,   1, 21h,0B1h,   1,0B1h, 21h,0B1h
-                    db    1,0B1h, 21h,   1,0B1h,   1, 21h,   1,0B1h,   1, 21h,0B1h,0FFh
+MusBossShare1:
+		db $E4,$A1,$A1,$E3,$53,$33,$51,$E4,$A5,$E3,$53,$33,$53,$E4,$A3,$E3
+		db $53,$33,$51,$FF
+MusBossShare2:
+		db $E5,$A1,$A1,$E3,$A3,$83,$A1,$E5,$A5,$E3,$A3,$83,$A3,$E5,$A3,$E3
+		db $A3,$83,$A1,$FF
+MusBossShare3:
+		db $EF,$E9,$01,$B1,$00,$00,$21,$01,$B1,$01,$21,$B1,$01,$B1,$21,$B1
+		db $01,$B1,$21,$01,$B1,$01,$21,$01,$B1,$01,$21,$B1,$FF
 
+Mus_Boss:
+		db $D3,$C3
+MusBossA1:
+		db $EF,$D3,$FC,$34,$E4,$71,$73,$EC,$54,$E2,$05,$EF,$E4,$73,$81,$83
+		db $EC,$54,$E2,$15,$EF,$E4,$83
+		db $FE,$02
+		dw MusBossA1
+Mus_BossA2:
+		db $FC,$34,$E4,$71,$71,$E3,$23,$03,$21,$E4,$75,$E3,$23,$03,$23,$E4
+		db $73,$E3,$23,$03,$21,$55,$23,$03,$23
+		db $FE,$02
+		dw Mus_BossA2
+		db $FE,$FF
+		dw MusBossShare1
+		db $85,$53,$33,$53
+		db $FE,$FF
+		dw MusBossShare1
+		db $05,$73,$01,$01,$03,$E4,$11,$11,$E3,$11,$11,$E4,$11,$11,$E3,$11
+		db $E4,$03,$01,$E3,$01,$01,$E4,$01,$01,$E3,$01,$01,$FB,$04,$E3,$31
+		db $31,$01,$01,$E4,$91,$91,$61,$61,$91,$91,$E3,$01,$01,$31,$31,$61
+		db $61
+		db $FE,$FE
+		dw Mus_BossA2
 
-Mus_Boss:           db 0D3h,0C3h
-MusBossA1:          db 0EFh,0D3h,0FCh, 34h,0E4h, 71h, 73h,0ECh, 54h,0E2h,   5,0EFh,0E4h, 73h, 81h, 83h
-                    db 0ECh, 54h,0E2h, 15h,0EFh,0E4h, 83h
-                    db 0FEh,   2
-                    dw MusBossA1
-Mus_BossA2:         db 0FCh, 34h,0E4h, 71h, 71h,0E3h, 23h,   3, 21h,0E4h, 75h,0E3h, 23h,   3, 23h,0E4h
-                    db  73h,0E3h, 23h,   3, 21h, 55h, 23h,   3, 23h
-                    db 0FEh,   2
-                    dw Mus_BossA2
-                    db 0FEh,0FFh
-                    dw MusBossShare1
-                    db  85h, 53h, 33h, 53h
-                    db 0FEh,0FFh
-                    dw MusBossShare1
-                    db    5, 73h,   1,   1,   3,0E4h, 11h, 11h,0E3h, 11h, 11h,0E4h, 11h, 11h,0E3h, 11h
-                    db 0E4h,   3,   1,0E3h,   1,   1,0E4h,   1,   1,0E3h,   1,   1,0FBh,   4,0E3h, 31h
-                    db  31h,   1,   1,0E4h, 91h, 91h, 61h, 61h, 91h, 91h,0E3h,   1,   1, 31h, 31h, 61h
-                    db  61h
-                    db 0FEh,0FEh
-                    dw Mus_BossA2
+Mus_BossB:
+		db $D3,$C3
+MusBossB1:
+		db $EF,$D3,$FB,$24,$E5,$71,$73,$EC,$54,$E2,$55,$EF,$E3,$03,$E5,$81
+		db $83,$EC,$54,$E2,$65,$EF,$E3,$13
+		db $FE,$02
+		dw MusBossB1
+Mus_BossB2:
+		db $FB,$24,$E5,$71,$71,$E3,$73,$53,$71,$E5,$75,$E3,$73,$53,$73,$E5
+		db $73,$E3,$73,$53,$71,$A5,$73,$53,$73
+		db $FE,$02
+		dw Mus_BossB2
+		db $FE,$FF
+		dw MusBossShare2
+		db $E3,$15,$E4,$A3,$83,$A3
+		db $FE,$FF
+		dw MusBossShare2
+		db $E4,$05,$E2,$03,$E3,$A1,$A1,$03,$FC,$34,$E3,$81,$81,$E4,$81,$81
+		db $E3,$11,$11,$E2,$11,$E3,$73,$71,$E4,$71,$71,$E3,$01,$01,$E2,$01
+		db $01,$FB,$04,$01,$01,$E3,$91,$91,$61,$61,$31,$31,$61,$61,$91,$91
+		db $E2,$01,$01,$31,$31
+		db $FE,$FE
+		dw Mus_BossB2
 
-
-Mus_BossB:          db 0D3h,0C3h
-MusBossB1:          db 0EFh,0D3h,0FBh, 24h,0E5h, 71h, 73h,0ECh, 54h,0E2h, 55h,0EFh,0E3h,   3,0E5h, 81h
-                    db  83h,0ECh, 54h,0E2h, 65h,0EFh,0E3h, 13h
-                    db 0FEh,   2
-                    dw MusBossB1
-Mus_BossB2:         db 0FBh, 24h,0E5h, 71h, 71h,0E3h, 73h, 53h, 71h,0E5h, 75h,0E3h, 73h, 53h, 73h,0E5h
-                    db  73h,0E3h, 73h, 53h, 71h,0A5h, 73h, 53h, 73h
-                    db 0FEh,   2
-                    dw Mus_BossB2
-                    db 0FEh,0FFh
-                    dw MusBossShare2
-                    db 0E3h, 15h,0E4h,0A3h, 83h,0A3h
-                    db 0FEh,0FFh
-                    dw MusBossShare2
-                    db 0E4h,   5,0E2h,   3,0E3h,0A1h,0A1h,   3,0FCh, 34h,0E3h, 81h, 81h,0E4h, 81h, 81h
-                    db 0E3h, 11h, 11h,0E2h, 11h,0E3h, 73h, 71h,0E4h, 71h, 71h,0E3h,   1,   1,0E2h,   1
-                    db    1,0FBh,   4,   1,   1,0E3h, 91h, 91h, 61h, 61h, 31h, 31h, 61h, 61h, 91h, 91h
-                    db 0E2h,   1,   1, 31h, 31h
-                    db 0FEh,0FEh
-                    dw Mus_BossB2
-
-
-Mus_BossC:          db 0D3h,0C3h
-MusBossC1:          db 0EFh,0D3h,0E9h,   1,0B1h,0B1h, 31h, 31h, 31h, 31h, 21h, 21h,0B1h,0B1h, 21h, 21h
-                    db  21h, 21h, 91h,0A1h
-                    db 0FEh,   2
-                    dw MusBossC1
-Mus_BossC2:         db 0FEh,0FFh
-                    dw MusBossShare3
-                    db 0EFh,0E9h,   1,   1,0B1h, 21h,0B1h,   1,0B1h, 21h, 11h
-                    db 0FEh,0FFh
-                    dw MusBossShare3
-                    db 0EFh,0E9h,   1, 30h, 30h, 31h, 31h, 31h, 81h, 91h,0A1h,0A1h
-                    db 0FEh,   2
-                    dw Mus_BossC2
-                    db 0EFh,0E9h,   1,0B1h,   0,   0, 21h,   1,0B1h,0B1h, 21h,0B1h,   1,0B1h, 21h,   1
-                    db 0B1h,0B1h, 21h, 11h, 31h, 31h, 31h, 31h, 21h, 21h, 21h, 21h, 30h, 30h, 71h, 71h
-                    db  71h, 81h, 91h,0A1h,0B1h
-                    db 0FEh,0FEh
-                    dw Mus_BossC2
+Mus_BossC:
+		db $D3,$C3
+MusBossC1:
+		db $EF,$D3,$E9,$01,$B1,$B1,$31,$31,$31,$31,$21,$21,$B1,$B1,$21,$21
+		db $21,$21,$91,$A1
+		db $FE,$02
+		dw MusBossC1
+Mus_BossC2:
+		db $FE,$FF
+		dw MusBossShare3
+		db $EF,$E9,$01,$01,$B1,$21,$B1,$01,$B1,$21,$11
+		db $FE,$FF
+		dw MusBossShare3
+		db $EF,$E9,$01,$30,$30,$31,$31,$31,$81,$91,$A1,$A1
+		db $FE,$02
+		dw Mus_BossC2
+		db $EF,$E9,$01,$B1,$00,$00,$21,$01,$B1,$B1,$21,$B1,$01,$B1,$21,$01
+		db $B1,$B1,$21,$11,$31,$31,$31,$31,$21,$21,$21,$21,$30,$30,$71,$71
+		db $71,$81,$91,$A1,$B1
+		db $FE,$FE
+		dw Mus_BossC2

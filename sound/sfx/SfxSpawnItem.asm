@@ -1,4 +1,5 @@
-Sfx_SpawnItem:      db 0FEh,   0, 22h,   1,0D1h, 40h,0D1h, 20h,0D1h,   0,0D0h,0E0h,0D1h, 20h,0D1h,   0
-                    db 0D0h,0E0h,0D0h,0C0h,0D1h,   0,0D0h,0E0h,0D0h,0C0h,0D0h,0A0h,0D0h,0E0h,0D0h,0C0h
-                    db 0D0h,0A0h,0D0h, 80h,0A0h,0E0h,0A0h,0C0h,0A0h,0A0h,0A0h, 80h, 80h,0E0h, 80h,0C0h
-                    db  80h,0A0h, 80h, 80h, 70h,0E0h, 70h,0C0h,0FFh
+Sfx_SpawnItem:
+		db $FE,$00,$22,$01,$D1,$40,$D1,$20,$D1,$00,$D0,$E0,$D1,$20,$D1,$00
+		db $D0,$E0,$D0,$C0,$D1,$00,$D0,$E0,$D0,$C0,$D0,$A0,$D0,$E0,$D0,$C0
+		db $D0,$A0,$D0,$80,$A0,$E0,$A0,$C0,$A0,$A0,$A0,$80,$80,$E0,$80,$C0
+		db $80,$A0,$80,$80,$70,$E0,$70,$C0,$FF

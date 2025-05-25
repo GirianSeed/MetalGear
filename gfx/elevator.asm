@@ -3,35 +3,36 @@
 ; GFX: Elevators
 ;
 ;----------------------------------------------------------------------------
-GfxElevators:       db 0BDh,0B1h,0BDh,0BDh,0B1h,0BDh,0BDh,0B1h,0BDh,0BDh,0B1h,0BDh,0BDh,0B1h,0BDh,0BDh
-                    db 0B1h,0BDh,0BDh,0B1h,0BDh,0BDh,0B1h,0BDh,0FFh,0FFh,0FFh,0FFh,   0,0FFh,0FFh,   0
-                    db 0FFh,0C0h,   0,0C0h,0CFh, 0Fh,0CFh,0DFh, 1Fh,0D0h,0DFh, 1Fh,0D3h,0DFh, 1Fh,0D3h
-                    db 0FFh,0FFh,0FFh,0FFh,   1,0FFh,0FDh,   1,0FFh,   1,   1,   7,0C1h,0C1h,0C7h,0E1h
-                    db 0E1h, 27h,0F1h,0F1h, 97h,0F1h,0F1h, 97h,0DFh, 1Fh,0D0h,0DFh, 1Fh,0D3h,0DFh, 1Fh
-                    db 0D3h,0DFh, 1Fh,0D0h,0CFh, 0Fh,0CFh,0C0h,   0,0C0h, 80h,   0,0FFh,   0,   0,0FFh
-                    db 0E1h,0E1h, 27h,0F1h,0F1h, 97h,0F1h,0F1h, 97h,0E1h,0E1h, 27h,0C1h,0C1h,0C7h,   1
-                    db    1,   7,   1,   1,0FFh,   1,   1,0FFh,0FFh,0DFh,0DFh,0DFh,0FFh,0DFh,0DFh,   0
-                    db 0DFh,   0,   0, 20h,0FFh,0DFh,0DFh,0DFh,0FFh,0DFh,0DFh,   0,0DFh,   0,   0, 20h
-                    db 0FFh,0FBh,0FBh,0FBh,0FFh,0FBh,0FAh,   0,0FAh,   0,   0,   4,0FFh,0FBh,0FBh,0FBh
-                    db 0FFh,0FBh,0FAh,   0,0FEh,   0,   0,   4,0FFh,0FFh,0FFh,0FFh,   0,0FFh,0FFh,   0
-                    db 0FFh,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h
-                    db 0FFh,0FFh,0FFh,0FBh, 0Ch,0FBh,0FFh,   0,0FFh,0A9h, 56h,   0,0FBh,   6,   2, 99h
-                    db  66h,   0,0CFh, 70h, 40h, 3Fh,0C0h,   0,0FFh,0FFh,0FFh,0FFh,   0,0FFh,0FFh,   0
-                    db 0FFh,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h,0FFh,   0,0C0h
-                    db 0FFh,0FFh,0FFh,0FBh, 0Ch,0FBh,0FFh,   0,0FFh,0A9h, 56h,   0,0FBh,   6,   2, 99h
-                    db  66h,   0,0CFh, 70h, 40h, 3Fh,0C0h,   0,0FFh,0FFh,0FFh,0FFh,   0,0FFh,0FFh,   0
-                    db 0FFh,0FFh,   0,   0,0FFh,   0,   0,0EFh, 30h, 20h,0F7h, 78h, 70h,0FFh,   0,   0
-                    db 0FFh,0FFh,0FFh,0FFh,   1,0FFh,0FDh,   3,0FDh,0F9h,   7,   1,0F9h,   7,   1,0F9h
-                    db    7,   1,0F9h,   7,   1,0F9h,   7,   1,0F7h,   8,0C0h,0FBh, 0Ch,0C8h,0FFh,   0
-                    db 0C0h,0A9h, 56h, 80h,0FBh,   6,0C2h, 99h, 66h, 80h,0C0h, 7Fh,0C0h,   0,0FFh,   0
-                    db 0FFh,   0,   0,0FFh,   0,   0,0FFh,   0,   0,0FFh,   0,   0,0FFh,   0,   0,0FFh
-                    db    0,   0,   0,0FFh,   0,   0,0FFh,   0,0FFh,   1,   1,0FFh,   2,   3,0FFh,   2
-                    db    3,0FFh,   9, 0Dh,0FFh,   9, 0Dh,0FFh, 11h, 19h, 32h,0EFh, 32h, 14h,0FFh, 14h
-                    db 0F9h,   7,   1,0F9h,   7,   1,0F9h,   7,   1,0F9h,   7,   1,0F9h,   7,   1,0F9h
-                    db    7,   1,   1,0FFh,   1,   1,0FFh,   1,0DFh, 1Fh,0D0h,0DFh, 1Fh,0D2h,0DFh, 1Fh
-                    db 0D3h,0DEh, 1Eh,0D2h,0CCh, 0Ch,0CCh,0C0h,   0,0C0h, 80h,   0,0FFh,   0,   0,0FFh
-                    db 0E1h,0E1h, 27h,0C1h,0C1h, 47h,0E1h,0E1h, 27h,0F1h,0F1h, 97h, 61h, 61h, 67h,   1
-                    db    1,   7,   1,   1,0FFh,   1,   1,0FFh,0FFh,0FFh,0FFh,   1,   1,0FFh, 7Fh, 7Dh
-                    db 0FDh,0FFh,   1,   1,0FFh,0FFh,0FFh, 30h, 10h,0DFh,0F7h,0D7h,0DFh,0FFh, 10h, 10h
-                    db 0FFh,0DFh,0DFh,0DFh,0FFh,0DFh,0DFh,   0,0DFh,   0,   0, 20h,0FFh,0DFh,0DFh,0DFh
-                    db 0FFh,0DFh,0DFh,   0,0DFh,   0,   0, 20h
+GfxElevators:
+		db $BD,$B1,$BD,$BD,$B1,$BD,$BD,$B1,$BD,$BD,$B1,$BD,$BD,$B1,$BD,$BD
+		db $B1,$BD,$BD,$B1,$BD,$BD,$B1,$BD,$FF,$FF,$FF,$FF,$00,$FF,$FF,$00
+		db $FF,$C0,$00,$C0,$CF,$0F,$CF,$DF,$1F,$D0,$DF,$1F,$D3,$DF,$1F,$D3
+		db $FF,$FF,$FF,$FF,$01,$FF,$FD,$01,$FF,$01,$01,$07,$C1,$C1,$C7,$E1
+		db $E1,$27,$F1,$F1,$97,$F1,$F1,$97,$DF,$1F,$D0,$DF,$1F,$D3,$DF,$1F
+		db $D3,$DF,$1F,$D0,$CF,$0F,$CF,$C0,$00,$C0,$80,$00,$FF,$00,$00,$FF
+		db $E1,$E1,$27,$F1,$F1,$97,$F1,$F1,$97,$E1,$E1,$27,$C1,$C1,$C7,$01
+		db $01,$07,$01,$01,$FF,$01,$01,$FF,$FF,$DF,$DF,$DF,$FF,$DF,$DF,$00
+		db $DF,$00,$00,$20,$FF,$DF,$DF,$DF,$FF,$DF,$DF,$00,$DF,$00,$00,$20
+		db $FF,$FB,$FB,$FB,$FF,$FB,$FA,$00,$FA,$00,$00,$04,$FF,$FB,$FB,$FB
+		db $FF,$FB,$FA,$00,$FE,$00,$00,$04,$FF,$FF,$FF,$FF,$00,$FF,$FF,$00
+		db $FF,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0
+		db $FF,$FF,$FF,$FB,$0C,$FB,$FF,$00,$FF,$A9,$56,$00,$FB,$06,$02,$99
+		db $66,$00,$CF,$70,$40,$3F,$C0,$00,$FF,$FF,$FF,$FF,$00,$FF,$FF,$00
+		db $FF,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0,$FF,$00,$C0
+		db $FF,$FF,$FF,$FB,$0C,$FB,$FF,$00,$FF,$A9,$56,$00,$FB,$06,$02,$99
+		db $66,$00,$CF,$70,$40,$3F,$C0,$00,$FF,$FF,$FF,$FF,$00,$FF,$FF,$00
+		db $FF,$FF,$00,$00,$FF,$00,$00,$EF,$30,$20,$F7,$78,$70,$FF,$00,$00
+		db $FF,$FF,$FF,$FF,$01,$FF,$FD,$03,$FD,$F9,$07,$01,$F9,$07,$01,$F9
+		db $07,$01,$F9,$07,$01,$F9,$07,$01,$F7,$08,$C0,$FB,$0C,$C8,$FF,$00
+		db $C0,$A9,$56,$80,$FB,$06,$C2,$99,$66,$80,$C0,$7F,$C0,$00,$FF,$00
+		db $FF,$00,$00,$FF,$00,$00,$FF,$00,$00,$FF,$00,$00,$FF,$00,$00,$FF
+		db $00,$00,$00,$FF,$00,$00,$FF,$00,$FF,$01,$01,$FF,$02,$03,$FF,$02
+		db $03,$FF,$09,$0D,$FF,$09,$0D,$FF,$11,$19,$32,$EF,$32,$14,$FF,$14
+		db $F9,$07,$01,$F9,$07,$01,$F9,$07,$01,$F9,$07,$01,$F9,$07,$01,$F9
+		db $07,$01,$01,$FF,$01,$01,$FF,$01,$DF,$1F,$D0,$DF,$1F,$D2,$DF,$1F
+		db $D3,$DE,$1E,$D2,$CC,$0C,$CC,$C0,$00,$C0,$80,$00,$FF,$00,$00,$FF
+		db $E1,$E1,$27,$C1,$C1,$47,$E1,$E1,$27,$F1,$F1,$97,$61,$61,$67,$01
+		db $01,$07,$01,$01,$FF,$01,$01,$FF,$FF,$FF,$FF,$01,$01,$FF,$7F,$7D
+		db $FD,$FF,$01,$01,$FF,$FF,$FF,$30,$10,$DF,$F7,$D7,$DF,$FF,$10,$10
+		db $FF,$DF,$DF,$DF,$FF,$DF,$DF,$00,$DF,$00,$00,$20,$FF,$DF,$DF,$DF
+		db $FF,$DF,$DF,$00,$DF,$00,$00,$20

@@ -10,191 +10,192 @@
 ; Respawn location is calculated mutiplying each nibble by 16
 ;---------------------------------------------------------------------------
 ; #A = Alert guard, #B = Read alert guard, #16 = Jetpack guard
-RespawnInfo:        db  0Ah, 19h,0AFh
-                    db  0Ah, 14h, 9Fh
-                    db  0Ah,0C5h, 1Ah
-                    db  0Bh, 3Fh,0AFh
-                    db  0Ah, 91h,0AFh
-                    db  0Ah, 81h, 1Eh
-                    db    0,   0,   0
-                    db  0Ah, 85h, 31h
-                    db    0, 31h,0B1h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 3Fh,0BFh
-                    db  0Ah, 91h, 16h
-                    db  0Ah,0C6h,0CAh
-                    db  0Ah, 1Ah, 16h
-                    db  0Ah,0CAh, 31h
-                    db    0, 12h, 1Ah
-                    db  0Ah, 55h,0CAh
-                    db  0Ah, 15h, 1Ah
-                    db  0Ah,0C8h, 69h
-                    db    0,   0,   0
-                    db  0Ah,0BFh,0BFh
-                    db  0Bh,0BFh, 3Fh
-                    db  0Bh,0B1h, 3Fh
-                    db  0Bh, 1Eh, 71h
-                    db  0Bh,0C2h, 1Bh
-                    db  0Ah,0C7h, 1Eh
-                    db  0Ah, 31h,0CEh
-                    db  0Ah,0BFh, 9Fh
-                    db    0,   0,   0
-                    db  0Ah, 93h, 1Ch
-                    db  0Ah,0C6h,0AFh
-                    db  0Ah, 83h,0BFh
-                    db  0Ah, 51h,0B1h
-                    db  0Ah, 71h, 7Fh
-                    db  0Bh,0BFh, 7Fh
-                    db  0Ah,0B1h, 19h
-                    db    0,   0,   0
-                    db  0Ah, 1Dh,0C4h
-                    db  0Ah, 51h,0CEh
-                    db  16h, 5Fh,0A1h
-                    db  16h, 12h, 1Dh
-                    db  16h, 18h,0C4h
-                    db  0Bh,0C7h, 3Fh
-                    db  16h, 9Fh, 41h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Bh, 71h, 9Fh
-                    db  16h,0CDh, 14h
-                    db  0Bh, 31h, 7Fh
-                    db    0,   0,   0
-                    db  0Ah, 17h, 18h
-                    db  0Bh, 17h,0C8h
-                    db  0Ah, 91h,0CDh
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0, 21h, 1Ch
-                    db  0Bh, 31h, 3Fh
-                    db  0Ah, 4Fh,0BFh
-                    db    0,   0,   0
-                    db  0Ah, 3Fh, 7Fh
-                    db  0Ah, 41h, 1Ah
-                    db  0Ah,0BFh, 14h
-                    db  0Ah,0C7h, 41h
-                    db    0,   0,   0
-                    db  0Ah, 12h, 1Dh
-                    db  0Ah,0CDh, 31h
-                    db  0Ah, 1Ah, 1Eh
-                    db  0Bh,0C9h, 18h
-                    db  0Ah,0C2h,0CEh
-                    db  0Ah, 7Fh,0B1h
-                    db    0,   0,   0
-                    db  0Ah, 71h, 3Fh
-                    db  0Bh, 71h, 71h
-                    db  0Bh, 18h, 18h
-                    db  0Bh,0C8h, 71h
-                    db  0Ah, 9Fh,0AFh
-                    db  16h, 31h, 1Dh
-                    db  0Ah,0C3h, 1Eh
-                    db  0Ah,0A1h,0CEh
-                    db  16h,0CBh,0CDh
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 14h, 1Ch
-                    db  0Bh,0C7h,0C7h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 29h, 27h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 7Dh, 7Dh
-                    db  0Ah, 7Dh, 7Dh
-                    db  0Ah, 7Dh, 7Dh
-                    db    0,   0,   0
-                    db  0Ah, 7Dh, 7Dh
-                    db  0Ah, 7Dh, 7Dh
-                    db  0Ah, 7Dh, 7Dh
-                    db    0,0C7h,0C7h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 73h, 73h
-                    db  0Bh,0C7h,0C7h
-                    db  0Ah,0C7h,0C7h
-                    db  0Ah, 7Dh, 7Dh
-                    db    0,   0,   0
-                    db    0, 53h, 53h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah, 7Dh, 7Dh
-                    db    0,   0,   0
-                    db  0Ah, 7Dh, 7Dh
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db  0Ah,0C7h,0C7h
-                    db  0Ah,0C7h,0C7h
-                    db  0Bh,0C7h,0C7h
-                    db  0Ah,0C7h,0C7h
-                    db  0Ah,0C7h,0C7h
-                    db    0,   0,   0
-                    db  0Ah,0C7h,0C7h
-                    db    0,   0,   0
-                    db  0Ah, 73h, 73h
-                    db  0Ah,0C7h,0C7h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,0C7h,0C7h
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0,   0,   0
-                    db    0, 7Dh, 7Dh
-                    db    0, 7Dh, 7Dh
-                    db  0Ah,0C7h,0C7h
-                    db  0Ah,0C7h,0C7h
-                    db  0Ah, 7Dh, 7Dh
-                    db  0Ah, 73h, 73h
-                    db    0,   0,   0
-                    db  0Ah,0C7h,0C7h
-                    db    0,   0,   0
-                    db  0Bh,0C7h,0C7h
-                    db  0Bh,0C7h,0C7h
-                    db  0Bh,0C7h,0C7h
-                    db    0,   0,   0
-                    db  0Ah,0C7h,0C7h
+RespawnInfo:
+		db $0A,$19,$AF
+		db $0A,$14,$9F
+		db $0A,$C5,$1A
+		db $0B,$3F,$AF
+		db $0A,$91,$AF
+		db $0A,$81,$1E
+		db $00,$00,$00
+		db $0A,$85,$31
+		db $00,$31,$B1
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$3F,$BF
+		db $0A,$91,$16
+		db $0A,$C6,$CA
+		db $0A,$1A,$16
+		db $0A,$CA,$31
+		db $00,$12,$1A
+		db $0A,$55,$CA
+		db $0A,$15,$1A
+		db $0A,$C8,$69
+		db $00,$00,$00
+		db $0A,$BF,$BF
+		db $0B,$BF,$3F
+		db $0B,$B1,$3F
+		db $0B,$1E,$71
+		db $0B,$C2,$1B
+		db $0A,$C7,$1E
+		db $0A,$31,$CE
+		db $0A,$BF,$9F
+		db $00,$00,$00
+		db $0A,$93,$1C
+		db $0A,$C6,$AF
+		db $0A,$83,$BF
+		db $0A,$51,$B1
+		db $0A,$71,$7F
+		db $0B,$BF,$7F
+		db $0A,$B1,$19
+		db $00,$00,$00
+		db $0A,$1D,$C4
+		db $0A,$51,$CE
+		db $16,$5F,$A1
+		db $16,$12,$1D
+		db $16,$18,$C4
+		db $0B,$C7,$3F
+		db $16,$9F,$41
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0B,$71,$9F
+		db $16,$CD,$14
+		db $0B,$31,$7F
+		db $00,$00,$00
+		db $0A,$17,$18
+		db $0B,$17,$C8
+		db $0A,$91,$CD
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$21,$1C
+		db $0B,$31,$3F
+		db $0A,$4F,$BF
+		db $00,$00,$00
+		db $0A,$3F,$7F
+		db $0A,$41,$1A
+		db $0A,$BF,$14
+		db $0A,$C7,$41
+		db $00,$00,$00
+		db $0A,$12,$1D
+		db $0A,$CD,$31
+		db $0A,$1A,$1E
+		db $0B,$C9,$18
+		db $0A,$C2,$CE
+		db $0A,$7F,$B1
+		db $00,$00,$00
+		db $0A,$71,$3F
+		db $0B,$71,$71
+		db $0B,$18,$18
+		db $0B,$C8,$71
+		db $0A,$9F,$AF
+		db $16,$31,$1D
+		db $0A,$C3,$1E
+		db $0A,$A1,$CE
+		db $16,$CB,$CD
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$14,$1C
+		db $0B,$C7,$C7
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$29,$27
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$7D,$7D
+		db $0A,$7D,$7D
+		db $0A,$7D,$7D
+		db $00,$00,$00
+		db $0A,$7D,$7D
+		db $0A,$7D,$7D
+		db $0A,$7D,$7D
+		db $00,$C7,$C7
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$73,$73
+		db $0B,$C7,$C7
+		db $0A,$C7,$C7
+		db $0A,$7D,$7D
+		db $00,$00,$00
+		db $00,$53,$53
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$7D,$7D
+		db $00,$00,$00
+		db $0A,$7D,$7D
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $0A,$C7,$C7
+		db $0A,$C7,$C7
+		db $0B,$C7,$C7
+		db $0A,$C7,$C7
+		db $0A,$C7,$C7
+		db $00,$00,$00
+		db $0A,$C7,$C7
+		db $00,$00,$00
+		db $0A,$73,$73
+		db $0A,$C7,$C7
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$C7,$C7
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$00,$00
+		db $00,$7D,$7D
+		db $00,$7D,$7D
+		db $0A,$C7,$C7
+		db $0A,$C7,$C7
+		db $0A,$7D,$7D
+		db $0A,$73,$73
+		db $00,$00,$00
+		db $0A,$C7,$C7
+		db $00,$00,$00
+		db $0B,$C7,$C7
+		db $0B,$C7,$C7
+		db $0B,$C7,$C7
+		db $00,$00,$00
+		db $0A,$C7,$C7

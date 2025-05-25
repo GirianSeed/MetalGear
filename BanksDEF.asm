@@ -6,32 +6,25 @@
 ;
 ;----------------------------------------------------------------------------
 
-                    org #6000
+		org $6000
 
-        include "data/rooms.asm"
+		include "data/rooms.asm"
+		include "data/metatiles.asm"
+		include "data/doors.asm"
+		include "gfx/powerswitch.asm"
+		include "data/tileblocks.asm"
 
-        include "data/metatiles.asm"
+	IF (JAPANESE)
+		include "data/radiocallsjp.asm"
+	ELSE
+		include "data/radiocalls.asm"
+	ENDIF
 
-        include "data/doors.asm"
+		include "logic/updatesprites.asm"
+		include "logic/saveload.asm"
+		include "logic/ending.asm"
+		include "logic/drawlaserbeams.asm"
 
-        include "gfx/powerswitch.asm"
-
-        include "data/tileblocks.asm"
-
-        IF (JAPANESE)
-        include "data/radiocallsjp.asm"
-        ELSE
-        include "data/radiocalls.asm"
-        ENDIF
-
-        include "logic/updatesprites.asm"
-
-        include "logic/saveload.asm"
-
-        include "logic/ending.asm"
-
-        include "logic/drawlaserbeams.asm"
-
-                    ; Fill empty space
-                    ds      (#C000-$),#ff
-                    ASSERT  $=#C000
+		; Fill empty space
+		ds	($C000-$),$FF
+		ASSERT	$=$C000

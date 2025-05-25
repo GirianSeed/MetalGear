@@ -1,74 +1,77 @@
-
 ;----------------------------------------------------------------------------
 ; Enemies size/shape id (projectiles collision)
 ; This id is used to get the shape/size data of the enemy in order to check collisions with bullets, missile, rocket
 ;----------------------------------------------------------------------------
-ActorShapeProject:  db 0FFh,0FFh,0FFh,   0,   0,   2,0FFh,0FFh,   3,   0,   0,   2,   0,   0, 11h,0FFh
-                    db  0Ah, 0Eh,   0,   0,   0,   0,   2,   0, 14h,   0, 14h,   0,0FFh,   0,   2,   0
-                    db    0,   0,0FFh, 12h,   2,   4,0FFh,0FFh,   0,   6,0FFh,   2,0FFh,0FFh,0FFh,   0
-                    db    0,   0,   0,   0,   0,0FFh,   0,   0,   0,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                    db 0FFh
-
+ActorShapeProject:
+		db $FF,$FF,$FF,$00,$00,$02,$FF,$FF,$03,$00,$00,$02,$00,$00,$11,$FF
+		db $0A,$0E,$00,$00,$00,$00,$02,$00,$14,$00,$14,$00,$FF,$00,$02,$00
+		db $00,$00,$FF,$12,$02,$04,$FF,$FF,$00,$06,$FF,$02,$FF,$FF,$FF,$00
+		db $00,$00,$00,$00,$00,$FF,$00,$00,$00,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+		db $FF
 
 ;----------------------------------------------------------------------------
 ; Enemies size/shape ids (explosive collision)
 ; This id is used to get the shape/size data of the enemy in order to check collisions with grenades, land mines and plastic bombs
 ;----------------------------------------------------------------------------
-ActorShapeExpl:     db 0FFh,0FFh,0FFh,   1,   1,   1,0FFh,0FFh,   3,   1,   1,   2,   1,   1, 11h,0FFh
-                    db  0Bh, 0Eh,   1,   1,   1,   1,   2,   1, 15h,   1, 15h,   1,0FFh,   1,   1,   1
-                    db    1, 1Bh,0FFh, 0Fh,0FFh,   5,0FFh,0FFh,   1,   6,0FFh,0FFh,0FFh,0FFh,0FFh,   1
-                    db    1,   1,   1,   1,   1,0FFh,   1,   1,   1,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh,0FFh
-                    db 0FFh
+ActorShapeExpl:
+		db $FF,$FF,$FF,$01,$01,$01,$FF,$FF,$03,$01,$01,$02,$01,$01,$11,$FF
+		db $0B,$0E,$01,$01,$01,$01,$02,$01,$15,$01,$15,$01,$FF,$01,$01,$01
+		db $01,$1B,$FF,$0F,$FF,$05,$FF,$FF,$01,$06,$FF,$FF,$FF,$FF,$FF,$01
+		db $01,$01,$01,$01,$01,$FF,$01,$01,$01,$FF,$FF,$FF,$FF,$FF,$FF,$FF
+		db $FF
 
 ;----------------------------------------------------------------------------
 ; Enemies size/shape id (player collision)
 ; This id is used to get the shape/size data of the enemy in order to check collisions with the player
 ;----------------------------------------------------------------------------
-ActorsShapeTouch:   db 0FFh,   7,0FFh,   8,   8,   8,   8,   8, 0Dh,   8,   8, 0Fh,   8,   8, 10h,0FFh
-                    db 0FFh, 0Ch,   8,   8,   8,   8, 0Fh,   8, 19h,   8, 19h,   8,   8,   8,   8,   8
-                    db    8, 1Ah,   8, 13h,   9,0FFh, 0Fh,   8,   8,0FFh, 0Fh,   8,   8, 0Fh,   9,   8
-                    db  17h, 17h, 17h, 17h,   8,   9, 18h, 17h,   8,   9,   9,   9,   9,   9, 0Fh,0FFh
-                    db  16h
+ActorsShapeTouch:
+		db $FF,$07,$FF,$08,$08,$08,$08,$08,$0D,$08,$08,$0F,$08,$08,$10,$FF
+		db $FF,$0C,$08,$08,$08,$08,$0F,$08,$19,$08,$19,$08,$08,$08,$08,$08
+		db $08,$1A,$08,$13,$09,$FF,$0F,$08,$08,$FF,$0F,$08,$08,$0F,$09,$08
+		db $17,$17,$17,$17,$08,$09,$18,$17,$08,$09,$09,$09,$09,$09,$0F,$FF
+		db $16
 
 ;----------------------------------------------------------------------------
 ; Damage caused by touching an enemy
 ;----------------------------------------------------------------------------
-ActorTouchDamage:   db    0,   0,   0,   2,   2,   0, 10h,   0,0FFh,   2,   2, 20h,   2,   2,0FFh,0FFh
-                    db    0,0FFh,   2,   2,   2,   2, 20h,   2,   2,   8,   2,   2,   0,   2,   2,   8
-                    db    4,   4,   0,   4,   8,   0,   0,   0,   4,   0,   8,   0,   0,   0,   8,   2
-                    db    0,   0,   0,   0,   0, 10h,   0,   0,   4,   8,   8,   8,   8,   8, 10h,   0
-                    db  10h
+ActorTouchDamage:
+		db $00,$00,$00,$02,$02,$00,$10,$00,$FF,$02,$02,$20,$02,$02,$FF,$FF
+		db $00,$FF,$02,$02,$02,$02,$20,$02,$02,$08,$02,$02,$00,$02,$02,$08
+		db $04,$04,$00,$04,$08,$00,$00,$00,$04,$00,$08,$00,$00,$00,$08,$02
+		db $00,$00,$00,$00,$00,$10,$00,$00,$04,$08,$08,$08,$08,$08,$10,$00
+		db $10
 
 ;----------------------------------------------------------------------------
 ; Shapes/sizes of actors used to check "touch" events
 ;
 ; Offset Y, distance Y, offset X, distance X
 ;----------------------------------------------------------------------------
-ImpactAreasInfo:    db 0F0h, 10h,   0,   8
-                    db    0, 14h,   0, 14h
-                    db    0,   8,   0,   8
-                    db 0E8h, 18h,   0, 18h
-                    db 0E0h, 20h,   0, 10h
-                    db 0E0h, 10h,   0, 10h
-                    db 0DCh, 20h,   0, 10h
-                    db    0,   8,   0, 10h
-                    db    0,   8,   0, 0Ch
-                    db  10h, 0Ch,   0,   8
-                    db 0D0h, 30h,   0, 20h
-                    db 0F0h, 10h,   0, 20h
-                    db    8, 18h,   0, 20h
-                    db 0E8h, 18h,   0, 20h
-                    db    0, 18h,   0, 18h
-                    db  14h, 10h,   0, 10h
-                    db  48h, 48h,   0, 0Ch
-                    db  48h, 48h,   0, 10h
-                    db    4, 10h,   0,   8
-                    db  14h,   8,   0, 0Ch
-                    db    0, 10h,   0, 10h
-                    db 0F8h, 14h,   0, 14h
-                    db  10h, 18h,   0, 18h
-                    db 0F8h, 10h,   0, 10h
-                    db 0F8h, 20h,   0, 20h
-                    db    0, 0Ch,   0, 0Ch
-                    db 0FCh,   8,   0, 0Ch
-                    db    0, 14h,   0, 10h
+ImpactAreasInfo:
+		db $F0,$10,$00,$08
+		db $00,$14,$00,$14
+		db $00,$08,$00,$08
+		db $E8,$18,$00,$18
+		db $E0,$20,$00,$10
+		db $E0,$10,$00,$10
+		db $DC,$20,$00,$10
+		db $00,$08,$00,$10
+		db $00,$08,$00,$0C
+		db $10,$0C,$00,$08
+		db $D0,$30,$00,$20
+		db $F0,$10,$00,$20
+		db $08,$18,$00,$20
+		db $E8,$18,$00,$20
+		db $00,$18,$00,$18
+		db $14,$10,$00,$10
+		db $48,$48,$00,$0C
+		db $48,$48,$00,$10
+		db $04,$10,$00,$08
+		db $14,$08,$00,$0C
+		db $00,$10,$00,$10
+		db $F8,$14,$00,$14
+		db $10,$18,$00,$18
+		db $F8,$10,$00,$10
+		db $F8,$20,$00,$20
+		db $00,$0C,$00,$0C
+		db $FC,$08,$00,$0C
+		db $00,$14,$00,$10

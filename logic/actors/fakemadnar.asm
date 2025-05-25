@@ -5,14 +5,13 @@
 ;---------------------------------------------------------------------------
 
 FakeMadnadLogic:
-                    ld      a, (ix+ACTOR2.Status)
-                    call    JumpIndex
+		ld	a, (ix+ACTOR2.Status)
+		call	JumpIndex
 
-                    dw FakeMadnarWait
-                    dw FakeMadnarSpeak
-                    dw FakeMadnarTrap
-                    dw FakeMadnarFall
-
+		dw FakeMadnarWait
+		dw FakeMadnarSpeak
+		dw FakeMadnarTrap
+		dw FakeMadnarFall
 
 ;----------------------------------------------------------------------------
 ;
@@ -21,14 +20,13 @@ FakeMadnadLogic:
 ;----------------------------------------------------------------------------
 
 FakeMadnarWait:
-                    ld      b, 0Fh
-                    call    Anim2FramesActor                ; Animate actor each 16 iterations
-                    bit     7, (ix+ACTOR2.TOUCH_INFO)       ; Is Snake touching the fake Madnar?
-                    ret     z                               ; No
+		ld	b, 0Fh
+		call	Anim2FramesActor		; Animate actor each 16 iterations
+		bit	7, (ix+ACTOR2.TOUCH_INFO)	; Is Snake touching the fake Madnar?
+		ret	z				; No
 
-                    ld      (ix+ACTOR2.SpriteId), 40h       ; Free fake Madnar sprite ID
-                    jp      NextActorStatus
-
+		ld	(ix+ACTOR2.SpriteId), 40h	; Free fake Madnar sprite ID
+		jp	NextActorStatus
 
 ;----------------------------------------------------------------------------
 ;
@@ -37,11 +35,10 @@ FakeMadnarWait:
 ;----------------------------------------------------------------------------
 
 FakeMadnarSpeak:
-                    ld      a, 109                          ; TEXT: ;YOU ARE CAUGHT IN A TRAP.*IN FACT,*WE HAVE CONFINED DR. PETTROVICH ON THE SECOND FLOOR.* I WILL GET YOU FOXHOUNDER!
-                    call    SetTextUnskippable
+		ld	a, 109				; TEXT: ;YOU ARE CAUGHT IN A TRAP.*IN FACT,*WE HAVE CONFINED DR. PETTROVICH ON THE SECOND FLOOR.* I WILL GET YOU FOXHOUNDER!
+		call	SetTextUnskippable
 
-                    jp      NextActorStatus
-
+		jp	NextActorStatus
 
 ;----------------------------------------------------------------------------
 ;
@@ -50,20 +47,19 @@ FakeMadnarSpeak:
 ;----------------------------------------------------------------------------
 
 FakeMadnarTrap:
-                    call    NextActorStatus
+		call	NextActorStatus
 
-                    inc     (ix+ACTOR2.MOVING)              ; Enable movement
-                    ld      de, 100h                        ; Speed Y
-                    call    SetActorSpeedY                  ; Set the Y speed to simulate he is falling into the trap
+		inc	(ix+ACTOR2.MOVING)		; Enable movement
+		ld	de, 100h			; Speed Y
+		call	SetActorSpeedY			; Set the Y speed to simulate he is falling into the trap
 
-                    ld      a, 1
-                    ld      (RescuedArray+16h), a           ; Mark as rescued
-                    ld      (ix+ACTOR2.Timer), 10h
+		ld	a, 1
+		ld	(RescuedArray+16h), a		; Mark as rescued
+		ld	(ix+ACTOR2.Timer), 10h
 
-                    ld      de, 8060h                       ; Pitfall location
-                    ld      c, ID_PITFALL
-                    jp      AddEnemy                        ; Add a pitfall in the room
-
+		ld	de, 8060h			; Pitfall location
+		ld	c, ID_PITFALL
+		jp	AddEnemy			; Add a pitfall in the room
 
 ;----------------------------------------------------------------------------
 ;
@@ -72,8 +68,7 @@ FakeMadnarTrap:
 ;----------------------------------------------------------------------------
 
 FakeMadnarFall:
-                    dec     (ix+ACTOR2.Timer)
-                    ret     nz                              ; Continue falling
+		dec	(ix+ACTOR2.Timer)
+		ret	nz				; Continue falling
 
-                    jp      DismissActor0                   ; Remove actor
-
+		jp	DismissActor0			; Remove actor

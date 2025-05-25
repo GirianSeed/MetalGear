@@ -3,6 +3,9 @@
 ; Pause SFX
 ;
 ;----------------------------------------------------------------------------
-Sfx_Pause:          db 0EFh,0D1h,0FDh, 38h,0E1h,0C0h,   4, 74h, 44h, 74h,0E0h,   9,0C0h,0FFh
-Sfx_PauseB:         db 0EFh,0E8h,0D1h,0FAh, 33h,0E1h,0C0h,   4, 74h, 44h, 74h,0E0h,   9,0C0h
-Sfx_PauseC:         db 0FFh
+Sfx_Pause:
+		db $EF,$D1,$FD,$38,$E1,$C0,$04,$74,$44,$74,$E0,$09,$C0,$FF
+Sfx_PauseB:
+		db $EF,$E8,$D1,$FA,$33,$E1,$C0,$04,$74,$44,$74,$E0,$09,$C0
+Sfx_PauseC:
+		db $FF
